@@ -1,0 +1,62 @@
+#include "hull\hull_xeh.h"
+#include "hull\mission_params.h"
+
+#include "hull\gear\factions.h"
+
+#include "hull\gear\AK103.h"
+#include "hull\gear\AK74.h"
+#include "hull\gear\AK74M.h"
+#include "hull\gear\AK74P.h"
+#include "hull\gear\AKM.h"
+#include "hull\gear\HK416.h"
+#include "hull\gear\L85.h"
+#include "hull\gear\M16A2.h"
+#include "hull\gear\M16A4.h"
+#include "hull\gear\M4SOC.h"
+#include "hull\gear\SCAR.h"
+#include "hull\gear\XM8.h"
+
+
+class Header
+{
+    gameType = Coop;
+    minPlayers = 1;
+    maxPlayers = 970;
+};
+
+respawn = 1;
+respawndelay = 3;
+
+class Params {
+    class Hull_Date {
+        title = "Moon Phase";
+        values[] = {0,1};
+        texts[] = {"New Moon", "Full Moon"};
+        default = 1;
+        code = "hull_mission_date = %1";
+    };
+
+    class Hull_TimeOfDay {
+        title = "Time of Day";
+        values[] = {0,1,2,3,4,5,6,7};
+        texts[] = {"Dawn", "Early Morning", "Morning", "Noon", "Afternoon", "Evening", "Dusk", "Night"};
+        default = 3;
+        code = "hull_mission_timeOfDay = %1";
+    };
+
+    class Hull_Weather {
+        title = "Weather";
+        values[] = {0,1,2,3,4};
+        texts[] = {"Clear", "Overcast", "Light Fog", "Heavy Fog", "Storm"};
+        default = 0;
+        code = "hull_mission_weather = %1";
+    };
+
+    class Hull_SafetyTimer {
+        title = "Safety Timer";
+        values[] = {0,1,2,3,5,10,15};
+        texts[] = {"Off", "1 minute", "2 minutes", "3 munites", "5 minutes", "10 minutes", "15 minutes"};
+        default = 5;
+        code = "hull_mission_safetyTimer = %1";
+    };
+};
