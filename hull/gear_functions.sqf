@@ -71,15 +71,30 @@ hull_gear_fnc_assignTemplate = {
     [_unit, getText (_config >> "ruck")] call hull_gear_fnc_assignRuck;
     [_unit, getText (_config >> "goggles")] call hull_gear_fnc_assignGoggles;
     [_unit, getText (_config >> "vest")] call hull_gear_fnc_assignVest;
+    [_unit, getText (_config >> "uniform")] call hull_gear_fnc_assignUniform;
+    [_unit, getText (_config >> "helmet")] call hull_gear_fnc_assignHelmet;
     [_unit, getArray (_config >> "magazines")] call hull_gear_fnc_assignMagazines;
     [_unit, getArray (_config >> "weapons")] call hull_gear_fnc_assignWeapons;
     [_unit, getArray (_config >> "primaryAttachments")] call hull_gear_fnc_assignPrimaryAttachments;
     [_unit, getArray (_config >> "secondaryAttachments")] call hull_gear_fnc_assignSecondaryAttachments;
     [_unit, getArray (_config >> "ruckWeapons")] call hull_gear_fnc_assignRuckWeapons;
     [_unit, getArray (_config >> "ruckMagazines")] call hull_gear_fnc_assignRuckMagazines;
+    [_unit, getArray (_config >> "vestMagazines")] call hull_gear_fnc_assignVestMagazines;
     [_unit, getArray (_config >> "items")] call hull_gear_fnc_assignNonRadioItems;
     [_unit, _class, _template] call compile getText (_config >> "code");
     _unit selectWeapon primaryWeapon _unit;
+};
+
+hull_gear_fnc_assignHelmet = {
+    FUN_ARGS_2(_unit,_helmet);
+
+    _unit addHeadgear _helmet;
+};
+
+hull_gear_fnc_assignUniform = {
+    FUN_ARGS_2(_unit,_uniform);
+
+    _unit addUniform  _uniform;
 };
 
 hull_gear_fnc_assignVest = {
@@ -97,8 +112,10 @@ hull_gear_fnc_assignGoggles = {
 hull_gear_fnc_assignRuck = {
     FUN_ARGS_2(_unit,_ruck);
 
-    _unit addBackpack _ruck;
-    [_unit, _ruck] call ACE_fnc_PutWeaponOnBack;
+    if(_ruck != "") then {
+        _unit addBackpack _ruck;
+        [_unit, _ruck] call ACE_fnc_PutWeaponOnBack;
+    };
 };
 
 hull_gear_fnc_assignMagazines = {
@@ -153,6 +170,16 @@ hull_gear_fnc_assignRuckMagazines = {
             _unit addItemToBackpack (_x select 0);
         };
     } foreach _ruckMagazines;
+};
+
+hull_gear_fnc_assignVestMagazines = {
+    FUN_ARGS_2(_unit,_vestMagazines);
+
+    {
+        for "_i" from 1 to (_x select 1) do { 
+            _unit addItemToVest  (_x select 0);
+        };
+    } foreach _vestMagazines;
 };
 
 hull_gear_fnc_assignNonRadioItems = {
@@ -249,12 +276,17 @@ hull_gear_fnc_validateTemplate = {
     _config = HULL_CONFIGFILE >> _template >> _manualClass;
     _fields = [
         ["ruck", {isText (_config >> _field)}],
+        ["helmet", {isText (_config >> _field)}],
+        ["uniform", {isText (_config >> _field)}],
         ["vest", {isText (_config >> _field)}],
         ["goggles", {isText (_config >> _field)}],
         ["magazines", {isArray (_config >> _field)}],
         ["weapons", {isArray (_config >> _field)}],
+        ["primaryAttachments", {isArray (_config >> _field)}],
+        ["secondaryAttachments", {isArray (_config >> _field)}],
         ["ruckWeapons", {isArray (_config >> _field)}],
         ["ruckMagazines", {isArray (_config >> _field)}],
+        ["vestMagazines", {isArray (_config >> _field)}],
         ["items", {isArray (_config >> _field)}],
         ["code", {isText (_config >> _field)}]
     ];
