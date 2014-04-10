@@ -112,9 +112,8 @@ hull_gear_fnc_assignGoggles = {
 hull_gear_fnc_assignRuck = {
     FUN_ARGS_2(_unit,_ruck);
 
-    if(_ruck != "") then {
+    if (_ruck != "") then {
         _unit addBackpack _ruck;
-        [_unit, _ruck] call ACE_fnc_PutWeaponOnBack;
     };
 };
 
