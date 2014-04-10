@@ -51,7 +51,7 @@ hull_marker_fnc_addMarker = {
         };
         (group _unit) setGroupId [_markerText];
         _markerName = format ["hull_marker_group_%1_%2", _markerText, group _unit];
-        [_markerName, getPosATL _unit, "ICON", "b_empty", _markerColor, _markerText] call hull_marker_fnc_createMarker;
+        [_markerName, getPosATL _unit, "ICON", "b_unknown", _markerColor, _markerText] call hull_marker_fnc_createMarker;
         (group _unit) setVariable ["hull_marker_group", _markerName, false];
         PUSH(hull_marker_groups,group _unit);
     };
