@@ -24,7 +24,6 @@ hull_gear_fnc_assignInit = {
     _unit setVariable ["hull_gear_template", _template, true];
     removeAllWeapons _unit;
     removeBackpack _unit;
-    _unit setVariable ["ace_sys_wounds_no_medical_gear", true, false];
 };
 
 hull_gear_fnc_getTemplate = {
