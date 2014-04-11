@@ -3,18 +3,7 @@
 
 #include "hull\gear\factions.h"
 
-#include "hull\gear\AK103.h"
-#include "hull\gear\AK74.h"
-#include "hull\gear\AK74M.h"
-#include "hull\gear\AK74P.h"
-#include "hull\gear\AKM.h"
-#include "hull\gear\HK416.h"
-#include "hull\gear\L85.h"
-#include "hull\gear\M16A2.h"
-#include "hull\gear\M16A4.h"
-#include "hull\gear\M4SOC.h"
-#include "hull\gear\SCAR.h"
-#include "hull\gear\XM8.h"
+#include "hull\gear\MX.h"
 
 
 class Header
