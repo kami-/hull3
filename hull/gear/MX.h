@@ -88,8 +88,8 @@ class MX {
         ruckMagazines[] = {
             { "30Rnd_65x39_caseless_mag", 6 },
             { "Medikit", 1 },
-            { "FirstAidKit", 8 }
-            
+            { "FirstAidKit", 8 },
+            { "ACRE_PRC148", 1 }
         };
     };
 
@@ -136,7 +136,8 @@ class MX {
         vestMagazines[] = {
             { "200Rnd_65x39_cased_Box", 1 },
             { "SmokeShell", 2 },
-            { "HandGrenade", 2 }
+            { "HandGrenade", 2 },
+            { "ACRE_PRC148", 1 }
         };
         ruckMagazines[] = {
             { "200Rnd_65x39_cased_Box", 1 },
@@ -171,7 +172,8 @@ class MX {
         vestMagazines[] = {
             { "30Rnd_65x39_caseless_mag", 8 },
             { "SmokeShell", 2 },
-            { "HandGrenade", 2 }
+            { "HandGrenade", 2 },
+            { "ACRE_PRC148", 1 }
         };
         ruck = "B_Bergen_sgg";
         ruckMagazines[] = {
@@ -203,7 +205,8 @@ class MX {
         vestMagazines[] = {
             { "30Rnd_65x39_caseless_mag", 8 },
             { "SmokeShell", 2 },
-            { "HandGrenade", 2 }
+            { "HandGrenade", 2 },
+            { "ACRE_PRC148", 1 }
         };
         ruck = "B_Bergen_sgg";
         ruckMagazines[] = {
