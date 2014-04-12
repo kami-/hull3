@@ -4,6 +4,7 @@
 #include "hull\gear\factions.h"
 
 #include "hull\gear\MX.h"
+#include "hull\gear\Katiba.h"
 
 
 class Header
