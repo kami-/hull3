@@ -30,15 +30,12 @@ hull_gear_fnc_assignInit = {
 hull_gear_fnc_removeNVGs = {
     FUN_ARGS_1(_unit);
 
-    _unit unassignItem  "NVGoggles";
-    _unit unassignItem  "NVGoggles_OPFOR";
-    _unit unassignItem  "NVGoggles_INDEP";
-
-    _unit removeItem "NVGoggles";
-    _unit removeItem "NVGoggles_OPFOR";
-    _unit removeItem "NVGoggles_INDEP";
+    private "_nvgs" = ["NVGoggles", "NVGoggles_OPFOR", "NVGoggles_INDEP"];
+    {
+        _unit unassignItem _x;
+        _unit removeItem _x;
+    } foreach _nvgs;
 };
-
 
 hull_gear_fnc_getTemplate = {
     FUN_ARGS_2(_faction,_manualTemplate);
