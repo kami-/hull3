@@ -30,7 +30,8 @@ hull_gear_fnc_assignInit = {
 hull_gear_fnc_removeNVGs = {
     FUN_ARGS_1(_unit);
 
-    private "_nvgs" = ["NVGoggles", "NVGoggles_OPFOR", "NVGoggles_INDEP"];
+    private "_nvgs";
+    _nvgs = ["NVGoggles", "NVGoggles_OPFOR", "NVGoggles_INDEP"];
     {
         _unit unassignItem _x;
         _unit removeItem _x;
