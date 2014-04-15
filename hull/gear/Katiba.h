@@ -1,25 +1,25 @@
-class MX {
+class Katiba {
     class Rifleman {
-        weapons[] = {"arifle_MX_Black_F", "hgun_P07_F"};
-        primaryAttachments[] = { "optic_Aco", "acc_flashlight" };
+        weapons[] = {"arifle_Katiba_F", "hgun_Rook40_F"};
+        primaryAttachments[] = { "optic_ACO_grn", "acc_flashlight" };
         secondaryAttachments[] = {};
         magazines[] = {
-            { "30Rnd_65x39_caseless_mag", 1 },
+            { "30Rnd_65x39_caseless_green", 1 },
             { "16Rnd_9x21_Mag", 3 },
         };
-        helmet = "H_HelmetB";
-        uniform = "U_B_CombatUniform_mcam";
+        helmet = "H_HelmetO_ocamo";
+        uniform = "U_O_CombatUniform_ocamo";
         goggles = "";
-        vest = "V_PlateCarrier3_rgr";
+        vest = "V_HarnessO_brn";
         vestMagazines[] = {
-            { "30Rnd_65x39_caseless_mag", 8 },
+            { "30Rnd_65x39_caseless_green", 8 },
             { "SmokeShell", 2 },
             { "HandGrenade", 2 }
         };
-        ruck = "B_AssaultPack_cbr";
+        ruck = "B_FieldPack_ocamo";
         ruckWeapons[] = {};
         ruckMagazines[] = {
-            { "30Rnd_65x39_caseless_mag", 6 },
+            { "30Rnd_65x39_caseless_green", 6 },
             { "SmokeShell", 2 },
             { "HandGrenade", 2 }
         };
@@ -28,17 +28,17 @@ class MX {
     };
 
     class Leader : Rifleman {
-        weapons[] = {"arifle_MX_GL_Black_F","hgun_P07_F"};
+        weapons[] = {"arifle_Katiba_GL_F","hgun_Rook40_F"};
         vestMagazines[] = {
-            { "30Rnd_65x39_caseless_mag", 8 },
+            { "30Rnd_65x39_caseless_green", 8 },
             { "1Rnd_HE_Grenade_shell", 2 },
             { "1Rnd_Smoke_Grenade_shell", 2 },
             { "SmokeShell", 2 },
             { "HandGrenade", 2 }
         };
         ruckMagazines[] = {
-            { "30Rnd_65x39_caseless_mag", 3 },
-            { "30Rnd_65x39_caseless_mag_Tracer", 3 },
+            { "30Rnd_65x39_caseless_green", 3 },
+            { "30Rnd_65x39_caseless_green_mag_Tracer", 3 },
             { "1Rnd_HE_Grenade_shell", 4 },
             { "1Rnd_Smoke_Grenade_shell", 2 },
             { "SmokeShell", 2 },
@@ -49,7 +49,7 @@ class MX {
 
     class Officer : Leader {
         vestMagazines[] = {
-            { "30Rnd_65x39_caseless_mag", 8 },
+            { "30Rnd_65x39_caseless_green", 8 },
             { "1Rnd_HE_Grenade_shell", 2 },
             { "1Rnd_Smoke_Grenade_shell", 2 },
             { "SmokeShell", 2 },
@@ -60,13 +60,13 @@ class MX {
     };
 
     class Crew : Rifleman {
-        weapons[] = { "arifle_MXC_Black_F", "hgun_P07_F" };
-        primaryAttachments[] = { "optic_Aco" };
-        helmet = "H_HelmetCrew_B";
+        weapons[] = { "arifle_Katiba_C_F", "hgun_Rook40_F" };
+        primaryAttachments[] = { "optic_ACO_grn" };
+        helmet = "H_HelmetCrew_O";
         ruck = "";
-        vest = "V_PlateCarrier1_rgr";
+        vest = "V_HarnessO_brn";
         vestMagazines[] = {
-            {"30Rnd_65x39_caseless_mag", 6},
+            {"30Rnd_65x39_caseless_green", 6},
             { "SmokeShell", 2 },
             { "HandGrenade", 2 },
             { "ACRE_PRC148", 1 }
@@ -84,12 +84,12 @@ class MX {
     };
 
     class Medic : Rifleman {
-        ruck = "B_Carryall_khk";
+        ruck = "B_Carryall_ocamo";
         ruckMagazines[] = {
-            { "30Rnd_65x39_caseless_mag", 6 },
+            { "30Rnd_65x39_caseless_green", 6 },
             { "Medikit", 1 },
-            { "FirstAidKit", 8 },
-            { "ACRE_PRC148", 1 }
+            { "FirstAidKit", 8 }
+            
         };
     };
 
@@ -97,28 +97,28 @@ class MX {
     };
 
     class AR : Rifleman {
-        weapons[] = { "arifle_MX_SW_Black_F", "hgun_P07_F" };
+        weapons[] = { "LMG_Zafir_F", "hgun_Rook40_F" };
         magazines[] = {
-            { "100Rnd_65x39_caseless_mag", 1 },
+            { "150Rnd_762x51_Box", 1 },
             { "16Rnd_9x21_Mag", 3 },
         };
         vestMagazines[] = {
-            {"100Rnd_65x39_caseless_mag", 1},
+            {"150Rnd_762x51_Box", 1},
             { "SmokeShell", 2 },
             { "HandGrenade", 2 }
         };
         ruckMagazines[] = {
-            { "100Rnd_65x39_caseless_mag", 2 },
-            { "100Rnd_65x39_caseless_mag_Tracer", 2 },
+            { "150Rnd_762x51_Box", 2 },
+            { "150Rnd_762x51_Box_Tracer", 2 },
             { "SmokeShell", 2 },
         };
     };
 
     class AAR : Rifleman {
-        ruck = "B_Carryall_khk";
+        ruck = "B_Carryall_ocamo";
         ruckMagazines[] = {
-            { "30Rnd_65x39_caseless_mag", 6 },
-            { "100Rnd_65x39_caseless_mag", 4 },
+            { "30Rnd_65x39_caseless_green", 6 },
+            { "150Rnd_762x51_Box", 4 },
             { "SmokeShell", 2 },
         };
     };
@@ -128,7 +128,7 @@ class MX {
     };
 
     class MMGG : Rifleman {
-        weapons[] = { "LMG_Mk200_F", "hgun_P07_F" };
+        weapons[] = { "LMG_Mk200_F", "hgun_Rook40_F" };
         magazines[] = {
             { "200Rnd_65x39_cased_Box", 1 },
             { "16Rnd_9x21_Mag", 3 },
@@ -147,9 +147,9 @@ class MX {
     };
 
     class MMGAG : Rifleman {
-        ruck = "B_Carryall_khk";
+        ruck = "B_Carryall_ocamo";
         ruckMagazines[] = {
-            { "30Rnd_65x39_caseless_mag", 6 },
+            { "30Rnd_65x39_caseless_green", 6 },
             { "200Rnd_65x39_cased_Box", 3 },
             { "SmokeShell", 2 },
         };
@@ -168,79 +168,98 @@ class MX {
     };
 
     class MATG : Rifleman {
-        weapons[] = { "arifle_MX_Black_F", "hgun_P07_F", "launch_NLAW_F" };
+        weapons[] = { "arifle_Katiba_F", "hgun_Rook40_F", "launch_RPG32_F" };
         vestMagazines[] = {
-            { "30Rnd_65x39_caseless_mag", 8 },
+            { "30Rnd_65x39_caseless_green", 8 },
             { "SmokeShell", 2 },
             { "HandGrenade", 2 },
             { "ACRE_PRC148", 1 }
         };
-        ruck = "B_Bergen_sgg";
+        ruck = "B_Carryall_ocamo";
         ruckMagazines[] = {
-            { "30Rnd_65x39_caseless_mag", 6 },
-            { "NLAW_F", 2 },
+            { "30Rnd_65x39_caseless_green", 6 },
+            { "RPG32_F", 2 }
         };
     };
 
     class MATAG : Rifleman {
         ruckMagazines[] = {
-            { "30Rnd_65x39_caseless_mag", 6 },
-            { "NLAW_F", 2 },
+            { "30Rnd_65x39_caseless_green", 6 },
+            { "RPG32_F", 1 },
+            { "RPG32_HE_F", 1 }
         };
-        ruck = "B_Bergen_sgg";
+        ruck = "B_Carryall_ocamo";
         items[] = { "ACRE_PRC343", "Rangefinder", "ItemGPS" };
     };
 
     class MATAC : Rifleman {
         ruckMagazines[] = {
-            { "30Rnd_65x39_caseless_mag", 6 },
-            { "NLAW_F", 2 },
+            { "30Rnd_65x39_caseless_green", 6 },
+            { "RPG32_F", 1 },
+            { "RPG32_HE_F", 1 }
         };
-        ruck = "B_Bergen_sgg";
+        ruck = "B_Carryall_ocamo";
         items[] = { "ACRE_PRC343", "Rangefinder", "ItemGPS" };
     };
 
     class HATG : Rifleman {
-        weapons[] = { "arifle_MX_Black_F", "hgun_P07_F", "launch_B_Titan_short_F" };
+        weapons[] = { "arifle_Katiba_F", "hgun_Rook40_F", "launch_O_Titan_short_F" };
         vestMagazines[] = {
-            { "30Rnd_65x39_caseless_mag", 8 },
+            { "30Rnd_65x39_caseless_green", 8 },
             { "SmokeShell", 2 },
             { "HandGrenade", 2 },
             { "ACRE_PRC148", 1 }
         };
-        ruck = "B_Bergen_sgg";
+        ruck = "B_Carryall_ocamo";
         ruckMagazines[] = {
-            { "30Rnd_65x39_caseless_mag", 6 },
+            { "30Rnd_65x39_caseless_green", 6 },
             { "Titan_AT", 2 },
         };
     };
 
     class HATAG : Rifleman {
         ruckMagazines[] = {
-            { "30Rnd_65x39_caseless_mag", 8 },
+            { "30Rnd_65x39_caseless_green", 8 },
             { "Titan_AT", 1 },
             { "Titan_AP", 1 }
         };
-        ruck = "B_Bergen_sgg";
+        ruck = "B_Carryall_ocamo";
         items[] = { "ACRE_PRC343", "Rangefinder", "ItemGPS" };
     };
 
     class HATAC : Rifleman {
         ruckMagazines[] = {
-            { "30Rnd_65x39_caseless_mag", 8 },
+            { "30Rnd_65x39_caseless_green", 8 },
             { "Titan_AT", 1 },
             { "Titan_AP", 1 }
         };
-        ruck = "B_Bergen_sgg";
+        ruck = "B_Carryall_ocamo";
         items[] = { "ACRE_PRC343", "Rangefinder", "ItemGPS" };
     };
 
     class SN : Rifleman {
-     
+        weapons[] = { "srifle_DMR_01_F", "hgun_Rook40_F" };
+        primaryAttachments[] = { "optic_MRCO" };
+        vestMagazines[] = {
+            { "10Rnd_762x51_Mag", 8 },
+            { "SmokeShell", 2 },
+            { "HandGrenade", 2 },
+            { "ACRE_PRC148", 1 }
+        };
+        ruckMagazines[] = {
+            { "10Rnd_762x51_Mag", 6 },
+            { "SmokeShell", 2 }
+        };
     };
 
     class SP : Rifleman {
-      
+        ruck = "B_Carryall_ocamo";
+        ruckMagazines[] = {
+            { "30Rnd_65x39_caseless_green", 6 },
+            { "200Rnd_65x39_cased_Box", 3 },
+            { "SmokeShell", 2 },
+        };
+        items[] = { "ACRE_PRC343", "Rangefinder", "ItemGPS" };
     };
 
     class VC : Crew {
@@ -254,16 +273,16 @@ class MX {
     };
 
     class P : Crew {
-        weapons[] = { "SMG_01_F", "hgun_P07_F" };
+        weapons[] = { "SMG_02_F", "hgun_Rook40_F" };
         magazines[] = {
-            { "30Rnd_45ACP_Mag_SMG_01", 1 },
+            { "30Rnd_9x21_Mag", 1 },
             { "16Rnd_9x21_Mag", 3 }
         };
-        primaryAttachments[] = { "optic_Aco_smg" };
-        helmet = "H_PilotHelmetHeli_B";
-        uniform = "U_B_HeliPilotCoveralls";
+        primaryAttachments[] = { "optic_ACO_grn_smg" };
+        helmet = "H_PilotHelmetHeli_O";
+        uniform = "U_O_PilotCoveralls";
         vestMagazines[] = {
-            { "30Rnd_45ACP_Mag_SMG_01", 6 },
+            { "30Rnd_9x21_Mag", 6 },
             { "SmokeShell", 2 },
             { "ACRE_PRC148", 1 }
         };
@@ -271,39 +290,39 @@ class MX {
     };
 
     class PCM : Crew {
-        weapons[] = { "SMG_01_F", "hgun_P07_F" };
+        weapons[] = { "SMG_02_F", "hgun_Rook40_F" };
         magazines[] = {
-            { "30Rnd_45ACP_Mag_SMG_01", 1 },
+            { "30Rnd_9x21_Mag", 1 },
             { "16Rnd_9x21_Mag", 3 }
         };
-        primaryAttachments[] = { "optic_Aco_smg" };
-        helmet = "H_CrewHelmetHeli_B";
+        primaryAttachments[] = { "optic_ACO_grn_smg" };
+        helmet = "H_CrewHelmetHeli_O";
         vestMagazines[] = {
-            { "30Rnd_45ACP_Mag_SMG_01", 6 },
+            { "30Rnd_9x21_Mag", 6 },
             { "SmokeShell", 2 },
             { "ACRE_PRC148", 1 }
         };
         items[] = { "ACRE_PRC343", "NVGoggles" };
     };
     class ENG : Rifleman {
-        ruck = "B_Carryall_khk";
+        ruck = "B_Carryall_ocamo";
         ruckWeapons[] = {
             { "SatchelCharge_Remote_Mag", 2 },
             { "MineDetector", 1 }
         };
         ruckMagazines[] = {
-            { "30Rnd_65x39_caseless_mag", 6 },
+            { "30Rnd_65x39_caseless_green", 6 },
             { "SmokeShell", 2 },
         };
     };
     class ENGA : Rifleman {
-        ruck = "B_Carryall_khk";
+        ruck = "B_Carryall_ocamo";
         ruckWeapons[] = {
-            { "SatchelCharge_Remote_Mag", 2 },
+            { "30Rnd_65x39_caseless_green", 2 },
             {"MineDetector",1}
         };
         ruckMagazines[] = {
-            { "30Rnd_65x39_caseless_mag", 6 },
+            { "30Rnd_65x39_caseless_green", 6 },
             { "SmokeShell", 2 },
         };
         

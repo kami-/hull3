@@ -24,6 +24,18 @@ hull_gear_fnc_assignInit = {
     _unit setVariable ["hull_gear_template", _template, true];
     removeAllWeapons _unit;
     removeBackpack _unit;
+    [_unit] call hull_gear_fnc_removeNVGs;
+};
+
+hull_gear_fnc_removeNVGs = {
+    FUN_ARGS_1(_unit);
+
+    private "_nvgs";
+    _nvgs = ["NVGoggles", "NVGoggles_OPFOR", "NVGoggles_INDEP"];
+    {
+        _unit unassignItem _x;
+        _unit removeItem _x;
+    } foreach _nvgs;
 };
 
 hull_gear_fnc_getTemplate = {
