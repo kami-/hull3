@@ -2,6 +2,7 @@ class Hull_FactionMapping {
     factions[] = {
         {"BLU_F", "MX"},
         {"BLU_G_F", "MX"},
-        {"OPF_F", "Katiba"}, 
+        {"OPF_F", "Katiba"},
+        {"IND_F", "Mk20"},
     };
 };
