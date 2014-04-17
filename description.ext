@@ -7,6 +7,7 @@
 #include "hull\gear\Katiba.h"
 #include "hull\gear\Mk20.h"
 
+enableDebugConsole = 1;
 
 onLoadName = "*** Insert mission name here. ***";
 onLoadMission = "Made with Hull3";
