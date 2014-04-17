@@ -12,7 +12,7 @@ enableDebugConsole = 1;
 onLoadName = "*** Insert mission name here. ***";
 onLoadMission = "Made with Hull3";
 author = "*** Insert mission author name here. ***";
-loadScreen = "hull/hull_logo.paa";
+loadScreen = "hull\hull_logo.paa";
 
 class Header
 {
