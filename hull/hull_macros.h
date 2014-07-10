@@ -1,4 +1,7 @@
-#define HULL_CONFIGFILE            missionConfigFile
+#ifndef HULL_MACROS_H
+#define HULL_MACROS_H
+
+#define HULL_CONFIGFILE            missionConfigFile >> "Hull"
 
 // WARNING
 // Macros are sensitive for "," (comma), "(", ")" (parenthese) and " " (space).
@@ -176,25 +179,16 @@
 #define AS_ARRAY_4(VAL1,VAL2,VAL3,VAL4) [VAL1,VAL2,VAL3,VAL4]
 #define AS_ARRAY_5(VAL1,VAL2,VAL3,VAL4,VAL5) [VAL1,VAL2,VAL3,VAL4,VAL5]
 
-// Return log message iwith given logging level.
-// Example:
-//      GIVEN:
-//          _gearClass = "FTL";
-//          _gearTemplate = "M4SOC";
-//          (time == 12.341)
-//      WHEN:
-//          _logMessage = LOG_2("WARN","Template '%1' is missing class '%2'!", _gearClass, _gearTemplate);
-//      THEN:
-//          _logMessage == "[HULL] 12.341 [WARN] Template 'M4SOC' is missing class 'FTL'!";
-#define LOG_MSG_0(LVL,FORMAT) (format ["[HULL] %1 [%2] ", time, LVL] + FORMAT)
-#define LOG_MSG_1(LVL,FORMAT,MSG1) (format ["[HULL] %1 [%2] ", time, LVL] + format [FORMAT, MSG1])
-#define LOG_MSG_2(LVL,FORMAT,MSG1,MSG2) (format ["[HULL] %1 [%2] ", time, LVL] + format [FORMAT, MSG1, MSG2])
-#define LOG_MSG_3(LVL,FORMAT,MSG1,MSG2,MSG3) (format ["[HULL] %1 [%2] ", time, LVL] + format [FORMAT, MSG1, MSG2, MSG3])
-#define LOG_MSG_4(LVL,FORMAT,MSG1,MSG2,MSG3,MSG4) (format ["[HULL] %1 [%2] ", time, LVL] + format [FORMAT, MSG1, MSG2, MSG3, MSG4])
-#define LOG_MSG_5(LVL,FORMAT,MSG1,MSG2,MSG3,MSG4,MSG5) (format ["[HULL] %1 [%2] ", time, LVL] + format [FORMAT, MSG1, MSG2, MSG3, MSG4, MSG5])
-#define LOG_MSG_6(LVL,FORMAT,MSG1,MSG2,MSG3,MSG4,MSG5,MSG6) (format ["[HULL] %1 [%2] ", time, LVL] + format [FORMAT, MSG1, MSG2, MSG3, MSG4, MSG5, MSG6])
-#define LOG_MSG_7(LVL,FORMAT,MSG1,MSG2,MSG3,MSG4,MSG5,MSG6,MSG7) (format ["[HULL] %1 [%2] ", time, LVL] + format [FORMAT, MSG1, MSG2, MSG3, MSG4, MSG5, MSG6, MSG7])
-#define LOG_MSG_8(LVL,FORMAT,MSG1,MSG2,MSG3,MSG4,MSG5,MSG6,MSG7,MSG8) (format ["[HULL] %1 [%2] ", time, LVL] + format [FORMAT, MSG1, MSG2, MSG3, MSG4, MSG5, MSG6, MSG7, MSG8])
-
 // Adds weapon to unit if it doesn't have one already.
 #define TRY_ADD_WEAPON(UNIT,WEAPON) if (!((UNIT) hasWeapon (WEAPON))) then {(UNIT) addWeapon (WEAPON);};
+
+// Creates a private declaration for a variable and enables instant assigment.
+// Example:
+//      GIVEN:
+//      WHEN:
+//          DECLARE(_group) = _x;
+//      THEN:
+//          private "_group"; _group = _x;
+#define DECLARE(VAR) private #VAR; VAR
+
+#endif //HULL_MACROS_H
