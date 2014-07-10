@@ -1,9 +1,6 @@
 #include "hull_macros.h"
 
 hull_briefing_fnc_addNotes = {
-    waitUntil {
-        !isNull player;
-    };
     [] call hull_briefing_fnc_addOrbat;
     [] call hull_briefing_fnc_addSideNotes;
 };
@@ -28,4 +25,12 @@ hull_briefing_fnc_addSideNotes = {
         if (side player == CIVILIAN) exitWith {_briefingFile = "hull\briefing\civilian.sqf"};
     };
     [] call compile preprocessFile _briefingFile;
+};
+
+hull_briefing_fnc_addEventHandlers = {
+    ["marker.group.created", hull_briefing_fnc_addNotes] call hull_event_fnc_addEventHandler;
+};
+
+hull_briefing_fnc_preInit = {
+    [] call hull_briefing_fnc_addEventHandlers;
 };
