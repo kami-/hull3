@@ -1,9 +1,13 @@
 #include "hull_macros.h"
 
-#define HULL_MARKER_MEDIC_SIZE [0.5, 0.5]
-#define HULL_MARKER_FIRETEAM_SIZE [0.6, 0.6]
-#define HULL_MARKER_FIRETEAM_COLOR "ColorYellow"
+#define HULL_MARKER_MEDIC_SIZE              [0.5, 0.5]
+#define HULL_MARKER_FIRETEAM_SIZE           [0.6, 0.6]
+#define HULL_MARKER_FIRETEAM_COLOR          "ColorYellow"
 
+#define HULL_MARKER_CUSTOM_DEFAULT_SHAPE    "ICON"
+#define HULL_MARKER_CUSTOM_DEFAULT_TYPE     "flag_Hungary"
+#define HULL_MARKER_CUSTOM_DEFAULT_COLOR    "Default"
+#define HULL_MARKER_CUSTOM_DEFAULT_SIZE     [1, 1]
 
 
 hull_marker_fnc_preInit = {
@@ -12,6 +16,8 @@ hull_marker_fnc_preInit = {
         hull_marker_groups = [];
         hull_marker_medics = [];
         hull_marker_fireTeam = [];
+        hull_marker_custom = [];
+        hull_marker_defaultDelay = 4;
     };
 };
 
@@ -29,6 +35,7 @@ hull_marker_fnc_addMarkers = {
     } foreach hull_marker_rawMarkers;
     hull_marker_rawMarkers = nil;
     [player] call hull_marker_fnc_addFireTeamMarkers;
+    ["marker.group.created", []] call hull_event_fnc_emitEvent;
 };
 
 hull_marker_fnc_addMarker = {
@@ -92,7 +99,17 @@ hull_marker_fnc_updateAllMarkers = {
         [hull_marker_groups] call hull_marker_fnc_updateGroupMarkers;
         [hull_marker_medics] call hull_marker_fnc_updateMedicMarkers;
         [hull_marker_fireTeam] call hull_marker_fnc_updateFireTeamMarkers;
-        sleep 4;
+        sleep hull_marker_defaultDelay;
+        false;
+    };
+};
+
+hull_marker_fnc_updateCustomMarkers = {
+    waitUntil {
+        {
+            _x call hull_marker_fnc_updateCustomMarker;
+        } foreach hull_marker_custom;
+        sleep 1;
         false;
     };
 };
@@ -137,6 +154,15 @@ hull_marker_fnc_updateFireTeamMarkers = {
     } foreach _fireTeam;
 };
 
+hull_marker_fnc_updateCustomMarker = {
+    FUN_ARGS_5(_markerName,_isActive,_lastUpdate,_object,_delay);
+
+    if (_isActive && {alive _object} && {time - _lastUpdate >= _delay}) then {
+        _markerName setMarkerPosLocal getPosASL _object;
+        _this set [2, time];
+    };
+};
+
 hull_marker_fnc_addFireTeamMarkers = {
     FUN_ARGS_1(_unit);
 
@@ -152,6 +178,50 @@ hull_marker_fnc_addFireTeamMarker = {
     [_markerName, getPosATL _unit, "ICON", "mil_triangle", HULL_MARKER_FIRETEAM_COLOR, "", HULL_MARKER_FIRETEAM_SIZE] call hull_marker_fnc_createMarker;
     _unit setVariable ["hull_marker_fireTeam", _markerName];
     PUSH(hull_marker_fireTeam,_unit);
+};
+
+hull_marker_fnc_addCustomMarker = {
+    FUN_ARGS_1(_object);
+
+    private ["_delay", "_shape", "_type", "_color", "_size", "_text", "_markerIndex", "_markerName"];
+    if (count _this < 7) then {_text = ""}                                  else {_text  = _this select 6};
+    if (count _this < 6) then {_size = HULL_MARKER_CUSTOM_DEFAULT_SIZE}     else {_size  = _this select 5};
+    if (count _this < 5) then {_color = HULL_MARKER_CUSTOM_DEFAULT_COLOR}   else {_color = _this select 4};
+    if (count _this < 4) then {_type = HULL_MARKER_CUSTOM_DEFAULT_TYPE}     else {_type  = _this select 3};
+    if (count _this < 3) then {_shape = HULL_MARKER_CUSTOM_DEFAULT_SHAPE}   else {_shape = _this select 2};
+    if (count _this < 2) then {_delay = hull_marker_defaultDelay}           else {_delay = _this select 1};
+    _markerIndex = count hull_marker_custom;
+    _markerName = format ["hull_marker_custom_%1", _markerIndex];
+    [_markerName, getPosATL _object, _shape, _type, _color, _text, _size] call hull_marker_fnc_createMarker;
+    PUSH(hull_marker_custom,AS_ARRAY_5(_markerName,true,time,_object,_delay));
+
+    _markerIndex;
+};
+
+hull_marker_fnc_deactivateCustomMarker = {
+    FUN_ARGS_1(_markerIndex);
+
+    if (count hull_marker_custom > _markerIndex) then {
+        (hull_marker_custom select _markerIndex) set [1, fale];
+    };
+};
+
+hull_marker_fnc_activateCustomMarker = {
+    FUN_ARGS_1(_markerIndex);
+
+    if (count hull_marker_custom > _markerIndex) then {
+        (hull_marker_custom select _markerIndex) set [1, true];
+    };
+};
+
+hull_marker_fnc_deleteCustomMarker = {
+    FUN_ARGS_1(_markerIndex);
+
+    if (count hull_marker_custom > _markerIndex) then {
+        DECLARE(_markerData) = hull_marker_custom select _markerIndex;
+        deleteMarkerLocal  (_markerData select 0);
+        _markerData set [1, false];
+    };
 };
 
 hull_marker_fnc_createMarker = {
