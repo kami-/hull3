@@ -88,14 +88,10 @@ hull_marker_fnc_addMedicMarker = {
 };
 
 hull_marker_fnc_updateAllMarkers = {
-    private ["_groups", "_medics", "_fireTeam"];
-    _groups = hull_marker_groups;
-    _medics = hull_marker_medics;
-    _fireTeam = hull_marker_fireTeam;
     waitUntil {
-        [_groups] call hull_marker_fnc_updateGroupMarkers;
-        [_medics] call hull_marker_fnc_updateMedicMarkers;
-        [_fireTeam] call hull_marker_fnc_updateFireTeamMarkers;
+        [hull_marker_groups] call hull_marker_fnc_updateGroupMarkers;
+        [hull_marker_medics] call hull_marker_fnc_updateMedicMarkers;
+        [hull_marker_fireTeam] call hull_marker_fnc_updateFireTeamMarkers;
         sleep 4;
         false;
     };
