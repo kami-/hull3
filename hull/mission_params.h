@@ -1,4 +1,4 @@
-class Hull_MissionParams {
+class MissionParams {
     // Date YYYY-MM-DD
     date[] = {
         {2014, 1, 24}, // New Moon

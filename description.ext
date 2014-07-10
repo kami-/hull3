@@ -1,11 +1,4 @@
-#include "hull\hull_xeh.h"
-#include "hull\mission_params.h"
-
-#include "hull\gear\factions.h"
-
-#include "hull\gear\MX.h"
-#include "hull\gear\Katiba.h"
-#include "hull\gear\Mk20.h"
+#include "hull\hull.h"
 
 enableDebugConsole = 1;
 
