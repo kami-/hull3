@@ -1,5 +1,10 @@
 #include "hull_macros.h"
 
+#define LOGGING_LEVEL_WARN
+#define LOGGING_TO_RPT
+#include "logbook.h"
+
+
 #define HULL_TEAMCOLOR_RED ["FTL", "RAT"]
 #define HULL_TEAMCOLOR_BLUE ["AR", "AAR"]
 
@@ -21,16 +26,16 @@ hull_unit_fnc_waitForPlayer = {
     waitUntil {
         !isNull player;
     };
+    ["player.initialized", [player]] call hull_event_fnc_emitEvent;
 };
 
 hull_unit_fnc_playerInit = {
     [] call hull_unit_fnc_waitForPlayer;
 
     [] spawn hull_acre_fnc_setPlayerFrequencies;
-    [player] spawn hull_gear_fnc_tryAssignRadios;
     [] call hull_marker_fnc_addMarkers;
     [] spawn hull_marker_fnc_updateAllMarkers;
-    [] call hull_briefing_fnc_addNotes;
+    [] spawn hull_marker_fnc_updateCustomMarkers;
     [] call hull_mission_fnc_addPlayerEHs;
     [] spawn hull_mission_fnc_clientSafetyTimerLoop;
     [] call hull_unit_fnc_setFireTeamColors;
@@ -68,7 +73,7 @@ hull_unit_fnc_friendlyFireEH = {
     FUN_ARGS_5(_unit,_selectionName,_damage,_source,_projectile);
 
     if (_selectionName == "" && {_unit != _source} && {side _unit == side _source}) then {
-        _message = LOG_MSG_4("WARN", "Friendly Fire - '%1' dealt '%2' damage with '%3' to '%4'!", _source, _damage, _projectile, _unit);
+        DECLARE(_message) = LOGGING_FORMAT("hull.unit.friendlyFire","WARN",FMT_4("'%1' dealt '%2' damage with '%3' to '%4'!",_source,_damage,_projectile,_unit));
         [_message] call hull_common_fnc_logOnServer;
     };
 
@@ -77,6 +82,11 @@ hull_unit_fnc_friendlyFireEH = {
 
 hull_unit_fnc_killedEH = {
     FUN_ARGS_2(_unit,_killer);
+
+    if (_unit != _killer && {side _unit == side _killer}) then {
+        DECLARE(_message) = LOGGING_FORMAT("hull.unit.friendlyFire","WARN",FMT_2("'%1' killed '%2'!",_killer,_unit));
+        [_message] call hull_common_fnc_logOnServer;
+    };
 
     _unit removeEventHandler ["HandleDamage", _unit getVariable "hull_eh_friendlyFire"];
     _unit removeEventHandler ["Killed", _unit getVariable "hull_eh_killed"];
