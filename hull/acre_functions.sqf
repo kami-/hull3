@@ -30,6 +30,7 @@ hull_acre_fnc_setPlayerFrequencies = {
     };
     [] call hull_acre_fnc_setFrequencies;
     hull_acre_isInitialized = true;
+    ["acre.initialized", [player]] call hull_event_fnc_emitEvent;
 };
 
 hull_acre_fnc_setFrequencies = {
