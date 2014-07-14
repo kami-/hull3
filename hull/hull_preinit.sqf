@@ -14,6 +14,7 @@ hull_isInitialized = false;
 
 hull_isInitialized = true;
 
+[] call hull_mission_fnc_preInit;
 [] call hull_acre_fnc_preInit;
 [] call hull_marker_fnc_preInit;
 [] call hull_gear_fnc_preInit;
