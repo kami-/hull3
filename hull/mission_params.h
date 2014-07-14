@@ -17,12 +17,24 @@ class MissionParams {
         {0, 0} // Night
     };
 
-    // Overcast, Fog, Rain
+    // Fog Strength, Decay, Base
+    fog[] = {
+        {0,     0,      0}, // Light
+        {0.2,   0,      0}, // Medium
+        {0.4,   0,      0} // Heavy
+    };
+
+    // Overcast, Rain, Rainbow, Lightnings, Wind Strength, Wind Gusts, Waves, Humidity
     weather[] = {
-        {0, 0, 0}, // Clear
-        {0.6, 0.1, 0}, // Overcast
-        {0.6, 0.4125, 0}, // Light Fog
-        {0.60, 0.85, 0}, // Heavy Fog
-        {1.00, 0.4125, 1} // Storm
+        {-1}, // Random
+        {0,     0,      0,      0,      0,      0,      0,      0}, // Clear (Calm)
+        {0.01,  0,      0,      0,      0.25,   0.5,    0.25,   0.2}, // Clear (Light Winds)
+        {0.01,  0,      0,      0,      0.75,   1,      0.75,   0.2}, // Clear (Stong Winds)
+        {0.8,   0,      0,      0,      0,      0,      0.1,    0.2}, // Overcast (Calm)
+        {0.8,   0,      0,      0,      0.25,   0.5,    0.25,   0.2}, // Overcast (Light Winds)
+        {0.8,   0,      0,      0,      0.75,   1,      0.75,   0.2}, // Overcast (Strong Winds)
+        {1,     1,      0,      0,      0.25,   0.5,    0.75,   0.9}, // Rain (Light Winds)
+        {1,     1,      0,      0,      0.75,   1,      0.75,   0.9}, // Rain (Strong Winds)
+        {1,     1,      0,      1,      1,      1,      1,      1}, // Storm
     };
 };
