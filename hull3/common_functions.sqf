@@ -1,5 +1,9 @@
 #include "hull_macros.h"
 
+#include "\userconfig\hull3\log\common.h"
+#include "logbook.h"
+
+
 hull_common_fnc_logOnServer = {
     FUN_ARGS_1(_message);
 
