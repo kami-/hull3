@@ -1,7 +1,8 @@
 #include "hull_macros.h"
 
-#include "\userconfig\hull\log\briefing.h"
+#include "\userconfig\hull3\log\briefing.h"
 #include "logbook.h"
+
 
 hull_briefing_fnc_preInit = {
     [] call hull_briefing_fnc_addEventHandlers;

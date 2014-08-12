@@ -1,6 +1,6 @@
 #include "hull_macros.h"
 
-#include "\userconfig\hull\log\config.h"
+#include "\userconfig\hull3\log\config.h"
 #include "logbook.h"
 
 
