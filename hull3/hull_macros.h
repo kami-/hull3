@@ -21,13 +21,19 @@
 #define GEAR_UNIT_FIELDS                \
     [ \
         ["ruck", {isText _config}], \
+        ["helmet", {isText _config}], \
+        ["uniform", {isText _config}], \
+        ["vest", {isText _config}], \
+        ["goggles", {isText _config}], \
         ["magazines", {isArray _config}], \
         ["weapons", {isArray _config}], \
+        ["primaryAttachments", {isArray _config}], \
+        ["secondaryAttachments", {isArray _config}], \
         ["ruckWeapons", {isArray _config}], \
         ["ruckMagazines", {isArray _config}], \
+        ["vestMagazines", {isArray _config}], \
         ["items", {isArray _config}], \
-        ["ifak", {isArray _config}], \
-        ["code", {isText _config}] \
+        ["code", {isText _config}]
     ]
 
 #define GEAR_VEHICLE_FIELDS             \
