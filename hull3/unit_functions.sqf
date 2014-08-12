@@ -1,13 +1,7 @@
 #include "hull_macros.h"
 
-#define LOGGING_LEVEL_WARN
-#define LOGGING_TO_RPT
+#include "\userconfig\hull3\log\unit.h"
 #include "logbook.h"
-
-
-#define HULL_TEAMCOLOR_RED ["FTL", "RAT"]
-#define HULL_TEAMCOLOR_BLUE ["AR", "AAR"]
-
 
 
 hull_unit_fnc_init = {
@@ -54,11 +48,13 @@ hull_unit_fnc_foreachNonPlayerUnits = {
 hull_unit_fnc_addEHs = {
     FUN_ARGS_1(_unit);
 
-    private "_ehId";
-    _ehId = _unit addEventHandler ["HandleDamage", {_this call hull_unit_fnc_friendlyFireEH;}];
-    _unit setVariable ["hull_eh_friendlyFire", _ehId];
-    _ehId = _unit addEventHandler ["Killed", {_this call hull_unit_fnc_killedEH;}];
-    _unit setVariable ["hull_eh_killed", _ehId];
+    if (_unit isKindOf "CAManBase") then {
+        private "_ehId";
+        _ehId = _unit addEventHandler ["HandleDamage", {_this call hull_unit_fnc_friendlyFireEH;}];
+        _unit setVariable ["hull_eh_friendlyFire", _ehId];
+        _ehId = _unit addEventHandler ["Killed", {_this call hull_unit_fnc_killedEH;}];
+        _unit setVariable ["hull_eh_killed", _ehId];
+    };
 };
 
 hull_unit_fnc_addFiredEHs = {
@@ -106,4 +102,24 @@ hull_unit_fnc_setFireTeamColors = {
             };
         } foreach units group player;
     };
+};
+
+hull_unit_fnc_getAssignedTeam = {
+    FUN_ARGS_1(_gearClass);
+
+    DECLARE(_team) = "";
+    {
+        if (_gearClass == _x select 0) exitWith {_team = _x select 1};
+    } foreach (["Group", "assignedTeams"] call hull_config_fnc_getArray);
+
+    _team;
+};
+
+hull_unit_fnc_setFireTeamColors = {
+    {
+        DECLARE(_assignedTeam) = [_x getVariable "hull_gear_class"] call hull_unit_fnc_getAssignedTeam;
+        if (_assignedTeam != "") then {
+            _x assignTeam _assignedTeam;
+        };
+    } foreach units group player;
 };
