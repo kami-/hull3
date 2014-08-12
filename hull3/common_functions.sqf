@@ -10,10 +10,3 @@ hull_common_fnc_logOnServer = {
         diag_log _message;
     };
 };
-
-hull_common_fnc_missionSettings = {
-    // Disables AI talking
-    player setVariable ["BIS_noCoreConversations", true];
-    // Disables game saving
-    enableSaving [false, false];
-};
