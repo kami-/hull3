@@ -1,27 +1,19 @@
 #include "hull_macros.h"
 
-#define HULL_ACRE_SHORTRANGE_DEFAULT     "ACRE_PRC343"
-#define HULL_ACRE_SHORTRANGE_RADIOS      ["ACRE_PRC343"]
-#define HULL_ACRE_SHORTRANGE_BASEFREQ    2400
-
-#define HULL_ACRE_LONGRANGE_DEFAULT      "ACRE_PRC148"
-#define HULL_ACRE_LONGRANGE_RADIOS       ["ACRE_PRC148", "ACRE_PRC148_UHF", "ACRE_PRC117F", "ACRE_PRC119", "ACRE_PRC152"]
-#define HULL_ACRE_LONGRANGE_BASEFREQ     32
-
-#define HULL_ACRE_CHANNELSTEP            1
-
-#define HULL_ACRE_SIDE_WESTSTEP          0.2
-#define HULL_ACRE_SIDE_EASTSTEP          0.4
-#define HULL_ACRE_SIDE_RESISTANCESTEP    0.6
-#define HULL_ACRE_SIDE_DEFAULTSTEP       0.8
-
+#include "\userconfig\hull3\log\acre.h"
+#include "logbook.h"
 
 
 hull_acre_fnc_preInit = {
+    [] call hull_acre_fnc_addEventHandlers;
     hull_acre_isInitialized = false;
     if (isDedicated) then {
         hull_acre_isInitialized = true;
     };
+};
+
+hull_acre_fnc_addEventHandlers = {
+    ["player.initialized", hull_acre_fnc_playerInit] call hull_event_fnc_addEventHandler;
 };
 
 hull_acre_fnc_setPlayerFrequencies = {
@@ -33,9 +25,42 @@ hull_acre_fnc_setPlayerFrequencies = {
     ["acre.initialized", [player]] call hull_event_fnc_emitEvent;
 };
 
+hull_acre_fnc_playerInit = {
+    DEBUG("hull.acre.jip","ACRE player init called.");
+    if (alive player) then {
+        DEBUG("hull.acre.jip","Player is alive, starting spectator check.");
+        [] spawn {
+            waitUntil {
+                DEBUG("hull.acre.jip",FMT_2("Waiting for ACRE to initialize TS ID '%1' and spectator list '%2'.",acre_sys_core_ts3id,ACRE_SPECTATORS_LIST));
+                sleep 5;
+                !isNil {acre_sys_core_ts3id} && {acre_sys_core_ts3id != -1} && {!isNil {ACRE_SPECTATORS_LIST}}; // wait for ACRE to set ts3id and spectator list
+            };
+            DEBUG("hull.acre.jip",FMT_2("ACRE init finished with TS ID '%1' and spectator list '%2'.",acre_sys_core_ts3id,ACRE_SPECTATORS_LIST));
+            if (acre_sys_core_ts3id in ACRE_SPECTATORS_LIST) then {
+                DEBUG("hull.acre.jip",FMT_2("TS ID '%1' found in spectator list '%2'.",acre_sys_core_ts3id,ACRE_SPECTATORS_LIST));
+                [false] call acre_api_fnc_setSpectator;
+                DEBUG("hull.acre.jip","Setting ACRE spectator to false.");
+            };
+        };
+    } else {
+        DEBUG("hull.acre.jip","Player is dead, starting setting ACRE spectator to true.");
+        [true] call acre_api_fnc_setSpectator;
+    };
+};
+
 hull_acre_fnc_setFrequencies = {
-    [HULL_ACRE_SHORTRANGE_DEFAULT, HULL_ACRE_SHORTRANGE_RADIOS, HULL_ACRE_SHORTRANGE_BASEFREQ, HULL_ACRE_CHANNELSTEP] call hull_acre_fnc_setChannels;
-    [HULL_ACRE_LONGRANGE_DEFAULT, HULL_ACRE_LONGRANGE_RADIOS, HULL_ACRE_LONGRANGE_BASEFREQ, HULL_ACRE_CHANNELSTEP] call hull_acre_fnc_setChannels;
+    [
+        ["ACRE", "ShortRange", "default"] call hull_config_fnc_getText,
+        ["ACRE", "ShortRange", "radios"] call hull_config_fnc_getArray,
+        ["ACRE", "ShortRange", "baseFrequency"] call hull_config_fnc_getNumber,
+        ["ACRE", "Steps", "channel"] call hull_config_fnc_getNumber
+    ] call hull_acre_fnc_setChannels;
+    [
+        ["ACRE", "LongRange", "default"] call hull_config_fnc_getText,
+        ["ACRE", "LongRange", "radios"] call hull_config_fnc_getArray,
+        ["ACRE", "LongRange", "baseFrequency"] call hull_config_fnc_getNumber,
+        ["ACRE", "Steps", "channel"] call hull_config_fnc_getNumber
+    ] call hull_acre_fnc_setChannels;
 };
 
 hull_acre_fnc_setChannels = {
@@ -65,9 +90,9 @@ hull_acre_fnc_getCalculatedChannels = {
 hull_acre_fnc_getSideStep = {
     FUN_ARGS_1(_unit);
     call {
-        if (side player == WEST) exitWith {HULL_ACRE_SIDE_WESTSTEP};
-        if (side player == EAST) exitWith {HULL_ACRE_SIDE_EASTSTEP};
-        if (side player == RESISTANCE) exitWith {HULL_ACRE_SIDE_RESISTANCESTEP};
-        HULL_ACRE_SIDE_DEFAULTSTEP;
+        if (side player == WEST) exitWith {["ACRE", "Steps", "west"] call hull_config_fnc_getNumber};
+        if (side player == EAST) exitWith {["ACRE", "Steps", "east"] call hull_config_fnc_getNumber};
+        if (side player == RESISTANCE) exitWith {["ACRE", "Steps", "resistance"] call hull_config_fnc_getNumber};
+        ["ACRE", "Steps", "default"] call hull_config_fnc_getNumber;
     };
 };
