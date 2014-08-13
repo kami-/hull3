@@ -1,6 +1,6 @@
 #include "hull_macros.h"
 
-#include "\userconfig\hull\log\preinit.h"
+#include "\userconfig\hull3\log\preinit.h"
 #include "logbook.h"
 
 
