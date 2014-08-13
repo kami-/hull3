@@ -33,7 +33,7 @@
         ["ruckMagazines", {isArray _config}], \
         ["vestMagazines", {isArray _config}], \
         ["items", {isArray _config}], \
-        ["code", {isText _config}]
+        ["code", {isText _config}] \
     ]
 
 #define GEAR_VEHICLE_FIELDS             \
