@@ -129,8 +129,8 @@ hull_gear_fnc_assignTemplate = {
         ["secondaryAttachments",    CONFIG_TYPE_ARRAY,  hull_gear_fnc_assignSecondaryAttachments],
         ["ruckWeapons",             CONFIG_TYPE_ARRAY,  hull_gear_fnc_assignRuckWeapons],
         ["ruckMagazines",           CONFIG_TYPE_ARRAY,  hull_gear_fnc_assignRuckMagazines],
-        ["vestMagazines",           CONFIG_TYPE_ARRAY,  hull_gear_fnc_assignVestMagazines]
-        ["items",                   CONFIG_TYPE_ARRAY,  hull_gear_fnc_assignNonRadioItems],
+        ["vestMagazines",           CONFIG_TYPE_ARRAY,  hull_gear_fnc_assignVestMagazines],
+        ["items",                   CONFIG_TYPE_ARRAY,  hull_gear_fnc_assignNonRadioItems]
     ];
     [_unit, _class, _template, _assignables] call hull_gear_fnc_assignObjectTemplate;
     _unit selectWeapon primaryWeapon _unit;
