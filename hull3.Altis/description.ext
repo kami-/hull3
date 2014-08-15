@@ -5,7 +5,7 @@ enableDebugConsole = 1;
 onLoadName = "*** Insert mission name here. ***";
 onLoadMission = "Made with Hull3";
 author = "*** Insert mission author name here. ***";
-loadScreen = "hull\hull_logo.paa";
+loadScreen = "x\ark\addons\hull3\resources\hull_logo.paa";
 
 class Header
 {
@@ -52,9 +52,9 @@ class Params {
 
     class Hull_SafetyTimer {
         title = "Safety Timer";
-        values[] = {0,1,2,3,5,10,15};
-        texts[] = {"Off", "1 minute", "2 minutes", "3 munites", "5 minutes", "10 minutes", "15 minutes"};
-        default = 5;
-        code = "hull_mission_safetyTimer = %1";
+        values[] = {9999,0};
+        texts[] = {"On", "Off"};
+        default = 9999;
+        code = "hull_mission_safetyTimerEnd = %1";
     };
 };
