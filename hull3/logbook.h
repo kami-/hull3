@@ -55,8 +55,16 @@
     #define CUSTOM_LOGGER(MESSG)
 #endif //LOGGING_TO_CUSTOM
 
+#define TIME_PAD_LENGTH                         9
+#define LOG_LVL_PAD_LENGTH                      9
+#define CONTEXT_PAD_LENGTH                      30
 #ifndef LOGGING_FORMAT
-    #define LOGGING_FORMAT(CTX,STRLVL,MESSG)    format ["%1 [%2] %3 - %4", time, CTX, STRLVL, MESSG]
+    #define LOGGING_FORMAT(CTX,STRLVL,MESSG)    format ["%1 %2 %3   %4", \
+            [str time, TIME_PAD_LENGTH] call LB_FNC_RIGHT_PAD, \
+            [format ["[%1]", STRLVL], LOG_LVL_PAD_LENGTH] call LB_FNC_RIGHT_PAD, \
+            [CTX, CONTEXT_PAD_LENGTH] call LB_FNC_RIGHT_PAD, \
+            MESSG \
+        ]
 #endif //LOGGING_FORMAT
 
 #ifdef LOGGING_LEVEL_TRACE
@@ -173,5 +181,19 @@
         };
     };
 #endif //LOGGING_RUNTIME
+
+#define LB_FNC_RIGHT_PAD                        logbook_fnc_rightPad
+if (isNil {LB_FNC_RIGHT_PAD}) then {
+        LB_FNC_RIGHT_PAD = {
+            private ["_stringArray", "_padLength"];
+            _stringArray = toArray (_this select 0);
+            _padLength = _this select 1;
+            for "_i" from 1 to _padLength - (count _stringArray) do {
+                _stringArray set [count _stringArray, 32];
+            };
+
+            toString _stringArray;
+        };
+};
 
 #endif //LOGBOOK_H
