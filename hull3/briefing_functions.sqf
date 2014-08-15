@@ -6,7 +6,7 @@
 
 hull_briefing_fnc_preInit = {
     [] call hull_briefing_fnc_addEventHandlers;
-    DEBUG("hull.briefing","briefing functions preInit finished.");
+    DEBUG("hull.briefing","Briefing functions preInit finished.");
 };
 
 hull_briefing_fnc_addEventHandlers = {
