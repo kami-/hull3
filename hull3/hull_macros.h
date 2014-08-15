@@ -20,11 +20,11 @@
 
 #define GEAR_UNIT_FIELDS                \
     [ \
-        ["ruck", {isText _config}], \
         ["helmet", {isText _config}], \
+        ["goggles", {isText _config}], \
         ["uniform", {isText _config}], \
         ["vest", {isText _config}], \
-        ["goggles", {isText _config}], \
+        ["ruck", {isText _config}], \
         ["magazines", {isArray _config}], \
         ["weapons", {isArray _config}], \
         ["primaryAttachments", {isArray _config}], \
