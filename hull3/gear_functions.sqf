@@ -114,15 +114,15 @@ hull_gear_fnc_getTemplateByFaction = {
     _template;
 };
 
-hull_gear_fnc_assignTemplate = {
+hull_gear_fnc_assignUnitTemplate = {
     FUN_ARGS_3(_unit,_class,_template);
 
     DECLARE(_assignables) = [
-        ["ruck",                    CONFIG_TYPE_TEXT,   hull_gear_fnc_assignRuck],
+        ["helmet",                  CONFIG_TYPE_TEXT,   hull_gear_fnc_assignHelmet],
         ["goggles",                 CONFIG_TYPE_TEXT,   hull_gear_fnc_assignGoggles],
-        ["uniform",                 CONFIG_TYPE_TEXT,   hull_gear_fnc_assignVest],
-        ["helmet",                  CONFIG_TYPE_TEXT,   hull_gear_fnc_assignUniform],
-        ["ruck",                    CONFIG_TYPE_TEXT,   hull_gear_fnc_assignHelmet],
+        ["uniform",                 CONFIG_TYPE_TEXT,   hull_gear_fnc_assignUniform],
+        ["vest",                    CONFIG_TYPE_TEXT,   hull_gear_fnc_assignVest],
+        ["ruck",                    CONFIG_TYPE_TEXT,   hull_gear_fnc_assignRuck],
         ["magazines",               CONFIG_TYPE_ARRAY,  hull_gear_fnc_assignMagazines],
         ["weapons",                 CONFIG_TYPE_ARRAY,  hull_gear_fnc_assignWeapons],
         ["primaryAttachments",      CONFIG_TYPE_ARRAY,  hull_gear_fnc_assignPrimaryAttachments],
@@ -162,29 +162,37 @@ hull_gear_fnc_assignObjectTemplate = {
 hull_gear_fnc_assignHelmet = {
     FUN_ARGS_2(_unit,_helmet);
 
-    _unit addHeadgear _helmet;
-    TRACE("hull.gear.assign",FMT_2("Assigned helmet '%1' to unit '%2'.",_helmet,_unit));
-};
-
-hull_gear_fnc_assignUniform = {
-    FUN_ARGS_2(_unit,_uniform);
-
-    _unit addUniform _uniform;
-    TRACE("hull.gear.assign",FMT_2("Assigned uniform '%1' to unit '%2'.",_uniform,_unit));
-};
-
-hull_gear_fnc_assignVest = {
-    FUN_ARGS_2(_unit,_vest);
-
-    _unit addVest _vest;
-    TRACE("hull.gear.assign",FMT_2("Assigned vest '%1' to unit '%2'.",_vest,_unit));
+    if (_helmet != "") then {
+        _unit addHeadgear _helmet;
+        TRACE("hull.gear.assign",FMT_2("Assigned helmet '%1' to unit '%2'.",_helmet,_unit));
+    };
 };
 
 hull_gear_fnc_assignGoggles = {
     FUN_ARGS_2(_unit,_goggles);
 
-    _unit addGoggles _goggles;
-    TRACE("hull.gear.assign",FMT_2("Assigned goggles '%1' to unit '%2'.",_goggles,_unit));
+    if (_goggles != "") then {
+        _unit addGoggles _goggles;
+        TRACE("hull.gear.assign",FMT_2("Assigned goggles '%1' to unit '%2'.",_goggles,_unit));
+    };
+};
+
+hull_gear_fnc_assignUniform = {
+    FUN_ARGS_2(_unit,_uniform);
+
+    if (_uniform != "") then {
+        _unit addUniform _uniform;
+        TRACE("hull.gear.assign",FMT_2("Assigned uniform '%1' to unit '%2'.",_uniform,_unit));
+    };
+};
+
+hull_gear_fnc_assignVest = {
+    FUN_ARGS_2(_unit,_vest);
+
+    if (_vest != "") then {
+        _unit addVest _vest;
+        TRACE("hull.gear.assign",FMT_2("Assigned vest '%1' to unit '%2'.",_vest,_unit));
+    };
 };
 
 hull_gear_fnc_assignRuck = {
@@ -376,6 +384,7 @@ hull_gear_fnc_validateTemplate = {
             _error = true;
         };
     } foreach _fields;
+    DEBUG("hull.gear.validate",FMT_2("There were %1 errors while validating unit '%2'.",if (_error) then {""} else {"no"},_unit));
 
     _error;
 };
