@@ -40,12 +40,32 @@ hull_acre_fnc_playerInit = {
                 DEBUG("hull.acre.jip",FMT_2("TS ID '%1' found in spectator list '%2'.",acre_sys_core_ts3id,ACRE_SPECTATORS_LIST));
                 [false] call acre_api_fnc_setSpectator;
                 DEBUG("hull.acre.jip","Setting ACRE spectator to false.");
+                [] spawn hull_acre_fnc_tsRestartCheck;
             };
         };
     } else {
         DEBUG("hull.acre.jip","Player is dead, starting setting ACRE spectator to true.");
         [true] call acre_api_fnc_setSpectator;
     };
+};
+
+hull_acre_fnc_tsRestartCheck = {
+    waitUntil {
+        player sideChat "You are a JIP. Restart your TeamSpeak!";
+        sleep 3;
+        isNil {acre_sys_io_pipeHandle};
+    };
+    waitUntil {
+        player sideChat "ACRE has not been initialized yet, do not talk!";
+        sleep 1;
+        !isNil {acre_sys_io_pipeHandle};
+    };
+    // Just to make sure ACRE initialized properly, wait 5 seconds
+    for "_i" from 1 to 5 do {
+        player sideChat "ACRE has not been initialized yet, do not talk!";
+        sleep 1;
+    };
+    player sideChat "ACRE has been initialized. You can talk now.";
 };
 
 hull_acre_fnc_setFrequencies = {
