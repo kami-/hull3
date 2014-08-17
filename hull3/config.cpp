@@ -29,7 +29,6 @@ class CfgVehicles {
     class Hull_DisableGroupMarkers_Module : Logic {
         displayName = "Hull: Disable Group Markers";
         icon = ADDON_PATH(resources\hull_module.paa);
-        model = "\ca\weapons\empty";
         vehicleClass = "Modules";
         class Eventhandlers {
             init = "hull_marker_isGroupEnabled = false;";
@@ -39,7 +38,6 @@ class CfgVehicles {
     class Hull_DisableFireTeamMarkers_Module : Logic {
         displayName = "Hull: Disable Fire Team Member Markers";
         icon = ADDON_PATH(resources\hull_module.paa);
-        model = "\ca\weapons\empty";
         vehicleClass = "Modules";
         class Eventhandlers {
             init = "hull_marker_isFireTeamEnabled = false;";
