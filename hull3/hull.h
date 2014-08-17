@@ -8,6 +8,7 @@ class Hull {
     class Gear {
         #include "gear\factions.h"
 
+        #include "gear\Default.h"
         #include "gear\MX.h"
         #include "gear\Katiba.h"
         #include "gear\Mk20.h"
