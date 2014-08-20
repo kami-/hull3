@@ -322,7 +322,7 @@ hull_gear_fnc_assignRadios = {
 
     [_unit] call hull_gear_fnc_removeRadios;
     {
-        _unit addWeapon _x;
+        _unit addItem _x;
     } foreach ([_items] call hull_gear_fnc_getRadios);
     TRACE("hull.gear.assign",FMT_2("Assigned radios '%1' to unit '%2'.",[_items] call hull_gear_fnc_getRadios,_unit));
 };
@@ -332,10 +332,11 @@ hull_gear_fnc_removeRadios = {
 
     {
         if (_x == "ItemRadio" || {[_x] call acre_api_fnc_isRadio}) then {
-            _unit removeWeapon _x;
+            _unit unassignItem _x;
+            _unit removeItem _x;
         };
-    } foreach (weapons _unit);
-    TRACE("hull.gear.assign",FMT_1("Removed radios from unit '%1'.",_unit));
+    } foreach ((items _unit) + (assignedItems _unit));
+    TRACE("hull.gear.assign",FMT_2("Removed radios from items '%1' of unit '%2'.",(items _unit) + (assignedItems _unit),_unit));
 };
 
 hull_gear_fnc_getRadios = {
