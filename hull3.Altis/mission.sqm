@@ -149,7 +149,7 @@ class Mission
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
-					init="[this, [""DC""], [""XO"", ""ColorBlack""]] call hull_unit_fnc_init;";
+					init="[this, [""XO""], [""XO"", ""ColorBlack""]] call hull_unit_fnc_init;";
 					description="NATO - Executive Officer";
 				};
 			};
@@ -2312,7 +2312,7 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					init="[this, [""DC""], [""XO"", ""ColorBlack""]] call hull_unit_fnc_init;";
+					init="[this, [""XO""], [""XO"", ""ColorBlack""]] call hull_unit_fnc_init;";
 					description="CSAT - Executive Officer";
 				};
 				class Item3
@@ -4476,7 +4476,7 @@ class Mission
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
-					init="[this, [""DC""], [""XO"", ""ColorBlack""]] call hull_unit_fnc_init;";
+					init="[this, [""XO""], [""XO"", ""ColorBlack""]] call hull_unit_fnc_init;";
 					description="AAF - Executive Officer";
 				};
 			};
