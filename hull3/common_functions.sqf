@@ -14,3 +14,7 @@ hull_common_fnc_logOnServer = {
         diag_log _message;
     };
 };
+
+hull_common_fnc_isHeadlessClient = {
+    (!isNil {hasInterface} && {!hasInterface}) || {!isNil {adm_hc_defaultNames} && {(name player) in adm_hc_defaultNames}};
+};
