@@ -31,13 +31,13 @@ class Mission
 		"A3_Air_F_Gamma_Plane_Fighter_03",
 		"A3_Air_F_EPB_Heli_Light_03",
 		"A3_Soft_F_MRAP_03",
-		"A3_Soft_F_TruckHeavy"
+		"A3_Soft_F_TruckHeavy",
+		"a3_characters_f"
 	};
 	addOnsAuto[]=
 	{
 		"A3_Characters_F_BLUFOR",
-		"a3_characters_f_beta",
-		"a3_characters_f_gamma",
+		"a3_characters_f",
 		"A3_Characters_F_OPFOR",
 		"A3_Characters_F_INDEP",
 		"A3_Armor_F_AMV",
@@ -68,16 +68,15 @@ class Mission
 	randomSeed=11937205;
 	class Intel
 	{
-		briefingName="** Mission Name ***";
-		overviewText="*** Mission Description ***";
-		timeOfChanges=1800.0002;
-		startWeather=0.30000001;
-		startWind=0.1;
-		startWaves=0.1;
-		forecastWeather=0.30000001;
-		forecastWind=0.1;
-		forecastWaves=0.1;
-		forecastLightnings=0.1;
+		briefingName="hull3 sample mission";
+		overviewText="hull3 sample mission";
+		startWeather=0.29999998;
+		startWind=0.099999994;
+		startWaves=0.099999994;
+		forecastWeather=0.29999998;
+		forecastWind=0.099999994;
+		forecastWaves=0.099999994;
+		forecastLightnings=0.099999994;
 		year=2035;
 		month=6;
 		day=24;
@@ -6536,26 +6535,29 @@ class Mission
 			vehicle="B_APC_Wheeled_01_cannon_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
+			init="[this, [""Armored"", ""BLU_F""]] call hull_unit_fnc_init;";
 		};
 		class Item1
 		{
-			position[]={1111.3733,0.29557759,1157.0747};
+			position[]={1111.3733,0.20604655,1157.0747};
 			special="NONE";
 			id=396;
 			side="EMPTY";
 			vehicle="B_APC_Wheeled_01_cannon_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
+			init="[this, [""Armored"", ""BLU_F""]] call hull_unit_fnc_init;";
 		};
 		class Item2
 		{
-			position[]={1146.0647,0.25781491,1156.5786};
+			position[]={1146.0647,0.10909238,1156.7874};
 			special="NONE";
 			id=397;
 			side="EMPTY";
 			vehicle="B_APC_Wheeled_01_cannon_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
+			init="[this, [""Armored"", ""BLU_F""]] call hull_unit_fnc_init;";
 		};
 		class Item3
 		{
@@ -6566,6 +6568,7 @@ class Mission
 			vehicle="B_APC_Wheeled_01_cannon_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
+			init="[this, [""Armored"", ""BLU_F""]] call hull_unit_fnc_init;";
 		};
 		class Item4
 		{
@@ -6685,6 +6688,7 @@ class Mission
 			vehicle="B_APC_Tracked_01_rcws_F";
 			leader=1;
 			skill=0.60000002;
+			init="[this, [""Armored"", ""BLU_F""]] call hull_unit_fnc_init;";
 		};
 		class Item15
 		{
@@ -6695,6 +6699,7 @@ class Mission
 			vehicle="B_APC_Tracked_01_rcws_F";
 			leader=1;
 			skill=0.60000002;
+			init="[this, [""Armored"", ""BLU_F""]] call hull_unit_fnc_init;";
 		};
 		class Item16
 		{
@@ -6705,16 +6710,18 @@ class Mission
 			vehicle="B_APC_Tracked_01_rcws_F";
 			leader=1;
 			skill=0.60000002;
+			init="[this, [""Armored"", ""BLU_F""]] call hull_unit_fnc_init;";
 		};
 		class Item17
 		{
-			position[]={1171.1272,0.039784208,1191.7505};
+			position[]={1171.1272,0.019596212,1191.7505};
 			special="NONE";
 			id=412;
 			side="EMPTY";
 			vehicle="B_APC_Tracked_01_rcws_F";
 			leader=1;
 			skill=0.60000002;
+			init="[this, [""Armored"", ""BLU_F""]] call hull_unit_fnc_init;";
 		};
 		class Item18
 		{
@@ -6726,10 +6733,11 @@ class Mission
 			vehicle="B_MRAP_01_hmg_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
+			init="[this, [""Car"", ""BLU_F""]] call hull_unit_fnc_init;";
 		};
 		class Item19
 		{
-			position[]={1065.8616,0.047883786,1240.9615};
+			position[]={1065.8616,0.033160903,1240.9615};
 			azimut=0.68832701;
 			special="NONE";
 			id=414;
@@ -6737,6 +6745,7 @@ class Mission
 			vehicle="B_MRAP_01_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
+			init="[this, [""Car"", ""BLU_F""]] call hull_unit_fnc_init;";
 		};
 		class Item20
 		{
@@ -6748,6 +6757,7 @@ class Mission
 			vehicle="B_MRAP_01_hmg_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
+			init="[this, [""Car"", ""BLU_F""]] call hull_unit_fnc_init;";
 		};
 		class Item21
 		{
@@ -6759,6 +6769,7 @@ class Mission
 			vehicle="B_MRAP_01_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
+			init="[this, [""Car"", ""BLU_F""]] call hull_unit_fnc_init;";
 		};
 		class Item22
 		{
@@ -6770,10 +6781,11 @@ class Mission
 			vehicle="B_MRAP_01_hmg_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
+			init="[this, [""Car"", ""BLU_F""]] call hull_unit_fnc_init;";
 		};
 		class Item23
 		{
-			position[]={1134.7913,0.21973351,1240.2701};
+			position[]={1134.7913,0.1627498,1240.2701};
 			azimut=0.68832701;
 			special="NONE";
 			id=418;
@@ -6781,6 +6793,7 @@ class Mission
 			vehicle="B_MRAP_01_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
+			init="[this, [""Car"", ""BLU_F""]] call hull_unit_fnc_init;";
 		};
 		class Item24
 		{
@@ -6792,6 +6805,7 @@ class Mission
 			vehicle="B_MRAP_01_hmg_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
+			init="[this, [""Car"", ""BLU_F""]] call hull_unit_fnc_init;";
 		};
 		class Item25
 		{
@@ -6803,10 +6817,11 @@ class Mission
 			vehicle="B_MRAP_01_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
+			init="[this, [""Car"", ""BLU_F""]] call hull_unit_fnc_init;";
 		};
 		class Item26
 		{
-			position[]={1197.9514,-0.0027169436,1231.6216};
+			position[]={1197.9514,-0.016484715,1231.6216};
 			azimut=0.68832701;
 			special="NONE";
 			id=421;
@@ -6814,10 +6829,11 @@ class Mission
 			vehicle="B_APC_Tracked_01_CRV_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
+			init="[this, [""Armored"", ""BLU_F""]] call hull_unit_fnc_init;";
 		};
 		class Item27
 		{
-			position[]={1065.0452,-0.17353874,1222.0005};
+			position[]={1065.0452,-0.026651289,1222.0005};
 			azimut=0.68832701;
 			special="NONE";
 			id=422;
@@ -6825,6 +6841,7 @@ class Mission
 			vehicle="B_Truck_01_transport_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
+			init="[this, [""Truck"", ""BLU_F""]] call hull_unit_fnc_init;";
 		};
 		class Item28
 		{
@@ -6836,6 +6853,7 @@ class Mission
 			vehicle="B_Truck_01_transport_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
+			init="[this, [""Truck"", ""BLU_F""]] call hull_unit_fnc_init;";
 		};
 		class Item29
 		{
@@ -6847,10 +6865,11 @@ class Mission
 			vehicle="B_Truck_01_transport_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
+			init="[this, [""Truck"", ""BLU_F""]] call hull_unit_fnc_init;";
 		};
 		class Item30
 		{
-			position[]={1160.4124,0.159069,1223.9146};
+			position[]={1160.4124,0.259758,1223.9146};
 			azimut=0.68832701;
 			special="NONE";
 			id=425;
@@ -6858,10 +6877,11 @@ class Mission
 			vehicle="B_Truck_01_transport_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
+			init="[this, [""Truck"", ""BLU_F""]] call hull_unit_fnc_init;";
 		};
 		class Item31
 		{
-			position[]={1120.6467,-0.084795043,1268.8248};
+			position[]={1120.6467,-0.072114505,1268.8248};
 			azimut=0.68832701;
 			special="NONE";
 			id=426;
@@ -6869,6 +6889,7 @@ class Mission
 			vehicle="B_MRAP_01_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
+			init="[this, [""Car"", ""BLU_F""]] call hull_unit_fnc_init;";
 		};
 		class Item32
 		{
@@ -6880,6 +6901,7 @@ class Mission
 			vehicle="B_APC_Tracked_01_CRV_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
+			init="[this, [""Armored"", ""BLU_F""]] call hull_unit_fnc_init;";
 		};
 		class Item33
 		{
@@ -6889,6 +6911,7 @@ class Mission
 			side="EMPTY";
 			vehicle="O_APC_Wheeled_02_rcws_F";
 			skill=0.60000002;
+			init="[this, [""Armored"", ""OPF_F""]] call hull_unit_fnc_init;";
 		};
 		class Item34
 		{
@@ -6898,15 +6921,17 @@ class Mission
 			side="EMPTY";
 			vehicle="O_APC_Wheeled_02_rcws_F";
 			skill=0.60000002;
+			init="[this, [""Armored"", ""OPF_F""]] call hull_unit_fnc_init;";
 		};
 		class Item35
 		{
-			position[]={1949.2834,-0.022010215,1181.1177};
+			position[]={1949.2834,-0.017087802,1181.1177};
 			special="NONE";
 			id=430;
 			side="EMPTY";
 			vehicle="O_APC_Wheeled_02_rcws_F";
 			skill=0.60000002;
+			init="[this, [""Armored"", ""OPF_F""]] call hull_unit_fnc_init;";
 		};
 		class Item36
 		{
@@ -6916,6 +6941,7 @@ class Mission
 			side="EMPTY";
 			vehicle="O_APC_Wheeled_02_rcws_F";
 			skill=0.60000002;
+			init="[this, [""Armored"", ""OPF_F""]] call hull_unit_fnc_init;";
 		};
 		class Item37
 		{
@@ -6925,6 +6951,7 @@ class Mission
 			side="EMPTY";
 			vehicle="O_APC_Tracked_02_cannon_F";
 			skill=0.60000002;
+			init="[this, [""Armored"", ""OPF_F""]] call hull_unit_fnc_init;";
 		};
 		class Item38
 		{
@@ -6934,6 +6961,7 @@ class Mission
 			side="EMPTY";
 			vehicle="O_APC_Tracked_02_cannon_F";
 			skill=0.60000002;
+			init="[this, [""Armored"", ""OPF_F""]] call hull_unit_fnc_init;";
 		};
 		class Item39
 		{
@@ -6943,6 +6971,7 @@ class Mission
 			side="EMPTY";
 			vehicle="O_APC_Tracked_02_cannon_F";
 			skill=0.60000002;
+			init="[this, [""Armored"", ""OPF_F""]] call hull_unit_fnc_init;";
 		};
 		class Item40
 		{
@@ -6952,6 +6981,7 @@ class Mission
 			side="EMPTY";
 			vehicle="O_APC_Tracked_02_cannon_F";
 			skill=0.60000002;
+			init="[this, [""Armored"", ""OPF_F""]] call hull_unit_fnc_init;";
 		};
 		class Item41
 		{
@@ -7056,7 +7086,7 @@ class Mission
 		};
 		class Item51
 		{
-			position[]={1875.2991,0.041474931,1243.5631};
+			position[]={1875.2991,0.087173358,1243.5631};
 			azimut=0.68832701;
 			special="NONE";
 			id=446;
@@ -7064,6 +7094,7 @@ class Mission
 			vehicle="O_MRAP_02_hmg_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
+			init="[this, [""Car"", ""OPF_F""]] call hull_unit_fnc_init;";
 		};
 		class Item52
 		{
@@ -7075,6 +7106,7 @@ class Mission
 			vehicle="O_MRAP_02_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
+			init="[this, [""Car"", ""OPF_F""]] call hull_unit_fnc_init;";
 		};
 		class Item53
 		{
@@ -7086,10 +7118,11 @@ class Mission
 			vehicle="O_Truck_03_transport_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
+			init="[this, [""Truck"", ""OPF_F""]] call hull_unit_fnc_init;";
 		};
 		class Item54
 		{
-			position[]={1907.8616,-0.0081595182,1242.0905};
+			position[]={1907.8616,-0.075411096,1242.0905};
 			azimut=0.68832701;
 			special="NONE";
 			id=449;
@@ -7097,10 +7130,11 @@ class Mission
 			vehicle="O_MRAP_02_hmg_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
+			init="[this, [""Car"", ""OPF_F""]] call hull_unit_fnc_init;";
 		};
 		class Item55
 		{
-			position[]={1907.7053,0.24175575,1229.4849};
+			position[]={1907.7053,0.11586871,1229.4849};
 			azimut=0.68832701;
 			special="NONE";
 			id=450;
@@ -7108,6 +7142,7 @@ class Mission
 			vehicle="O_MRAP_02_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
+			init="[this, [""Car"", ""OPF_F""]] call hull_unit_fnc_init;";
 		};
 		class Item56
 		{
@@ -7119,10 +7154,11 @@ class Mission
 			vehicle="O_Truck_03_transport_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
+			init="[this, [""Truck"", ""OPF_F""]] call hull_unit_fnc_init;";
 		};
 		class Item57
 		{
-			position[]={1936.303,0.094340593,1241.7975};
+			position[]={1936.303,-0.064483531,1241.7975};
 			azimut=0.68832701;
 			special="NONE";
 			id=452;
@@ -7130,6 +7166,7 @@ class Mission
 			vehicle="O_MRAP_02_hmg_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
+			init="[this, [""Car"", ""OPF_F""]] call hull_unit_fnc_init;";
 		};
 		class Item58
 		{
@@ -7141,6 +7178,7 @@ class Mission
 			vehicle="O_MRAP_02_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
+			init="[this, [""Car"", ""OPF_F""]] call hull_unit_fnc_init;";
 		};
 		class Item59
 		{
@@ -7152,6 +7190,7 @@ class Mission
 			vehicle="O_Truck_03_transport_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
+			init="[this, [""Truck"", ""OPF_F""]] call hull_unit_fnc_init;";
 		};
 		class Item60
 		{
@@ -7163,6 +7202,7 @@ class Mission
 			vehicle="O_MRAP_02_hmg_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
+			init="[this, [""Car"", ""OPF_F""]] call hull_unit_fnc_init;";
 		};
 		class Item61
 		{
@@ -7174,6 +7214,7 @@ class Mission
 			vehicle="O_MRAP_02_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
+			init="[this, [""Car"", ""OPF_F""]] call hull_unit_fnc_init;";
 		};
 		class Item62
 		{
@@ -7185,6 +7226,7 @@ class Mission
 			vehicle="O_Truck_03_transport_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
+			init="[this, [""Truck"", ""OPF_F""]] call hull_unit_fnc_init;";
 		};
 		class Item63
 		{
@@ -7196,26 +7238,29 @@ class Mission
 			vehicle="O_MRAP_02_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
+			init="[this, [""Car"", ""OPF_F""]] call hull_unit_fnc_init;";
 		};
 		class Item64
 		{
-			position[]={1482.5647,0.070187666,1192.8677};
+			position[]={1482.5647,-0.01326552,1192.8677};
 			special="NONE";
 			id=459;
 			side="EMPTY";
 			vehicle="I_APC_Wheeled_03_cannon_F";
 			leader=1;
 			skill=0.60000002;
+			init="[this, [""Armored"", ""IND_F""]] call hull_unit_fnc_init;";
 		};
 		class Item65
 		{
-			position[]={1513.4749,0.20241179,1193.0161};
+			position[]={1513.4749,0.0038159192,1193.0161};
 			special="NONE";
 			id=460;
 			side="EMPTY";
 			vehicle="I_APC_Wheeled_03_cannon_F";
 			leader=1;
 			skill=0.60000002;
+			init="[this, [""Armored"", ""IND_F""]] call hull_unit_fnc_init;";
 		};
 		class Item66
 		{
@@ -7226,6 +7271,7 @@ class Mission
 			vehicle="I_APC_Wheeled_03_cannon_F";
 			leader=1;
 			skill=0.60000002;
+			init="[this, [""Armored"", ""IND_F""]] call hull_unit_fnc_init;";
 		};
 		class Item67
 		{
@@ -7236,16 +7282,18 @@ class Mission
 			vehicle="I_APC_Wheeled_03_cannon_F";
 			leader=1;
 			skill=0.60000002;
+			init="[this, [""Armored"", ""IND_F""]] call hull_unit_fnc_init;";
 		};
 		class Item68
 		{
-			position[]={1483.3928,0.024873711,1159.7661};
+			position[]={1483.3928,-0.073082939,1159.6215};
 			special="NONE";
 			id=463;
 			side="EMPTY";
 			vehicle="I_APC_tracked_03_cannon_F";
 			leader=1;
 			skill=0.60000002;
+			init="[this, [""Armored"", ""IND_F""]] call hull_unit_fnc_init;";
 		};
 		class Item69
 		{
@@ -7256,16 +7304,18 @@ class Mission
 			vehicle="I_APC_tracked_03_cannon_F";
 			leader=1;
 			skill=0.60000002;
+			init="[this, [""Armored"", ""IND_F""]] call hull_unit_fnc_init;";
 		};
 		class Item70
 		{
-			position[]={1551.9631,-0.046093974,1160.5747};
+			position[]={1551.9631,-0.24702495,1160.5747};
 			special="NONE";
 			id=465;
 			side="EMPTY";
 			vehicle="I_APC_tracked_03_cannon_F";
 			leader=1;
 			skill=0.60000002;
+			init="[this, [""Armored"", ""IND_F""]] call hull_unit_fnc_init;";
 		};
 		class Item71
 		{
@@ -7276,6 +7326,7 @@ class Mission
 			vehicle="I_APC_tracked_03_cannon_F";
 			leader=1;
 			skill=0.60000002;
+			init="[this, [""Armored"", ""IND_F""]] call hull_unit_fnc_init;";
 		};
 		class Item72
 		{
@@ -7387,6 +7438,7 @@ class Mission
 			vehicle="I_MRAP_03_hmg_F";
 			leader=1;
 			skill=0.60000002;
+			init="[this, [""Car"", ""IND_F""]] call hull_unit_fnc_init;";
 		};
 		class Item83
 		{
@@ -7398,10 +7450,11 @@ class Mission
 			vehicle="I_MRAP_03_F";
 			leader=1;
 			skill=0.60000002;
+			init="[this, [""Car"", ""IND_F""]] call hull_unit_fnc_init;";
 		};
 		class Item84
 		{
-			position[]={1564.9788,-0.016867928,1226.1294};
+			position[]={1564.9788,0.0012197904,1226.1294};
 			azimut=1.0113699;
 			special="NONE";
 			id=479;
@@ -7409,6 +7462,7 @@ class Mission
 			vehicle="I_Truck_02_transport_F";
 			leader=1;
 			skill=0.60000002;
+			init="[this, [""Truck"", ""IND_F""]] call hull_unit_fnc_init;";
 		};
 		class Item85
 		{
@@ -7420,10 +7474,11 @@ class Mission
 			vehicle="I_MRAP_03_hmg_F";
 			leader=1;
 			skill=0.60000002;
+			init="[this, [""Car"", ""IND_F""]] call hull_unit_fnc_init;";
 		};
 		class Item86
 		{
-			position[]={1536.8772,0.10147835,1243.5787};
+			position[]={1536.8772,-0.01131402,1243.5787};
 			azimut=1.0113699;
 			special="NONE";
 			id=481;
@@ -7431,10 +7486,11 @@ class Mission
 			vehicle="I_MRAP_03_F";
 			leader=1;
 			skill=0.60000002;
+			init="[this, [""Car"", ""IND_F""]] call hull_unit_fnc_init;";
 		};
 		class Item87
 		{
-			position[]={1536.885,0.20755219,1226.895};
+			position[]={1536.885,0.25209853,1226.895};
 			azimut=1.0113699;
 			special="NONE";
 			id=482;
@@ -7442,6 +7498,7 @@ class Mission
 			vehicle="I_Truck_02_transport_F";
 			leader=1;
 			skill=0.60000002;
+			init="[this, [""Truck"", ""IND_F""]] call hull_unit_fnc_init;";
 		};
 		class Item88
 		{
@@ -7453,10 +7510,11 @@ class Mission
 			vehicle="I_MRAP_03_hmg_F";
 			leader=1;
 			skill=0.60000002;
+			init="[this, [""Car"", ""IND_F""]] call hull_unit_fnc_init;";
 		};
 		class Item89
 		{
-			position[]={1501.4553,0.029833883,1243.6725};
+			position[]={1501.4553,0.0043162107,1243.6725};
 			azimut=1.0113699;
 			special="NONE";
 			id=484;
@@ -7464,6 +7522,7 @@ class Mission
 			vehicle="I_MRAP_03_F";
 			leader=1;
 			skill=0.60000002;
+			init="[this, [""Car"", ""IND_F""]] call hull_unit_fnc_init;";
 		};
 		class Item90
 		{
@@ -7475,10 +7534,11 @@ class Mission
 			vehicle="I_Truck_02_transport_F";
 			leader=1;
 			skill=0.60000002;
+			init="[this, [""Truck"", ""IND_F""]] call hull_unit_fnc_init;";
 		};
 		class Item91
 		{
-			position[]={1472.0725,0.12739973,1257.4108};
+			position[]={1472.0725,0.24279168,1257.4108};
 			azimut=1.0113699;
 			special="NONE";
 			id=486;
@@ -7486,10 +7546,11 @@ class Mission
 			vehicle="I_MRAP_03_hmg_F";
 			leader=1;
 			skill=0.60000002;
+			init="[this, [""Car"", ""IND_F""]] call hull_unit_fnc_init;";
 		};
 		class Item92
 		{
-			position[]={1471.9397,-0.11619385,1244.2311};
+			position[]={1471.9397,-0.0752161,1244.2311};
 			azimut=1.0113699;
 			special="NONE";
 			id=487;
@@ -7497,6 +7558,7 @@ class Mission
 			vehicle="I_MRAP_03_F";
 			leader=1;
 			skill=0.60000002;
+			init="[this, [""Car"", ""IND_F""]] call hull_unit_fnc_init;";
 		};
 		class Item93
 		{
@@ -7508,6 +7570,7 @@ class Mission
 			vehicle="I_Truck_02_transport_F";
 			leader=1;
 			skill=0.60000002;
+			init="[this, [""Truck"", ""IND_F""]] call hull_unit_fnc_init;";
 		};
 		class Item94
 		{
@@ -7519,6 +7582,7 @@ class Mission
 			vehicle="I_MRAP_03_F";
 			leader=1;
 			skill=0.60000002;
+			init="[this, [""Car"", ""IND_F""]] call hull_unit_fnc_init;";
 		};
 	};
 };
