@@ -14,6 +14,7 @@ hull_marker_fnc_preInit = {
         hull_marker_custom = [];
         hull_marker_defaultDelay = ["Marker", "defaultDelay"] call hull_config_fnc_getNumber;
     };
+    DEBUG("hull.marker","Marker functions preInit finished.");
 };
 
 hull_marker_fnc_initMarker = {
