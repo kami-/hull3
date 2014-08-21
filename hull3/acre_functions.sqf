@@ -27,25 +27,30 @@ hull_acre_fnc_setPlayerFrequencies = {
 
 hull_acre_fnc_playerInit = {
     DEBUG("hull.acre.jip","ACRE player init called.");
+    if ([] call hull_common_fnc_isHeadlessClient) exitWith {};
     if (alive player) then {
         DEBUG("hull.acre.jip","Player is alive, starting spectator check.");
         [] spawn {
-            waitUntil {
+            for "_i" from 1 to 60 do {
                 DEBUG("hull.acre.jip",FMT_2("Waiting for ACRE to initialize TS ID '%1' and spectator list '%2'.",acre_sys_core_ts3id,ACRE_SPECTATORS_LIST));
                 sleep 5;
-                !isNil {acre_sys_core_ts3id} && {acre_sys_core_ts3id != -1} && {!isNil {ACRE_SPECTATORS_LIST}}; // wait for ACRE to set ts3id and spectator list
+                if (!isNil {acre_sys_core_ts3id} && {acre_sys_core_ts3id != -1} && {!isNil {ACRE_SPECTATORS_LIST}}) exitWith {}; // wait for ACRE to set ts3id and spectator list
             };
             DEBUG("hull.acre.jip",FMT_2("ACRE init finished with TS ID '%1' and spectator list '%2'.",acre_sys_core_ts3id,ACRE_SPECTATORS_LIST));
-            if (acre_sys_core_ts3id in ACRE_SPECTATORS_LIST) then {
-                DEBUG("hull.acre.jip",FMT_2("TS ID '%1' found in spectator list '%2'.",acre_sys_core_ts3id,ACRE_SPECTATORS_LIST));
-                [false] call acre_api_fnc_setSpectator;
-                DEBUG("hull.acre.jip","Setting ACRE spectator to false.");
-                [] spawn hull_acre_fnc_tsRestartCheck;
-            };
+            [] call hull_acre_fnc_fixAcreSpectator;
         };
     } else {
         DEBUG("hull.acre.jip","Player is dead, starting setting ACRE spectator to true.");
         [true] call acre_api_fnc_setSpectator;
+    };
+};
+
+hull_acre_fnc_fixAcreSpectator = {
+    if (acre_sys_core_ts3id in ACRE_SPECTATORS_LIST) then {
+        DEBUG("hull.acre.jip",FMT_2("TS ID '%1' found in spectator list '%2'.",acre_sys_core_ts3id,ACRE_SPECTATORS_LIST));
+        [false] call acre_api_fnc_setSpectator;
+        DEBUG("hull.acre.jip","Setting ACRE spectator to false.");
+        [] spawn hull_acre_fnc_tsRestartCheck;
     };
 };
 
