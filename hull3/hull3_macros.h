@@ -1,22 +1,22 @@
-#ifndef HULL_MACROS_H
-#define HULL_MACROS_H
+#ifndef HULL3_MACROS_H
+#define HULL3_MACROS_H
 
 #include "\userconfig\hull3\log\global.h"
 
-#define HULL_VERSION                    "0.2.0"
+#define HULL3_VERSION                    "0.2.0"
 
 #define CONCAT_ADDON_PATH(FILE)         x\ark\addons\hull3\FILE
 #define ADDON_PATH(FILE)                #CONCAT_ADDON_PATH(FILE)
 
-#define HULL_BASE_CONFIG                "Hull"
-#define HULL_MISSION_CONFIG_FILE        missionConfigFile >> HULL_BASE_CONFIG
-#define HULL_CONFIG_FILE                configFile >> HULL_BASE_CONFIG
+#define HULL3_BASE_CONFIG                "Hull"
+#define HULL3_MISSION_CONFIG_FILE        missionConfigFile >> HULL3_BASE_CONFIG
+#define HULL3_CONFIG_FILE                configFile >> HULL3_BASE_CONFIG
 
 #define CONFIG_TYPE_BOOL                0
 #define CONFIG_TYPE_NUMBER              1
 #define CONFIG_TYPE_TEXT                2
 #define CONFIG_TYPE_ARRAY               3
-#define CONFIG_TYPE_FUNCTIONS           [hull_config_fnc_getBool, hull_config_fnc_getNumber, hull_config_fnc_getText, hull_config_fnc_getArray]
+#define CONFIG_TYPE_FUNCTIONS           [hull3_config_fnc_getBool, hull3_config_fnc_getNumber, hull3_config_fnc_getText, hull3_config_fnc_getArray]
 
 #define GEAR_UNIT_FIELDS                \
     [ \
@@ -232,4 +232,4 @@
 //          private "_group"; _group = _x;
 #define DECLARE(VAR) private #VAR; VAR
 
-#endif //HULL_MACROS_H
+#endif //HULL3_MACROS_H

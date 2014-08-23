@@ -1,4 +1,4 @@
-#include "hull_macros.h"
+#include "hull3_macros.h"
 
 #define ADDON_NS                        hull
 #define ADD_ADDON_NS_TO_ID(M,ID)        M##ID

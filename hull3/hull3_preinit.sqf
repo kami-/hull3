@@ -1,18 +1,18 @@
-#include "hull_macros.h"
+#include "hull3_macros.h"
 
 #include "\userconfig\hull3\log\preinit.h"
 #include "logbook.h"
 
 
-hull_isInitialized = false;
+hull3_isInitialized = false;
 
 [] call compile preProcessFileLineNumbers ADDON_PATH(config_functions.sqf);
-hull_isEnabled = ["isEnabled"] call hull_config_fnc_getBool;
-hull_isEnabled = hull_isEnabled && {!isClass (missionConfigFile >> "Hull_Script_Version")};
+hull3_isEnabled = ["isEnabled"] call hull3_config_fnc_getBool;
+hull3_isEnabled = hull3_isEnabled && {!isClass (missionConfigFile >> "Hull_Script_Version")};
 
-if (hull_isEnabled) then {
+if (hull3_isEnabled) then {
     [] call compile preProcessFileLineNumbers ADDON_PATH(event_functions.sqf);
-    [] call hull_event_fnc_init;
+    [] call hull3_event_fnc_init;
     [] call compile preProcessFileLineNumbers ADDON_PATH(settings_functions.sqf);
     [] call compile preProcessFileLineNumbers ADDON_PATH(common_functions.sqf);
     [] call compile preProcessFileLineNumbers ADDON_PATH(unit_functions.sqf);
@@ -22,19 +22,19 @@ if (hull_isEnabled) then {
     [] call compile preProcessFileLineNumbers ADDON_PATH(briefing_functions.sqf);
     [] call compile preProcessFileLineNumbers ADDON_PATH(mission_functions.sqf);
 
-    hull_isInitialized = true;
-    INFO("hull",FMT_1("Hull version '%1' has been successfully initialized.",HULL_VERSION));
+    hull3_isInitialized = true;
+    INFO("hull",FMT_1("Hull version '%1' has been successfully initialized.",HULL3_VERSION));
 
-    [] call hull_settings_fnc_preInit;
-    [] call hull_mission_fnc_preInit;
-    [] call hull_marker_fnc_preInit;
-    [] call hull_gear_fnc_preInit;
-    [] call hull_briefing_fnc_preInit;
-    [] call hull_acre_fnc_preInit;
+    [] call hull3_settings_fnc_preInit;
+    [] call hull3_mission_fnc_preInit;
+    [] call hull3_marker_fnc_preInit;
+    [] call hull3_gear_fnc_preInit;
+    [] call hull3_briefing_fnc_preInit;
+    [] call hull3_acre_fnc_preInit;
 } else {
     if (isClass (missionConfigFile >> "Hull_Script_Version")) then {
-        INFO("hull",FMT_1("Older script version of Hull was detected. Addonized Hull version '%1' was disabled.",HULL_VERSION));
+        INFO("hull",FMT_1("Older script version of Hull was detected. Addonized Hull version '%1' was disabled.",HULL3_VERSION));
     } else {
-        INFO("hull",FMT_1("Hull version '%1' was disabled.",HULL_VERSION));
+        INFO("hull",FMT_1("Hull version '%1' was disabled.",HULL3_VERSION));
     };
 };

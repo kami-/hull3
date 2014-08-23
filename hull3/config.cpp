@@ -1,7 +1,7 @@
-#include "hull_macros.h"
+#include "hull3_macros.h"
 
 class CfgPatches {
-    class Hull {
+    class Hull3 {
         units[] = {};
         weapons[] = {};
         requiredVersion = 1.0;
@@ -12,37 +12,37 @@ class CfgPatches {
 };
 
 class Extended_PreInit_EventHandlers {
-    class Hull {
-        init = "[] call compile preProcessFileLineNumbers 'x\ark\addons\hull3\hull_preinit.sqf';";
+    class Hull3 {
+        init = "[] call compile preProcessFileLineNumbers 'x\ark\addons\hull3\hull3_preinit.sqf';";
     };
 };
 
 class Extended_PostInit_EventHandlers {
-    class Hull {
-        init = "[] call compile preProcessFileLineNumbers 'x\ark\addons\hull3\hull_postinit.sqf';";
+    class Hull3 {
+        init = "[] call compile preProcessFileLineNumbers 'x\ark\addons\hull3\hull3_postinit.sqf';";
     };
 };
 
 class CfgVehicles {
     class Logic;
 
-    class Hull_DisableGroupMarkers_Module : Logic {
-        displayName = "Hull: Disable Group Markers";
-        icon = ADDON_PATH(resources\hull_module.paa);
+    class Hull3_DisableGroupMarkers_Module : Logic {
+        displayName = "Hull3: Disable Group Markers";
+        icon = ADDON_PATH(resources\hull3_module.paa);
         vehicleClass = "Modules";
         class Eventhandlers {
-            init = "hull_marker_isGroupEnabled = false;";
+            init = "hull3_marker_isGroupEnabled = false;";
         };
     };
 
-    class Hull_DisableFireTeamMarkers_Module : Logic {
-        displayName = "Hull: Disable Fire Team Member Markers";
-        icon = ADDON_PATH(resources\hull_module.paa);
+    class Hull3_DisableFireTeamMarkers_Module : Logic {
+        displayName = "Hull3: Disable Fire Team Member Markers";
+        icon = ADDON_PATH(resources\hull3_module.paa);
         vehicleClass = "Modules";
         class Eventhandlers {
-            init = "hull_marker_isFireTeamEnabled = false;";
+            init = "hull3_marker_isFireTeamEnabled = false;";
         };
     };
 };
 
-#include "hull.h"
+#include "hull3.h"

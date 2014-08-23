@@ -1,4 +1,4 @@
-class Hull {
+class Hull3 {
     isEnabled = 1;
 
     class Gear {

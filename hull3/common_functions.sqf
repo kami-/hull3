@@ -1,10 +1,10 @@
-#include "hull_macros.h"
+#include "hull3_macros.h"
 
 #include "\userconfig\hull3\log\common.h"
 #include "logbook.h"
 
 
-hull_common_fnc_logOnServer = {
+hull3_common_fnc_logOnServer = {
     FUN_ARGS_1(_message);
 
     if (isDedicated) then {
@@ -15,6 +15,6 @@ hull_common_fnc_logOnServer = {
     };
 };
 
-hull_common_fnc_isHeadlessClient = {
+hull3_common_fnc_isHeadlessClient = {
     (!isNil {hasInterface} && {!hasInterface}) || {!isNil {adm_hc_defaultNames} && {(name player) in adm_hc_defaultNames}};
 };

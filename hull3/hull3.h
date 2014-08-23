@@ -1,6 +1,6 @@
-#include "hull_macros.h"
+#include "hull3_macros.h"
 
-class Hull {
+class Hull3 {
     isEnabled = 1;
 
     #include "mission_params.h"
