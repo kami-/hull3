@@ -21,7 +21,7 @@ hull3_unit_fnc_waitForPlayer = {
         !isNull player;
     };
     ["player.initialized", [player]] call hull3_event_fnc_emitEvent;
-    DEBUG("hull.unit.player","Player is initialized.");
+    DEBUG("hull3.unit.player","Player is initialized.");
 };
 
 hull3_unit_fnc_playerInit = {

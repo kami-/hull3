@@ -8,7 +8,7 @@
 #define CONCAT_ADDON_PATH(FILE)         x\ark\addons\hull3\FILE
 #define ADDON_PATH(FILE)                #CONCAT_ADDON_PATH(FILE)
 
-#define HULL3_BASE_CONFIG                "Hull"
+#define HULL3_BASE_CONFIG                "Hull3"
 #define HULL3_MISSION_CONFIG_FILE        missionConfigFile >> HULL3_BASE_CONFIG
 #define HULL3_CONFIG_FILE                configFile >> HULL3_BASE_CONFIG
 

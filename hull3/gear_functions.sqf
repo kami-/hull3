@@ -8,7 +8,7 @@ hull3_gear_fnc_preInit = {
     hull3_gear_unitBaseClass = ["Gear", "unitBaseClass"] call hull3_config_fnc_getText;
     hull3_gear_vehicleBaseClass = ["Gear", "vehicleBaseClass"] call hull3_config_fnc_getText;
     [] call hull3_gear_fnc_addEventHandlers;
-    DEBUG("hull.gear","Gear functions preInit finished.");
+    DEBUG("hull3.gear","Gear functions preInit finished.");
 };
 
 hull3_gear_fnc_addEventHandlers = {
@@ -52,7 +52,7 @@ hull3_gear_fnc_assignUnitInit = {
     removeAllWeapons _unit;
     removeBackpack _unit;
     [_unit] call hull3_gear_fnc_removeNVGs;
-    DEBUG("hull.gear.assign",FMT_1("Initialized unit '%1' gear.",_unit));
+    DEBUG("hull3.gear.assign",FMT_1("Initialized unit '%1' gear.",_unit));
 };
 
 hull3_gear_fnc_assignVehicleInit = {
@@ -61,7 +61,7 @@ hull3_gear_fnc_assignVehicleInit = {
     clearMagazineCargoGlobal _vehicle;
     clearWeaponCargoGlobal _vehicle;
     clearItemCargoGlobal _vehicle;
-    DEBUG("hull.gear.assign",FMT_1("Initialized vehicle '%1' gear.",_vehicle));
+    DEBUG("hull3.gear.assign",FMT_1("Initialized vehicle '%1' gear.",_vehicle));
 };
 
 hull3_gear_fnc_removeNVGs = {
@@ -73,7 +73,7 @@ hull3_gear_fnc_removeNVGs = {
         _unit unassignItem _x;
         _unit removeItem _x;
     } foreach _nvgs;
-    TRACE("hull.gear.assign",FMT_1("Removed NVGs from unit '%1'.",_unit));
+    TRACE("hull3.gear.assign",FMT_1("Removed NVGs from unit '%1'.",_unit));
 };
 
 hull3_gear_fnc_getTemplate = {
@@ -145,7 +145,7 @@ hull3_gear_fnc_assignUnitTemplate = {
     ];
     [_unit, _class, _template, _assignables] call hull3_gear_fnc_assignObjectTemplate;
     _unit selectWeapon primaryWeapon _unit;
-    DEBUG("hull.gear.assign",FMT_3("Assigned gear class '%1' from template '%2' to unit '%3'.",_class,_template,_unit));
+    DEBUG("hull3.gear.assign",FMT_3("Assigned gear class '%1' from template '%2' to unit '%3'.",_class,_template,_unit));
 };
 
 hull3_gear_fnc_assignVehicleTemplate = {
@@ -157,7 +157,7 @@ hull3_gear_fnc_assignVehicleTemplate = {
         ["items",           CONFIG_TYPE_ARRAY,  hull3_gear_fnc_assignVehicleWeapons]
     ];
     [_vehicle, _class, _template, _assignables] call hull3_gear_fnc_assignObjectTemplate;
-    DEBUG("hull.gear.assign",FMT_3("Assigned gear class '%1' from template '%2' to vehicle '%3'.",_class,_template,_vehicle));
+    DEBUG("hull3.gear.assign",FMT_3("Assigned gear class '%1' from template '%2' to vehicle '%3'.",_class,_template,_vehicle));
 };
 
 hull3_gear_fnc_assignObjectTemplate = {
@@ -175,7 +175,7 @@ hull3_gear_fnc_assignHelmet = {
 
     if (_helmet != "") then {
         _unit addHeadgear _helmet;
-        TRACE("hull.gear.assign",FMT_2("Assigned helmet '%1' to unit '%2'.",_helmet,_unit));
+        TRACE("hull3.gear.assign",FMT_2("Assigned helmet '%1' to unit '%2'.",_helmet,_unit));
     };
 };
 
@@ -184,7 +184,7 @@ hull3_gear_fnc_assignGoggles = {
 
     if (_goggles != "") then {
         _unit addGoggles _goggles;
-        TRACE("hull.gear.assign",FMT_2("Assigned goggles '%1' to unit '%2'.",_goggles,_unit));
+        TRACE("hull3.gear.assign",FMT_2("Assigned goggles '%1' to unit '%2'.",_goggles,_unit));
     };
 };
 
@@ -193,7 +193,7 @@ hull3_gear_fnc_assignUniform = {
 
     if (_uniform != "") then {
         _unit addUniform _uniform;
-        TRACE("hull.gear.assign",FMT_2("Assigned uniform '%1' to unit '%2'.",_uniform,_unit));
+        TRACE("hull3.gear.assign",FMT_2("Assigned uniform '%1' to unit '%2'.",_uniform,_unit));
     };
 };
 
@@ -202,7 +202,7 @@ hull3_gear_fnc_assignVest = {
 
     if (_vest != "") then {
         _unit addVest _vest;
-        TRACE("hull.gear.assign",FMT_2("Assigned vest '%1' to unit '%2'.",_vest,_unit));
+        TRACE("hull3.gear.assign",FMT_2("Assigned vest '%1' to unit '%2'.",_vest,_unit));
     };
 };
 
@@ -211,7 +211,7 @@ hull3_gear_fnc_assignRuck = {
 
     if (_ruck != "") then {
         _unit addBackpack _ruck;
-        TRACE("hull.gear.assign",FMT_2("Assigned ruck '%1' to unit '%2'.",_ruck,_unit));
+        TRACE("hull3.gear.assign",FMT_2("Assigned ruck '%1' to unit '%2'.",_ruck,_unit));
     };
 };
 
@@ -223,7 +223,7 @@ hull3_gear_fnc_assignMagazines = {
             _unit addMagazine (_x select 0);
         };
     } foreach _magazines;
-    TRACE("hull.gear.assign",FMT_2("Assigned magazines '%1' to unit '%2'.",_magazines,_unit));
+    TRACE("hull3.gear.assign",FMT_2("Assigned magazines '%1' to unit '%2'.",_magazines,_unit));
 };
 
 hull3_gear_fnc_assignVehicleMagazines = {
@@ -232,7 +232,7 @@ hull3_gear_fnc_assignVehicleMagazines = {
     {
         _vehicle addMagazineCargoGlobal _x;
     } foreach _magazines;
-    TRACE("hull.gear.assign",FMT_2("Assigned magazines '%1' to vehicle '%2'.",_magazines,_vehicle));
+    TRACE("hull3.gear.assign",FMT_2("Assigned magazines '%1' to vehicle '%2'.",_magazines,_vehicle));
 };
 
 hull3_gear_fnc_assignWeapons = {
@@ -241,7 +241,7 @@ hull3_gear_fnc_assignWeapons = {
     {
         _unit addWeapon _x;
     } foreach _weapons;
-    TRACE("hull.gear.assign",FMT_2("Assigned weapons '%1' to unit '%2'.",_weapons,_unit));
+    TRACE("hull3.gear.assign",FMT_2("Assigned weapons '%1' to unit '%2'.",_weapons,_unit));
 };
 
 hull3_gear_fnc_assignVehicleWeapons = {
@@ -250,7 +250,7 @@ hull3_gear_fnc_assignVehicleWeapons = {
     {
         _vehicle addWeaponCargoGlobal _x;
     } foreach _weapons;
-    TRACE("hull.gear.assign",FMT_2("Assigned weapons '%1' to vehicle '%2'.",_weapons,_vehicle));
+    TRACE("hull3.gear.assign",FMT_2("Assigned weapons '%1' to vehicle '%2'.",_weapons,_vehicle));
 };
 
 hull3_gear_fnc_assignPrimaryAttachments = {
@@ -259,7 +259,7 @@ hull3_gear_fnc_assignPrimaryAttachments = {
     {
         _unit addPrimaryWeaponItem _x
     } foreach _primaryAttachments;
-    TRACE("hull.gear.assign",FMT_2("Assigned primary attachments '%1' to unit '%2'.",_primaryAttachments,_unit));
+    TRACE("hull3.gear.assign",FMT_2("Assigned primary attachments '%1' to unit '%2'.",_primaryAttachments,_unit));
 };
 
 hull3_gear_fnc_assignSecondaryAttachments = {
@@ -268,7 +268,7 @@ hull3_gear_fnc_assignSecondaryAttachments = {
     {
         _unit addSecondaryWeaponItem _x
     } foreach _secondaryAttachments;
-    TRACE("hull.gear.assign",FMT_2("Assigned secondary attachments '%1' to unit '%2'.",_secondaryAttachments,_unit));
+    TRACE("hull3.gear.assign",FMT_2("Assigned secondary attachments '%1' to unit '%2'.",_secondaryAttachments,_unit));
 };
 
 hull3_gear_fnc_assignRuckWeapons = {
@@ -279,7 +279,7 @@ hull3_gear_fnc_assignRuckWeapons = {
             _unit addItemToBackpack (_x select 0);
         };
     } foreach _ruckWeapons;
-    TRACE("hull.gear.assign",FMT_2("Assigned ruck weapons '%1' to unit '%2'.",_ruckWeapons,_unit));
+    TRACE("hull3.gear.assign",FMT_2("Assigned ruck weapons '%1' to unit '%2'.",_ruckWeapons,_unit));
 };
 
 hull3_gear_fnc_assignRuckMagazines = {
@@ -290,7 +290,7 @@ hull3_gear_fnc_assignRuckMagazines = {
             _unit addItemToBackpack (_x select 0);
         };
     } foreach _ruckMagazines;
-    TRACE("hull.gear.assign",FMT_2("Assigned ruck magazines '%1' to unit '%2'.",_ruckMagazines,_unit));
+    TRACE("hull3.gear.assign",FMT_2("Assigned ruck magazines '%1' to unit '%2'.",_ruckMagazines,_unit));
 };
 
 hull3_gear_fnc_assignVestMagazines = {
@@ -301,7 +301,7 @@ hull3_gear_fnc_assignVestMagazines = {
             _unit addItemToVest  (_x select 0);
         };
     } foreach _vestMagazines;
-    TRACE("hull.gear.assign",FMT_2("Assigned vest magazines '%1' to unit '%2'.",_vestMagazines,_unit));
+    TRACE("hull3.gear.assign",FMT_2("Assigned vest magazines '%1' to unit '%2'.",_vestMagazines,_unit));
 };
 
 hull3_gear_fnc_assignNonRadioItems = {
@@ -312,7 +312,7 @@ hull3_gear_fnc_assignNonRadioItems = {
             TRY_ADD_WEAPON(_unit,_x);
         };
     } foreach _items;
-    TRACE("hull.gear.assign",FMT_2("Assigned non-radio items '%1' to unit '%2'.",_items,_unit));
+    TRACE("hull3.gear.assign",FMT_2("Assigned non-radio items '%1' to unit '%2'.",_items,_unit));
 };
 
 hull3_gear_fnc_tryAssignRadios = {
@@ -323,7 +323,7 @@ hull3_gear_fnc_tryAssignRadios = {
     _gearTemplate = _unit getVariable "hull3_gear_template";
     if (!isNil {_gearClass} && {!isNil {_gearTemplate}}) then {
         [_unit, ["Gear", _gearTemplate, _gearClass, "items"] call hull3_config_fnc_getArray] call hull3_gear_fnc_assignRadios;
-        DEBUG("hull.gear.assign",FMT_1("Assigned radios to unit '%1'.",_unit));
+        DEBUG("hull3.gear.assign",FMT_1("Assigned radios to unit '%1'.",_unit));
     };
     ["gear.radio.assigned", [_unit]] call hull3_event_fnc_emitEvent;
 };
@@ -335,7 +335,7 @@ hull3_gear_fnc_assignRadios = {
     {
         _unit addItem _x;
     } foreach ([_items] call hull3_gear_fnc_getRadios);
-    TRACE("hull.gear.assign",FMT_2("Assigned radios '%1' to unit '%2'.",[_items] call hull3_gear_fnc_getRadios,_unit));
+    TRACE("hull3.gear.assign",FMT_2("Assigned radios '%1' to unit '%2'.",[_items] call hull3_gear_fnc_getRadios,_unit));
 };
 
 hull3_gear_fnc_removeRadios = {
@@ -347,7 +347,7 @@ hull3_gear_fnc_removeRadios = {
             _unit removeItem _x;
         };
     } foreach ((items _unit) + (assignedItems _unit));
-    TRACE("hull.gear.assign",FMT_2("Removed radios from items '%1' of unit '%2'.",(items _unit) + (assignedItems _unit),_unit));
+    TRACE("hull3.gear.assign",FMT_2("Removed radios from items '%1' of unit '%2'.",(items _unit) + (assignedItems _unit),_unit));
 };
 
 hull3_gear_fnc_getRadios = {
@@ -371,32 +371,32 @@ hull3_gear_fnc_validateTemplate = {
     _error = false;
     _factionTemplate = [faction _unit] call hull3_gear_fnc_getTemplateByFaction;
     if (!isNil {_manualTemplate} && {!isClass (["Gear", _manualTemplate] call hull3_config_fnc_getConfig)}) then {
-        WARN("hull.gear.validate",FMT_3("No gear template found with name '%1', using '%2' faction default '%3' instead!",_manualTemplate,faction _unit,_factionTemplate));
+        WARN("hull3.gear.validate",FMT_3("No gear template found with name '%1', using '%2' faction default '%3' instead!",_manualTemplate,faction _unit,_factionTemplate));
     };
 
     if (isNil {_factionTemplate}) then {
-        WARN("hull.gear.validate",FMT_1("No gear template found for faction '%1'!",faction _unit));
+        WARN("hull3.gear.validate",FMT_1("No gear template found for faction '%1'!",faction _unit));
         _error = true;
     };
 
     _template = [faction _unit, _manualTemplate] call hull3_gear_fnc_getTemplate;
     if (!_error && {!isClass (["Gear", _template, _manualClass] call hull3_config_fnc_getConfig)}) then {
-        WARN("hull.gear.validate",FMT_4("Class '%1' not found in gear template '%2', on unit '%3'! Using defalut '%4' instead.",_manualClass,_template,_unit,_baseClass));
+        WARN("hull3.gear.validate",FMT_4("Class '%1' not found in gear template '%2', on unit '%3'! Using defalut '%4' instead.",_manualClass,_template,_unit,_baseClass));
         _manualClass = _baseClass;
     };
     if (!_error && {!isClass (["Gear", _template, _manualClass] call hull3_config_fnc_getConfig)}) then {
-        ERROR("hull.gear.validate",FMT_2("Default class '%1' not found in gear template '%2'!",_manualClass,_template));
+        ERROR("hull3.gear.validate",FMT_2("Default class '%1' not found in gear template '%2'!",_manualClass,_template));
         _error = true;
     };
 
     {
         DECLARE(_config) = ["Gear", _template, _manualClass, _x select 0] call hull3_config_fnc_getConfig;
         if (!_error && {!call (_x select 1)}) then {
-            ERROR("hull.gear.validate",FMT_3("Field '%1' not found in template '%2' and in class '%3'!",_field,_template,_manualClass));
+            ERROR("hull3.gear.validate",FMT_3("Field '%1' not found in template '%2' and in class '%3'!",_field,_template,_manualClass));
             _error = true;
         };
     } foreach _fields;
-    DEBUG("hull.gear.validate",FMT_2("There were %1 errors while validating unit '%2'.",if (_error) then {""} else {"no"},_unit));
+    DEBUG("hull3.gear.validate",FMT_2("There were %1 errors while validating unit '%2'.",if (_error) then {""} else {"no"},_unit));
 
     _error;
 };

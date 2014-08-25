@@ -23,7 +23,7 @@ if (hull3_isEnabled) then {
     [] call compile preProcessFileLineNumbers ADDON_PATH(mission_functions.sqf);
 
     hull3_isInitialized = true;
-    INFO("hull",FMT_1("Hull version '%1' has been successfully initialized.",HULL3_VERSION));
+    INFO("hull3",FMT_1("Hull version '%1' has been successfully initialized.",HULL3_VERSION));
 
     [] call hull3_settings_fnc_preInit;
     [] call hull3_mission_fnc_preInit;
@@ -33,8 +33,8 @@ if (hull3_isEnabled) then {
     [] call hull3_acre_fnc_preInit;
 } else {
     if (isClass (missionConfigFile >> "Hull_Script_Version")) then {
-        INFO("hull",FMT_1("Older script version of Hull was detected. Addonized Hull version '%1' was disabled.",HULL3_VERSION));
+        INFO("hull3",FMT_1("Older script version of Hull was detected. Addonized Hull version '%1' was disabled.",HULL3_VERSION));
     } else {
-        INFO("hull",FMT_1("Hull version '%1' was disabled.",HULL3_VERSION));
+        INFO("hull3",FMT_1("Hull version '%1' was disabled.",HULL3_VERSION));
     };
 };

@@ -1,6 +1,6 @@
 #include "hull3_macros.h"
 
-#define ADDON_NS                        hull
+#define ADDON_NS                        hull3
 #define ADD_ADDON_NS_TO_ID(M,ID)        M##ID
 #define FNC_ADD_EVENT_HANDLER           ADD_ADDON_NS_TO_ID(ADDON_NS,_event_fnc_addEventHandler)
 #define FNC_REMOVE_EVENT_HANDLER        ADD_ADDON_NS_TO_ID(ADDON_NS,_event_fnc_removeEventHandler)

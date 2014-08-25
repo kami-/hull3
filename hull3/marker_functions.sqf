@@ -14,7 +14,7 @@ hull3_marker_fnc_preInit = {
         hull3_marker_custom = [];
         hull3_marker_defaultDelay = ["Marker", "defaultDelay"] call hull3_config_fnc_getNumber;
     };
-    DEBUG("hull.marker","Marker functions preInit finished.");
+    DEBUG("hull3.marker","Marker functions preInit finished.");
 };
 
 hull3_marker_fnc_initMarker = {
@@ -63,7 +63,7 @@ hull3_marker_fnc_addGroupAndUnitMarker = {
             [_unit, "b_maint", _markerText, _markerColor] call hull3_marker_fnc_addGroupMarker;
         };
         if (toLower _gearClass == "xo") exitWith {
-            [_unit, "b_hq", _markerText, _markerColor] call hull3_marker_fnc_addUnitMarker;
+            [_unit, "b_hq", _markerText, _markerColor, [1, 1]] call hull3_marker_fnc_addUnitMarker;
         };
         if (toLower _gearClass == "medic") exitWith {
             [_unit, "b_med", _markerText, _markerColor, ["Marker", "MedicMarker", "size"] call hull3_config_fnc_getArray] call hull3_marker_fnc_addUnitMarker;
