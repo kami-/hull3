@@ -280,6 +280,9 @@ hull3_mission_fnc_receiveJipSync = {
     0 setFog _fog;
     [0, _weather] call hull3_mission_fnc_setWeather;
     skipTime 24;
+    hull3_mission_date = _date;
+    hull3_mission_fog = _fog;
+    hull3_mission_weather = _weather;
     hull3_mission_safetyTimer = _safetyTimer;
     hull3_mission_safetyTimerAbort = _safetyTimerAbort;
 };
