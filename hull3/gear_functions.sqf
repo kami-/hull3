@@ -51,6 +51,7 @@ hull3_gear_fnc_assignUnitInit = {
     _unit setVariable ["hull3_gear_template", _template, true];
     removeAllWeapons _unit;
     removeBackpack _unit;
+    removeGoggles _unit;
     [_unit] call hull3_gear_fnc_removeNVGs;
     DEBUG("hull3.gear.assign",FMT_1("Initialized unit '%1' gear.",_unit));
 };
@@ -192,7 +193,7 @@ hull3_gear_fnc_assignUniform = {
     FUN_ARGS_2(_unit,_uniform);
 
     if (_uniform != "") then {
-        _unit addUniform _uniform;
+        _unit forceAddUniform _uniform;
         TRACE("hull3.gear.assign",FMT_2("Assigned uniform '%1' to unit '%2'.",_uniform,_unit));
     };
 };
