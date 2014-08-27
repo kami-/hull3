@@ -193,7 +193,7 @@ hull3_gear_fnc_assignUniform = {
     FUN_ARGS_2(_unit,_uniform);
 
     if (_uniform != "") then {
-        _unit addUniform _uniform;
+        _unit forceAddUniform _uniform;
         TRACE("hull3.gear.assign",FMT_2("Assigned uniform '%1' to unit '%2'.",_uniform,_unit));
     };
 };
