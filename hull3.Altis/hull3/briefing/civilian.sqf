@@ -50,8 +50,6 @@ player createDiaryRecord ["Diary", ["Administration","
 player createDiaryRecord ["Diary", ["Credits", "
 <br/>
 Made by 
-<br/><br/>
-Created with Hull: https://github.com/kami-/hull
 "]];
 
 
