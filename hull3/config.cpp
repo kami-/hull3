@@ -45,4 +45,11 @@ class CfgVehicles {
     };
 };
 
+class CfgRespawnTemplates {
+    class Hull3_RespawnHandler {
+        onPlayerRespawn = "hull3_unit_fnc_onPlayerRespawn";
+    };
+};
+
+// Hull3
 #include "hull3.h"
