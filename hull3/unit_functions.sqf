@@ -3,6 +3,14 @@
 #include "\userconfig\hull3\log\unit.h"
 #include "logbook.h"
 
+hull3_unit_fnc_preInit = {
+    [] call hull3_unit_fnc_addEventHandlers;
+    DEBUG("hull3.unit","Unit functions preInit finished.");
+};
+
+hull3_unit_fnc_addEventHandlers = {
+    ["player.respawned", hull3_unit_fnc_initializeSpectator] call hull3_event_fnc_addEventHandler;
+};
 
 hull3_unit_fnc_init = {
     FUN_ARGS_3(_unit,_gearConfig,_markerConfig);
@@ -22,6 +30,11 @@ hull3_unit_fnc_waitForPlayer = {
     };
     ["player.initialized", [player]] call hull3_event_fnc_emitEvent;
     DEBUG("hull3.unit.player","Player is initialized.");
+};
+
+hull3_unit_fnc_onPlayerRespawn = {
+    INFO("hull3.player.respawned",FMT_1("Player has respawned with '%1'",_this));
+    ["player.respawned", _this] call hull3_event_fnc_emitEvent;
 };
 
 hull3_unit_fnc_playerInit = {

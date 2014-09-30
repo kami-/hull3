@@ -69,6 +69,7 @@ FNC_FIND_EVENT = {
 
 FNC_ADD_ALL_EVENTS = {
     ["player.initialized"] call FNC_ADD_EVENT;
+    ["player.respawned"] call FNC_ADD_EVENT;
     
     ["marker.group.created"] call FNC_ADD_EVENT;
     
