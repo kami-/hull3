@@ -1,16 +1,16 @@
 class Mk20 {
     class Rifleman {
         weapons[] = {"arifle_Mk20_F", "hgun_ACPC2_F"};
-        primaryAttachments[] = {"optic_ACO_grn", "acc_flashlight"};
+        primaryAttachments[] = {"acc_flashlight"};
         secondaryAttachments[] = {};
         magazines[] = {
             {"30Rnd_556x45_Stanag", 1},
-            {"9Rnd_45ACP_Mag", 3},
+            {"9Rnd_45ACP_Mag", 3}
         };
         helmet = "H_HelmetIA";
-        uniform = "U_I_CombatUniform";
+        uniform = "U_I_CombatUniform_shortsleeve";
         goggles = "";
-        vest = "V_PlateCarrierIA1_dgtl";
+        vest = "V_PlateCarrierIAGL_dgtl";
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 8},
             {"SmokeShell", 2},
@@ -60,7 +60,6 @@ class Mk20 {
 
     class Crew : Rifleman {
         weapons[] = {"arifle_Mk20C_F", "hgun_ACPC2_F"};
-        primaryAttachments[] = {"optic_ACO_grn"};
         helmet = "H_HelmetCrew_I";
         ruck = "";
         vest = "V_PlateCarrierIA1_dgtl";
@@ -82,6 +81,8 @@ class Mk20 {
     };
 
     class Medic : Rifleman {
+        helmet = "H_Booniehat_dgtl";
+        vest = "V_PlateCarrierIA1_dgtl";
         ruck = "B_Carryall_oli";
         ruckMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
@@ -98,7 +99,7 @@ class Mk20 {
         weapons[] = {"LMG_Mk200_F", "hgun_ACPC2_F"};
         magazines[] = {
             {"200Rnd_65x39_cased_Box", 1},
-            {"9Rnd_45ACP_Mag", 3},
+            {"9Rnd_45ACP_Mag", 3}
         };
         vestMagazines[] = {
             {"200Rnd_65x39_cased_Box", 1},
@@ -108,7 +109,7 @@ class Mk20 {
         ruckMagazines[] = {
             {"200Rnd_65x39_cased_Box", 1},
             {"200Rnd_65x39_cased_Box_Tracer", 1},
-            {"SmokeShell", 2},
+            {"SmokeShell", 2}
         };
     };
 
@@ -117,12 +118,19 @@ class Mk20 {
         ruckMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"200Rnd_65x39_cased_Box", 3},
-            {"SmokeShell", 2},
+            {"SmokeShell", 2}
         };
         items[] = {"ACRE_PRC343", "ItemGPS", "Binocular"};
     };
 
     class RAT : Rifleman {
+        weapons[] = {"arifle_Mk20_F", "hgun_ACPC2_F", "AT4"};
+        vest = "V_PlateCarrierIA1_dgtl";
+        ruck = "B_Carryall_oli";
+        ruckMagazines[] = {
+            {"30Rnd_556x45_Stanag", 6},
+            {"AT4_HEAT", 1}
+        };
     };
 
     class MATG : Rifleman {
@@ -135,7 +143,7 @@ class Mk20 {
         ruck = "B_Carryall_oli";
         ruckMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
-            {"NLAW_F", 2},
+            {"NLAW_F", 2}
         };
         items[] = {"ACRE_PRC343", "ACRE_PRC148", "ItemGPS"};
     };
@@ -143,7 +151,7 @@ class Mk20 {
     class MATAG : Rifleman {
         ruckMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
-            {"NLAW_F", 2},
+            {"NLAW_F", 2}
         };
         ruck = "B_Carryall_oli";
         items[] = {"ACRE_PRC343", "ItemGPS", "Rangefinder"};
@@ -163,7 +171,7 @@ class Mk20 {
         ruck = "B_Carryall_oli";
         ruckMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
-            {"Titan_AT", 2},
+            {"Titan_AT", 2}
         };
     };
 
@@ -183,12 +191,12 @@ class Mk20 {
     class ENG : Rifleman {
         ruck = "B_Carryall_oli";
         ruckWeapons[] = {
-            {"SatchelCharge_Remote_Mag", 2},
-            {"MineDetector", 1}
+            {"SatchelCharge_Remote_Mag", 1},
+            {"DemoCharge_Remote_Mag", 2}
         };
         ruckMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
-            {"SmokeShell", 2},
+            {"SmokeShell", 2}
         };
         items[] = {"ACRE_PRC343", "ACRE_PRC148", "ItemGPS", "Binocular"};
     };
@@ -213,12 +221,16 @@ class Mk20 {
             {"30Rnd_45ACP_Mag_SMG_01", 1},
             {"9Rnd_45ACP_Mag", 3}
         };
-        primaryAttachments[] = {"optic_Aco_smg"};
         helmet = "H_PilotHelmetHeli_I";
         uniform = "U_I_HeliPilotCoveralls";
         vestMagazines[] = {
             {"30Rnd_45ACP_Mag_SMG_01", 6},
             {"SmokeShell", 2}
+        };
+        ruck = "B_Parachute";
+        ruckWeapons[] = {
+        };
+        ruckMagazines[] = {
         };
         items[] = {"ACRE_PRC343", "ACRE_PRC119", "ItemGPS", "NVGoggles"};
     };
@@ -229,7 +241,6 @@ class Mk20 {
             {"30Rnd_45ACP_Mag_SMG_01", 1},
             {"9Rnd_45ACP_Mag", 3}
         };
-        primaryAttachments[] = {"optic_Aco_smg"};
         helmet = "H_CrewHelmetHeli_I";
         vestMagazines[] = {
             {"30Rnd_45ACP_Mag_SMG_01", 6},
@@ -241,7 +252,8 @@ class Mk20 {
     class Vehicle {
         weapons[] = {
             {"arifle_Mk20_F", 2},
-            {"SMG_01_F", 2}
+            {"SMG_01_F", 2},
+            {"AT4", 2}
         };
         magazines[] = {
             {"30Rnd_556x45_Stanag", 20},
@@ -251,7 +263,8 @@ class Mk20 {
             {"30Rnd_45ACP_Mag_SMG_01", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"HandGrenade", 10},
-            {"SmokeShell", 5}
+            {"SmokeShell", 5},
+            {"RPG18_HEAT", 2}
         };
         items[] = {
             {"ACRE_PRC343", 5},
@@ -266,7 +279,8 @@ class Mk20 {
     class Truck : Vehicle {
         weapons[] = {
             {"arifle_Mk20_F", 5},
-            {"SMG_01_F", 5}
+            {"SMG_01_F", 5},
+            {"AT4", 5}
         };
         magazines[] = {
             {"30Rnd_556x45_Stanag", 50},
@@ -276,6 +290,7 @@ class Mk20 {
             {"200Rnd_65x39_cased_Box_Tracer", 10},
             {"SatchelCharge_Remote_Mag", 4},
             {"NLAW_F", 5},
+            {"AT4_HEAT", 5},
             {"1Rnd_Smoke_Grenade_shell", 20},
             {"HandGrenade", 10},
             {"SmokeShell", 10}
