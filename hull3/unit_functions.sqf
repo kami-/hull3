@@ -3,7 +3,6 @@
 #include "\userconfig\hull3\log\unit.h"
 #include "logbook.h"
 
-
 hull3_unit_fnc_init = {
     FUN_ARGS_3(_unit,_gearConfig,_markerConfig);
 
@@ -22,6 +21,11 @@ hull3_unit_fnc_waitForPlayer = {
     };
     ["player.initialized", [player]] call hull3_event_fnc_emitEvent;
     DEBUG("hull3.unit.player","Player is initialized.");
+};
+
+hull3_unit_fnc_onPlayerRespawn = {
+    DEBUG("hull3.player.respawned",FMT_1("Player has respawned with '%1'",_this));
+    ["player.respawned", _this] call hull3_event_fnc_emitEvent;
 };
 
 hull3_unit_fnc_playerInit = {
@@ -89,20 +93,6 @@ hull3_unit_fnc_killedEH = {
     _unit removeEventHandler ["Killed", _unit getVariable "hull3_eh_killed"];
     _unit setVariable ["hull3_eh_friendlyFire", nil];
     _unit setVariable ["hull3_eh_killed", nil];
-};
-
-hull3_unit_fnc_setFireTeamColors = {
-    if (count units group player == 4) then {
-        {
-            _x assignTeam call {
-                private "_gearClass";
-                _gearClass = _x getVariable "hull3_gear_class";
-                if (_gearClass in HULL3_TEAMCOLOR_RED) exitWith {"RED"};
-                if (_gearClass in HULL3_TEAMCOLOR_BLUE) exitWith {"BLUE"};
-                "BLUE";
-            };
-        } foreach units group player;
-    };
 };
 
 hull3_unit_fnc_getAssignedTeam = {

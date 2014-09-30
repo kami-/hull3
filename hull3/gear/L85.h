@@ -1,26 +1,26 @@
-class MX {
+class L85 {
     class Rifleman {
-        weapons[] = {"arifle_MX_F", "hgun_Pistol_heavy_01_F"};
+        weapons[] = {"kio_l85a2", "hgun_Pistol_heavy_01_F"};
         primaryAttachments[] = {"acc_flashlight"};
         secondaryAttachments[] = {};
         magazines[] = {
-            {"30Rnd_65x39_caseless_mag", 1},
+            {"L85_30Rnd_556x45_Stanag", 1},
             {"11Rnd_45ACP_Mag", 3}
         };
-        helmet = "H_HelmetB_snakeskin";
+        helmet = "H_HelmetSpecB_paint2";
         uniform = "U_B_CombatUniform_mcam";
-        goggles = "";
+        goggles = "G_Bandanna_tan";
         vest = "V_PlateCarrier2_rgr";
         vestMagazines[] = {
-            {"30Rnd_65x39_caseless_mag", 8},
+            {"L85_30Rnd_556x45_Stanag", 8},
             {"SmokeShell", 2},
             {"HandGrenade", 2}
         };
-        ruck = "B_AssaultPack_rgr";
+        ruck = "B_TacticalPack_blk";
         ruckWeapons[] = {};
         ruckMagazines[] = {
-            {"30Rnd_65x39_caseless_mag", 4},
-            {"30Rnd_65x39_caseless_mag_Tracer", 2},
+            {"L85_30Rnd_556x45_Stanag", 4},
+            {"L85_30Rnd_556x45_Stanag_Tracer", 2},
             {"SmokeShell", 2},
             {"HandGrenade", 2}
         };
@@ -29,20 +29,16 @@ class MX {
     };
 
     class Leader : Rifleman {
-        weapons[] = {"arifle_MX_GL_F","hgun_Pistol_heavy_01_F"};
+        weapons[] = {"kio_l85a2","hgun_Pistol_heavy_01_F"};
         vestMagazines[] = {
-            {"30Rnd_65x39_caseless_mag", 8},
+            {"L85_30Rnd_556x45_Stanag", 8},
             {"11Rnd_45ACP_Mag", 3},
-            {"1Rnd_HE_Grenade_shell", 2},
-            {"1Rnd_Smoke_Grenade_shell", 2},
             {"SmokeShell", 2},
             {"HandGrenade", 2}
         };
         ruckMagazines[] = {
-            {"30Rnd_65x39_caseless_mag", 3},
-            {"30Rnd_65x39_caseless_mag_Tracer", 2},
-            {"1Rnd_HE_Grenade_shell", 4},
-            {"1Rnd_Smoke_Grenade_shell", 2},
+            {"L85_30Rnd_556x45_Stanag", 3},
+            {"L85_30Rnd_556x45_Stanag_Tracer", 2},
             {"SmokeShell", 2},
             {"HandGrenade", 2}
         };
@@ -54,14 +50,14 @@ class MX {
     };
 
     class Crew : Rifleman {
-        weapons[] = {"arifle_MXC_F", "hgun_Pistol_heavy_01_F"};
+        weapons[] = {"kio_l85a2", "hgun_Pistol_heavy_01_F"};
         primaryAttachments[] = {};
         helmet = "H_HelmetCrew_B";
         ruck = "";
-        vest = "V_PlateCarrier1_rgr";
+        vest = "V_PlateCarrier2_rgr";
         vestMagazines[] = {
-            {"30Rnd_65x39_caseless_mag", 4},
-            {"30Rnd_65x39_caseless_mag_Tracer", 2},
+            {"L85_30Rnd_556x45_Stanag", 4},
+            {"L85_30Rnd_556x45_Stanag_Tracer", 2},
             {"SmokeShell", 2},
             {"HandGrenade", 2}
         };
@@ -78,13 +74,13 @@ class MX {
     };
 
     class Medic : Rifleman {
-        weapons[] = {"arifle_MXC_F", "hgun_Pistol_heavy_01_F"};
-        helmet = "H_HelmetB_light_snakeskin";
-        uniform = "U_B_CombatUniform_mcam_tshirt";
-        vest = "V_PlateCarrier1_rgr";
+        weapons[] = {"kio_l85a2", "hgun_Pistol_heavy_01_F"};
+        helmet = "H_HelmetB_light_sand";
+        uniform = "U_B_CTRG_3";
+        vest = "V_PlateCarrier2_rgr";
         ruck = "B_Carryall_mcamo";
         ruckMagazines[] = {
-            {"30Rnd_65x39_caseless_mag", 6},
+            {"L85_30Rnd_556x45_Stanag", 6},
             {"Medikit", 1},
             {"FirstAidKit", 8}
         };
@@ -92,44 +88,47 @@ class MX {
     };
 
     class FTL : Leader {
+        uniform = "U_B_CTRG_3";
     };
 
     class AR : Rifleman {
-        weapons[] = {"arifle_MX_SW_F", "hgun_Pistol_heavy_01_F"};
+        uniform = "U_B_CTRG_3";
+        weapons[] = {"M27", "hgun_Pistol_heavy_01_F"};
+        primaryAttachments[] = {"RH_t1"};
         magazines[] = {
-            {"100Rnd_65x39_caseless_mag", 1},
+            {"100Rnd_556x45_Stanag", 1},
             {"11Rnd_45ACP_Mag", 3}
         };
         vestMagazines[] = {
-            {"100Rnd_65x39_caseless_mag", 1},
+            {"100Rnd_556x45_Stanag", 1},
             {"SmokeShell", 2},
             {"HandGrenade", 2}
         };
         ruckMagazines[] = {
-            {"100Rnd_65x39_caseless_mag", 2},
-            {"100Rnd_65x39_caseless_mag_Tracer", 2},
+            {"100Rnd_556x45_Stanag", 2},
+            {"100Rnd_556x45_Stanag_Tracer_Red", 2},
             {"SmokeShell", 2}
         };
     };
 
     class AAR : Rifleman {
         ruck = "B_Kitbag_mcamo";
-        uniform = "U_B_CombatUniform_mcam_tshirt";
+        uniform = "U_B_CTRG_3";
         ruckMagazines[] = {
-            {"30Rnd_65x39_caseless_mag_Tracer", 2},
-            {"100Rnd_65x39_caseless_mag", 4},
+            {"L85_30Rnd_556x45_Stanag_Tracer", 2},
+            {"100Rnd_556x45_Stanag", 4},
             {"SmokeShell", 2}
         };
         items[] = {"ACRE_PRC343", "ItemGPS", "Binocular"};
     };
 
     class RAT : Rifleman {
-        weapons[] = {"arifle_MXC_F", "hgun_Pistol_heavy_01_F", "AT4"};
-        uniform = "U_B_CombatUniform_mcam_tshirt";
+        weapons[] = {"kio_l85a2", "hgun_Pistol_heavy_01_F", "AT4"};
+        uniform = "U_B_CTRG_3";
         ruck = "B_AssaultPack_rgr";
         ruckMagazines[] = {
-            {"30Rnd_65x39_caseless_mag", 4},
-            {"30Rnd_65x39_caseless_mag_Tracer", 2},
+            {"L85_30Rnd_556x45_Stanag", 4},
+            {"L85_30Rnd_556x45_Stanag_Tracer", 2},
             {"SmokeShell", 2},
             {"HandGrenade", 2},
             {"AT4_HEAT", 1}
@@ -158,23 +157,23 @@ class MX {
     class MMGAG : Rifleman {
         ruck = "B_Carryall_mcamo";
         ruckMagazines[] = {
-            {"30Rnd_65x39_caseless_mag", 6},
+            {"L85_30Rnd_556x45_Stanag", 6},
             {"200Rnd_65x39_cased_Box", 3},
             {"SmokeShell", 2}
         };
-        items[] = {"ACRE_PRC343", "Rangefinder"};
+        items[] = {"ACRE_PRC343", "Rangefinder", "ItemGPS"};
     };
 
     class MATG : Rifleman {
-        weapons[] = {"arifle_MX_F", "hgun_Pistol_heavy_01_F", "launch_NLAW_F"};
+        weapons[] = {"kio_l85a2", "hgun_Pistol_heavy_01_F", "launch_NLAW_F"};
         vestMagazines[] = {
-            {"30Rnd_65x39_caseless_mag", 8},
+            {"L85_30Rnd_556x45_Stanag", 8},
             {"SmokeShell", 2},
             {"HandGrenade", 2}
         };
         ruck = "B_Bergen_sgg";
         ruckMagazines[] = {
-            {"30Rnd_65x39_caseless_mag", 6},
+            {"L85_30Rnd_556x45_Stanag", 6},
             {"NLAW_F", 2}
         };
         items[] = {"ACRE_PRC343", "ACRE_PRC148", "ItemGPS"};
@@ -182,7 +181,7 @@ class MX {
 
     class MATAG : Rifleman {
         ruckMagazines[] = {
-            {"30Rnd_65x39_caseless_mag", 6},
+            {"L85_30Rnd_556x45_Stanag", 6},
             {"NLAW_F", 2}
         };
         ruck = "B_Bergen_sgg";
@@ -193,15 +192,15 @@ class MX {
     };
 
     class HATG : Rifleman {
-        weapons[] = {"arifle_MX_F", "hgun_Pistol_heavy_01_F", "launch_B_Titan_short_F"};
+        weapons[] = {"kio_l85a2", "hgun_Pistol_heavy_01_F", "launch_B_Titan_short_F"};
         vestMagazines[] = {
-            {"30Rnd_65x39_caseless_mag", 8},
+            {"L85_30Rnd_556x45_Stanag", 8},
             {"SmokeShell", 2},
             {"HandGrenade", 2}
         };
         ruck = "B_Bergen_sgg";
         ruckMagazines[] = {
-            {"30Rnd_65x39_caseless_mag", 6},
+            {"L85_30Rnd_556x45_Stanag", 6},
             {"Titan_AT", 2}
         };
         items[] = {"ACRE_PRC343", "ACRE_PRC148", "ItemGPS"};
@@ -209,7 +208,7 @@ class MX {
 
     class HATAG : Rifleman {
         ruckMagazines[] = {
-            {"30Rnd_65x39_caseless_mag", 8},
+            {"L85_30Rnd_556x45_Stanag", 8},
             {"Titan_AT", 1},
             {"Titan_AP", 1}
         };
@@ -221,8 +220,8 @@ class MX {
     };
 
     class ENG : Rifleman {
-        weapons[] = {"arifle_MXC_F"};
-        uniform = "U_B_CombatUniform_mcam_tshirt";
+        weapons[] = {"kio_l85a2"};
+        uniform = "U_B_CTRG_3";
         vest = "V_PlateCarrier1_rgr";
         helmet = "H_Booniehat_mcamo";
         ruck = "B_Carryall_mcamo";
@@ -231,8 +230,8 @@ class MX {
             {"DemoCharge_Remote_Mag", 2}
         };
         ruckMagazines[] = {
-            {"30Rnd_65x39_caseless_mag", 4},
-            {"30Rnd_65x39_caseless_mag_Tracer", 2},
+            {"L85_30Rnd_556x45_Stanag", 4},
+            {"L85_30Rnd_556x45_Stanag_Tracer", 2},
             {"SmokeShell", 2}
         };
         items[] = {"ACRE_PRC343", "ACRE_PRC148", "ItemGPS", "Binocular"};
@@ -279,15 +278,15 @@ class MX {
 
     class Vehicle {
         weapons[] = {
-            {"arifle_MX_F", 2},
+            {"kio_l85a2", 2},
             {"SMG_01_F", 2},
             {"AT4", 2}
         };
         magazines[] = {
-            {"30Rnd_65x39_caseless_mag", 20},
-            {"30Rnd_65x39_caseless_mag_Tracer", 10},
-            {"100Rnd_65x39_caseless_mag", 6},
-            {"100Rnd_65x39_caseless_mag_Tracer", 4},
+            {"L85_30Rnd_556x45_Stanag", 20},
+            {"L85_30Rnd_556x45_Stanag_Tracer", 10},
+            {"100Rnd_556x45_Stanag", 6},
+            {"100Rnd_556x45_Stanag_Tracer_Red", 4},
             {"30Rnd_45ACP_Mag_SMG_01", 10},
             {"200Rnd_65x39_cased_Box", 3},
             {"200Rnd_65x39_cased_Box_Tracer", 2},
@@ -308,15 +307,15 @@ class MX {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"arifle_MX_Black_F", 5},
+            {"kio_l85a2", 5},
             {"SMG_01_F", 5},
             {"AT4", 5}
         };
         magazines[] = {
-            {"30Rnd_65x39_caseless_mag", 50},
-            {"30Rnd_65x39_caseless_mag_Tracer", 25},
-            {"100Rnd_65x39_caseless_mag", 15},
-            {"100Rnd_65x39_caseless_mag_Tracer", 5},
+            {"L85_30Rnd_556x45_Stanag", 50},
+            {"L85_30Rnd_556x45_Stanag_Tracer", 25},
+            {"100Rnd_556x45_Stanag", 15},
+            {"100Rnd_556x45_Stanag_Tracer_Red", 5},
             {"30Rnd_45ACP_Mag_SMG_01", 10},
             {"200Rnd_65x39_cased_Box", 6},
             {"200Rnd_65x39_cased_Box_Tracer", 4},
@@ -333,10 +332,10 @@ class MX {
         weapons[] = {
         };
         magazines[] = {
-            {"30Rnd_65x39_caseless_mag", 20},
-            {"30Rnd_65x39_caseless_mag_Tracer", 10},
-            {"100Rnd_65x39_caseless_mag", 6},
-            {"100Rnd_65x39_caseless_mag_Tracer", 4},
+            {"L85_30Rnd_556x45_Stanag", 20},
+            {"L85_30Rnd_556x45_Stanag_Tracer", 10},
+            {"100Rnd_556x45_Stanag", 6},
+            {"100Rnd_556x45_Stanag_Tracer_Red", 4},
             {"30Rnd_45ACP_Mag_SMG_01", 5},
             {"200Rnd_65x39_cased_Box", 3},
             {"200Rnd_65x39_cased_Box_Tracer", 2},

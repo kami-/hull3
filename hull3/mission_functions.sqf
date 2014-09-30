@@ -22,7 +22,6 @@ hull3_mission_fnc_init = {
 };
 
 hull3_mission_fnc_serverInit = {
-    [] call hull3_mission_fnc_init;
     [] call hull3_mission_fnc_addServerEHs;
     [] spawn hull3_mission_fnc_serverSafetyTimerLoop;
     [] spawn hull3_mission_fnc_broadcastEnviromentLoop;
@@ -30,7 +29,6 @@ hull3_mission_fnc_serverInit = {
 };
 
 hull3_mission_fnc_clientInit = {
-    [] call hull3_mission_fnc_init;
     hull3_mission_isJip = SLX_XEH_MACHINE select 1;
     if (hull3_mission_isJip) then {
         [] call hull3_mission_fnc_getJipSync;
