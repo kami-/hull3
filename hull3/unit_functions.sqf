@@ -104,20 +104,6 @@ hull3_unit_fnc_killedEH = {
     _unit setVariable ["hull3_eh_killed", nil];
 };
 
-hull3_unit_fnc_setFireTeamColors = {
-    if (count units group player == 4) then {
-        {
-            _x assignTeam call {
-                private "_gearClass";
-                _gearClass = _x getVariable "hull3_gear_class";
-                if (_gearClass in HULL3_TEAMCOLOR_RED) exitWith {"RED"};
-                if (_gearClass in HULL3_TEAMCOLOR_BLUE) exitWith {"BLUE"};
-                "BLUE";
-            };
-        } foreach units group player;
-    };
-};
-
 hull3_unit_fnc_getAssignedTeam = {
     FUN_ARGS_1(_gearClass);
 
