@@ -9,9 +9,15 @@ class Hull3 {
         #include "gear\factions.h"
 
         #include "gear\Default.h"
-        #include "gear\MX.h"
+        #include "gear\AK74_RU.h"
+        #include "gear\AK74_SEP.h"
         #include "gear\Katiba.h"
+        #include "gear\L85.h"
+        #include "gear\M16A4_USMC.h"
+        #include "gear\M4SOC.h"
         #include "gear\Mk20.h"
+        #include "gear\MX.h"
+        #include "gear\Tavor.h"
 
         unitBaseClass = "Rifleman";
         vehicleBaseClass = "Vehicle";
