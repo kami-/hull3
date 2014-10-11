@@ -36,7 +36,7 @@ class AK74_SEP {
         vestMagazines[] = {
             {"hlc_30Rnd_545x39_B_AK", 8},
             {"hlc_VOG25_AK", 2},
-            {"hlc_GRD_Red", 2},
+            {"hlc_GRD_green", 2},
             {"SmokeShell", 2},
             {"HandGrenade", 2}
         };
@@ -44,7 +44,7 @@ class AK74_SEP {
             {"hlc_30Rnd_545x39_B_AK", 3},
             {"hlc_30Rnd_545x39_t_ak", 3},
             {"hlc_VOG25_AK", 4},
-            {"1Rnd_Smoke_Grenade_shell", 2},
+            {"hlc_GRD_green", 2},
             {"SmokeShell", 2},
             {"HandGrenade", 2}
         };
@@ -55,7 +55,7 @@ class AK74_SEP {
         vestMagazines[] = {
             {"hlc_30Rnd_545x39_B_AK", 8},
             {"hlc_VOG25_AK", 2},
-            {"1Rnd_Smoke_Grenade_shell", 2},
+            {"hlc_GRD_green", 2},
             {"SmokeShell", 2},
             {"HandGrenade", 2}
         };
@@ -330,7 +330,7 @@ class AK74_SEP {
             {"hlc_75Rnd_762x39_m_rpk", 6},
             {"Cha_100Rnd_762x54_PK", 4},
             {"RPG18_HEAT", 2},
-            {"1Rnd_Smoke_Grenade_shell", 10},
+            {"hlc_GRD_green", 10},
             {"HandGrenade", 10},
             {"SmokeShell", 5}
         };
