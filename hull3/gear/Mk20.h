@@ -261,10 +261,10 @@ class Mk20 {
             {"200Rnd_65x39_cased_Box", 10},
             {"200Rnd_65x39_cased_Box_Tracer", 5},
             {"30Rnd_45ACP_Mag_SMG_01", 10},
+            {"AT4_HEAT", 2},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"HandGrenade", 10},
-            {"SmokeShell", 5},
-            {"RPG18_HEAT", 2}
+            {"SmokeShell", 5}
         };
         items[] = {
             {"ACRE_PRC343", 5},
