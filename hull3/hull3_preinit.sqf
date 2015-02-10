@@ -21,6 +21,7 @@ if (hull3_isEnabled) then {
     [] call compile preProcessFileLineNumbers ADDON_PATH(marker_functions.sqf);
     [] call compile preProcessFileLineNumbers ADDON_PATH(briefing_functions.sqf);
     [] call compile preProcessFileLineNumbers ADDON_PATH(mission_functions.sqf);
+    [] call compile preProcessFileLineNumbers ADDON_PATH(gc_functions.sqf);
 
     hull3_isInitialized = true;
     ["hull3.initialized", []] call hull3_event_fnc_emitEvent;
@@ -32,6 +33,7 @@ if (hull3_isEnabled) then {
     [] call hull3_gear_fnc_preInit;
     [] call hull3_briefing_fnc_preInit;
     [] call hull3_acre_fnc_preInit;
+    [] call hull3_gc_fnc_preInit;
 } else {
     if (isClass (missionConfigFile >> "Hull_Script_Version")) then {
         INFO("hull3",FMT_1("Older script version of Hull was detected. Addonized Hull version '%1' was disabled.",HULL3_VERSION));
