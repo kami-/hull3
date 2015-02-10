@@ -122,8 +122,8 @@ hull3_mission_fnc_setWeather = {
 
 hull3_mission_fnc_setEnviroment = {
     setDate ([] call hull3_mission_fnc_getDateTime);
-    0 setFog ([] call hull3_mission_fnc_getFog);
     [0, [] call hull3_mission_fnc_getWeather] call hull3_mission_fnc_setWeather;
+    0 setFog ([] call hull3_mission_fnc_getFog);
     DEBUG("hull3.mission.weather",FMT_3("Environment was set. Date to '%1', fog to '%2' and weather to '%3'.",[] call hull3_mission_fnc_getDateTime,[] call hull3_mission_fnc_getFog,[] call hull3_mission_fnc_getWeather));
 };
 
@@ -275,8 +275,8 @@ hull3_mission_fnc_receiveJipSync = {
     DEBUG("hull3.mission.jip",FMT_2("Received JIP sync '%1' from server for client '%2'.",owner player,_this));
     setDate _date;
     skipTime -24;
-    0 setFog _fog;
     [0, _weather] call hull3_mission_fnc_setWeather;
+    0 setFog _fog;
     skipTime 24;
     hull3_mission_date = _date;
     hull3_mission_fog = _fog;
