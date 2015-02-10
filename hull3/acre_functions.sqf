@@ -15,6 +15,7 @@ hull3_acre_fnc_preInit = {
 
 hull3_acre_fnc_addEventHandlers = {
     ["player.initialized", hull3_acre_fnc_playerInit] call hull3_event_fnc_addEventHandler;
+    ["player.respawned", hull3_acre_fnc_tryEnableAcreSpectator] call hull3_event_fnc_addEventHandler;
 };
 
 hull3_acre_fnc_setPlayerFrequencies = {
@@ -44,6 +45,14 @@ hull3_acre_fnc_playerInit = {
         };
     } else {
         DEBUG("hull3.acre.jip","Player is dead, setting ACRE spectator to true.");
+        [true] call acre_api_fnc_setSpectator;
+    };
+};
+
+hull3_acre_fnc_tryEnableAcreSpectator = {
+    FUN_ARGS_1(_unit);
+
+    if (typeof _unit != "seagull") then {
         [true] call acre_api_fnc_setSpectator;
     };
 };
