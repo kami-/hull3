@@ -13,11 +13,11 @@ if (hull3_isEnabled) then {
         if (isServer) then {
             [] call hull3_mission_fnc_serverInit;
             [hull3_gear_fnc_tryAssignRadios] spawn hull3_unit_fnc_foreachNonPlayerUnits;
-            [] call hull_gc_fnc_start;
+            [] call hull3_gc_fnc_start;
         };
     } else {
         [] call hull3_mission_fnc_serverInit;
         [hull3_gear_fnc_tryAssignRadios] spawn hull3_unit_fnc_foreachNonPlayerUnits;
-        [] call hull_gc_fnc_start;
+        [] call hull3_gc_fnc_start;
     };
 };

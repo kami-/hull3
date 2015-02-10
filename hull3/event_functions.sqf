@@ -53,7 +53,7 @@ FNC_EMIT_EVENT = {
         {
             _arguments call _x;
         } foreach (EVENTS_ARRAY select _eventIndex select 2);
-        [EVENTS_ARRAY select _eventIndex select 1, _arguments] call hull_common_fnc_callEventFile;
+        [EVENTS_ARRAY select _eventIndex select 1, _arguments] call hull3_common_fnc_callEventFile;
     };
 };
 

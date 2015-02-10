@@ -218,8 +218,8 @@ hull3_mission_fnc_clientSafetyTimerLoop = {
         player removeEventHandler ["Fired", player getVariable "hull3_eh_fired"];
         DEBUG("hull3.mission.safetytimer","Safety timer has ended. Removed fired EH.");
         if (!isServer) then {
-+            ["mission.safetytimer.ended", []] call hull3_event_fnc_emitEvent;
-+        };
+            ["mission.safetytimer.ended", []] call hull3_event_fnc_emitEvent;
+        };
     };
 };
 
@@ -250,8 +250,7 @@ hull3_mission_fnc_addHostSafetyTimerStopAction = {
     if (serverCommandAvailable "#kick" || {!isMultiplayer}) then {
         DECLARE(_actionId) = player addAction ['<t color="#428CE0">Disable weapon safety</t>', ADDON_PATH(mission_host_safetytimer_stop.sqf), ["activated"], 3, false, false, "", "driver _target == _this && {!(hull3_mission_safetyTimer select 0)} && {(hull3_mission_safetyTimer select 1) < hull3_mission_safetyTimerEnd}"];
         hull3_mission_safetyTimerActionIds set [0, _actionId];
-        player addAction ["Disable weapon safety", ADDON_PATH(mission_host_safetytimer_stop.sqf), [], 3, false, false, "", "driver _target == _this && {!(hull3_mission_safetyTimer select 0)} && {(hull3_mission_safetyTimer select 1) < hull3_mission_safetyTimerEnd}"];
-        DEBUG("hull3.mission.safetytimer","Added safety timer abort action to player.");
+        DEBUG("hull.mission.safetytimer","Added safety timer abort action to player.");
     };
 };
 
