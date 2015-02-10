@@ -23,6 +23,7 @@ if (hull3_isEnabled) then {
     [] call compile preProcessFileLineNumbers ADDON_PATH(mission_functions.sqf);
 
     hull3_isInitialized = true;
+    ["hull3.initialized", []] call hull3_event_fnc_emitEvent;
     INFO("hull3",FMT_1("Hull version '%1' has been successfully initialized.",HULL3_VERSION));
 
     [] call hull3_settings_fnc_preInit;

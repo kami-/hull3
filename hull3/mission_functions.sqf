@@ -282,18 +282,21 @@ hull3_mission_fnc_getJipSync = {
 hull3_mission_fnc_sendJipSync = {
     FUN_ARGS_1(_client);
 
+    private ["_weather", "_customArguments"];
     hull3_mission_jipPacket = [date];
     PUSH(hull3_mission_jipPacket,fogParams);
-    DECLARE(_weather) = [overcast, rain, rainbow, lightnings, windStr, windStr, waves];
+    _weather = [overcast, rain, rainbow, lightnings, windStr, windStr, waves];
     PUSH(hull3_mission_jipPacket,_weather);
     PUSH(hull3_mission_jipPacket,hull3_mission_safetyTimer);
     PUSH(hull3_mission_jipPacket,hull3_mission_safetyTimerAbort);
+    _customArguments = ["mission_jip_sending", [_client]] call hull3_common_fnc_getEventFileResult;
+    PUSH(hull3_mission_jipPacket,_customArguments);
     DEBUG("hull3.mission.jip",FMT_2("Sending JIP sync for client '%1' with packet '%2'.",_client,hull3_mission_jipPacket));
     (owner _client) publicVariableClient "hull3_mission_jipPacket";
 };
 
 hull3_mission_fnc_receiveJipSync = {
-    FUN_ARGS_5(_date,_fog,_weather,_safetyTimer,_safetyTimerAbort);
+    FUN_ARGS_6(_date,_fog,_weather,_safetyTimer,_safetyTimerAbort,_customArguments);
 
     DEBUG("hull3.mission.jip",FMT_2("Received JIP sync '%1' from server for client '%2'.",owner player,_this));
     setDate _date;
@@ -306,4 +309,5 @@ hull3_mission_fnc_receiveJipSync = {
     hull3_mission_weather = _weather;
     hull3_mission_safetyTimer = _safetyTimer;
     hull3_mission_safetyTimerAbort = _safetyTimerAbort;
+    ["mission.jip.received", _customArguments] call hull3_event_fnc_emitEvent;
 };

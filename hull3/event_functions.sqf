@@ -18,7 +18,7 @@ FNC_ADD_EVENT_HANDLER = {
     _eventIndex = [_eventName] call FNC_FIND_EVENT;
     _handlerId = -1;
     if (_eventIndex != -1) then {
-        DECLARE(_handlerArray) = EVENTS_ARRAY select _eventIndex select 1;
+        DECLARE(_handlerArray) = EVENTS_ARRAY select _eventIndex select 2;
         _handlerId = count _handlerArray;
         PUSH(_handlerArray,_code);
     };
@@ -31,17 +31,17 @@ FNC_REMOVE_EVENT_HANDLER = {
 
     private ["_eventIndex", "_handlerArray"];
     _eventIndex = [_eventName] call FNC_FIND_EVENT;
-    _handlerArray = EVENTS_ARRAY select _eventIndex select 1;
+    _handlerArray = EVENTS_ARRAY select _eventIndex select 2;
     if (_eventIndex != -1 && {_handlerId >= 0} && {count _handlerArray >= _handlerId + 1}) then {
         _handlerArray set [_handlerId, {}];
     };
 };
 
 FNC_ADD_EVENT = {
-    FUN_ARGS_1(_eventName);
+    FUN_ARGS_2(_eventName,_eventConfigName);
 
     if ([_eventName] call FNC_FIND_EVENT == -1) then {
-        PUSH(EVENTS_ARRAY,AS_ARRAY_2(_eventName,[]));
+        PUSH(EVENTS_ARRAY,AS_ARRAY_3(_eventName,_eventConfigName,[]));
     };
 };
 
@@ -52,7 +52,8 @@ FNC_EMIT_EVENT = {
     if (_eventIndex != -1) then {
         {
             _arguments call _x;
-        } foreach (EVENTS_ARRAY select _eventIndex select 1);
+        } foreach (EVENTS_ARRAY select _eventIndex select 2);
+        [EVENTS_ARRAY select _eventIndex select 1, _arguments] call hull_common_fnc_callEventFile;
     };
 };
 
@@ -68,17 +69,16 @@ FNC_FIND_EVENT = {
 };
 
 FNC_ADD_ALL_EVENTS = {
-    ["player.initialized"] call FNC_ADD_EVENT;
-    ["player.respawned"] call FNC_ADD_EVENT;
-
-    ["marker.group.created"] call FNC_ADD_EVENT;
-
-    ["acre.initialized"] call FNC_ADD_EVENT;
-
-    ["gear.assigned"] call FNC_ADD_EVENT;
-    ["gear.radio.assigned"] call FNC_ADD_EVENT;
-
-    ["mission.safetytimer.ended"] call FNC_ADD_EVENT;
+    ["hull3.initialized", "hull3_initialized"] call FNC_ADD_EVENT;
+    ["player.initialized", "player_initialized"] call FNC_ADD_EVENT;
+    ["player.respawned", "player_respawned"] call FNC_ADD_EVENT;
+    ["marker.group.created", "marker_group_created"] call FNC_ADD_EVENT;
+    ["acre.initialized", "acre_initialized"] call FNC_ADD_EVENT;
+    ["gear.assigned", "gear_assigned"] call FNC_ADD_EVENT;
+    ["gear.radio.assigned", "gear_radio_assigned"] call FNC_ADD_EVENT;
+    ["mission.safetytimer.ended", "mission_safetytimer_ended"] call FNC_ADD_EVENT;
+    ["mission.jip.sending", "mission_jip_sending"] call FNC_ADD_EVENT;
+    ["mission.jip.received", "mission_jip_received"] call FNC_ADD_EVENT;
 };
 
 FNC_INIT = {
