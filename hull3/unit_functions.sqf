@@ -108,7 +108,7 @@ hull3_unit_fnc_getAssignedTeam = {
 
 hull3_unit_fnc_setFireTeamColors = {
     {
-        DECLARE(_assignedTeam) = [_x getVariable "hull3_gear_class"] call hull3_unit_fnc_getAssignedTeam;
+        DECLARE(_assignedTeam) = [_x getVariable ["hull3_gear_class", ""]] call hull3_unit_fnc_getAssignedTeam;
         if (_assignedTeam != "") then {
             _x assignTeam _assignedTeam;
         };
