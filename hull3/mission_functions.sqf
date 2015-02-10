@@ -29,6 +29,7 @@ hull3_mission_fnc_serverInit = {
 };
 
 hull3_mission_fnc_clientInit = {
+    hull3_mission_safetyTimerActionIds = [-1, -1, -1];
     hull3_mission_isJip = SLX_XEH_MACHINE select 1;
     if (hull3_mission_isJip) then {
         [] call hull3_mission_fnc_getJipSync;
@@ -202,7 +203,7 @@ hull3_mission_fnc_serverSafetyTimerCountDown = {
             };
             sleep 1;
         };
-        ["mission.safetytimer.ended", []] call hull_event_fnc_emitEvent;
+        ["mission.safetytimer.ended", []] call hull3_event_fnc_emitEvent;
     };
 };
 
@@ -217,7 +218,7 @@ hull3_mission_fnc_clientSafetyTimerLoop = {
         player removeEventHandler ["Fired", player getVariable "hull3_eh_fired"];
         DEBUG("hull3.mission.safetytimer","Safety timer has ended. Removed fired EH.");
         if (!isServer) then {
-+            ["mission.safetytimer.ended", []] call hull_event_fnc_emitEvent;
++            ["mission.safetytimer.ended", []] call hull3_event_fnc_emitEvent;
 +        };
     };
 };
@@ -247,9 +248,27 @@ hull3_mission_fnc_hasSafetyTimerEnded = {
 
 hull3_mission_fnc_addHostSafetyTimerStopAction = {
     if (serverCommandAvailable "#kick" || {!isMultiplayer}) then {
+        DECLARE(_actionId) = player addAction ['<t color="#428CE0">Disable weapon safety</t>', ADDON_PATH(mission_host_safetytimer_stop.sqf), ["activated"], 3, false, false, "", "driver _target == _this && {!(hull3_mission_safetyTimer select 0)} && {(hull3_mission_safetyTimer select 1) < hull3_mission_safetyTimerEnd}"];
+        hull3_mission_safetyTimerActionIds set [0, _actionId];
         player addAction ["Disable weapon safety", ADDON_PATH(mission_host_safetytimer_stop.sqf), [], 3, false, false, "", "driver _target == _this && {!(hull3_mission_safetyTimer select 0)} && {(hull3_mission_safetyTimer select 1) < hull3_mission_safetyTimerEnd}"];
         DEBUG("hull3.mission.safetytimer","Added safety timer abort action to player.");
     };
+};
+
+hull3_mission_fnc_addSafetyTimerConfirmActions = {
+    DECLARE(_actionId) = player addAction ['<t color="#00FF00">Confirm weapon safety disabling</t>', ADDON_PATH(mission_host_safetytimer_stop.sqf), ["confirm"], 3, false, false, "", "driver _target == _this && {!(hull3_mission_safetyTimer select 0)} && {(hull3_mission_safetyTimer select 1) < hull3_mission_safetyTimerEnd}"];
+    hull3_mission_safetyTimerActionIds set [1, _actionId];
+    _actionId = player addAction ['<t color="#FF0000">Cancel weapon safety disabling</t>', ADDON_PATH(mission_host_safetytimer_stop.sqf), ["cancel"], 3, false, false, "", "driver _target == _this && {!(hull3_mission_safetyTimer select 0)} && {(hull3_mission_safetyTimer select 1) < hull3_mission_safetyTimerEnd}"];
+    hull3_mission_safetyTimerActionIds set [2, _actionId];
+};
+
+hull3_mission_fnc_removeSafetyTimerActions = {
+    {
+        if (_x != -1) then {
+            player removeAction _x;
+            hull3_mission_safetyTimerActionIds set [_forEachIndex, -1];
+        };
+    } foreach hull3_mission_safetyTimerActionIds;
 };
 
 hull3_mission_fnc_getJipSync = {
