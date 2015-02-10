@@ -202,6 +202,7 @@ hull3_mission_fnc_serverSafetyTimerCountDown = {
             };
             sleep 1;
         };
+        ["mission.safetytimer.ended", []] call hull_event_fnc_emitEvent;
     };
 };
 
@@ -215,6 +216,9 @@ hull3_mission_fnc_clientSafetyTimerLoop = {
         };
         player removeEventHandler ["Fired", player getVariable "hull3_eh_fired"];
         DEBUG("hull3.mission.safetytimer","Safety timer has ended. Removed fired EH.");
+        if (!isServer) then {
++            ["mission.safetytimer.ended", []] call hull_event_fnc_emitEvent;
++        };
     };
 };
 

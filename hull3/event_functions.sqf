@@ -70,13 +70,15 @@ FNC_FIND_EVENT = {
 FNC_ADD_ALL_EVENTS = {
     ["player.initialized"] call FNC_ADD_EVENT;
     ["player.respawned"] call FNC_ADD_EVENT;
-    
+
     ["marker.group.created"] call FNC_ADD_EVENT;
-    
+
     ["acre.initialized"] call FNC_ADD_EVENT;
-    
+
     ["gear.assigned"] call FNC_ADD_EVENT;
     ["gear.radio.assigned"] call FNC_ADD_EVENT;
+
+    ["mission.safetytimer.ended"] call FNC_ADD_EVENT;
 };
 
 FNC_INIT = {
