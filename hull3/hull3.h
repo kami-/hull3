@@ -5,19 +5,25 @@ class Hull3 {
 
     #include "mission_params.h"
 
-    class Gear {
-        #include "gear\factions.h"
+    #include "assign\factions.h"
 
-        #include "gear\Default.h"
-        #include "gear\AK74_RU.h"
-        #include "gear\AK74_SEP.h"
-        #include "gear\Katiba.h"
-        #include "gear\L85.h"
-        #include "gear\M16A4_USMC.h"
-        #include "gear\M4SOC.h"
-        #include "gear\Mk20.h"
-        #include "gear\MX.h"
-        #include "gear\Tavor.h"
+    class Uniform {
+        #include "assign\uniform\Default.h"
+
+        unitBaseClass = "Rifleman";
+    };
+
+    class Gear {
+        #include "assign\gear\Default.h"
+        #include "assign\gear\AK74_RU.h"
+        #include "assign\gear\AK74_SEP.h"
+        #include "assign\gear\Katiba.h"
+        #include "assign\gear\L85.h"
+        #include "assign\gear\M16A4_USMC.h"
+        #include "assign\gear\M4SOC.h"
+        #include "assign\gear\Mk20.h"
+        #include "assign\gear\MX.h"
+        #include "assign\gear\Tavor.h"
 
         unitBaseClass = "Rifleman";
         vehicleBaseClass = "Vehicle";

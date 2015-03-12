@@ -18,6 +18,7 @@ if (hull3_isEnabled) then {
     [] call compile preProcessFileLineNumbers ADDON_PATH(unit_functions.sqf);
     [] call compile preProcessFileLineNumbers ADDON_PATH(acre_functions.sqf);
     [] call compile preProcessFileLineNumbers ADDON_PATH(gear_functions.sqf);
+    [] call compile preProcessFileLineNumbers ADDON_PATH(uniform_functions.sqf);
     [] call compile preProcessFileLineNumbers ADDON_PATH(marker_functions.sqf);
     [] call compile preProcessFileLineNumbers ADDON_PATH(briefing_functions.sqf);
     [] call compile preProcessFileLineNumbers ADDON_PATH(mission_functions.sqf);
@@ -31,6 +32,7 @@ if (hull3_isEnabled) then {
     [] call hull3_mission_fnc_preInit;
     [] call hull3_marker_fnc_preInit;
     [] call hull3_gear_fnc_preInit;
+    [] call hull3_uniform_fnc_preInit;
     [] call hull3_briefing_fnc_preInit;
     [] call hull3_acre_fnc_preInit;
     [] call hull3_gc_fnc_preInit;
