@@ -257,7 +257,7 @@ hull3_gear_fnc_assignVehicleItems = {
     FUN_ARGS_2(_vehicle,_items);
 
     {
-        _vehicle addWeaponCargoGlobal _x;
+        _vehicle addItemCargoGlobal _x;
     } foreach _items;
     TRACE("hull3.gear.assign",FMT_2("Assigned items '%1' to vehicle '%2'.",_items,_vehicle));
 };
