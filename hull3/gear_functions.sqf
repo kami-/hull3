@@ -16,6 +16,7 @@
 #define ASSIGN_SECONDARY_WEAPON_ITEM_FUNC       INFIX_FUNC(addSecondaryWeaponItem)
 #define ASSIGN_HANDGUN_WEAPON_FUNC              INFIX_FUNC(addWeapon)
 #define ASSIGN_HANDGUN_ITEM_FUNC                INFIX_FUNC(addHandgunItem)
+#define ASSIGN_LINK_ITEM_FUNC                   INFIX_FUNC(linkItem)
 #define CAN_ASSIGN_UNIFORM_ITEM_FUNC            INFIX_FUNC(canAddItemToUniform)
 #define CAN_ASSIGN_VEST_ITEM_FUNC               INFIX_FUNC(canAddItemToVest)
 #define CAN_ASSIGN_BACKPACK_ITEM_FUNC           INFIX_FUNC(canAddItemToBackpack)
@@ -25,6 +26,7 @@
 #define CAN_ASSIGN_SECONDARY_WEAPON_ITEM_FUNC   {!((_this select 1) in secondaryWeaponItems (_this select 0))}
 #define CAN_ASSIGN_HANDGUN_WEAPON_FUNC          {handgunWeapon (_this select 0) == ""}
 #define CAN_ASSIGN_HANDGUN_ITEM_FUNC            {!((_this select 1) in handgunItems (_this select 0))}
+#define CAN_LINK_ITEM_FUNC                      {true}
 
 
 
@@ -78,11 +80,11 @@ hull3_gear_fnc_assignUnitInit = {
 
     _unit setVariable ["hull3_gear_class", _class, true];
     _unit setVariable ["hull3_gear_template", _template, true];
+    removeAllAssignedItems _unit;
     removeAllPrimaryWeaponItems _unit;
     removeAllHandgunItems _unit;
     removeAllWeapons _unit;
     removeAllItems _unit;
-    [_unit] call hull3_gear_fnc_removeNVGs;
     DEBUG("hull3.gear.assign",FMT_1("Initialized unit '%1' gear.",_unit));
 };
 
@@ -93,18 +95,6 @@ hull3_gear_fnc_assignVehicleInit = {
     clearWeaponCargoGlobal _vehicle;
     clearItemCargoGlobal _vehicle;
     DEBUG("hull3.gear.assign",FMT_1("Initialized vehicle '%1' gear.",_vehicle));
-};
-
-hull3_gear_fnc_removeNVGs = {
-    FUN_ARGS_1(_unit);
-
-    private "_nvgs";
-    _nvgs = ["NVGoggles", "NVGoggles_OPFOR", "NVGoggles_INDEP"];
-    {
-        _unit unassignItem _x;
-        _unit removeItem _x;
-    } foreach _nvgs;
-    TRACE("hull3.gear.assign",FMT_1("Removed NVGs from unit '%1'.",_unit));
 };
 
 hull3_gear_fnc_getTemplate = {
@@ -166,6 +156,9 @@ hull3_gear_fnc_assignUnitTemplate = {
         ["uniformWeapons",          CONFIG_TYPE_ARRAY,      "uniform",                  ASSIGN_UNIFORM_ITEM_FUNC,           CAN_ASSIGN_UNIFORM_ITEM_FUNC,           hull3_gear_fnc_assignSingleItemArray],
         ["vestWeapons",             CONFIG_TYPE_ARRAY,      "vest",                     ASSIGN_VEST_ITEM_FUNC,              CAN_ASSIGN_VEST_ITEM_FUNC,              hull3_gear_fnc_assignSingleItemArray],
         ["backpackWeapons",         CONFIG_TYPE_ARRAY,      "backpack",                 ASSIGN_BACKPACK_ITEM_FUNC,          CAN_ASSIGN_BACKPACK_ITEM_FUNC,          hull3_gear_fnc_assignSingleItemArray],
+        ["basicAssigneItems",       CONFIG_TYPE_ARRAY,      "items",                    ASSIGN_LINK_ITEM_FUNC,              CAN_LINK_ITEM_FUNC,                     hull3_gear_fnc_assignSingleItemArray],
+        ["assignItems",             CONFIG_TYPE_ARRAY,      "items",                    ASSIGN_LINK_ITEM_FUNC,              CAN_LINK_ITEM_FUNC,                     hull3_gear_fnc_assignSingleItemArray],
+        ["binocular",               CONFIG_TYPE_TEXT,       "binocular",                ASSIGN_PRIMARY_WEAPON_FUNC,         CAN_LINK_ITEM_FUNC,                     hull3_gear_fnc_assignSingleItem],
         ["uniformItems",            CONFIG_TYPE_ARRAY,      "uniform",                  ASSIGN_UNIFORM_ITEM_FUNC,           CAN_ASSIGN_UNIFORM_ITEM_FUNC,           hull3_gear_fnc_assignMultiItemArray],
         ["vestItems",               CONFIG_TYPE_ARRAY,      "vest",                     ASSIGN_VEST_ITEM_FUNC,              CAN_ASSIGN_VEST_ITEM_FUNC,              hull3_gear_fnc_assignMultiItemArray],
         ["backpackItems",           CONFIG_TYPE_ARRAY,      "backpack",                 ASSIGN_BACKPACK_ITEM_FUNC,          CAN_ASSIGN_BACKPACK_ITEM_FUNC,          hull3_gear_fnc_assignMultiItemArray],
