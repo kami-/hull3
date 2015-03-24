@@ -27,7 +27,7 @@ class AK74_RU {
             {"SmokeShell", 2},
             {"HandGrenade", 2}
         };
-        basicAssigneItems[] = {"ItemMap", "ItemCompass", "ItemWatch"};
+        basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch"};
         assignItems[] = {"ItemGPS", "NVGoggles"};
         binocular = "Binocular";
         uniformItems[] = {

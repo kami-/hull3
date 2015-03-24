@@ -15,7 +15,7 @@ class Default {
         };
         backpackMagazines[] = {
         };
-        basicAssigneItems[] = {};
+        basicAssignItems[] = {};
         assignItems[] = {};
         binocular = "";
         uniformItems[] = {
