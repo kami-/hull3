@@ -9,6 +9,7 @@ class Hull3 {
 
     class Uniform {
         #include "assign\uniform\Default.h"
+        #include "assign\uniform\Russian.h"
 
         unitBaseClass = "Rifleman";
     };

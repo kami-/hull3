@@ -27,6 +27,9 @@ class AK74_RU {
             {"SmokeShell", 2},
             {"HandGrenade", 2}
         };
+        basicAssigneItems[] = {"ItemMap", "ItemCompass", "ItemWatch"};
+        assignItems[] = {"ItemGPS", "NVGoggles"};
+        binocular = "Binocular";
         uniformItems[] = {
         };
         vestItems[] = {
@@ -36,11 +39,11 @@ class AK74_RU {
         uniformRadios[] = {"ACRE_PRC343"};
         vestRadios[] = {};
         backpackRadios[] = {};
-        uniformMedical[] = {
+        uniformMedicalItems[] = {
         };
-        vestMedical[] = {
+        vestMedicalItems[] = {
         };
-        backpackMedical[] = {
+        backpackMedicalItems[] = {
         };
         code = "";
     };
@@ -130,6 +133,13 @@ class AK74_RU {
     };
 
     class Vehicle {
+        weapons[] = {
+            {"hlc_rifle_ak12", 5}
+        };
+        magazines[] = {
+            {"hlc_30Rnd_545x39_B_AK", 20},
+            {"16Rnd_9x21_Mag", 3}
+        };
     };
 
     class Car : Vehicle {
