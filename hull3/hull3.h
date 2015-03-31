@@ -5,7 +5,7 @@ class Hull3 {
 
     #include "mission_params.h"
 
-    #include "assign\factions.h"
+    #include "factions.h"
 
     class Uniform {
         #include "assign\uniform\Default.h"
@@ -71,16 +71,37 @@ class Hull3 {
     };
 
     class ACRE {
+        revealToAi = 1;                                 // http://acre.idi-systems.com/api/api_general.html#acre_api_fnc_setRevealToAI
+        lossModelScale = 1;                             // http://acre.idi-systems.com/api/api_general.html#acre_api_fnc_setLossModelScale
+        fullDuplex = 0;                                 // http://acre.idi-systems.com/api/api_general.html#acre_api_fnc_setFullDuplex
+        interference = 1;                               // http://acre.idi-systems.com/api/api_general.html#acre_api_fnc_setInterference
+
+        class Babel {
+            languages[] = {
+                {"west", "WEST"},
+                {"east", "EAST"},
+                {"guer", "GUER"},
+                {"civ", "CIV"}
+            };
+        };
+
         class ShortRange {
-            default = "ACRE_PRC343";
-            radios[] = {"ACRE_PRC343"};
             baseFrequency = 2400;
+            radios[] = {"ACRE_PRC343"};
+
+            class ACRE_PRC343 {
+            };
         };
 
         class LongRange {
-            default = "ACRE_PRC343";
-            radios[] = {"ACRE_PRC148", "ACRE_PRC148_UHF", "ACRE_PRC117F", "ACRE_PRC119", "ACRE_PRC152"};
             baseFrequency = 32;
+            channelNames[] = {"Command", "Air"};
+            radios[] = {"ACRE_PRC148"};
+
+            class ACRE_PRC148 {
+                channelNameField = "label";
+                power = 5000;
+            };
         };
 
         class Steps {

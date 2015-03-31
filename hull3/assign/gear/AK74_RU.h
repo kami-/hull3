@@ -13,19 +13,10 @@ class AK74_RU {
         backpackWeapons[] = {
         };
         uniformMagazines[] = {
-            {"hlc_30Rnd_545x39_B_AK", 20},
-            {"16Rnd_9x21_Mag", 3}
         };
         vestMagazines[] = {
-            {"hlc_30Rnd_545x39_B_AK", 20},
-            {"SmokeShell", 2},
-            {"HandGrenade", 2}
         };
         backpackMagazines[] = {
-            {"hlc_30Rnd_545x39_B_AK", 20},
-            {"hlc_30Rnd_545x39_t_ak", 20},
-            {"SmokeShell", 2},
-            {"HandGrenade", 2}
         };
         basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch"};
         assignItems[] = {"ItemGPS", "NVGoggles"};
@@ -36,7 +27,7 @@ class AK74_RU {
         };
         backpackItems[] = {
         };
-        uniformRadios[] = {"ACRE_PRC343"};
+        uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC148"};
         vestRadios[] = {};
         backpackRadios[] = {};
         uniformMedicalItems[] = {

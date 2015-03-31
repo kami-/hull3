@@ -188,7 +188,7 @@
 //          PUSH(_numbers, _number);
 //      THEN:
 //          _numbers == [1, 3, 5, 1, 1];
-#define PUSH(ARRAY,VAL) (ARRAY) set [count (ARRAY), (VAL)]
+#define PUSH(ARRAY,VAL) (ARRAY) pushBack (VAL)
 
 // Adds all values from one array to another.
 // Example:
@@ -268,5 +268,23 @@
 //      THEN:
 //          private "_group"; _group = _x;
 #define DECLARE(VAR) private #VAR; VAR
+
+// Generates an array of integers between the given interval. Left and right inclusive.
+// Example:
+//      GIVEN:
+//      WHEN:
+//          _numbers = RANGE(0,4);
+//          _empty = RANGE(2,0);
+//      THEN:
+//          _numbers == [0, 1, 2, 3, 4];
+//          _empty == [];
+#define RANGE(FROM,TO) \
+    call { \
+        DECLARE(_range) = []; \
+        for "_i" from FROM to TO do { \
+            PUSH(_range,_i); \
+        }; \
+        _range; \
+    }
 
 #endif //HULL3_MACROS_H
