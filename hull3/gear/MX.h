@@ -95,7 +95,8 @@ class MX {
     };
 
     class AR : Rifleman {
-        weapons[] = {"arifle_MX_SW_F", "hgun_Pistol_heavy_01_F"};
+        weapons[] = {"arifle_MX_SW_F", "hgun_Pistol_heavy_01_F"}; 
+        primaryAttachments[] = {"bipod_01_F_snd"};
         magazines[] = {
             {"100Rnd_65x39_caseless_mag", 1},
             {"11Rnd_45ACP_Mag", 3}
@@ -138,6 +139,7 @@ class MX {
 
     class MMGG : Rifleman {
         weapons[] = {"LMG_Mk200_F", "hgun_Pistol_heavy_01_F"};
+        primaryAttachments[] = {"bipod_01_F_blk"};
         magazines[] = {
             {"200Rnd_65x39_cased_Box", 1},
             {"11Rnd_45ACP_Mag", 3}

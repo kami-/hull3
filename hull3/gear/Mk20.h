@@ -97,6 +97,7 @@ class Mk20 {
 
     class AR : Rifleman {
         weapons[] = {"LMG_Mk200_F", "hgun_ACPC2_F"};
+        primaryAttachments[] = {"bipod_01_F_blk"};
         magazines[] = {
             {"200Rnd_65x39_cased_Box", 1},
             {"9Rnd_45ACP_Mag", 3}
