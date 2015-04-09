@@ -98,17 +98,17 @@ class Katiba {
     class AR : Rifleman {
         weapons[] = {"LMG_Zafir_F", "hgun_Rook40_F"};
         magazines[] = {
-            {"150Rnd_762x51_Box", 1},
+            {"150Rnd_762x54_Box", 1},
             {"16Rnd_9x21_Mag", 3}
         };
         vestMagazines[] = {
-            {"150Rnd_762x51_Box", 1},
+            {"150Rnd_762x54_Box", 1},
             {"SmokeShell", 2},
             {"HandGrenade", 2}
         };
         ruckMagazines[] = {
-            {"150Rnd_762x51_Box", 2},
-            {"150Rnd_762x51_Box_Tracer", 2},
+            {"150Rnd_762x54_Box", 2},
+            {"150Rnd_762x54_Box_Tracer", 2},
             {"SmokeShell", 2}
         };
     };
@@ -117,7 +117,7 @@ class Katiba {
         ruck = "B_Carryall_ocamo";
         ruckMagazines[] = {
             {"30Rnd_65x39_caseless_green", 6},
-            {"150Rnd_762x51_Box", 4},
+            {"150Rnd_762x54_Box", 4},
             {"SmokeShell", 2}
         };
         items[] = {"ACRE_PRC343", "ItemGPS", "Binocular"};
@@ -283,8 +283,8 @@ class Katiba {
             {"30Rnd_65x39_caseless_green", 20},
             {"30Rnd_65x39_caseless_green_mag_Tracer", 10},
             {"30Rnd_45ACP_Mag_SMG_01", 10},
-            {"150Rnd_762x51_Box", 6},
-            {"150Rnd_762x51_Box_Tracer", 4},
+            {"150Rnd_762x54_Box", 6},
+            {"150Rnd_762x54_Box_Tracer", 4},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"HandGrenade", 10},
             {"SmokeShell", 5},
@@ -310,8 +310,8 @@ class Katiba {
             {"30Rnd_65x39_caseless_green", 50},
             {"30Rnd_65x39_caseless_green_mag_Tracer", 25},
             {"30Rnd_45ACP_Mag_SMG_01", 10},
-            {"150Rnd_762x51_Box", 20},
-            {"150Rnd_762x51_Box_Tracer", 10},
+            {"150Rnd_762x54_Box", 20},
+            {"150Rnd_762x54_Box_Tracer", 10},
             {"SatchelCharge_Remote_Mag", 4},
             {"RPG32_F", 5},
             {"RPG18_HEAT", 5},
@@ -328,8 +328,8 @@ class Katiba {
             {"30Rnd_65x39_caseless_green", 20},
             {"30Rnd_65x39_caseless_green_mag_Tracer", 10},
             {"30Rnd_45ACP_Mag_SMG_01", 5},
-            {"150Rnd_762x51_Box", 6},
-            {"150Rnd_762x51_Box_Tracer", 5},
+            {"150Rnd_762x54_Box", 6},
+            {"150Rnd_762x54_Box_Tracer", 5},
             {"RPG32_F", 2},
             {"1Rnd_Smoke_Grenade_shell", 20},
             {"HandGrenade", 10},
