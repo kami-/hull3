@@ -212,14 +212,17 @@ hull3_mission_fnc_clientSafetyTimerLoop = {
         [] call hull3_mission_fnc_addHostSafetyTimerStopAction;
         [player] call hull3_unit_fnc_addFiredEHs;
         DEBUG("hull3.mission.safetytimer","Starting safety timer loop.");
-        while {!([] call hull3_mission_fnc_hasSafetyTimerEnded)} do {
-            sleep 0.5;
-        };
-        player removeEventHandler ["Fired", player getVariable "hull3_eh_fired"];
-        DEBUG("hull3.mission.safetytimer","Safety timer has ended. Removed fired EH.");
-        if (!isServer) then {
-            ["mission.safetytimer.ended", []] call hull3_event_fnc_emitEvent;
-        };
+        [{
+            DECLARE(_weapon) = currentWeapon player;
+            if (!(_weapon in (player getVariable ["ace_safemode_safedWeapons", []]))) then {
+                [player, _weapon, _weapon] call ace_safemode_fnc_lockSafety;
+            };
+            if ([] call hull3_mission_fnc_hasSafetyTimerEnded) then {
+                [_this select 1] call CBA_fnc_removePerFrameHandler;
+                player removeEventHandler ["Fired", player getVariable "hull3_eh_fired"];
+                DEBUG("hull3.mission.safetytimer","Safety timer has ended. Removed fired EH.");
+            };
+        }, 0, []] call CBA_fnc_addPerFrameHandler;
     };
 };
 
@@ -232,6 +235,9 @@ hull3_mission_fnc_handleSafetyTimeChange = {
         call {
             if (_timeValue == 0) exitWith {
                 _message = "Game is live!";
+                if (!isServer) then {
+                    ["mission.safetytimer.ended", []] call hull3_event_fnc_emitEvent;
+                };
             };
             if (_timeValue <= 5) exitWith {_message = "Game will be live in %1 seconds!";};
             _message = "";
