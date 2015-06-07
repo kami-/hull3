@@ -9,30 +9,21 @@ class Default {
         uniformWeapons[] = {};
         vestWeapons[] = {};
         backpackWeapons[] = {};
-        uniformMagazines[] = {
-        };
-        vestMagazines[] = {
-        };
-        backpackMagazines[] = {
-        };
+        uniformMagazines[] = {};
+        vestMagazines[] = {};
+        backpackMagazines[] = {};
         basicAssignItems[] = {};
         assignItems[] = {};
         binocular = "";
-        uniformItems[] = {
-        };
-        vestItems[] = {
-        };
-        backpackItems[] = {
-        };
+        uniformItems[] = {};
+        vestItems[] = {};
+        backpackItems[] = {};
         uniformRadios[] = {};
         vestRadios[] = {};
         backpackRadios[] = {};
-        uniformMedical[] = {
-        };
-        vestMedical[] = {
-        };
-        backpackMedical[] = {
-        };
+        uniformMedicalItems[] = {};
+        vestMedicalItems[] = {};
+        backpackMedicalItems[] = {};
         code = "";
         // These will override the uniform template, if not empty
         headGear = "";
@@ -43,16 +34,11 @@ class Default {
     };
 
     class Vehicle {
-        weapons[] = {
-        };
-        magazines[] = {
-        };
-        items[] = {
-        };
-        radios[] = {
-        };
-        medicalItems[] = {
-        };
+        weapons[] = {};
+        magazines[] = {};
+        items[] = {};
+        radios[] = {};
+        medicalItems[] = {};
         code = "";
     };
 };
