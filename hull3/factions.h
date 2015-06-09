@@ -29,104 +29,104 @@ class Factions {
     };
 
     class MNP_USMC_DE {
-        gear = "USMC_DE";
-        uniform = "M16A4_USMC";
+        gear = "M16A4_USMC";
+        uniform = "USMC_DE";
         languages[] = {
             {"west", 100}
         };
     };
 
     class MNP_USMC_SN {
-        gear = "USMC_DE";
-        uniform = "M16A4_USMC";
+        gear = "M16A4_USMC";
+        uniform = "USMC_DE";
         languages[] = {
             {"west", 100}
         };
     };
 
     class MNP_US_RAN {
-        gear = "USA_RAN";
-        uniform = "SCAR_L_US";
+        gear = "SCAR_L_US";
+        uniform = "USA_RAN";
         languages[] = {
             {"west", 100}
         };
     };
 
     class MNP_US_ACU {
-        gear = "UAS_ACU";
-        uniform = "M4_US";
+        gear = "M4_US";
+        uniform = "UAS_ACU";
         languages[] = {
             {"west", 100}
         };
     };
 
     class MNP_US_WD {
-        gear = "USA_WD";
-        uniform = "M16A2_USA";
+        gear = "M16A2_USA";
+        uniform = "USA_WD";
         languages[] = {
             {"west", 100}
         };
     };
 
     class MNP_US_DE {
-        gear = "USA_WD";
-        uniform = "M16A2_USA";
+        gear = "M16A2_USA";
+        uniform = "USA_WD";
         languages[] = {
             {"west", 100}
         };
     };
 
     class MNP_GE_WD {
-        gear = "GER_WD";
-        uniform = "G36_GER";
+        gear = "G36_GER";
+        uniform = "GER_WD";
         languages[] = {
             {"west", 100}
         };
     };
 
     class MNP_GE_DE {
-        gear = "GER_DE";
-        uniform = "G36_GER";
+        gear = "G36_GER";
+        uniform = "GER_DE";
         languages[] = {
             {"west", 100}
         };
     };
 
     class MNP_CA_WD {
-        gear = "CAN_WD";
-        uniform = "M16A4_CAN";
+        gear = "M16A4_CAN";
+        uniform = "CAN_WD";
         languages[] = {
             {"west", 100}
         };
     };
 
     class MNP_CA_DE {
-        gear = "CAN_DE";
-        uniform = "M16A4_USMC";
+        gear = "M16A4_USMC";
+        uniform = "CAN_DE";
         languages[] = {
             {"west", 100}
         };
     };
 
     class MNP_AUS {
-        gear = "AUS_WD";
-        uniform = "AUGA3_AUS";
+        gear = "AUGA3_AUS";
+        uniform = "AUS_WD";
         languages[] = {
             {"west", 100}
         };
     };
 
     class MNP_ROK {
-        gear = "ROK_WD";
-        uniform = "M16A4_ROK";
+        gear = "M16A4_ROK";
+        uniform = "ROK_WD";
         languages[] = {
             {"west", 100}
         };
     };
 
     class MNP_PMC {
-        gear = "PMC_OD";
-        uniform = "FAL_PMC";
+        gear = "FAL_PMC";
+        uniform = "PMC_OD";
         languages[] = {
             {"west", 100}
         };
