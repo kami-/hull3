@@ -26,7 +26,7 @@ hull3_uniform_fnc_assignUniformInit = {
 hull3_uniform_fnc_getTemplate = {
     FUN_ARGS_2(_faction,_manualTemplate);
 
-    [_faction, TYPE_CLASS_UNIFORM, TYPE_FIELD_UNIFORM, _manualTemplate] call hull3_gear_fnc_getTemplate;
+    [_faction, TYPE_FIELD_UNIFORM, _manualTemplate] call hull3_gear_fnc_getTemplate;
 };
 
 hull3_uniform_fnc_assignUniformTemplate = {

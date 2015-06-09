@@ -56,9 +56,10 @@ hull3_gear_fnc_assignUnit = {
     FUN_ARGS_3(_unit,_manualClass,_manualTemplateOrFaction);
 
     private ["_gearTemplate", "_uniformTemplate", "_gearClass"];
-    _gearTemplate = [faction _unit, TYPE_CLASS_GEAR, TYPE_FIELD_GEAR, _manualTemplateOrFaction] call hull3_gear_fnc_getTemplate;
+    _gearTemplate = [faction _unit, TYPE_FIELD_GEAR, _manualTemplateOrFaction] call hull3_gear_fnc_getTemplate;
     _uniformTemplate = [faction _unit, _manualTemplateOrFaction] call hull3_uniform_fnc_getTemplate;
     _gearClass = [TYPE_CLASS_GEAR, _gearTemplate, _manualClass, hull3_gear_unitBaseClass] call hull3_gear_fnc_getClass;
+    DEBUG("hull3.gear.assign",FMT_3("Set gear template to '%1', uniform template to '%2' and gear class to '%3'.",_gearTemplate,_uniformTemplate,_gearClass));
     [_unit] call hull3_uniform_fnc_assignUniformInit;
     [_unit, _gearClass, _gearTemplate, _uniformTemplate] call hull3_uniform_fnc_assignUniformTemplate;
     [_unit, _gearClass, _gearTemplate] call hull3_gear_fnc_assignUnitInit;
@@ -98,10 +99,10 @@ hull3_gear_fnc_assignVehicleInit = {
 };
 
 hull3_gear_fnc_getTemplate = {
-    FUN_ARGS_4(_faction,_typeClass,_typeField,_manualTemplate);
+    FUN_ARGS_3(_faction,_typeField,_manualTemplateOrFaction);
 
-    DECLARE(_template) = _manualTemplate;
-    if (isNil {_template} || {!isClass (["Factions", _manualTemplate] call hull3_config_fnc_getConfig)}) then {
+    DECLARE(_template) = [_manualTemplateOrFaction, _typeField] call hull3_gear_fnc_getTemplateByFaction;
+    if (isNil {_template}) then {
         _template = [_faction, _typeField] call hull3_gear_fnc_getTemplateByFaction;
     };
 
@@ -111,12 +112,7 @@ hull3_gear_fnc_getTemplate = {
 hull3_gear_fnc_getVehicleTemplate = {
     FUN_ARGS_2(_faction,_manualTemplateOrFaction);
 
-    DECLARE(_template) = [_manualTemplateOrFaction, TYPE_FIELD_GEAR] call hull3_gear_fnc_getTemplateByFaction;
-    if (isNil {_template}) then {
-        _template = [_faction, TYPE_CLASS_GEAR, TYPE_FIELD_GEAR, _manualTemplateOrFaction] call hull3_gear_fnc_getTemplate;
-    };
-
-    _template;
+    [_faction, TYPE_FIELD_GEAR, _manualTemplateOrFaction] call hull3_gear_fnc_getTemplate;
 };
 
 hull3_gear_fnc_getTemplateByFaction = {
