@@ -164,7 +164,7 @@ hull3_gear_fnc_assignUnitTemplate = {
     ];
     {
         DECLARE(_configValue) = ["Gear", _template, _class, _x select 0] call (CONFIG_TYPE_FUNCTIONS select (_x select 1));
-        [_x select 0, _unit, _configValue, _x select 2, _x select 3, _x select 4] call (_x select 5);
+        [_x select 0, _unit, _configValue, _x select 2, _x select 3, _x select 4, _template, _class] call (_x select 5);
     } foreach _assignables;
     [_unit, _class, _template] call compile (["Gear", _template, _class, "code"] call hull3_config_fnc_getText);
     _unit selectWeapon primaryWeapon _unit;
@@ -190,29 +190,29 @@ hull3_gear_fnc_assignVehicleTemplate = {
 };
 
 hull3_gear_fnc_assignSingleItem = {
-    FUN_ARGS_6(_fieldName,_unit,_item,_container,_addFunc,_canAddFunc);
+    FUN_ARGS_8(_fieldName,_unit,_item,_container,_addFunc,_canAddFunc,_template,_class);
 
-    [_unit, _item, 1, _container, _addFunc, _canAddFunc, _fieldName] call hull3_gear_fnc_assignItems;
+    [_unit, _item, 1, _container, _addFunc, _canAddFunc, _fieldName, _template, _class] call hull3_gear_fnc_assignItems;
 };
 
 hull3_gear_fnc_assignSingleItemArray = {
-    FUN_ARGS_6(_fieldName,_unit,_items,_container,_addFunc,_canAddFunc);
+    FUN_ARGS_8(_fieldName,_unit,_items,_container,_addFunc,_canAddFunc,_template,_class);
 
     {
-        [_unit, _x, 1, _container, _addFunc, _canAddFunc, _fieldName] call hull3_gear_fnc_assignItems;
+        [_unit, _x, 1, _container, _addFunc, _canAddFunc, _fieldName, _template, _class] call hull3_gear_fnc_assignItems;
     } foreach _items;
 };
 
 hull3_gear_fnc_assignMultiItemArray = {
-    FUN_ARGS_6(_fieldName,_unit,_items,_container,_addFunc,_canAddFunc);
+    FUN_ARGS_8(_fieldName,_unit,_items,_container,_addFunc,_canAddFunc,_template,_class);
 
     {
-        [_unit, _x select 0, _x select 1, _container, _addFunc, _canAddFunc, _fieldName] call hull3_gear_fnc_assignItems;
+        [_unit, _x select 0, _x select 1, _container, _addFunc, _canAddFunc, _fieldName, _template, _class] call hull3_gear_fnc_assignItems;
     } foreach _items;
 };
 
 hull3_gear_fnc_assignItems = {
-    FUN_ARGS_7(_unit,_item,_amount,_container,_addFunc,_canAddFunc,_fieldName);
+    FUN_ARGS_9(_unit,_item,_amount,_container,_addFunc,_canAddFunc,_fieldName,_template,_class);
 
     private ["_i", "_assignedAmount", "_canAddItem"];
     _i = 1;
@@ -225,7 +225,7 @@ hull3_gear_fnc_assignItems = {
         INC(_i);
     };
     if (_assignedAmount < _amount) then {
-        WARN("hull3.gear.assign",FMT_6("Failed to assign %1x'%2' (of %3) from '%4' to the %5 of unit '%6'.",_amount - _assignedAmount,_item,_amount,_fieldName,_container,_unit));
+        WARN("hull3.gear.assign",FMT_8("Failed to assign %1x'%2' (of %3) from '%4' to the %5 of unit '%6' from template '%7' and class '%8'.",_amount - _assignedAmount,_item,_amount,_fieldName,_container,_unit,_template,_class));
     } else {
         TRACE("hull3.gear.assign",FMT_5("Assigned %1x'%2' from '%3' to the %4 of unit '%5'.",_amount,_item,_fieldName,_container,_unit));
     };
