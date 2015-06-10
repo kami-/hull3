@@ -16,12 +16,12 @@ class AK47_NK {
         };
         vestMagazines[] = {
             {"hlc_30Rnd_762x39_b_ak", 6},
-            {"hlc_30Rnd_762x39_t_ak", 2}
+            {"hlc_30Rnd_762x39_t_ak", 1}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_30Rnd_762x39_b_ak", 4},
+            {"hlc_30Rnd_762x39_b_ak", 5},
             {"hlc_30Rnd_762x39_t_ak", 2}
         };
         basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch"};
@@ -52,13 +52,13 @@ class AK47_NK {
             {"hlc_VOG25_AK", 4},
             {"hlc_GRD_White", 2},
             {"hlc_GRD_red", 2},
-            {"hlc_30Rnd_762x39_t_ak", 2}
+            {"hlc_30Rnd_762x39_t_ak", 1}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
             {"hlc_30Rnd_762x39_b_ak", 6},
-            {"hlc_30Rnd_762x39_t_ak", 2},
+            {"hlc_30Rnd_762x39_t_ak", 3},
             {"hlc_GRD_White", 2},
             {"hlc_GRD_red", 2}
         };
@@ -96,7 +96,7 @@ class AK47_NK {
         primaryWeapon = "hlc_rifle_akm";
         primaryWeaponItems[] = {};
         vestMagazines[] = {
-            {"hlc_30Rnd_762x39_b_ak", 6},
+            {"hlc_30Rnd_762x39_b_ak", 4},
             {"hlc_30Rnd_762x39_t_ak", 2},
             {"SmokeShell", 4}
         };
@@ -144,13 +144,13 @@ class AK47_NK {
         primaryWeaponItems[] = {};
         secondaryWeapon = "CUP_launch_RPG18";
         vestMagazines[] = {
-            {"hlc_30Rnd_762x39_b_ak", 6},
+            {"hlc_30Rnd_762x39_b_ak", 5},
             {"hlc_30Rnd_762x39_t_ak", 2}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_30Rnd_762x39_b_ak", 4},
+            {"hlc_30Rnd_762x39_b_ak", 5},
             {"hlc_30Rnd_762x39_t_ak", 2}
         };
     };
@@ -221,7 +221,7 @@ class AK47_NK {
         primaryWeapon = "hlc_rifle_ak47";
         primaryWeaponItems[] = {};
         vestMagazines[] = {
-            {"hlc_30Rnd_762x39_b_ak", 6},
+            {"hlc_30Rnd_762x39_b_ak", 4},
             {"hlc_30Rnd_762x39_t_ak", 2}
         };
         backpackMagazines[] = {
@@ -261,6 +261,10 @@ class AK47_NK {
 
     class SP : Rifleman {
         binocular = "ACE_Vector";
+        vestMagazines[] = {
+            {"hlc_30Rnd_762x39_b_ak", 4},
+            {"hlc_30Rnd_762x39_t_ak", 2}
+        };
     };
 
     class VC : Crew {

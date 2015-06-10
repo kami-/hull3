@@ -48,7 +48,7 @@ class AK74_NK {
         primaryWeapon = "hlc_rifle_aks74_GL";
         primaryWeaponItems[] = {};
         vestMagazines[] = {
-            {"hlc_30Rnd_545x39_B_AK", 4},
+            {"hlc_30Rnd_545x39_B_AK", 3},
             {"hlc_VOG25_AK", 4},
             {"hlc_GRD_White", 2},
             {"hlc_GRD_red", 2},
@@ -96,9 +96,9 @@ class AK74_NK {
         primaryWeapon = "hlc_rifle_ak74";
         primaryWeaponItems[] = {};
         vestMagazines[] = {
-            {"hlc_30Rnd_545x39_B_AK", 6},
+            {"hlc_30Rnd_545x39_B_AK", 4},
             {"hlc_30Rnd_545x39_T_AK", 2},
-            {"SmokeShell", 4}
+            {"SmokeShell", 2}
         };
         backpackMagazines[] = {
             {"SmokeShellBlue", 4},
@@ -219,7 +219,7 @@ class AK74_NK {
         primaryWeapon = "hlc_rifle_ak74";
         primaryWeaponItems[] = {};
         vestMagazines[] = {
-            {"hlc_30Rnd_545x39_B_AK", 6},
+            {"hlc_30Rnd_545x39_B_AK", 4},
             {"hlc_30Rnd_545x39_T_AK", 2}
         };
         backpackMagazines[] = {
@@ -259,6 +259,10 @@ class AK74_NK {
 
     class SP : Rifleman {
         binocular = "ACE_Vector";
+        vestMagazines[] = {
+            {"hlc_30Rnd_545x39_B_AK", 4},
+            {"hlc_30Rnd_545x39_T_AK", 2}
+        };
     };
 
     class VC : Crew {

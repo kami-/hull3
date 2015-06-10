@@ -5,7 +5,7 @@ class Factions {
     };
 
     class BLU_F {
-        gear = "MX";
+        gear = "MX_NATO";
         uniform = "NATO";
         languages[] = {
             {"west", 100}
@@ -38,7 +38,7 @@ class Factions {
 
     class MNP_USMC_SN {
         gear = "M16A4_USMC";
-        uniform = "USMC_DE";
+        uniform = "USMC_SN";
         languages[] = {
             {"west", 100}
         };
@@ -54,14 +54,14 @@ class Factions {
 
     class MNP_US_ACU {
         gear = "M4_US";
-        uniform = "UAS_ACU";
+        uniform = "USA_ACU";
         languages[] = {
             {"west", 100}
         };
     };
 
     class MNP_US_WD {
-        gear = "M16A2_USA";
+        gear = "M16A2_US";
         uniform = "USA_WD";
         languages[] = {
             {"west", 100}
@@ -69,8 +69,8 @@ class Factions {
     };
 
     class MNP_US_DE {
-        gear = "M16A2_USA";
-        uniform = "USA_WD";
+        gear = "M16A2_US";
+        uniform = "USA_DE";
         languages[] = {
             {"west", 100}
         };
@@ -101,7 +101,7 @@ class Factions {
     };
 
     class MNP_CA_DE {
-        gear = "M16A4_USMC";
+        gear = "M16A4_CAN";
         uniform = "CAN_DE";
         languages[] = {
             {"west", 100}
@@ -165,7 +165,7 @@ class Factions {
     };
 
     class MNP_CH_MAR {
-        gear = "AK74_CN";
+        gear = "AKS74_CN";
         uniform = "CN_MAR";
         languages[] = {
             {"east", 100}

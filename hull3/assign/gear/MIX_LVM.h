@@ -10,12 +10,12 @@ class MIX_LVM {
         vestWeapons[] = {};
         backpackWeapons[] = {};
         uniformMagazines[] = {
-            {"HandGrenade", 1},
             {"Chemlight_green", 2},
             {"SmokeShell", 1}
         };
         vestMagazines[] = {
             {"hlc_20rnd_762x51_b_G3", 6},
+            {"HandGrenade", 1},
             {"hlc_20rnd_762x51_T_G3", 2}
         };
         backpackMagazines[] = {
@@ -202,7 +202,7 @@ class MIX_LVM {
     class HATG : MATG {
         secondaryWeapon = "CUP_launch_M47";
         secondaryWeaponItems[] = {"CUP_Dragon_EP1_M"};
-        backpackMagazines[] = {{"CUP_Dragon_EP1_M", 1}};
+        backpackMagazines[] = {{"hlc_30Rnd_762x39_t_ak", 2}};
     };
 
     class HATAG : MATAG {
@@ -256,6 +256,10 @@ class MIX_LVM {
 
     class SP : Rifleman {
         binocular = "ACE_Vector";
+        vestMagazines[] = {
+            {"hlc_30Rnd_762x39_b_ak", 4},
+            {"hlc_30Rnd_762x39_t_ak", 2}
+        };
     };
 
     class VC : Crew {

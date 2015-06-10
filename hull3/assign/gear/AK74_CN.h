@@ -259,6 +259,10 @@ class AK74_CN {
 
     class SP : Rifleman {
         binocular = "ACE_Vector";
+        vestMagazines[] = {
+            {"hlc_30Rnd_545x39_B_AK", 4},
+            {"hlc_30Rnd_545x39_T_AK", 2}
+        };
     };
 
     class VC : Crew {

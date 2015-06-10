@@ -204,7 +204,7 @@ class AR15_ASA {
     class HATG : MATG {
         secondaryWeapon = "CUP_launch_M47";
         secondaryWeaponItems[] = {"CUP_Dragon_EP1_M"};
-        backpackMagazines[] = {{"CUP_Dragon_EP1_M", 1}};
+        backpackMagazines[] = {{"30Rnd_556x45_Stanag_Tracer_Red", 2}};
     };
 
     class HATAG : MATAG {

@@ -159,7 +159,7 @@ class M16A4_USMC {
     class MATG : RAT {
         secondaryWeapon = "CUP_launch_Mk153Mod0";
         secondaryWeaponItems[] = {"CUP_SMAW_HEAA_M_N", "CUP_optic_SMAW_Scope"};
-        backpackMagazines[] = {{"CUP_SMAW_HEAA_M_N", 3}};
+        backpackMagazines[] = {{"CUP_SMAW_HEAA_M_N", 2}};
         assignItems[] = {"ItemGPS"};
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
@@ -168,7 +168,7 @@ class M16A4_USMC {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2},
-            {"CUP_SMAW_HEAA_M_N", 3}
+            {"CUP_SMAW_HEAA_M_N", 2}
         };
         binocular = "ACE_Vector";
     };
