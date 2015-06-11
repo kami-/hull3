@@ -16,15 +16,14 @@ hull3_mission_fnc_addEventHandlers = {
 
 hull3_mission_fnc_init = {
     [] call hull3_mission_fnc_evaluateParams;
-    [] call hull3_mission_fnc_readMissionParamValues;
-    [] call hull3_mission_fnc_setEnviroment;
     hull3_mission_safetyTimerAbort = false;
 };
 
 hull3_mission_fnc_serverInit = {
     [] call hull3_mission_fnc_addServerEHs;
+    [] call hull3_mission_fnc_readMissionParamValues;
+    [] call hull3_mission_fnc_setEnviroment;
     [] spawn hull3_mission_fnc_serverSafetyTimerLoop;
-    [] spawn hull3_mission_fnc_broadcastEnviromentLoop;
     DEBUG("hull3.mission","Server init finished.");
 };
 
@@ -128,24 +127,7 @@ hull3_mission_fnc_setEnviroment = {
     DEBUG("hull3.mission.weather",FMT_3("Environment was set. Date to '%1', fog to '%2' and weather to '%3'.",[] call hull3_mission_fnc_getDateTime,[] call hull3_mission_fnc_getFog,[] call hull3_mission_fnc_getWeather));
 };
 
-hull3_mission_fnc_broadcastEnviromentLoop = {
-    sleep 1;
-    forceWeatherChange;
-    DEBUG("hull3.mission.weather",FMT_1("Weather '%1' was forced changed by server.",hull3_mission_weather));
-    while {true} do {
-        hull3_mission_syncEnviroment = [date];
-        publicVariable "hull3_mission_syncEnviroment";
-        TRACE("hull3.mission.environment",FMT_1("Environment '%1' was synchronized by server.",hull3_mission_syncEnviroment));
-        sleep 300;
-    };
-};
-
 hull3_mission_fnc_addPlayerEHs = {
-    "hull3_mission_syncEnviroment" addPublicVariableEventHandler {
-        if (date isEqualTo (_this select 1 select 0)) then {
-            setDate (_this select 1 select 0);
-        };
-    };
     if (hull3_mission_isJip) then {
         "hull3_mission_jipPacket" addPublicVariableEventHandler {
             (_this select 1) call hull3_mission_fnc_receiveJipSync;
@@ -287,31 +269,21 @@ hull3_mission_fnc_getJipSync = {
 hull3_mission_fnc_sendJipSync = {
     FUN_ARGS_1(_client);
 
-    private ["_weather", "_customArguments"];
     hull3_mission_jipPacket = [date];
-    PUSH(hull3_mission_jipPacket,fogParams);
-    _weather = [overcast, rain, rainbow, lightnings, windStr, windStr, waves];
-    PUSH(hull3_mission_jipPacket,_weather);
     PUSH(hull3_mission_jipPacket,hull3_mission_safetyTimer);
     PUSH(hull3_mission_jipPacket,hull3_mission_safetyTimerAbort);
-    _customArguments = ["mission_jip_sending", [_client]] call hull3_common_fnc_getEventFileResult;
+    DECLARE(_customArguments) = ["mission_jip_sending", [_client]] call hull3_common_fnc_getEventFileResult;
     PUSH(hull3_mission_jipPacket,_customArguments);
     DEBUG("hull3.mission.jip",FMT_2("Sending JIP sync for client '%1' with packet '%2'.",_client,hull3_mission_jipPacket));
     (owner _client) publicVariableClient "hull3_mission_jipPacket";
 };
 
 hull3_mission_fnc_receiveJipSync = {
-    FUN_ARGS_6(_date,_fog,_weather,_safetyTimer,_safetyTimerAbort,_customArguments);
+    FUN_ARGS_6(_date,_safetyTimer,_safetyTimerAbort,_customArguments);
 
     DEBUG("hull3.mission.jip",FMT_2("Received JIP sync '%1' from server for client '%2'.",owner player,_this));
     setDate _date;
-    skipTime -24;
-    [0, _weather] call hull3_mission_fnc_setWeather;
-    0 setFog _fog;
-    skipTime 24;
     hull3_mission_date = _date;
-    hull3_mission_fog = _fog;
-    hull3_mission_weather = _weather;
     hull3_mission_safetyTimer = _safetyTimer;
     hull3_mission_safetyTimerAbort = _safetyTimerAbort;
     ["mission.jip.received", _customArguments] call hull3_event_fnc_emitEvent;
