@@ -9,9 +9,12 @@ hull3_unit_fnc_init = {
     private ["_initEntries", "_markerEntry"];
     _initEntries = [_this] call hull3_config_fnc_getInitEntries;
     if (local _unit) then {
+        private ["_factionEntry", "_gearEntry", "_uniformEntry"];
         _unit setVariable ["hull3_init_entries", _initEntries, true];
-        DECLARE(_gearEntry) = [_initEntries, "gear"] call hull3_config_fnc_getEntry;
-        [_unit, _gearEntry select 0, _gearEntry select 1] call hull3_gear_fnc_assign;
+        _factionEntry = [_initEntries, "faction"] call hull3_config_fnc_getEntry;
+        _gearEntry = [_initEntries, "gear"] call hull3_config_fnc_getEntry;
+        _uniformEntry = [_initEntries, "uniform"] call hull3_config_fnc_getEntry;
+        [_unit, _factionEntry, _gearEntry, _uniformEntry] call hull3_gear_fnc_assign;
         [_unit] call hull3_unit_fnc_addEHs;
     };
     _markerEntry = [_initEntries, "marker"] call hull3_config_fnc_getEntry;

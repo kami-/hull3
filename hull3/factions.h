@@ -1,4 +1,4 @@
-class Factions {
+class Faction {
     class Default {
         gear = "Default";
         uniform = "Default";

@@ -3,18 +3,17 @@
 #include "\userconfig\hull3\log\uniform.h"
 #include "logbook.h"
 
-#define TYPE_CLASS_UNIFORM              "Uniform"
-#define TYPE_FIELD_UNIFORM              "uniform"
 
 
 hull3_uniform_fnc_preInit = {
-    hull3_uniform_unitBaseClass = ["Uniform", "unitBaseClass"] call hull3_config_fnc_getText;
+    hull3_uniform_unitBaseClass = [TYPE_CLASS_UNIFORM, "unitBaseClass"] call hull3_config_fnc_getText;
     DEBUG("hull3.uniform","Uniform functions preInit finished.");
 };
 
 hull3_uniform_fnc_assignUniformInit = {
-    FUN_ARGS_1(_unit);
+    FUN_ARGS_2(_unit,_template);
 
+    _unit setVariable ["hull3_uniform_template", _template, true];
     removeHeadgear _unit;
     removeGoggles _unit;
     removeUniform _unit;
@@ -24,13 +23,25 @@ hull3_uniform_fnc_assignUniformInit = {
 };
 
 hull3_uniform_fnc_getTemplate = {
-    FUN_ARGS_2(_faction,_manualTemplate);
+    FUN_ARGS_3(_unit,_factionEntry,_uniformEntry);
 
-    [_faction, TYPE_FIELD_UNIFORM, _manualTemplate] call hull3_gear_fnc_getTemplate;
+    DECLARE(_uniformTemplate) = DEFAULT_TEMPLATE_NAME;
+    if (count _uniformEntry > 0) then {
+        if (isClass ([TYPE_CLASS_UNIFORM, _uniformEntry select 0] call hull3_config_fnc_getConfig)) then {
+            _uniformTemplate = _uniformEntry select 0;
+        } else {
+            WARN("hull3.uniform.assign",FMT_2("No uniform template found with name '%1' for unit '%2'!",_uniformEntry select 1,_unit));
+        };
+    } else {
+        DECLARE(_faction) = if (count _factionEntry > 0) then { _factionEntry select 0 } else { faction _unit };
+        _uniformTemplate = [FACTION_CONFIG, _faction, TYPE_FIELD_UNIFORM] call hull3_config_fnc_getText;
+    };
+
+    _uniformTemplate;
 };
 
 hull3_uniform_fnc_assignUniformTemplate = {
-    FUN_ARGS_4(_unit,_class,_gearTemplate,_uniformTemplate);
+    FUN_ARGS_4(_unit,_gearTemplate,_uniformTemplate,_gearClass);
 
     DECLARE(_assignables) = [
         ["headGear",                CONFIG_TYPE_TEXT,   hull3_uniform_fnc_assignHeadGear],
@@ -39,20 +50,20 @@ hull3_uniform_fnc_assignUniformTemplate = {
         ["vest",                    CONFIG_TYPE_TEXT,   hull3_uniform_fnc_assignVest],
         ["backpack",                CONFIG_TYPE_TEXT,   hull3_uniform_fnc_assignBackpack]
     ];
-    [_unit, _class, _gearTemplate, _uniformTemplate, _assignables] call hull3_uniform_fnc_assignObjectTemplate;
-    DEBUG("hull3.uniform.assign",FMT_3("Assigned uniform class '%1' from template '%2' to unit '%3'.",_class,_uniformTemplate,_unit));
+    [_unit, _gearTemplate, _uniformTemplate, _gearClass, _assignables] call hull3_uniform_fnc_assignObjectTemplate;
+    DEBUG("hull3.uniform.assign",FMT_3("Assigned uniform class '%1' from template '%2' to unit '%3'.",_gearClass,_uniformTemplate,_unit));
 };
 
 hull3_uniform_fnc_assignObjectTemplate = {
-    FUN_ARGS_5(_object,_class,_gearTemplate,_uniformTemplate,_assignables);
+    FUN_ARGS_5(_object,_gearTemplate,_uniformTemplate,_gearClass,_assignables);
 
     {
         DECLARE_3(_x,_field,_configType,_assignFunc);
         private ["_configFunc", "_configValue"];
         _configFunc = CONFIG_TYPE_FUNCTIONS select _configType;
-        _configValue = ["Gear", _gearTemplate, _class, _field] call _configFunc;
+        _configValue = [TYPE_CLASS_GEAR, _gearTemplate, _gearClass, _field] call _configFunc;
         if (_configValue == "") then {
-            _configValue = ["Uniform", _uniformTemplate, _class, _field] call _configFunc;
+            _configValue = [TYPE_CLASS_UNIFORM, _uniformTemplate, _gearClass, _field] call _configFunc;
         };
         [_object, _configValue] call _assignFunc;
     } foreach _assignables;

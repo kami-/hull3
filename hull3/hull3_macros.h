@@ -18,31 +18,13 @@
 #define CONFIG_TYPE_ARRAY               3
 #define CONFIG_TYPE_FUNCTIONS           [hull3_config_fnc_getBool, hull3_config_fnc_getNumber, hull3_config_fnc_getText, hull3_config_fnc_getArray]
 
-#define GEAR_UNIT_FIELDS                \
-    [ \
-        ["helmet", {isText _config}], \
-        ["goggles", {isText _config}], \
-        ["uniform", {isText _config}], \
-        ["vest", {isText _config}], \
-        ["ruck", {isText _config}], \
-        ["magazines", {isArray _config}], \
-        ["weapons", {isArray _config}], \
-        ["primaryAttachments", {isArray _config}], \
-        ["secondaryAttachments", {isArray _config}], \
-        ["ruckWeapons", {isArray _config}], \
-        ["ruckMagazines", {isArray _config}], \
-        ["vestMagazines", {isArray _config}], \
-        ["items", {isArray _config}], \
-        ["code", {isText _config}] \
-    ]
+#define DEFAULT_TEMPLATE_NAME           "Default"
 
-#define GEAR_VEHICLE_FIELDS             \
-    [ \
-        ["magazines", {isArray _config}], \
-        ["weapons", {isArray _config}], \
-        ["items", {isArray _config}], \
-        ["code", {isText _config}] \
-    ]
+#define FACTION_CONFIG                  "Faction"
+#define TYPE_CLASS_GEAR                 "Gear"
+#define TYPE_FIELD_GEAR                 "gear"
+#define TYPE_CLASS_UNIFORM              "Uniform"
+#define TYPE_FIELD_UNIFORM              "uniform"
 
 // WARNING
 // Macros are sensitive for "," (comma), "(", ")" (parenthese) and " " (space).

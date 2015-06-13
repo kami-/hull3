@@ -54,7 +54,7 @@ hull3_acre_fnc_setSpokenLanguages = {
     FUN_ARGS_1(_unit);
 
     private ["_factionLanguages", "_unitLanguages", "_languages", "_spokenLanguages"];
-    _factionLanguages = ["Factions", faction _unit, "languages"] call hull3_config_fnc_getBothArray;
+    _factionLanguages = [FACTION_CONFIG, faction _unit, "languages"] call hull3_config_fnc_getBothArray;
     _unitLanguages = [_unit getVariable ["hull3_init_entries", []], "languages"] call hull3_config_fnc_getEntry;
     _languages = [];
     PUSH_ALL(_languages,_factionLanguages);
