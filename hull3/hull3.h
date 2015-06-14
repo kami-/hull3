@@ -156,19 +156,35 @@ class Hull3 {
         class ShortRange {
             baseFrequency = 2400;
             radios[] = {"ACRE_PRC343"};
-
-            class ACRE_PRC343 {
-            };
         };
 
         class LongRange {
             baseFrequency = 32;
             channelNames[] = {"Command", "Air"};
-            radios[] = {"ACRE_PRC148"};
+            radios[] = {"ACRE_PRC148", "ACRE_PRC152", "ACRE_PRC117F"};
+        };
+
+        class Radio {
+            class ACRE_PRC343 {
+                channelCount = 256;
+            };
 
             class ACRE_PRC148 {
+                channelCount = 32;
                 channelNameField = "label";
                 power = 5000;
+            };
+
+            class ACRE_PRC152 {
+                channelCount = 99;
+                channelNameField = "description";
+                power = 5000;
+            };
+
+            class ACRE_PRC117F {
+                channelCount = 100;
+                channelNameField = "name";
+                power = 2000;
             };
         };
 

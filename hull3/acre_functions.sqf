@@ -6,7 +6,6 @@
 #include "logbook.h"
 
 #define ACRE_SIDES                                  [WEST, EAST, RESISTANCE, CIVILIAN]
-#define ACRE_PRC148_CHANNEL_COUNT                   32
 
 
 
@@ -75,7 +74,7 @@ hull3_acre_fnc_setupPresets = {
 
 hull3_acre_fnc_setupSidePresets = {
     {
-        [_x, _forEachIndex] call hull3_acre_fnc_setupSideShortRangePreset;
+        [_x] call hull3_acre_fnc_setupSideShortRangePreset;
         [_x] call hull3_acre_fnc_setupSideLongRangePreset;
     } foreach ACRE_SIDES;
 };
@@ -94,26 +93,23 @@ hull3_acre_fnc_setupUserPresets = {
 };
 
 hull3_acre_fnc_setupSideShortRangePreset = {
-    FUN_ARGS_2(_side,_sideIndex);
+    FUN_ARGS_1(_side);
 
-    private ["_presetName", "_radios"];
+    private ["_baseFrequency", "_channelStep", "_sideStep", "_presetName", "_radios"];
+    _baseFrequency = ["ACRE", "ShortRange", "baseFrequency"] call hull3_config_fnc_getNumber;
+    _channelStep = ["ACRE", "Steps", "channel"] call hull3_config_fnc_getNumber;
+    _sideStep = [_side] call hull3_acre_fnc_getSideStep;
     _presetName = toLower str _side;
     _radios = ["ACRE", "ShortRange", "radios"] call hull3_config_fnc_getArray;
     {
-        private ["_presetData", "_blocksHash", "_blocks"];
-        _presetData = HASH_CREATE;
-        _blocksHash = HASH_CREATE;
-        _blocks = [_sideIndex];
-        HASH_SET(_blocksHash,"blocks",_blocks);
-        HASH_SET(_presetData,"channels",_blocksHash);
-        [_x, _presetName, _presetData] call acre_sys_data_fnc_registerRadioPreset;
+        [_x, _baseFrequency, _channelStep, _sideStep, _presetName, {}, []] call hull3_acre_fnc_setRadioPresetFrequencies;
     } foreach _radios;
 };
 
 hull3_acre_fnc_setupSideLongRangePreset = {
     FUN_ARGS_1(_side);
 
-    private ["_baseFrequency", "_channelStep", "_sideStep", "_presetName", "_radios", "_channelNames"];
+    private ["_baseFrequency", "_channelStep", "_sideStep", "_presetName", "_radios"];
     _baseFrequency = ["ACRE", "LongRange", "baseFrequency"] call hull3_config_fnc_getNumber;
     _channelStep = ["ACRE", "Steps", "channel"] call hull3_config_fnc_getNumber;
     _sideStep = [_side] call hull3_acre_fnc_getSideStep;
@@ -121,20 +117,40 @@ hull3_acre_fnc_setupSideLongRangePreset = {
     _radios = ["ACRE", "LongRange", "radios"] call hull3_config_fnc_getArray;
     _channelNames = ["ACRE", "LongRange", "channelNames"] call hull3_config_fnc_getArray;
     {
-        [_x, "default", _presetName] call acre_api_fnc_copyPreset;
-        for "_i" from 0 to (ACRE_PRC148_CHANNEL_COUNT - 1) do {
-            private ["_frequency", "_channelNameField", "_channelName", "_power", "_channelIndex"];
-            _frequency = _baseFrequency + _i * _channelStep + _sideStep;
-            _channelNameField = ["ACRE", "LongRange", _x, "channelNameField"] call hull3_config_fnc_getText;
-            _channelName = if (_i < count _channelNames) then { _channelNames select _i } else { format ["%1 %2", toLower str _side, _i] };
-            _power = ["ACRE", "LongRange", _x, "power"] call hull3_config_fnc_getNumber;
-            _channelIndex = _i + 1;
-            [_x, _presetName, _channelIndex, "frequencyTX", _frequency] call acre_api_fnc_setPresetChannelField;
-            [_x, _presetName, _channelIndex, "frequencyRX", _frequency] call acre_api_fnc_setPresetChannelField;
-            [_x, _presetName, _channelIndex, _channelNameField, _channelName] call acre_api_fnc_setPresetChannelField;
-            [_x, _presetName, _channelIndex, "power", _power] call acre_api_fnc_setPresetChannelField;
-        };
+        [_x, _baseFrequency, _channelStep, _sideStep, _presetName, hull3_acre_fnc_setLongRangeRadioFields, [_x, _presetName, _channelNames]] call hull3_acre_fnc_setRadioPresetFrequencies;
     } foreach _radios;
+};
+
+hull3_acre_fnc_setRadioPresetFrequencies = {
+    FUN_ARGS_7(_radio,_baseFrequency,_channelStep,_sideStep,_presetName,_fieldFunc,_fieldFuncArgs);
+
+    DECLARE(_channelCount) = ["ACRE", "Radio", _radio, "channelCount"] call hull3_config_fnc_getNumber;
+    [_radio, "default", _presetName] call acre_api_fnc_copyPreset;
+    for "_i" from 0 to (_channelCount - 1) do {
+        private ["_frequency", "_channelIndex"];
+        _frequency = _baseFrequency + _i * _channelStep + _sideStep;
+        _channelIndex = _i + 1;
+        [_radio, _presetName, _channelIndex, "frequencyTX", _frequency] call acre_api_fnc_setPresetChannelField;
+        [_radio, _presetName, _channelIndex, "frequencyRX", _frequency] call acre_api_fnc_setPresetChannelField;
+        PUSH(_fieldFuncArgs,_i);
+        _fieldFuncArgs call _fieldFunc;
+    };
+};
+
+hull3_acre_fnc_setLongRangeRadioFields = {
+    FUN_ARGS_4(_radio,_presetName,_channelNames,_channelArrayIndex);
+
+    private ["_channelNameField", "_channelName", "_power", "_channelIndex"];
+    _channelNameField = ["ACRE", "Radio", _radio, "channelNameField"] call hull3_config_fnc_getText;
+    _channelName = if (_channelArrayIndex < count _channelNames) then {
+        _channelNames select _channelArrayIndex
+    } else {
+        format ["%1 %2", toLower str _side, _channelArrayIndex]
+    };
+    _power = ["ACRE", "Radio", _x, "power"] call hull3_config_fnc_getNumber;
+    _channelIndex = _channelArrayIndex + 1;
+    [_radio, _presetName, _channelIndex, _channelNameField, _channelName] call acre_api_fnc_setPresetChannelField;
+    [_radio, _presetName, _channelIndex, "power", _power] call acre_api_fnc_setPresetChannelField;
 };
 
 hull3_acre_fnc_getSideStep = {
