@@ -36,7 +36,6 @@ hull3_gear_fnc_preInit = {
 };
 
 hull3_gear_fnc_addEventHandlers = {
-    ["acre.initialized", hull3_gear_fnc_tryAssignRadios] call hull3_event_fnc_addEventHandler;
 };
 
 hull3_gear_fnc_assign = {
@@ -167,6 +166,7 @@ hull3_gear_fnc_assignUnitTemplate = {
     } foreach _assignables;
     [_unit, _class, _template] call compile ([TYPE_CLASS_GEAR, _template, _class, "code"] call hull3_config_fnc_getText);
     _unit selectWeapon primaryWeapon _unit;
+    [_unit] call hull3_gear_fnc_tryAssignRadios;
     DEBUG("hull3.gear.assign",FMT_3("Assigned gear class '%1' from template '%2' to unit '%3'.",_class,_template,_unit));
 };
 
