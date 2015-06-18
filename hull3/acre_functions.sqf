@@ -137,8 +137,10 @@ hull3_acre_fnc_setRadioPresetFrequencies = {
         [_radio, _presetName, _channelIndex, "frequencyTX", _frequency] call acre_api_fnc_setPresetChannelField;
         TRACE("hull3.acre.radio.preset",FMT_4("Set 'frequencyTX' field to '%1' of channel '%2' in preset '%3' of radio '%4'.",_frequency,_channelIndex,_presetName,_radio));
         [_radio, _presetName, _channelIndex, "frequencyRX", _frequency] call acre_api_fnc_setPresetChannelField;
-        PUSH(_fieldFuncArgs,_i);
-        _fieldFuncArgs call _fieldFunc;
+        TRACE("hull3.acre.radio.preset",FMT_4("Set 'frequencyRX' field to '%1' of channel '%2' in preset '%3' of radio '%4'.",_frequency,_channelIndex,_presetName,_radio));
+        DECLARE(_newFieldFuncArgs) = +_fieldFuncArgs;
+        PUSH(_newFieldFuncArgs,_i);
+        _newFieldFuncArgs call _fieldFunc;
     };
 };
 
@@ -150,7 +152,7 @@ hull3_acre_fnc_setLongRangeRadioFields = {
     _channelName = if (_channelArrayIndex < count _channelNames) then {
         _channelNames select _channelArrayIndex
     } else {
-        format ["%1 %2", toLower str _side, _channelArrayIndex]
+        format ["%1 %2", toLower str _side, _channelArrayIndex + 1]
     };
     _power = ["ACRE", "Radio", _x, "power"] call hull3_config_fnc_getNumber;
     _channelIndex = _channelArrayIndex + 1;
