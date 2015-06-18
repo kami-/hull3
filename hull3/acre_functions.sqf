@@ -30,16 +30,25 @@ hull3_acre_fnc_postInit = {
 };
 
 hull3_acre_fnc_setSettings = {
-    [["ACRE", "revealToAi"] call hull3_config_fnc_getBool] call acre_api_fnc_setRevealToAI;
-    [["ACRE", "lossModelScale"] call hull3_config_fnc_getNumber] call acre_api_fnc_setLossModelScale;
-    [["ACRE", "fullDuplex"] call hull3_config_fnc_getBool] call acre_api_fnc_setFullDuplex;
-    [["ACRE", "interference"] call hull3_config_fnc_getBool] call acre_api_fnc_setInterference;
+    DECLARE(_value) = ["ACRE", "revealToAi"] call hull3_config_fnc_getBool;
+    [_value] call acre_api_fnc_setRevealToAI;
+    DEBUG("hull3.acre.settings",FMT_1("Set 'revealToAi' to '%1'.",_value));
+    _value = ["ACRE", "lossModelScale"] call hull3_config_fnc_getNumber;
+    [_value] call acre_api_fnc_setLossModelScale;
+    DEBUG("hull3.acre.settings",FMT_1("Set 'lossModelScale' to '%1'.",_value));
+    _value = ["ACRE", "fullDuplex"] call hull3_config_fnc_getBool;
+    [_value] call acre_api_fnc_setFullDuplex;
+    DEBUG("hull3.acre.settings",FMT_1("Set 'fullDuplex' to '%1'.",_value));
+    _value = ["ACRE", "interference"] call hull3_config_fnc_getBool;
+    [_value] call acre_api_fnc_setInterference;
+    DEBUG("hull3.acre.settings",FMT_1("Set 'interference' to '%1'.",_value));
 };
 
 hull3_acre_fnc_addLanguages = {
     DECLARE(_languages) = ["ACRE", "Babel", "languages"] call hull3_config_fnc_getArray;
     {
         _x call acre_api_fnc_babelAddLanguageType;
+        DEBUG("hull3.acre.babel",FMT_2("Added language with ID '%1' and name '%2'.",_x select 0,_x select 1));
     } foreach _languages;
 };
 
@@ -59,6 +68,7 @@ hull3_acre_fnc_setSpokenLanguages = {
         };
     } foreach _languages;
     _spokenLanguages call acre_api_fnc_babelSetSpokenLanguages;
+    DEBUG("hull3.acre.babel",FMT_2("Set spoken languages of unit '%1' to '%2'.",_unit,_spokenLanguages));
 };
 
 hull3_acre_fnc_setupPresets = {
@@ -125,6 +135,7 @@ hull3_acre_fnc_setRadioPresetFrequencies = {
         _frequency = _baseFrequency + _i * _channelStep + _sideStep;
         _channelIndex = _i + 1;
         [_radio, _presetName, _channelIndex, "frequencyTX", _frequency] call acre_api_fnc_setPresetChannelField;
+        TRACE("hull3.acre.radio.preset",FMT_4("Set 'frequencyTX' field to '%1' of channel '%2' in preset '%3' of radio '%4'.",_frequency,_channelIndex,_presetName,_radio));
         [_radio, _presetName, _channelIndex, "frequencyRX", _frequency] call acre_api_fnc_setPresetChannelField;
         PUSH(_fieldFuncArgs,_i);
         _fieldFuncArgs call _fieldFunc;
@@ -144,7 +155,9 @@ hull3_acre_fnc_setLongRangeRadioFields = {
     _power = ["ACRE", "Radio", _x, "power"] call hull3_config_fnc_getNumber;
     _channelIndex = _channelArrayIndex + 1;
     [_radio, _presetName, _channelIndex, _channelNameField, _channelName] call acre_api_fnc_setPresetChannelField;
+    TRACE("hull3.acre.radio.preset",FMT_5("Set '%1' field to '%2' of channel '%3' in preset '%4' of radio '%5'.",_channelNameField,_channelName,_channelIndex,_presetName,_radio));
     [_radio, _presetName, _channelIndex, "power", _power] call acre_api_fnc_setPresetChannelField;
+    TRACE("hull3.acre.radio.preset",FMT_4("Set 'power' field to '%1' of channel '%2' in preset '%3' of radio '%4'.",_power,_channelIndex,_presetName,_radio));
 };
 
 hull3_acre_fnc_getSideStep = {
