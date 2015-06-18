@@ -76,6 +76,8 @@ hull3_gear_fnc_assignUnitInit = {
 
     _unit setVariable ["hull3_gear_class", _class, true];
     _unit setVariable ["hull3_gear_template", _template, true];
+    _unit setVariable ["hull3_gear_template", _template, true];
+    _unit setVariable ["ace_medical_medicClass", 2, true]; // Allow everyone to use ACE epi-pen
     removeAllAssignedItems _unit;
     removeAllPrimaryWeaponItems _unit;
     removeAllHandgunItems _unit;
