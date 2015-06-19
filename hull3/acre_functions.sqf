@@ -17,7 +17,7 @@ hull3_acre_fnc_preInit = {
 
 hull3_acre_fnc_addEventHandlers = {
     if (!isDedicated) then {
-        ["player.initialized", hull3_acre_fnc_setSpokenLanguages] call hull3_event_fnc_addEventHandler;
+        ["player.initialized", hull3_acre_fnc_playerInit] call hull3_event_fnc_addEventHandler;
     };
 };
 
@@ -27,6 +27,13 @@ hull3_acre_fnc_postInit = {
     [] call hull3_acre_fnc_addLanguages;
     hull3_acre_isInitialized = true;
     ["acre.initialized", [player]] call hull3_event_fnc_emitEvent;
+};
+
+hull3_acre_fnc_playerInit = {
+    FUN_ARGS_1(_unit);
+
+    [false] call acre_api_fnc_setSpectator;
+    [_unit] call hull3_acre_fnc_setSpokenLanguages;
 };
 
 hull3_acre_fnc_setSettings = {
