@@ -78,6 +78,7 @@ class Hull3 {
         #include "assign\gear\FAL_ARC.h"
         #include "assign\gear\FAL_PMC.h"
         #include "assign\gear\G3KA4_NOR.h"
+        #include "assign\gear\HK416.h"
         #include "assign\gear\Katiba_CN.h"
         #include "assign\gear\Katiba_CSAT.h"
         #include "assign\gear\M16A2_US.h"
