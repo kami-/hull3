@@ -77,7 +77,7 @@ class FAL_PMC {
         primaryWeapon = "hlc_smg_MP5N";
         primaryWeaponItems[] = {};
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
-        vestMagazines[] = {{"16Rnd_9x21_Mag", 4}};
+        vestMagazines[] = {{"hlc_30Rnd_9x19_B_MP5", 4}};
         backpackMagazines[] = {};
         assignItems[] = {"ItemGPS"};
     };
@@ -323,7 +323,6 @@ class FAL_PMC {
             {"hlc_100Rnd_762x51_B_M60E4", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
-            {"CUP_M136_M", 10},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
             {"HandGrenade", 10},
@@ -350,7 +349,6 @@ class FAL_PMC {
             {"hlc_100Rnd_762x51_B_M60E4", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
-            {"CUP_M136_M", 10},
             {"CUP_MAAWS_HEAT_M", 5},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},

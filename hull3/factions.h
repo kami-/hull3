@@ -77,7 +77,7 @@ class Faction {
     };
 
     class MNP_GE_WD {
-        gear = "G36_GER";
+        gear = "HK416";
         uniform = "GER_WD";
         languages[] = {
             {"west", 100}
@@ -85,7 +85,7 @@ class Faction {
     };
 
     class MNP_GE_DE {
-        gear = "G36_GER";
+        gear = "HK416";
         uniform = "GER_DE";
         languages[] = {
             {"west", 100}
