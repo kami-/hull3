@@ -73,7 +73,10 @@ hull3_unit_fnc_addFiredEHs = {
     FUN_ARGS_1(_unit);
 
     private "_ehId";
-    _ehId = player addEventHandler ["Fired", {deleteVehicle (_this select 6);}];
+    _ehId = player addEventHandler ["Fired", {
+        [_this select 6] call ace_frag_fnc_addBlackList;
+        deleteVehicle (_this select 6);
+    }];
     _unit setVariable ["hull3_eh_fired", _ehId];
 };
 
