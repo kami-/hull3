@@ -111,7 +111,7 @@ hull3_mission_fnc_getWeather = {
 hull3_mission_fnc_setWeather = {
     FUN_ARGS_2(_time,_weather);
 
-    _time setOvercast (_weather select 0);
+    [(_weather select 0)] call BIS_fnc_setOvercast;
     _time setRain (_weather select 1);
     _time setRainbow (_weather select 2);
     _time setLightnings (_weather select 3);
