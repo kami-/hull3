@@ -17,7 +17,7 @@ hull3_acre_fnc_preInit = {
 
 hull3_acre_fnc_addEventHandlers = {
     if (!isDedicated) then {
-        ["player.initialized", hull3_acre_fnc_playerInit] call hull3_event_fnc_addEventHandler;
+        ["player.initialized", hull3_acre_fnc_setSpokenLanguages] call hull3_event_fnc_addEventHandler;
     };
 };
 
@@ -25,15 +25,33 @@ hull3_acre_fnc_postInit = {
     [] call hull3_acre_fnc_setSettings;
     [] call hull3_acre_fnc_setupPresets;
     [] call hull3_acre_fnc_addLanguages;
-    hull3_acre_isInitialized = true;
-    ["acre.initialized", [player]] call hull3_event_fnc_emitEvent;
+    [] call hull3_acre_fnc_acreInit;
 };
 
-hull3_acre_fnc_playerInit = {
-    FUN_ARGS_1(_unit);
-
-    [false] call acre_api_fnc_setSpectator;
-    [_unit] call hull3_acre_fnc_setSpokenLanguages;
+hull3_acre_fnc_acreInit = {
+    DEBUG("hull3.acre.spec","ACRE player init called.");
+    if ([] call hull3_common_fnc_isHeadlessClient) exitWith {
+        DEBUG("hull3.acre.spec","Player is an HC, no ACRE check is ommited.");
+    };
+    if (alive player) then {
+        DEBUG("hull.acre.spec","Player is alive, starting ACRE init check.");
+        [] spawn {
+            for "_i" from 1 to 60 do {
+                DEBUG("hull.acre.spec",FMT_2("Waiting for ACRE to initialize '%1' (%2 seconds).",[] call acre_api_fnc_isInitialized,_i * 5));
+                sleep 5;
+                if ([] call acre_api_fnc_isInitialized) exitWith {
+                    hull3_acre_isInitialized = true;
+                    ["acre.initialized", [player]] call hull3_event_fnc_emitEvent;
+                    [false] call acre_api_fnc_setSpectator;
+                    DEBUG("hull.acre.spec","ACRE init finished.");
+                };
+            };
+            DEBUG("hull.acre.spec","ACRE init failed (300 seconds).");
+        };
+    } else {
+        DEBUG("hull.acre.spec","Player is dead, setting ACRE spectator to 'true'.");
+        [true] call acre_api_fnc_setSpectator;
+    };
 };
 
 hull3_acre_fnc_setSettings = {
