@@ -70,6 +70,8 @@ class Mission
 	randomSeed=7492351;
 	class Intel
 	{
+		briefingName="*** Mission Name ***";
+		overviewText="*** Mission Description ***";
 		timeOfChanges=1800.0002;
 		startWeather=0.30000001;
 		startWind=0.1;
