@@ -19,6 +19,23 @@ hull3_config_fnc_getConfig = {
     _config;
 };
 
+hull3_config_fnc_getBothArray = {
+    private ["_config", "_values"];
+    _config = HULL3_MISSION_CONFIG_FILE;
+    {
+        _config = _config >> _x;
+    } foreach _this;
+    _values = getArray _config;
+
+    _config = HULL3_CONFIG_FILE;
+    {
+        _config = _config >> _x;
+    } foreach _this;
+    PUSH_ALL(_values,getArray _config);
+
+    _values;
+};
+
 hull3_config_fnc_getArray = {
     getArray (_this call hull3_config_fnc_getConfig);
 };
@@ -80,4 +97,41 @@ hull3_config_fnc_getCustomNumber = {
 
 hull3_config_fnc_getCustomBool = {
     getNumber (_this call hull3_config_fnc_getCustomConfig) == 1;
+};
+
+hull3_config_fnc_getInitEntries = {
+    FUN_ARGS_1(_initArray);
+
+    DECLARE(_initEntires) = [];
+    for "_i" from 1 to (count _initArray) - 1 do {
+        PUSH(_initEntires,_initArray select _i);
+    };
+
+    _initEntires;
+};
+
+hull3_config_fnc_getEntryWithName = {
+    FUN_ARGS_2(_entries,_name);
+
+    DECLARE(_entry) = [];
+    {
+        if (_x select 0 == _name) exitWith { _entry = _x; };
+    } foreach _entries;
+
+    _entry;
+};
+
+hull3_config_fnc_getEntry = {
+    FUN_ARGS_2(_entries,_name);
+
+    private ["_entryWithName", "_entry"];
+    _entryWithName = [_entries, _name] call hull3_config_fnc_getEntryWithName;
+    _entry = [];
+    if (count _entryWithName > 1) then {
+        for "_i" from 1 to (count _entryWithName) - 1 do {
+            PUSH(_entry,_entryWithName select _i);
+        };
+    };
+
+    _entry;
 };

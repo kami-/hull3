@@ -1,140 +1,199 @@
 #include "hull3_macros.h"
+#include "\idi\clients\acre\addons\api\script_component.hpp"
+#define PUSH(ARRAY,VAL) (ARRAY) pushBack (VAL) // Fix for ACRE2's pushBack missing parens for value
 
 #include "\userconfig\hull3\log\acre.h"
 #include "logbook.h"
+
+#define ACRE_SIDES                                  [WEST, EAST, RESISTANCE, CIVILIAN]
+
 
 
 hull3_acre_fnc_preInit = {
     [] call hull3_acre_fnc_addEventHandlers;
     hull3_acre_isInitialized = false;
-    if (isDedicated) then {
-        hull3_acre_isInitialized = true;
-    };
     DEBUG("hull3.acre","ACRE functions preInit finished.");
 };
 
 hull3_acre_fnc_addEventHandlers = {
-    ["player.initialized", hull3_acre_fnc_playerInit] call hull3_event_fnc_addEventHandler;
-    ["player.respawned", hull3_acre_fnc_tryEnableAcreSpectator] call hull3_event_fnc_addEventHandler;
-};
-
-hull3_acre_fnc_setPlayerFrequencies = {
-    waitUntil {
-        !isNil {acre_sys_radio_currentRadioList};
+    if (!isDedicated) then {
+        ["player.initialized", hull3_acre_fnc_setSpokenLanguages] call hull3_event_fnc_addEventHandler;
     };
-    [] call hull3_acre_fnc_setFrequencies;
-    hull3_acre_isInitialized = true;
-    ["acre.initialized", [player]] call hull3_event_fnc_emitEvent;
 };
 
-hull3_acre_fnc_playerInit = {
-    DEBUG("hull3.acre.jip","ACRE player init called.");
+hull3_acre_fnc_postInit = {
+    [] call hull3_acre_fnc_setSettings;
+    [] call hull3_acre_fnc_setupPresets;
+    [] call hull3_acre_fnc_addLanguages;
+    [] call hull3_acre_fnc_acreInit;
+};
+
+hull3_acre_fnc_acreInit = {
+    DEBUG("hull3.acre.spec","ACRE player init called.");
     if ([] call hull3_common_fnc_isHeadlessClient) exitWith {
-        DEBUG("hull3.acre.jip","Player is an HC, no ACRE check is ommited.");
+        DEBUG("hull3.acre.spec","Player is an HC, no ACRE check is ommited.");
     };
     if (alive player) then {
-        DEBUG("hull3.acre.jip","Player is alive, starting spectator check.");
+        DEBUG("hull.acre.spec","Player is alive, starting ACRE init check.");
         [] spawn {
             for "_i" from 1 to 60 do {
-                TRACE("hull3.acre.jip",FMT_2("Waiting for ACRE to initialize TS ID '%1' and spectator list '%2'.",acre_sys_core_ts3id,ACRE_SPECTATORS_LIST));
+                DEBUG("hull.acre.spec",FMT_2("Waiting for ACRE to initialize '%1' (%2 seconds).",[] call acre_api_fnc_isInitialized,_i * 5));
                 sleep 5;
-                if (!isNil {acre_sys_core_ts3id} && {acre_sys_core_ts3id != -1} && {!isNil {ACRE_SPECTATORS_LIST}}) exitWith {}; // wait for ACRE to set ts3id and spectator list
+                if ([] call acre_api_fnc_isInitialized) exitWith {
+                    hull3_acre_isInitialized = true;
+                    ["acre.initialized", [player]] call hull3_event_fnc_emitEvent;
+                    [false] call acre_api_fnc_setSpectator;
+                    DEBUG("hull.acre.spec","ACRE init finished.");
+                };
             };
-            DEBUG("hull3.acre.jip",FMT_2("ACRE init finished with TS ID '%1' and spectator list '%2'.",acre_sys_core_ts3id,ACRE_SPECTATORS_LIST));
-            [] call hull3_acre_fnc_fixAcreSpectator;
+            DEBUG("hull.acre.spec","ACRE init failed (300 seconds).");
         };
     } else {
-        DEBUG("hull3.acre.jip","Player is dead, setting ACRE spectator to true.");
+        DEBUG("hull.acre.spec","Player is dead, setting ACRE spectator to 'true'.");
         [true] call acre_api_fnc_setSpectator;
     };
 };
 
-hull3_acre_fnc_tryEnableAcreSpectator = {
+hull3_acre_fnc_setSettings = {
+    DECLARE(_value) = ["ACRE", "revealToAi"] call hull3_config_fnc_getBool;
+    [_value] call acre_api_fnc_setRevealToAI;
+    DEBUG("hull3.acre.settings",FMT_1("Set 'revealToAi' to '%1'.",_value));
+    _value = ["ACRE", "lossModelScale"] call hull3_config_fnc_getNumber;
+    [_value] call acre_api_fnc_setLossModelScale;
+    DEBUG("hull3.acre.settings",FMT_1("Set 'lossModelScale' to '%1'.",_value));
+    _value = ["ACRE", "fullDuplex"] call hull3_config_fnc_getBool;
+    [_value] call acre_api_fnc_setFullDuplex;
+    DEBUG("hull3.acre.settings",FMT_1("Set 'fullDuplex' to '%1'.",_value));
+    _value = ["ACRE", "interference"] call hull3_config_fnc_getBool;
+    [_value] call acre_api_fnc_setInterference;
+    DEBUG("hull3.acre.settings",FMT_1("Set 'interference' to '%1'.",_value));
+};
+
+hull3_acre_fnc_addLanguages = {
+    DECLARE(_languages) = ["ACRE", "Babel", "languages"] call hull3_config_fnc_getArray;
+    {
+        _x call acre_api_fnc_babelAddLanguageType;
+        DEBUG("hull3.acre.babel",FMT_2("Added language with ID '%1' and name '%2'.",_x select 0,_x select 1));
+    } foreach _languages;
+};
+
+hull3_acre_fnc_setSpokenLanguages = {
     FUN_ARGS_1(_unit);
 
-    if (typeof _unit != "seagull") then {
-        [true] call acre_api_fnc_setSpectator;
-    };
-};
-
-hull3_acre_fnc_fixAcreSpectator = {
-    if (acre_sys_core_ts3id in ACRE_SPECTATORS_LIST) then {
-        DEBUG("hull3.acre.jip",FMT_2("TS ID '%1' found in spectator list '%2'. Setting ACRE spectator to false.",acre_sys_core_ts3id,ACRE_SPECTATORS_LIST));
-        [false] call acre_api_fnc_setSpectator;
-        [] spawn hull3_acre_fnc_tsRestartCheck;
-    };
-};
-
-hull3_acre_fnc_tsRestartCheck = {
-    DEBUG("hull3.acre.jip","Waiting for the player to close TS.");
-    waitUntil {
-        player sideChat "You are a JIP. Restart your TeamSpeak!";
-        sleep 3;
-        isNil {acre_sys_io_pipeHandle};
-    };
-    DEBUG("hull3.acre.jip","TS is closed. Waiting for ACRE to initialize.");
-    waitUntil {
-        player sideChat "ACRE has not been initialized yet, do not talk!";
-        sleep 1;
-        !isNil {acre_sys_io_pipeHandle};
-    };
-    DEBUG("hull3.acre.jip","ACRE has been initialized. Waiting 5 seconds to just to be sure.");
-    // Just to make sure ACRE initialized properly, wait 5 seconds
-    for "_i" from 1 to 5 do {
-        player sideChat "ACRE has not been initialized yet, do not talk!";
-        sleep 1;
-    };
-    player sideChat "ACRE has been initialized. You can talk now.";
-    DEBUG("hull3.acre.jip","Player can talk now.");
-};
-
-hull3_acre_fnc_setFrequencies = {
-    [
-        ["ACRE", "ShortRange", "default"] call hull3_config_fnc_getText,
-        ["ACRE", "ShortRange", "radios"] call hull3_config_fnc_getArray,
-        ["ACRE", "ShortRange", "baseFrequency"] call hull3_config_fnc_getNumber,
-        ["ACRE", "Steps", "channel"] call hull3_config_fnc_getNumber
-    ] call hull3_acre_fnc_setChannels;
-    [
-        ["ACRE", "LongRange", "default"] call hull3_config_fnc_getText,
-        ["ACRE", "LongRange", "radios"] call hull3_config_fnc_getArray,
-        ["ACRE", "LongRange", "baseFrequency"] call hull3_config_fnc_getNumber,
-        ["ACRE", "Steps", "channel"] call hull3_config_fnc_getNumber
-    ] call hull3_acre_fnc_setChannels;
-};
-
-hull3_acre_fnc_setChannels = {
-    FUN_ARGS_4(_defaultRadio,_radios,_baseFreq,_channelStep);
-
-    private ["_sideStep", "_channelCount", "_calculatedChannels"];
-    _sideStep = [player] call hull3_acre_fnc_getSideStep;
-    _channelCount = count ([_defaultRadio] call acre_api_fnc_getDefaultChannels);
-    _calculatedChannels = [_channelCount, _baseFreq, _channelStep, _sideStep] call hull3_acre_fnc_getCalculatedChannels;
+    private ["_factionLanguages", "_unitLanguages", "_languages", "_spokenLanguages"];
+    _factionLanguages = [FACTION_CONFIG, faction _unit, "languages"] call hull3_config_fnc_getBothArray;
+    _unitLanguages = [_unit getVariable ["hull3_init_entries", []], "languages"] call hull3_config_fnc_getEntry;
+    _languages = [];
+    PUSH_ALL(_languages,_factionLanguages);
+    PUSH_ALL(_languages,_unitLanguages);
+    _spokenLanguages = [];
     {
-        [_x, _calculatedChannels] call acre_api_fnc_setDefaultChannels;
-        TRACE("hull3.acre.radio",FMT_2("Set default channels to '%1' for radio '%2'.",_calculatedChannels,_x));
-    } foreach _radios;
-    DEBUG("hull3.acre.radio",FMT_4("Set channels for radios '%1' using default radion '%2' with base frequency '%3' and channel step '%4'.",_radios,_defaultRadio,_baseFreq,_channelStep));
+        if ((floor random 100) + 1 <= _x select 1) then {
+            PUSH(_spokenLanguages,_x select 0);
+        };
+    } foreach _languages;
+    _spokenLanguages call acre_api_fnc_babelSetSpokenLanguages;
+    DEBUG("hull3.acre.babel",FMT_2("Set spoken languages of unit '%1' to '%2'.",_unit,_spokenLanguages));
 };
 
-hull3_acre_fnc_getCalculatedChannels = {
-    FUN_ARGS_4(_channelCount,_baseFreq,_channelStep,_sideStep);
+hull3_acre_fnc_setupPresets = {
+    [] call hull3_acre_fnc_setupSidePresets;
+    [] call hull3_acre_fnc_setupUserPresets;
+};
 
-    private ["_newChannels"];
-    _newChannels = [];
-    for "_i" from 1 to _channelCount do {
-        PUSH(_newChannels,_baseFreq + _i * _channelStep + _sideStep);
+hull3_acre_fnc_setupSidePresets = {
+    {
+        [_x] call hull3_acre_fnc_setupSideShortRangePreset;
+        [_x] call hull3_acre_fnc_setupSideLongRangePreset;
+    } foreach ACRE_SIDES;
+};
+
+hull3_acre_fnc_setupUserPresets = {
+    private ["_shortRangeRadios", "_longRangeRadios", "_radios", "_presetName"];
+    _shortRangeRadios = ["ACRE", "ShortRange", "radios"] call hull3_config_fnc_getArray;
+    _longRangeRadios = ["ACRE", "LongRange", "radios"] call hull3_config_fnc_getArray;
+    _radios = [];
+    PUSH_ALL(_radios,_shortRangeRadios);
+    PUSH_ALL(_radios,_longRangeRadios);
+    _presetName = toLower str side player;
+    {
+        [_x, _presetName] call acre_api_fnc_setPreset;
+    } foreach _radios;
+};
+
+hull3_acre_fnc_setupSideShortRangePreset = {
+    FUN_ARGS_1(_side);
+
+    private ["_baseFrequency", "_channelStep", "_sideStep", "_presetName", "_radios"];
+    _baseFrequency = ["ACRE", "ShortRange", "baseFrequency"] call hull3_config_fnc_getNumber;
+    _channelStep = ["ACRE", "Steps", "channel"] call hull3_config_fnc_getNumber;
+    _sideStep = [_side] call hull3_acre_fnc_getSideStep;
+    _presetName = toLower str _side;
+    _radios = ["ACRE", "ShortRange", "radios"] call hull3_config_fnc_getArray;
+    {
+        [_x, _baseFrequency, _channelStep, _sideStep, _presetName, {}, []] call hull3_acre_fnc_setRadioPresetFrequencies;
+    } foreach _radios;
+};
+
+hull3_acre_fnc_setupSideLongRangePreset = {
+    FUN_ARGS_1(_side);
+
+    private ["_baseFrequency", "_channelStep", "_sideStep", "_presetName", "_radios"];
+    _baseFrequency = ["ACRE", "LongRange", "baseFrequency"] call hull3_config_fnc_getNumber;
+    _channelStep = ["ACRE", "Steps", "channel"] call hull3_config_fnc_getNumber;
+    _sideStep = [_side] call hull3_acre_fnc_getSideStep;
+    _presetName = toLower str _side;
+    _radios = ["ACRE", "LongRange", "radios"] call hull3_config_fnc_getArray;
+    _channelNames = ["ACRE", "LongRange", "channelNames"] call hull3_config_fnc_getArray;
+    {
+        [_x, _baseFrequency, _channelStep, _sideStep, _presetName, hull3_acre_fnc_setLongRangeRadioFields, [_x, _presetName, _channelNames]] call hull3_acre_fnc_setRadioPresetFrequencies;
+    } foreach _radios;
+};
+
+hull3_acre_fnc_setRadioPresetFrequencies = {
+    FUN_ARGS_7(_radio,_baseFrequency,_channelStep,_sideStep,_presetName,_fieldFunc,_fieldFuncArgs);
+
+    DECLARE(_channelCount) = ["ACRE", "Radio", _radio, "channelCount"] call hull3_config_fnc_getNumber;
+    [_radio, "default", _presetName] call acre_api_fnc_copyPreset;
+    for "_i" from 0 to (_channelCount - 1) do {
+        private ["_frequency", "_channelIndex"];
+        _frequency = _baseFrequency + _i * _channelStep + _sideStep;
+        _channelIndex = _i + 1;
+        [_radio, _presetName, _channelIndex, "frequencyTX", _frequency] call acre_api_fnc_setPresetChannelField;
+        TRACE("hull3.acre.radio.preset",FMT_4("Set 'frequencyTX' field to '%1' of channel '%2' in preset '%3' of radio '%4'.",_frequency,_channelIndex,_presetName,_radio));
+        [_radio, _presetName, _channelIndex, "frequencyRX", _frequency] call acre_api_fnc_setPresetChannelField;
+        TRACE("hull3.acre.radio.preset",FMT_4("Set 'frequencyRX' field to '%1' of channel '%2' in preset '%3' of radio '%4'.",_frequency,_channelIndex,_presetName,_radio));
+        DECLARE(_newFieldFuncArgs) = +_fieldFuncArgs;
+        PUSH(_newFieldFuncArgs,_i);
+        _newFieldFuncArgs call _fieldFunc;
     };
+};
 
-    _newChannels;
+hull3_acre_fnc_setLongRangeRadioFields = {
+    FUN_ARGS_4(_radio,_presetName,_channelNames,_channelArrayIndex);
+
+    private ["_channelNameField", "_channelName", "_power", "_channelIndex"];
+    _channelNameField = ["ACRE", "Radio", _radio, "channelNameField"] call hull3_config_fnc_getText;
+    _channelName = if (_channelArrayIndex < count _channelNames) then {
+        _channelNames select _channelArrayIndex
+    } else {
+        format ["%1 %2", toLower str _side, _channelArrayIndex + 1]
+    };
+    _power = ["ACRE", "Radio", _x, "power"] call hull3_config_fnc_getNumber;
+    _channelIndex = _channelArrayIndex + 1;
+    [_radio, _presetName, _channelIndex, _channelNameField, _channelName] call acre_api_fnc_setPresetChannelField;
+    TRACE("hull3.acre.radio.preset",FMT_5("Set '%1' field to '%2' of channel '%3' in preset '%4' of radio '%5'.",_channelNameField,_channelName,_channelIndex,_presetName,_radio));
+    [_radio, _presetName, _channelIndex, "power", _power] call acre_api_fnc_setPresetChannelField;
+    TRACE("hull3.acre.radio.preset",FMT_4("Set 'power' field to '%1' of channel '%2' in preset '%3' of radio '%4'.",_power,_channelIndex,_presetName,_radio));
 };
 
 hull3_acre_fnc_getSideStep = {
-    FUN_ARGS_1(_unit);
+    FUN_ARGS_1(_side);
+
     call {
-        if (side player == WEST) exitWith {["ACRE", "Steps", "west"] call hull3_config_fnc_getNumber};
-        if (side player == EAST) exitWith {["ACRE", "Steps", "east"] call hull3_config_fnc_getNumber};
-        if (side player == RESISTANCE) exitWith {["ACRE", "Steps", "resistance"] call hull3_config_fnc_getNumber};
+        if (_side == WEST) exitWith {["ACRE", "Steps", "west"] call hull3_config_fnc_getNumber};
+        if (_side == EAST) exitWith {["ACRE", "Steps", "east"] call hull3_config_fnc_getNumber};
+        if (_side == RESISTANCE) exitWith {["ACRE", "Steps", "resistance"] call hull3_config_fnc_getNumber};
         ["ACRE", "Steps", "default"] call hull3_config_fnc_getNumber;
     };
 };

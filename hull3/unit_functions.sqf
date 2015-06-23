@@ -4,14 +4,22 @@
 #include "logbook.h"
 
 hull3_unit_fnc_init = {
-    FUN_ARGS_3(_unit,_gearConfig,_markerConfig);
+    FUN_ARGS_1(_unit);
 
+    private ["_initEntries", "_markerEntry"];
+    _initEntries = [_this] call hull3_config_fnc_getInitEntries;
     if (local _unit) then {
-        [_unit, _gearConfig select 0, _gearConfig select 1] call hull3_gear_fnc_assign;
+        private ["_factionEntry", "_gearEntry", "_uniformEntry"];
+        _unit setVariable ["hull3_init_entries", _initEntries, true];
+        _factionEntry = [_initEntries, "faction"] call hull3_config_fnc_getEntry;
+        _gearEntry = [_initEntries, "gear"] call hull3_config_fnc_getEntry;
+        _uniformEntry = [_initEntries, "uniform"] call hull3_config_fnc_getEntry;
+        [_unit, _factionEntry, _gearEntry, _uniformEntry] call hull3_gear_fnc_assign;
         [_unit] call hull3_unit_fnc_addEHs;
     };
-    if (!isNil {_markerConfig} && {!isDedicated}) then {
-        [_unit, _markerConfig select 0, _markerConfig select 1] call hull3_marker_fnc_initMarker;
+    _markerEntry = [_initEntries, "marker"] call hull3_config_fnc_getEntry;
+    if (count _markerEntry > 0 && {!isDedicated}) then {
+        [_unit, _markerEntry select 0, _markerEntry select 1] call hull3_marker_fnc_initMarker;
     };
 };
 
@@ -31,7 +39,6 @@ hull3_unit_fnc_onPlayerRespawn = {
 hull3_unit_fnc_playerInit = {
     [] call hull3_unit_fnc_waitForPlayer;
 
-    [] spawn hull3_acre_fnc_setPlayerFrequencies;
     [] call hull3_marker_fnc_addMarkers;
     [] spawn hull3_marker_fnc_updateAllMarkers;
     [] spawn hull3_marker_fnc_updateCustomMarkers;
@@ -66,7 +73,10 @@ hull3_unit_fnc_addFiredEHs = {
     FUN_ARGS_1(_unit);
 
     private "_ehId";
-    _ehId = player addEventHandler ["Fired", {deleteVehicle (_this select 6);}];
+    _ehId = player addEventHandler ["Fired", {
+        [_this select 6] call ace_frag_fnc_addBlackList;
+        deleteVehicle (_this select 6);
+    }];
     _unit setVariable ["hull3_eh_fired", _ehId];
 };
 

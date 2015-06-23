@@ -45,7 +45,7 @@ hull3_briefing_fnc_addSideNotes = {
         if (side player == WEST) exitWith {_briefingFile = ["Briefing", "blufor"] call hull3_config_fnc_getText};
         if (side player == EAST) exitWith {_briefingFile = ["Briefing", "opfor"] call hull3_config_fnc_getText};
         if (side player == RESISTANCE) exitWith {_briefingFile = ["Briefing", "indfor"] call hull3_config_fnc_getText};
-        if (side player == CIVILIAN) exitWith {_briefingFile = ["Briefing", "civilian"] call hull3_config_fnc_getText};
+        _briefingFile = ["Briefing", "civilian"] call hull3_config_fnc_getText;
     };
     [] call compile preprocessFile _briefingFile;
     DEBUG("hull3.briefing","Added Side notes to briefing notes.");

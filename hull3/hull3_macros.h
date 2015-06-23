@@ -3,7 +3,7 @@
 
 #include "\userconfig\hull3\log\global.h"
 
-#define HULL3_VERSION                    "0.3.1"
+#define HULL3_VERSION                    "0.4.0"
 
 #define CONCAT_ADDON_PATH(FILE)         x\ark\addons\hull3\FILE
 #define ADDON_PATH(FILE)                #CONCAT_ADDON_PATH(FILE)
@@ -18,31 +18,13 @@
 #define CONFIG_TYPE_ARRAY               3
 #define CONFIG_TYPE_FUNCTIONS           [hull3_config_fnc_getBool, hull3_config_fnc_getNumber, hull3_config_fnc_getText, hull3_config_fnc_getArray]
 
-#define GEAR_UNIT_FIELDS                \
-    [ \
-        ["helmet", {isText _config}], \
-        ["goggles", {isText _config}], \
-        ["uniform", {isText _config}], \
-        ["vest", {isText _config}], \
-        ["ruck", {isText _config}], \
-        ["magazines", {isArray _config}], \
-        ["weapons", {isArray _config}], \
-        ["primaryAttachments", {isArray _config}], \
-        ["secondaryAttachments", {isArray _config}], \
-        ["ruckWeapons", {isArray _config}], \
-        ["ruckMagazines", {isArray _config}], \
-        ["vestMagazines", {isArray _config}], \
-        ["items", {isArray _config}], \
-        ["code", {isText _config}] \
-    ]
+#define DEFAULT_TEMPLATE_NAME           "Default"
 
-#define GEAR_VEHICLE_FIELDS             \
-    [ \
-        ["magazines", {isArray _config}], \
-        ["weapons", {isArray _config}], \
-        ["items", {isArray _config}], \
-        ["code", {isText _config}] \
-    ]
+#define FACTION_CONFIG                  "Faction"
+#define TYPE_CLASS_GEAR                 "Gear"
+#define TYPE_FIELD_GEAR                 "gear"
+#define TYPE_CLASS_UNIFORM              "Uniform"
+#define TYPE_FIELD_UNIFORM              "uniform"
 
 // WARNING
 // Macros are sensitive for "," (comma), "(", ")" (parenthese) and " " (space).
@@ -62,7 +44,7 @@
 //          PVT_3(_unit,_group,_trigger); 
 //      THEN:
 //          private ["_unit","_group","_trigger"];
-#define PVT_1(VAR1) private [#VAR1]
+#define PVT_1(VAR1) private #VAR1
 #define PVT_2(VAR1,VAR2) private [#VAR1,#VAR2]
 #define PVT_3(VAR1,VAR2,VAR3) private [#VAR1,#VAR2,#VAR3]
 #define PVT_4(VAR1,VAR2,VAR3,VAR4) private [#VAR1,#VAR2,#VAR3,#VAR4]
@@ -93,6 +75,52 @@
 #define SELECT_8(ARRAY,VAR1,VAR2,VAR3,VAR4,VAR5,VAR6,VAR7,VAR8) SELECT_7(ARRAY,VAR1,VAR2,VAR3,VAR4,VAR5,VAR6,VAR7); VAR8 = (ARRAY) select 7
 #define SELECT_9(ARRAY,VAR1,VAR2,VAR3,VAR4,VAR5,VAR6,VAR7,VAR8,VAR9) SELECT_8(ARRAY,VAR1,VAR2,VAR3,VAR4,VAR5,VAR6,VAR7,VAR8); VAR9 = (ARRAY) select 8
 
+// Creates private declarations and selection from given array for local variables.
+// Example:
+//      GIVEN:
+//          _array = ["unit", "group", "trigger"];
+//      WHEN:
+//          DECLARE_3(_array,_unit,_group,_trigger);
+//      THEN:
+//          private ["_unit","_group","_trigger"];
+//          _unit == "unit";
+//          _group == "group";
+//          _trigger == "trigger";
+#define DECLARE_1(ARRAY,VAR1) \
+    PVT_1(VAR1); \
+    SELECT_1(ARRAY,VAR1)
+
+#define DECLARE_2(ARRAY,VAR1,VAR2) \
+    PVT_2(VAR1,VAR2); \
+    SELECT_2(ARRAY,VAR1,VAR2)
+
+#define DECLARE_3(ARRAY,VAR1,VAR2,VAR3) \
+    PVT_3(VAR1,VAR2,VAR3); \
+    SELECT_3(ARRAY,VAR1,VAR2,VAR3)
+
+#define DECLARE_4(ARRAY,VAR1,VAR2,VAR3,VAR4) \
+    PVT_4(VAR1,VAR2,VAR3,VAR4); \
+    SELECT_4(ARRAY,VAR1,VAR2,VAR3,VAR4)
+
+#define DECLARE_5(ARRAY,VAR1,VAR2,VAR3,VAR4,VAR5) \
+    PVT_5(VAR1,VAR2,VAR3,VAR4,VAR5); \
+    SELECT_5(ARRAY,VAR1,VAR2,VAR3,VAR4,VAR5)
+
+#define DECLARE_6(ARRAY,VAR1,VAR2,VAR3,VAR4,VAR5,VAR6) \
+    PVT_6(VAR1,VAR2,VAR3,VAR4,VAR5,VAR6); \
+    SELECT_6(ARRAY,VAR1,VAR2,VAR3,VAR4,VAR5,VAR6)
+
+#define DECLARE_7(ARRAY,VAR1,VAR2,VAR3,VAR4,VAR5,VAR6,VAR7) \
+    PVT_7(VAR1,VAR2,VAR3,VAR4,VAR5,VAR6,VAR7); \
+    SELECT_7(ARRAY,VAR1,VAR2,VAR3,VAR4,VAR5,VAR6,VAR7)
+
+#define DECLARE_8(ARRAY,VAR1,VAR2,VAR3,VAR4,VAR5,VAR6,VAR7,VAR8) \
+    PVT_8(VAR1,VAR2,VAR3,VAR4,VAR5,VAR6,VAR7,VAR8); \
+    SELECT_8(ARRAY,VAR1,VAR2,VAR3,VAR4,VAR5,VAR6,VAR7,VAR8)
+
+#define DECLARE_9(ARRAY,VAR1,VAR2,VAR3,VAR4,VAR5,VAR6,VAR7,VAR8,VAR9) \
+    PVT_9(VAR1,VAR2,VAR3,VAR4,VAR5,VAR6,VAR7,VAR8,VAR9); \
+    SELECT_9(ARRAY,VAR1,VAR2,VAR3,VAR4,VAR5,VAR6,VAR7,VAR8,VAR9)
 
 // Creates private declarations and selection from _this array for arguments.
 // Recommended for function/script argument processing.
@@ -107,40 +135,31 @@
 //          _group == "group";
 //          _trigger == "trigger";
 #define FUN_ARGS_1(VAR1) \
-    PVT_1(VAR1); \
-    SELECT_1(_this,VAR1)
-    
+    DECLARE_1(_this,VAR1);
+
 #define FUN_ARGS_2(VAR1,VAR2) \
-    PVT_2(VAR1,VAR2); \
-    SELECT_2(_this,VAR1,VAR2)
-    
+    DECLARE_2(_this,VAR1,VAR2)
+
 #define FUN_ARGS_3(VAR1,VAR2,VAR3) \
-    PVT_3(VAR1,VAR2,VAR3); \
-    SELECT_3(_this,VAR1,VAR2,VAR3)
-    
+    DECLARE_3(_this,VAR1,VAR2,VAR3)
+
 #define FUN_ARGS_4(VAR1,VAR2,VAR3,VAR4) \
-    PVT_4(VAR1,VAR2,VAR3,VAR4); \
-    SELECT_4(_this,VAR1,VAR2,VAR3,VAR4)
-    
+    DECLARE_4(_this,VAR1,VAR2,VAR3,VAR4)
+
 #define FUN_ARGS_5(VAR1,VAR2,VAR3,VAR4,VAR5) \
-    PVT_5(VAR1,VAR2,VAR3,VAR4,VAR5); \
-    SELECT_5(_this,VAR1,VAR2,VAR3,VAR4,VAR5)
-    
+    DECLARE_5(_this,VAR1,VAR2,VAR3,VAR4,VAR5)
+
 #define FUN_ARGS_6(VAR1,VAR2,VAR3,VAR4,VAR5,VAR6) \
-    PVT_6(VAR1,VAR2,VAR3,VAR4,VAR5,VAR6); \
-    SELECT_6(_this,VAR1,VAR2,VAR3,VAR4,VAR5,VAR6)
-    
+    DECLARE_6(_this,VAR1,VAR2,VAR3,VAR4,VAR5,VAR6)
+
 #define FUN_ARGS_7(VAR1,VAR2,VAR3,VAR4,VAR5,VAR6,VAR7) \
-    PVT_7(VAR1,VAR2,VAR3,VAR4,VAR5,VAR6,VAR7); \
-    SELECT_7(_this,VAR1,VAR2,VAR3,VAR4,VAR5,VAR6,VAR7)
-    
+    DECLARE_7(_this,VAR1,VAR2,VAR3,VAR4,VAR5,VAR6,VAR7)
+
 #define FUN_ARGS_8(VAR1,VAR2,VAR3,VAR4,VAR5,VAR6,VAR7,VAR8) \
-    PVT_8(VAR1,VAR2,VAR3,VAR4,VAR5,VAR6,VAR7,VAR8); \
-    SELECT_8(_this,VAR1,VAR2,VAR3,VAR4,VAR5,VAR6,VAR7,VAR8)
-    
+    DECLARE_8(_this,VAR1,VAR2,VAR3,VAR4,VAR5,VAR6,VAR7,VAR8)
+
 #define FUN_ARGS_9(VAR1,VAR2,VAR3,VAR4,VAR5,VAR6,VAR7,VAR8,VAR9) \
-    PVT_9(VAR1,VAR2,VAR3,VAR4,VAR5,VAR6,VAR7,VAR8,VAR9); \
-    SELECT_9(_this,VAR1,VAR2,VAR3,VAR4,VAR5,VAR6,VAR7,VAR8,VAR9)
+    DECLARE_9(_this,VAR1,VAR2,VAR3,VAR4,VAR5,VAR6,VAR7,VAR8,VAR9)
 
 // Adds a value to the end of an array.
 // Example:
@@ -151,7 +170,7 @@
 //          PUSH(_numbers, _number);
 //      THEN:
 //          _numbers == [1, 3, 5, 1, 1];
-#define PUSH(ARRAY,VAL) (ARRAY) set [count (ARRAY), (VAL)]
+#define PUSH(ARRAY,VAL) (ARRAY) pushBack (VAL)
 
 // Adds all values from one array to another.
 // Example:
@@ -231,5 +250,23 @@
 //      THEN:
 //          private "_group"; _group = _x;
 #define DECLARE(VAR) private #VAR; VAR
+
+// Generates an array of integers between the given interval. Left and right inclusive.
+// Example:
+//      GIVEN:
+//      WHEN:
+//          _numbers = RANGE(0,4);
+//          _empty = RANGE(2,0);
+//      THEN:
+//          _numbers == [0, 1, 2, 3, 4];
+//          _empty == [];
+#define RANGE(FROM,TO) \
+    call { \
+        DECLARE(_range) = []; \
+        for "_i" from FROM to TO do { \
+            PUSH(_range,_i); \
+        }; \
+        _range; \
+    }
 
 #endif //HULL3_MACROS_H
