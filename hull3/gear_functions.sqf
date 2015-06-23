@@ -168,7 +168,7 @@ hull3_gear_fnc_assignUnitTemplate = {
     } foreach _assignables;
     [_unit, _class, _template] call compile ([TYPE_CLASS_GEAR, _template, _class, "code"] call hull3_config_fnc_getText);
     _unit selectWeapon primaryWeapon _unit;
-    [_unit] call hull3_gear_fnc_tryAssignRadios;
+    [_unit, _template, _class] call hull3_gear_fnc_assignRadios;
     DEBUG("hull3.gear.assign",FMT_3("Assigned gear class '%1' from template '%2' to unit '%3'.",_class,_template,_unit));
 };
 
@@ -259,19 +259,6 @@ hull3_gear_fnc_assignVehicleItems = {
     TRACE("hull3.gear.assign",FMT_2("Assigned items '%1' to vehicle '%2'.",_items,_vehicle));
 };
 
-hull3_gear_fnc_tryAssignRadios = {
-    FUN_ARGS_1(_unit);
-
-    private ["_gearClass", "_gearTemplate"];
-    _gearClass = _unit getVariable "hull3_gear_class";
-    _gearTemplate = _unit getVariable "hull3_gear_template";
-    if (!isNil {_gearClass} && {!isNil {_gearTemplate}}) then {
-        [_unit, _gearTemplate, _gearClass] call hull3_gear_fnc_assignRadios;
-        DEBUG("hull3.gear.assign",FMT_1("Assigned radios to unit '%1'.",_unit));
-    };
-    ["gear.radio.assigned", [_unit]] call hull3_event_fnc_emitEvent;
-};
-
 hull3_gear_fnc_assignRadios = {
     FUN_ARGS_3(_unit,_gearTemplate,_gearClass);
 
@@ -286,6 +273,7 @@ hull3_gear_fnc_assignRadios = {
         // ADD ACRE2 preset stuff here?
         [_x select 0, _unit, _configValue, _x select 2, _x select 3, _x select 4, _gearTemplate, _gearClass] call (_x select 5);
     } foreach _assignables;
+    ["gear.radio.assigned", [_unit]] call hull3_event_fnc_emitEvent;
 };
 
 hull3_gear_fnc_removeRadios = {
