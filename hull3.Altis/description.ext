@@ -1,6 +1,7 @@
 #include "hull3\hull3.h"
 
 enableDebugConsole = 1;
+disableChannels[]={2,4,6};
 
 onLoadName = "*** Insert mission name here. ***";
 onLoadMission = "Made with Hull3";
