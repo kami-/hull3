@@ -106,6 +106,7 @@ class AK74_CN {
         };
         assignItems[] = {"ItemGPS"};
         binocular = "Binocular";
+        uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         backpackMedicalItems[] = {
             {"ACE_elasticBandage", 15},
             {"ACE_morphine", 10},
