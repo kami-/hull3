@@ -67,6 +67,8 @@ hull3_acre_fnc_setSettings = {
     _value = ["ACRE", "interference"] call hull3_config_fnc_getBool;
     [_value] call acre_api_fnc_setInterference;
     DEBUG("hull3.acre.settings",FMT_1("Set 'interference' to '%1'.",_value));
+    ACRE_TEST_OCCLUSION = false;
+    DEBUG("hull3.acre.settings",FMT_1("Set 'ACRE_TEST_OCCLUSION' to '%1'.",false));
 };
 
 hull3_acre_fnc_addLanguages = {
