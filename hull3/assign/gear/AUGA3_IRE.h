@@ -109,10 +109,10 @@ class AUGA3_IRE {
         binocular = "Binocular";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         backpackMedicalItems[] = {
-            {"ACE_elasticBandage", 15},
-            {"ACE_morphine", 10},
-            {"ACE_epinephrine", 10},
-            {"ACE_bloodIV", 8}
+            {"ACE_elasticBandage", 30},
+            {"ACE_morphine", 30},
+            {"ACE_epinephrine", 30},
+            {"ACE_bloodIV", 12}
         };
     };
 
