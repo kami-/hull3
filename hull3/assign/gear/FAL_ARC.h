@@ -33,7 +33,7 @@ class FAL_ARC {
         uniformRadios[] = {"ACRE_PRC343"};
         vestRadios[] = {};
         backpackRadios[] = {};
-        uniformMedicalItems[] = {{"ACE_elasticBandage", 3}};
+        uniformMedicalItems[] = {{"ACE_elasticBandage", 10}};
         vestMedicalItems[] = {};
         backpackMedicalItems[] = {};
         code = "";
