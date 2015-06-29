@@ -1,8 +1,8 @@
 class MissionParams {
     // Date YYYY-MM-DD
     date[] = {
-        {2014, 1, 24}, // New Moon
-        {2014, 1, 31} // Full Moon
+        {2035, 6, 1}, // New Moon
+        {2035, 6, 12} // Full Moon
     };
 
     // Time HH24:mm

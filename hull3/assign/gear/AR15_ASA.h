@@ -33,7 +33,7 @@ class AR15_ASA {
         uniformRadios[] = {"ACRE_PRC343"};
         vestRadios[] = {};
         backpackRadios[] = {};
-        uniformMedicalItems[] = {{"ACE_elasticBandage", 3}};
+        uniformMedicalItems[] = {{"ACE_elasticBandage", 10}};
         vestMedicalItems[] = {};
         backpackMedicalItems[] = {};
         code = "";
@@ -109,10 +109,10 @@ class AR15_ASA {
         binocular = "Binocular";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         backpackMedicalItems[] = {
-            {"ACE_elasticBandage", 15},
-            {"ACE_morphine", 10},
-            {"ACE_epinephrine", 10},
-            {"ACE_bloodIV", 8}
+            {"ACE_elasticBandage", 30},
+            {"ACE_morphine", 30},
+            {"ACE_epinephrine", 30},
+            {"ACE_bloodIV", 12}
         };
     };
 
