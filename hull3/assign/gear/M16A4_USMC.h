@@ -121,7 +121,7 @@ class M16A4_USMC {
 
     class AR : Rifleman {
         primaryWeapon = "RH_M27IAR";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"RH_SFM952V", "RH_HBLM"};
         vestMagazines[] = {{"RH_60Rnd_556x45_M855A1", 4}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
