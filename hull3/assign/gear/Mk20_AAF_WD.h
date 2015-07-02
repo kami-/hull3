@@ -33,9 +33,9 @@ class Mk20_AAF_WD {
         uniformRadios[] = {"ACRE_PRC343"};
         vestRadios[] = {};
         backpackRadios[] = {};
-        uniformMedicalItems[] = {{"ACE_elasticBandage", 10}};
+        uniformMedicalItems[] = {{"ACE_elasticBandage", 6}};
         vestMedicalItems[] = {};
-        backpackMedicalItems[] = {};
+        backpackMedicalItems[] = {{"ACE_elasticBandage", 4}};
         code = "";
         headGear = "";
         uniform = "";
