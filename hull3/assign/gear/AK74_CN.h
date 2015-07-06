@@ -75,6 +75,10 @@ class AK74_CN {
     class Crew : Rifleman {
         primaryWeapon = "hlc_rifle_aks74u";
         primaryWeaponItems[] = {};
+        uniformMagazines[] = {
+            {"Chemlight_green", 2},
+            {"SmokeShell", 1}
+        };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         vestMagazines[] = {{"hlc_30Rnd_545x39_B_AK", 4}};
         backpackMagazines[] = {};

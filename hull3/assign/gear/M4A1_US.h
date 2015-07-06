@@ -76,6 +76,10 @@ class M4A1_US {
     class Crew : Rifleman {
         primaryWeapon = "RH_M4sbr_b";
         primaryWeaponItems[] = {"RH_SFM952V"};
+        uniformMagazines[] = {
+            {"Chemlight_green", 2},
+            {"SmokeShell", 1}
+        };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         vestMagazines[] = {{"RH_30Rnd_556x45_M855A1", 4}};
         backpackMagazines[] = {};

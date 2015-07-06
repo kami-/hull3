@@ -76,6 +76,10 @@ class MX_NATO {
     class Crew : Rifleman {
         primaryWeapon = "SMG_01_F";
         primaryWeaponItems[] = {"acc_flashlight"};
+        uniformMagazines[] = {
+            {"Chemlight_green", 2},
+            {"SmokeShell", 1}
+        };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         vestMagazines[] = {{"30Rnd_45ACP_Mag_SMG_01", 4}};
         backpackMagazines[] = {};

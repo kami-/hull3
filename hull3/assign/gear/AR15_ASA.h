@@ -76,6 +76,10 @@ class AR15_ASA {
     class Crew : Rifleman {
         primaryWeapon = "RH_sbr9";
         primaryWeaponItems[] = {};
+        uniformMagazines[] = {
+            {"Chemlight_green", 2},
+            {"SmokeShell", 1}
+        };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         vestMagazines[] = {{"RH_32Rnd_9mm_M822", 4}};
         backpackMagazines[] = {};

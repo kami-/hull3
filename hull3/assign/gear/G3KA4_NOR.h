@@ -76,6 +76,10 @@ class G3KA4_NOR {
     class Crew : Rifleman {
         primaryWeapon = "hlc_smg_MP5N";
         primaryWeaponItems[] = {};
+        uniformMagazines[] = {
+            {"Chemlight_green", 2},
+            {"SmokeShell", 1}
+        };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         vestMagazines[] = {{"hlc_30Rnd_9x19_B_MP5", 4}};
         backpackMagazines[] = {};

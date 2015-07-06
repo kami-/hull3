@@ -76,6 +76,10 @@ class SCAR_L_US {
     class Crew : Rifleman {
         primaryWeapon = "CUP_arifle_Mk16_CQC";
         primaryWeaponItems[] = {};
+        uniformMagazines[] = {
+            {"Chemlight_green", 2},
+            {"SmokeShell", 1}
+        };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         vestMagazines[] = {{"CUP_30Rnd_556x45_Stanag", 4}};
         backpackMagazines[] = {};
