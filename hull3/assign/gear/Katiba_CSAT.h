@@ -76,6 +76,10 @@ class Katiba_CSAT {
     class Crew : Rifleman {
         primaryWeapon = "SMG_02_F";
         primaryWeaponItems[] = {"acc_flashlight"};
+        uniformMagazines[] = {
+            {"Chemlight_green", 2},
+            {"SmokeShell", 1}
+        };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         assignItems[] = {"ItemGPS"};
         vestMagazines[] = {{"30Rnd_9x21_Mag", 4}};

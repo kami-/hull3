@@ -76,6 +76,10 @@ class MIX_LVM {
     class Crew : Rifleman {
         primaryWeapon = "hlc_smg_mp5a2";
         primaryWeaponItems[] = {};
+        uniformMagazines[] = {
+            {"Chemlight_green", 2},
+            {"SmokeShell", 1}
+        };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         vestMagazines[] = {{"hlc_30Rnd_9x19_B_MP5", 4}};
         backpackMagazines[] = {};

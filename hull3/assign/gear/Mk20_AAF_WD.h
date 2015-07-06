@@ -76,6 +76,10 @@ class Mk20_AAF_WD {
     class Crew : Rifleman {
         primaryWeapon = "hgun_PDW2000_F";
         primaryWeaponItems[] = {"acc_flashlight"};
+        uniformMagazines[] = {
+            {"Chemlight_green", 2},
+            {"SmokeShell", 1}
+        };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         vestMagazines[] = {{"30Rnd_9x21_Mag", 4}};
         backpackMagazines[] = {};
