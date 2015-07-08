@@ -19,7 +19,7 @@ class NZ {
         headGear = "H_HelmetCrew_I";
         uniform = "MNP_CombatUniform_NZ_B";
         vest = "V_BandollierB_oli";
-        backpack = "";
+        backpack = "B_AssaultPack_rgr";
     };
 
     class CO : Officer {

@@ -19,7 +19,7 @@ class NPA_WD {
         headGear = "H_Cap_headphones";
         vest = "V_BandollierB_oli";
         goggles = "G_Bandanna_oli";
-        backpack = "";
+        backpack = "B_AssaultPack_rgr";
     };
 
     class CO : Officer {

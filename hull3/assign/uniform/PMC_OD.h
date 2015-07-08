@@ -20,7 +20,7 @@ class PMC_OD {
         headGear = "H_HelmetCrew_I";
         uniform = "MNP_CombatUniform_OD_Rg";
         vest = "V_BandollierB_oli";
-        backpack = "";
+        backpack = "B_AssaultPack_rgr";
     };
 
     class CO : Officer {

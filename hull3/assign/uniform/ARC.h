@@ -22,7 +22,7 @@ class ARC {
         goggles = "";
         uniform = "MNP_CombatUniform_Rebel_A";
         vest = "V_BandollierB_oli";
-        backpack = "";
+        backpack = "B_AssaultPack_rgr";
     };
 
     class CO : Officer {

@@ -19,7 +19,7 @@ class USA_ACU {
         headGear = "H_HelmetCrew_B";
         uniform = "MNP_CombatUniform_Ranger_E";
         vest = "V_BandollierB_rgr";
-        backpack = "";
+        backpack = "B_AssaultPack_rgr";
     };
 
     class CO : Officer {

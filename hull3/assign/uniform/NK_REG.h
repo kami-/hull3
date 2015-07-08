@@ -18,7 +18,7 @@ class NK_REG {
     class Crew : Rifleman {
         headGear = "H_HelmetCrew_I";
         vest = "V_BandollierB_rgr";
-        backpack = "";
+        backpack = "B_AssaultPack_rgr";
     };
 
     class CO : Officer {

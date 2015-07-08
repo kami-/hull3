@@ -4,7 +4,7 @@ class USMC_SN {
         goggles = "G_Balaclava_blk";
         uniform = "MNP_CombatUniform_USMC_arctic";
         vest = "V_PlateCarrier1_blk";
-        backpack = "B_Kitbag_rgr";
+        backpack = "MNP_B_WB_KB";
     };
 
     class Leader : Rifleman {
@@ -21,7 +21,7 @@ class USMC_SN {
         headGear = "H_HelmetCrew_I";
         uniform = "MNP_CombatUniform_USMC_arctic_B";
         vest = "V_BandollierB_blk";
-        backpack = "";
+        backpack = "MNP_B_WB_AP";
     };
 
     class CO : Officer {
@@ -34,7 +34,7 @@ class USMC_SN {
     };
 
     class Medic : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "MNP_B_RUW_CA";
     };
 
     class FTL : Leader {
@@ -45,14 +45,14 @@ class USMC_SN {
     };
 
     class AAR : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "MNP_B_RUW_CA";
     };
 
     class RAT : Rifleman {
     };
 
     class MMGG : AR {
-        backpack = "B_Carryall_oli";
+        backpack = "MNP_B_RUW_CA";
     };
 
     class MMGAG : AAR {
@@ -68,7 +68,7 @@ class USMC_SN {
     };
 
     class MATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "MNP_B_RUW_CA";
     };
 
     class MATAG : AAR {
@@ -78,7 +78,7 @@ class USMC_SN {
     };
 
     class HATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "MNP_B_RUW_CA";
         uniform = "MNP_CombatUniform_USMC_arctic_B";
     };
 
@@ -100,7 +100,7 @@ class USMC_SN {
     class ENG : Rifleman {
         uniform = "MNP_CombatUniform_USMC_arctic_B";
         vest = "V_PlateCarrier1_blk";
-        backpack = "B_Carryall_oli";
+        backpack = "MNP_B_RUW_CA";
     };
 
     class ENGA : ENG {
@@ -111,7 +111,7 @@ class USMC_SN {
         goggles = "G_Bandanna_blk";
         uniform = "MNP_CombatUniform_USMC_arctic_B";
         vest = "V_BandollierB_blk";
-        backpack = "B_AssaultPack_rgr";
+        backpack = "MNP_B_WB_AP";
     };
 
     class SP : SN {

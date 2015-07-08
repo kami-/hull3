@@ -20,7 +20,7 @@ class ASA {
         headGear = "H_HelmetCrew_I";
         uniform = "MNP_CombatUniform_ASA_GC3";
         vest = "V_BandollierB_rgr";
-        backpack = "";
+        backpack = "B_AssaultPack_rgr";
     };
 
     class CO : Officer {

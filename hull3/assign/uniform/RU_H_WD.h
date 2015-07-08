@@ -18,7 +18,7 @@ class RU_H_WD {
     class Crew : Rifleman {
         headGear = "H_HelmetCrew_B";
         vest = "V_BandollierB_oli";
-        backpack = "";
+        backpack = "B_AssaultPack_rgr";
     };
 
     class CO : Officer {

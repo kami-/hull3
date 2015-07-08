@@ -21,7 +21,7 @@ class NATO_H {
         headGear = "H_HelmetCrew_B";
         uniform = "U_B_CombatUniform_mcam_tshirt";
         vest = "V_BandollierB_rgr";
-        backpack = "";
+        backpack = "B_AssaultPack_rgr";
     };
 
     class CO : Officer {

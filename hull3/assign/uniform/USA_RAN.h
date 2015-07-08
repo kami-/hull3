@@ -23,7 +23,7 @@ class USA_RAN {
         headGear = "H_HelmetCrew_B";
         uniform = "MNP_CombatUniform_Ranger_B";
         vest = "V_BandollierB_rgr";
-        backpack = "";
+        backpack = "B_AssaultPack_rgr";
     };
 
     class CO : Officer {
