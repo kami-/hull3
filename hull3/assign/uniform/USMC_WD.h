@@ -19,7 +19,7 @@ class USMC_WD {
         headGear = "H_HelmetCrew_I";
         uniform = "MNP_CombatUniform_USMC_ST";
         vest = "V_BandollierB_cbr";
-        backpack = "";
+        backpack = "B_AssaultPack_rgr";
     };
 
     class CO : Officer {

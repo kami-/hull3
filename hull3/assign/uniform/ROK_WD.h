@@ -19,7 +19,7 @@ class ROK_WD {
         headGear = "H_HelmetCrew_I";
         uniform = "MNP_CombatUniform_ROK_B";
         vest = "V_BandollierB_blk";
-        backpack = "";
+        backpack = "B_AssaultPack_rgr";
     };
 
     class CO : Officer {

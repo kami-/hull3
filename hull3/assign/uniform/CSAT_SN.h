@@ -4,7 +4,7 @@ class CSAT_SN {
         goggles = "";
         uniform = "MNP_CombatUniform_Russia_arctic";
         vest = "V_PlateCarrier1_blk";
-        backpack = "B_Kitbag_rgr";
+        backpack = "MNP_B_WB_KB";
     };
 
     class Leader : Rifleman {
@@ -17,7 +17,7 @@ class CSAT_SN {
     class Crew : Rifleman {
         headGear = "H_HelmetCrew_B";
         vest = "V_BandollierB_blk";
-        backpack = "";
+        backpack = "MNP_B_WB_AP";
     };
 
     class CO : Officer {
@@ -30,7 +30,7 @@ class CSAT_SN {
     };
 
     class Medic : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "MNP_B_RUW_CA";
     };
 
     class FTL : Leader {
@@ -40,14 +40,14 @@ class CSAT_SN {
     };
 
     class AAR : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "MNP_B_RUW_CA";
     };
 
     class RAT : Rifleman {
     };
 
     class MMGG : AR {
-        backpack = "B_Carryall_oli";
+        backpack = "MNP_B_RUW_CA";
     };
 
     class MMGAG : AAR {
@@ -63,7 +63,7 @@ class CSAT_SN {
     };
 
     class MATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "MNP_B_RUW_CA";
     };
 
     class MATAG : AAR {
@@ -73,7 +73,7 @@ class CSAT_SN {
     };
 
     class HATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "MNP_B_RUW_CA";
     };
 
     class HATAG : AAR {
@@ -92,7 +92,7 @@ class CSAT_SN {
     };
 
     class ENG : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "MNP_B_RUW_CA";
     };
 
     class ENGA : ENG {
@@ -102,7 +102,7 @@ class CSAT_SN {
         headGear = "H_Watchcap_blk";
         goggles = "G_Bandanna_aviator";
         vest = "V_BandollierB_blk";
-        backpack = "B_AssaultPack_blk";
+        backpack = "MNP_B_WB_AP";
     };
 
     class SP : SN {

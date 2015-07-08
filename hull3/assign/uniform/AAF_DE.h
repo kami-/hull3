@@ -21,7 +21,7 @@ class AAF_DE {
         headGear = "H_HelmetCrew_I";
         uniform = "AAF_D_CombatUniform_Shortsleeve";
         vest = "V_BandollierB_cbr";
-        backpack = "";
+        backpack = "AAF_D_AssaultPack_B";
     };
 
     class CO : Officer {

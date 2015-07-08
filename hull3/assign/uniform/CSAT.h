@@ -20,7 +20,7 @@ class CSAT {
         headGear = "H_HelmetCrew_O";
         uniform = "U_O_CombatUniform_ocamo";
         vest = "V_BandollierB_cbr";
-        backpack = "";
+        backpack = "B_AssaultPack_rgr";
     };
 
     class CO : Officer {

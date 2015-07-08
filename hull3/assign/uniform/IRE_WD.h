@@ -19,7 +19,7 @@ class IRE_WD {
         headGear = "H_HelmetCrew_I";
         uniform = "MNP_CombatUniform_Ireland_S";
         vest = "V_BandollierB_oli";
-        backpack = "";
+        backpack = "B_AssaultPack_rgr";
     };
 
     class CO : Officer {

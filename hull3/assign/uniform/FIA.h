@@ -23,7 +23,7 @@ class FIA {
         uniform = "U_BG_Guerilla2_2";
         vest = "V_BandollierB_oli";
         goggles = "";
-        backpack = "";
+        backpack = "B_AssaultPack_rgr";
     };
 
     class CO : Officer {
