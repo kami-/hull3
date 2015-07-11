@@ -232,7 +232,7 @@ hull3_mission_fnc_handleSafetyTimeChange = {
 };
 
 hull3_mission_fnc_hasSafetyTimerEnded = {
-    (hull3_mission_safetyTimer select 0) && {(hull3_mission_safetyTimer select 1) <= 0};
+    !isNil {hull3_mission_safetyTimer} && {hull3_mission_safetyTimer select 0} && {hull3_mission_safetyTimer select 1 <= 0};
 };
 
 hull3_mission_fnc_endSafetyTimer = {
