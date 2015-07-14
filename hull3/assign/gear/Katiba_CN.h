@@ -126,12 +126,12 @@ class Katiba_CN {
     class AR : Rifleman {
         primaryWeapon = "LMG_Zafir_F";
         primaryWeaponItems[] = {"acc_flashlight"};
-        vestMagazines[] = {{"150Rnd_762x51_Box", 2}};
+        vestMagazines[] = {{"150Rnd_762x54_Box", 2}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"150Rnd_762x51_Box", 2},
-            {"150Rnd_762x51_Box_Tracer", 4}
+            {"150Rnd_762x54_Box", 2},
+            {"150Rnd_762x54_Box_Tracer", 4}
         };
     };
 
@@ -140,8 +140,8 @@ class Katiba_CN {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"150Rnd_762x51_Box", 2},
-            {"150Rnd_762x51_Box_Tracer", 2}
+            {"150Rnd_762x54_Box", 2},
+            {"150Rnd_762x54_Box_Tracer", 2}
         };
     };
 
@@ -250,13 +250,13 @@ class Katiba_CN {
         handgunWeapon = "hgun_Rook40_F";
         primaryWeaponItems[] = {"optic_MRCO"};
         vestMagazines[] = {
-            {"10Rnd_762x51_Mag", 4},
+            {"10Rnd_762x54_Mag", 4},
             {"16Rnd_9x21_Mag", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"10Rnd_762x51_Mag", 3}
+            {"10Rnd_762x54_Mag", 3}
         };
         assignItems[] = {"ItemGPS"};
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -290,7 +290,7 @@ class Katiba_CN {
         };
         magazines[] = {
             {"30Rnd_65x39_caseless_green", 30},
-            {"150Rnd_762x51_Box", 10},
+            {"150Rnd_762x54_Box", 10},
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"UGL_FlareWhite_F", 5},
             {"ACE_HandFlare_White", 5},
@@ -319,7 +319,7 @@ class Katiba_CN {
         };
         magazines[] = {
             {"30Rnd_65x39_caseless_green", 60},
-            {"150Rnd_762x51_Box", 20},
+            {"150Rnd_762x54_Box", 20},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
@@ -344,7 +344,7 @@ class Katiba_CN {
         weapons[] = {{"CUP_launch_RPG18", 10}};
         magazines[] = {
             {"30Rnd_65x39_caseless_green", 60},
-            {"150Rnd_762x51_Box", 20},
+            {"150Rnd_762x54_Box", 20},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
