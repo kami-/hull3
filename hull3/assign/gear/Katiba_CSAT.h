@@ -33,9 +33,9 @@ class Katiba_CSAT {
         uniformRadios[] = {"ACRE_PRC343"};
         vestRadios[] = {};
         backpackRadios[] = {};
-        uniformMedicalItems[] = {{"ACE_elasticBandage", 6}};
+        uniformMedicalItems[] = {{"ACE_fieldDressing", 6}};
         vestMedicalItems[] = {};
-        backpackMedicalItems[] = {{"ACE_elasticBandage", 4}};
+        backpackMedicalItems[] = {{"ACE_fieldDressing", 4}};
         code = "";
         headGear = "";
         uniform = "";
@@ -113,7 +113,7 @@ class Katiba_CSAT {
         binocular = "Binocular";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         backpackMedicalItems[] = {
-            {"ACE_elasticBandage", 30},
+            {"ACE_fieldDressing", 30},
             {"ACE_morphine", 30},
             {"ACE_epinephrine", 30},
             {"ACE_bloodIV", 12}
@@ -305,7 +305,7 @@ class Katiba_CSAT {
             {"ACRE_PRC343", 2},
             {"ACRE_PRC152", 2}
         };
-        medicalItems[] = {{"ACE_elasticBandage", 6}};
+        medicalItems[] = {{"ACE_fieldDressing", 6}};
     };
 
     class Car : Vehicle {
@@ -337,7 +337,7 @@ class Katiba_CSAT {
             {"ACRE_PRC343", 2},
             {"ACRE_PRC152", 2}
         };
-        medicalItems[] = {{"ACE_elasticBandage", 6}};
+        medicalItems[] = {{"ACE_fieldDressing", 6}};
     };
 
     class Armored : Truck {
@@ -363,7 +363,7 @@ class Katiba_CSAT {
             {"ACRE_PRC343", 2},
             {"ACRE_PRC152", 2}
         };
-        medicalItems[] = {{"ACE_elasticBandage", 6}};
+        medicalItems[] = {{"ACE_fieldDressing", 6}};
     };
 
 };
