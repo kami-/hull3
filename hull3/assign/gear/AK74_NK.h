@@ -33,7 +33,7 @@ class AK74_NK {
         uniformRadios[] = {"ACRE_PRC343"};
         vestRadios[] = {};
         backpackRadios[] = {};
-        uniformMedicalItems[] = {{"ACE_elasticBandage", 10}};
+        uniformMedicalItems[] = {{"ACE_fieldDressing", 10}};
         vestMedicalItems[] = {};
         backpackMedicalItems[] = {};
         code = "";
@@ -112,7 +112,7 @@ class AK74_NK {
         binocular = "Binocular";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         backpackMedicalItems[] = {
-            {"ACE_elasticBandage", 30},
+            {"ACE_fieldDressing", 30},
             {"ACE_morphine", 30},
             {"ACE_epinephrine", 30},
             {"ACE_bloodIV", 12}
@@ -308,7 +308,7 @@ class AK74_NK {
             {"ACRE_PRC343", 2},
             {"ACRE_PRC152", 2}
         };
-        medicalItems[] = {{"ACE_elasticBandage", 6}};
+        medicalItems[] = {{"ACE_fieldDressing", 6}};
     };
 
     class Car : Vehicle {
@@ -339,7 +339,7 @@ class AK74_NK {
             {"ACRE_PRC343", 2},
             {"ACRE_PRC152", 2}
         };
-        medicalItems[] = {{"ACE_elasticBandage", 6}};
+        medicalItems[] = {{"ACE_fieldDressing", 6}};
     };
 
     class Armored : Truck {
@@ -364,7 +364,7 @@ class AK74_NK {
             {"ACRE_PRC343", 2},
             {"ACRE_PRC152", 2}
         };
-        medicalItems[] = {{"ACE_elasticBandage", 6}};
+        medicalItems[] = {{"ACE_fieldDressing", 6}};
     };
 
 };
