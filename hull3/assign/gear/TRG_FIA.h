@@ -278,6 +278,7 @@ class TRG_FIA {
     };
 
     class P : Crew {
+        assignItems[] = {"ItemGPS", "NVGoggles"};
     };
 
     class PCM : P {

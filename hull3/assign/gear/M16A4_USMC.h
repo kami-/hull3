@@ -278,6 +278,7 @@ class M16A4_USMC {
     };
 
     class P : Crew {
+        assignItems[] = {"ItemGPS", "NVGoggles"};
     };
 
     class PCM : P {

@@ -281,6 +281,7 @@ class AKM_NPA {
     };
 
     class P : Crew {
+        assignItems[] = {"ItemGPS", "NVGoggles"};
     };
 
     class PCM : P {

@@ -278,6 +278,7 @@ class G3KA4_NOR {
     };
 
     class P : Crew {
+        assignItems[] = {"ItemGPS", "NVGoggles"};
     };
 
     class PCM : P {

@@ -280,6 +280,7 @@ class M16A4_ROK {
     };
 
     class P : Crew {
+        assignItems[] = {"ItemGPS", "NVGoggles"};
     };
 
     class PCM : P {

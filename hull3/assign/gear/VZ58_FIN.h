@@ -282,6 +282,7 @@ class VZ58_FIN {
     };
 
     class P : Crew {
+        assignItems[] = {"ItemGPS", "NVGoggles"};
     };
 
     class PCM : P {

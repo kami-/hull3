@@ -278,6 +278,7 @@ class AUGA3_IRE {
     };
 
     class P : Crew {
+        assignItems[] = {"ItemGPS", "NVGoggles"};
     };
 
     class PCM : P {

@@ -276,6 +276,7 @@ class AR15_ASA {
     };
 
     class P : Crew {
+        assignItems[] = {"ItemGPS", "NVGoggles"};
     };
 
     class PCM : P {
