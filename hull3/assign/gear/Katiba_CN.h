@@ -277,6 +277,7 @@ class Katiba_CN {
     };
 
     class P : Crew {
+        assignItems[] = {"ItemGPS", "NVGoggles"};
     };
 
     class PCM : P {

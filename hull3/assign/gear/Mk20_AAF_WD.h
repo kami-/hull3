@@ -278,6 +278,7 @@ class Mk20_AAF_WD {
     };
 
     class P : Crew {
+        assignItems[] = {"ItemGPS", "NVGoggles"};
     };
 
     class PCM : P {

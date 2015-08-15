@@ -281,6 +281,7 @@ class AK74_NK {
     };
 
     class P : Crew {
+        assignItems[] = {"ItemGPS", "NVGoggles"};
     };
 
     class PCM : P {

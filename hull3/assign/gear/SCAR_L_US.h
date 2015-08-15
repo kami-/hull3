@@ -278,6 +278,7 @@ class SCAR_L_US {
     };
 
     class P : Crew {
+        assignItems[] = {"ItemGPS", "NVGoggles"};
     };
 
     class PCM : P {

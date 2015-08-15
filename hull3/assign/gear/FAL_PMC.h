@@ -280,6 +280,7 @@ class FAL_PMC {
     };
 
     class P : Crew {
+        assignItems[] = {"ItemGPS", "NVGoggles"};
     };
 
     class PCM : P {
