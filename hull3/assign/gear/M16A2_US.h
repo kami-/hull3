@@ -83,7 +83,7 @@ class M16A2_US {
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         vestMagazines[] = {{"RH_30Rnd_556x45_M855A1", 4}};
         backpackMagazines[] = {};
-        assignItems[] = {"ItemGPS"};
+        assignItems[] = {"ItemGPS", "NVGoggles"};
     };
 
     class CO : Officer {

@@ -83,7 +83,7 @@ class TRG_FIA {
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         vestMagazines[] = {{"30Rnd_9x21_Mag", 4}};
         backpackMagazines[] = {};
-        assignItems[] = {"ItemGPS"};
+        assignItems[] = {"ItemGPS", "NVGoggles"};
     };
 
     class CO : Officer {

@@ -83,7 +83,7 @@ class AR15_ASA {
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         vestMagazines[] = {{"RH_32Rnd_9mm_M822", 4}};
         backpackMagazines[] = {};
-        assignItems[] = {"ItemGPS"};
+        assignItems[] = {"ItemGPS", "NVGoggles"};
     };
 
     class CO : Officer {
