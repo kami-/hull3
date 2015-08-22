@@ -83,7 +83,7 @@ class AUGA3_IRE {
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         vestMagazines[] = {{"hlc_25Rnd_9x19mm_M882_AUG", 4}};
         backpackMagazines[] = {};
-        assignItems[] = {"ItemGPS"};
+        assignItems[] = {"ItemGPS", "NVGoggles"};
     };
 
     class CO : Officer {

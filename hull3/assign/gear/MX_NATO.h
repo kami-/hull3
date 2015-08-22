@@ -83,7 +83,7 @@ class MX_NATO {
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         vestMagazines[] = {{"30Rnd_45ACP_Mag_SMG_01", 4}};
         backpackMagazines[] = {};
-        assignItems[] = {"ItemGPS"};
+        assignItems[] = {"ItemGPS", "NVGoggles"};
     };
 
     class CO : Officer {
