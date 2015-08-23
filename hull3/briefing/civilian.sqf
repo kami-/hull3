@@ -1,23 +1,15 @@
-// BLUFOR Notes
+// CIV Notes
 
-// Situation
-player createDiaryRecord ["Diary", ["Situation","
+// Credits
+player createDiaryRecord ["Diary", ["Credits", "
 <br/>
-*** Insert general information about the situation here.***
-<br/><br/>
-ENEMY FORCES
-<br/>
-*** Insert information about enemy forces here.***
-<br/><br/>
-FRIENDLY FORCES
-<br/>
-*** Insert information about friendly forces here.***
+Made by 
 "]];
 
-// Mission
-player createDiaryRecord ["Diary", ["Mission","
+// Administration
+player createDiaryRecord ["Diary", ["Administration","
 <br/>
-*** Insert the mission here. ***
+*** Insert information on administration and logistics here. ***
 "]];
 
 // Execution
@@ -40,16 +32,22 @@ SPECIAL TASKS
 *** Insert instructions for specific units here. ***
 "]];
 
-// Administration
-player createDiaryRecord ["Diary", ["Administration","
+// Mission
+player createDiaryRecord ["Diary", ["Mission","
 <br/>
-*** Insert information on administration and logistics here. ***
+*** Insert the mission here. ***
 "]];
 
-// Credits
-player createDiaryRecord ["Diary", ["Credits", "
+// Situation
+player createDiaryRecord ["Diary", ["Situation","
 <br/>
-Made by 
+*** Insert general information about the situation here.***
+<br/><br/>
+ENEMY FORCES
+<br/>
+*** Insert information about enemy forces here.***
+<br/><br/>
+FRIENDLY FORCES
+<br/>
+*** Insert information about friendly forces here.***
 "]];
-
-
