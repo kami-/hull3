@@ -294,7 +294,7 @@ hull3_mission_fnc_sendJipSync = {
 };
 
 hull3_mission_fnc_receiveJipSync = {
-    FUN_ARGS_6(_date,_safetyTimer,_safetyTimerAbort,_customArguments);
+    FUN_ARGS_4(_date,_safetyTimer,_safetyTimerAbort,_customArguments);
 
     DEBUG("hull3.mission.jip",FMT_2("Received JIP sync '%1' from server for client '%2'.",owner player,_this));
     setDate _date;
