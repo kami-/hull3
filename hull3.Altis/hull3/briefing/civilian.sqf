@@ -1,4 +1,4 @@
-// BLUFOR Notes
+// CIVFOR Notes
 
 // Situation
 player createDiaryRecord ["Diary", ["Situation","
