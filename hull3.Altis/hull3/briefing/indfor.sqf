@@ -1,4 +1,4 @@
-// BLUFOR Notes
+// INDFOR Notes
 
 // Situation
 player createDiaryRecord ["Diary", ["Situation","
