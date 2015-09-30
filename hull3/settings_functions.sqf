@@ -22,6 +22,8 @@ hull3_settings_fnc_setNonStandardGeneralSettings = {
     if (!(["General", "enableSaving"] call hull3_config_fnc_getBool)) then {
         enableSaving [false, false];
         DEBUG("hull3.settings","Saving is disabled.");
+    };
+    if (["General", "disableRemoteSensors"] call hull3_config_fnc_getBool) then {
         disableRemoteSensors true;
         DEBUG("hull3.settings","RemoteSensors are disabled.");
     };
