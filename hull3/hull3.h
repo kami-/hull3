@@ -202,6 +202,7 @@ class Hull3 {
         addRating = 999999;                             // Rating added to units, to supress negative ratings
         BIS_noCoreConversations = 1;                    // Disables BIS unit conversations
         enableSaving = 0;                               // Enables game saving
+        disableRemoteSensors = 1;                       // Disables RemoteSensors
     };
 
     class GarbageCollector {
