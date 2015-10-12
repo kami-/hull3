@@ -196,7 +196,7 @@ hull3_mission_fnc_clientSafetyTimerLoop = {
         [player] call hull3_unit_fnc_addFiredEHs;
         DEBUG("hull3.mission.safetytimer","Starting safety timer loop.");
         [{
-            DECLARE(_weapon) = currentWeapon player;
+            DECLARE(_weapon) = primaryWeapon player;
             if (!(_weapon in (player getVariable ["ace_safemode_safedWeapons", []]))) then {
                 [player, _weapon, _weapon] call ace_safemode_fnc_lockSafety;
             };
