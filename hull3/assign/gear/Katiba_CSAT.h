@@ -24,7 +24,7 @@ class Katiba_CSAT {
             {"30Rnd_65x39_caseless_green", 4},
             {"30Rnd_65x39_caseless_green_Tracer", 2}
         };
-        basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch"};
+        basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "ACE_Flashlight_KSF1"};
         assignItems[] = {};
         binocular = "";
         uniformItems[] = {};

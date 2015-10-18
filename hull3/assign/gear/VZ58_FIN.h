@@ -24,7 +24,7 @@ class VZ58_FIN {
             {"CUP_30Rnd_Sa58_M", 4},
             {"CUP_30Rnd_Sa58_M_TracerY", 2}
         };
-        basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch"};
+        basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "ACE_Flashlight_KSF1"};
         assignItems[] = {};
         binocular = "";
         uniformItems[] = {};

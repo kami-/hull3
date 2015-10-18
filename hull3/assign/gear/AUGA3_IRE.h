@@ -24,7 +24,7 @@ class AUGA3_IRE {
             {"hlc_30Rnd_556x45_B_AUG", 4},
             {"hlc_30Rnd_556x45_T_AUG", 2}
         };
-        basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch"};
+        basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "ACE_Flashlight_KSF1"};
         assignItems[] = {};
         binocular = "";
         uniformItems[] = {};
