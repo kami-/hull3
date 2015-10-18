@@ -24,7 +24,7 @@ class MIX_LVM {
             {"hlc_20rnd_762x51_b_G3", 4},
             {"hlc_20rnd_762x51_T_G3", 2}
         };
-        basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch"};
+        basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "ACE_Flashlight_KSF1"};
         assignItems[] = {};
         binocular = "";
         uniformItems[] = {};

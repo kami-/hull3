@@ -24,7 +24,7 @@ class AK12_RU {
             {"hlc_30Rnd_545x39_B_AK", 4},
             {"hlc_30Rnd_545x39_T_AK", 2}
         };
-        basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch"};
+        basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "ACE_Flashlight_KSF1"};
         assignItems[] = {};
         binocular = "";
         uniformItems[] = {};

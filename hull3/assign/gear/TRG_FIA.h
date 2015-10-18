@@ -24,7 +24,7 @@ class TRG_FIA {
             {"30Rnd_556x45_Stanag", 4},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2}
         };
-        basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch"};
+        basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "ACE_Flashlight_KSF1"};
         assignItems[] = {};
         binocular = "";
         uniformItems[] = {};

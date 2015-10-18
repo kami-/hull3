@@ -24,7 +24,7 @@ class MX_NATO {
             {"30Rnd_65x39_caseless_mag", 4},
             {"30Rnd_65x39_caseless_mag_Tracer", 2}
         };
-        basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch"};
+        basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "ACE_Flashlight_KSF1"};
         assignItems[] = {};
         binocular = "";
         uniformItems[] = {};

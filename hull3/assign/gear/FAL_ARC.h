@@ -24,7 +24,7 @@ class FAL_ARC {
             {"hlc_20Rnd_762x51_B_fal", 4},
             {"hlc_20Rnd_762x51_T_fal", 2}
         };
-        basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch"};
+        basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "ACE_Flashlight_KSF1"};
         assignItems[] = {};
         binocular = "";
         uniformItems[] = {};
