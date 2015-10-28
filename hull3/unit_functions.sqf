@@ -153,7 +153,7 @@ hull3_unit_fnc_killMessage = {
     FUN_ARGS_2(_unit,_killer);
 
     // Fetch the name of the last projectile to hit the player.
-    _projectile = _unit getVariable ["STMF_DeathReport_LastDamage", "[no projectile found]"];
+    _projectile = _unit getVariable ["hull3_unit_lastProjectile", "[no projectile found]"];
     _text = [_projectile] call hull3_unit_fnc_ammoToString;
 
     // If death was a road kill, add the vehicle type in brackets, rather than the ammo type
