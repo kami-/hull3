@@ -24,10 +24,10 @@ class MX_NATO {
             {"30Rnd_65x39_caseless_mag", 4},
             {"30Rnd_65x39_caseless_mag_Tracer", 2}
         };
-        basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "ACE_Flashlight_KSF1"};
+        basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch"};
         assignItems[] = {};
         binocular = "";
-        uniformItems[] = {};
+        uniformItems[] = {{"ACE_Flashlight_KSF1", 1}};
         vestItems[] = {};
         backpackItems[] = {};
         uniformRadios[] = {"ACRE_PRC343"};

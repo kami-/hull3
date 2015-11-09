@@ -24,10 +24,10 @@ class AKS74_CN {
             {"hlc_30Rnd_545x39_B_AK", 4},
             {"hlc_30Rnd_545x39_T_AK", 2}
         };
-        basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "ACE_Flashlight_KSF1"};
+        basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch"};
         assignItems[] = {};
         binocular = "";
-        uniformItems[] = {};
+        uniformItems[] = {{"ACE_Flashlight_KSF1", 1}};
         vestItems[] = {};
         backpackItems[] = {};
         uniformRadios[] = {"ACRE_PRC343"};

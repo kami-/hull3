@@ -24,10 +24,10 @@ class HK416 {
             {"RH_30Rnd_556x45_M855A1", 4},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2}
         };
-        basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "ACE_Flashlight_KSF1"};
+        basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch"};
         assignItems[] = {};
         binocular = "";
-        uniformItems[] = {};
+        uniformItems[] = {{"ACE_Flashlight_KSF1", 1}};
         vestItems[] = {};
         backpackItems[] = {};
         uniformRadios[] = {"ACRE_PRC343"};
