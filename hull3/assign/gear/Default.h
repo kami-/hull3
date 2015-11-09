@@ -15,7 +15,7 @@ class Default {
         basicAssignItems[] = {};
         assignItems[] = {};
         binocular = "";
-        uniformItems[] = {};
+        uniformItems[] = {{"ACE_Flashlight_KSF1", 1}};
         vestItems[] = {};
         backpackItems[] = {};
         uniformRadios[] = {};
