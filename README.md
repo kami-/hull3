@@ -1,1 +1,1 @@
-![Hull](http://i.imgur.com/kCyvIIe.jpg)
+![Hull](http://www.ark-group.org/images/gh/hull.png)
