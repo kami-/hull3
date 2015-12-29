@@ -124,14 +124,14 @@ class AUGA3_NZ {
     };
 
     class AR : Rifleman {
-        primaryWeapon = "hlc_lmg_minimipara";
+        primaryWeapon = "CUP_lmg_minimipara";
         primaryWeaponItems[] = {};
-        vestMagazines[] = {{"hlc_200rnd_556x45_M_SAW", 2}};
+        vestMagazines[] = {{"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 2}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_200rnd_556x45_M_SAW", 2},
-            {"hlc_200rnd_556x45_T_SAW", 2}
+            {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 2},
+            {"CUP_200Rnd_TE1_Red_Tracer_556x45_M249", 2}
         };
     };
 
@@ -139,8 +139,8 @@ class AUGA3_NZ {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_200rnd_556x45_M_SAW", 2},
-            {"hlc_200rnd_556x45_T_SAW", 2}
+            {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 2},
+            {"CUP_200Rnd_TE1_Red_Tracer_556x45_M249", 2}
         };
         binocular = "Binocular";
     };
@@ -292,7 +292,7 @@ class AUGA3_NZ {
         magazines[] = {
             {"hlc_30Rnd_556x45_B_AUG", 15},
             {"hlc_30Rnd_556x45_B_AUG", 15},
-            {"hlc_200rnd_556x45_M_SAW", 10},
+            {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 10},
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"UGL_FlareWhite_F", 5},
             {"ACE_HandFlare_White", 5},
@@ -322,7 +322,7 @@ class AUGA3_NZ {
         magazines[] = {
             {"hlc_30Rnd_556x45_B_AUG", 40},
             {"hlc_30Rnd_556x45_B_AUG", 20},
-            {"hlc_200rnd_556x45_M_SAW", 20},
+            {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
@@ -348,7 +348,7 @@ class AUGA3_NZ {
         magazines[] = {
             {"hlc_30Rnd_556x45_B_AUG", 40},
             {"hlc_30Rnd_556x45_B_AUG", 20},
-            {"hlc_200rnd_556x45_M_SAW", 20},
+            {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},

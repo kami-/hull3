@@ -124,14 +124,14 @@ class M16A4_ROK {
     };
 
     class AR : Rifleman {
-        primaryWeapon = "hlc_lmg_minimipara";
+        primaryWeapon = "CUP_lmg_minimipara";
         primaryWeaponItems[] = {};
-        vestMagazines[] = {{"hlc_200rnd_556x45_M_SAW", 2}};
+        vestMagazines[] = {{"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 2}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_200rnd_556x45_M_SAW", 2},
-            {"hlc_200rnd_556x45_T_SAW", 2}
+            {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 2},
+            {"CUP_200Rnd_TE1_Red_Tracer_556x45_M249", 2}
         };
     };
 
@@ -139,8 +139,8 @@ class M16A4_ROK {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_200rnd_556x45_M_SAW", 2},
-            {"hlc_200rnd_556x45_T_SAW", 2}
+            {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 2},
+            {"CUP_200Rnd_TE1_Red_Tracer_556x45_M249", 2}
         };
         binocular = "Binocular";
     };
@@ -294,7 +294,7 @@ class M16A4_ROK {
         magazines[] = {
             {"RH_30Rnd_556x45_M855A1", 15},
             {"RH_30Rnd_556x45_M855A1", 15},
-            {"hlc_200rnd_556x45_M_SAW", 10},
+            {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 10},
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"UGL_FlareWhite_F", 5},
             {"ACE_HandFlare_White", 5},
@@ -324,7 +324,7 @@ class M16A4_ROK {
         magazines[] = {
             {"RH_30Rnd_556x45_M855A1", 40},
             {"RH_30Rnd_556x45_M855A1", 20},
-            {"hlc_200rnd_556x45_M_SAW", 20},
+            {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
             {"hlc_100Rnd_762x51_B_M60E4", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
@@ -350,7 +350,7 @@ class M16A4_ROK {
         magazines[] = {
             {"RH_30Rnd_556x45_M855A1", 40},
             {"RH_30Rnd_556x45_M855A1", 20},
-            {"hlc_200rnd_556x45_M_SAW", 20},
+            {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
             {"hlc_100Rnd_762x51_B_M60E4", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
