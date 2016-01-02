@@ -90,7 +90,10 @@ class Katiba_CN {
     };
 
     class XO : CO {
-        backpackMagazines[] = {};
+        backpackMagazines[] = {
+            {"1Rnd_Smoke_Grenade_shell", 8},
+            {"1Rnd_SmokeRed_Grenade_shell", 8}
+        };
         backpackRadios[] = {"ACRE_PRC117F"};
     };
 
@@ -99,7 +102,6 @@ class Katiba_CN {
 
     class Medic : Rifleman {
         primaryWeapon = "arifle_Katiba_C_F";
-        primaryWeaponItems[] = {"acc_flashlight"};
         vestMagazines[] = {
             {"30Rnd_65x39_caseless_green", 6},
             {"30Rnd_65x39_caseless_green_Tracer", 2},
@@ -147,8 +149,8 @@ class Katiba_CN {
 
     class RAT : Rifleman {
         primaryWeapon = "arifle_Katiba_C_F";
-        primaryWeaponItems[] = {"acc_flashlight"};
-        secondaryWeapon = "CUP_launch_RPG18";
+        secondaryWeapon = "CUP_launch_RPG7V";
+        secondaryWeaponItems[] = {"CUP_PG7V_M"};
         vestMagazines[] = {
             {"30Rnd_65x39_caseless_green", 6},
             {"30Rnd_65x39_caseless_green_Tracer", 2}
@@ -157,31 +159,12 @@ class Katiba_CN {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
             {"30Rnd_65x39_caseless_green", 4},
-            {"30Rnd_65x39_caseless_green_Tracer", 2}
+            {"CUP_PG7V_M", 2}
         };
-    };
-
-    class MATG : RAT {
-        secondaryWeapon = "CUP_launch_RPG7V";
-        backpackMagazines[] = {{"CUP_PG7VR_M", 2}};
-        assignItems[] = {"ItemGPS"};
-        uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
-    };
-
-    class MATAG : Rifleman {
-        backpackMagazines[] = {
-            {"HandGrenade", 1},
-            {"30Rnd_65x39_caseless_green_Tracer", 2},
-            {"CUP_PG7VR_M", 2}
-        };
-        binocular = "ACE_Vector";
-    };
-
-    class MATAC : MATAG {
     };
 
     class MMGG : Rifleman {
-        primaryWeapon = "CUP_lmg_Pecheneg";
+        primaryWeapon = "CUP_lmg_PKM";
         primaryWeaponItems[] = {};
         vestMagazines[] = {{"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 1}};
         backpackMagazines[] = {
@@ -197,10 +180,54 @@ class Katiba_CN {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"30Rnd_65x39_caseless_green_Tracer", 2},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 3}
         };
         binocular = "ACE_Vector";
+    };
+
+     class HMGG : Rifleman {
+        primaryWeapon = "arifle_Katiba_C_F";
+        backpack = "O_HMG_01_weapon_F";
+        backpackMagazines[] = {};
+        backpackMedicalItems[] = {};
+    };
+    
+    class HMGAG : HMGG {
+        backpack = "O_HMG_01_support_F";
+        uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
+        binocular = "ACE_Vector";
+        assignItems[] = {"ItemGPS"};
+    };
+    
+    class HMGAC : Rifleman {
+    };
+   
+    class MATG : RAT {
+        primaryWeapon = "arifle_Katiba_C_F";
+        secondaryWeapon = "CUP_launch_RPG7V";
+        secondaryWeaponItems[] = {"CUP_PG7VL_M","CUP_optic_PGO7V3"};
+        backpackMagazines[] = {
+            {"CUP_PG7VL_M", 2},
+            {"CUP_PG7VR_M", 1},
+            {"CUP_OG7_M", 1}
+        };
+    };
+
+    class MATAG : Rifleman {
+        backpackMagazines[] = {
+            {"CUP_PG7VL_M", 2},
+            {"CUP_PG7VR_M", 1},
+            {"CUP_OG7_M", 1}
+        };
+        binocular = "ACE_Vector";
+        assignItems[] = {"ItemGPS"};
+        uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
+    };
+
+    class MATAC : MATAG {
+        assignItems[] = {};
+        binocular = "Binocular";
+        uniformRadios[] = {"ACRE_PRC343"};
     };
 
     class HATG : MATG {
@@ -212,7 +239,6 @@ class Katiba_CN {
     class HATAG : MATAG {
         backpackMagazines[] = {
             {"HandGrenade", 1},
-            {"30Rnd_65x39_caseless_green_Tracer", 2},
             {"CUP_AT13_M", 1}
         };
     };
@@ -220,9 +246,98 @@ class Katiba_CN {
     class HATAC : HATAG {
     };
 
+    class DHATG : Rifleman {
+        primaryWeapon = "arifle_Katiba_C_F";
+        backpack = "O_AT_01_weapon_F";
+        backpackMagazines[] = {};
+        backpackMedicalItems[] = {};
+    };
+    
+    class DHATAG : HMGG {
+        backpack = "O_HMG_01_support_F";
+        uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
+        uniformMagazines[] = {
+            {"Chemlight_green", 2},
+            {"SmokeShell", 1}
+        };
+        binocular = "ACE_Vector";
+        assignItems[] = {"ItemGPS"};
+    };
+    
+    class DHATAC : Rifleman {
+    };
+
+    class SAMG : Rifleman {
+        primaryWeapon = "arifle_Katiba_C_F";
+        secondaryWeapon = "CUP_launch_Igla";
+        secondaryWeaponItems[] = {"CUP_Igla_M"};
+        backpackMagazines[] = {{"CUP_Igla_M", 1}};
+    };
+
+    class SAMAG : Rifleman {
+        backpackMagazines[] = {
+            {"HandGrenade", 1},
+            {"CUP_Igla_M", 1}
+        };
+        uniformMagazines[] = {
+            {"Chemlight_green", 2},
+            {"SmokeShell", 1}
+        };
+        uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
+        binocular = "ACE_Vector";
+        assignItems[] = {"ItemGPS"};
+    };
+
+    class SAMAC : SAMAG {
+        uniformRadios[] = {"ACRE_PRC343"};
+        binocular = "Binocular";
+        assignItems[] = {};
+    };
+
+    class GMGG : Rifleman {
+        primaryWeapon = "arifle_Katiba_C_F";
+        backpack = "O_GMG_01_weapon_F";
+        backpackMagazines[] = {};
+        backpackMedicalItems[] = {};
+    };
+    
+    class GMGAG : HMGG {
+        backpack = "O_HMG_01_support_F";
+        uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
+        uniformMagazines[] = {
+            {"Chemlight_green", 2},
+            {"SmokeShell", 1}
+        };
+        binocular = "ACE_Vector";
+        assignItems[] = {"ItemGPS"};
+    };
+    
+    class GMGAC : Rifleman {
+    };
+
+    class MTRG : Rifleman {
+        primaryWeapon = "arifle_Katiba_C_F";
+        backpack = "O_Mortar_01_weapon_F";
+        backpackMagazines[] = {};
+        backpackMedicalItems[] = {};
+    };
+    
+    class MTRAG : MTRG {
+        backpack = "O_Mortar_01_support_F";
+        uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
+        uniformMagazines[] = {
+            {"Chemlight_green", 2},
+            {"SmokeShell", 1}
+        };
+        binocular = "ACE_Vector";
+        assignItems[] = {"ItemGPS"};
+    };
+    
+    class MTRAC : Rifleman {
+    };
+
     class ENG : Rifleman {
         primaryWeapon = "arifle_Katiba_C_F";
-        primaryWeaponItems[] = {"acc_flashlight"};
         vestMagazines[] = {
             {"30Rnd_65x39_caseless_green", 6},
             {"30Rnd_65x39_caseless_green_Tracer", 2}
@@ -285,7 +400,7 @@ class Katiba_CN {
     class Vehicle {
         weapons[] = {
             {"arifle_Katiba_F", 2},
-            {"CUP_launch_RPG18", 5},
+            {"CUP_launch_RPG18", 2},
             {"arifle_Katiba_C_F", 2}
         };
         magazines[] = {
@@ -294,6 +409,7 @@ class Katiba_CN {
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"UGL_FlareWhite_F", 5},
             {"ACE_HandFlare_White", 5},
+            {"CUP_PG7V_M", 2},
             {"HandGrenade", 5},
             {"SmokeShell", 5}
         };
@@ -314,7 +430,7 @@ class Katiba_CN {
     class Truck : Vehicle {
         weapons[] = {
             {"arifle_Katiba_F", 2},
-            {"CUP_launch_RPG18", 10},
+            {"CUP_launch_RPG18", 4},
             {"arifle_Katiba_C_F", 2}
         };
         magazines[] = {
@@ -325,6 +441,8 @@ class Katiba_CN {
             {"UGL_FlareWhite_F", 10},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
+            {"CUP_PG7V_M", 5},
+            {"CUP_PG7VR_M", 5},
             {"HandGrenade", 10},
             {"SmokeShell", 10}
         };
@@ -341,7 +459,7 @@ class Katiba_CN {
     };
 
     class Armored : Truck {
-        weapons[] = {{"CUP_launch_RPG18", 10}};
+        weapons[] = {{"CUP_launch_RPG18", 4}};
         magazines[] = {
             {"30Rnd_65x39_caseless_green", 60},
             {"150Rnd_762x54_Box", 20},
@@ -349,6 +467,7 @@ class Katiba_CN {
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
             {"CUP_PG7VR_M", 5},
+            {"CUP_PG7V_M", 5},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
             {"HandGrenade", 10},

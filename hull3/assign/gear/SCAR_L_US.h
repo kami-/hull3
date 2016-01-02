@@ -90,7 +90,10 @@ class SCAR_L_US {
     };
 
     class XO : CO {
-        backpackMagazines[] = {};
+        backpackMagazines[] = {
+            {"1Rnd_Smoke_Grenade_shell", 8},
+            {"1Rnd_SmokeRed_Grenade_shell", 8}
+        };
         backpackRadios[] = {"ACRE_PRC117F"};
     };
 
@@ -126,10 +129,8 @@ class SCAR_L_US {
     class AR : Rifleman {
         primaryWeapon = "CUP_lmg_m249_pip4";
         primaryWeaponItems[] = {"RH_SFM952V"};
-        vestMagazines[] = {{"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 2}};
+        vestMagazines[] = {{"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 1}};
         backpackMagazines[] = {
-            {"HandGrenade", 1},
-            {"SmokeShell", 1},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 2},
             {"CUP_200Rnd_TE1_Red_Tracer_556x45_M249", 2}
         };
@@ -161,26 +162,6 @@ class SCAR_L_US {
         };
     };
 
-    class MATG : RAT {
-        secondaryWeapon = "CUP_launch_MAAWS";
-        secondaryWeaponItems[] = {"CUP_MAAWS_HEAT_M", "CUP_optic_MAAWS_Scope"};
-        backpackMagazines[] = {{"CUP_MAAWS_HEAT_M", 3}};
-        assignItems[] = {"ItemGPS"};
-        uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
-    };
-
-    class MATAG : Rifleman {
-        backpackMagazines[] = {
-            {"HandGrenade", 1},
-            {"30Rnd_556x45_Stanag_Tracer_Red", 2},
-            {"CUP_MAAWS_HEAT_M", 3}
-        };
-        binocular = "ACE_Vector";
-    };
-
-    class MATAC : MATAG {
-    };
-
     class MMGG : Rifleman {
         primaryWeapon = "CUP_lmg_M240";
         primaryWeaponItems[] = {};
@@ -190,18 +171,60 @@ class SCAR_L_US {
             {"SmokeShell", 1},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 4}
         };
-        assignItems[] = {"ItemGPS"};
-        uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
 
     class MMGAG : Rifleman {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"30Rnd_556x45_Stanag_Tracer_Red", 2},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 4}
         };
         binocular = "ACE_Vector";
+        assignItems[] = {"ItemGPS"};
+        uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
+    };
+
+     class HMGG : Rifleman {
+        primaryWeapon = "CUP_arifle_Mk16_CQC_FG";
+        backpack = "O_HMG_01_weapon_F";
+        backpackMagazines[] = {};
+        backpackMedicalItems[] = {};
+    };
+
+    class HMGAG : HMGG {
+        primaryWeapon = "CUP_arifle_Mk16_CQC_FG";
+        backpack = "O_HMG_01_support_F";
+        uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
+        binocular = "ACE_Vector";
+        assignItems[] = {"ItemGPS"};
+    };
+    
+    class HMGAC : Rifleman {
+    };
+    
+    class MATG : RAT {
+        secondaryWeapon = "CUP_launch_MAAWS";
+        secondaryWeaponItems[] = {"CUP_MAAWS_HEAT_M", "CUP_optic_MAAWS_Scope"};
+        backpackMagazines[] = {
+            {"CUP_MAAWS_HEAT_M", 2},
+            {"CUP_MAAWS_HEDP_M", 1}
+        };
+    };
+
+    class MATAG : Rifleman {
+        backpackMagazines[] = {
+            {"CUP_MAAWS_HEAT_M", 2},
+            {"CUP_MAAWS_HEDP_M", 1}
+        };
+        binocular = "ACE_Vector";
+        assignItems[] = {"ItemGPS"};
+        uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
+    };
+
+    class MATAC : MATAG {
+        assignItems[] = {};
+        binocular = "Binocular";
+        uniformRadios[] = {"ACRE_PRC343"};
     };
 
     class HATG : MATG {
@@ -213,12 +236,104 @@ class SCAR_L_US {
     class HATAG : MATAG {
         backpackMagazines[] = {
             {"HandGrenade", 1},
-            {"30Rnd_556x45_Stanag_Tracer_Red", 2},
             {"CUP_Javelin_M", 1}
         };
     };
 
     class HATAC : HATAG {
+        assignItems[] = {};
+        binocular = "Binocular";
+        uniformRadios[] = {"ACRE_PRC343"};
+    };
+
+    class DHATG : Rifleman {
+        primaryWeapon = "CUP_arifle_Mk16_CQC_FG";
+        backpack = "O_AT_01_weapon_F";
+        backpackMagazines[] = {};
+        backpackMedicalItems[] = {};
+    };
+    
+    class DHATAG : HMGG {
+        backpack = "O_HMG_01_support_F";
+        uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
+        uniformMagazines[] = {
+            {"Chemlight_green", 2},
+            {"SmokeShell", 1}
+        };
+        binocular = "ACE_Vector";
+        assignItems[] = {"ItemGPS"};
+    };
+    
+    class DHATAC : Rifleman {
+    };
+
+    class SAMG : Rifleman {
+        primaryWeapon = "CUP_arifle_Mk16_CQC_FG";
+        secondaryWeapon = "CUP_launch_FIM92Stinger";
+        secondaryWeaponItems[] = {"CUP_Stinger_M"};
+        backpackMagazines[] = {{"CUP_Stinger_M", 1}};
+    };
+
+    class SAMAG : Rifleman {
+        backpackMagazines[] = {
+            {"HandGrenade", 1},
+            {"CUP_Stinger_M", 1}
+        };
+        uniformMagazines[] = {
+            {"Chemlight_green", 2},
+            {"SmokeShell", 1}
+        };
+        uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
+        binocular = "ACE_Vector";
+        assignItems[] = {"ItemGPS"};
+    };
+
+    class SAMAC : SAMAG {
+        uniformRadios[] = {"ACRE_PRC343"};
+        binocular = "Binocular";
+        assignItems[] = {};
+    };
+
+    class GMGG : Rifleman {
+        primaryWeapon = "CUP_arifle_Mk16_CQC_FG";
+        backpack = "O_GMG_01_weapon_F";
+        backpackMagazines[] = {};
+        backpackMedicalItems[] = {};
+    };
+    
+    class GMGAG : HMGG {
+        backpack = "O_HMG_01_support_F";
+        uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
+        uniformMagazines[] = {
+            {"Chemlight_green", 2},
+            {"SmokeShell", 1}
+        };
+        binocular = "ACE_Vector";
+        assignItems[] = {"ItemGPS"};
+    };
+    
+    class GMGAC : Rifleman {
+    };
+
+    class MTRG : Rifleman {
+        primaryWeapon = "CUP_arifle_Mk16_CQC_FG";
+        backpack = "O_Mortar_01_weapon_F";
+        backpackMagazines[] = {};
+        backpackMedicalItems[] = {};
+    };
+    
+    class MTRAG : MTRG {
+        backpack = "O_Mortar_01_support_F";
+        uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
+        uniformMagazines[] = {
+            {"Chemlight_green", 2},
+            {"SmokeShell", 1}
+        };
+        binocular = "ACE_Vector";
+        assignItems[] = {"ItemGPS"};
+    };
+    
+    class MTRAC : Rifleman {
     };
 
     class ENG : Rifleman {
@@ -327,6 +442,7 @@ class SCAR_L_US {
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
             {"SatchelCharge_Remote_Mag", 5},
+            {"CUP_MAAWS_HEAT_M", 5},
             {"ACE_HandFlare_White", 10},
             {"HandGrenade", 10},
             {"SmokeShell", 10}

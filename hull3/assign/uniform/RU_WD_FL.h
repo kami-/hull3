@@ -83,11 +83,38 @@ class RU_WD_FL {
 
     class HATAC : HATAG {
     };
+    
+    class DHATG : AR {
+    };
+
+    class DHATAG : AAR {
+    };
+
+    class DHATAC : AAR {
+    };
+
+    class SAMG : AR {
+    };
+
+    class SAMAG : AAR {
+    };
+
+    class SAMAC : AAR {
+    };
+
+    class GMGG : AR {
+    };
+
+    class GMGAG : AAR {
+    };
+
+    class GMGAC : AAR {
+    };
 
     class MTRG : AR {
     };
 
-    class MRTAG : AAR {
+    class MTRAG : AAR {
     };
 
     class MTRAC : AAR {

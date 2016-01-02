@@ -77,7 +77,6 @@ class USMC_WD {
 
     class HATG : RAT {
         backpack = "B_Carryall_oli";
-        uniform = "MNP_CombatUniform_USMC_ST";
     };
 
     class HATAG : AAR {
@@ -85,11 +84,38 @@ class USMC_WD {
 
     class HATAC : HATAG {
     };
+    
+    class DHATG : AR {
+    };
+
+    class DHATAG : AAR {
+    };
+
+    class DHATAC : AAR {
+    };
+
+    class SAMG : AR {
+    };
+
+    class SAMAG : AAR {
+    };
+
+    class SAMAC : AAR {
+    };
+
+    class GMGG : AR {
+    };
+
+    class GMGAG : AAR {
+    };
+
+    class GMGAC : AAR {
+    };
 
     class MTRG : AR {
     };
 
-    class MRTAG : AAR {
+    class MTRAG : AAR {
     };
 
     class MTRAC : AAR {
