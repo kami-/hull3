@@ -53,6 +53,7 @@ class USA_WD {
     };
 
     class MMGG : AR {
+        backpack = "B_Carryall_oli";
     };
 
     class MMGAG : AAR {
@@ -86,11 +87,38 @@ class USA_WD {
 
     class HATAC : HATAG {
     };
+    
+    class DHATG : AR {
+    };
+
+    class DHATAG : AAR {
+    };
+
+    class DHATAC : AAR {
+    };
+
+    class SAMG : AR {
+    };
+
+    class SAMAG : AAR {
+    };
+
+    class SAMAC : AAR {
+    };
+
+    class GMGG : AR {
+    };
+
+    class GMGAG : AAR {
+    };
+
+    class GMGAC : AAR {
+    };
 
     class MTRG : AR {
     };
 
-    class MRTAG : AAR {
+    class MTRAG : AAR {
     };
 
     class MTRAC : AAR {

@@ -52,7 +52,7 @@ class USMC_SN {
     };
 
     class MMGG : AR {
-        backpack = "MNP_B_RUW_CA";
+        backpack = "B_Carryall_oli";
     };
 
     class MMGAG : AAR {
@@ -68,7 +68,7 @@ class USMC_SN {
     };
 
     class MATG : RAT {
-        backpack = "MNP_B_RUW_CA";
+        backpack = "B_Carryall_oli";
     };
 
     class MATAG : AAR {
@@ -78,8 +78,7 @@ class USMC_SN {
     };
 
     class HATG : RAT {
-        backpack = "MNP_B_RUW_CA";
-        uniform = "MNP_CombatUniform_USMC_arctic_B";
+        backpack = "B_Carryall_oli";
     };
 
     class HATAG : AAR {
@@ -87,11 +86,38 @@ class USMC_SN {
 
     class HATAC : HATAG {
     };
+    
+    class DHATG : AR {
+    };
+
+    class DHATAG : AAR {
+    };
+
+    class DHATAC : AAR {
+    };
+
+    class SAMG : AR {
+    };
+
+    class SAMAG : AAR {
+    };
+
+    class SAMAC : AAR {
+    };
+
+    class GMGG : AR {
+    };
+
+    class GMGAG : AAR {
+    };
+
+    class GMGAC : AAR {
+    };
 
     class MTRG : AR {
     };
 
-    class MRTAG : AAR {
+    class MTRAG : AAR {
     };
 
     class MTRAC : AAR {
