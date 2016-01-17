@@ -81,7 +81,7 @@ class Katiba_CN {
             {"SmokeShell", 1}
         };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
-        assignItems[] = {"ItemGPS", "NVGoggles"};
+        assignItems[] = {"ItemGPS", "ACE_NVG_Wide"};
         vestMagazines[] = {{"30Rnd_9x21_Mag", 4}};
         backpackMagazines[] = {};
     };
