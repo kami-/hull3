@@ -83,7 +83,7 @@ class FAL_ARC {
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         vestMagazines[] = {{"hlc_30Rnd_9x19_B_MP5", 4}};
         backpackMagazines[] = {};
-        assignItems[] = {"ItemGPS", "NVGoggles"};
+        assignItems[] = {"ItemGPS", "ACE_NVG_Wide"};
     };
 
     class CO : Officer {

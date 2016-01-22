@@ -83,7 +83,7 @@ class SCAR_H_US {
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         vestMagazines[] = {{"CUP_20Rnd_762x51_B_SCAR", 4}};
         backpackMagazines[] = {};
-        assignItems[] = {"ItemGPS", "NVGoggles"};
+        assignItems[] = {"ItemGPS", "ACE_NVG_Wide"};
     };
 
     class CO : Officer {
