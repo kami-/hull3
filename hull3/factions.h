@@ -76,6 +76,38 @@ class Faction {
         };
     };
 
+    class MNP_US_RAN_SCO {
+        gear = "SCAR_H_US";
+        uniform = "USA_RAN_SCO";
+        languages[] = {
+            {"west", 100}
+        };
+    };
+
+    class MNP_US_SCO {
+        gear = "M4A1_US";
+        uniform = "USA_SCO";
+        languages[] = {
+            {"west", 100}
+        };
+    };
+
+    class MNP_US_MC {
+        gear = "M4A1_US";
+        uniform = "USA_MC";
+        languages[] = {
+            {"west", 100}
+        };
+    };
+
+    class MNP_US_MC_DRK {
+        gear = "M4A1_US";
+        uniform = "USA_MC_DRK";
+        languages[] = {
+            {"west", 100}
+        };
+    };
+    
     class MNP_GE_WD {
         gear = "HK416";
         uniform = "GER_WD";
@@ -116,9 +148,25 @@ class Faction {
         };
     };
 
+    class MNP_AUS_AMCU {
+        gear = "AUGA3_AUS";
+        uniform = "AUS_AMCU";
+        languages[] = {
+            {"west", 100}
+        };
+    };
+
     class MNP_ROK {
         gear = "M16A4_ROK";
         uniform = "ROK_WD";
+        languages[] = {
+            {"west", 100}
+        };
+    };
+
+    class MNP_UKR_TTSKO {
+        gear = "AK74_UKR";
+        uniform = "UKR_TTSKO";
         languages[] = {
             {"west", 100}
         };
@@ -151,6 +199,14 @@ class Faction {
     class MNP_CH_WD {
         gear = "AK74_CN";
         uniform = "CN_WD";
+        languages[] = {
+            {"east", 100}
+        };
+    };
+
+    class MNP_CH_WD2 {
+        gear = "AK74_CN";
+        uniform = "CN_WD2";
         languages[] = {
             {"east", 100}
         };
@@ -244,6 +300,14 @@ class Faction {
         };
     };
 
+    class MNP_RU_REED {
+        gear = "AEK_RU";
+        uniform = "RU_REED";
+        languages[] = {
+            {"east", 100}
+        };
+    };
+
     class MNP_KOR_OD {
         gear = "AK47_NK";
         uniform = "NK_CON";
@@ -252,9 +316,64 @@ class Faction {
         };
     };
 
-    class MNP_KOR_WD {
-        gear = "AK74_NK";
-        uniform = "NK_REG";
+    class MNP_IRN_WD {
+        gear = "G3A4_IRN";
+        uniform = "IRN_WD";
+        languages[] = {
+            {"east", 100}
+        };
+    };
+    class MNP_IRN_RG_WD {
+        gear = "AKM_IRN";
+        uniform = "IRN_RG_WD";
+        languages[] = {
+            {"east", 100}
+        };
+    };
+
+    class MNP_IRN_QF_WD {
+        gear = "Katiba_IRN";
+        uniform = "IRN_QF_WD";
+        languages[] = {
+            {"east", 100}
+        };
+    };
+
+    class MNP_IRN_DE {
+        gear = "G3A4_IRN";
+        uniform = "IRN_DE";
+        languages[] = {
+            {"east", 100}
+        };
+    };
+
+    class MNP_IRN_RG_DE {
+        gear = "AKM_IRN";
+        uniform = "IRN_RG_DE";
+        languages[] = {
+            {"east", 100}
+        };
+    };
+
+    class MNP_IRN_QF_DE {
+        gear = "Katiba_IRN";
+        uniform = "IRN_QF_DE";
+        languages[] = {
+            {"east", 100}
+        };
+    };
+
+    class MNP_DPR_SUM {
+        gear = "AK74_DPR";
+        uniform = "DPR_SUM";
+        languages[] = {
+            {"east", 100}
+        };
+    };
+
+    class MNP_DPR_AUT {
+        gear = "AK74_DPR";
+        uniform = "DPR_AUT";
         languages[] = {
             {"east", 100}
         };
