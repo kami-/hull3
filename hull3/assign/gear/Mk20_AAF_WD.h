@@ -82,7 +82,7 @@ class Mk20_AAF_WD {
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         vestMagazines[] = {{"30Rnd_9x21_Mag", 4}};
         backpackMagazines[] = {};
-        assignItems[] = {"ItemGPS", "NVGoggles"};
+        assignItems[] = {"ItemGPS", "ACE_NVG_Wide"};
     };
 
     class CO : Officer {
