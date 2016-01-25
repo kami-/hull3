@@ -2,6 +2,8 @@ class Faction {
     class Default {
         gear = "Default";
         uniform = "Default";
+        name = "Default";
+        description = "No gear and uniform.";
     };
 
     class BLU_F {
