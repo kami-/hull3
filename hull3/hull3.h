@@ -22,7 +22,7 @@ class Hull3 {
         #include "assign\uniform\CN_H_WD.h"
         #include "assign\uniform\CN_MAR.h"
         #include "assign\uniform\CN_WD.h"
-        #include "assign\uniform\CN_WD2h"
+        #include "assign\uniform\CN_WD2.h"
         #include "assign\uniform\CSAT.h"
         #include "assign\uniform\CSAT_SN.h"
         #include "assign\uniform\DPR_SUM.h"
