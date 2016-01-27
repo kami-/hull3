@@ -327,7 +327,7 @@ class Faction {
     };
 
     class MNP_IRN_WD {
-        gear = "G3A4_IRN";
+        gear = "G3A3_IRN";
         uniform = "IRN_WD";
         name = "Iranian Army Woodland";
         description = "Woodland Uniform and G3A3's";
@@ -351,7 +351,7 @@ class Faction {
     };
 
     class MNP_IRN_DE {
-        gear = "G3A4_IRN";
+        gear = "G3A3_IRN";
         uniform = "IRN_DE";
         name = "Iranian Army Desert";
         description = "Desert Uniform and G3A3's";
