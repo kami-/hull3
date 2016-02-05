@@ -6,7 +6,7 @@ class Faction {
         description = "No gear and uniform.";
         languages[] = {{"west", 100}};
         side = "west";
-        camouflage="woodland";
+        camouflage[] = {"woodland"};
         rolePrefix = "Default";
         vehicleClassnames[] = {
             {"CO", "C_Kart_01_F"},
@@ -56,7 +56,7 @@ class Faction {
         description = "FIA Rebels with TRG Series Weapons";
         languages[] = {{"west", 100}};
         side = "west";
-        camouflage="woodland";
+        camouflage[] = {"woodland"};
         rolePrefix = "FIA";
         vehicleClassnames[] = {
             {"CO", "B_G_Offroad_01_F"},
@@ -81,7 +81,7 @@ class Faction {
         description = "Woodland MARPAT with M16A4's";
         languages[] = {{"west", 100}};
         side = "west";
-        camouflage="woodland";
+        camouflage[] = {"woodland"};
         rolePrefix = "USMC";
         vehicleClassnames[] = {
             {"CO", "CUP_B_HMMWV_Unarmed_USMC"},
@@ -106,7 +106,7 @@ class Faction {
         description = "Desert MARPAT with M16A4's";
         languages[] = {{"west", 100}};
         side = "west";
-        camouflage="desert";
+        camouflage[] = {"desert"};
         rolePrefix = "USMC";
         vehicleClassnames[] = {
             {"CO", "CUP_B_HMMWV_Unarmed_USA"},
@@ -131,7 +131,7 @@ class Faction {
         description = "Snow Camo with M16A4's";
         languages[] = {{"west", 100}};
         side = "west";
-        camouflage="snow";
+        camouflage[] = {"snow"};
         rolePrefix = "USMC";
         vehicleClassnames[] = {
             {"CO", "CUP_B_HMMWV_Unarmed_USMC"},
@@ -156,7 +156,7 @@ class Faction {
         description = "ACU uniforms with SCAR-L";
         languages[] = {{"west", 100}};
         side = "west";
-        camouflage="desert";
+        camouflage[] = {"desert"};
         rolePrefix = "US Rangers";
         vehicleClassnames[] = {
             {"CO", "CUP_B_HMMWV_Unarmed_USA"},
@@ -181,7 +181,7 @@ class Faction {
         description = "ACU uniforms with M4's";
         languages[] = {{"west", 100}};
         side = "west";
-        camouflage="desert";
+        camouflage[] = {"desert"};
         rolePrefix = "US Army";
         vehicleClassnames[] = {
             {"CO", "CUP_B_HMMWV_Unarmed_USA"},
@@ -206,7 +206,7 @@ class Faction {
         description = "Woodland uniforms with M16A2";
         languages[] = {{"west", 100}};
         side = "west";
-        camouflage="woodland";
+        camouflage[] = {"woodland"};
         rolePrefix = "US Army";
         vehicleClassnames[] = {
             {"CO", "CUP_B_HMMWV_Unarmed_USMC"},
@@ -231,7 +231,7 @@ class Faction {
         description = "3 Colour Desert uniforms with M16A2";
         languages[] = {{"west", 100}};
         side = "west";
-        camouflage="desert";
+        camouflage[] = {"desert"};
         rolePrefix = "US Army";
         vehicleClassnames[] = {
             {"CO", "CUP_B_HMMWV_Unarmed_USA"},
@@ -331,7 +331,7 @@ class Faction {
         description = "Dark Green Multicam uniforms with M4A1's";
         languages[] = {{"west", 100}};
         side = "west";
-        camouflage="woodland";
+        camouflage[] = {"woodland"};
         rolePrefix = "US Army";
         vehicleClassnames[] = {
             {"CO", "CUP_B_HMMWV_Unarmed_USA"},
@@ -356,7 +356,7 @@ class Faction {
         description = "Flecktarn uniforms with HK416's";
         languages[] = {{"west", 100}};
         side = "west";
-        camouflage="woodland";
+        camouflage[] = {"woodland"};
         rolePrefix = "German Army";
         vehicleClassnames[] = {
             {"CO", "B_MRAP_01_F"},
@@ -381,7 +381,7 @@ class Faction {
         description = "Tropentarn uniforms with HK416's";
         languages[] = {{"west", 100}};
         side = "west";
-        camouflage="desert";
+        camouflage[] = {"desert"};
         rolePrefix = "German Army";
         vehicleClassnames[] = {
             {"CO", "B_MRAP_01_F"},
@@ -406,7 +406,7 @@ class Faction {
         description = "Woodland CADPAT uniforms with M16A4's";
         languages[] = {{"west", 100}};
         side = "west";
-        camouflage="woodland";
+        camouflage[] = {"woodland"};
         rolePrefix = "Canadian Army";
         vehicleClassnames[] = {
             {"CO", "CUP_B_HMMWV_Unarmed_USMC"},
@@ -431,7 +431,7 @@ class Faction {
         description = "Desert CADPAT uniforms with M16A4's";
         languages[] = {{"west", 100}};
         side = "west";
-        camouflage="desert";
+        camouflage[] = {"desert"};
         rolePrefix = "Canadian Army";
         vehicleClassnames[] = {
             {"CO", "CUP_B_HMMWV_Unarmed_USA"},
@@ -505,7 +505,7 @@ class Faction {
         description = "Digital Woodland uniforms with M16A4's";
         languages[] = {{"west", 100}};
         side = "west";
-        camouflage="woodland";
+        camouflage[] = {"woodland"};
         rolePrefix = "ROK Army";
         vehicleClassnames[] = {
             {"CO", "CUP_B_HMMWV_Unarmed_USMC"},
@@ -530,7 +530,7 @@ class Faction {
         description = "Woodland TTSKO uniforms and AK-74's";
         languages[] = {{"west", 100}};
         side = "west";
-        camouflage="woodland";
+        camouflage[] = {"woodland"};
         rolePrefix = "Ukrainian Army";
         vehicleClassnames[] = {
             {"CO", "CUP_B_UAZ_Unarmed_CDF"},
@@ -555,7 +555,7 @@ class Faction {
         description = "Olive Drab uniforms and FAL's";
         languages[] = {{"west", 100}};
         side = "west";
-        camouflage="woodland";
+        camouflage[] = {"woodland"};
         rolePrefix = "PMC";
         vehicleClassnames[] = {
             {"CO", "CUP_I_SUV_ION"},
@@ -580,7 +580,7 @@ class Faction {
         description = "CSAT Uniforms and Katiba";
         languages[] = {{"east", 100}};
         side = "east";
-        camouflage="desert";
+        camouflage[] = {"desert"};
         rolePrefix = "CSAT";
         vehicleClassnames[] = {
             {"CO", "O_MRAP_02_F"},
@@ -605,7 +605,7 @@ class Faction {
         description = "Snow CSAT Uniforms and Katiba";
         languages[] = {{"east", 100}};
         side = "east";
-        camouflage="snow";
+        camouflage[] = {"snow"};
         rolePrefix = "CSAT";
         vehicleClassnames[] = {
             {"CO", "O_MRAP_02_F"},
@@ -655,7 +655,7 @@ class Faction {
         description = "Chinese Woodland Uniforms and AK-74's";
         languages[] = {{"east", 100}};
         side = "east";
-        camouflage="woodland";
+        camouflage[] = {"woodland"};
         rolePrefix = "PLA Ground Forces";
         vehicleClassnames[] = {
             {"CO", "CUP_O_UAZ_Unarmed_RU"},
@@ -680,7 +680,7 @@ class Faction {
         description = "Chinese Desert Uniforms and AK-74's";
         languages[] = {{"east", 100}};
         side = "east";
-        camouflage="desert";
+        camouflage[] = {"desert"};
         rolePrefix = "PLA Ground Forces";
         vehicleClassnames[] = {
             {"CO", "CUP_O_UAZ_Unarmed_RU"},
@@ -755,7 +755,7 @@ class Faction {
         description = "CSAT Style Chinese Desert Uniforms and Katiba";
         languages[] = {{"east", 100}};
         side = "east";
-        camouflage="desert";
+        camouflage[] = {"desert"};
         rolePrefix = "PLA Ground Forces";
         vehicleClassnames[] = {
             {"CO", "O_MRAP_02_F"},
@@ -780,7 +780,7 @@ class Faction {
         description = "Digital Woodland Uniforms and AK-12's";
         languages[] = {{"east", 100}};
         side = "east";
-        camouflage="woodland";
+        camouflage[] = {"woodland"};
         rolePrefix = "Russian VDV";
         vehicleClassnames[] = {
             {"CO", "CUP_O_UAZ_Unarmed_RU"},
@@ -805,7 +805,7 @@ class Faction {
         description = "Digital Desert Uniforms and AK-12's";
         languages[] = {{"east", 100}};
         side = "east";
-        camouflage="desert";
+        camouflage[] = {"desert"};
         rolePrefix = "Russian VDV";
         vehicleClassnames[] = {
             {"CO", "CUP_O_UAZ_Unarmed_RU"},
@@ -830,7 +830,7 @@ class Faction {
         description = "CSAT Style Digital Woodland Uniforms and AK-12's";
         languages[] = {{"east", 100}};
         side = "east";
-        camouflage="woodland";
+        camouflage[] = {"woodland"};
         rolePrefix = "Russian Army";
         vehicleClassnames[] = {
             {"CO", "CUP_O_UAZ_Unarmed_RU"},
@@ -855,7 +855,7 @@ class Faction {
         description = "CSAT Style Digital Desert Uniforms and AK-12's";
         languages[] = {{"east", 100}};
         side = "east";
-        camouflage="desert";
+        camouflage[] = {"desert"};
         rolePrefix = "Russian Army";
         vehicleClassnames[] = {
             {"CO", "CUP_O_UAZ_Unarmed_RU"},
@@ -880,7 +880,7 @@ class Faction {
         description = "Woodland Flora Uniforms and AK-74's";
         languages[] = {{"east", 100}};
         side = "east";
-        camouflage="woodland";
+        camouflage[] = {"woodland"};
         rolePrefix = "Russian Army";
         vehicleClassnames[] = {
             {"CO", "CUP_O_UAZ_Unarmed_RU"},
@@ -905,7 +905,7 @@ class Faction {
         description = "Woodland TTSkO Uniforms and AK-74's";
         languages[] = {{"east", 100}};
         side = "east";
-        camouflage="woodland";
+        camouflage[] = {"woodland"};
         rolePrefix = "Soviet Army";
         vehicleClassnames[] = {
             {"CO", "CUP_O_UAZ_Unarmed_RU"},
@@ -955,7 +955,7 @@ class Faction {
         description = "Woodland Reed Uniforms and AEK's";
         languages[] = {{"east", 100}};
         side = "east";
-        camouflage="woodland";
+        camouflage[] = {"woodland"};
         rolePrefix = "Russian MVD";
         vehicleClassnames[] = {
             {"CO", "CUP_O_UAZ_Unarmed_RU"},
@@ -980,7 +980,7 @@ class Faction {
         description = "Olive Drab Uniform and AK-47's";
         languages[] = {{"east", 100}};
         side = "east";
-        camouflage="woodland";
+        camouflage[] = {"woodland"};
         rolePrefix = "KPA Conscripts";
         vehicleClassnames[] = {
             {"CO", "CUP_O_UAZ_Unarmed_RU"},
@@ -1005,7 +1005,7 @@ class Faction {
         description = "Woodland Uniform and AK-74's";
         languages[] = {{"east", 100}};
         side = "east";
-        camouflage="woodland";
+        camouflage[] = {"woodland"};
         rolePrefix = "KPA Regulars";
         vehicleClassnames[] = {
             {"CO", "CUP_O_UAZ_Unarmed_RU"},
@@ -1030,7 +1030,7 @@ class Faction {
         description = "Woodland Uniform and G3A3's";
         languages[] = {{"east", 100}};
         side = "east";
-        camouflage="woodland";
+        camouflage[] = {"woodland"};
         rolePrefix = "Iranian Army";
         vehicleClassnames[] = {
             {"CO", "CUP_O_UAZ_Unarmed_RU"},
@@ -1055,7 +1055,7 @@ class Faction {
         description = "Woodland Militia Uniform and AKM's";
         languages[] = {{"east", 100}};
         side = "east";
-        camouflage="woodland";
+        camouflage[] = {"woodland"};
         rolePrefix = "Iranian Revolutionary Guard";
         vehicleClassnames[] = {
             {"CO", "CUP_O_UAZ_Unarmed_RU"},
@@ -1080,7 +1080,7 @@ class Faction {
         description = "Woodland SF Uniform and Katiba";
         languages[] = {{"east", 100}};
         side = "east";
-        camouflage="woodland";
+        camouflage[] = {"woodland"};
         rolePrefix = "Iranian Quds Force";
         vehicleClassnames[] = {
             {"CO", "CUP_O_UAZ_Unarmed_RU"},
@@ -1105,7 +1105,7 @@ class Faction {
         description = "Desert Uniform and G3A3's";
         languages[] = {{"east", 100}};
         side = "east";
-        camouflage="desert";
+        camouflage[] = {"desert"};
         rolePrefix = "Iranian Army";
         vehicleClassnames[] = {
             {"CO", "CUP_O_UAZ_Unarmed_RU"},
@@ -1130,7 +1130,7 @@ class Faction {
         description = "Desert Militia Uniform and AKM's";
         languages[] = {{"east", 100}};
         side = "east";
-        camouflage="desert";
+        camouflage[] = {"desert"};
         rolePrefix = "Iranian Revolutionary Guard";
         vehicleClassnames[] = {
             {"CO", "CUP_O_UAZ_Unarmed_RU"},
@@ -1155,7 +1155,7 @@ class Faction {
         description = "Desert SF Uniform and Katiba";
         languages[] = {{"east", 100}};
         side = "east";
-        camouflage="desert";
+        camouflage[] = {"desert"};
         rolePrefix = "Iranian Quds Force";
         vehicleClassnames[] = {
             {"CO", "CUP_O_UAZ_Unarmed_RU"},
@@ -1180,7 +1180,7 @@ class Faction {
         description = "Summer Camo and AK-74's";
         languages[] = {{"east", 100}};
         side = "east";
-        camouflage="woodland";
+        camouflage[] = {"woodland"};
         rolePrefix = "Donetsk People's Republic";
         vehicleClassnames[] = {
             {"CO", "CUP_O_UAZ_Unarmed_RU"},
@@ -1205,7 +1205,7 @@ class Faction {
         description = "Autumn Camo and AK-74's";
         languages[] = {{"east", 100}};
         side = "east";
-        camouflage="woodland";
+        camouflage[] = {"woodland"};
         rolePrefix = "Donetsk People's Republic";
         vehicleClassnames[] = {
             {"CO", "CUP_O_UAZ_Unarmed_RU"},
@@ -1230,7 +1230,7 @@ class Faction {
         description = "Woodland Camo with Mk20's";
         languages[] = {{"guer", 100}};
         side = "guer";
-        camouflage="woodland";
+        camouflage[] = {"woodland"};
         rolePrefix = "AAF";
         vehicleClassnames[] = {
             {"CO", "I_MRAP_03_F"},
@@ -1255,7 +1255,7 @@ class Faction {
         description = "Desert Camo with Mk20's";
         languages[] = {{"guer", 100}};
         side = "guer";
-        camouflage="desert";
+        camouflage[] = {"desert"};
         rolePrefix = "AAF";
         vehicleClassnames[] = {
             {"CO", "AAF_D_MRAP_03_F"},
@@ -1280,7 +1280,7 @@ class Faction {
         description = "Woodland Militia with Mixed Weapons";
         languages[] = {{"guer", 100}};
         side = "guer";
-        camouflage="woodland";
+        camouflage[] = {"woodland"};
         rolePrefix = "Local Militia";
         vehicleClassnames[] = {
             {"CO", "CUP_O_UAZ_Unarmed_RU"},
@@ -1305,7 +1305,7 @@ class Faction {
         description = "Desert Militia with Mixed Weapons";
         languages[] = {{"guer", 100}};
         side = "guer";
-        camouflage="desert";
+        camouflage[] = {"desert"};
         rolePrefix = "Local Militia";
         vehicleClassnames[] = {
             {"CO", "CUP_O_UAZ_Unarmed_RU"},
@@ -1330,7 +1330,7 @@ class Faction {
         description = "Woodland DPM Militia with AKM's";
         languages[] = {{"guer", 100}};
         side = "guer";
-        camouflage="woodland";
+        camouflage[] = {"woodland"};
         rolePrefix = "National Peoples Army";
         vehicleClassnames[] = {
             {"CO", "CUP_O_UAZ_Unarmed_RU"},
@@ -1355,7 +1355,7 @@ class Faction {
         description = "Desert DPM Militia with AKM's";
         languages[] = {{"guer", 100}};
         side = "guer";
-        camouflage="desert";
+        camouflage[] = {"desert"};
         rolePrefix = "National Peoples Army";
         vehicleClassnames[] = {
             {"CO", "CUP_O_UAZ_Unarmed_RU"},
@@ -1404,7 +1404,7 @@ class Faction {
         description = "Olive Drab Rebels with FAL";
         languages[] = {{"guer", 100}};
         side = "guer";
-        camouflage="woodland";
+        camouflage[] = {"woodland"};
         rolePrefix = "Altis Revolutionary Council";
         vehicleClassnames[] = {
             {"CO", "B_G_Offroad_01_F"},
@@ -1429,7 +1429,7 @@ class Faction {
         description = "Woodland Uniforms and AUG A3's";
         languages[] = {{"guer", 100}};
         side = "guer";
-        camouflage="woodland";
+        camouflage[] = {"woodland"};
         rolePrefix = "Irish Defence Forces";
         vehicleClassnames[] = {
             {"CO", "I_MRAP_03_F"},
@@ -1454,7 +1454,7 @@ class Faction {
         description = "Desert Uniforms and AUG A3's";
         languages[] = {{"guer", 100}};
         side = "guer";
-        camouflage="desert";
+        camouflage[] = {"desert"};
         rolePrefix = "Irish Defence Forces";
         vehicleClassnames[] = {
             {"CO", "AAF_D_MRAP_03_F"},
@@ -1504,7 +1504,7 @@ class Faction {
         description = "Woodland Uniforms and Vz58's";
         languages[] = {{"guer", 100}};
         side = "guer";
-        camouflage="woodland";
+        camouflage[] = {"woodland"};
         rolePrefix = "Finnish Army";
         vehicleClassnames[] = {
             {"CO", "CUP_O_UAZ_Unarmed_RU"},
@@ -1529,7 +1529,7 @@ class Faction {
         description = "Snow Uniforms and Vz58's";
         languages[] = {{"guer", 100}};
         side = "guer";
-        camouflage="snow";
+        camouflage[] = {"snow"};
         rolePrefix = "Finnish Army";
         vehicleClassnames[] = {
             {"CO", "CUP_O_UAZ_Unarmed_RU"},
@@ -1554,7 +1554,7 @@ class Faction {
         description = "Woodland Uniforms and G3KA4's";
         languages[] = {{"guer", 100}};
         side = "guer";
-        camouflage="woodland";
+        camouflage[] = {"woodland"};
         rolePrefix = "Norwegian Army";
         vehicleClassnames[] = {
             {"CO", "CUP_B_LR_Transport_GB_W"},
@@ -1579,7 +1579,7 @@ class Faction {
         description = "Desert Uniforms and G3KA4's";
         languages[] = {{"guer", 100}};
         side = "guer";
-        camouflage="desert";
+        camouflage[] = {"desert"};
         rolePrefix = "Norwegian Army";
         vehicleClassnames[] = {
             {"CO", "CUP_B_LR_Transport_GB_D"},
