@@ -102,7 +102,7 @@ class CUP_TK_LOC {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -178,4 +178,5 @@ class CUP_TK_LOC {
 
     class PCM : P {
     };
+
 };

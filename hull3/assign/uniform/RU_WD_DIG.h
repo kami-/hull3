@@ -14,7 +14,7 @@ class RU_WD_DIG {
     };
 
     class Officer : Leader {
-    headGear = "MNP_Beret_VDV";
+        headGear = "MNP_Beret_VDV";
     };
 
     class Crew : Rifleman {
@@ -87,7 +87,7 @@ class RU_WD_DIG {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -162,4 +162,5 @@ class RU_WD_DIG {
 
     class PCM : P {
     };
+
 };

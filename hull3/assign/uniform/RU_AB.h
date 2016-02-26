@@ -83,7 +83,7 @@ class RU_AB {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -150,10 +150,11 @@ class RU_AB {
     class P : Crew {
         headGear = "H_PilotHelmetHeli_O";
         uniform = "MNP_CombatUniform_RO3_Rg";
-        vest = "MNP_Vest_Light_R3";
+        vest = "CUP_V_O_TK_CrewBelt_ARM";
         backpack = "B_Parachute";
     };
 
     class PCM : P {
     };
+
 };

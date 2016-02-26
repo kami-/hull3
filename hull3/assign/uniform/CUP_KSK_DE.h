@@ -91,7 +91,7 @@ class CUP_KSK_DE {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -102,7 +102,7 @@ class CUP_KSK_DE {
     };
 
     class SAMG : AR {
-    backpack = "AAF_D_Carryall_B";
+        backpack = "AAF_D_Carryall_B";
     };
 
     class SAMAG : AAR {
@@ -167,4 +167,5 @@ class CUP_KSK_DE {
 
     class PCM : P {
     };
+
 };

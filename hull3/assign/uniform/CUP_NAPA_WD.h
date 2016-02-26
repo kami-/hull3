@@ -99,7 +99,7 @@ class CUP_NAPA_WD {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -169,4 +169,5 @@ class CUP_NAPA_WD {
 
     class PCM : P {
     };
+
 };

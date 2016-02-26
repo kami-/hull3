@@ -189,20 +189,20 @@ class AKM_SLA {
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class HMGAG : HMGG {
         backpack = "O_HMG_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         binocular = "ACE_Vector";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class HMGAC : Rifleman {
     };
 
     class MATG : RAT {
         secondaryWeapon = "CUP_launch_RPG7V";
-        secondaryWeaponItems[] = {"CUP_PG7VL_M","CUP_optic_PGO7V3"};
+        secondaryWeaponItems[] = {"CUP_PG7VL_M", "CUP_optic_PGO7V3"};
         backpackMagazines[] = {
             {"CUP_PG7VL_M", 2},
             {"CUP_PG7VR_M", 1},
@@ -254,7 +254,7 @@ class AKM_SLA {
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class DHATAG : HMGG {
         backpack = "O_HMG_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -265,7 +265,7 @@ class AKM_SLA {
         binocular = "ACE_Vector";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class DHATAC : Rifleman {
     };
 
@@ -300,7 +300,7 @@ class AKM_SLA {
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class GMGAG : HMGG {
         backpack = "O_HMG_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -311,7 +311,7 @@ class AKM_SLA {
         binocular = "ACE_Vector";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class GMGAC : Rifleman {
     };
 
@@ -320,7 +320,7 @@ class AKM_SLA {
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class MTRAG : MTRG {
         backpack = "O_Mortar_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -331,7 +331,7 @@ class AKM_SLA {
         binocular = "ACE_Vector";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class MTRAC : Rifleman {
     };
 

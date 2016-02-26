@@ -86,7 +86,7 @@ class UKR_TTSKO {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -158,4 +158,5 @@ class UKR_TTSKO {
 
     class PCM : P {
     };
+
 };

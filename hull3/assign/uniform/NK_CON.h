@@ -83,7 +83,7 @@ class NK_CON {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -156,4 +156,5 @@ class NK_CON {
 
     class PCM : P {
     };
+
 };

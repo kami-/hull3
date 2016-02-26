@@ -12,7 +12,7 @@ class CN_MAR {
     };
 
     class Officer : Leader {
-    headGear = "MNP_MilCap_CM";
+        headGear = "MNP_MilCap_CM";
     };
 
     class Crew : Rifleman {
@@ -82,7 +82,7 @@ class CN_MAR {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -154,4 +154,5 @@ class CN_MAR {
 
     class PCM : P {
     };
+
 };

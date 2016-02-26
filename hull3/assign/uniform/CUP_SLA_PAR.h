@@ -90,7 +90,7 @@ class CUP_SLA_PAR {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -162,4 +162,5 @@ class CUP_SLA_PAR {
 
     class PCM : P {
     };
+
 };

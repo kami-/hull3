@@ -87,7 +87,7 @@ class CUP_RACS_DE {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -162,4 +162,5 @@ class CUP_RACS_DE {
 
     class PCM : P {
     };
+
 };

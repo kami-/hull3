@@ -83,7 +83,7 @@ class NPA_WD {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -154,4 +154,5 @@ class NPA_WD {
 
     class PCM : P {
     };
+
 };

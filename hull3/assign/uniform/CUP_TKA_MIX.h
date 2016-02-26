@@ -85,7 +85,7 @@ class CUP_TKA_MIX {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -154,4 +154,5 @@ class CUP_TKA_MIX {
 
     class PCM : P {
     };
+
 };

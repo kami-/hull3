@@ -88,7 +88,7 @@ class RU_REED {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -160,4 +160,5 @@ class RU_REED {
 
     class PCM : P {
     };
+
 };

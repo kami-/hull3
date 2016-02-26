@@ -81,7 +81,7 @@ class CN_WD2 {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -153,4 +153,5 @@ class CN_WD2 {
 
     class PCM : P {
     };
+
 };

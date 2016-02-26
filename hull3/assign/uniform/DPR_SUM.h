@@ -87,7 +87,7 @@ class DPR_SUM {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -159,4 +159,5 @@ class DPR_SUM {
 
     class PCM : P {
     };
+
 };

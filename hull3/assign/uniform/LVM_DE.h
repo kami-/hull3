@@ -90,7 +90,7 @@ class LVM_DE {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -165,4 +165,5 @@ class LVM_DE {
 
     class PCM : P {
     };
+
 };

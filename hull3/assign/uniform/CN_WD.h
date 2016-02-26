@@ -12,7 +12,7 @@ class CN_WD {
     };
 
     class Officer : Leader {
-    headGear = "MNP_MilCap_CN_T";
+        headGear = "MNP_MilCap_CN_T";
     };
 
     class Crew : Rifleman {
@@ -82,7 +82,7 @@ class CN_WD {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -154,4 +154,5 @@ class CN_WD {
 
     class PCM : P {
     };
+
 };

@@ -82,7 +82,7 @@ class CN_H_DE {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -154,4 +154,5 @@ class CN_H_DE {
 
     class PCM : P {
     };
+
 };

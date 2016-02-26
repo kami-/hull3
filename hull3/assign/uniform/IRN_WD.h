@@ -86,7 +86,7 @@ class IRN_WD {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -158,4 +158,5 @@ class IRN_WD {
 
     class PCM : P {
     };
+
 };

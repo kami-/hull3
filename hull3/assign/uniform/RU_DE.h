@@ -86,7 +86,7 @@ class RU_DE {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -161,4 +161,5 @@ class RU_DE {
 
     class PCM : P {
     };
+
 };

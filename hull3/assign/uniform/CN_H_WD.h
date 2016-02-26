@@ -82,7 +82,7 @@ class CN_H_WD {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -154,4 +154,5 @@ class CN_H_WD {
 
     class PCM : P {
     };
+
 };

@@ -83,7 +83,7 @@ class RU_WD_TT {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -156,4 +156,5 @@ class RU_WD_TT {
 
     class PCM : P {
     };
+
 };

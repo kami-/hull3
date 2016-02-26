@@ -97,7 +97,7 @@ class CUP_USMC_WD {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -172,4 +172,5 @@ class CUP_USMC_WD {
 
     class PCM : P {
     };
+
 };

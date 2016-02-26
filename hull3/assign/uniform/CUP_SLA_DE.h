@@ -84,7 +84,7 @@ class CUP_SLA_DE {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -157,4 +157,5 @@ class CUP_SLA_DE {
 
     class PCM : P {
     };
+
 };

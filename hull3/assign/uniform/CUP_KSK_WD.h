@@ -90,7 +90,7 @@ class CUP_KSK_WD {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -165,4 +165,5 @@ class CUP_KSK_WD {
 
     class PCM : P {
     };
+
 };

@@ -86,7 +86,7 @@ class IRN_DE {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -158,4 +158,5 @@ class IRN_DE {
 
     class PCM : P {
     };
+
 };
