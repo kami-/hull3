@@ -16,7 +16,7 @@ class NPA_DE {
     };
 
     class Crew : Rifleman {
-        headGear = "H_MilCap_gry";
+        headGear = "CUP_H_TK_TankerHelmet";
         vest = "V_BandollierB_khk";
         goggles = "G_Bandanna_khk";
         backpack = "AAF_D_AssaultPack_B";
@@ -148,6 +148,7 @@ class NPA_DE {
 
     class P : Crew {
         vest = "V_TacVest_oli";
+        headGear = "CUP_H_SLA_Pilot_Helmet";
         backpack = "B_Parachute";
     };
 

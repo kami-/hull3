@@ -20,6 +20,7 @@ class IRN_QF_WD {
     class Crew : Rifleman {
         uniform = "MNP_CombatUniform_IR_BSJ_Med_B";
         vest = "CUP_V_O_TK_CrewBelt";
+        headGear = "CUP_H_SLA_TankerHelmet";
         backpack = "B_AssaultPack_rgr";
     };
 
@@ -152,7 +153,7 @@ class IRN_QF_WD {
     };
 
     class P : Crew {
-        headGear = "CUP_H_TK_PilotHelmet";
+        headGear = "CUP_H_SLA_Pilot_Helmet";
         vest = "CUP_V_B_PilotVest";
         goggles = "G_Aviator";
         backpack = "B_Parachute";

@@ -3,12 +3,13 @@ class NK_CON {
         headGear = "MNP_Helmet_SOV_Steel";
         goggles = "";
         uniform = "MNP_CombatUniform_NKR_Rg";
-        vest = "MNP_Vest_Light_OD";
-        backpack = "B_Kitbag_rgr";
+        vest = "CUP_V_O_SLA_Flak_Vest03_ARM";
+        backpack = "CUP_B_CivPack_WDL";
     };
 
     class Leader : Rifleman {
         uniform = "MNP_CombatUniform_NKR_Sh";
+        vest = "CUP_V_O_SLA_Flak_Vest02_ARM";
     };
 
     class Officer : Leader {
@@ -16,9 +17,9 @@ class NK_CON {
     };
 
     class Crew : Rifleman {
-        headGear = "H_HelmetCrew_I";
-        vest = "V_BandollierB_rgr";
-        backpack = "B_AssaultPack_rgr";
+        headGear = "CUP_H_SLA_TankerHelmet";
+        vest = "CUP_V_O_TK_CrewBelt_ARM";
+        backpack = "CUP_B_SLA_Medicbag";
     };
 
     class CO : Officer {
@@ -31,7 +32,7 @@ class NK_CON {
     };
 
     class Medic : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "CUP_B_HikingPack_Civ";
     };
 
     class FTL : Leader {
@@ -41,14 +42,14 @@ class NK_CON {
     };
 
     class AAR : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "CUP_B_HikingPack_Civ";
     };
 
     class RAT : Rifleman {
     };
 
     class MMGG : AR {
-        backpack = "B_Carryall_oli";
+        backpack = "CUP_B_HikingPack_Civ";
     };
 
     class MMGAG : AAR {
@@ -64,7 +65,7 @@ class NK_CON {
     };
 
     class MATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "CUP_B_HikingPack_Civ";
     };
 
     class MATAG : AAR {
@@ -74,7 +75,7 @@ class NK_CON {
     };
 
     class HATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "CUP_B_HikingPack_Civ";
     };
 
     class HATAG : AAR {
@@ -120,7 +121,7 @@ class NK_CON {
     };
 
     class ENG : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "CUP_B_HikingPack_Civ";
     };
 
     class ENGA : ENG {

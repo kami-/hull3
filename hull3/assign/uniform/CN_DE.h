@@ -16,7 +16,7 @@ class CN_DE {
     };
 
     class Crew : Rifleman {
-        headGear = "H_HelmetCrew_I";
+        headGear = "CUP_H_TK_TankerHelmet";
         vest = "V_BandollierB_blk";
         backpack = "AAF_D_AssaultPack_B";
     };
@@ -146,7 +146,7 @@ class CN_DE {
     };
 
     class P : Crew {
-        headGear = "H_PilotHelmetHeli_B";
+        headGear = "CUP_H_SLA_Pilot_Helmet";
         uniform = "MNP_CombatUniform_China_D";
         vest = "V_TacVest_brn";
         backpack = "B_Parachute";

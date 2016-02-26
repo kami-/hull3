@@ -1,28 +1,29 @@
-class RU_WD_TT {
+class CUP_TKA_OD {
     class Rifleman {
-        headGear = "MNP_Helmet_SOVC_RU";
-        goggles = "";
-        uniform = "MNP_CombatUniform_RO2_Rg";
-        vest = "MNP_Vest_RUMED";
+        headGear = "CUP_H_TK_Helmet";
+        goggles = "CUP_TK_NeckScarf";
+        uniform = "CUP_U_O_TK_Green";
+        vest = "CUP_V_O_TK_Vest_1_ARM";
         backpack = "B_Kitbag_rgr";
     };
 
     class Leader : Rifleman {
-        uniform = "MNP_CombatUniform_RO2_Sh";
-        vest = "MNP_Vest_RUMED_B";
+        headGear = "CUP_H_TK_Beret";
     };
 
     class Officer : Leader {
-        headGear = "MNP_MilCap_RO_B";
+        goggles = "G_Aviator";
     };
 
     class Crew : Rifleman {
-        headGear = "CUP_H_SLA_TankerHelmet";
-        vest = "V_BandollierB_rgr";
-        backpack = "B_AssaultPack_rgr";
+        headGear = "CUP_H_TK_TankerHelmet";
+        vest = "CUP_V_O_TK_CrewBelt_ARM";
+        backpack = "CUP_B_SLA_Medicbag";
     };
 
     class CO : Officer {
+        uniform = "CUP_U_O_TK_Officer";
+        vest = "CUP_V_O_TK_OfficerBelt2_ARM";
     };
 
     class XO : CO {
@@ -33,6 +34,7 @@ class RU_WD_TT {
 
     class Medic : Rifleman {
         backpack = "B_Carryall_oli";
+        vest = "CUP_V_O_TK_Vest_2_ARM";
     };
 
     class FTL : Leader {
@@ -128,11 +130,7 @@ class RU_WD_TT {
     };
 
     class SN : Rifleman {
-        headGear = "H_Watchcap_camo";
-        uniform = "MNP_CombatUniform_RO2_Sh";
-        goggles = "G_Bandanna_oli";
-        vest = "MNP_Vest_Light_RU";
-        backpack = "B_AssaultPack_rgr";
+        headGear = "CUP_H_TK_Lungee";
     };
 
     class SP : SN {
@@ -148,10 +146,10 @@ class RU_WD_TT {
     };
 
     class P : Crew {
-        headGear = "CUP_H_SLA_Pilot_Helmet";
-        uniform = "MNP_CombatUniform_RO2_Rg";
-        vest = "V_TacVest_oli";
+        headGear = "CUP_H_TK_PilotHelmet";
+        vest = "CUP_V_O_TK_CrewBelt_ARM";
         backpack = "B_Parachute";
+        goggles = "G_Aviator";
     };
 
     class PCM : P {
