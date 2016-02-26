@@ -1972,4 +1972,5 @@ class Faction {
             {"CAS", "CUP_O_Su25_TKA"}
         };
     };
+
 };
