@@ -1,4 +1,4 @@
-class CUP_RACS_DE {
+class CUP_RACS_URB {
     class Rifleman {
         headGear = "CUP_H_RACS_Helmet_DPAT";
         goggles = "";
