@@ -1,28 +1,35 @@
-class NPA_DE {
+class CUP_USMC_WD {
     class Rifleman {
-        headGear = "H_ShemagOpen_khk";
+        headGear = "CUP_H_USMC_HelmetWDL";
         goggles = "";
-        uniform = "MNP_CombatUniform_6CO";
-        vest = "MNP_Vest_Light_DPM_D";
+        uniform = "CUP_U_B_USMC_MARPAT_WDL_Sleeves";
+        vest = "CUP_V_B_MTV_Pouches";
         backpack = "AAF_D_Kitbag_B";
     };
 
     class Leader : Rifleman {
-        uniform = "MNP_CombatUniform_6CO_B";
-        headGear = "H_Beret_blk";
+        uniform = "CUP_U_B_USMC_MARPAT_WDL_RollUpKneepad";
+        vest = "CUP_V_B_MTV_TL";
+        headGear = "CUP_H_USMC_Goggles_HelmetWDL";
     };
 
     class Officer : Leader {
+        headGear = "CUP_H_USMC_Headset_GoggleW_HelmetWDL";
+        uniform = "CUP_U_B_USMC_MARPAT_WDL_RollUpKneepad";
+        vest = "CUP_V_B_MTV_PistolBlack";
     };
 
     class Crew : Rifleman {
-        headGear = "CUP_H_TK_TankerHelmet";
-        vest = "V_BandollierB_khk";
-        goggles = "G_Bandanna_khk";
-        backpack = "AAF_D_AssaultPack_B";
+        headGear = "H_HelmetCrew_I";
+        uniform = "CUP_U_B_USMC_MARPAT_WDL_RolledUp";
+        goggles = "CUP_FR_NeckScarf2";
+        vest = "V_Rangemaster_belt";
+        backpack = "B_AssaultPack_cbr";
     };
 
     class CO : Officer {
+        headGear = "CUP_H_FR_Cap_Officer_Headset";
+        uniform = "CUP_U_B_USMC_Officer";
     };
 
     class XO : CO {
@@ -33,12 +40,16 @@ class NPA_DE {
 
     class Medic : Rifleman {
         backpack = "AAF_D_Carryall_B";
+        uniform = "CUP_U_B_USMC_MARPAT_WDL_RolledUp";
     };
 
     class FTL : Leader {
     };
 
     class AR : Rifleman {
+        uniform = "CUP_U_B_USMC_MARPAT_WDL_RollUpKneepad";
+        vest = "CUP_V_B_MTV_MG";
+        headGear = "CUP_H_USMC_Headset_GoggleW_HelmetWDL";
     };
 
     class AAR : Rifleman {
@@ -46,6 +57,9 @@ class NPA_DE {
     };
 
     class RAT : Rifleman {
+        uniform = "CUP_U_B_USMC_MARPAT_WDL_TwoKneepads";
+        vest = "CUP_V_B_MTV_Patrol";
+        headGear = "CUP_H_USMC_Goggles_HelmetWDL";
     };
 
     class MMGG : AR {
@@ -121,6 +135,7 @@ class NPA_DE {
     };
 
     class ENG : Rifleman {
+        uniform = "CUP_U_B_USMC_MARPAT_WDL_RollUpKneepad";
         backpack = "AAF_D_Carryall_B";
     };
 
@@ -128,9 +143,10 @@ class NPA_DE {
     };
 
     class SN : Rifleman {
-        headGear = "H_MilCap_gry";
+        headGear = "CUP_H_USMC_Headset_GoggleW_HelmetWDL";
         goggles = "G_Bandanna_khk";
-        vest = "V_BandollierB_khk";
+        uniform = "CUP_U_B_FR_Officer";
+        vest = "CUP_V_B_MTV_Marksman";
         backpack = "B_AssaultPack_cbr";
     };
 
@@ -147,9 +163,11 @@ class NPA_DE {
     };
 
     class P : Crew {
-        vest = "V_TacVest_oli";
-        headGear = "CUP_H_SLA_Pilot_Helmet";
+        headGear = "CUP_H_USMC_Helmet_Pilot";
+        uniform = "CUP_U_B_USMC_PilotOverall";
+        vest = "CUP_V_B_PilotVest";
         backpack = "B_Parachute";
+        goggles = "G_Aviator";
     };
 
     class PCM : P {

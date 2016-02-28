@@ -16,7 +16,7 @@ class NPA_WD {
     };
 
     class Crew : Rifleman {
-        headGear = "H_Cap_headphones";
+        headGear = "CUP_H_SLA_TankerHelmet";
         vest = "V_BandollierB_oli";
         goggles = "G_Bandanna_oli";
         backpack = "B_AssaultPack_rgr";
@@ -83,7 +83,7 @@ class NPA_WD {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -147,10 +147,12 @@ class NPA_WD {
     };
 
     class P : Crew {
+        headGear = "CUP_H_SLA_Pilot_Helmet";
         vest = "V_TacVest_oli";
         backpack = "B_Parachute";
     };
 
     class PCM : P {
     };
+
 };

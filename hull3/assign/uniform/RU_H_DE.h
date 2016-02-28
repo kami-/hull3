@@ -16,7 +16,7 @@ class RU_H_DE {
     };
 
     class Crew : Rifleman {
-        headGear = "H_HelmetCrew_B";
+        headGear = "CUP_H_TK_TankerHelmet";
         vest = "V_BandollierB_khk";
         backpack = "AAF_D_AssaultPack_B";
     };
@@ -82,7 +82,7 @@ class RU_H_DE {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -146,7 +146,7 @@ class RU_H_DE {
     };
 
     class P : Crew {
-        headGear = "H_PilotHelmetHeli_O";
+        headGear = "CUP_H_SLA_Pilot_Helmet";
         uniform = "MNP_CombatUniform_Russia_Heavy_D";
         vest = "V_TacVest_oli";
         backpack = "B_Parachute";
@@ -154,4 +154,5 @@ class RU_H_DE {
 
     class PCM : P {
     };
+
 };

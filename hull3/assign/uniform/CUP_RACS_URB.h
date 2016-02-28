@@ -1,59 +1,59 @@
-class IRN_RG_WD {
+class CUP_RACS_DE {
     class Rifleman {
-        headGear = "H_Bandanna_sgg";
-        goggles = "CUP_TK_NeckScarf";
-        uniform = "MNP_CombatUniform_IR_BSJ_Med";
-        vest = "MNP_Vest_OD_A";
-        backpack = "B_Kitbag_rgr";
+        headGear = "CUP_H_RACS_Helmet_DPAT";
+        goggles = "";
+        uniform = "CUP_U_I_RACS_Urban_1";
+        vest = "CUP_V_I_RACS_Carrier_Vest";
+        backpack = "B_AssaultPack_cbr";
     };
 
     class Leader : Rifleman {
-        headGear = "CUP_H_TK_Beret";
-        uniform = "MNP_CombatUniform_IR_BSJ_Med_B";
+        vest = "CUP_V_I_RACS_Carrier_Vest_3";
+        headGear = "CUP_H_RACS_Helmet_Goggles_DPAT";
     };
 
     class Officer : Leader {
-        vest = "MNP_Vest_OD_B";
-        goggles = "G_Aviator";
+        headGear = "CUP_H_RACS_Helmet_Headset_DPAT";
+        vest = "CUP_V_I_RACS_Carrier_Vest_2";
     };
 
     class Crew : Rifleman {
-        headGear = "CUP_H_SLA_TankerHelmet";
-        uniform = "MNP_CombatUniform_IR_BSJ_Med_B";
-        vest = "CUP_V_O_TK_CrewBelt";
-        backpack = "B_AssaultPack_rgr";
+        headGear = "AAF_D_HelmetCrew_B";
+        uniform = "CUP_U_I_RACS_Urban_2";
+        vest = "CUP_V_I_RACS_Carrier_Rig_3";
+        backpack = "B_AssaultPack_cbr";
     };
 
     class CO : Officer {
     };
 
     class XO : CO {
+        backpack = "AAF_D_Carryall_B";
     };
 
     class SL : Officer {
     };
 
     class Medic : Rifleman {
-        backpack = "B_Carryall_oli";
-        uniform = "MNP_CombatUniform_IR_BSJ_Med_B";
+        backpack = "AAF_D_Carryall_B";
     };
 
     class FTL : Leader {
     };
 
     class AR : Rifleman {
-        uniform = "MNP_CombatUniform_IR_BSJ_Med_B";
+        backpack = "AAF_D_Carryall_B";
     };
 
     class AAR : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "AAF_D_Carryall_B";
     };
 
     class RAT : Rifleman {
     };
 
     class MMGG : AR {
-        backpack = "B_Carryall_oli";
+        backpack = "AAF_D_Carryall_B";
     };
 
     class MMGAG : AAR {
@@ -69,7 +69,7 @@ class IRN_RG_WD {
     };
 
     class MATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "AAF_D_Carryall_B";
     };
 
     class MATAG : AAR {
@@ -79,7 +79,7 @@ class IRN_RG_WD {
     };
 
     class HATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "AAF_D_Carryall_B";
     };
 
     class HATAG : AAR {
@@ -98,6 +98,7 @@ class IRN_RG_WD {
     };
 
     class SAMG : AR {
+        backpack = "AAF_D_Carryall_B";
     };
 
     class SAMAG : AAR {
@@ -125,17 +126,18 @@ class IRN_RG_WD {
     };
 
     class ENG : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "AAF_D_Carryall_B";
     };
 
     class ENGA : ENG {
     };
 
     class SN : Rifleman {
-        headGear = "CUP_H_TK_Lungee";
-        goggles = "CUP_TK_NeckScarf";
-        vest = "CUP_V_B_GER_Carrier_Rig";
-        backpack = "B_AssaultPack_rgr";
+        headGear = "AAF_D_Cap_Headphones_B";
+        goggles = "G_Bandanna_tan";
+        uniform = "CUP_U_I_RACS_Urban_2";
+        vest = "CUP_V_I_RACS_Carrier_Vest_2";
+        backpack = "B_AssaultPack_cbr";
     };
 
     class SP : SN {
@@ -151,10 +153,11 @@ class IRN_RG_WD {
     };
 
     class P : Crew {
-        headGear = "CUP_H_SLA_Pilot_Helmet";
+        uniform = "CUP_U_B_USMC_PilotOverall";
+        headGear = "CUP_H_USMC_Helmet_Pilot";
         vest = "CUP_V_B_PilotVest";
-        goggles = "G_Aviator";
         backpack = "B_Parachute";
+        goggles = "G_Aviator";
     };
 
     class PCM : P {

@@ -19,7 +19,7 @@ class LVM_DE {
     };
 
     class Crew : Rifleman {
-        headGear = "H_HelmetCrew_I";
+        headGear = "CUP_H_TK_TankerHelmet";
         vest = "V_BandollierB_cbr";
         backpack = "AAF_D_AssaultPack_B";
     };
@@ -90,7 +90,7 @@ class LVM_DE {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -157,7 +157,7 @@ class LVM_DE {
     };
 
     class P : Crew {
-        headGear = "H_PilotHelmetHeli_O";
+        headGear = "CUP_H_SLA_Pilot_Helmet";
         uniform = "MNP_CombatUniform_Militia_DC";
         vest = "V_TacVest_oli";
         backpack = "B_Parachute";
@@ -165,4 +165,5 @@ class LVM_DE {
 
     class PCM : P {
     };
+
 };

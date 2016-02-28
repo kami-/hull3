@@ -87,7 +87,7 @@ class IRN_RG_DE {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -151,7 +151,7 @@ class IRN_RG_DE {
     };
 
     class P : Crew {
-        headGear = "CUP_H_TK_PilotHelmet";
+        headGear = "CUP_H_SLA_Pilot_Helmet";
         vest = "CUP_V_B_PilotVest";
         goggles = "G_Aviator";
         backpack = "B_Parachute";
@@ -159,4 +159,5 @@ class IRN_RG_DE {
 
     class PCM : P {
     };
+
 };

@@ -1,30 +1,29 @@
-class IRN_RG_WD {
+class CUP_TKA_OD {
     class Rifleman {
-        headGear = "H_Bandanna_sgg";
+        headGear = "CUP_H_TK_Helmet";
         goggles = "CUP_TK_NeckScarf";
-        uniform = "MNP_CombatUniform_IR_BSJ_Med";
-        vest = "MNP_Vest_OD_A";
+        uniform = "CUP_U_O_TK_Green";
+        vest = "CUP_V_O_TK_Vest_1_ARM";
         backpack = "B_Kitbag_rgr";
     };
 
     class Leader : Rifleman {
         headGear = "CUP_H_TK_Beret";
-        uniform = "MNP_CombatUniform_IR_BSJ_Med_B";
     };
 
     class Officer : Leader {
-        vest = "MNP_Vest_OD_B";
         goggles = "G_Aviator";
     };
 
     class Crew : Rifleman {
-        headGear = "CUP_H_SLA_TankerHelmet";
-        uniform = "MNP_CombatUniform_IR_BSJ_Med_B";
-        vest = "CUP_V_O_TK_CrewBelt";
-        backpack = "B_AssaultPack_rgr";
+        headGear = "CUP_H_TK_TankerHelmet";
+        vest = "CUP_V_O_TK_CrewBelt_ARM";
+        backpack = "CUP_B_SLA_Medicbag";
     };
 
     class CO : Officer {
+        uniform = "CUP_U_O_TK_Officer";
+        vest = "CUP_V_O_TK_OfficerBelt2_ARM";
     };
 
     class XO : CO {
@@ -35,14 +34,13 @@ class IRN_RG_WD {
 
     class Medic : Rifleman {
         backpack = "B_Carryall_oli";
-        uniform = "MNP_CombatUniform_IR_BSJ_Med_B";
+        vest = "CUP_V_O_TK_Vest_2_ARM";
     };
 
     class FTL : Leader {
     };
 
     class AR : Rifleman {
-        uniform = "MNP_CombatUniform_IR_BSJ_Med_B";
     };
 
     class AAR : Rifleman {
@@ -133,9 +131,6 @@ class IRN_RG_WD {
 
     class SN : Rifleman {
         headGear = "CUP_H_TK_Lungee";
-        goggles = "CUP_TK_NeckScarf";
-        vest = "CUP_V_B_GER_Carrier_Rig";
-        backpack = "B_AssaultPack_rgr";
     };
 
     class SP : SN {
@@ -151,10 +146,10 @@ class IRN_RG_WD {
     };
 
     class P : Crew {
-        headGear = "CUP_H_SLA_Pilot_Helmet";
-        vest = "CUP_V_B_PilotVest";
-        goggles = "G_Aviator";
+        headGear = "CUP_H_TK_PilotHelmet";
+        vest = "CUP_V_O_TK_CrewBelt_ARM";
         backpack = "B_Parachute";
+        goggles = "G_Aviator";
     };
 
     class PCM : P {

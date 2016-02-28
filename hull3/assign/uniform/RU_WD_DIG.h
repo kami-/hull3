@@ -14,11 +14,11 @@ class RU_WD_DIG {
     };
 
     class Officer : Leader {
-    headGear = "MNP_Beret_VDV";
+        headGear = "MNP_Beret_VDV";
     };
 
     class Crew : Rifleman {
-        headGear = "H_HelmetCrew_I";
+        headGear = "CUP_H_SLA_TankerHelmet";
         uniform = "MNP_CombatUniform_RU_Med_B";
         vest = "V_BandollierB_rgr";
         backpack = "B_AssaultPack_rgr";
@@ -87,7 +87,7 @@ class RU_WD_DIG {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -154,7 +154,7 @@ class RU_WD_DIG {
     };
 
     class P : Crew {
-        headGear = "H_PilotHelmetHeli_O";
+        headGear = "CUP_H_SLA_Pilot_Helmet";
         uniform = "MNP_CombatUniform_RU_Med";
         vest = "V_TacVest_oli";
         backpack = "B_Parachute";
@@ -162,4 +162,5 @@ class RU_WD_DIG {
 
     class PCM : P {
     };
+
 };

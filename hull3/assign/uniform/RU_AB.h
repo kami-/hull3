@@ -1,15 +1,15 @@
 class RU_AB {
     class Rifleman {
-        headGear = "MNP_Helmet_SOV_Steel";
+        headGear = "CUP_H_SLA_Helmet";
         goggles = "";
         uniform = "MNP_CombatUniform_RO3_Rg";
-        vest = "MNP_Vest_Light_R3";
-        backpack = "B_Kitbag_rgr";
+        vest = "CUP_V_O_SLA_Flak_Vest03_ARM";
+        backpack = "CUP_B_CivPack_WDL";
     };
 
     class Leader : Rifleman {
         uniform = "MNP_CombatUniform_RO3_Sh";
-        headGear = "MNP_MC_OD";
+        vest = "CUP_V_O_SLA_Flak_Vest02_ARM";
     };
 
     class Officer : Leader {
@@ -17,9 +17,9 @@ class RU_AB {
     };
 
     class Crew : Rifleman {
-        headGear = "H_HelmetCrew_I";
-        vest = "V_BandollierB_rgr";
-        backpack = "B_AssaultPack_rgr";
+        headGear = "CUP_H_SLA_TankerHelmet";
+        vest = "CUP_V_O_TK_CrewBelt_ARM";
+        backpack = "CUP_B_SLA_Medicbag";
     };
 
     class CO : Officer {
@@ -32,7 +32,7 @@ class RU_AB {
     };
 
     class Medic : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "CUP_B_HikingPack_Civ";
     };
 
     class FTL : Leader {
@@ -42,14 +42,14 @@ class RU_AB {
     };
 
     class AAR : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "CUP_B_HikingPack_Civ";
     };
 
     class RAT : Rifleman {
     };
 
     class MMGG : AR {
-        backpack = "B_Carryall_oli";
+        backpack = "CUP_B_HikingPack_Civ";
     };
 
     class MMGAG : AAR {
@@ -65,7 +65,7 @@ class RU_AB {
     };
 
     class MATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "CUP_B_HikingPack_Civ";
     };
 
     class MATAG : AAR {
@@ -75,7 +75,7 @@ class RU_AB {
     };
 
     class HATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "CUP_B_HikingPack_Civ";
     };
 
     class HATAG : AAR {
@@ -83,7 +83,7 @@ class RU_AB {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -121,7 +121,7 @@ class RU_AB {
     };
 
     class ENG : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "CUP_B_HikingPack_Civ";
     };
 
     class ENGA : ENG {
@@ -150,10 +150,11 @@ class RU_AB {
     class P : Crew {
         headGear = "H_PilotHelmetHeli_O";
         uniform = "MNP_CombatUniform_RO3_Rg";
-        vest = "MNP_Vest_Light_R3";
+        vest = "CUP_V_O_TK_CrewBelt_ARM";
         backpack = "B_Parachute";
     };
 
     class PCM : P {
     };
+
 };
