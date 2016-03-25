@@ -43,7 +43,7 @@ hull3_acre_fnc_acreInit = {
                     hull3_acre_isInitialized = true;
                     ["acre.initialized", [player]] call hull3_event_fnc_emitEvent;
                     [false] call acre_api_fnc_setSpectator;
-                    [1] call acre_api_fnc_setSelectableVoiceCurve;
+                    [0.7] call acre_api_fnc_setSelectableVoiceCurve;
                     DEBUG("hull.acre.spec","ACRE init finished.");
                 };
             };

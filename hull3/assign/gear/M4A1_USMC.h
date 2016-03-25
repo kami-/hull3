@@ -1,4 +1,4 @@
-class M4A1_US {
+class M4A1_USMC {
     class Rifleman {
         primaryWeapon = "RH_M4A1_ris";
         primaryWeaponItems[] = {"RH_compm4s", "RH_SFM952V"};
