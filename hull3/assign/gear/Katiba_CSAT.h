@@ -16,13 +16,13 @@ class Katiba_CSAT {
         };
         vestMagazines[] = {
             {"30Rnd_65x39_caseless_green", 6},
-            {"30Rnd_65x39_caseless_green_Tracer", 2}
+            {"30Rnd_65x39_caseless_green_mag_Tracer", 2}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
             {"30Rnd_65x39_caseless_green", 4},
-            {"30Rnd_65x39_caseless_green_Tracer", 2}
+            {"30Rnd_65x39_caseless_green_mag_Tracer", 2}
         };
         basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch"};
         assignItems[] = {};
@@ -55,13 +55,13 @@ class Katiba_CSAT {
             {"1Rnd_HE_Grenade_shell", 4},
             {"1Rnd_Smoke_Grenade_shell", 2},
             {"1Rnd_SmokeRed_Grenade_shell", 2},
-            {"30Rnd_65x39_caseless_green_Tracer", 2}
+            {"30Rnd_65x39_caseless_green_mag_Tracer", 2}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
             {"30Rnd_65x39_caseless_green", 4},
-            {"30Rnd_65x39_caseless_green_Tracer", 2},
+            {"30Rnd_65x39_caseless_green_mag_Tracer", 2},
             {"1Rnd_Smoke_Grenade_shell", 2},
             {"1Rnd_SmokeRed_Grenade_shell", 2},
             {"UGL_FlareWhite_F", 2}
@@ -111,12 +111,12 @@ class Katiba_CSAT {
         };
         vestMagazines[] = {
             {"30Rnd_65x39_caseless_green", 6},
-            {"30Rnd_65x39_caseless_green_Tracer", 2},
+            {"30Rnd_65x39_caseless_green_mag_Tracer", 2},
             {"SmokeShell", 4}
         };
         backpackMagazines[] = {
             {"SmokeShellBlue", 4},
-            {"30Rnd_65x39_caseless_green_Tracer", 2}
+            {"30Rnd_65x39_caseless_green_mag_Tracer", 2}
         };
         assignItems[] = {"ItemGPS"};
         binocular = "Binocular";
@@ -160,13 +160,13 @@ class Katiba_CSAT {
         secondaryWeapon = "CUP_launch_RPG18";
         vestMagazines[] = {
             {"30Rnd_65x39_caseless_green", 6},
-            {"30Rnd_65x39_caseless_green_Tracer", 2}
+            {"30Rnd_65x39_caseless_green_mag_Tracer", 2}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
             {"30Rnd_65x39_caseless_green", 4},
-            {"30Rnd_65x39_caseless_green_Tracer", 2}
+            {"30Rnd_65x39_caseless_green_mag_Tracer", 2}
         };
     };
 
@@ -365,7 +365,7 @@ class Katiba_CSAT {
         };
         vestMagazines[] = {
             {"30Rnd_65x39_caseless_green", 6},
-            {"30Rnd_65x39_caseless_green_Tracer", 2}
+            {"30Rnd_65x39_caseless_green_mag_Tracer", 2}
         };
         backpackMagazines[] = {
             {"Toolkit", 1},
