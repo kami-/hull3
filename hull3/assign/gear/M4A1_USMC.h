@@ -142,8 +142,7 @@ class M4A1_USMC {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"RH_60Rnd_556x45_M855A1", 2},
-            {"CUP_200Rnd_TE1_Red_Tracer_556x45_M249", 2}
+            {"RH_60Rnd_556x45_M855A1", 4}
         };
         binocular = "Binocular";
     };
