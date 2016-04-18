@@ -45,7 +45,7 @@ class HK416_KSK {
     };
 
     class Leader : Rifleman {
-        primaryWeapon = "RH_M4A1_ris_M203";
+        primaryWeapon = "hlc_rifle_m4m203";
         primaryWeaponItems[] = {"RH_compM2l", "RH_SFM952V"};
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},

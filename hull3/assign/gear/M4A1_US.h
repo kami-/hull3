@@ -1,6 +1,6 @@
 class M4A1_US {
     class Rifleman {
-        primaryWeapon = "RH_M4A1_ris";
+        primaryWeapon = "hlc_rifle_M4";
         primaryWeaponItems[] = {"RH_compm4s", "RH_SFM952V"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
@@ -45,7 +45,7 @@ class M4A1_US {
     };
 
     class Leader : Rifleman {
-        primaryWeapon = "RH_M4A1_ris_M203";
+        primaryWeapon = "hlc_rifle_m4m203";
         primaryWeaponItems[] = {"RH_eotech553", "RH_SFM952V"};
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
@@ -74,7 +74,7 @@ class M4A1_US {
     };
 
     class Crew : Rifleman {
-        primaryWeapon = "RH_M4sbr_b";
+        primaryWeapon = "hlc_rifle_CQBR";
         primaryWeaponItems[] = {"RH_SFM952V"};
         uniformMagazines[] = {
             {"Chemlight_green", 2},
@@ -101,7 +101,7 @@ class M4A1_US {
     };
 
     class Medic : Rifleman {
-        primaryWeapon = "RH_M4A1_ris";
+        primaryWeapon = "hlc_rifle_M4";
         primaryWeaponItems[] = {"RH_t1", "RH_SFM952V"};
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
@@ -392,7 +392,7 @@ class M4A1_US {
 
     class Vehicle {
         weapons[] = {
-            {"RH_M4A1_ris", 4},
+            {"hlc_rifle_M4", 4},
             {"CUP_launch_M136", 5}
         };
         magazines[] = {
@@ -421,7 +421,7 @@ class M4A1_US {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"RH_M4A1_ris", 4},
+            {"hlc_rifle_M4", 4},
             {"CUP_launch_M136", 10}
         };
         magazines[] = {

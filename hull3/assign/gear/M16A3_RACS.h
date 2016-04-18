@@ -45,7 +45,7 @@ class M16A3_RACS {
     };
 
     class Leader : Rifleman {
-        primaryWeapon = "RH_M4A1_ris_M203";
+        primaryWeapon = "hlc_rifle_m4m203";
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"1Rnd_HE_Grenade_shell", 4},

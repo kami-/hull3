@@ -74,7 +74,7 @@ class M16A4_CAN {
     };
 
     class Crew : Rifleman {
-        primaryWeapon = "RH_M4sbr_b";
+        primaryWeapon = "hlc_rifle_CQBR";
         primaryWeaponItems[] = {"RH_t1", "RH_SFM952V"};
         uniformMagazines[] = {
             {"Chemlight_green", 2},
