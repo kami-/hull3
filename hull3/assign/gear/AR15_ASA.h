@@ -15,13 +15,13 @@ class AR15_ASA {
             {"SmokeShell", 1}
         };
         vestMagazines[] = {
-            {"RH_30Rnd_556x45_M855A1", 6},
+            {"30Rnd_556x45_Stanag", 6},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"RH_30Rnd_556x45_M855A1", 4},
+            {"30Rnd_556x45_Stanag", 4},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2}
         };
         basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch"};
@@ -48,7 +48,7 @@ class AR15_ASA {
         primaryWeapon = "RH_M4_M203";
         primaryWeaponItems[] = {"RH_eotech553"};
         vestMagazines[] = {
-            {"RH_30Rnd_556x45_M855A1", 6},
+            {"30Rnd_556x45_Stanag", 6},
             {"1Rnd_HE_Grenade_shell", 4},
             {"1Rnd_Smoke_Grenade_shell", 2},
             {"1Rnd_SmokeRed_Grenade_shell", 2},
@@ -57,7 +57,7 @@ class AR15_ASA {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"RH_30Rnd_556x45_M855A1", 4},
+            {"30Rnd_556x45_Stanag", 4},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2},
             {"1Rnd_Smoke_Grenade_shell", 2},
             {"1Rnd_SmokeRed_Grenade_shell", 2},
@@ -104,13 +104,13 @@ class AR15_ASA {
         primaryWeapon = "RH_m4";
         primaryWeaponItems[] = {"RH_cmore"};
         vestMagazines[] = {
-            {"RH_30Rnd_556x45_M855A1", 6},
+            {"30Rnd_556x45_Stanag", 6},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2},
             {"SmokeShell", 4}
         };
         backpackMagazines[] = {
             {"SmokeShellBlue", 4},
-            {"RH_30Rnd_556x45_M855A1", 2}
+            {"30Rnd_556x45_Stanag", 2}
         };
         assignItems[] = {"ItemGPS"};
         binocular = "Binocular";
@@ -151,13 +151,13 @@ class AR15_ASA {
         primaryWeaponItems[] = {"RH_cmore"};
         secondaryWeapon = "CUP_launch_M136";
         vestMagazines[] = {
-            {"RH_30Rnd_556x45_M855A1", 6},
+            {"30Rnd_556x45_Stanag", 6},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"RH_30Rnd_556x45_M855A1", 4},
+            {"30Rnd_556x45_Stanag", 4},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2}
         };
     };
@@ -340,7 +340,7 @@ class AR15_ASA {
         primaryWeapon = "RH_m4";
         primaryWeaponItems[] = {"RH_cmore"};
         vestMagazines[] = {
-            {"RH_30Rnd_556x45_M855A1", 6},
+            {"30Rnd_556x45_Stanag", 6},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2}
         };
         backpackMagazines[] = {
@@ -405,8 +405,8 @@ class AR15_ASA {
             {"RH_m4", 2}
         };
         magazines[] = {
-            {"RH_30Rnd_556x45_M855A1", 15},
-            {"RH_30Rnd_556x45_M855A1", 15},
+            {"30Rnd_556x45_Stanag", 15},
+            {"30Rnd_556x45_Stanag", 15},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 10},
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"UGL_FlareWhite_F", 5},
@@ -435,8 +435,8 @@ class AR15_ASA {
             {"RH_m4", 2}
         };
         magazines[] = {
-            {"RH_30Rnd_556x45_M855A1", 40},
-            {"RH_30Rnd_556x45_M855A1", 20},
+            {"30Rnd_556x45_Stanag", 40},
+            {"30Rnd_556x45_Stanag", 20},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
             {"hlc_100Rnd_762x51_M_M60E4", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
@@ -462,8 +462,8 @@ class AR15_ASA {
     class Armored : Truck {
         weapons[] = {{"CUP_launch_M136", 10}};
         magazines[] = {
-            {"RH_30Rnd_556x45_M855A1", 40},
-            {"RH_30Rnd_556x45_M855A1", 20},
+            {"30Rnd_556x45_Stanag", 40},
+            {"30Rnd_556x45_Stanag", 20},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
             {"hlc_100Rnd_762x51_M_M60E4", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
