@@ -48,7 +48,7 @@ class MIX_LVM {
         primaryWeapon = "RH_M16A1gl";
         primaryWeaponItems[] = {};
         vestMagazines[] = {
-            {"RH_30Rnd_556x45_M855A1", 6},
+            {"30Rnd_556x45_Stanag", 6},
             {"1Rnd_HE_Grenade_shell", 4},
             {"1Rnd_Smoke_Grenade_shell", 2},
             {"1Rnd_SmokeRed_Grenade_shell", 2},
@@ -57,7 +57,7 @@ class MIX_LVM {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"RH_30Rnd_556x45_M855A1", 4},
+            {"30Rnd_556x45_Stanag", 4},
             {"30Rnd_556x45_Stanag_Tracer_Yellow", 2},
             {"1Rnd_Smoke_Grenade_shell", 2},
             {"1Rnd_SmokeRed_Grenade_shell", 2},
@@ -415,7 +415,7 @@ class MIX_LVM {
         };
         magazines[] = {
             {"hlc_20rnd_762x51_b_G3", 15},
-            {"RH_30Rnd_556x45_M855A1", 15},
+            {"30Rnd_556x45_Stanag", 15},
             {"hlc_30Rnd_762x39_b_ak", 15},
             {"hlc_75Rnd_762x39_m_rpk", 10},
             {"1Rnd_Smoke_Grenade_shell", 5},
@@ -446,7 +446,7 @@ class MIX_LVM {
         };
         magazines[] = {
             {"hlc_20rnd_762x51_b_G3", 40},
-            {"RH_30Rnd_556x45_M855A1", 15},
+            {"30Rnd_556x45_Stanag", 15},
             {"hlc_30Rnd_762x39_b_ak", 20},
             {"hlc_75Rnd_762x39_m_rpk", 20},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
@@ -476,7 +476,7 @@ class MIX_LVM {
         magazines[] = {
             {"hlc_20rnd_762x51_b_G3", 40},
             {"hlc_30Rnd_762x39_b_ak", 20},
-            {"RH_30Rnd_556x45_M855A1", 15},
+            {"30Rnd_556x45_Stanag", 15},
             {"hlc_75Rnd_762x39_m_rpk", 20},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
