@@ -648,6 +648,81 @@ class Faction {
         };
     };
 
+    class CUP_BAF_WD {
+        gear = "L85_BAF";
+        uniform = "CUP_BAF_WD";
+        name = "British Armed Forces (Woodland DPM)";
+        description = "Woodland DPM and L85's";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland"};
+        rolePrefix = "BAF";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_LR_Transport_GB_W"},
+            {"SL", "CUP_B_LR_Transport_GB_W"},
+            {"FT", "CUP_B_LR_Transport_GB_W"},
+            {"ATTCH", "CUP_B_LR_Transport_GB_W"},
+            {"ENG", "CUP_B_LR_Transport_GB_W"},
+            {"APC", "CUP_B_FV432_Bulldog_GB_W_RWS"},
+            {"IFV", "CUP_B_MCV80_GB_W"},
+            {"SPAAG", "CUP_B_M163_USA"},
+            {"TNK", "CUP_B_FV510_GB_W_SLAT"},
+            {"TH", "CUP_B_SA330_Puma_HC2_BAF"},
+            {"AH", "CUP_B_AH1_BAF"},
+            {"CAS", "CUP_B_GR9_Mk82_GB"}
+        };
+    };
+
+    class CUP_BAF_DE {
+        gear = "L85_BAF";
+        uniform = "CUP_BAF_DE";
+        name = "British Armed Forces (Desert DPM)";
+        description = "Desert DPM and L85's";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"desert"};
+        rolePrefix = "BAF";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_LR_Transport_GB_D"},
+            {"SL", "CUP_B_LR_Transport_GB_D"},
+            {"FT", "CUP_B_LR_Transport_GB_D"},
+            {"ATTCH", "CUP_B_LR_Transport_GB_D"},
+            {"ENG", "CUP_B_LR_Transport_GB_D"},
+            {"APC", "CUP_B_FV432_Bulldog_GB_D_RWS"},
+            {"IFV", "CUP_B_MCV80_GB_D"},
+            {"SPAAG", "CUP_B_M163_USA"},
+            {"TNK", "CUP_B_FV510_GB_D_SLAT"},
+            {"TH", "CUP_B_Merlin_HC3A_GB_Armed"},
+            {"AH", "CUP_B_AH1_BAF"},
+            {"CAS", "CUP_B_GR9_Mk82_GB"}
+        };
+    };
+
+    class CUP_BAF_MTP {
+        gear = "L85_BAF";
+        uniform = "CUP_BAF_MTP";
+        name = "British Armed Forces (MTP)";
+        description = "Multicam DPM and L85's";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland", "desert"};
+        rolePrefix = "BAF";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_LR_Transport_GB_D"},
+            {"SL", "CUP_B_LR_Transport_GB_D"},
+            {"FT", "CUP_B_LR_Transport_GB_D"},
+            {"ATTCH", "CUP_B_LR_Transport_GB_D"},
+            {"ENG", "CUP_B_LR_Transport_GB_D"},
+            {"APC", "CUP_B_FV432_Bulldog_GB_D_RWS"},
+            {"IFV", "CUP_B_MCV80_GB_D"},
+            {"SPAAG", "CUP_B_M163_USA"},
+            {"TNK", "CUP_B_FV510_GB_D_SLAT"},
+            {"TH", "CUP_B_Merlin_HC3A_GB_Armed"},
+            {"AH", "CUP_B_AH1_BAF"},
+            {"CAS", "CUP_B_GR9_Mk82_GB"}
+        };
+    };
+    
     class OPF_F {
         gear = "Katiba_CSAT";
         uniform = "CSAT";
