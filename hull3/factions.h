@@ -1517,7 +1517,7 @@ class Faction {
             {"IFV", "I_APC_tracked_03_cannon_F"},
             {"SPAAG", "CUP_B_M163_USA"},
             {"TNK", "I_MBT_03_cannon_F"},
-            {"TH", "Heli_Transport_02_F"},
+            {"TH", "I_Heli_Transport_02_F"},
             {"AH", "I_Heli_light_03_F"},
             {"CAS", "I_Plane_Fighter_03_CAS_F"}
         };
@@ -1717,7 +1717,7 @@ class Faction {
             {"IFV", "I_APC_tracked_03_cannon_F"},
             {"SPAAG", "CUP_B_M163_USA"},
             {"TNK", "I_MBT_03_cannon_F"},
-            {"TH", "Heli_Transport_02_F"},
+            {"TH", "I_Heli_Transport_02_F"},
             {"AH", "I_Heli_light_03_F"},
             {"CAS", "I_Plane_Fighter_03_CAS_F"}
         };

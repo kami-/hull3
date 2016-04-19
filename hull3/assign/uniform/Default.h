@@ -1,6 +1,6 @@
 class Default {
     class Rifleman {
-        helmet = "";
+        headGear = "";
         goggles = "";
         uniform = "";
         vest = "";
