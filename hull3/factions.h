@@ -1573,6 +1573,56 @@ class Faction {
         };
     };
 
+    class CUP_RU_WD {
+        gear = "AK74M_RU";
+        uniform = "CUP_RU_WD";
+        name = "Russian Army (Flora)";
+        description = "Woodland Russian Army and AK-74M's";
+        languages[] = {{"east", 100}};
+        side = "east";
+        camouflage[] = {"woodland"};
+        rolePrefix = "Russian Army";
+        vehicleClassnames[] = {
+            {"CO", "CUP_O_UAZ_Unarmed_RU"},
+            {"SL", "CUP_O_UAZ_Unarmed_RU"},
+            {"FT", "CUP_O_UAZ_Unarmed_RU"},
+            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
+            {"ENG", "CUP_O_Ural_Repair_SLA"},
+            {"APC", "CUP_O_BMP2_RU"},
+            {"IFV", "CUP_O_BMP3_RU"},
+            {"SPAAG", "CUP_O_2S6M_RU"},
+            {"TNK", "CUP_O_T72_RU"},
+            {"TH", "CUP_O_Mi8_RU"},
+            {"AH", "CUP_O_Mi24_V_RU"},
+            {"CAS", "CUP_O_Su25_RU_3"}
+        };
+    };
+    
+    class CUP_RU_EMR {
+        gear = "AK74M_RU";
+        uniform = "CUP_RU_EMR";
+        name = "Russian Army (EMR Woodland)";
+        description = "Woodland EMR Russian Army and AK-74M's. Never seen in Ukraine, nope never!";
+        languages[] = {{"east", 100}};
+        side = "east";
+        camouflage[] = {"woodland"};
+        rolePrefix = "Russian Army";
+        vehicleClassnames[] = {
+            {"CO", "CUP_O_UAZ_Unarmed_RU"},
+            {"SL", "CUP_O_UAZ_Unarmed_RU"},
+            {"FT", "CUP_O_UAZ_Unarmed_RU"},
+            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
+            {"ENG", "CUP_O_Ural_Repair_SLA"},
+            {"APC", "CUP_O_BMP2_RU"},
+            {"IFV", "CUP_O_BMP3_RU"},
+            {"SPAAG", "CUP_O_2S6M_RU"},
+            {"TNK", "CUP_O_T72_RU"},
+            {"TH", "CUP_O_Mi8_RU"},
+            {"AH", "CUP_O_Mi24_V_RU"},
+            {"CAS", "CUP_O_Su25_RU_3"}
+        };
+    };
+    
     class IND_F {
         gear = "Mk20_AAF_WD";
         uniform = "AAF_WD";
