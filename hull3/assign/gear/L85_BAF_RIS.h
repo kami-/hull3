@@ -1,7 +1,7 @@
 class L85_BAF_RIS {
     class Rifleman {
         primaryWeapon = "CUP_arifle_L85A2_G";
-        primaryWeaponItems[] = {"RH_eotexps3", "acc_flashlight"};
+        primaryWeaponItems[] = {"CUP_optic_HoloBlack", "acc_flashlight"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -45,7 +45,7 @@ class L85_BAF_RIS {
 
     class Leader : Rifleman {
         primaryWeapon = "CUP_arifle_L85A2_GL";
-        primaryWeaponItems[] = {"RH_eotexps3", "acc_flashlight"};
+        primaryWeaponItems[] = {"CUP_optic_HoloBlack", "acc_flashlight"};
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"1Rnd_HE_Grenade_shell", 4},
