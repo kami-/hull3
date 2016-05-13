@@ -57,11 +57,10 @@ hull3_gear_fnc_assign = {
 hull3_gear_fnc_assignUnit = {
     FUN_ARGS_4(_unit,_gearTemplate,_uniformTemplate,_gearClass);
 
-    DEBUG("hull3.gear.assign",FMT_3("Set gear template to '%1', uniform template to '%2' and gear class to '%3'.",_gearTemplate,_uniformTemplate,_gearClass));
-    [_unit, _uniformTemplate] call hull3_uniform_fnc_assignUniformInit;
-    [_unit, _gearTemplate, _uniformTemplate, _gearClass] call hull3_uniform_fnc_assignUniformTemplate;
     [_unit, _gearTemplate, _gearClass] call hull3_gear_fnc_assignUnitInit;
-    [_unit, _gearTemplate, _gearClass] call hull3_gear_fnc_assignUnitTemplate;
+    DEBUG("hull3.gear.assign",FMT_3("Set gear template to '%1', uniform template to '%2' and gear class to '%3'.",_gearTemplate,_uniformTemplate,_gearClass));
+    private _statement = [hull3_gear_fnc_assignUnitTemplate, [_unit, _gearTemplate, _gearClass]];
+    [_unit, _gearTemplate, _uniformTemplate, _gearClass, _statement] call hull3_uniform_fnc_safeAssignUniform;
 };
 
 hull3_gear_fnc_assignVehicle = {
@@ -75,7 +74,6 @@ hull3_gear_fnc_assignUnitInit = {
     FUN_ARGS_3(_unit,_template,_class);
 
     _unit setVariable ["hull3_gear_class", _class, true];
-    _unit setVariable ["hull3_gear_template", _template, true];
     _unit setVariable ["hull3_gear_template", _template, true];
     _unit setVariable ["ace_medical_medicClass", 2, true]; // Allow everyone to use ACE epi-pen
     removeAllAssignedItems _unit;
