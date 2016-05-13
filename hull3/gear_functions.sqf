@@ -59,6 +59,7 @@ hull3_gear_fnc_assignUnit = {
 
     [_unit, _gearTemplate, _gearClass] call hull3_gear_fnc_assignUnitInit;
     DEBUG("hull3.gear.assign",FMT_3("Set gear template to '%1', uniform template to '%2' and gear class to '%3'.",_gearTemplate,_uniformTemplate,_gearClass));
+    [_unit, _gearTemplate, _gearClass] call hull3_gear_fnc_assignUnitTemplateWeapons;
     private _statement = [hull3_gear_fnc_assignUnitTemplate, [_unit, _gearTemplate, _gearClass]];
     [_unit, _gearTemplate, _uniformTemplate, _gearClass, _statement] call hull3_uniform_fnc_safeAssignUniform;
 };
@@ -134,7 +135,7 @@ hull3_gear_fnc_getTemplate = {
     _gearTemplate;
 };
 
-hull3_gear_fnc_assignUnitTemplate = {
+hull3_gear_fnc_assignUnitTemplateWeapons = {
     FUN_ARGS_3(_unit,_template,_class);
 
     DECLARE(_assignables) = [
@@ -143,7 +144,20 @@ hull3_gear_fnc_assignUnitTemplate = {
         ["secondaryWeapon",         CONFIG_TYPE_TEXT,       "secondary weapon",         ASSIGN_SECONDARY_WEAPON_FUNC,       CAN_ASSIGN_SECONDARY_WEAPON_FUNC,       hull3_gear_fnc_assignSingleItem],
         ["secondaryWeaponItems",    CONFIG_TYPE_ARRAY,      "secondary weapon items",   ASSIGN_SECONDARY_WEAPON_ITEM_FUNC,  CAN_ASSIGN_SECONDARY_WEAPON_ITEM_FUNC,  hull3_gear_fnc_assignSingleItemArray],
         ["handgunWeapon",           CONFIG_TYPE_TEXT,       "handgun weapon",           ASSIGN_HANDGUN_WEAPON_FUNC,         CAN_ASSIGN_HANDGUN_WEAPON_FUNC,         hull3_gear_fnc_assignSingleItem],
-        ["handgunItems",            CONFIG_TYPE_ARRAY,      "handgun items",            ASSIGN_HANDGUN_ITEM_FUNC,           CAN_ASSIGN_HANDGUN_ITEM_FUNC,           hull3_gear_fnc_assignSingleItemArray],
+        ["handgunItems",            CONFIG_TYPE_ARRAY,      "handgun items",            ASSIGN_HANDGUN_ITEM_FUNC,           CAN_ASSIGN_HANDGUN_ITEM_FUNC,           hull3_gear_fnc_assignSingleItemArray]
+    ];
+    {
+        DECLARE(_configValue) = [TYPE_CLASS_GEAR, _template, _class, _x select 0] call (CONFIG_TYPE_FUNCTIONS select (_x select 1));
+        [_x select 0, _unit, _configValue, _x select 2, _x select 3, _x select 4, _template, _class] call (_x select 5);
+    } foreach _assignables;
+    _unit selectWeapon primaryWeapon _unit;
+    DEBUG("hull3.gear.assign.weapon",FMT_3("Assigned weapons from gear class '%1' and template '%2' to unit '%3'.",_class,_template,_unit));
+};
+
+hull3_gear_fnc_assignUnitTemplate = {
+    FUN_ARGS_3(_unit,_template,_class);
+
+    DECLARE(_assignables) = [
         ["uniformMagazines",        CONFIG_TYPE_ARRAY,      "uniform",                  ASSIGN_UNIFORM_ITEM_FUNC,           CAN_ASSIGN_UNIFORM_ITEM_FUNC,           hull3_gear_fnc_assignMultiItemArray],
         ["vestMagazines",           CONFIG_TYPE_ARRAY,      "vest",                     ASSIGN_VEST_ITEM_FUNC,              CAN_ASSIGN_VEST_ITEM_FUNC,              hull3_gear_fnc_assignMultiItemArray],
         ["backpackMagazines",       CONFIG_TYPE_ARRAY,      "backpack",                 ASSIGN_BACKPACK_ITEM_FUNC,          CAN_ASSIGN_BACKPACK_ITEM_FUNC,          hull3_gear_fnc_assignMultiItemArray],
@@ -165,7 +179,6 @@ hull3_gear_fnc_assignUnitTemplate = {
         [_x select 0, _unit, _configValue, _x select 2, _x select 3, _x select 4, _template, _class] call (_x select 5);
     } foreach _assignables;
     [_unit, _class, _template] call compile ([TYPE_CLASS_GEAR, _template, _class, "code"] call hull3_config_fnc_getText);
-    _unit selectWeapon primaryWeapon _unit;
     [_unit, _template, _class] call hull3_gear_fnc_assignRadios;
     DEBUG("hull3.gear.assign",FMT_3("Assigned gear class '%1' from template '%2' to unit '%3'.",_class,_template,_unit));
 };
