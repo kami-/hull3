@@ -25,7 +25,7 @@ hull3_acre_fnc_postInit = {
     [] call hull3_acre_fnc_setSettings;
     [] call hull3_acre_fnc_setupPresets;
     [] call hull3_acre_fnc_addLanguages;
-    [] call hull3_acre_fnc_acreInit;
+    [] spawn hull3_acre_fnc_acreInit;
 };
 
 hull3_acre_fnc_acreInit = {

@@ -7,7 +7,7 @@
 if (hull3_isEnabled) then {
     [] call hull3_settings_fnc_init;
     [] call hull3_mission_fnc_init;
-    [] spawn hull3_acre_fnc_postInit;
+    [] call hull3_acre_fnc_postInit;
 
     if (!isDedicated) then {
         [] spawn hull3_unit_fnc_playerInit;
