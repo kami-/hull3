@@ -213,12 +213,25 @@ class Hull3 {
         class ShortRange {
             baseFrequency = 2400;
             radios[] = {"ACRE_PRC343"};
+            defaultChannel = 5;
+            channels[] = {
+                {"A", 1},
+                {"B", 2},
+                {"C", 3},
+                {"D", 4}
+            };
         };
 
         class LongRange {
             baseFrequency = 32;
             channelNames[] = {"Command", "Air"};
             radios[] = {"ACRE_PRC148", "ACRE_PRC152", "ACRE_PRC117F"};
+            defaultChannel = 1;
+            channels[] = {
+                {"TH", 2},
+                {"AH", 2},
+                {"CAS", 2}
+            };
         };
 
         class Radio {
