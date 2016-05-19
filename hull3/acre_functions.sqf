@@ -25,34 +25,42 @@ hull3_acre_fnc_postInit = {
     [] call hull3_acre_fnc_setSettings;
     [] call hull3_acre_fnc_setupPresets;
     [] call hull3_acre_fnc_addLanguages;
-    [] call hull3_acre_fnc_acreInit;
+    [] spawn hull3_acre_fnc_acreInit;
 };
 
 hull3_acre_fnc_acreInit = {
-    DEBUG("hull3.acre.spec","ACRE player init called.");
+    DEBUG("hull3.acre.init","ACRE player init called.");
     if ([] call hull3_common_fnc_isHeadlessClient) exitWith {
-        DEBUG("hull3.acre.spec","Player is an HC, no ACRE check is ommited.");
+        DEBUG("hull3.acre.init","Player is an HC, no ACRE check is ommited.");
     };
-    if (alive player) then {
-        DEBUG("hull.acre.spec","Player is alive, starting ACRE init check.");
-        [] spawn {
-            for "_i" from 1 to 60 do {
-                DEBUG("hull.acre.spec",FMT_2("Waiting for ACRE to initialize '%1' (%2 seconds).",[] call acre_api_fnc_isInitialized,_i * 5));
-                sleep 5;
-                if ([] call acre_api_fnc_isInitialized) exitWith {
-                    hull3_acre_isInitialized = true;
-                    ["acre.initialized", [player]] call hull3_event_fnc_emitEvent;
-                    [false] call acre_api_fnc_setSpectator;
-                    [0.7] call acre_api_fnc_setSelectableVoiceCurve;
-                    DEBUG("hull.acre.spec","ACRE init finished.");
-                };
-            };
-            DEBUG("hull.acre.spec","ACRE init failed (300 seconds).");
-        };
-    } else {
-        DEBUG("hull.acre.spec","Player is dead, setting ACRE spectator to 'true'.");
+    if (didJIP) then {
+        DEBUG("hull3.acre.init","Client JIPd, waiting for player to initialize.");
+        uiSleep 5;
+        waitUntil { uiSleep 0.1; !isNull player; };
+    };
+    if (!alive player) exitWith {
+        DEBUG("hull.acre.init","Player is dead, setting ACRE spectator to 'true'.");
         [true] call acre_api_fnc_setSpectator;
     };
+    DEBUG("hull.acre.init","Player is alive, starting ACRE init check.");
+    [false] call acre_api_fnc_setSpectator;
+    [0.7] call acre_api_fnc_setSelectableVoiceCurve;
+    DEBUG("hull.acre.init","ACRE Spectator set to 'false' and voice level to '0.7'.");
+    waitUntil {
+        DEBUG("hull.acre.init","Waiting for ACRE to replace 'ItemRadio'.");
+        uiSleep 0.3;
+        !("ItemRadio" in items player) && {!("ItemRadio" in assignedItems player)};
+    };
+    uiSleep 1;
+    waitUntil { [] call acre_api_fnc_isInitialized; };
+    DEBUG("hull.acre.init","ACRE initialized.");
+    [player] call hull3_gear_fnc_assignRadios;
+    player sideChat "ACRE2 Radios have been assigned.";
+    DEBUG("hull.acre.init",FMT_1("Radios assigned to '%1'.",player));
+    hull3_acre_isInitialized = true;
+    ["acre.initialized", [player]] call hull3_event_fnc_emitEvent;
+    [player] call hull3_acre_fnc_setRadioChannels;
+    DEBUG("hull.acre.init","Hull3 ACRE init finished.");
 };
 
 hull3_acre_fnc_setSettings = {
@@ -198,5 +206,73 @@ hull3_acre_fnc_getSideStep = {
         if (_side == EAST) exitWith {["ACRE", "Steps", "east"] call hull3_config_fnc_getNumber};
         if (_side == RESISTANCE) exitWith {["ACRE", "Steps", "resistance"] call hull3_config_fnc_getNumber};
         ["ACRE", "Steps", "default"] call hull3_config_fnc_getNumber;
+    };
+};
+
+hull3_acre_fnc_setRadioChannels = {
+    FUN_ARGS_1(_unit);
+
+    private ["_defaultShortRangeChannel", "_shortRangeChannelAssignments", "_shortRangeRadios", "_defaultLongRangeChannel", "_longRangeChannelAssignments"];
+    _defaultShortRangeChannel = ["ACRE", "ShortRange", "defaultChannel"] call hull3_config_fnc_getNumber;
+    _shortRangeChannelAssignments = ["ACRE", "ShortRange", "channels"] call hull3_config_fnc_getBothArray;
+    _shortRangeRadios = ["ACRE", "ShortRange", "radios"] call hull3_config_fnc_getArray;
+    _defaultLongRangeChannel = ["ACRE", "LongRange", "defaultChannel"] call hull3_config_fnc_getNumber;
+    _longRangeChannelAssignments = ["ACRE", "LongRange", "channels"] call hull3_config_fnc_getBothArray;
+    {
+        private ["_channelAssignments", "_defaultChannel", "_channel"];
+        if (([_x] call acre_api_fnc_getBaseRadio) in _shortRangeRadios) then {
+            _channelAssignments = _shortRangeChannelAssignments;
+            _defaultChannel = _defaultShortRangeChannel;
+        } else {
+            _channelAssignments = _longRangeChannelAssignments;
+            _defaultChannel = _defaultLongRangeChannel;
+        };
+        _channel = [_unit, _channelAssignments, _defaultChannel] call hull3_acre_fnc_getRadioChannelFromGroupId;
+        [_x, _channel] call acre_api_fnc_setRadioChannel;
+    } foreach ([] call acre_api_fnc_getCurrentRadioList);
+    ["acre.channels.set", [player]] call hull3_event_fnc_emitEvent;
+};
+
+hull3_acre_fnc_getRadioChannelFromGroupId = {
+    FUN_ARGS_3(_unit,_channelAssignments,_defaultChannel);
+
+    TRACE("hull3.acre.radio.channel",FMT_3("Getting channel for unit '%1' with assingments '%2' and default chanel '%3'.",_unit,_channelAssignments,_defaultChannel));
+    private ["_groupId", "_channels"];
+    _groupId = groupId group _unit;
+    _channels = _channelAssignments select { _x select 0 == _groupId };
+    TRACE("hull3.acre.radio.channel",FMT_2("Found channels are '%1' for groupId '%2'.",_channels,_groupId));
+
+    call {
+        private ["_channel", "_groupIdArray", "_firstCharChannels", "_groupIdWithoutFirstChar"];
+        if (count _channels > 0) exitWith { _channels select 0 select 1 };
+
+        _groupIdArray = toArray _groupId;
+        if (count _groupIdArray == 0) exitWith { _defaultChannel };
+
+        // For SLs and FTs we user the first character of the _groupId to find the channel.
+        _firstCharChannels = _channelAssignments select { _x select 0 == toString [_groupIdArray select 0] };
+        _groupIdWithoutFirstChar = toString (_groupIdArray select [1, count _groupIdArray - 1]);
+        TRACE("hull3.acre.radio.channel",FMT_4("_firstCharChannels is '%1', _groupIdWithoutFirstChar is '%2', parsed number is '%3' for groupId '%4'.",_firstCharChannels,_groupIdWithoutFirstChar,parseNumber _groupIdWithoutFirstChar,_groupId));
+        // FTs have a number as a second character.
+        if (count _firstCharChannels > 0 && {count _groupIdArray >= 2} && {parseNumber _groupIdWithoutFirstChar >= 1}) exitWith { _firstCharChannels select 0 select 1 };
+        // SLs have "S" and "L" as second and third characters.
+        if (count _firstCharChannels > 0 && {count _groupIdArray == 3} && {_groupIdWithoutFirstChar == "SL"}) exitWith { _firstCharChannels select 0 select 1 };
+
+        // We try to find matching channel assignments by using the first _n characters of the groupId plus the group number, up to 5 characters.
+        _channel = for "_i" from 2 to 5 do {
+            private ["_n", "_groupIdFirstNChars", "_nCharsChannels", "_groupIdWithoutFirstNChars"];
+            _n = _i;
+            _groupIdFirstNChars = toString (_groupIdArray select [0, _n]);
+            _nCharsChannels = _channelAssignments select { _x select 0 == _groupIdFirstNChars };
+            _groupIdWithoutFirstNChars = toString (_groupIdArray select [_n, count _groupIdArray - 1]);
+            TRACE("hull3.acre.radio.channel",FMT_6("_n is '%1', _groupIdFirstNChars is '%2', _nCharsChannels is '%3', _groupIdWithoutFirstNChars is '%4', parsed number is '%5' for groupId '%6'.",_n,_groupIdFirstNChars,_nCharsChannels,_groupIdWithoutFirstNChars,parseNumber _groupIdWithoutFirstNChars,_groupId));
+            if (count _nCharsChannels > 0 && {count _groupIdArray >= _n} && {parseNumber _groupIdWithoutFirstNChars >= 1}) exitWith { _nCharsChannels select 0 select 1 };
+        };
+
+        if (isNil {_channel}) then {
+            _channel = _defaultChannel;
+        };
+
+        _channel;
     };
 };

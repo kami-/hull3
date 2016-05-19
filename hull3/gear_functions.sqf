@@ -51,6 +51,7 @@ hull3_gear_fnc_assign = {
     } else {
         [_unit, _gearTemplate, _gearClass] call hull3_gear_fnc_assignVehicle;
     };
+    _unit setVariable ["hull3_gear_isAssgined", true, true];
     ["gear.assigned", [_unit]] call hull3_event_fnc_emitEvent;
 };
 
@@ -75,7 +76,6 @@ hull3_gear_fnc_assignUnitInit = {
     FUN_ARGS_3(_unit,_template,_class);
 
     _unit setVariable ["hull3_gear_class", _class, true];
-    _unit setVariable ["hull3_gear_template", _template, true];
     _unit setVariable ["hull3_gear_template", _template, true];
     _unit setVariable ["ace_medical_medicClass", 2, true]; // Allow everyone to use ACE epi-pen
     removeAllAssignedItems _unit;
@@ -168,7 +168,6 @@ hull3_gear_fnc_assignUnitTemplate = {
     } foreach _assignables;
     [_unit, _class, _template] call compile ([TYPE_CLASS_GEAR, _template, _class, "code"] call hull3_config_fnc_getText);
     _unit selectWeapon primaryWeapon _unit;
-    [_unit, _template, _class] call hull3_gear_fnc_assignRadios;
     DEBUG("hull3.gear.assign",FMT_3("Assigned gear class '%1' from template '%2' to unit '%3'.",_class,_template,_unit));
 };
 
@@ -260,8 +259,11 @@ hull3_gear_fnc_assignVehicleItems = {
 };
 
 hull3_gear_fnc_assignRadios = {
-    FUN_ARGS_3(_unit,_gearTemplate,_gearClass);
+    FUN_ARGS_1(_unit);
 
+    private ["_gearTemplate", "_gearClass"];
+    _gearTemplate = _unit getVariable ["hull3_gear_template", DEFAULT_TEMPLATE_NAME];
+    _gearClass = _unit getVariable ["hull3_gear_class", hull3_gear_unitBaseClass];
     [_unit] call hull3_gear_fnc_removeRadios;
     DECLARE(_assignables) = [
         ["uniformRadios",           CONFIG_TYPE_ARRAY,      "uniform",                  ASSIGN_UNIFORM_ITEM_FUNC,           CAN_ASSIGN_UNIFORM_ITEM_FUNC,           hull3_gear_fnc_assignSingleItemArray],
@@ -273,17 +275,16 @@ hull3_gear_fnc_assignRadios = {
         // ADD ACRE2 preset stuff here?
         [_x select 0, _unit, _configValue, _x select 2, _x select 3, _x select 4, _gearTemplate, _gearClass] call (_x select 5);
     } foreach _assignables;
+    DEBUG("hull3.gear.assign.acre",FMT_3("Assigned radios from template '%1' and class '%2' to unit '%3'.",_gearTemplate,_gearClass,_unit));
     ["gear.radio.assigned", [_unit]] call hull3_event_fnc_emitEvent;
 };
 
 hull3_gear_fnc_removeRadios = {
     FUN_ARGS_1(_unit);
 
+    private _radios = [] call acre_api_fnc_getCurrentRadioList;
+    DEBUG("hull3.gear.assign.acre",FMT_2("Removing radios from '%1' from unit '%2'.",_radios,_unit));
     {
-        if (_x == "ItemRadio" || {[_x] call acre_api_fnc_isRadio}) then {
-            _unit unassignItem _x;
-            _unit removeItem _x;
-        };
-    } foreach ((items _unit) + (assignedItems _unit)); // Have to remove from backpack, vest, uniform
-    TRACE("hull3.gear.assign",FMT_2("Removed radios from items '%1' of unit '%2'.",(items _unit) + (assignedItems _unit),_unit));
+        _unit removeItem _x;
+    } forEach _radios;
 };
