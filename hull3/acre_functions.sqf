@@ -55,11 +55,12 @@ hull3_acre_fnc_acreInit = {
     waitUntil { [] call acre_api_fnc_isInitialized; };
     DEBUG("hull.acre.init","ACRE initialized.");
     [player] call hull3_gear_fnc_assignRadios;
-    player sideChat "ACRE2 Radios have been assigned.";
     DEBUG("hull.acre.init",FMT_1("Radios assigned to '%1'.",player));
     hull3_acre_isInitialized = true;
     ["acre.initialized", [player]] call hull3_event_fnc_emitEvent;
+    waitUntil { [] call acre_api_fnc_isInitialized; };
     [player] call hull3_acre_fnc_setRadioChannels;
+    player sideChat "ACRE2 radios and channels have been assigned.";
     DEBUG("hull.acre.init","Hull3 ACRE init finished.");
 };
 
