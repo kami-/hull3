@@ -35,8 +35,8 @@ hull3_acre_fnc_acreInit = {
     };
     if (didJIP) then {
         DEBUG("hull3.acre.init","Client JIPd, waiting for player to initialize.");
-        uiSleep 5;
-        waitUntil { uiSleep 0.1; !isNull player; };
+        uiSleep 15;
+        waitUntil { uiSleep 0.2; !isNull player; };
     };
     if (!alive player) exitWith {
         DEBUG("hull.acre.init","Player is dead, setting ACRE spectator to 'true'.");
@@ -48,7 +48,7 @@ hull3_acre_fnc_acreInit = {
     DEBUG("hull.acre.init","ACRE Spectator set to 'false' and voice level to '0.7'.");
     waitUntil {
         DEBUG("hull.acre.init","Waiting for ACRE to replace 'ItemRadio'.");
-        uiSleep 0.3;
+        uiSleep 1;
         !("ItemRadio" in items player) && {!("ItemRadio" in assignedItems player)};
     };
     uiSleep 1;
@@ -60,7 +60,7 @@ hull3_acre_fnc_acreInit = {
     ["acre.initialized", [player]] call hull3_event_fnc_emitEvent;
     waitUntil { [] call acre_api_fnc_isInitialized; };
     [player] call hull3_acre_fnc_setRadioChannels;
-    player sideChat "ACRE2 radios and channels have been assigned.";
+    player globalChat "ACRE2 radios and channels have been assigned.";
     DEBUG("hull.acre.init","Hull3 ACRE init finished.");
 };
 
