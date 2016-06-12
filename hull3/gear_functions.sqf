@@ -41,13 +41,14 @@ hull3_gear_fnc_addEventHandlers = {
 hull3_gear_fnc_assign = {
     FUN_ARGS_4(_unit,_factionEntry,_gearEntry,_uniformEntry);
 
-    private ["_gearTemplate", "_gearClass"];
+    private ["_faction", "_gearTemplate", "_gearClass"];
     [_unit, _factionEntry] call hull3_gear_fnc_validateFaction;
+    _faction = [_unit, _factionEntry] call hull3_gear_fnc_getFaction;
     _gearTemplate = [_unit, _factionEntry, _gearEntry] call hull3_gear_fnc_getTemplate;
     _gearClass = [_unit, _gearEntry, _gearTemplate] call hull3_gear_fnc_getClass;
     if (_unit isKindOf "CAManBase") then {
         DECLARE(_uniformTemplate) = [_unit, _factionEntry, _uniformEntry] call hull3_uniform_fnc_getTemplate;
-        [_unit, _gearTemplate, _uniformTemplate, _gearClass] call hull3_gear_fnc_assignUnit;
+        [_unit, _faction, _gearTemplate, _uniformTemplate, _gearClass] call hull3_gear_fnc_assignUnit;
     } else {
         [_unit, _gearTemplate, _gearClass] call hull3_gear_fnc_assignVehicle;
     };
@@ -56,12 +57,12 @@ hull3_gear_fnc_assign = {
 };
 
 hull3_gear_fnc_assignUnit = {
-    FUN_ARGS_4(_unit,_gearTemplate,_uniformTemplate,_gearClass);
+    FUN_ARGS_5(_unit,_faction,_gearTemplate,_uniformTemplate,_gearClass);
 
-    DEBUG("hull3.gear.assign",FMT_3("Set gear template to '%1', uniform template to '%2' and gear class to '%3'.",_gearTemplate,_uniformTemplate,_gearClass));
+    DEBUG("hull3.gear.assign",FMT_4("Set faction to '%1', gear template to '%2', uniform template to '%3' and gear class to '%4'.",_faction,_gearTemplate,_uniformTemplate,_gearClass));
     [_unit, _uniformTemplate] call hull3_uniform_fnc_assignUniformInit;
     [_unit, _gearTemplate, _uniformTemplate, _gearClass] call hull3_uniform_fnc_assignUniformTemplate;
-    [_unit, _gearTemplate, _gearClass] call hull3_gear_fnc_assignUnitInit;
+    [_unit, _faction, _gearTemplate, _gearClass] call hull3_gear_fnc_assignUnitInit;
     [_unit, _gearTemplate, _gearClass] call hull3_gear_fnc_assignUnitTemplate;
 };
 
@@ -73,8 +74,9 @@ hull3_gear_fnc_assignVehicle = {
 };
 
 hull3_gear_fnc_assignUnitInit = {
-    FUN_ARGS_3(_unit,_template,_class);
+    FUN_ARGS_4(_unit,_faction,_template,_class);
 
+    _unit setVariable ["hull3_faction", _faction, true];
     _unit setVariable ["hull3_gear_class", _class, true];
     _unit setVariable ["hull3_gear_template", _template, true];
     _unit setVariable ["ace_medical_medicClass", 2, true]; // Allow everyone to use ACE epi-pen
@@ -101,6 +103,17 @@ hull3_gear_fnc_validateFaction = {
     if (count _factionEntry > 0 && {!isClass ([FACTION_CONFIG, _factionEntry select 0] call hull3_config_fnc_getConfig)}) then {
         WARN("hull3.gear.assign",FMT_2("No faction found with name '%1' for unit '%2'!",_factionEntry select 0,_unit));
     };
+};
+
+hull3_gear_fnc_getFaction = {
+    FUN_ARGS_2(_unit,_factionEntry);
+
+    private _faction = DEFAULT_FACTION_NAME;
+    if (count _factionEntry > 0 && {isClass ([FACTION_CONFIG, _factionEntry select 0] call hull3_config_fnc_getConfig)}) then {
+        _faction = _factionEntry select 0;
+    };
+
+    _faction;
 };
 
 hull3_gear_fnc_getClass = {
