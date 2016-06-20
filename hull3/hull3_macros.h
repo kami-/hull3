@@ -18,6 +18,7 @@
 #define CONFIG_TYPE_ARRAY               3
 #define CONFIG_TYPE_FUNCTIONS           [hull3_config_fnc_getBool, hull3_config_fnc_getNumber, hull3_config_fnc_getText, hull3_config_fnc_getArray]
 
+#define DEFAULT_FACTION_NAME            "Default"
 #define DEFAULT_TEMPLATE_NAME           "Default"
 
 #define FACTION_CONFIG                  "Faction"

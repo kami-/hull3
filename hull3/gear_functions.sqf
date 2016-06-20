@@ -41,26 +41,28 @@ hull3_gear_fnc_addEventHandlers = {
 hull3_gear_fnc_assign = {
     FUN_ARGS_4(_unit,_factionEntry,_gearEntry,_uniformEntry);
 
-    private ["_gearTemplate", "_gearClass"];
+    private ["_faction", "_gearTemplate", "_gearClass"];
     [_unit, _factionEntry] call hull3_gear_fnc_validateFaction;
+    _faction = [_unit, _factionEntry] call hull3_gear_fnc_getFaction;
     _gearTemplate = [_unit, _factionEntry, _gearEntry] call hull3_gear_fnc_getTemplate;
     _gearClass = [_unit, _gearEntry, _gearTemplate] call hull3_gear_fnc_getClass;
     if (_unit isKindOf "CAManBase") then {
         DECLARE(_uniformTemplate) = [_unit, _factionEntry, _uniformEntry] call hull3_uniform_fnc_getTemplate;
-        [_unit, _gearTemplate, _uniformTemplate, _gearClass] call hull3_gear_fnc_assignUnit;
+        [_unit, _faction, _gearTemplate, _uniformTemplate, _gearClass] call hull3_gear_fnc_assignUnit;
     } else {
         [_unit, _gearTemplate, _gearClass] call hull3_gear_fnc_assignVehicle;
     };
+    _unit setVariable ["hull3_gear_isAssgined", true, true];
     ["gear.assigned", [_unit]] call hull3_event_fnc_emitEvent;
 };
 
 hull3_gear_fnc_assignUnit = {
-    FUN_ARGS_4(_unit,_gearTemplate,_uniformTemplate,_gearClass);
+    FUN_ARGS_5(_unit,_faction,_gearTemplate,_uniformTemplate,_gearClass);
 
-    DEBUG("hull3.gear.assign",FMT_3("Set gear template to '%1', uniform template to '%2' and gear class to '%3'.",_gearTemplate,_uniformTemplate,_gearClass));
+    DEBUG("hull3.gear.assign",FMT_4("Set faction to '%1', gear template to '%2', uniform template to '%3' and gear class to '%4'.",_faction,_gearTemplate,_uniformTemplate,_gearClass));
     [_unit, _uniformTemplate] call hull3_uniform_fnc_assignUniformInit;
     [_unit, _gearTemplate, _uniformTemplate, _gearClass] call hull3_uniform_fnc_assignUniformTemplate;
-    [_unit, _gearTemplate, _gearClass] call hull3_gear_fnc_assignUnitInit;
+    [_unit, _faction, _gearTemplate, _gearClass] call hull3_gear_fnc_assignUnitInit;
     [_unit, _gearTemplate, _gearClass] call hull3_gear_fnc_assignUnitTemplate;
 };
 
@@ -72,10 +74,10 @@ hull3_gear_fnc_assignVehicle = {
 };
 
 hull3_gear_fnc_assignUnitInit = {
-    FUN_ARGS_3(_unit,_template,_class);
+    FUN_ARGS_4(_unit,_faction,_template,_class);
 
+    _unit setVariable ["hull3_faction", _faction, true];
     _unit setVariable ["hull3_gear_class", _class, true];
-    _unit setVariable ["hull3_gear_template", _template, true];
     _unit setVariable ["hull3_gear_template", _template, true];
     _unit setVariable ["ace_medical_medicClass", 2, true]; // Allow everyone to use ACE epi-pen
     removeAllAssignedItems _unit;
@@ -101,6 +103,17 @@ hull3_gear_fnc_validateFaction = {
     if (count _factionEntry > 0 && {!isClass ([FACTION_CONFIG, _factionEntry select 0] call hull3_config_fnc_getConfig)}) then {
         WARN("hull3.gear.assign",FMT_2("No faction found with name '%1' for unit '%2'!",_factionEntry select 0,_unit));
     };
+};
+
+hull3_gear_fnc_getFaction = {
+    FUN_ARGS_2(_unit,_factionEntry);
+
+    private _faction = DEFAULT_FACTION_NAME;
+    if (count _factionEntry > 0 && {isClass ([FACTION_CONFIG, _factionEntry select 0] call hull3_config_fnc_getConfig)}) then {
+        _faction = _factionEntry select 0;
+    };
+
+    _faction;
 };
 
 hull3_gear_fnc_getClass = {
@@ -168,7 +181,6 @@ hull3_gear_fnc_assignUnitTemplate = {
     } foreach _assignables;
     [_unit, _class, _template] call compile ([TYPE_CLASS_GEAR, _template, _class, "code"] call hull3_config_fnc_getText);
     _unit selectWeapon primaryWeapon _unit;
-    [_unit, _template, _class] call hull3_gear_fnc_assignRadios;
     DEBUG("hull3.gear.assign",FMT_3("Assigned gear class '%1' from template '%2' to unit '%3'.",_class,_template,_unit));
 };
 
@@ -260,8 +272,11 @@ hull3_gear_fnc_assignVehicleItems = {
 };
 
 hull3_gear_fnc_assignRadios = {
-    FUN_ARGS_3(_unit,_gearTemplate,_gearClass);
+    FUN_ARGS_1(_unit);
 
+    private ["_gearTemplate", "_gearClass"];
+    _gearTemplate = _unit getVariable ["hull3_gear_template", DEFAULT_TEMPLATE_NAME];
+    _gearClass = _unit getVariable ["hull3_gear_class", hull3_gear_unitBaseClass];
     [_unit] call hull3_gear_fnc_removeRadios;
     DECLARE(_assignables) = [
         ["uniformRadios",           CONFIG_TYPE_ARRAY,      "uniform",                  ASSIGN_UNIFORM_ITEM_FUNC,           CAN_ASSIGN_UNIFORM_ITEM_FUNC,           hull3_gear_fnc_assignSingleItemArray],
@@ -273,17 +288,16 @@ hull3_gear_fnc_assignRadios = {
         // ADD ACRE2 preset stuff here?
         [_x select 0, _unit, _configValue, _x select 2, _x select 3, _x select 4, _gearTemplate, _gearClass] call (_x select 5);
     } foreach _assignables;
+    DEBUG("hull3.gear.assign.acre",FMT_3("Assigned radios from template '%1' and class '%2' to unit '%3'.",_gearTemplate,_gearClass,_unit));
     ["gear.radio.assigned", [_unit]] call hull3_event_fnc_emitEvent;
 };
 
 hull3_gear_fnc_removeRadios = {
     FUN_ARGS_1(_unit);
 
+    private _radios = [] call acre_api_fnc_getCurrentRadioList;
+    DEBUG("hull3.gear.assign.acre",FMT_2("Removing radios from '%1' from unit '%2'.",_radios,_unit));
     {
-        if (_x == "ItemRadio" || {[_x] call acre_api_fnc_isRadio}) then {
-            _unit unassignItem _x;
-            _unit removeItem _x;
-        };
-    } foreach ((items _unit) + (assignedItems _unit)); // Have to remove from backpack, vest, uniform
-    TRACE("hull3.gear.assign",FMT_2("Removed radios from items '%1' of unit '%2'.",(items _unit) + (assignedItems _unit),_unit));
+        _unit removeItem _x;
+    } forEach _radios;
 };

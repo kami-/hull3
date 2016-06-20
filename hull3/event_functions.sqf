@@ -74,6 +74,7 @@ FNC_ADD_ALL_EVENTS = {
     ["player.respawned", "player_respawned"] call FNC_ADD_EVENT;
     ["marker.group.created", "marker_group_created"] call FNC_ADD_EVENT;
     ["acre.initialized", "acre_initialized"] call FNC_ADD_EVENT;
+    ["acre.channels.set", "acre_channels_set"] call FNC_ADD_EVENT;
     ["gear.assigned", "gear_assigned"] call FNC_ADD_EVENT;
     ["gear.radio.assigned", "gear_radio_assigned"] call FNC_ADD_EVENT;
     ["mission.safetytimer.ended", "mission_safetytimer_ended"] call FNC_ADD_EVENT;
