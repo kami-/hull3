@@ -150,7 +150,7 @@ class Faction {
     };
 
     class MNP_USMC_SN {
-        gear = "M16A4_USMC";
+        gear = "M4A1_USMC";
         uniform = "USMC_SN";
         name = "USMC Snow";
         description = "Snow Camo with M4A1's( Modern or Near Future)";
@@ -375,10 +375,10 @@ class Faction {
     };
 
     class MNP_GE_WD {
-        gear = "HK416";
+        gear = "G36_GER";
         uniform = "GER_WD";
         name = "German Army Woodland";
-        description = "Flecktarn uniforms with HK416's";
+        description = "Flecktarn uniforms with G36's";
         languages[] = {{"west", 100}};
         side = "west";
         camouflage[] = {"woodland"};
@@ -400,10 +400,10 @@ class Faction {
     };
 
     class MNP_GE_DE {
-        gear = "HK416";
+        gear = "G36_GER";
         uniform = "GER_DE";
         name = "German Army Desert";
-        description = "Tropentarn uniforms with HK416's";
+        description = "Tropentarn uniforms with G36's";
         languages[] = {{"west", 100}};
         side = "west";
         camouflage[] = {"desert"};

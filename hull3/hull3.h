@@ -127,6 +127,8 @@ class Hull3 {
         #include "assign\gear\FAL_TKA.h"
         #include "assign\gear\G3A3_IRN.h"
         #include "assign\gear\G3KA4_NOR.h"
+        #include "assign\gear\G36_GER.h"
+        #include "assign\gear\G36_KSK.h"
         #include "assign\gear\HK416.h"
         #include "assign\gear\HK416_KSK.h"
         #include "assign\gear\Katiba_CN.h"
