@@ -122,6 +122,7 @@ class Hull3 {
         #include "assign\gear\AUGA3_AUS.h"
         #include "assign\gear\AUGA3_IRE.h"
         #include "assign\gear\AUGA3_NZ.h"
+        #include "assign\gear\CAR15_US.h"
         #include "assign\gear\FAL_ARC.h"
         #include "assign\gear\FAL_PMC.h"
         #include "assign\gear\FAL_TKA.h"
