@@ -531,6 +531,7 @@ class Faction {
         description = "Auscam uniforms with AUG A3's";
         languages[] = {{"west", 100}};
         side = "west";
+        camouflage[] = {"woodland", "desert"};
         rolePrefix = "Australian Army";
         vehicleClassnames[] = {
             {"CO", "CUP_B_HMMWV_Unarmed_USMC"},
