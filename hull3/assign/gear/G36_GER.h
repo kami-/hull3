@@ -136,7 +136,6 @@ class G36_GER {
     };
 
     class AAR : Rifleman {
-        primaryWeapon = "CUP_arifle_L86A2";
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
