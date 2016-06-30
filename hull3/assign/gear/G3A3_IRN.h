@@ -69,7 +69,7 @@ class G3A3_IRN {
 
     class Officer : Leader {
         assignItems[] = {"ItemGPS"};
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
 
@@ -178,7 +178,7 @@ class G3A3_IRN {
             {"SmokeShell", 1},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 4}
         };
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
@@ -192,7 +192,7 @@ class G3A3_IRN {
     class HMGAG : HMGG {
         backpack = "O_HMG_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
     
@@ -215,7 +215,7 @@ class G3A3_IRN {
             {"CUP_PG7VR_M", 1},
             {"CUP_OG7_M", 1}
         };
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
@@ -258,7 +258,7 @@ class G3A3_IRN {
             {"Chemlight_green", 2},
             {"SmokeShell", 1}
         };
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
     
@@ -281,7 +281,7 @@ class G3A3_IRN {
             {"SmokeShell", 1}
         };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
 
@@ -304,7 +304,7 @@ class G3A3_IRN {
             {"Chemlight_green", 2},
             {"SmokeShell", 1}
         };
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
     
@@ -324,7 +324,7 @@ class G3A3_IRN {
             {"Chemlight_green", 2},
             {"SmokeShell", 1}
         };
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
     
@@ -372,7 +372,7 @@ class G3A3_IRN {
     };
 
     class SP : Rifleman {
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         vestMagazines[] = {
             {"hlc_20rnd_762x51_b_G3", 4},
             {"hlc_20rnd_762x51_T_G3", 2}
@@ -380,7 +380,7 @@ class G3A3_IRN {
     };
 
     class VC : Crew {
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
     };
 
     class VG : Crew {

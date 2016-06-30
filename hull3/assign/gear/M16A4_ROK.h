@@ -69,7 +69,7 @@ class M16A4_ROK {
 
     class Officer : Leader {
         assignItems[] = {"ItemGPS"};
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
 
@@ -182,7 +182,7 @@ class M16A4_ROK {
             {"hlc_100Rnd_762x51_B_M60E4", 3},
             {"hlc_100Rnd_762x51_T_M60E4", 2}
         };
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
@@ -197,7 +197,7 @@ class M16A4_ROK {
     class HMGAG : HMGG {
         backpack = "O_HMG_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
     
@@ -218,7 +218,7 @@ class M16A4_ROK {
             {"CUP_MAAWS_HEAT_M", 2},
             {"CUP_MAAWS_HEDP_M", 1}
         };
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
@@ -262,7 +262,7 @@ class M16A4_ROK {
             {"Chemlight_green", 2},
             {"SmokeShell", 1}
         };
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
     
@@ -287,7 +287,7 @@ class M16A4_ROK {
             {"SmokeShell", 1}
         };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
 
@@ -311,7 +311,7 @@ class M16A4_ROK {
             {"Chemlight_green", 2},
             {"SmokeShell", 1}
         };
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
     
@@ -332,7 +332,7 @@ class M16A4_ROK {
             {"Chemlight_green", 2},
             {"SmokeShell", 1}
         };
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
     
@@ -382,11 +382,11 @@ class M16A4_ROK {
     };
 
     class SP : Rifleman {
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
     };
 
     class VC : Crew {
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
     };
 
     class VG : Crew {
