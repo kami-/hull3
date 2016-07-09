@@ -18,7 +18,7 @@ hull3_unit_fnc_init = {
         [_unit] call hull3_unit_fnc_addEHs;
     };
     _markerEntry = [_initEntries, "marker"] call hull3_config_fnc_getEntry;
-    if (count _markerEntry > 0 && {!isDedicated}) then {
+    if (count _markerEntry > 0) then {
         [_unit, _markerEntry select 0, _markerEntry select 1] call hull3_marker_fnc_initMarker;
     };
 };

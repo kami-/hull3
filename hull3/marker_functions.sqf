@@ -5,16 +5,24 @@
 
 
 hull3_marker_fnc_preInit = {
-    if (!isDedicated) then {
-        hull3_marker_rawGroupMarkers = [];
-        hull3_marker_updatableMarkers = [];
-        hull3_marker_groups = [];
-        hull3_marker_units = [];
-        hull3_marker_fireTeam = [];
-        hull3_marker_custom = [];
-        hull3_marker_defaultDelay = ["Marker", "defaultDelay"] call hull3_config_fnc_getNumber;
-    };
+    hull3_marker_rawGroupMarkers = [];
+    hull3_marker_updatableMarkers = [];
+    hull3_marker_groups = [];
+    hull3_marker_units = [];
+    hull3_marker_fireTeam = [];
+    hull3_marker_custom = [];
+    hull3_marker_defaultDelay = ["Marker", "defaultDelay"] call hull3_config_fnc_getNumber;
     DEBUG("hull3.marker","Marker functions preInit finished.");
+};
+
+hull3_marker_fnc_postInit = {
+    if (isDedicated) then {
+        {
+            _x params ["_unit", "_gearClass", "_markerText"];
+            DEBUG("hull3.marker.group",FMT_2("Setting Group ID on server for group '%1' to '%2'.",group _unit,_markerText));
+            (group _unit) setGroupId [_markerText];
+        } foreach hull3_marker_rawGroupMarkers;
+    };
 };
 
 hull3_marker_fnc_initMarker = {
