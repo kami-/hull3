@@ -14,7 +14,7 @@ if (hull3_isEnabled) then {
         [] spawn hull3_unit_fnc_playerInit;
         if (isServer) then {
             [] call hull3_mission_fnc_serverInit;
-            [] call hull3_gc_fnc_start;
+            [] spawn hull3_gc_fnc_start;
         };
     } else {
         [] call hull3_mission_fnc_serverInit;
