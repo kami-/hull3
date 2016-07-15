@@ -69,7 +69,7 @@ class AK47_NK {
 
     class Officer : Leader {
         assignItems[] = {"ItemGPS"};
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
 
@@ -180,7 +180,7 @@ class AK47_NK {
             {"hlc_30Rnd_762x39_t_ak", 2},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 3}
         };
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
@@ -194,7 +194,7 @@ class AK47_NK {
     class HMGAG : HMGG {
         backpack = "O_HMG_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
     
@@ -217,7 +217,7 @@ class AK47_NK {
             {"CUP_PG7VR_M", 1},
             {"CUP_OG7_M", 1}
         };
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
@@ -239,7 +239,7 @@ class AK47_NK {
             {"HandGrenade", 1},
             {"CUP_AT13_M", 1}
         };
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
@@ -264,7 +264,7 @@ class AK47_NK {
             {"Chemlight_green", 2},
             {"SmokeShell", 1}
         };
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
     
@@ -288,7 +288,7 @@ class AK47_NK {
             {"SmokeShell", 1}
         };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
 
@@ -312,7 +312,7 @@ class AK47_NK {
             {"Chemlight_green", 2},
             {"SmokeShell", 1}
         };
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
     
@@ -333,7 +333,7 @@ class AK47_NK {
             {"Chemlight_green", 2},
             {"SmokeShell", 1}
         };
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
     
@@ -383,7 +383,7 @@ class AK47_NK {
     };
 
     class SP : Rifleman {
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         vestMagazines[] = {
             {"hlc_30Rnd_762x39_b_ak", 4},
             {"hlc_30Rnd_762x39_t_ak", 2}
@@ -391,7 +391,7 @@ class AK47_NK {
     };
 
     class VC : Crew {
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
     };
 
     class VG : Crew {

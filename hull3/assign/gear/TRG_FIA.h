@@ -68,7 +68,7 @@ class TRG_FIA {
 
     class Officer : Leader {
         assignItems[] = {"ItemGPS"};
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         vestRadios[] = {"ACRE_PRC152"};
     };
 
@@ -185,7 +185,7 @@ class TRG_FIA {
             {"Chemlight_green", 2},
             {"SmokeShell", 1}
         };
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
         vestRadios[] = {"ACRE_PRC152"};
     };
@@ -203,7 +203,7 @@ class TRG_FIA {
             {"Chemlight_green", 2},
             {"SmokeShell", 1}
         };
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
         vestRadios[] = {"ACRE_PRC152"};
     };
@@ -227,7 +227,7 @@ class TRG_FIA {
             {"Chemlight_green", 2},
             {"SmokeShell", 1}
         };
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
         vestRadios[] = {"ACRE_PRC152"};
     };
@@ -274,7 +274,7 @@ class TRG_FIA {
             {"Chemlight_green", 2},
             {"SmokeShell", 1}
         };
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
     
@@ -298,7 +298,7 @@ class TRG_FIA {
             {"SmokeShell", 1}
         };
         vestRadios[] = {"ACRE_PRC152"};
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
 
@@ -321,7 +321,7 @@ class TRG_FIA {
             {"Chemlight_green", 2},
             {"SmokeShell", 1}
         };
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
     
@@ -342,7 +342,7 @@ class TRG_FIA {
             {"Chemlight_green", 2},
             {"SmokeShell", 1}
         };
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
     
@@ -392,11 +392,11 @@ class TRG_FIA {
     };
 
     class SP : Rifleman {
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
     };
 
     class VC : Crew {
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
     };
 
     class VG : Crew {

@@ -69,7 +69,7 @@ class Katiba_CN {
 
     class Officer : Leader {
         assignItems[] = {"ItemGPS"};
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
 
@@ -182,7 +182,7 @@ class Katiba_CN {
             {"SmokeShell", 1},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 3}
         };
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
     };
 
      class HMGG : Rifleman {
@@ -195,7 +195,7 @@ class Katiba_CN {
     class HMGAG : HMGG {
         backpack = "O_HMG_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
     
@@ -219,7 +219,7 @@ class Katiba_CN {
             {"CUP_PG7VR_M", 1},
             {"CUP_OG7_M", 1}
         };
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
@@ -260,7 +260,7 @@ class Katiba_CN {
             {"Chemlight_green", 2},
             {"SmokeShell", 1}
         };
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
     
@@ -284,7 +284,7 @@ class Katiba_CN {
             {"SmokeShell", 1}
         };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
 
@@ -308,7 +308,7 @@ class Katiba_CN {
             {"Chemlight_green", 2},
             {"SmokeShell", 1}
         };
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
     
@@ -329,7 +329,7 @@ class Katiba_CN {
             {"Chemlight_green", 2},
             {"SmokeShell", 1}
         };
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
     
@@ -378,11 +378,11 @@ class Katiba_CN {
     };
 
     class SP : Rifleman {
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
     };
 
     class VC : Crew {
-        binocular = "ACE_Vector";
+        binocular = "ACE_VectorDay";
     };
 
     class VG : Crew {

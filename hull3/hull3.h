@@ -208,7 +208,7 @@ class Hull3 {
             languages[] = {
                 {"west", "WEST"},
                 {"east", "EAST"},
-                {"guer", "GUER"},
+                {"resistance", "RESISTANCE"},
                 {"civ", "CIV"}
             };
         };

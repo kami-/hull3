@@ -21,9 +21,13 @@ hull3_gc_fnc_preInit = {
 };
 
 hull3_gc_fnc_start = {
+    sleep 1;
     {
         _x setVariable ["hull3_gc_canRemove", false];
     } foreach playableUnits;
+    {
+        _x setVariable ["hull3_gc_canRemove", false];
+    } foreach allDead;
     if (hull3_gc_isEnabled) then {
         hull3_gc_canRemoveCorpses = true;
         hull3_gc_canRemoveWrecks = true;
