@@ -20,7 +20,8 @@ class Faction {
             {"TNK", "C_Kart_01_F"},
             {"TH", "C_Kart_01_F"},
             {"AH", "C_Kart_01_F"},
-            {"CAS", "C_Kart_01_F"}
+            {"CAS", "C_Kart_01_F"},
+            {"Technical", "C_Kart_01_F"}
         };
     };
 
@@ -45,7 +46,8 @@ class Faction {
             {"TNK", "B_MBT_01_cannon_F"},
             {"TH", "B_Heli_Transport_01_F"},
             {"AH", "B_Heli_Attack_01_F"},
-            {"CAS", "B_Plane_CAS_01_F"}
+            {"CAS", "B_Plane_CAS_01_F"},
+            {"Technical", "CUP_B_HMMWV_M2_USA"}
         };
     };
 
@@ -70,7 +72,8 @@ class Faction {
             {"TNK", "CUP_O_T72_SLA"},
             {"TH", "CUP_C_Mi17_Civilian_RU"},
             {"AH", "CUP_O_Mi8_SLA_2"},
-            {"CAS", "CUP_O_Su25_SLA"}
+            {"CAS", "CUP_O_Su25_SLA"},
+            {"Technical", "B_G_Offroad_01_armed_F"}
         };
     };
 
@@ -95,7 +98,8 @@ class Faction {
             {"TNK", "CUP_B_M1A1_Woodland_USMC"},
             {"TH", "CUP_B_CH53E_USMC"},
             {"AH", "CUP_B_AH1Z"},
-            {"CAS", "CUP_B_AV8B_Hydra19"}
+            {"CAS", "CUP_B_AV8B_Hydra19"},
+            {"Technical", "CUP_B_HMMWV_M2_USMC"}
         };
     };
 
@@ -120,7 +124,8 @@ class Faction {
             {"TNK", "CUP_B_M1A1_DES_USMC"},
             {"TH", "CUP_B_CH53E_USMC"},
             {"AH", "CUP_B_AH1Z"},
-            {"CAS", "CUP_B_AV8B_Hydra19"}
+            {"CAS", "CUP_B_AV8B_Hydra19"},
+            {"Technical", "CUP_B_HMMWV_M2_USA"}
         };
     };
 
@@ -145,7 +150,8 @@ class Faction {
             {"TNK", "CUP_B_M1A1_DES_USMC"},
             {"TH", "CUP_B_CH53E_USMC"},
             {"AH", "CUP_B_AH1Z"},
-            {"CAS", "CUP_B_AV8B_Hydra19"}
+            {"CAS", "CUP_B_AV8B_Hydra19"},
+            {"Technical", "CUP_B_HMMWV_M2_USMC"}
         };
     };
 
@@ -170,7 +176,8 @@ class Faction {
             {"TNK", "CUP_B_M1A1_Woodland_USMC"},
             {"TH", "CUP_B_CH47F_USA"},
             {"AH", "CUP_B_AH1Z"},
-            {"CAS", "CUP_B_AV8B_Hydra19"}
+            {"CAS", "CUP_B_AV8B_Hydra19"},
+            {"Technical", "CUP_B_HMMWV_M2_USMC"}
         };
     };
 
@@ -195,7 +202,8 @@ class Faction {
             {"TNK", "CUP_B_M1A2_TUSK_MG_DES_US_Army"},
             {"TH", "CUP_B_UH60M_US"},
             {"AH", "CUP_B_AH64D_USA"},
-            {"CAS", "CUP_B_A10_CAS_USA"}
+            {"CAS", "CUP_B_A10_CAS_USA"},
+            {"Technical", "CUP_B_HMMWV_M2_USA"}
         };
     };
 
@@ -220,7 +228,8 @@ class Faction {
             {"TNK", "CUP_B_M1A2_TUSK_MG_DES_US_Army"},
             {"TH", "CUP_B_UH60M_US"},
             {"AH", "CUP_B_AH64D_USA"},
-            {"CAS", "CUP_B_A10_CAS_USA"}
+            {"CAS", "CUP_B_A10_CAS_USA"},
+            {"Technical", "CUP_B_HMMWV_M2_USA"}
         };
     };
 
@@ -245,7 +254,8 @@ class Faction {
             {"TNK", "CUP_B_M1A1_Woodland_US_Army"},
             {"TH", "CUP_B_UH60M_US"},
             {"AH", "CUP_B_AH64D_USA"},
-            {"CAS", "CUP_B_A10_AT_USA"}
+            {"CAS", "CUP_B_A10_AT_USA"},
+            {"Technical", "CUP_B_HMMWV_M2_USMC"}
         };
     };
 
@@ -270,7 +280,8 @@ class Faction {
             {"TNK", "CUP_B_M1A1_DES_US_Army"},
             {"TH", "CUP_B_UH60M_US"},
             {"AH", "CUP_B_AH64D_USA"},
-            {"CAS", "CUP_B_A10_CAS_USA"}
+            {"CAS", "CUP_B_A10_CAS_USA"},
+            {"Technical", "CUP_B_HMMWV_M2_USA"}
         };
     };
 
@@ -295,7 +306,8 @@ class Faction {
             {"TNK", "CUP_B_M1A2_TUSK_MG_DES_US_Army"},
             {"TH", "CUP_B_UH60M_US"},
             {"AH", "CUP_B_AH64D_USA"},
-            {"CAS", "CUP_B_A10_CAS_USA"}
+            {"CAS", "CUP_B_A10_CAS_USA"},
+            {"Technical", "CUP_B_HMMWV_M2_USA"}
         };
     };
 
@@ -320,7 +332,8 @@ class Faction {
             {"TNK", "CUP_B_M1A2_TUSK_MG_DES_US_Army"},
             {"TH", "CUP_B_UH60M_US"},
             {"AH", "CUP_B_AH64D_USA"},
-            {"CAS", "CUP_B_A10_CAS_USA"}
+            {"CAS", "CUP_B_A10_CAS_USA"},
+            {"Technical", "CUP_B_HMMWV_M2_USA"}
         };
     };
 
@@ -345,7 +358,8 @@ class Faction {
             {"TNK", "CUP_B_M1A2_TUSK_MG_DES_US_Army"},
             {"TH", "CUP_B_UH60M_US"},
             {"AH", "CUP_B_AH64D_USA"},
-            {"CAS", "CUP_B_A10_CAS_USA"}
+            {"CAS", "CUP_B_A10_CAS_USA"},
+            {"Technical", "CUP_B_HMMWV_M2_USA"}
         };
     };
 
@@ -370,7 +384,8 @@ class Faction {
             {"TNK", "CUP_B_M1A2_TUSK_MG_US_Army"},
             {"TH", "CUP_B_UH60M_US"},
             {"AH", "CUP_B_AH64D_USA"},
-            {"CAS", "CUP_B_A10_CAS_USA"}
+            {"CAS", "CUP_B_A10_CAS_USA"},
+            {"Technical", "CUP_B_HMMWV_M2_USMC"}
         };
     };
 
@@ -395,7 +410,8 @@ class Faction {
             {"TNK", "B_MBT_01_cannon_F"},
             {"TH", "B_Heli_Transport_01_F"},
             {"AH", "B_Heli_Attack_01_F"},
-            {"CAS", "B_Plane_CAS_01_F"}
+            {"CAS", "B_Plane_CAS_01_F"},
+            {"Technical", "CUP_B_LR_Special_M2_GB_W"}
         };
     };
 
@@ -420,7 +436,8 @@ class Faction {
             {"TNK", "B_MBT_01_cannon_F"},
             {"TH", "B_Heli_Transport_01_F"},
             {"AH", "B_Heli_Attack_01_F"},
-            {"CAS", "B_Plane_CAS_01_F"}
+            {"CAS", "B_Plane_CAS_01_F"},
+            {"Technical", "CUP_B_LR_Special_M2_GB_D"}
         };
     };
 
@@ -445,7 +462,8 @@ class Faction {
             {"TNK", "B_MBT_01_cannon_F"},
             {"TH", "B_Heli_Transport_01_F"},
             {"AH", "B_Heli_Attack_01_F"},
-            {"CAS", "B_Plane_CAS_01_F"}
+            {"CAS", "B_Plane_CAS_01_F"},
+            {"Technical", "CUP_B_LR_Special_M2_GB_W"}
         };
     };
 
@@ -470,7 +488,8 @@ class Faction {
             {"TNK", "B_MBT_01_cannon_F"},
             {"TH", "B_Heli_Transport_01_F"},
             {"AH", "B_Heli_Attack_01_F"},
-            {"CAS", "B_Plane_CAS_01_F"}
+            {"CAS", "B_Plane_CAS_01_F"},
+            {"Technical", "CUP_B_LR_Special_M2_GB_D"}
         };
     };
 
@@ -495,7 +514,8 @@ class Faction {
             {"TNK", "I_MBT_03_cannon_F"},
             {"TH", "CUP_B_UH1Y_UNA_USMC"},
             {"AH", "CUP_B_UH1Y_GUNSHIP_USMC"},
-            {"CAS", "CUP_B_AV8B_Hydra19"}
+            {"CAS", "CUP_B_AV8B_Hydra19"},
+            {"Technical", "CUP_B_HMMWV_M2_USMC"}
         };
     };
 
@@ -520,7 +540,8 @@ class Faction {
             {"TNK", "AAF_D_MBT_03_cannon_F"},
             {"TH", "CUP_B_UH1Y_UNA_USMC"},
             {"AH", "CUP_B_UH1Y_GUNSHIP_USMC"},
-            {"CAS", "CUP_B_AV8B_Hydra19"}
+            {"CAS", "CUP_B_AV8B_Hydra19"},
+            {"Technical", "CUP_B_HMMWV_M2_USA"}
         };
     };
 
@@ -545,7 +566,8 @@ class Faction {
             {"TNK", "I_MBT_03_cannon_F"},
             {"TH", "CUP_B_UH60M_US"},
             {"AH", "CUP_B_UH1Y_GUNSHIP_USMC"},
-            {"CAS", "CUP_B_AV8B_Hydra19"}
+            {"CAS", "CUP_B_AV8B_Hydra19"},
+            {"Technical", "CUP_B_LR_Special_M2_GB_W"}
         };
     };
 
@@ -570,7 +592,8 @@ class Faction {
             {"TNK", "I_MBT_03_cannon_F"},
             {"TH", "CUP_B_UH60M_US"},
             {"AH", "CUP_B_UH1Y_GUNSHIP_USMC"},
-            {"CAS", "CUP_B_AV8B_Hydra19"}
+            {"CAS", "CUP_B_AV8B_Hydra19"},
+            {"Technical", "CUP_B_LR_Special_M2_GB_W"}
         };
     };
 
@@ -595,7 +618,8 @@ class Faction {
             {"TNK", "CUP_B_M1A1_Woodland_US_Army"},
             {"TH", "CUP_B_UH60M_US"},
             {"AH", "CUP_B_AH1Z"},
-            {"CAS", "CUP_B_AV8B_Hydra19"}
+            {"CAS", "CUP_B_AV8B_Hydra19"},
+            {"Technical", "CUP_B_HMMWV_M2_USA"}
         };
     };
 
@@ -620,7 +644,8 @@ class Faction {
             {"TNK", "CUP_B_T72_CDF"},
             {"TH", "CUP_B_Mi17_CDF"},
             {"AH", "CUP_B_Mi24_D_CDF"},
-            {"CAS", "CUP_B_Su25_CDF"}
+            {"CAS", "CUP_B_Su25_CDF"},
+            {"Technical", "CUP_B_UAZ_MG_CDF"}
         };
     };
 
@@ -645,7 +670,8 @@ class Faction {
             {"TNK", "CUP_I_T55_TK_GUE"},
             {"TH", "CUP_I_UH60L_RACS"},
             {"AH", "CUP_I_Mi24_D_ION"},
-            {"CAS", "CUP_O_Su25_SLA"}
+            {"CAS", "CUP_O_Su25_SLA"},
+            {"Technical", "CUP_I_SUV_Armored_ION"}
         };
     };
 
@@ -670,7 +696,8 @@ class Faction {
             {"TNK", "CUP_B_FV510_GB_W_SLAT"},
             {"TH", "CUP_B_SA330_Puma_HC2_BAF"},
             {"AH", "CUP_B_AH1_BAF"},
-            {"CAS", "CUP_B_GR9_Mk82_GB"}
+            {"CAS", "CUP_B_GR9_Mk82_GB"},
+            {"Technical", "CUP_B_LR_Special_M2_GB_W"}
         };
     };
 
@@ -695,7 +722,8 @@ class Faction {
             {"TNK", "CUP_B_FV510_GB_D_SLAT"},
             {"TH", "CUP_B_Merlin_HC3A_GB_Armed"},
             {"AH", "CUP_B_AH1_BAF"},
-            {"CAS", "CUP_B_GR9_Mk82_GB"}
+            {"CAS", "CUP_B_GR9_Mk82_GB"},
+            {"Technical", "CUP_B_LR_Special_M2_GB_D"}
         };
     };
 
@@ -720,10 +748,11 @@ class Faction {
             {"TNK", "CUP_B_FV510_GB_D_SLAT"},
             {"TH", "CUP_B_Merlin_HC3A_GB_Armed"},
             {"AH", "CUP_B_AH1_BAF"},
-            {"CAS", "CUP_B_GR9_Mk82_GB"}
+            {"CAS", "CUP_B_GR9_Mk82_GB"},
+            {"Technical", "CUP_B_LR_Special_M2_GB_D"}
         };
     };
-    
+
     class OPF_F {
         gear = "Katiba_CSAT";
         uniform = "CSAT";
@@ -745,7 +774,8 @@ class Faction {
             {"TNK", "O_MBT_02_cannon_F"},
             {"TH", "O_Heli_Light_02_F"},
             {"AH", "O_Heli_Attack_02_F"},
-            {"CAS", "O_Plane_CAS_02_F"}
+            {"CAS", "O_Plane_CAS_02_F"},
+            {"Technical", "CUP_O_UAZ_MG_CSAT"}
         };
     };
 
@@ -770,7 +800,8 @@ class Faction {
             {"TNK", "O_MBT_02_cannon_F"},
             {"TH", "O_Heli_Light_02_F"},
             {"AH", "O_Heli_Attack_02_F"},
-            {"CAS", "O_Plane_CAS_02_F"}
+            {"CAS", "O_Plane_CAS_02_F"},
+            {"Technical", "CUP_O_UAZ_MG_CSAT"}
         };
     };
 
@@ -795,7 +826,8 @@ class Faction {
             {"TNK", "CUP_O_T72_SLA"},
             {"TH", "CUP_O_Mi8_SLA_1"},
             {"AH", "O_Heli_Light_02_v2_F"},
-            {"CAS", "CUP_O_Su25_SLA"}
+            {"CAS", "CUP_O_Su25_SLA"},
+            {"Technical", "CUP_O_UAZ_MG_SLA"}
         };
     };
 
@@ -820,7 +852,8 @@ class Faction {
             {"TNK", "CUP_O_T72_SLA"},
             {"TH", "CUP_O_Mi8_SLA_1"},
             {"AH", "O_Heli_Light_02_v2_F"},
-            {"CAS", "CUP_O_Su25_SLA"}
+            {"CAS", "CUP_O_Su25_SLA"},
+            {"Technical", "CUP_O_UAZ_MG_SLA"}
         };
     };
 
@@ -845,7 +878,8 @@ class Faction {
             {"TNK", "CUP_O_T72_SLA"},
             {"TH", "CUP_O_Mi8_SLA_1"},
             {"AH", "O_Heli_Light_02_v2_F"},
-            {"CAS", "CUP_O_Su25_SLA"}
+            {"CAS", "CUP_O_Su25_SLA"},
+            {"Technical", "CUP_O_UAZ_MG_SLA"}
         };
     };
 
@@ -870,7 +904,8 @@ class Faction {
             {"TNK", "CUP_I_T55_TK_GUE"},
             {"TH", "CUP_O_Mi8_SLA_1"},
             {"AH", "O_Heli_Light_02_v2_F"},
-            {"CAS", "CUP_O_Su25_SLA"}
+            {"CAS", "CUP_O_Su25_SLA"},
+            {"Technical", "CUP_O_UAZ_MG_SLA"}
         };
     };
 
@@ -895,7 +930,8 @@ class Faction {
             {"TNK", "O_MBT_02_cannon_F"},
             {"TH", "O_Heli_Light_02_F"},
             {"AH", "O_Heli_Attack_02_F"},
-            {"CAS", "O_Plane_CAS_02_F"}
+            {"CAS", "O_Plane_CAS_02_F"},
+            {"Technical", "CUP_O_UAZ_MG_SLA"}
         };
     };
 
@@ -920,7 +956,8 @@ class Faction {
             {"TNK", "O_MBT_02_cannon_F"},
             {"TH", "O_Heli_Light_02_F"},
             {"AH", "O_Heli_Attack_02_F"},
-            {"CAS", "O_Plane_CAS_02_F"}
+            {"CAS", "O_Plane_CAS_02_F"},
+            {"Technical", "CUP_O_UAZ_MG_SLA"}
         };
     };
 
@@ -945,7 +982,8 @@ class Faction {
             {"TNK", "CUP_O_T72_RU"},
             {"TH", "CUP_O_Mi8_RU"},
             {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_RU_3"}
+            {"CAS", "CUP_O_Su25_RU_3"},
+            {"Technical", "CUP_O_UAZ_MG_RU"}
         };
     };
 
@@ -970,7 +1008,8 @@ class Faction {
             {"TNK", "CUP_O_T72_RU"},
             {"TH", "CUP_O_Mi8_RU"},
             {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_RU_3"}
+            {"CAS", "CUP_O_Su25_RU_3"},
+            {"Technical", "CUP_O_UAZ_MG_RU"}
         };
     };
 
@@ -995,7 +1034,8 @@ class Faction {
             {"TNK", "CUP_O_T72_RU"},
             {"TH", "CUP_O_Mi8_RU"},
             {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_RU_3"}
+            {"CAS", "CUP_O_Su25_RU_3"},
+            {"Technical", "CUP_O_UAZ_MG_RU"}
         };
     };
 
@@ -1020,7 +1060,8 @@ class Faction {
             {"TNK", "CUP_O_T72_RU"},
             {"TH", "CUP_O_Mi8_RU"},
             {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_RU_3"}
+            {"CAS", "CUP_O_Su25_RU_3"},
+            {"Technical", "CUP_O_UAZ_MG_RU"}
         };
     };
 
@@ -1045,7 +1086,8 @@ class Faction {
             {"TNK", "CUP_O_T72_RU"},
             {"TH", "CUP_O_Mi8_RU"},
             {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_RU_3"}
+            {"CAS", "CUP_O_Su25_RU_3"},
+            {"Technical", "CUP_O_UAZ_MG_RU"}
         };
     };
 
@@ -1070,7 +1112,8 @@ class Faction {
             {"TNK", "CUP_O_T72_RU"},
             {"TH", "CUP_O_Mi8_RU"},
             {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_RU_3"}
+            {"CAS", "CUP_O_Su25_RU_3"},
+            {"Technical", "CUP_O_UAZ_MG_RU"}
         };
     };
 
@@ -1095,7 +1138,8 @@ class Faction {
             {"TNK", "CUP_O_T72_RU"},
             {"TH", "CUP_O_Mi8_RU"},
             {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_RU_3"}
+            {"CAS", "CUP_O_Su25_RU_3"},
+            {"Technical", "CUP_O_UAZ_MG_RU"}
         };
     };
 
@@ -1120,7 +1164,8 @@ class Faction {
             {"TNK", "CUP_O_T72_RU"},
             {"TH", "CUP_O_Mi8_RU"},
             {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_RU_3"}
+            {"CAS", "CUP_O_Su25_RU_3"},
+            {"Technical", "CUP_O_UAZ_MG_RU"}
         };
     };
 
@@ -1170,7 +1215,8 @@ class Faction {
             {"TNK", "CUP_O_T72_RU"},
             {"TH", "CUP_O_Mi8_RU"},
             {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_RU_3"}
+            {"CAS", "CUP_O_Su25_RU_3"},
+            {"Technical", "CUP_O_UAZ_MG_SLA"}
         };
     };
 
@@ -1195,7 +1241,8 @@ class Faction {
             {"TNK", "CUP_I_T55_TK_GUE"},
             {"TH", "CUP_O_Mi8_RU"},
             {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_RU_3"}
+            {"CAS", "CUP_O_Su25_RU_3"},
+            {"Technical", "CUP_O_UAZ_MG_SLA"}
         };
     };
 
@@ -1220,7 +1267,8 @@ class Faction {
             {"TNK", "CUP_O_T72_RU"},
             {"TH", "CUP_O_Mi8_RU"},
             {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_RU_3"}
+            {"CAS", "CUP_O_Su25_RU_3"},
+            {"Technical", "CUP_O_UAZ_MG_SLA"}
         };
     };
 
@@ -1245,7 +1293,8 @@ class Faction {
             {"TNK", "CUP_I_T55_TK_GUE"},
             {"TH", "CUP_O_Mi8_RU"},
             {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_RU_3"}
+            {"CAS", "CUP_O_Su25_RU_3"},
+            {"Technical", "CUP_O_UAZ_MG_SLA"}
         };
     };
 
@@ -1270,7 +1319,8 @@ class Faction {
             {"TNK", "CUP_O_T72_RU"},
             {"TH", "CUP_O_Mi8_RU"},
             {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_RU_3"}
+            {"CAS", "CUP_O_Su25_RU_3"},
+            {"Technical", "CUP_O_UAZ_MG_SLA"}
         };
     };
 
@@ -1295,7 +1345,8 @@ class Faction {
             {"TNK", "CUP_I_T55_TK_GUE"},
             {"TH", "CUP_O_Mi8_RU"},
             {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_RU_3"}
+            {"CAS", "CUP_O_Su25_RU_3"},
+            {"Technical", "CUP_O_UAZ_MG_SLA"}
         };
     };
 
@@ -1320,7 +1371,8 @@ class Faction {
             {"TNK", "CUP_O_T72_RU"},
             {"TH", "CUP_O_Mi8_RU"},
             {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_RU_3"}
+            {"CAS", "CUP_O_Su25_RU_3"},
+            {"Technical", "CUP_O_UAZ_MG_SLA"}
         };
     };
 
@@ -1345,7 +1397,8 @@ class Faction {
             {"TNK", "CUP_O_T72_SLA"},
             {"TH", "CUP_O_Mi8_RU"},
             {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_RU_3"}
+            {"CAS", "CUP_O_Su25_RU_3"},
+            {"Technical", "CUP_O_UAZ_MG_CHDKZ"}
         };
     };
 
@@ -1370,7 +1423,8 @@ class Faction {
             {"TNK", "CUP_O_T72_SLA"},
             {"TH", "CUP_O_Mi8_RU"},
             {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_RU_3"}
+            {"CAS", "CUP_O_Su25_RU_3"},
+            {"Technical", "CUP_O_UAZ_MG_CHDKZ"}
         };
     };
 
@@ -1395,7 +1449,8 @@ class Faction {
             {"TNK", "CUP_O_T72_TKA"},
             {"TH", "CUP_O_Mi17_TK"},
             {"AH", "CUP_O_Mi24_D_TK"},
-            {"CAS", "CUP_O_Su25_TKA"}
+            {"CAS", "CUP_O_Su25_TKA"},
+            {"Technical", "CUP_O_UAZ_MG_TKA"}
         };
     };
 
@@ -1420,7 +1475,8 @@ class Faction {
             {"TNK", "CUP_O_T72_TKA"},
             {"TH", "CUP_O_Mi17_TK"},
             {"AH", "CUP_O_Mi24_D_TK"},
-            {"CAS", "CUP_O_Su25_TKA"}
+            {"CAS", "CUP_O_Su25_TKA"},
+            {"Technical", "CUP_O_UAZ_MG_TKA"}
         };
     };
 
@@ -1445,7 +1501,8 @@ class Faction {
             {"TNK", "CUP_O_T55_TK"},
             {"TH", "CUP_O_Mi17_TK"},
             {"AH", "CUP_O_Mi24_D_TK"},
-            {"CAS", "CUP_O_Su25_TKA"}
+            {"CAS", "CUP_O_Su25_TKA"},
+            {"Technical", "CUP_O_UAZ_MG_TKA"}
         };
     };
 
@@ -1470,7 +1527,8 @@ class Faction {
             {"TNK", "CUP_O_T72_SLA"},
             {"TH", "CUP_O_Mi8_SLA_1"},
             {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_SLA"}
+            {"CAS", "CUP_O_Su25_SLA"},
+            {"Technical", "CUP_O_UAZ_MG_SLA"}
         };
     };
 
@@ -1495,7 +1553,8 @@ class Faction {
             {"TNK", "CUP_O_T72_SLA"},
             {"TH", "CUP_O_Mi8_SLA_1"},
             {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_SLA"}
+            {"CAS", "CUP_O_Su25_SLA"},
+            {"Technical", "CUP_O_UAZ_MG_SLA"}
         };
     };
 
@@ -1520,7 +1579,8 @@ class Faction {
             {"TNK", "CUP_O_T72_SLA"},
             {"TH", "CUP_O_Mi8_SLA_1"},
             {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_SLA"}
+            {"CAS", "CUP_O_Su25_SLA"},
+            {"Technical", "CUP_O_UAZ_MG_SLA"}
         };
     };
 
@@ -1545,7 +1605,8 @@ class Faction {
             {"TNK", "CUP_O_T72_SLA"},
             {"TH", "CUP_O_Mi8_SLA_1"},
             {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_SLA"}
+            {"CAS", "CUP_O_Su25_SLA"},
+            {"Technical", "CUP_O_UAZ_MG_SLA"}
         };
     };
 
@@ -1570,7 +1631,8 @@ class Faction {
             {"TNK", "CUP_O_T72_SLA"},
             {"TH", "CUP_O_Mi8_SLA_1"},
             {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_SLA"}
+            {"CAS", "CUP_O_Su25_SLA"},
+            {"Technical", "CUP_O_UAZ_MG_SLA"}
         };
     };
 
@@ -1595,10 +1657,11 @@ class Faction {
             {"TNK", "CUP_O_T72_RU"},
             {"TH", "CUP_O_Mi8_RU"},
             {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_RU_3"}
+            {"CAS", "CUP_O_Su25_RU_3"},
+            {"Technical", "CUP_O_UAZ_MG_RU"}
         };
     };
-    
+
     class CUP_RU_EMR {
         gear = "AK74M_RU";
         uniform = "CUP_RU_EMR";
@@ -1620,10 +1683,11 @@ class Faction {
             {"TNK", "CUP_O_T72_RU"},
             {"TH", "CUP_O_Mi8_RU"},
             {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_RU_3"}
+            {"CAS", "CUP_O_Su25_RU_3"},
+            {"Technical", "CUP_O_UAZ_MG_RU"}
         };
     };
-    
+
     class IND_F {
         gear = "Mk20_AAF_WD";
         uniform = "AAF_WD";
@@ -1645,7 +1709,8 @@ class Faction {
             {"TNK", "I_MBT_03_cannon_F"},
             {"TH", "I_Heli_Transport_02_F"},
             {"AH", "I_Heli_light_03_F"},
-            {"CAS", "I_Plane_Fighter_03_CAS_F"}
+            {"CAS", "I_Plane_Fighter_03_CAS_F"},
+            {"Technical", "CUP_I_LR_MG_AAF"}
         };
     };
 
@@ -1670,7 +1735,8 @@ class Faction {
             {"TNK", "AAF_D_MBT_03_cannon_F"},
             {"TH", "AAF_D_Heli_Transport_02_F"},
             {"AH", "AAF_D_Heli_light_03_F"},
-            {"CAS", "AAF_D_Plane_Fighter_03_CAS_F"}
+            {"CAS", "AAF_D_Plane_Fighter_03_CAS_F"},
+            {"Technical", "CUP_I_LR_MG_AAF"}
         };
     };
 
@@ -1695,7 +1761,8 @@ class Faction {
             {"TNK", "CUP_I_T55_TK_GUE"},
             {"TH", "CUP_C_Mi17_Civilian_RU"},
             {"AH", "CUP_O_Mi8_SLA_2"},
-            {"CAS", "CUP_O_Su25_SLA"}
+            {"CAS", "CUP_O_Su25_SLA"},
+            {"Technical", "CUP_O_UAZ_MG_SLA"}
         };
     };
 
@@ -1720,7 +1787,8 @@ class Faction {
             {"TNK", "CUP_I_T55_TK_GUE"},
             {"TH", "CUP_C_Mi17_Civilian_RU"},
             {"AH", "CUP_O_Mi8_SLA_2"},
-            {"CAS", "CUP_O_Su25_SLA"}
+            {"CAS", "CUP_O_Su25_SLA"},
+            {"Technical", "CUP_O_UAZ_MG_SLA"}
         };
     };
 
@@ -1745,7 +1813,8 @@ class Faction {
             {"TNK", "CUP_I_T55_TK_GUE"},
             {"TH", "CUP_C_Mi17_Civilian_RU"},
             {"AH", "CUP_O_Mi8_SLA_2"},
-            {"CAS", "CUP_O_Su25_SLA"}
+            {"CAS", "CUP_O_Su25_SLA"},
+            {"Technical", "CUP_O_UAZ_MG_SLA"}
         };
     };
 
@@ -1770,7 +1839,8 @@ class Faction {
             {"TNK", "CUP_I_T55_TK_GUE"},
             {"TH", "CUP_C_Mi17_Civilian_RU"},
             {"AH", "CUP_O_Mi8_SLA_2"},
-            {"CAS", "CUP_O_Su25_SLA"}
+            {"CAS", "CUP_O_Su25_SLA"},
+            {"Technical", "CUP_O_UAZ_MG_SLA"}
         };
     };
 
@@ -1795,7 +1865,8 @@ class Faction {
             {"TNK", "CUP_B_M1A1_Woodland_US_Army"},
             {"TH", "CUP_B_UH60M_US"},
             {"AH", "CUP_B_AH64D_USA"},
-            {"CAS", "CUP_B_A10_AT_USA"}
+            {"CAS", "CUP_B_A10_AT_USA"},
+            {"Technical", "CUP_B_HMMWV_M2_USMC"}
         };
     };
 
@@ -1820,7 +1891,8 @@ class Faction {
             {"TNK", "CUP_O_T72_SLA"},
             {"TH", "CUP_C_Mi17_Civilian_RU"},
             {"AH", "CUP_O_Mi8_SLA_2"},
-            {"CAS", "CUP_O_Su25_SLA"}
+            {"CAS", "CUP_O_Su25_SLA"},
+            {"Technical", "B_G_Offroad_01_armed_F"}
         };
     };
 
@@ -1845,7 +1917,8 @@ class Faction {
             {"TNK", "I_MBT_03_cannon_F"},
             {"TH", "I_Heli_Transport_02_F"},
             {"AH", "I_Heli_light_03_F"},
-            {"CAS", "I_Plane_Fighter_03_CAS_F"}
+            {"CAS", "I_Plane_Fighter_03_CAS_F"},
+            {"Technical", "CUP_B_LR_Special_M2_GB_W"}
         };
     };
 
@@ -1870,7 +1943,8 @@ class Faction {
             {"TNK", "AAF_D_MBT_03_cannon_F"},
             {"TH", "AAF_D_Heli_Transport_02_F"},
             {"AH", "AAF_D_Heli_light_03_F"},
-            {"CAS", "AAF_D_Plane_Fighter_03_CAS_F"}
+            {"CAS", "AAF_D_Plane_Fighter_03_CAS_F"},
+            {"Technical", "CUP_B_LR_Special_M2_GB_D"}
         };
     };
 
@@ -1895,7 +1969,8 @@ class Faction {
             {"TNK", "CUP_B_M1A1_Woodland_US_Army"},
             {"TH", "CUP_Merlin_HC3"},
             {"AH", "CUP_B_AH1_MR_BAF"},
-            {"CAS", "CUP_B_AV8B_Hydra19"}
+            {"CAS", "CUP_B_AV8B_Hydra19"},
+            {"Technical", "CUP_B_LR_Special_M2_GB_W"}
         };
     };
 
@@ -1920,7 +1995,8 @@ class Faction {
             {"TNK", "CUP_O_T72_SLA"},
             {"TH", "CUP_O_Mi8_RU"},
             {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_RU_3"}
+            {"CAS", "CUP_O_Su25_RU_3"},
+            {"Technical", "CUP_O_UAZ_MG_SLA"}
         };
     };
 
@@ -1945,7 +2021,8 @@ class Faction {
             {"TNK", "CUP_O_T72_SLA"},
             {"TH", "CUP_O_Mi8_RU"},
             {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_RU_3"}
+            {"CAS", "CUP_O_Su25_RU_3"},
+            {"Technical", "CUP_O_UAZ_MG_SLA"}
         };
     };
 
@@ -1970,7 +2047,8 @@ class Faction {
             {"TNK", "I_MBT_03_cannon_F"},
             {"TH", "CUP_B_UH1Y_UNA_USMC"},
             {"AH", "CUP_B_UH1Y_GUNSHIP_USMC"},
-            {"CAS", "CUP_B_AV8B_Hydra19"}
+            {"CAS", "CUP_B_AV8B_Hydra19"},
+            {"Technical", "CUP_B_LR_Special_M2_GB_W"}
         };
     };
 
@@ -1995,7 +2073,8 @@ class Faction {
             {"TNK", "AAF_D_MBT_03_cannon_F"},
             {"TH", "CUP_B_UH1Y_UNA_USMC"},
             {"AH", "CUP_B_UH1Y_GUNSHIP_USMC"},
-            {"CAS", "CUP_B_AV8B_Hydra19"}
+            {"CAS", "CUP_B_AV8B_Hydra19"},
+            {"Technical", "CUP_B_LR_Special_M2_GB_D"}
         };
     };
 
@@ -2020,7 +2099,8 @@ class Faction {
             {"TNK", "CUP_I_T72_RACS"},
             {"TH", "CUP_I_SA330_Puma_HC2_RACS"},
             {"AH", "CUP_B_AH1Z"},
-            {"CAS", "CUP_B_AV8B_Hydra19"}
+            {"CAS", "CUP_B_AV8B_Hydra19"},
+            {"Technical", "CUP_B_LR_Special_M2_GB_D"}
         };
     };
 
@@ -2045,7 +2125,8 @@ class Faction {
             {"TNK", "CUP_I_T72_RACS"},
             {"TH", "CUP_I_SA330_Puma_HC2_RACS"},
             {"AH", "CUP_B_AH1Z"},
-            {"CAS", "CUP_B_AV8B_Hydra19"}
+            {"CAS", "CUP_B_AV8B_Hydra19"},
+            {"Technical", "CUP_B_LR_Special_M2_GB_D"}
         };
     };
 
@@ -2070,7 +2151,8 @@ class Faction {
             {"TNK", "CUP_I_T55_TK_GUE"},
             {"TH", "CUP_C_Mi17_Civilian_RU"},
             {"AH", "CUP_I_Mi24_D_ION"},
-            {"CAS", "CUP_O_Su25_TKA"}
+            {"CAS", "CUP_O_Su25_TKA"},
+            {"Technical", "CUP_O_UAZ_MG_SLA"}
         };
     };
 
@@ -2095,7 +2177,8 @@ class Faction {
             {"TNK", "CUP_I_T72_NAPA"},
             {"TH", "CUP_C_Mi17_Civilian_RU"},
             {"AH", "CUP_I_Mi24_D_ION"},
-            {"CAS", "CUP_O_Su25_TKA"}
+            {"CAS", "CUP_O_Su25_TKA"},
+            {"Technical", "CUP_O_UAZ_MG_SLA"}
         };
     };
 
