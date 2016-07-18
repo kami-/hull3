@@ -1190,7 +1190,8 @@ class Faction {
             {"TNK", "CUP_I_T55_TK_GUE"},
             {"TH", "CUP_O_Mi8_RU"},
             {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_RU_3"}
+            {"CAS", "CUP_O_Su25_RU_3"},
+            {"Technical", "CUP_O_UAZ_MG_SLA"}
         };
     };
 
