@@ -1,4 +1,4 @@
-class AK12_RU {
+class AK12_SYND {
     class Rifleman {
         primaryWeapon = "hlc_rifle_ak12";
         primaryWeaponItems[] = {"acc_flashlight"};
@@ -10,8 +10,7 @@ class AK12_RU {
         vestWeapons[] = {};
         backpackWeapons[] = {};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
-            {"SmokeShell", 1}
+            {"Chemlight_green", 2}
         };
         vestMagazines[] = {
             {"hlc_30Rnd_545x39_B_AK", 6},
@@ -19,7 +18,7 @@ class AK12_RU {
         };
         backpackMagazines[] = {
             {"HandGrenade", 2},
-            {"SmokeShell", 1},
+            {"SmokeShell", 2},
             {"hlc_30Rnd_545x39_B_AK", 4},
             {"hlc_30Rnd_545x39_T_AK", 2}
         };
