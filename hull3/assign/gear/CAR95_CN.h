@@ -169,7 +169,6 @@ class CAR95_CN {
         };
     };
 
-
     class MMGG : Rifleman {
         primaryWeapon = "CUP_lmg_PKM";
         primaryWeaponItems[] = {};
@@ -196,13 +195,13 @@ class CAR95_CN {
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
 
-     class HMGG : Rifleman {
+    class HMGG : Rifleman {
         primaryWeapon = "arifle_CTAR_blk_F";
         backpack = "O_HMG_01_weapon_F";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class HMGAG : HMGG {
         uniformMagazines[] = {
             {"Chemlight_green", 2},
@@ -213,13 +212,13 @@ class CAR95_CN {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class HMGAC : Rifleman {
     };
-   
+
     class MATG : RAT {
         secondaryWeapon = "CUP_launch_RPG7V";
-        secondaryWeaponItems[] = {"CUP_PG7VL_M","CUP_optic_PGO7V3"};
+        secondaryWeaponItems[] = {"CUP_PG7VL_M", "CUP_optic_PGO7V3"};
         backpackMagazines[] = {
             {"CUP_PG7VL_M", 2},
             {"CUP_PG7VR_M", 1},
@@ -232,10 +231,6 @@ class CAR95_CN {
             {"CUP_PG7VL_M", 2},
             {"CUP_PG7VR_M", 1},
             {"CUP_OG7_M", 1}
-        };
-        backpackMagazines[] = {
-            {"RPG32_F", 2},
-            {"RPG32_HE_F", 1}
         };
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
@@ -273,7 +268,7 @@ class CAR95_CN {
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class DHATAG : HMGG {
         backpack = "O_HMG_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -284,7 +279,7 @@ class CAR95_CN {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class DHATAC : Rifleman {
     };
 
@@ -321,7 +316,7 @@ class CAR95_CN {
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class GMGAG : HMGG {
         backpack = "O_HMG_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -332,7 +327,7 @@ class CAR95_CN {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class GMGAC : Rifleman {
     };
 
@@ -342,7 +337,7 @@ class CAR95_CN {
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class MTRAG : MTRG {
         backpack = "O_Mortar_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -353,7 +348,7 @@ class CAR95_CN {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class MTRAC : Rifleman {
     };
 
