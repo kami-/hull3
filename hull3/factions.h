@@ -51,6 +51,162 @@ class Faction {
         };
     };
 
+    class BLU_T_F {
+        gear = "MX_NATO_TRP";
+        uniform = "NATO_TRP";
+        name = "NATO";
+        description = "NATO Tropical with MX Series Weapons";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland"};
+        rolePrefix = "NATO";
+        vehicleClassnames[] = {
+            {"CO", "B_MRAP_01_F"},
+            {"SL", "B_MRAP_01_F"},
+            {"FT", "B_MRAP_01_F"},
+            {"ATTCH", "B_Truck_01_transport_F"},
+            {"ENG", "B_Truck_01_Repair_F"},
+            {"APC", "B_APC_Tracked_01_rcws_F"},
+            {"IFV", "B_APC_Wheeled_01_cannon_F"},
+            {"SPAAG", "B_APC_Tracked_01_AA_F"},
+            {"TNK", "B_MBT_01_cannon_F"},
+            {"TH", "B_Heli_Transport_01_F"},
+            {"AH", "B_Heli_Attack_01_F"},
+            {"CAS", "B_Plane_CAS_01_F"},
+            {"Technical", "CUP_B_HMMWV_M2_USA"}
+        };
+    };
+    
+    class BLU_CTRG_F_WD {
+        gear = "HK416_CTRG_BLK";
+        uniform = "CTRG_WD";
+        name = "CTRG";
+        description = "CTRG in woodland/temperate camo with HK-416 Series Weapons";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland", "desert"};
+        rolePrefix = "CTRG";
+        vehicleClassnames[] = {
+            {"CO", "B_MRAP_01_F"},
+            {"SL", "B_MRAP_01_F"},
+            {"FT", "B_MRAP_01_F"},
+            {"ATTCH", "B_Truck_01_transport_F"},
+            {"ENG", "B_Truck_01_Repair_F"},
+            {"APC", "B_APC_Tracked_01_rcws_F"},
+            {"IFV", "B_APC_Wheeled_01_cannon_F"},
+            {"SPAAG", "B_APC_Tracked_01_AA_F"},
+            {"TNK", "B_MBT_01_cannon_F"},
+            {"TH", "B_Heli_Transport_01_F"},
+            {"AH", "B_Heli_Attack_01_F"},
+            {"CAS", "B_Plane_CAS_01_F"},
+            {"Technical", "CUP_B_HMMWV_M2_USA"}
+        };
+    };
+    
+    class BLU_CTRG_F_TRP {
+        gear = "HK416_CTRG_TRP";
+        uniform = "CTRG_TRP";
+        name = "CTRG";
+        description = "CTRG in tropical camo with HK-416 Series Weapons";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland"};
+        rolePrefix = "CTRG";
+        vehicleClassnames[] = {
+            {"CO", "B_MRAP_01_F"},
+            {"SL", "B_MRAP_01_F"},
+            {"FT", "B_MRAP_01_F"},
+            {"ATTCH", "B_Truck_01_transport_F"},
+            {"ENG", "B_Truck_01_Repair_F"},
+            {"APC", "B_APC_Tracked_01_rcws_F"},
+            {"IFV", "B_APC_Wheeled_01_cannon_F"},
+            {"SPAAG", "B_APC_Tracked_01_AA_F"},
+            {"TNK", "B_MBT_01_cannon_F"},
+            {"TH", "B_Heli_Transport_01_F"},
+            {"AH", "B_Heli_Attack_01_F"},
+            {"CAS", "B_Plane_CAS_01_F"},
+            {"Technical", "CUP_B_HMMWV_M2_USA"}
+        };
+    };
+    
+    class BLU_CTRG_F_URB {
+        gear = "HK416_CTRG_BLK";
+        uniform = "CTRG_URB";
+        name = "CTRG";
+        description = "CTRG in urban camo with HK-416 Series Weapons";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland"};
+        rolePrefix = "CTRG";
+        vehicleClassnames[] = {
+            {"CO", "B_MRAP_01_F"},
+            {"SL", "B_MRAP_01_F"},
+            {"FT", "B_MRAP_01_F"},
+            {"ATTCH", "B_Truck_01_transport_F"},
+            {"ENG", "B_Truck_01_Repair_F"},
+            {"APC", "B_APC_Tracked_01_rcws_F"},
+            {"IFV", "B_APC_Wheeled_01_cannon_F"},
+            {"SPAAG", "B_APC_Tracked_01_AA_F"},
+            {"TNK", "B_MBT_01_cannon_F"},
+            {"TH", "B_Heli_Transport_01_F"},
+            {"AH", "B_Heli_Attack_01_F"},
+            {"CAS", "B_Plane_CAS_01_F"},
+            {"Technical", "CUP_B_HMMWV_M2_USA"}
+        };
+    };
+    
+    class BLU_GEN_F_COP {
+        gear = "MP5_GEND";
+        uniform = "GEND_COP";
+        name = "Gendarmes (Patrol)";
+        description = "Patrol Police with MP5 series weapons";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland"};
+        rolePrefix = "Gendarmes";
+        vehicleClassnames[] = {
+            {"CO", "B_GEN_Offroad_01_gen_F"},
+            {"SL", "B_GEN_Offroad_01_gen_F"},
+            {"FT", "B_GEN_Offroad_01_gen_F"},
+            {"ATTCH", "B_GEN_Offroad_01_gen_F"},
+            {"ENG", "B_G_Offroad_01_repair_F"},
+            {"APC", "CUP_I_M113_UN"},
+            {"IFV", "CUP_I_BTR60_UN"},
+            {"SPAAG", "CUP_O_ZSU23_SLA"},
+            {"TNK", "CUP_I_BMP2_UN"},
+            {"TH", "CUP_C_Mi17_Civilian_RU"},
+            {"AH", "CUP_I_Mi24_D_UN"},
+            {"CAS", "CUP_O_Su25_SLA"},
+            {"Technical", "B_G_Offroad_01_armed_F"}
+        };
+    };
+    
+    class BLU_GEN_F_SWAT {
+        gear = "CAR15_GEND";
+        uniform = "GEND_SWAT";
+        name = "Gendarmes (SWAT)";
+        description = "SWAT Police with CAR-15 series weapons";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland"};
+        rolePrefix = "SWAT";
+        vehicleClassnames[] = {
+            {"CO", "B_GEN_Offroad_01_gen_F"},
+            {"SL", "B_GEN_Offroad_01_gen_F"},
+            {"FT", "B_GEN_Offroad_01_gen_F"},
+            {"ATTCH", "B_GEN_Offroad_01_gen_F"},
+            {"ENG", "B_G_Offroad_01_repair_F"},
+            {"APC", "CUP_I_M113_UN"},
+            {"IFV", "CUP_I_BTR60_UN"},
+            {"SPAAG", "CUP_O_ZSU23_SLA"},
+            {"TNK", "CUP_I_BMP2_UN"},
+            {"TH", "CUP_C_Mi17_Civilian_RU"},
+            {"AH", "CUP_I_Mi24_D_UN"},
+            {"CAS", "CUP_O_Su25_SLA"},
+            {"Technical", "B_G_Offroad_01_armed_F"}
+        };
+    };
+    
     class BLU_G_F {
         gear = "TRG_FIA";
         uniform = "FIA";
@@ -757,7 +913,7 @@ class Faction {
         gear = "Katiba_CSAT";
         uniform = "CSAT";
         name = "CSAT";
-        description = "CSAT Uniforms and Katiba";
+        description = "CSAT Desert Uniforms and Katiba";
         languages[] = {{"east", 100}};
         side = "east";
         camouflage[] = {"desert"};
@@ -779,6 +935,32 @@ class Faction {
         };
     };
 
+    class OPF_T_F {
+        gear = "CAR95_CSAT";
+        uniform = "CSAT_TRP";
+        name = "CSAT";
+        description = "CSAT Tropical Uniforms and CAR-95 series weapons";
+        languages[] = {{"east", 100}};
+        side = "east";
+        camouflage[] = {"woodland"};
+        rolePrefix = "CSAT";
+        vehicleClassnames[] = {
+            {"CO", "O_T_LSV_02_unarmed_F"},
+            {"SL", "O_T_LSV_02_unarmed_F"},
+            {"FT", "O_T_LSV_02_unarmed_F"},
+            {"ATTCH", "O_T_LSV_02_unarmed_F"},
+            {"ENG", "O_T_Truck_03_repair_ghex_F"},
+            {"APC", "O_T_APC_Wheeled_02_rcws_ghex_F"},
+            {"IFV", "O_T_APC_Tracked_02_cannon_ghex_F"},
+            {"SPAAG", "O_T_APC_Tracked_02_AA_ghex_F"},
+            {"TNK", "O_T_MBT_02_cannon_ghex_F"},
+            {"TH", "O_Heli_Transport_04_covered_F"},
+            {"AH", "O_T_VTOL_02_infantry_F"},
+            {"CAS", "O_Plane_CAS_02_F"},
+            {"Technical", "CUP_O_UAZ_MG_CSAT"}
+        };
+    };
+    
     class MNP_OPF_F_SN {
         gear = "Katiba_CSAT";
         uniform = "CSAT_SN";
@@ -1689,6 +1871,32 @@ class Faction {
         };
     };
 
+    class CUP_CHKDZ {
+        gear = "AKM_CHKDZ";
+        uniform = "CHKDZ";
+        name = "Chedaki";
+        description = "Mixed camo and AKM's";
+        languages[] = {{"east", 100}};
+        side = "east";
+        camouflage[] = {"woodland"};
+        rolePrefix = "Chedaki";
+        vehicleClassnames[] = {
+            {"CO", "CUP_O_UAZ_Unarmed_CHDKZ"},
+            {"SL", "CUP_O_UAZ_Unarmed_CHDKZ"},
+            {"FT", "CUP_O_UAZ_Unarmed_CHDKZ"},
+            {"ATTCH", "CUP_O_UAZ_Unarmed_CHDKZ"},
+            {"ENG", "CUP_O_Ural_Repair_CHDKZ"},
+            {"APC", "CUP_O_BRDM2_CHDKZ"},
+            {"IFV", "CUP_O_BMP2_CHDKZ"},
+            {"SPAAG", "CUP_O_ZSU23_ChDKZ"},
+            {"TNK", "CUP_O_T72_CHDKZ"},
+            {"TH", "CUP_O_Mi8_CHDKZ"},
+            {"AH", "CUP_O_Mi24_V_RU"},
+            {"CAS", "CUP_O_Su25_RU_3"},
+            {"Technical", "CUP_O_UAZ_MG_CHDKZ"}
+        };
+    };
+
     class IND_F {
         gear = "Mk20_AAF_WD";
         uniform = "AAF_WD";
@@ -1741,6 +1949,58 @@ class Faction {
         };
     };
 
+    class IND_C_F_BANDIT {
+        gear = "AKM_SYND";
+        uniform = "SYND_BANDIT";
+        name = "Syndikat Bandits";
+        description = "Civilian clothing and AKM's";
+        languages[] = {{"resistance", 100}};
+        side = "resistance";
+        camouflage[] = {"desert", "woodland"};
+        rolePrefix = "Syndikat Bandits";
+        vehicleClassnames[] = {
+            {"CO", "CUP_O_UAZ_Unarmed_RU"},
+            {"SL", "CUP_I_Datsun_PK"},
+            {"FT", "CUP_C_LR_Transport_CTK"},
+            {"ATTCH", "CUP_C_LR_Transport_CTK"},
+            {"ENG", "CUP_O_Ural_Repair_SLA"},
+            {"APC", "CUP_I_BMP1_TK_GUE"},
+            {"IFV", "CUP_O_BMP2_SLA"},
+            {"SPAAG", "CUP_O_Ural_ZU23_SLA"},
+            {"TNK", "CUP_I_T55_TK_GUE"},
+            {"TH", "CUP_C_Mi17_Civilian_RU"},
+            {"AH", "CUP_O_Mi8_SLA_2"},
+            {"CAS", "CUP_O_Su25_SLA"},
+            {"Technical", "CUP_O_UAZ_MG_SLA"}
+        };
+    };
+
+    class IND_C_F_REBEL {
+        gear = "AK12_SYND";
+        uniform = "SYND_REBEL";
+        name = "Syndikat Rebels";
+        description = "Paramilitary camo and AK-12's";
+        languages[] = {{"resistance", 100}};
+        side = "resistance";
+        camouflage[] = {"woodland"};
+        rolePrefix = "Syndikat Bandits";
+        vehicleClassnames[] = {
+            {"CO", "CUP_O_UAZ_Unarmed_RU"},
+            {"SL", "CUP_I_Datsun_PK"},
+            {"FT", "CUP_C_LR_Transport_CTK"},
+            {"ATTCH", "CUP_C_LR_Transport_CTK"},
+            {"ENG", "CUP_O_Ural_Repair_SLA"},
+            {"APC", "CUP_I_BMP1_TK_GUE"},
+            {"IFV", "CUP_O_BMP2_SLA"},
+            {"SPAAG", "CUP_O_Ural_ZU23_SLA"},
+            {"TNK", "CUP_I_T55_TK_GUE"},
+            {"TH", "CUP_C_Mi17_Civilian_RU"},
+            {"AH", "CUP_O_Mi8_SLA_2"},
+            {"CAS", "CUP_O_Su25_SLA"},
+            {"Technical", "CUP_O_UAZ_MG_SLA"}
+        };
+    };
+    
     class MNP_MIL_WD {
         gear = "MIX_LVM";
         uniform = "LVM_WD";
