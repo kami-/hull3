@@ -244,12 +244,6 @@ class CAR95_CN {
     };
 
     class HATG : MATG {
-        secondaryWeapon = "launch_O_Titan_short_F";
-        secondaryWeaponItems[] = {"Titan_AT"};
-        backpackMagazines[] = {{"Titan_AT", 1}};
-    };
-
-    class HATG : MATG {
         secondaryWeapon = "CUP_launch_Metis";
         secondaryWeaponItems[] = {"CUP_AT13_M"};
         backpackMagazines[] = {{"CUP_AT13_M", 1}};
