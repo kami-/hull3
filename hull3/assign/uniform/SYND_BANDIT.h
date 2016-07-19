@@ -2,7 +2,7 @@ class SYND_BANDIT {
     class Rifleman {
         headGear = "H_Cap_red";
         goggles = "G_Bandanna_beast";
-        uniform = "U_I_C_Soldier_Bandit_5_F";
+        uniform = "U_I_C_Soldier_Bandit_5_F_ARK";
         vest = "CUP_V_O_Ins_Carrier_Rig_Light_ARM";
         backpack = "B_Kitbag_rgr";
     };
@@ -10,21 +10,21 @@ class SYND_BANDIT {
     class Leader : Rifleman {
         headGear = "H_Booniehat_tan";
         goggles = "CUP_FR_NeckScarf2";
-        uniform = "U_I_C_Soldier_Bandit_2_F";
+        uniform = "U_I_C_Soldier_Bandit_2_F_ARK";
         vest = "CUP_V_I_Carrier_Belt_ARM";
     };
 
     class Officer : Leader {
         headGear = "MNP_MC_Rev";
         goggles = "G_Aviator";
-        uniform = "U_I_C_Soldier_Bandit_3_F";
+        uniform = "U_I_C_Soldier_Bandit_3_F_ARK";
         vest = "CUP_V_RUS_Smersh_2_ARM";
     };
 
     class Crew : Rifleman {
         headGear = "CUP_H_RUS_TSH_4_Brown";
         goggles = "";
-        uniform = "U_I_C_Soldier_Bandit_4_F";
+        uniform = "U_I_C_Soldier_Bandit_4_F_ARK";
         vest = "CUP_V_O_TK_CrewBelt_ARM";
         backpack = "CUP_B_SLA_Medicbag";
     };
@@ -41,7 +41,7 @@ class SYND_BANDIT {
     class Medic : Rifleman {
         headGear = "H_Bandanna_sgg";
         goggles = "";
-        uniform = "U_I_C_Soldier_Bandit_1_F";
+        uniform = "U_I_C_Soldier_Bandit_1_F_ARK";
         vest = "CUP_V_OI_TKI_Jacket2_01_ARM";
         backpack = "B_Carryall_oli";
     };
@@ -52,7 +52,7 @@ class SYND_BANDIT {
     class AR : Rifleman {
         headGear = "H_Bandanna_sgg";
         goggles = "";
-        uniform = "U_I_C_Soldier_Bandit_1_F";
+        uniform = "U_I_C_Soldier_Bandit_1_F_ARK";
         vest = "CUP_V_OI_TKI_Jacket2_01_ARM";
     };
 
@@ -60,7 +60,7 @@ class SYND_BANDIT {
         backpack = "B_Carryall_oli";
         headGear = "CUP_H_PMC_Cap_Back_Tan";
         goggles = "G_Bandanna_oli";
-        uniform = "U_I_C_Soldier_Bandit_4_F";
+        uniform = "U_I_C_Soldier_Bandit_4_F_ARK";
         vest = "CUP_V_OI_TKI_Jacket2_01_ARM";
     };
 
@@ -149,7 +149,7 @@ class SYND_BANDIT {
     class SN : Rifleman {
         headGear = "";
         goggles = "G_Balaclava_oli";
-        uniform = "U_I_C_Soldier_Bandit_2_F";
+        uniform = "U_I_C_Soldier_Bandit_2_F_ARK";
         vest = "CUP_V_RUS_Smersh_1_ARM";
     };
 
