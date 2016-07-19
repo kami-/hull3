@@ -136,7 +136,7 @@ class MX_NATO {
 
     class AR : Rifleman {
         primaryWeapon = "arifle_MX_SW_F";
-        primaryWeaponItems[] = {"acc_flashlight"};
+        primaryWeaponItems[] = {"acc_flashlight","bipod_01_F_snd"};
         vestMagazines[] = {{"100Rnd_65x39_caseless_mag", 2}};
         backpackMagazines[] = {
             {"HandGrenade", 1},

@@ -1,35 +1,38 @@
-class FIA {
+class NAPA {
     class Rifleman {
-        headGear = "H_Cap_oli_hs";
-        goggles = "G_Bandanna_tan";
-        uniform = "U_BG_Guerilla1_1_ARK";
-        vest = "V_PlateCarrier1_blk";
-        backpack = "B_Kitbag_rgr";
+        headGear = "H_Booniehat_oli";
+        goggles = "G_Bandanna_oli";
+        uniform = "CUP_U_I_GUE_Flecktarn2";
+        vest = "CUP_V_I_Carrier_Belt_ARM";
+        backpack = "CUP_B_AlicePack_Bedroll";
     };
 
     class Leader : Rifleman {
-        uniform = "U_BG_Guerilla2_1_ARK";
-        headGear = "H_Booniehat_khk";
-        goggles = "";
+        headGear = "H_MilCap_gry";
+        uniform = "CUP_U_I_GUE_Flecktarn";
     };
 
     class Officer : Leader {
-        headGear = "H_MilCap_gry";
-        uniform = "U_BG_Guerilla3_1_ARK";
+        headGear = "H_Cap_headphones";
+        goggles = "";
     };
 
     class Crew : Rifleman {
-        headGear = "H_HelmetCrew_I";
-        uniform = "U_BG_Guerilla2_2_ARK";
-        vest = "V_BandollierB_oli";
+        headGear = "CUP_H_RUS_TSH_4_Brown";
+        uniform = "CUP_U_O_CHDKZ_Kam_07";
         goggles = "";
-        backpack = "B_AssaultPack_rgr";
+        vest = "CUP_V_O_TK_CrewBelt";
+        backpack = "CUP_B_SLA_Medicbag";
     };
 
     class CO : Officer {
+        headGear = "CUP_H_NAPA_Fedora";
+        goggles = "G_Aviator";
+        uniform = "U_BG_Guerilla2_3_ARK";
+        vest = "CUP_V_I_Guerilla_Jacket_ARM";
     };
 
-    class XO : CO {
+    class XO : Officer {
     };
 
     class SL : Officer {
@@ -37,26 +40,25 @@ class FIA {
 
     class Medic : Rifleman {
         backpack = "B_Carryall_oli";
-        uniform = "U_BG_Guerilla2_3_ARK";
-        goggles = "";
+        goggles = "G_Bandanna_oli";
+        headGear = "H_Bandanna_khk_hs";
+        uniform = "CUP_U_I_GUE_Woodland1";
     };
 
     class FTL : Leader {
     };
 
     class AR : Rifleman {
-        uniform = "U_BG_Guerrilla_6_1_ARK";
-        headGear = "H_Bandanna_khk_hs";
+        goggles = "G_Bandanna_blk";
+        uniform = "CUP_U_I_GUE_Flecktarn3";
     };
 
     class AAR : Rifleman {
         backpack = "B_Carryall_oli";
+        goggles = "CUP_FR_NeckScarf";
     };
 
     class RAT : Rifleman {
-        uniform = "U_BG_Guerilla2_1_ARK";
-        headGear = "H_Cap_headphones";
-        goggles = "G_Bandanna_blk";
     };
 
     class MMGG : AR {
@@ -94,7 +96,7 @@ class FIA {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -132,21 +134,15 @@ class FIA {
     };
 
     class ENG : Rifleman {
-        uniform = "U_BG_Guerilla2_2_ARK";
-        headGear = "H_Cap_headphones";
         backpack = "B_Carryall_oli";
-        goggles = "G_Bandanna_oli";
     };
 
     class ENGA : ENG {
     };
 
     class SN : Rifleman {
-        headGear = "H_Watchcap_khk";
-        goggles = "G_Bandanna_aviator";
-        uniform = "U_BG_Guerilla3_1_ARK";
-        vest = "V_BandollierB_rgr";
-        backpack = "B_AssaultPack_rgr";
+        headGear = "H_Cap_headphones";
+        goggles = "G_Bandanna_oli";
     };
 
     class SP : SN {
@@ -162,13 +158,14 @@ class FIA {
     };
 
     class P : Crew {
-        headGear = "H_Cap_oli_hs";
-        uniform = "U_BG_Guerilla2_2_ARK";
-        vest = "V_TacVest_blk";
-        backpack = "B_Parachute";
+        headGear = "CUP_H_SLA_Pilot_Helmet";
+        vest = "CUP_V_B_PilotVest";
         goggles = "G_Aviator";
+        backpack = "B_Parachute";
+        uniform = "CUP_U_C_Pilot_01";
     };
 
     class PCM : P {
     };
+
 };
