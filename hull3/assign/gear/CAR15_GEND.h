@@ -134,16 +134,14 @@ class CAR15_GEND {
         primaryWeapon = "hlc_rifle_Colt727";
         primaryWeaponItems[] = {};
         vestMagazines[] = {{"hlc_50rnd_556x45_EPR", 1}};
-        backpackMagazines[] = {
-            {"hlc_50rnd_556x45_EPR", 6}
-        };
+        backpackMagazines[] = {{"hlc_50rnd_556x45_EPR", 6}};
     };
 
     class AAR : Rifleman {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_50rnd_556x45_EPR", 2},
+            {"hlc_50rnd_556x45_EPR", 2}
         };
         binocular = "Binocular";
     };
@@ -185,7 +183,7 @@ class CAR15_GEND {
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
 
-     class HMGG : Rifleman {
+    class HMGG : Rifleman {
         backpack = "O_HMG_01_weapon_F";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -197,10 +195,10 @@ class CAR15_GEND {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class HMGAC : Rifleman {
     };
-    
+
     class MATG : RAT {
         secondaryWeapon = "CUP_launch_MAAWS";
         secondaryWeaponItems[] = {"CUP_MAAWS_HEAT_M", "CUP_optic_MAAWS_Scope"};
@@ -250,7 +248,7 @@ class CAR15_GEND {
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class DHATAG : HMGG {
         backpack = "O_HMG_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -261,7 +259,7 @@ class CAR15_GEND {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class DHATAC : Rifleman {
     };
 
@@ -296,7 +294,7 @@ class CAR15_GEND {
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class GMGAG : HMGG {
         backpack = "O_HMG_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -307,7 +305,7 @@ class CAR15_GEND {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class GMGAC : Rifleman {
     };
 
@@ -316,7 +314,7 @@ class CAR15_GEND {
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class MTRAG : MTRG {
         backpack = "O_Mortar_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -327,7 +325,7 @@ class CAR15_GEND {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class MTRAC : Rifleman {
     };
 
@@ -358,7 +356,7 @@ class CAR15_GEND {
     class SN : Rifleman {
         primaryWeapon = "hlc_rifle_psg1A1";
         handgunWeapon = "hgun_ACPC2_F";
-        primaryWeaponItems[] = {"hlc_optic_accupoint_g3","bipod_01_F_blk"};
+        primaryWeaponItems[] = {"hlc_optic_accupoint_g3", "bipod_01_F_blk"};
         vestMagazines[] = {
             {"hlc_20rnd_762x51_b_G3", 4},
             {"9Rnd_45ACP_Mag", 3}
