@@ -2,7 +2,7 @@ class GEND_COP {
     class Rifleman {
         headGear = "H_MilCap_gen_F";
         goggles = "G_Aviator";
-        uniform = "U_B_GEN_Commander_F";
+        uniform = "U_B_GEN_Commander_F_ARK";
         vest = "V_TacVest_gen_F";
         backpack = "B_Kitbag_rgr";
     };
