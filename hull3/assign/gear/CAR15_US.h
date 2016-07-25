@@ -164,11 +164,12 @@ class CAR15_US {
     class MMGG : Rifleman {
         primaryWeapon = "hlc_lmg_m60";
         primaryWeaponItems[] = {};
-        vestMagazines[] = {{"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 1}};
+        vestMagazines[] = {{"hlc_100Rnd_762x51_M_M60E4", 1}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 4}
+            {"hlc_100Rnd_762x51_M_M60E4", 2},
+            {"hlc_100Rnd_762x51_T_M60E4", 2}
         };
     };
 
@@ -176,7 +177,7 @@ class CAR15_US {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 4}
+            {"hlc_100Rnd_762x51_M_M60E4", 4}
         };
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
@@ -428,7 +429,7 @@ class CAR15_US {
             {"30Rnd_556x45_Stanag", 40},
             {"30Rnd_556x45_Stanag", 20},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
-            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
+            {"hlc_100Rnd_762x51_M_M60E4", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
             {"SatchelCharge_Remote_Mag", 5},
@@ -455,7 +456,7 @@ class CAR15_US {
             {"30Rnd_556x45_Stanag", 40},
             {"30Rnd_556x45_Stanag", 20},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
-            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
+            {"hlc_100Rnd_762x51_M_M60E4", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
             {"CUP_MAAWS_HEAT_M", 5},
