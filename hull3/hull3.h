@@ -309,7 +309,7 @@ class Hull3 {
         corpseMaxTime = 600;
         wreckLimit = 10;
         wreckMaxTime = 600;
-        groupMaxTime = 360;
-        maxTimeModifier = 0.7;
+        groupMaxTime = 90;
+        checkDelay = 60;
     };
 };

@@ -17,7 +17,7 @@ hull3_gc_fnc_preInit = {
     hull3_gc_wreckLimit = ["GarbageCollector", "wreckLimit"] call hull3_config_fnc_getNumber;
     hull3_gc_wreckMaxTime = ["GarbageCollector", "wreckMaxTime"] call hull3_config_fnc_getNumber;
     hull3_gc_groupMaxTime = ["GarbageCollector", "groupMaxTime"] call hull3_config_fnc_getNumber;
-    hull3_gc_maxTimeModifier = ["GarbageCollector", "maxTimeModifier"] call hull3_config_fnc_getNumber;
+    hull3_gc_checkDelay = ["GarbageCollector", "checkDelay"] call hull3_config_fnc_getNumber;
 };
 
 hull3_gc_fnc_start = {
@@ -28,35 +28,40 @@ hull3_gc_fnc_start = {
     {
         _x setVariable ["hull3_gc_canRemove", false];
     } foreach allDead;
-    if (hull3_gc_isEnabled) then {
-        hull3_gc_canRemoveCorpses = true;
-        hull3_gc_canRemoveWrecks = true;
-        hull3_gc_canRemoveGroups = true;
-        [] spawn hull3_gc_fnc_monitorCorpses;
-        [] spawn hull3_gc_fnc_monitorWrecks;
-        [] spawn hull3_gc_fnc_monitorGroups;
-    };
+    hull3_gc_canRemoveCorpses = true;
+    hull3_gc_canRemoveWrecks = true;
+    hull3_gc_canRemoveGroups = true;
+    hull3_gc_isEnabled = true;
+    [] spawn hull3_gc_fnc_monitor;
 };
 
 hull3_gc_fnc_stop = {
     hull3_gc_canRemoveCorpses = false;
     hull3_gc_canRemoveWrecks = false;
     hull3_gc_canRemoveGroups = false;
+    hull3_gc_isEnabled = false;
+};
+
+hull3_gc_fnc_monitor = {
+    while {hull3_gc_isEnabled} do {
+        [] call hull3_gc_fnc_monitorCorpses;
+        [] call hull3_gc_fnc_monitorWrecks;
+        [] call hull3_gc_fnc_monitorGroups;
+        sleep hull3_gc_checkDelay;
+    };
 };
 
 hull3_gc_fnc_monitorCorpses = {
-    while {hull3_gc_canRemoveCorpses} do {
+    if (hull3_gc_canRemoveCorpses) then {
         DEBUG("hull3.gc","Starting next corpse GC check.");
         [hull3_gc_corpseLimit, hull3_gc_corpseMaxTime, {_x isKindOf "Man"}] call hull3_gc_fnc_tryRemovingUnits;
-        sleep (hull3_gc_corpseMaxTime * hull3_gc_maxTimeModifier);
     };
 };
 
 hull3_gc_fnc_monitorWrecks = {
-    while {hull3_gc_canRemoveWrecks} do {
+    if (hull3_gc_canRemoveWrecks) then {
         DEBUG("hull3.gc","Starting next wreck GC check.");
         [hull3_gc_wreckLimit, hull3_gc_wreckMaxTime, {!(_x isKindOf "Man")}] call hull3_gc_fnc_tryRemovingUnits;
-        sleep (hull3_gc_wreckMaxTime * hull3_gc_maxTimeModifier);
     };
 };
 
@@ -95,25 +100,32 @@ hull3_gc_fnc_canRemoveUnit = {
 };
 
 hull3_gc_fnc_monitorGroups = {
-    while {hull3_gc_canRemoveGroups} do {
+    if (hull3_gc_canRemoveGroups) then {
         private ["_removeCount", "_remoteGroups"];
         DEBUG("hull3.gc","Starting next group GC check.");
         _remoteGroups = [];
         _removeCount = 0;
         {
             if (count units _x == 0) then {
-                if (!local _x) then {
-                    PUSH(_remoteGroups,_x);
+                call {
+                    if !(_x getVariable ["hull3_gc_isMarked", false]) exitWith {
+                        _x setVariable ["hull3_gc_isMarked", true];
+                    };
+
+                    if (!local _x) then {
+                        PUSH(_remoteGroups,_x);
+                    };
+                    INC(_removeCount);
+                    if (!isNull _x) then {
+                        deleteGroup _x;
+                    };
                 };
-                INC(_removeCount);
-                if (!isNull _x) then {
-                    deleteGroup _x;
-                };
+            } else {
+                _x setVariable ["hull3_gc_isMarked", false];
             };
         } foreach allGroups;
         DEBUG("hull3.gc",FMT_2("Removing total '%1' groups of which '%2' are remote.",_removeCount,count _remoteGroups));
         [_remoteGroups] call hull3_gc_fnc_removeRemoteGroups;
-        sleep (hull3_gc_groupMaxTime * hull3_gc_maxTimeModifier);
     };
 };
 
