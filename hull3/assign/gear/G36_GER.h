@@ -16,7 +16,7 @@ class G36_GER {
         };
         vestMagazines[] = {
             {"hlc_30rnd_556x45_EPR_G36", 6},
-            {"30Rnd_556x45_Stanag_Tracer_Red", 2}
+            {"hlc_30rnd_556x45_Tracers_G36", 2}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
@@ -52,13 +52,13 @@ class G36_GER {
             {"1Rnd_HE_Grenade_shell", 4},
             {"1Rnd_Smoke_Grenade_shell", 2},
             {"1Rnd_SmokeRed_Grenade_shell", 2},
-            {"CUP_30Rnd_TE1_Red_Tracer_556x45_G36", 2}
+            {"hlc_30rnd_556x45_Tracers_G36", 2}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
             {"hlc_30rnd_556x45_EPR_G36", 4},
-            {"CUP_30Rnd_TE1_Red_Tracer_556x45_G36", 2},
+            {"hlc_30rnd_556x45_Tracers_G36", 2},
             {"1Rnd_Smoke_Grenade_shell", 2},
             {"1Rnd_SmokeRed_Grenade_shell", 2},
             {"UGL_FlareWhite_F", 2}
@@ -104,7 +104,7 @@ class G36_GER {
         primaryWeapon = "hlc_rifle_G36KA1";
         vestMagazines[] = {
             {"hlc_30rnd_556x45_EPR_G36", 6},
-            {"CUP_30Rnd_TE1_Red_Tracer_556x45_G36", 2},
+            {"hlc_30rnd_556x45_Tracers_G36", 2},
             {"SmokeShell", 4}
         };
         backpackMagazines[] = {
@@ -150,13 +150,13 @@ class G36_GER {
         secondaryWeapon = "CUP_launch_M136";
         vestMagazines[] = {
             {"hlc_30rnd_556x45_EPR_G36", 6},
-            {"CUP_30Rnd_TE1_Red_Tracer_556x45_G36", 2}
+            {"hlc_30rnd_556x45_Tracers_G36", 2}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
             {"hlc_30rnd_556x45_EPR_G36", 4},
-            {"CUP_30Rnd_TE1_Red_Tracer_556x45_G36", 2}
+            {"hlc_30rnd_556x45_Tracers_G36", 2}
         };
     };
 
@@ -339,7 +339,7 @@ class G36_GER {
         primaryWeapon = "hlc_rifle_G36KA1";
         vestMagazines[] = {
             {"hlc_30rnd_556x45_EPR_G36", 6},
-            {"CUP_30Rnd_TE1_Red_Tracer_556x45_G36", 2}
+            {"hlc_30rnd_556x45_Tracers_G36", 2}
         };
         backpackMagazines[] = {
             {"Toolkit", 1},
