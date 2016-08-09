@@ -133,7 +133,7 @@ class L85_BAF_RIS {
     };
 
     class AAR : Rifleman {
-        primaryWeapon = "CUP_arifle_L85A2_NG";
+        primaryWeapon = "CUP_arifle_L86A2";
         primaryWeaponItems[] = {"RH_eotech553", "acc_flashlight"};
         backpackMagazines[] = {
             {"HandGrenade", 1},

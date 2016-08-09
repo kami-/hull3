@@ -1,6 +1,6 @@
 class MIX_LVM {
     class Rifleman {
-        primaryWeapon = "hlc_rifle_g3a3";
+        primaryWeapon = "hlc_rifle_g3a3v";
         primaryWeaponItems[] = {};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
@@ -45,7 +45,7 @@ class MIX_LVM {
     };
 
     class Leader : Rifleman {
-        primaryWeapon = "RH_M16A1gl";
+        primaryWeapon = "hlc_rifle_Colt727_GL";
         primaryWeaponItems[] = {};
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
@@ -188,7 +188,7 @@ class MIX_LVM {
     };
 
      class HMGG : Rifleman {
-        primaryWeapon = "hlc_rifle_g3a3";
+        primaryWeapon = "hlc_rifle_g3a3v";
         backpack = "O_HMG_01_weapon_F";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -251,7 +251,7 @@ class MIX_LVM {
     };
 
     class DHATG : Rifleman {
-        primaryWeapon = "hlc_rifle_g3a3";
+        primaryWeapon = "hlc_rifle_g3a3v";
         backpack = "O_AT_01_weapon_F";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -272,14 +272,14 @@ class MIX_LVM {
     };
 
     class SAMG : Rifleman {
-        primaryWeapon = "hlc_rifle_g3a3";
+        primaryWeapon = "hlc_rifle_g3a3v";
         secondaryWeapon = "CUP_launch_9K32Strela";
         secondaryWeaponItems[] = {"CUP_Strela_2_M"};
         backpackMagazines[] = {{"CUP_Strela_2_M", 1}};
     };
 
     class SAMAG : Rifleman {
-        primaryWeapon = "hlc_rifle_g3a3";
+        primaryWeapon = "hlc_rifle_g3a3v";
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"CUP_Strela_2_M", 1}
@@ -300,7 +300,7 @@ class MIX_LVM {
     };
 
     class GMGG : Rifleman {
-        primaryWeapon = "hlc_rifle_g3a3";
+        primaryWeapon = "hlc_rifle_g3a3v";
         backpack = "O_GMG_01_weapon_F";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -321,7 +321,7 @@ class MIX_LVM {
     };
 
     class MTRG : Rifleman {
-        primaryWeapon = "hlc_rifle_g3a3";
+        primaryWeapon = "hlc_rifle_g3a3v";
         backpack = "O_Mortar_01_weapon_F";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -409,7 +409,7 @@ class MIX_LVM {
 
     class Vehicle {
         weapons[] = {
-            {"hlc_rifle_g3a3", 2},
+            {"hlc_rifle_g3a3v", 2},
             {"CUP_launch_RPG18", 2},
             {"hlc_rifle_akm", 2}
         };
@@ -440,7 +440,7 @@ class MIX_LVM {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"hlc_rifle_g3a3", 2},
+            {"hlc_rifle_g3a3v", 2},
             {"CUP_launch_RPG18", 4},
             {"hlc_rifle_akm", 2}
         };
