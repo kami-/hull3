@@ -236,7 +236,7 @@ hull3_marker_fnc_deactivateCustomMarker = {
     FUN_ARGS_1(_markerIndex);
 
     if (count hull3_marker_custom > _markerIndex) then {
-        (hull3_marker_custom select _markerIndex) set [1, fale];
+        (hull3_marker_custom select _markerIndex) set [1, false];
     };
 };
 
