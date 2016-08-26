@@ -226,7 +226,7 @@ class Hull3 {
         lossModelScale = 0.5;                           // http://acre.idi-systems.com/api/api_general.html#acre_api_fnc_setLossModelScale
         fullDuplex = 0;                                 // http://acre.idi-systems.com/api/api_general.html#acre_api_fnc_setFullDuplex
         interference = 1;                               // http://acre.idi-systems.com/api/api_general.html#acre_api_fnc_setInterference
-        ignoreAntennaDirection = true;                  // Disable advanced signal loss pathing
+        ignoreAntennaDirection = 1;                     // Disable advanced signal loss pathing
 
         class Babel {
             languages[] = {
