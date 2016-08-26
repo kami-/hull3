@@ -44,8 +44,7 @@ hull3_acre_fnc_acreInit = {
     };
     DEBUG("hull.acre.init","Player is alive, starting ACRE init check.");
     [false] call acre_api_fnc_setSpectator;
-    [0.7] call acre_api_fnc_setSelectableVoiceCurve;
-    DEBUG("hull.acre.init","ACRE Spectator set to 'false' and voice level to '0.7'.");
+    DEBUG("hull.acre.init","ACRE Spectator set to 'false'.");
     waitUntil {
         DEBUG("hull.acre.init","Waiting for ACRE to replace 'ItemRadio'.");
         uiSleep 1;
@@ -77,10 +76,11 @@ hull3_acre_fnc_setSettings = {
     _value = ["ACRE", "interference"] call hull3_config_fnc_getBool;
     [_value] call acre_api_fnc_setInterference;
     DEBUG("hull3.acre.settings",FMT_1("Set 'interference' to '%1'.",_value));
+    DECLARE(_value) = ["ACRE", "ignoreAntennaDirection"] call hull3_config_fnc_getBool;
+    [_value] call acre_api_fnc_ignoreAntennaDirection;
+    DEBUG("hull3.acre.settings",FMT_1("Set 'ignoreAntennaDirection' to '%1'.",_value));
     ACRE_TEST_OCCLUSION = true;
     DEBUG("hull3.acre.settings",FMT_1("Set 'ACRE_TEST_OCCLUSION' to '%1'.",ACRE_TEST_OCCLUSION));
-    acre_sys_signal_omnidirectionalRadios = 1;
-    DEBUG("hull3.acre.settings",FMT_1("Set 'acre_sys_signal_omnidirectionalRadios' to '%1'.",acre_sys_signal_omnidirectionalRadios));
 };
 
 hull3_acre_fnc_addLanguages = {
