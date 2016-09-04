@@ -223,9 +223,10 @@ class Hull3 {
 
     class ACRE {
         revealToAi = 1;                                 // http://acre.idi-systems.com/api/api_general.html#acre_api_fnc_setRevealToAI
-        lossModelScale = 0;                             // http://acre.idi-systems.com/api/api_general.html#acre_api_fnc_setLossModelScale
+        lossModelScale = 0.5;                           // http://acre.idi-systems.com/api/api_general.html#acre_api_fnc_setLossModelScale
         fullDuplex = 0;                                 // http://acre.idi-systems.com/api/api_general.html#acre_api_fnc_setFullDuplex
-        interference = 0;                               // http://acre.idi-systems.com/api/api_general.html#acre_api_fnc_setInterference
+        interference = 1;                               // http://acre.idi-systems.com/api/api_general.html#acre_api_fnc_setInterference
+        ignoreAntennaDirection = 1;                     // Disable advanced signal loss pathing
 
         class Babel {
             languages[] = {
