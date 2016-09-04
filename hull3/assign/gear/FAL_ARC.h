@@ -350,7 +350,7 @@ class FAL_ARC {
     class SN : Rifleman {
         primaryWeapon = "srifle_EBR_F";
         handgunWeapon = "hgun_ACPC2_F";
-        primaryWeaponItems[] = {"optic_MRCO", "acc_flashlight", "bipod_03_F_blk"};
+        primaryWeaponItems[] = {"optic_MRCO", "RH_SFM952V", "bipod_03_F_blk"};
         vestMagazines[] = {
             {"20Rnd_762x51_Mag", 4},
             {"9Rnd_45ACP_Mag", 3}

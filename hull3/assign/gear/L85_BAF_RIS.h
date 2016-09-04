@@ -1,7 +1,7 @@
 class L85_BAF_RIS {
     class Rifleman {
         primaryWeapon = "CUP_arifle_L85A2_G";
-        primaryWeaponItems[] = {"CUP_optic_HoloBlack", "acc_flashlight"};
+        primaryWeaponItems[] = {"optic_Holosight_blk_F", "RH_SFM952V"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -45,7 +45,7 @@ class L85_BAF_RIS {
 
     class Leader : Rifleman {
         primaryWeapon = "CUP_arifle_L85A2_GL";
-        primaryWeaponItems[] = {"CUP_optic_HoloBlack", "acc_flashlight"};
+        primaryWeaponItems[] = {"optic_Holosight_blk_F", "RH_SFM952V"};
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"1Rnd_HE_Grenade_shell", 4},
@@ -134,7 +134,7 @@ class L85_BAF_RIS {
 
     class AAR : Rifleman {
         primaryWeapon = "CUP_arifle_L86A2";
-        primaryWeaponItems[] = {"RH_eotech553", "acc_flashlight"};
+        primaryWeaponItems[] = {"optic_Holosight_blk_F", "RH_SFM952V"};
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
@@ -241,7 +241,7 @@ class L85_BAF_RIS {
     };
 
     class DHATG : Rifleman {
-        primaryWeapon = "RH_M4_ris";
+        primaryWeapon = "hlc_rifle_M4";
         backpack = "O_AT_01_weapon_F";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};

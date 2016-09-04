@@ -1,7 +1,7 @@
 class VZ58_FIN {
     class Rifleman {
         primaryWeapon = "CUP_arifle_Sa58RIS2";
-        primaryWeaponItems[] = {"RH_compM2l", "acc_flashlight"};
+        primaryWeaponItems[] = {"RH_compM2l", "RH_SFM952V"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -46,7 +46,7 @@ class VZ58_FIN {
 
     class Leader : Rifleman {
         primaryWeapon = "CUP_arifle_Sa58RIS2_gl";
-        primaryWeaponItems[] = {"optic_Holosight", "acc_flashlight"};
+        primaryWeaponItems[] = {"optic_Holosight", "RH_SFM952V"};
         vestMagazines[] = {
             {"CUP_30Rnd_Sa58_M", 4},
             {"1Rnd_HE_Grenade_shell", 4},
@@ -102,7 +102,7 @@ class VZ58_FIN {
 
     class Medic : Rifleman {
         primaryWeapon = "CUP_arifle_Sa58RIS2";
-        primaryWeaponItems[] = {"RH_compM2l", "acc_flashlight"};
+        primaryWeaponItems[] = {"RH_compM2l", "RH_SFM952V"};
         vestMagazines[] = {
             {"CUP_30Rnd_Sa58_M", 6},
             {"CUP_30Rnd_Sa58_M_TracerY", 2},
@@ -150,7 +150,7 @@ class VZ58_FIN {
 
     class RAT : Rifleman {
         primaryWeapon = "CUP_arifle_Sa58RIS2";
-        primaryWeaponItems[] = {"RH_compM2l", "acc_flashlight"};
+        primaryWeaponItems[] = {"RH_compM2l", "RH_SFM952V"};
         secondaryWeapon = "CUP_launch_NLAW";
         vestMagazines[] = {
             {"CUP_30Rnd_Sa58_M", 6},
@@ -347,7 +347,7 @@ class VZ58_FIN {
 
     class ENG : Rifleman {
         primaryWeapon = "CUP_arifle_Sa58RIS2";
-        primaryWeaponItems[] = {"RH_compM2l", "acc_flashlight"};
+        primaryWeaponItems[] = {"RH_compM2l", "RH_SFM952V"};
         vestMagazines[] = {
             {"CUP_30Rnd_Sa58_M", 6},
             {"CUP_30Rnd_Sa58_M_TracerY", 2}

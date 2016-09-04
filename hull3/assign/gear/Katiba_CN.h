@@ -1,7 +1,7 @@
 class Katiba_CN {
     class Rifleman {
         primaryWeapon = "arifle_Katiba_F";
-        primaryWeaponItems[] = {"acc_flashlight"};
+        primaryWeaponItems[] = {"RH_SFM952V"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -46,7 +46,7 @@ class Katiba_CN {
 
     class Leader : Rifleman {
         primaryWeapon = "arifle_Katiba_GL_F";
-        primaryWeaponItems[] = {"acc_flashlight"};
+        primaryWeaponItems[] = {"RH_SFM952V"};
         vestMagazines[] = {
             {"30Rnd_65x39_caseless_green", 6},
             {"1Rnd_HE_Grenade_shell", 4},
@@ -75,7 +75,7 @@ class Katiba_CN {
 
     class Crew : Rifleman {
         primaryWeapon = "SMG_02_F";
-        primaryWeaponItems[] = {"acc_flashlight"};
+        primaryWeaponItems[] = {"RH_SFM952V"};
         uniformMagazines[] = {
             {"Chemlight_green", 2},
             {"SmokeShell", 1}
@@ -127,7 +127,7 @@ class Katiba_CN {
 
     class AR : Rifleman {
         primaryWeapon = "LMG_Zafir_F";
-        primaryWeaponItems[] = {"acc_flashlight"};
+        primaryWeaponItems[] = {"RH_SFM952V"};
         vestMagazines[] = {{"150Rnd_762x54_Box", 2}};
         backpackMagazines[] = {
             {"HandGrenade", 1},

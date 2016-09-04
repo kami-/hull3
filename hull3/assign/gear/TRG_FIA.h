@@ -1,7 +1,7 @@
 class TRG_FIA {
     class Rifleman {
         primaryWeapon = "arifle_TRG21_F";
-        primaryWeaponItems[] = {"acc_flashlight"};
+        primaryWeaponItems[] = {"RH_SFM952V"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -45,7 +45,7 @@ class TRG_FIA {
 
     class Leader : Rifleman {
         primaryWeapon = "arifle_TRG21_GL_F";
-        primaryWeaponItems[] = {"acc_flashlight"};
+        primaryWeaponItems[] = {"RH_SFM952V"};
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"1Rnd_HE_Grenade_shell", 4},
@@ -74,7 +74,7 @@ class TRG_FIA {
 
     class Crew : Rifleman {
         primaryWeapon = "SMG_02_F";
-        primaryWeaponItems[] = {"acc_flashlight"};
+        primaryWeaponItems[] = {"RH_SFM952V"};
         uniformMagazines[] = {
             {"Chemlight_green", 2},
             {"SmokeShell", 1}
@@ -101,7 +101,7 @@ class TRG_FIA {
 
     class Medic : Rifleman {
         primaryWeapon = "arifle_TRG20_F";
-        primaryWeaponItems[] = {"acc_flashlight"};
+        primaryWeaponItems[] = {"RH_SFM952V"};
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2},
@@ -127,7 +127,7 @@ class TRG_FIA {
 
     class AR : Rifleman {
         primaryWeapon = "LMG_Mk200_F";
-        primaryWeaponItems[] = {"bipod_03_F_blk", "acc_flashlight"};
+        primaryWeaponItems[] = {"bipod_03_F_blk", "RH_SFM952V"};
         vestMagazines[] = {{"200Rnd_65x39_cased_Box", 2}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
@@ -149,7 +149,7 @@ class TRG_FIA {
 
     class RAT : Rifleman {
         primaryWeapon = "arifle_TRG20_F";
-        primaryWeaponItems[] = {"acc_flashlight"};
+        primaryWeaponItems[] = {"RH_SFM952V"};
         secondaryWeapon = "CUP_launch_M136";
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
@@ -351,7 +351,7 @@ class TRG_FIA {
 
     class ENG : Rifleman {
         primaryWeapon = "arifle_TRG20_F";
-        primaryWeaponItems[] = {"acc_flashlight"};
+        primaryWeaponItems[] = {"RH_SFM952V"};
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2}
@@ -377,7 +377,7 @@ class TRG_FIA {
     class SN : Rifleman {
         primaryWeapon = "srifle_EBR_F";
         handgunWeapon = "hgun_ACPC2_F";
-        primaryWeaponItems[] = {"optic_MRCO", "bipod_03_F_blk", "acc_flashlight"};
+        primaryWeaponItems[] = {"optic_MRCO", "bipod_03_F_blk", "RH_SFM952V"};
         vestMagazines[] = {
             {"20Rnd_762x51_Mag", 4},
             {"9Rnd_45ACP_Mag", 3}

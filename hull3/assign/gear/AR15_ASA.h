@@ -1,6 +1,6 @@
 class AR15_ASA {
     class Rifleman {
-        primaryWeapon = "RH_M16A3";
+        primaryWeapon = "hlc_rifle_bcmjack";
         primaryWeaponItems[] = {"RH_compM2"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
@@ -45,8 +45,8 @@ class AR15_ASA {
     };
 
     class Leader : Rifleman {
-        primaryWeapon = "RH_M4_M203";
-        primaryWeaponItems[] = {"RH_eotech553"};
+        primaryWeapon = "hlc_rifle_m4m203";
+        primaryWeaponItems[] = {"optic_Holosight_blk_F"};
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"1Rnd_HE_Grenade_shell", 4},
@@ -74,14 +74,14 @@ class AR15_ASA {
     };
 
     class Crew : Rifleman {
-        primaryWeapon = "RH_sbr9";
+        primaryWeapon = "hlc_rifle_CQBR";
         primaryWeaponItems[] = {};
         uniformMagazines[] = {
             {"Chemlight_green", 2},
             {"SmokeShell", 1}
         };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
-        vestMagazines[] = {{"RH_32Rnd_9mm_M822", 4}};
+        vestMagazines[] = {{"30Rnd_556x45_Stanag", 4}};
         backpackMagazines[] = {};
         assignItems[] = {"ItemGPS", "ACE_NVG_Wide"};
     };
@@ -101,7 +101,7 @@ class AR15_ASA {
     };
 
     class Medic : Rifleman {
-        primaryWeapon = "RH_m4";
+        primaryWeapon = "hlc_rifle_RU5562";
         primaryWeaponItems[] = {"RH_cmore"};
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
@@ -147,7 +147,7 @@ class AR15_ASA {
     };
 
     class RAT : Rifleman {
-        primaryWeapon = "RH_m4";
+        primaryWeapon = "hlc_rifle_RU5562";
         primaryWeaponItems[] = {"RH_cmore"};
         secondaryWeapon = "CUP_launch_M136";
         vestMagazines[] = {
@@ -188,7 +188,7 @@ class AR15_ASA {
     };
 
      class HMGG : Rifleman {
-        primaryWeapon = "RH_m4";
+        primaryWeapon = "hlc_rifle_RU5562";
         backpack = "O_HMG_01_weapon_F";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -246,7 +246,7 @@ class AR15_ASA {
     };
 
     class DHATG : Rifleman {
-        primaryWeapon = "RH_m4";
+        primaryWeapon = "hlc_rifle_RU5562";
         backpack = "O_AT_01_weapon_F";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -267,7 +267,7 @@ class AR15_ASA {
     };
 
     class SAMG : Rifleman {
-        primaryWeapon = "RH_m4";
+        primaryWeapon = "hlc_rifle_RU5562";
         secondaryWeapon = "CUP_launch_FIM92Stinger";
         secondaryWeaponItems[] = {"CUP_Stinger_M"};
         backpackMagazines[] = {{"CUP_Stinger_M", 1}};
@@ -295,7 +295,7 @@ class AR15_ASA {
     };
 
     class GMGG : Rifleman {
-        primaryWeapon = "RH_m4";
+        primaryWeapon = "hlc_rifle_RU5562";
         backpack = "O_GMG_01_weapon_F";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -316,7 +316,7 @@ class AR15_ASA {
     };
 
     class MTRG : Rifleman {
-        primaryWeapon = "RH_m4";
+        primaryWeapon = "hlc_rifle_RU5562";
         backpack = "O_Mortar_01_weapon_F";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -337,7 +337,7 @@ class AR15_ASA {
     };
 
     class ENG : Rifleman {
-        primaryWeapon = "RH_m4";
+        primaryWeapon = "hlc_rifle_RU5562";
         primaryWeaponItems[] = {"RH_cmore"};
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
@@ -400,9 +400,9 @@ class AR15_ASA {
 
     class Vehicle {
         weapons[] = {
-            {"RH_M16A3", 2},
+            {"hlc_rifle_bcmjack", 2},
             {"CUP_launch_M136", 5},
-            {"RH_m4", 2}
+            {"hlc_rifle_RU5562", 2}
         };
         magazines[] = {
             {"30Rnd_556x45_Stanag", 15},
@@ -430,9 +430,9 @@ class AR15_ASA {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"RH_M16A3", 2},
+            {"hlc_rifle_bcmjack", 2},
             {"CUP_launch_M136", 10},
-            {"RH_m4", 2}
+            {"hlc_rifle_RU5562", 2}
         };
         magazines[] = {
             {"30Rnd_556x45_Stanag", 40},

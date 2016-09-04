@@ -1,6 +1,6 @@
 class M16A2_US {
     class Rifleman {
-        primaryWeapon = "RH_M16A2";
+        primaryWeapon = "CUP_arifle_M16A2";
         primaryWeaponItems[] = {};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
@@ -45,7 +45,7 @@ class M16A2_US {
     };
 
     class Leader : Rifleman {
-        primaryWeapon = "RH_M16A2gl";
+        primaryWeapon = "CUP_arifle_M16A2_GL";
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"1Rnd_HE_Grenade_shell", 4},
@@ -73,7 +73,6 @@ class M16A2_US {
     };
 
     class Crew : Rifleman {
-        primaryWeapon = "RH_m4";
         primaryWeaponItems[] = {};
         uniformMagazines[] = {
             {"Chemlight_green", 2},
@@ -388,7 +387,7 @@ class M16A2_US {
 
     class Vehicle {
         weapons[] = {
-            {"RH_M16A2", 4},
+            {"CUP_arifle_M16A2", 4},
             {"CUP_launch_M136", 5}
         };
         magazines[] = {
@@ -417,7 +416,7 @@ class M16A2_US {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"RH_M16A2", 4},
+            {"CUP_arifle_M16A2", 4},
             {"CUP_launch_M136", 10}
         };
         magazines[] = {

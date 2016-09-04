@@ -1,7 +1,7 @@
 class AK12_SYND {
     class Rifleman {
         primaryWeapon = "hlc_rifle_ak12";
-        primaryWeaponItems[] = {"acc_flashlight"};
+        primaryWeaponItems[] = {"RH_SFM952V"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -44,7 +44,7 @@ class AK12_SYND {
 
     class Leader : Rifleman {
         primaryWeapon = "hlc_rifle_ak12GL";
-        primaryWeaponItems[] = {"acc_flashlight"};
+        primaryWeaponItems[] = {"RH_SFM952V"};
         vestMagazines[] = {
             {"hlc_30Rnd_545x39_B_AK", 6},
             {"hlc_VOG25_AK", 4},
@@ -101,7 +101,7 @@ class AK12_SYND {
 
     class Medic : Rifleman {
         primaryWeapon = "hlc_rifle_aku12";
-        primaryWeaponItems[] = {"acc_flashlight"};
+        primaryWeaponItems[] = {"RH_SFM952V"};
         vestMagazines[] = {
             {"hlc_30Rnd_545x39_B_AK", 6},
             {"hlc_30Rnd_545x39_T_AK", 2},
@@ -127,7 +127,7 @@ class AK12_SYND {
 
     class AR : Rifleman {
         primaryWeapon = "hlc_rifle_RPK12";
-        primaryWeaponItems[] = {"acc_flashlight"};
+        primaryWeaponItems[] = {"RH_SFM952V"};
         vestMagazines[] = {{"hlc_60Rnd_545x39_t_rpk", 2}};
         backpackMagazines[] = {
             {"HandGrenade", 2},
