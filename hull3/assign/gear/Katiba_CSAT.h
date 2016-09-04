@@ -1,7 +1,7 @@
 class Katiba_CSAT {
     class Rifleman {
         primaryWeapon = "arifle_Katiba_F";
-        primaryWeaponItems[] = {"acc_flashlight"};
+        primaryWeaponItems[] = {"RH_SFM952V"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -78,7 +78,7 @@ class Katiba_CSAT {
 
     class Crew : Rifleman {
         primaryWeapon = "SMG_02_F";
-        primaryWeaponItems[] = {"acc_flashlight"};
+        primaryWeaponItems[] = {"RH_SFM952V"};
         uniformMagazines[] = {
             {"Chemlight_green", 2},
             {"SmokeShell", 1}
@@ -134,7 +134,7 @@ class Katiba_CSAT {
 
     class AR : Rifleman {
         primaryWeapon = "LMG_Zafir_F";
-        primaryWeaponItems[] = {"acc_flashlight"};
+        primaryWeaponItems[] = {"RH_SFM952V"};
         vestMagazines[] = {{"150Rnd_762x54_Box", 2}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
@@ -156,7 +156,7 @@ class Katiba_CSAT {
 
     class RAT : Rifleman {
         primaryWeapon = "arifle_Katiba_C_F";
-        primaryWeaponItems[] = {"acc_flashlight"};
+        primaryWeaponItems[] = {"RH_SFM952V"};
         secondaryWeapon = "CUP_launch_RPG18";
         vestMagazines[] = {
             {"30Rnd_65x39_caseless_green", 6},

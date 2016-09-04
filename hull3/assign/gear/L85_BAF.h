@@ -240,7 +240,7 @@ class L85_BAF {
     };
 
     class DHATG : Rifleman {
-        primaryWeapon = "RH_M4_ris";
+        primaryWeapon = "hlc_rifle_M4";
         backpack = "O_AT_01_weapon_F";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};

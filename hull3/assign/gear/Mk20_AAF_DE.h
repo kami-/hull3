@@ -1,7 +1,7 @@
 class Mk20_AAF_DE {
     class Rifleman {
         primaryWeapon = "arifle_Mk20_plain_F";
-        primaryWeaponItems[] = {"optic_ACO_grn", "acc_flashlight"};
+        primaryWeaponItems[] = {"optic_ACO_grn", "RH_SFM952V"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -45,7 +45,7 @@ class Mk20_AAF_DE {
 
     class Leader : Rifleman {
         primaryWeapon = "arifle_Mk20_GL_plain_F";
-        primaryWeaponItems[] = {"optic_ACO_grn", "acc_flashlight"};
+        primaryWeaponItems[] = {"optic_ACO_grn", "RH_SFM952V"};
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"1Rnd_HE_Grenade_shell", 4},
@@ -74,7 +74,7 @@ class Mk20_AAF_DE {
 
     class Crew : Rifleman {
         primaryWeapon = "hgun_PDW2000_F";
-        primaryWeaponItems[] = {"acc_flashlight"};
+        primaryWeaponItems[] = {"RH_SFM952V"};
         uniformMagazines[] = {
             {"Chemlight_green", 2},
             {"SmokeShell", 1}
@@ -101,7 +101,7 @@ class Mk20_AAF_DE {
 
     class Medic : Rifleman {
         primaryWeapon = "arifle_Mk20C_plain_F";
-        primaryWeaponItems[] = {"optic_ACO_grn", "acc_flashlight"};
+        primaryWeaponItems[] = {"optic_ACO_grn", "RH_SFM952V"};
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"30Rnd_556x45_Stanag_Tracer_Yellow", 2},
@@ -127,7 +127,7 @@ class Mk20_AAF_DE {
 
     class AR : Rifleman {
         primaryWeapon = "LMG_Mk200_F";
-        primaryWeaponItems[] = {"acc_flashlight", "bipod_03_F_blk"};
+        primaryWeaponItems[] = {"RH_SFM952V", "bipod_03_F_blk"};
         vestMagazines[] = {{"200Rnd_65x39_cased_Box", 2}};
         backpackMagazines[] = {
             {"HandGrenade", 2},
@@ -149,7 +149,7 @@ class Mk20_AAF_DE {
 
     class RAT : Rifleman {
         primaryWeapon = "arifle_Mk20C_plain_F";
-        primaryWeaponItems[] = {"optic_ACO_grn", "acc_flashlight"};
+        primaryWeaponItems[] = {"optic_ACO_grn", "RH_SFM952V"};
         secondaryWeapon = "CUP_launch_M136";
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
@@ -351,7 +351,7 @@ class Mk20_AAF_DE {
 
     class ENG : Rifleman {
         primaryWeapon = "arifle_Mk20C_plain_F";
-        primaryWeaponItems[] = {"optic_ACO_grn", "acc_flashlight"};
+        primaryWeaponItems[] = {"optic_ACO_grn", "RH_SFM952V"};
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"30Rnd_556x45_Stanag_Tracer_Yellow", 2}
@@ -377,7 +377,7 @@ class Mk20_AAF_DE {
     class SN : Rifleman {
         primaryWeapon = "srifle_EBR_F";
         handgunWeapon = "hgun_ACPC2_F";
-        primaryWeaponItems[] = {"optic_MRCO", "acc_flashlight", "bipod_03_F_blk"};
+        primaryWeaponItems[] = {"optic_MRCO", "RH_SFM952V", "bipod_03_F_blk"};
         uniformMagazines[] = {
             {"Chemlight_green", 2},
             {"SmokeShell", 1}

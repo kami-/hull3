@@ -1,6 +1,6 @@
 class M16A3_RACS {
     class Rifleman {
-        primaryWeapon = "RH_M16A3";
+        primaryWeapon = "hlc_rifle_Colt727";
         primaryWeaponItems[] = {};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
@@ -45,7 +45,7 @@ class M16A3_RACS {
     };
 
     class Leader : Rifleman {
-        primaryWeapon = "hlc_rifle_m4m203";
+        primaryWeapon = "hlc_rifle_Colt727_GL";
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"1Rnd_HE_Grenade_shell", 4},
@@ -388,7 +388,7 @@ class M16A3_RACS {
 
     class Vehicle {
         weapons[] = {
-            {"RH_M16A3", 4},
+            {"hlc_rifle_Colt727", 4},
             {"CUP_launch_M136", 5}
         };
         magazines[] = {
@@ -417,7 +417,7 @@ class M16A3_RACS {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"RH_M16A3", 4},
+            {"hlc_rifle_Colt727", 4},
             {"CUP_launch_M136", 10}
         };
         magazines[] = {

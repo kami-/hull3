@@ -46,7 +46,7 @@ class M4A1_US {
 
     class Leader : Rifleman {
         primaryWeapon = "hlc_rifle_m4m203";
-        primaryWeaponItems[] = {"RH_eotech553", "RH_SFM952V"};
+        primaryWeaponItems[] = {"optic_Holosight_blk_F", "RH_SFM952V"};
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"1Rnd_HE_Grenade_shell", 4},

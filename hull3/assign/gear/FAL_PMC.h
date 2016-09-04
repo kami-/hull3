@@ -1,7 +1,7 @@
 class FAL_PMC {
     class Rifleman {
         primaryWeapon = "hlc_rifle_falosw";
-        primaryWeaponItems[] = {"RH_barska_rds", "acc_flashlight"};
+        primaryWeaponItems[] = {"RH_barska_rds", "RH_SFM952V"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -327,7 +327,7 @@ class FAL_PMC {
 
     class ENG : Rifleman {
         primaryWeapon = "hlc_rifle_falosw";
-        primaryWeaponItems[] = {"RH_barska_rds", "acc_flashlight"};
+        primaryWeaponItems[] = {"RH_barska_rds", "RH_SFM952V"};
         vestMagazines[] = {
             {"hlc_20Rnd_762x51_B_fal", 6},
             {"hlc_20Rnd_762x51_T_fal", 2}

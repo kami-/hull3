@@ -46,7 +46,7 @@ class M4A1_USMC {
 
     class Leader : Rifleman {
         primaryWeapon = "hlc_rifle_m4m203";
-        primaryWeaponItems[] = {"RH_eotech553", "RH_SFM952V"};
+        primaryWeaponItems[] = {"optic_Holosight_blk_F", "RH_SFM952V"};
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"1Rnd_HE_Grenade_shell", 4},
@@ -127,14 +127,14 @@ class M4A1_USMC {
     };
 
     class AR : Rifleman {
-        primaryWeapon = "RH_M27IAR";
+        primaryWeapon = "arifle_SPAR_02_blk_F";
         primaryWeaponItems[] = {"RH_SFM952V", "RH_HBLM"};
-        vestMagazines[] = {{"RH_60Rnd_556x45_M855A1", 4}};
+        vestMagazines[] = {{"150Rnd_556x45_Drum_Mag_F", 4}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"RH_60Rnd_556x45_M855A1", 4},
-            {"30Rnd_556x45_Stanag_Tracer_Red", 4}
+            {"150Rnd_556x45_Drum_Mag_F", 3},
+            {"150Rnd_556x45_Drum_Mag_Tracer_F", 3}
         };
     };
 
@@ -142,7 +142,8 @@ class M4A1_USMC {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"RH_60Rnd_556x45_M855A1", 4}
+            {"150Rnd_556x45_Drum_Mag_F", 4},
+            {"150Rnd_556x45_Drum_Mag_Tracer_F", 3}
         };
         binocular = "Binocular";
     };
@@ -399,7 +400,7 @@ class M4A1_USMC {
         magazines[] = {
             {"30Rnd_556x45_Stanag", 15},
             {"30Rnd_556x45_Stanag", 15},
-            {"RH_60Rnd_556x45_M855A1", 10},
+            {"150Rnd_556x45_Drum_Mag_F", 10},
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"UGL_FlareWhite_F", 5},
             {"ACE_HandFlare_White", 5},
@@ -428,7 +429,7 @@ class M4A1_USMC {
         magazines[] = {
             {"30Rnd_556x45_Stanag", 40},
             {"30Rnd_556x45_Stanag", 20},
-            {"RH_60Rnd_556x45_M855A1", 20},
+            {"150Rnd_556x45_Drum_Mag_F", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
@@ -455,7 +456,7 @@ class M4A1_USMC {
         magazines[] = {
             {"30Rnd_556x45_Stanag", 40},
             {"30Rnd_556x45_Stanag", 20},
-            {"RH_60Rnd_556x45_M855A1", 20},
+            {"150Rnd_556x45_Drum_Mag_F", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},

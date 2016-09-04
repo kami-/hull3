@@ -1,6 +1,6 @@
 class M16A4_CAN {
     class Rifleman {
-        primaryWeapon = "RH_M16A4";
+        primaryWeapon = "CUP_arifle_M16A4_Base";
         primaryWeaponItems[] = {"RH_compM2", "RH_SFM952V"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
@@ -45,8 +45,8 @@ class M16A4_CAN {
     };
 
     class Leader : Rifleman {
-        primaryWeapon = "RH_M16A4gl";
-        primaryWeaponItems[] = {"RH_eotech553", "RH_SFM952V"};
+        primaryWeapon = "CUP_arifle_M16A4_GL";
+        primaryWeaponItems[] = {"optic_Holosight_blk_F", "RH_SFM952V"};
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"1Rnd_HE_Grenade_shell", 4},
@@ -101,7 +101,7 @@ class M16A4_CAN {
     };
 
     class Medic : Rifleman {
-        primaryWeapon = "RH_M4_ris";
+        primaryWeapon = "hlc_rifle_M4";
         primaryWeaponItems[] = {"RH_compm4s", "RH_SFM952V"};
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
@@ -147,7 +147,7 @@ class M16A4_CAN {
     };
 
     class RAT : Rifleman {
-        primaryWeapon = "RH_M4_ris";
+        primaryWeapon = "hlc_rifle_M4";
         secondaryWeapon = "CUP_launch_M136";
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
@@ -184,7 +184,7 @@ class M16A4_CAN {
     };
 
      class HMGG : Rifleman {
-        primaryWeapon = "RH_M4_ris";
+        primaryWeapon = "hlc_rifle_M4";
         backpack = "O_HMG_01_weapon_F";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -245,7 +245,7 @@ class M16A4_CAN {
     };
 
     class DHATG : Rifleman {
-        primaryWeapon = "RH_M4_ris";
+        primaryWeapon = "hlc_rifle_M4";
         backpack = "O_AT_01_weapon_F";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -266,14 +266,14 @@ class M16A4_CAN {
     };
 
     class SAMG : Rifleman {
-        primaryWeapon = "RH_M4_ris";
+        primaryWeapon = "hlc_rifle_M4";
         secondaryWeapon = "CUP_launch_FIM92Stinger";
         secondaryWeaponItems[] = {"CUP_Stinger_M"};
         backpackMagazines[] = {{"CUP_Stinger_M", 1}};
     };
 
     class SAMAG : Rifleman {
-        primaryWeapon = "RH_M4_ris";
+        primaryWeapon = "hlc_rifle_M4";
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"CUP_Stinger_M", 1}
@@ -294,7 +294,7 @@ class M16A4_CAN {
     };
 
     class GMGG : Rifleman {
-        primaryWeapon = "RH_M4_ris";
+        primaryWeapon = "hlc_rifle_M4";
         backpack = "O_GMG_01_weapon_F";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -315,7 +315,7 @@ class M16A4_CAN {
     };
 
     class MTRG : Rifleman {
-        primaryWeapon = "RH_M4_ris";
+        primaryWeapon = "hlc_rifle_M4";
         backpack = "O_Mortar_01_weapon_F";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -336,7 +336,7 @@ class M16A4_CAN {
     };
 
     class ENG : Rifleman {
-        primaryWeapon = "RH_M4_ris";
+        primaryWeapon = "hlc_rifle_M4";
         primaryWeaponItems[] = {"RH_compM2", "RH_SFM952V"};
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
@@ -399,9 +399,9 @@ class M16A4_CAN {
 
     class Vehicle {
         weapons[] = {
-            {"RH_M16A4", 2},
+            {"CUP_arifle_M16A4_Base", 2},
             {"CUP_launch_M136", 5},
-            {"RH_M4_ris", 2}
+            {"hlc_rifle_M4", 2}
         };
         magazines[] = {
             {"30Rnd_556x45_Stanag", 15},
@@ -429,9 +429,9 @@ class M16A4_CAN {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"RH_M16A4", 2},
+            {"CUP_arifle_M16A4_Base", 2},
             {"CUP_launch_M136", 10},
-            {"RH_M4_ris", 2}
+            {"hlc_rifle_M4", 2}
         };
         magazines[] = {
             {"30Rnd_556x45_Stanag", 40},

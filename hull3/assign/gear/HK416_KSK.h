@@ -361,7 +361,7 @@ class HK416_KSK {
     class SN : Rifleman {
         primaryWeapon = "RH_SR25EC";
         handgunWeapon = "hgun_Pistol_heavy_01_F";
-        primaryWeaponItems[] = {"RH_shortdot", "acc_flashlight", "RH_HBLM"};
+        primaryWeaponItems[] = {"RH_shortdot", "RH_SFM952V", "RH_HBLM"};
         vestMagazines[] = {
             {"RH_20Rnd_762x51_M80A1", 4},
             {"11Rnd_45ACP_Mag", 3}
