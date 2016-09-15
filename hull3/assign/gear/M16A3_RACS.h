@@ -73,7 +73,7 @@ class M16A3_RACS {
     };
 
     class Crew : Rifleman {
-        primaryWeapon = "RH_m4";
+        primaryWeapon = "hlc_rifle_Colt727";
         primaryWeaponItems[] = {};
         uniformMagazines[] = {
             {"Chemlight_green", 2},

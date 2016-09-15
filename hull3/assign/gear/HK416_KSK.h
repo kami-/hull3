@@ -359,17 +359,17 @@ class HK416_KSK {
     };
 
     class SN : Rifleman {
-        primaryWeapon = "RH_SR25EC";
+        primaryWeapon = "srifle_EBR_F";
         handgunWeapon = "hgun_Pistol_heavy_01_F";
-        primaryWeaponItems[] = {"RH_shortdot", "RH_SFM952V", "RH_HBLM"};
+        primaryWeaponItems[] = {"optic_Hamr", "RH_SFM952V", "RH_HBLM"};
         vestMagazines[] = {
-            {"RH_20Rnd_762x51_M80A1", 4},
+            {"20Rnd_762x51_Mag", 4},
             {"11Rnd_45ACP_Mag", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"RH_20Rnd_762x51_M80A1", 3}
+            {"20Rnd_762x51_Mag", 3}
         };
         assignItems[] = {"ItemGPS"};
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -404,7 +404,7 @@ class HK416_KSK {
         magazines[] = {
             {"30Rnd_556x45_Stanag", 15},
             {"30Rnd_556x45_Stanag", 15},
-            {"RH_60Rnd_556x45_M855A1", 10},
+            {"150Rnd_556x45_Drum_Mag_F", 10},
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"UGL_FlareWhite_F", 5},
             {"ACE_HandFlare_White", 5},
@@ -434,7 +434,7 @@ class HK416_KSK {
         magazines[] = {
             {"30Rnd_556x45_Stanag", 40},
             {"30Rnd_556x45_Stanag", 20},
-            {"RH_60Rnd_556x45_M855A1", 20},
+            {"150Rnd_556x45_Drum_Mag_F", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
@@ -462,7 +462,7 @@ class HK416_KSK {
         magazines[] = {
             {"30Rnd_556x45_Stanag", 40},
             {"30Rnd_556x45_Stanag", 20},
-            {"RH_60Rnd_556x45_M855A1", 20},
+            {"150Rnd_556x45_Drum_Mag_F", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},

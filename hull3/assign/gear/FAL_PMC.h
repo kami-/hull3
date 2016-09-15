@@ -353,7 +353,7 @@ class FAL_PMC {
     class SN : Rifleman {
         primaryWeapon = "hlc_rifle_m14sopmod";
         handgunWeapon = "hgun_P07_F";
-        primaryWeaponItems[] = {"RH_shortdot", "RH_SFM952V", "RH_HBLM"};
+        primaryWeaponItems[] = {"optic_Hamr", "RH_SFM952V", "RH_HBLM"};
         vestMagazines[] = {
             {"hlc_20Rnd_762x51_B_M14", 4},
             {"16Rnd_9x21_Mag", 3}

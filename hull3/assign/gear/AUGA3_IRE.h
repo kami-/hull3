@@ -347,7 +347,7 @@ class AUGA3_IRE {
     class SN : Rifleman {
         primaryWeapon = "hlc_rifle_m14sopmod";
         handgunWeapon = "hgun_Pistol_heavy_01_F";
-        primaryWeaponItems[] = {"RH_shortdot", "RH_SFM952V", "RH_HBLM"};
+        primaryWeaponItems[] = {"optic_Hamr", "RH_SFM952V", "RH_HBLM"};
         vestMagazines[] = {
             {"hlc_20Rnd_762x51_B_M14", 4},
             {"11Rnd_45ACP_Mag", 3}
