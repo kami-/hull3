@@ -1,5 +1,5 @@
 #include "hull3_macros.h"
-#include "\idi\clients\acre\addons\api\script_component.hpp"
+#include "\idi\acre\addons\api\script_component.hpp"
 #define PUSH(ARRAY,VAL) (ARRAY) pushBack (VAL) // Fix for ACRE2's pushBack missing parens for value
 
 #include "\userconfig\hull3\log\acre.h"
