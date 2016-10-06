@@ -1923,31 +1923,6 @@ class Faction {
         };
     };
 
-    class AAF_D {
-        gear = "Mk20_AAF_DE";
-        uniform = "AAF_DE";
-        name = "AAF Desert";
-        description = "Desert Camo with Mk20's";
-        languages[] = {{"resistance", 100}};
-        side = "resistance";
-        camouflage[] = {"desert"};
-        rolePrefix = "AAF";
-        vehicleClassnames[] = {
-            {"CO", "AAF_D_MRAP_03_F"},
-            {"SL", "AAF_D_MRAP_03_F"},
-            {"FT", "AAF_D_MRAP_03_F"},
-            {"ATTCH", "AAF_D_MRAP_03_F"},
-            {"ENG", "AAF_D_Truck_02_box_F"},
-            {"APC", "AAF_D_APC_Wheeled_03_cannon_F"},
-            {"IFV", "AAF_D_APC_tracked_03_cannon_F"},
-            {"SPAAG", "CUP_B_M163_USA"},
-            {"TNK", "AAF_D_MBT_03_cannon_F"},
-            {"TH", "AAF_D_Heli_Transport_02_F"},
-            {"AH", "AAF_D_Heli_light_03_F"},
-            {"CAS", "AAF_D_Plane_Fighter_03_CAS_F"},
-            {"Technical", "CUP_I_LR_MG_AAF"}
-        };
-    };
 
     class IND_C_F_BANDIT {
         gear = "AKM_SYND";

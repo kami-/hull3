@@ -132,7 +132,6 @@ class UKR_TTSKO {
 
     class SN : Rifleman {
         headGear = "MNP_MC_UKR";
-        goggles = "AAF_D_Bandmask_G";
         vest = "CUP_V_B_GER_Carrier_Rig";
         backpack = "B_AssaultPack_rgr";
     };

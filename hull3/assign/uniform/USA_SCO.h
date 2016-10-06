@@ -17,7 +17,7 @@ class USA_SCO {
     };
 
     class Crew : Rifleman {
-        headGear = "AAF_D_HelmetCrew_B";
+        headGear = "H_HelmetCrew_I";
         uniform = "MNP_CombatUniform_Scorpion_B";
         vest = "V_BandollierB_rgr";
         backpack = "B_AssaultPack_rgr";

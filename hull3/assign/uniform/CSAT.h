@@ -4,7 +4,7 @@ class CSAT {
         goggles = "";
         uniform = "U_O_CombatUniform_ocamo";
         vest = "MNP_Vest_NZ_2";
-        backpack = "AAF_D_Kitbag_B";
+        backpack = "B_Kitbag_cbr";
     };
 
     class Leader : Rifleman {
@@ -33,7 +33,7 @@ class CSAT {
     };
 
     class Medic : Rifleman {
-        backpack = "AAF_D_Carryall_B";
+        backpack = "B_Carryall_khk";
     };
 
     class FTL : Leader {
@@ -43,14 +43,14 @@ class CSAT {
     };
 
     class AAR : Rifleman {
-        backpack = "AAF_D_Carryall_B";
+        backpack = "B_Carryall_khk";
     };
 
     class RAT : Rifleman {
     };
 
     class MMGG : AR {
-        backpack = "AAF_D_Carryall_B";
+        backpack = "B_Carryall_khk";
     };
 
     class MMGAG : AAR {
@@ -66,7 +66,7 @@ class CSAT {
     };
 
     class MATG : RAT {
-        backpack = "AAF_D_Carryall_B";
+        backpack = "B_Carryall_khk";
     };
 
     class MATAG : AAR {
@@ -76,7 +76,7 @@ class CSAT {
     };
 
     class HATG : RAT {
-        backpack = "AAF_D_Carryall_B";
+        backpack = "B_Carryall_khk";
     };
 
     class HATAG : AAR {
@@ -122,7 +122,7 @@ class CSAT {
     };
 
     class ENG : Rifleman {
-        backpack = "AAF_D_Carryall_B";
+        backpack = "B_Carryall_khk";
     };
 
     class ENGA : ENG {

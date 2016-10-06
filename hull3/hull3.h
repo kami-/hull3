@@ -9,7 +9,6 @@ class Hull3 {
 
     class Uniform {
         #include "assign\uniform\Default.h"
-        #include "assign\uniform\AAF_DE.h"
         #include "assign\uniform\AAF_WD.h"
         #include "assign\uniform\ARC.h"
         #include "assign\uniform\ASA.h"
@@ -167,7 +166,6 @@ class Hull3 {
         #include "assign\gear\M4A1_USMC.h"
         #include "assign\gear\M4_US.h"
         #include "assign\gear\MIX_LVM.h"
-        #include "assign\gear\Mk20_AAF_DE.h"
         #include "assign\gear\Mk20_AAF_WD.h"
         #include "assign\gear\MX_NATO.h"
         #include "assign\gear\MX_NATO_BLK.h"

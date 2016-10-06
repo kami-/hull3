@@ -34,7 +34,7 @@ class NATO_H {
     };
 
     class Medic : Rifleman {
-        backpack = "AAF_D_Carryall_B";
+        backpack = "B_Carryall_khk";
         uniform = "U_B_CombatUniform_mcam_vest";
     };
 
@@ -46,7 +46,7 @@ class NATO_H {
     };
 
     class AAR : Rifleman {
-        backpack = "AAF_D_Carryall_B";
+        backpack = "B_Carryall_khk";
     };
 
     class RAT : Rifleman {
@@ -128,7 +128,7 @@ class NATO_H {
     class ENG : Rifleman {
         uniform = "U_B_CombatUniform_mcam_vest";
         vest = "V_PlateCarrierSpec_mtp";
-        backpack = "AAF_D_Carryall_B";
+        backpack = "B_Carryall_khk";
     };
 
     class ENGA : ENG {
