@@ -4,7 +4,7 @@ class CUP_USMC_WD {
         goggles = "";
         uniform = "CUP_U_B_USMC_MARPAT_WDL_Sleeves";
         vest = "CUP_V_B_MTV_Pouches";
-        backpack = "AAF_D_Kitbag_B";
+        backpack = "B_Kitbag_cbr";
     };
 
     class Leader : Rifleman {
@@ -39,7 +39,7 @@ class CUP_USMC_WD {
     };
 
     class Medic : Rifleman {
-        backpack = "AAF_D_Carryall_B";
+        backpack = "B_Carryall_khk";
         uniform = "CUP_U_B_USMC_MARPAT_WDL_RolledUp";
     };
 
@@ -53,7 +53,7 @@ class CUP_USMC_WD {
     };
 
     class AAR : Rifleman {
-        backpack = "AAF_D_Carryall_B";
+        backpack = "B_Carryall_khk";
     };
 
     class RAT : Rifleman {
@@ -63,7 +63,7 @@ class CUP_USMC_WD {
     };
 
     class MMGG : AR {
-        backpack = "AAF_D_Carryall_B";
+        backpack = "B_Carryall_khk";
     };
 
     class MMGAG : AAR {
@@ -79,7 +79,7 @@ class CUP_USMC_WD {
     };
 
     class MATG : RAT {
-        backpack = "AAF_D_Carryall_B";
+        backpack = "B_Carryall_khk";
     };
 
     class MATAG : AAR {
@@ -89,7 +89,7 @@ class CUP_USMC_WD {
     };
 
     class HATG : RAT {
-        backpack = "AAF_D_Carryall_B";
+        backpack = "B_Carryall_khk";
     };
 
     class HATAG : AAR {
@@ -136,7 +136,7 @@ class CUP_USMC_WD {
 
     class ENG : Rifleman {
         uniform = "CUP_U_B_USMC_MARPAT_WDL_RollUpKneepad";
-        backpack = "AAF_D_Carryall_B";
+        backpack = "B_Carryall_khk";
     };
 
     class ENGA : ENG {

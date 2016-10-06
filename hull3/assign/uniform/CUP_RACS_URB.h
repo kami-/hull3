@@ -18,7 +18,7 @@ class CUP_RACS_URB {
     };
 
     class Crew : Rifleman {
-        headGear = "AAF_D_HelmetCrew_B";
+        headGear = "H_HelmetCrew_I";
         uniform = "CUP_U_I_RACS_Urban_2";
         vest = "CUP_V_I_RACS_Carrier_Rig_3";
         backpack = "B_AssaultPack_cbr";
@@ -28,32 +28,32 @@ class CUP_RACS_URB {
     };
 
     class XO : CO {
-        backpack = "AAF_D_Carryall_B";
+        backpack = "B_Carryall_khk";
     };
 
     class SL : Officer {
     };
 
     class Medic : Rifleman {
-        backpack = "AAF_D_Carryall_B";
+        backpack = "B_Carryall_khk";
     };
 
     class FTL : Leader {
     };
 
     class AR : Rifleman {
-        backpack = "AAF_D_Carryall_B";
+        backpack = "B_Carryall_khk";
     };
 
     class AAR : Rifleman {
-        backpack = "AAF_D_Carryall_B";
+        backpack = "B_Carryall_khk";
     };
 
     class RAT : Rifleman {
     };
 
     class MMGG : AR {
-        backpack = "AAF_D_Carryall_B";
+        backpack = "B_Carryall_khk";
     };
 
     class MMGAG : AAR {
@@ -69,7 +69,7 @@ class CUP_RACS_URB {
     };
 
     class MATG : RAT {
-        backpack = "AAF_D_Carryall_B";
+        backpack = "B_Carryall_khk";
     };
 
     class MATAG : AAR {
@@ -79,7 +79,7 @@ class CUP_RACS_URB {
     };
 
     class HATG : RAT {
-        backpack = "AAF_D_Carryall_B";
+        backpack = "B_Carryall_khk";
     };
 
     class HATAG : AAR {
@@ -98,7 +98,7 @@ class CUP_RACS_URB {
     };
 
     class SAMG : AR {
-        backpack = "AAF_D_Carryall_B";
+        backpack = "B_Carryall_khk";
     };
 
     class SAMAG : AAR {
@@ -126,14 +126,14 @@ class CUP_RACS_URB {
     };
 
     class ENG : Rifleman {
-        backpack = "AAF_D_Carryall_B";
+        backpack = "B_Carryall_khk";
     };
 
     class ENGA : ENG {
     };
 
     class SN : Rifleman {
-        headGear = "AAF_D_Cap_Headphones_B";
+        headGear = "H_Cap_tan";
         goggles = "G_Bandanna_tan";
         uniform = "CUP_U_I_RACS_Urban_2";
         vest = "CUP_V_I_RACS_Carrier_Vest_2";

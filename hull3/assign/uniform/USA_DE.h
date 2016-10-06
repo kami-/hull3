@@ -4,7 +4,7 @@ class USA_DE {
         goggles = "";
         uniform = "MNP_CombatUniform_3Co_A";
         vest = "MNP_Vest_M81";
-        backpack = "AAF_D_Kitbag_B";
+        backpack = "B_Kitbag_cbr";
     };
 
     class Leader : Rifleman {
@@ -20,7 +20,7 @@ class USA_DE {
         headGear = "H_HelmetCrew_I";
         uniform = "MNP_CombatUniform_3Co_B";
         vest = "V_BandollierB_rgr";
-        backpack = "AAF_D_AssaultPack_B";
+        backpack = "B_AssaultPack_cbr";
     };
 
     class CO : Officer {
@@ -33,7 +33,7 @@ class USA_DE {
     };
 
     class Medic : Rifleman {
-        backpack = "AAF_D_Carryall_B";
+        backpack = "B_Carryall_khk";
         vest = "MNP_Vest_M81b";
     };
 
@@ -45,14 +45,14 @@ class USA_DE {
     };
 
     class AAR : Rifleman {
-        backpack = "AAF_D_Carryall_B";
+        backpack = "B_Carryall_khk";
     };
 
     class RAT : Rifleman {
     };
 
     class MMGG : AR {
-        backpack = "AAF_D_Carryall_B";
+        backpack = "B_Carryall_khk";
     };
 
     class MMGAG : AAR {
@@ -68,7 +68,7 @@ class USA_DE {
     };
 
     class MATG : RAT {
-        backpack = "AAF_D_Carryall_B";
+        backpack = "B_Carryall_khk";
     };
 
     class MATAG : AAR {
@@ -78,7 +78,7 @@ class USA_DE {
     };
 
     class HATG : RAT {
-        backpack = "AAF_D_Carryall_B";
+        backpack = "B_Carryall_khk";
     };
 
     class HATAG : AAR {
@@ -125,7 +125,7 @@ class USA_DE {
 
     class ENG : Rifleman {
         uniform = "MNP_CombatUniform_3Co_B";
-        backpack = "AAF_D_Carryall_B";
+        backpack = "B_Carryall_khk";
     };
 
     class ENGA : ENG {
