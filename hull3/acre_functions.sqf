@@ -1,5 +1,5 @@
 #include "hull3_macros.h"
-#include "\idi\clients\acre\addons\api\script_component.hpp"
+#include "\idi\acre\addons\api\script_component.hpp"
 #define PUSH(ARRAY,VAL) (ARRAY) pushBack (VAL) // Fix for ACRE2's pushBack missing parens for value
 
 #include "\userconfig\hull3\log\acre.h"
@@ -44,6 +44,7 @@ hull3_acre_fnc_acreInit = {
     };
     DEBUG("hull.acre.init","Player is alive, starting ACRE init check.");
     [false] call acre_api_fnc_setSpectator;
+    [0.7] call acre_api_fnc_setSelectableVoiceCurve;
     DEBUG("hull.acre.init","ACRE Spectator set to 'false'.");
     waitUntil {
         DEBUG("hull.acre.init","Waiting for ACRE to replace 'ItemRadio'.");
