@@ -139,7 +139,7 @@ class CAR95_CN {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
             {"100Rnd_580x42_Mag_F", 2},
-            {"150Rnd_762x54_Box_Tracer", 3}
+            {"100Rnd_580x42_Mag_Tracer_F", 3}
         };
     };
 
@@ -149,7 +149,7 @@ class CAR95_CN {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
             {"100Rnd_580x42_Mag_F", 2},
-            {"150Rnd_762x54_Box_Tracer", 2}
+            {"100Rnd_580x42_Mag_Tracer_F", 2}
         };
     };
 
