@@ -54,8 +54,10 @@ hull3_acre_fnc_acreInit = {
     uiSleep 1;
     waitUntil { [] call acre_api_fnc_isInitialized; };
     DEBUG("hull.acre.init","ACRE initialized.");
-    [player] call hull3_gear_fnc_assignRadios;
-    DEBUG("hull.acre.init",FMT_1("Radios assigned to '%1'.",player));
+    if (!didJIP) then {
+        [player] call hull3_gear_fnc_assignRadios;
+        DEBUG("hull.acre.init",FMT_1("Radios assigned to '%1'.",player));
+    };
     hull3_acre_isInitialized = true;
     ["acre.initialized", [player]] call hull3_event_fnc_emitEvent;
     waitUntil { [] call acre_api_fnc_isInitialized; };
