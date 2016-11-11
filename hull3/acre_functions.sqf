@@ -280,3 +280,28 @@ hull3_acre_fnc_getRadioChannelFromGroupId = {
         _channel;
     };
 };
+
+hull3_acre_fnc_adminAssign343 = {
+    ["ACRE_PRC343"] call hull3_acre_fnc_adminAssignRadio;
+};
+
+hull3_acre_fnc_adminAssign152 = {
+    ["ACRE_PRC152"] call hull3_acre_fnc_adminAssignRadio;
+};
+
+hull3_acre_fnc_adminAssignRadio = {
+    params ["_radio"];
+
+    if (player canAddItemToUniform _radio) then {
+        player addItemToUniform _radio;
+        player globalChat format ["Requested radio '%1' has been added to uniform.", _radio];
+        [[player, name player, _radio], {
+            params ["_unit", "_name", "_radio"];
+
+            private _message = format ["Player '%1' in unit '%2' has requested radio '%3'!", _name, _unit, _radio];
+            diag_log LOGGING_FORMAT("hull3.acre.admin","WARN",_message);
+        }] remoteExec ["bis_fnc_call", 2];
+    } else {
+        player globalChat format ["Requested radio '%1' cannot be added to uniform. Make sure you have enough space!", _radio];
+    };
+};
