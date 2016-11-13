@@ -16,7 +16,7 @@ hull3_acre_fnc_preInit = {
 };
 
 hull3_acre_fnc_addEventHandlers = {
-    if (!isDedicated) then {
+    if (hasInterface) then {
         ["player.initialized", hull3_acre_fnc_setSpokenLanguages] call hull3_event_fnc_addEventHandler;
     };
 };
@@ -30,8 +30,8 @@ hull3_acre_fnc_postInit = {
 
 hull3_acre_fnc_acreInit = {
     DEBUG("hull3.acre.init","ACRE player init called.");
-    if ([] call hull3_common_fnc_isHeadlessClient) exitWith {
-        DEBUG("hull3.acre.init","Player is an HC, no ACRE check is ommited.");
+    if (!hasInterface) exitWith {
+        DEBUG("hull3.acre.init","Player is an HC, ACRE check ommited.");
     };
     if (didJIP) then {
         DEBUG("hull3.acre.init","Client JIPd, waiting for player to initialize.");
