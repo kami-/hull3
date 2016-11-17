@@ -16,7 +16,7 @@ hull3_acre_fnc_preInit = {
 };
 
 hull3_acre_fnc_addEventHandlers = {
-    if (!isDedicated) then {
+    if (hasInterface) then {
         ["player.initialized", hull3_acre_fnc_setSpokenLanguages] call hull3_event_fnc_addEventHandler;
     };
 };
@@ -30,8 +30,8 @@ hull3_acre_fnc_postInit = {
 
 hull3_acre_fnc_acreInit = {
     DEBUG("hull3.acre.init","ACRE player init called.");
-    if ([] call hull3_common_fnc_isHeadlessClient) exitWith {
-        DEBUG("hull3.acre.init","Player is an HC, no ACRE check is ommited.");
+    if (!hasInterface) exitWith {
+        DEBUG("hull3.acre.init","Player is an HC, ACRE check ommited.");
     };
     if (didJIP) then {
         DEBUG("hull3.acre.init","Client JIPd, waiting for player to initialize.");
@@ -54,7 +54,7 @@ hull3_acre_fnc_acreInit = {
     uiSleep 1;
     waitUntil { [] call acre_api_fnc_isInitialized; };
     DEBUG("hull.acre.init","ACRE initialized.");
-    [player] call hull3_gear_fnc_assignRadios;
+    [player] call hull3_gear_fnc_tryAssignRadios;
     DEBUG("hull.acre.init",FMT_1("Radios assigned to '%1'.",player));
     hull3_acre_isInitialized = true;
     ["acre.initialized", [player]] call hull3_event_fnc_emitEvent;
@@ -278,5 +278,30 @@ hull3_acre_fnc_getRadioChannelFromGroupId = {
         };
 
         _channel;
+    };
+};
+
+hull3_acre_fnc_adminAssign343 = {
+    ["ACRE_PRC343"] call hull3_acre_fnc_adminAssignRadio;
+};
+
+hull3_acre_fnc_adminAssign152 = {
+    ["ACRE_PRC152"] call hull3_acre_fnc_adminAssignRadio;
+};
+
+hull3_acre_fnc_adminAssignRadio = {
+    params ["_radio"];
+
+    if (player canAddItemToUniform _radio) then {
+        player addItemToUniform _radio;
+        player globalChat format ["Requested radio '%1' has been added to uniform.", _radio];
+        [[player, name player, _radio], {
+            params ["_unit", "_name", "_radio"];
+
+            private _message = format ["Player '%1' in unit '%2' has requested radio '%3'!", _name, _unit, _radio];
+            diag_log LOGGING_FORMAT("hull3.acre.admin","WARN",_message);
+        }] remoteExec ["bis_fnc_call", 2];
+    } else {
+        player globalChat format ["Requested radio '%1' cannot be added to uniform. Make sure you have enough space!", _radio];
     };
 };

@@ -16,6 +16,7 @@ hull3_briefing_fnc_addEventHandlers = {
 hull3_briefing_fnc_addNotes = {
     [] call compile preprocessFile ADDON_PATH(briefing\hull3.sqf);
     DEBUG("hull3.briefing","Added Hull to briefing notes.");
+    [] call hull_briefing_fnc_addAcreAdmin;
     [] call hull3_briefing_fnc_addOrbat;
     [] call hull3_briefing_fnc_addSideNotes;
 };
@@ -49,4 +50,16 @@ hull3_briefing_fnc_addSideNotes = {
     };
     [] call compile preprocessFile _briefingFile;
     DEBUG("hull3.briefing","Added Side notes to briefing notes.");
+};
+
+hull_briefing_fnc_addAcreAdmin = {
+    player createDiaryRecord ["Diary", ["ACRE Administration", "
+        <br/>
+        Only use these when appropriate! If you are unsure, ask a host.
+        <br/><br/>
+        <execute expression='[] spawn hull3_acre_fnc_adminAssign343;'>Add AN/PRC-343</execute>
+        <br/><br/>
+        <execute expression='[] spawn hull3_acre_fnc_adminAssign152;'>Add AN/PRC-152</execute>
+        <br/><br/>
+    "]];
 };

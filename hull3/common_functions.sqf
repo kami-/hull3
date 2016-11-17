@@ -16,5 +16,5 @@ hull3_common_fnc_logOnServer = {
 };
 
 hull3_common_fnc_isHeadlessClient = {
-    (!isNil {hasInterface} && {!hasInterface}) || {!isNil {adm_hc_defaultNames} && {(name player) in adm_hc_defaultNames}};
+    !isServer && !hasInterface;
 };
