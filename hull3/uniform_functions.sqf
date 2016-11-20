@@ -88,6 +88,7 @@ hull3_uniform_fnc_assignUniform = {
     FUN_ARGS_2(_unit,_uniform);
 
     if (uniform _unit == _uniform) exitWith {
+        { _unit removeItemFromUniform _x; } foreach uniformItems _unit;
         TRACE("hull3.uniform.assign",FMT_2("Unit '%1' already has uniform '%2'. Skipping assignment.",_unit,_uniform));
     };
     removeUniform _unit;
@@ -101,6 +102,7 @@ hull3_uniform_fnc_assignVest = {
     FUN_ARGS_2(_unit,_vest);
 
     if (vest _unit == _vest) exitWith {
+        { _unit removeItemFromVest _x; } foreach vestItems _unit;
         TRACE("hull3.uniform.assign",FMT_2("Unit '%1' already has vest '%2'. Skipping assignment.",_unit,_vest));
     };
     removeVest _unit;
@@ -114,6 +116,7 @@ hull3_uniform_fnc_assignBackpack = {
     FUN_ARGS_2(_unit,_backpack);
 
     if (backpack _unit == _backpack) exitWith {
+        { _unit removeItemFromBackpack _x; } foreach backpackItems _unit;
         TRACE("hull3.uniform.assign",FMT_2("Unit '%1' already has backpack '%2'. Skipping assignment.",_unit,_backpack));
     };
     removeBackpack _unit;
