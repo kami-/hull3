@@ -16,9 +16,6 @@ hull3_uniform_fnc_assignUniformInit = {
     _unit setVariable ["hull3_uniform_template", _template, true];
     removeHeadgear _unit;
     removeGoggles _unit;
-    removeUniform _unit;
-    removeVest _unit;
-    removeBackpack _unit;
     DEBUG("hull3.uniform.assign",FMT_1("Initialized unit '%1' uniform.",_unit));
 };
 
@@ -90,6 +87,10 @@ hull3_uniform_fnc_assignGoggles = {
 hull3_uniform_fnc_assignUniform = {
     FUN_ARGS_2(_unit,_uniform);
 
+    if (uniform _unit == _uniform) exitWith {
+        TRACE("hull3.uniform.assign",FMT_2("Unit '%1' already has uniform '%2'. Skipping assignment.",_unit,_uniform));
+    };
+    removeUniform _unit;
     if (_uniform != "") then {
         _unit forceAddUniform _uniform;
         TRACE("hull3.uniform.assign",FMT_2("Assigned uniform '%1' to unit '%2'.",_uniform,_unit));
@@ -99,6 +100,10 @@ hull3_uniform_fnc_assignUniform = {
 hull3_uniform_fnc_assignVest = {
     FUN_ARGS_2(_unit,_vest);
 
+    if (vest _unit == _vest) exitWith {
+        TRACE("hull3.uniform.assign",FMT_2("Unit '%1' already has vest '%2'. Skipping assignment.",_unit,_vest));
+    };
+    removeVest _unit;
     if (_vest != "") then {
         _unit addVest _vest;
         TRACE("hull3.uniform.assign",FMT_2("Assigned vest '%1' to unit '%2'.",_vest,_unit));
@@ -106,10 +111,14 @@ hull3_uniform_fnc_assignVest = {
 };
 
 hull3_uniform_fnc_assignBackpack = {
-    FUN_ARGS_2(_unit,_ruck);
+    FUN_ARGS_2(_unit,_backpack);
 
-    if (_ruck != "") then {
-        _unit addBackpack _ruck;
-        TRACE("hull3.uniform.assign",FMT_2("Assigned ruck '%1' to unit '%2'.",_ruck,_unit));
+    if (backpack _unit == _backpack) exitWith {
+        TRACE("hull3.uniform.assign",FMT_2("Unit '%1' already has backpack '%2'. Skipping assignment.",_unit,_backpack));
+    };
+    removeBackpack _unit;
+    if (_backpack != "") then {
+        _unit addBackpack _backpack;
+        TRACE("hull3.uniform.assign",FMT_2("Assigned backpack '%1' to unit '%2'.",_backpack,_unit));
     };
 };
