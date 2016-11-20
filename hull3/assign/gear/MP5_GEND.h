@@ -159,11 +159,11 @@ class MP5_GEND {
     class MMGG : Rifleman {
         primaryWeapon = "hlc_lmg_m60";
         primaryWeaponItems[] = {};
-        vestMagazines[] = {{"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 1}};
+        vestMagazines[] = {{"hlc_100Rnd_762x51_M_M60E4", 1}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 4}
+            {"hlc_100Rnd_762x51_M_M60E4", 4}
         };
     };
 
@@ -171,7 +171,7 @@ class MP5_GEND {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 4}
+            {"hlc_100Rnd_762x51_M_M60E4", 4}
         };
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
@@ -423,7 +423,7 @@ class MP5_GEND {
             {"hlc_30Rnd_9x19_B_MP5", 40},
             {"hlc_30Rnd_9x19_B_MP5", 20},
             {"hlc_50rnd_556x45_EPR", 20},
-            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
+            {"hlc_100Rnd_762x51_M_M60E4", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
             {"SatchelCharge_Remote_Mag", 5},
@@ -450,7 +450,7 @@ class MP5_GEND {
             {"hlc_30Rnd_9x19_B_MP5", 40},
             {"hlc_30Rnd_9x19_B_MP5", 20},
             {"hlc_50rnd_556x45_EPR", 20},
-            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
+            {"hlc_100Rnd_762x51_M_M60E4", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
             {"CUP_MAAWS_HEAT_M", 5},
