@@ -1,37 +1,37 @@
-class IF44_USSR_U {
+class IF44_USSR_W_U {
     class Rifleman {
         headGear = "H_LIB_SOV_RA_Helmet";
         goggles = "";
-        uniform = "U_LIB_SOV_Strelok";
+        uniform = "U_LIB_SOV_Strelok_w";
         vest = "V_LIB_SOV_RA_MosinBelt_ARM";
         backpack = "B_LIB_SOV_RA_Rucksack";
     };
 
     class Leader : Rifleman {
-        uniform = "U_LIB_SOV_Sergeant";
+        uniform = "U_LIB_SOV_Sergeant_w";
         vest = "V_LIB_SOV_RA_PPShBelt_ARM";
     };
 
     class Officer : Leader {
-        uniform = "U_LIB_SOV_Leutenant";
+        uniform = "U_LIB_SOV_Leutenant_w";
         vest = "V_LIB_SOV_RA_OfficerVest_ARM";
         backpack = "B_LIB_SOV_RA_GasBag";
     };
 
     class Crew : Rifleman {
         headGear = "H_LIB_SOV_TankHelmet";
-        uniform = "U_LIB_SOV_Tank_ryadovoi";
+        uniform = "U_LIB_SOV_Tank_ryadovoi_w";
         vest = "V_LIB_SOV_RA_MosinBelt_ARM";
         backpack = "B_LIB_SOV_RA_GasBag";
     };
 
     class CO : Officer {
-        uniform = "U_LIB_SOV_Kapitan";
+        uniform = "U_LIB_SOV_Kapitan_w";
         headGear = "H_LIB_SOV_RA_OfficerCap";
     };
 
     class XO : CO {
-        uniform = "U_LIB_SOV_Stleutenant";
+        uniform = "U_LIB_SOV_Stleutenant_w";
         headGear = "H_LIB_SOV_RA_OfficerCap";
         backpack = "B_LIB_SOV_RA_Radio";
     };
@@ -47,7 +47,7 @@ class IF44_USSR_U {
     };
 
     class AR : Rifleman {
-        uniform = "U_LIB_SOV_Efreitor";
+        uniform = "U_LIB_SOV_Efreitor_w";
         vest = "V_LIB_SOV_RA_SVTBelt_ARM";
     };
 
@@ -130,18 +130,18 @@ class IF44_USSR_U {
     };
 
     class ENG : Rifleman {
-        uniform = "U_LIB_SOV_Stsergeant";
+        uniform = "U_LIB_SOV_Stsergeant_w";
         vest = "V_LIB_SOV_IShBrVestPPShDisc";
     };
 
     class ENGA : ENG {
-        uniform = "U_LIB_SOV_Efreitor";
+        uniform = "U_LIB_SOV_Efreitor_w";
     };
 
     class SN : Rifleman {
         headGear = "H_LIB_SOV_RA_PrivateCap";
-        uniform = "U_LIB_SOV_Razvedchik_am";
         vest = "V_LIB_SOV_RA_SniperVest_ARM";
+        uniform = "U_LIB_SOV_Sniper_w";
     };
 
     class SP : SN {

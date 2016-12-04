@@ -224,8 +224,8 @@ class IF44_USA_G {
     class ENG : Rifleman {
         backpackMagazines[] = {
             {"Toolkit", 1},
-            {"LIB_US_TNT_4pound_mag", 3},
-            {"LIB_Ladung_Big_MINE_mag", 2}
+            {"DemoCharge_Remote_Mag", 3},
+            {"DemoCharge_Remote_Mag", 2}
         };
         vestItems[] = {
             {"ACE_DefusalKit", 1},
@@ -305,7 +305,7 @@ class IF44_USA_G {
             {"LIB_20Rnd_762x63", 20},
             {"LIB_15Rnd_762x33", 15},
             {"LIB_5Rnd_762x63", 15},
-            {"LIB_Ladung_Big_MINE_mag", 5},
+            {"DemoCharge_Remote_Mag", 5},
             {"LIB_US_Mk_2", 10},
             {"LIB_US_M18", 10}
         };
