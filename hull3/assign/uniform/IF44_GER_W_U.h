@@ -1,6 +1,6 @@
 class IF44_GER_W_U {
     class Rifleman {
-        headGear = "H_LIB_GER_Helmet";
+        headGear = "H_LIB_GER_Helmet_w";
         goggles = "";
         uniform = "U_LIB_GER_Schutze_w";
         vest = "V_LIB_GER_VestKar98_ARM";

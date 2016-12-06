@@ -1,37 +1,35 @@
-class IF44_USSR_W_U {
+class IF44_USSR_VDV_U {
     class Rifleman {
-        headGear = "H_LIB_SOV_RA_Helmet_w";
+        headGear = "H_LIB_SOV_RA_PrivateCap";
         goggles = "";
-        uniform = "U_LIB_SOV_Strelok_w";
+        uniform = "U_LIB_SOV_Razvedchik_am";
         vest = "V_LIB_SOV_RA_MosinBelt_ARM";
-        backpack = "B_LIB_SOV_RA_Rucksack";
+        backpack = "B_LIB_SOV_RA_Rucksack_Green";
     };
 
     class Leader : Rifleman {
-        uniform = "U_LIB_SOV_Sergeant_w";
+        uniform = "U_LIB_SOV_Razvedchik_lis";
         vest = "V_LIB_SOV_RA_PPShBelt_ARM";
     };
 
     class Officer : Leader {
-        uniform = "U_LIB_SOV_Leutenant_w";
+        uniform = "U_LIB_SOV_Razvedchik_mix";
         vest = "V_LIB_SOV_RA_OfficerVest_ARM";
         backpack = "B_LIB_SOV_RA_GasBag";
     };
 
     class Crew : Rifleman {
         headGear = "H_LIB_SOV_TankHelmet";
-        uniform = "U_LIB_SOV_Tank_ryadovoi_w";
+        uniform = "U_LIB_SOV_Tank_ryadovoi";
         vest = "V_LIB_SOV_RA_MosinBelt_ARM";
         backpack = "B_LIB_SOV_RA_GasBag";
     };
 
     class CO : Officer {
-        uniform = "U_LIB_SOV_Kapitan_w";
         headGear = "H_LIB_SOV_RA_OfficerCap";
     };
 
     class XO : CO {
-        uniform = "U_LIB_SOV_Stleutenant_w";
         headGear = "H_LIB_SOV_RA_OfficerCap";
     };
 
@@ -46,7 +44,6 @@ class IF44_USSR_W_U {
     };
 
     class AR : Rifleman {
-        uniform = "U_LIB_SOV_Efreitor_w";
         vest = "V_LIB_SOV_RA_SVTBelt_ARM";
     };
 
@@ -63,6 +60,7 @@ class IF44_USSR_W_U {
     };
 
     class MMGAG : AAR {
+        uniform = "U_LIB_SOV_Razvedchik_lis";
     };
 
     class HMGG : AR {
@@ -78,6 +76,7 @@ class IF44_USSR_W_U {
     };
 
     class MATAG : AAR {
+        uniform = "U_LIB_SOV_Razvedchik_lis";
     };
 
     class MATAC : MATAG {
@@ -129,18 +128,17 @@ class IF44_USSR_W_U {
     };
 
     class ENG : Rifleman {
-        uniform = "U_LIB_SOV_Stsergeant_w";
+        uniform = "U_LIB_SOV_Razvedchik_lis";
         vest = "V_LIB_SOV_IShBrVestPPShDisc";
     };
 
     class ENGA : ENG {
-        uniform = "U_LIB_SOV_Efreitor_w";
     };
 
     class SN : Rifleman {
         headGear = "H_LIB_SOV_RA_PrivateCap";
+        uniform = "U_LIB_SOV_Razvedchik_mix";
         vest = "V_LIB_SOV_RA_SniperVest_ARM";
-        uniform = "U_LIB_SOV_Sniper_w";
     };
 
     class SP : SN {
