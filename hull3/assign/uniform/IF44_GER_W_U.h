@@ -31,7 +31,6 @@ class IF44_GER_W_U {
     class XO : CO {
         uniform = "U_LIB_GER_Oberleutnant_w";
         headGear = "H_LIB_GER_OfficerCap";
-        backpack = "B_LIB_GER_Radio";
     };
 
     class SL : Officer {

@@ -33,7 +33,6 @@ class IF44_USSR_U {
     class XO : CO {
         uniform = "U_LIB_SOV_Stleutenant";
         headGear = "H_LIB_SOV_RA_OfficerCap";
-        backpack = "B_LIB_SOV_RA_Radio";
     };
 
     class SL : Officer {

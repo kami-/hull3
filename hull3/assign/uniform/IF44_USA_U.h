@@ -32,7 +32,6 @@ class IF44_USA_U {
     class XO : CO {
         uniform = "U_LIB_US_Off";
         headGear = "H_LIB_US_Helmet_First_lieutenant";
-        backpack = "B_LIB_US_Radio";
     };
 
     class SL : Officer {
