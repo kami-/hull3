@@ -62,6 +62,7 @@ class Hull3 {
         #include "assign\uniform\IF44_GER_W_U.h"
         #include "assign\uniform\IF44_USA_U.h"
         #include "assign\uniform\IF44_USSR_U.h"
+        #include "assign\uniform\IF44_USSR_VDV_U.h"
         #include "assign\uniform\IF44_USSR_W_U.h"
         #include "assign\uniform\IRE_DE.h"
         #include "assign\uniform\IRE_WD.h"
