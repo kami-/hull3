@@ -3,25 +3,25 @@ class IF44_USA_U {
         headGear = "H_LIB_US_Helmet";
         goggles = "";
         uniform = "U_LIB_US_Private";
-        vest = "V_LIB_US_Vest_Garand";
+        vest = "V_LIB_US_Vest_Garand_ARM";
         backpack = "B_LIB_US_Backpack";
     };
 
     class Leader : Rifleman {
         uniform = "U_LIB_US_Sergant";
-        vest = "V_LIB_US_Vest_Thompson_nco";
+        vest = "V_LIB_US_Vest_Thompson_nco_ARM";
         headGear = "H_LIB_US_Helmet_Net";
     };
 
     class Officer : Leader {
         uniform = "U_LIB_US_Off";
-        vest = "V_LIB_US_Vest_Carbine_nco";
+        vest = "V_LIB_US_Vest_Carbine_nco_ARM";
         headGear = "H_LIB_US_Helmet_Second_lieutenant";
     };
 
     class Crew : Rifleman {
         headGear = "H_LIB_US_Helmet_Tank";
-        vest = "V_LIB_US_Vest_45";
+        vest = "V_LIB_US_Vest_45_ARM";
     };
 
     class CO : Officer {
@@ -32,7 +32,6 @@ class IF44_USA_U {
     class XO : CO {
         uniform = "U_LIB_US_Off";
         headGear = "H_LIB_US_Helmet_First_lieutenant";
-        backpack = "B_LIB_US_Radio";
     };
 
     class SL : Officer {
@@ -40,7 +39,7 @@ class IF44_USA_U {
 
     class Medic : Rifleman {
         backpack = "B_LIB_US_MedicBackpack_Empty";
-        vest = "V_LIB_US_Vest_Medic2";
+        vest = "V_LIB_US_Vest_Medic2_ARM";
         headGear = "H_LIB_US_Helmet_Med";
         uniform = "U_LIB_US_Med";
     };
@@ -50,11 +49,11 @@ class IF44_USA_U {
 
     class AR : Rifleman {
         uniform = "U_LIB_US_Corp";
-        vest = "V_LIB_US_Vest_Bar";
+        vest = "V_LIB_US_Vest_Bar_ARM";
     };
 
     class AAR : Rifleman {
-        vest = "V_LIB_US_Vest_Asst_MG";
+        vest = "V_LIB_US_Vest_Asst_MG_ARM";
     };
 
     class RAT : Rifleman {
@@ -76,10 +75,11 @@ class IF44_USA_U {
     };
 
     class MATG : RAT {
-        backpack = "V_LIB_US_Vest_Asst_MG";
+        backpack = "B_LIB_US_RocketBag_Empty";
     };
 
     class MATAG : AAR {
+    backpack = "B_LIB_US_RocketBag_Empty";
     };
 
     class MATAC : MATAG {
@@ -132,7 +132,7 @@ class IF44_USA_U {
 
     class ENG : Rifleman {
         uniform = "U_LIB_US_Eng";
-        vest = "V_LIB_US_Vest_Carbine_eng";
+        vest = "V_LIB_US_Vest_Carbine_eng_ARM";
     };
 
     class ENGA : ENG {
@@ -142,7 +142,7 @@ class IF44_USA_U {
     class SN : Rifleman {
         headGear = "H_LIB_US_Helmet_Net";
         uniform = "U_LIB_US_Snipe";
-        vest = "V_LIB_US_Vest_Garand";
+        vest = "V_LIB_US_Vest_Garand_ARM";
     };
 
     class SP : SN {

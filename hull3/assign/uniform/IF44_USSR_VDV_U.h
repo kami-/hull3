@@ -1,19 +1,19 @@
-class IF44_USSR_U {
+class IF44_USSR_VDV_U {
     class Rifleman {
-        headGear = "H_LIB_SOV_RA_Helmet";
+        headGear = "H_LIB_SOV_RA_PrivateCap";
         goggles = "";
-        uniform = "U_LIB_SOV_Strelok";
+        uniform = "U_LIB_SOV_Razvedchik_am";
         vest = "V_LIB_SOV_RA_MosinBelt_ARM";
-        backpack = "B_LIB_SOV_RA_Rucksack";
+        backpack = "B_LIB_SOV_RA_Rucksack_Green";
     };
 
     class Leader : Rifleman {
-        uniform = "U_LIB_SOV_Sergeant";
+        uniform = "U_LIB_SOV_Razvedchik_lis";
         vest = "V_LIB_SOV_RA_PPShBelt_ARM";
     };
 
     class Officer : Leader {
-        uniform = "U_LIB_SOV_Leutenant";
+        uniform = "U_LIB_SOV_Razvedchik_mix";
         vest = "V_LIB_SOV_RA_OfficerVest_ARM";
         backpack = "B_LIB_SOV_RA_GasBag";
     };
@@ -26,12 +26,10 @@ class IF44_USSR_U {
     };
 
     class CO : Officer {
-        uniform = "U_LIB_SOV_Kapitan";
         headGear = "H_LIB_SOV_RA_OfficerCap";
     };
 
     class XO : CO {
-        uniform = "U_LIB_SOV_Stleutenant";
         headGear = "H_LIB_SOV_RA_OfficerCap";
     };
 
@@ -46,7 +44,6 @@ class IF44_USSR_U {
     };
 
     class AR : Rifleman {
-        uniform = "U_LIB_SOV_Efreitor";
         vest = "V_LIB_SOV_RA_SVTBelt_ARM";
     };
 
@@ -63,6 +60,7 @@ class IF44_USSR_U {
     };
 
     class MMGAG : AAR {
+        uniform = "U_LIB_SOV_Razvedchik_lis";
     };
 
     class HMGG : AR {
@@ -78,6 +76,7 @@ class IF44_USSR_U {
     };
 
     class MATAG : AAR {
+        uniform = "U_LIB_SOV_Razvedchik_lis";
     };
 
     class MATAC : MATAG {
@@ -129,17 +128,16 @@ class IF44_USSR_U {
     };
 
     class ENG : Rifleman {
-        uniform = "U_LIB_SOV_Stsergeant";
+        uniform = "U_LIB_SOV_Razvedchik_lis";
         vest = "V_LIB_SOV_IShBrVestPPShDisc";
     };
 
     class ENGA : ENG {
-        uniform = "U_LIB_SOV_Efreitor";
     };
 
     class SN : Rifleman {
         headGear = "H_LIB_SOV_RA_PrivateCap";
-        uniform = "U_LIB_SOV_Razvedchik_am";
+        uniform = "U_LIB_SOV_Razvedchik_mix";
         vest = "V_LIB_SOV_RA_SniperVest_ARM";
     };
 

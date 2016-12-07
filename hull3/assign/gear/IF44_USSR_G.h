@@ -244,8 +244,8 @@ class IF44_USSR_G {
         primaryWeapon = "LIB_M44";
         backpackMagazines[] = {
             {"Toolkit", 1},
-            {"LIB_US_TNT_4pound_mag", 3},
-            {"LIB_Ladung_Big_MINE_mag", 2}
+            {"DemoCharge_Remote_Mag", 3},
+            {"DemoCharge_Remote_Mag", 2}
         };
         vestItems[] = {
             {"ACE_DefusalKit", 1},
@@ -324,7 +324,7 @@ class IF44_USSR_G {
             {"LIB_71Rnd_762x25", 20},
             {"LIB_47Rnd_762x54", 10},
             {"LIB_10Rnd_762x54", 10},
-            {"LIB_Ladung_Big_MINE_mag", 5},
+            {"DemoCharge_Remote_Mag", 5},
             {"LIB_rg42", 10},
             {"LIB_RDG", 10}
         };

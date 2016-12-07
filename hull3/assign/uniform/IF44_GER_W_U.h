@@ -1,35 +1,35 @@
-class IF44_GER_U {
+class IF44_GER_W_U {
     class Rifleman {
-        headGear = "H_LIB_GER_Helmet";
+        headGear = "H_LIB_GER_Helmet_w";
         goggles = "";
-        uniform = "U_LIB_GER_Schutze";
+        uniform = "U_LIB_GER_Schutze_w";
         vest = "V_LIB_GER_VestKar98_ARM";
         backpack = "B_LIB_GER_A_frame";
     };
 
     class Leader : Rifleman {
-        uniform = "U_LIB_GER_Unterofficer";
+        uniform = "U_LIB_GER_Unterofficer_w";
         vest = "V_LIB_GER_VestUnterofficer_ARM";
     };
 
     class Officer : Leader {
-        uniform = "U_LIB_GER_Leutnant";
+        uniform = "U_LIB_GER_Leutnant_w";
         vest = "V_LIB_GER_FieldOfficer_ARM";
     };
 
     class Crew : Rifleman {
         headGear = "H_LIB_GER_TankPrivateCap";
-        uniform = "U_LIB_GER_Tank_crew_private";
+        uniform = "U_LIB_GER_Tank_crew_private_w";
         vest = "V_LIB_GER_TankPrivateBelt_ARM";
     };
 
     class CO : Officer {
-        uniform = "U_LIB_GER_Hauptmann";
+        uniform = "U_LIB_GER_Hauptmann_w";
         headGear = "H_LIB_GER_OfficerCap";
     };
 
     class XO : CO {
-        uniform = "U_LIB_GER_Oberleutnant";
+        uniform = "U_LIB_GER_Oberleutnant_w";
         headGear = "H_LIB_GER_OfficerCap";
     };
 
@@ -38,14 +38,14 @@ class IF44_GER_U {
 
     class Medic : Rifleman {
         backpack = "B_LIB_GER_MedicBackpack_Empty";
-        uniform = "U_LIB_GER_Medic";
+        uniform = "U_LIB_GER_Medic_w";
     };
 
     class FTL : Leader {
     };
 
     class AR : Rifleman {
-        uniform = "U_LIB_GER_Gefreiter";
+        uniform = "U_LIB_GER_Gefreiter_w";
         vest = "V_LIB_GER_VestSTG_ARM";
     };
 
@@ -129,27 +129,27 @@ class IF44_GER_U {
     };
 
     class ENG : Rifleman {
-        uniform = "U_LIB_GER_Unterofficer";
+        uniform = "U_LIB_GER_Unterofficer_w";
     };
 
     class ENGA : ENG {
-        uniform = "U_LIB_GER_Schutze";
+        uniform = "U_LIB_GER_Schutze_w";
     };
 
     class SN : Rifleman {
         headGear = "H_LIB_GER_Cap";
-        uniform = "U_LIB_GER_Scharfschutze";
+        uniform = "U_LIB_GER_Scharfschutze_w";
     };
 
     class SP : SN {
     };
 
     class VC : Crew {
-        uniform = "U_LIB_GER_Tank_crew_leutnant";
+        uniform = "U_LIB_GER_Tank_crew_leutnant_w";
     };
 
     class VG : Crew {
-        uniform = "U_LIB_GER_Tank_crew_unterofficer";
+        uniform = "U_LIB_GER_Tank_crew_unterofficer_w";
     };
 
     class VD : Crew {
