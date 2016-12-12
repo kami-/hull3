@@ -890,7 +890,7 @@ class Faction {
         description = "Multicam DPM and L85's";
         languages[] = {{"west", 100}};
         side = "west";
-        camouflage[] = {"woodland", "desert"};
+        camouflage[] = {"desert"};
         rolePrefix = "BAF";
         vehicleClassnames[] = {
             {"CO", "CUP_B_LR_Transport_GB_D"},
