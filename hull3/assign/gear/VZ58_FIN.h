@@ -129,11 +129,11 @@ class VZ58_FIN {
     class AR : Rifleman {
         primaryWeapon = "hlc_rifle_rpk";
         primaryWeaponItems[] = {};
-        vestMagazines[] = {{"hlc_75Rnd_762x39_m_rpk", 2}};
+        vestMagazines[] = {{"hlc_45Rnd_762x39_m_rpk", 4}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_75Rnd_762x39_m_rpk", 2},
+            {"hlc_45Rnd_762x39_m_rpk", 4},
             {"hlc_45Rnd_762x39_t_rpk", 4}
         };
     };
@@ -142,7 +142,7 @@ class VZ58_FIN {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_75Rnd_762x39_m_rpk", 2},
+            {"hlc_45Rnd_762x39_m_rpk", 4},
             {"hlc_45Rnd_762x39_t_rpk", 2}
         };
         binocular = "Binocular";
@@ -420,7 +420,7 @@ class VZ58_FIN {
         magazines[] = {
             {"CUP_30Rnd_Sa58_M", 15},
             {"CUP_30Rnd_Sa58_M", 15},
-            {"hlc_75Rnd_762x39_m_rpk", 10},
+            {"hlc_45Rnd_762x39_m_rpk", 20},
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"UGL_FlareWhite_F", 5},
             {"ACE_HandFlare_White", 5},
@@ -450,7 +450,7 @@ class VZ58_FIN {
         magazines[] = {
             {"CUP_30Rnd_Sa58_M", 40},
             {"CUP_30Rnd_Sa58_M", 20},
-            {"hlc_75Rnd_762x39_m_rpk", 20},
+            {"hlc_45Rnd_762x39_m_rpk", 40},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
@@ -477,7 +477,7 @@ class VZ58_FIN {
         magazines[] = {
             {"CUP_30Rnd_Sa58_M", 40},
             {"CUP_30Rnd_Sa58_M", 20},
-            {"hlc_75Rnd_762x39_m_rpk", 20},
+            {"hlc_45Rnd_762x39_m_rpk", 40},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
