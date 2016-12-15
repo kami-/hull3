@@ -20,7 +20,7 @@ class IF44_USSR_W_U {
 
     class Crew : Rifleman {
         headGear = "H_LIB_SOV_TankHelmet";
-        uniform = "U_LIB_SOV_Tank_ryadovoi_w";
+        uniform = "U_LIB_SOV_Tank_ryadovoi";
         vest = "V_LIB_SOV_RA_MosinBelt_ARM";
         backpack = "B_LIB_SOV_RA_GasBag";
     };

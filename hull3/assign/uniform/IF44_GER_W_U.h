@@ -19,7 +19,7 @@ class IF44_GER_W_U {
 
     class Crew : Rifleman {
         headGear = "H_LIB_GER_TankPrivateCap";
-        uniform = "U_LIB_GER_Tank_crew_private_w";
+        uniform = "U_LIB_GER_Tank_crew_private";
         vest = "V_LIB_GER_TankPrivateBelt_ARM";
     };
 
@@ -145,11 +145,11 @@ class IF44_GER_W_U {
     };
 
     class VC : Crew {
-        uniform = "U_LIB_GER_Tank_crew_leutnant_w";
+        uniform = "U_LIB_GER_Tank_crew_leutnant";
     };
 
     class VG : Crew {
-        uniform = "U_LIB_GER_Tank_crew_unterofficer_w";
+        uniform = "U_LIB_GER_Tank_crew_unterofficer";
     };
 
     class VD : Crew {
