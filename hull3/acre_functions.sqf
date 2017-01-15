@@ -22,7 +22,6 @@ hull3_acre_fnc_addEventHandlers = {
 };
 
 hull3_acre_fnc_postInit = {
-    [] call hull3_acre_fnc_setSettings;
     [] call hull3_acre_fnc_setupPresets;
     [] call hull3_acre_fnc_addLanguages;
     [] spawn hull3_acre_fnc_acreInit;
@@ -62,26 +61,6 @@ hull3_acre_fnc_acreInit = {
     [player] call hull3_acre_fnc_setRadioChannels;
     player globalChat "ACRE2 radios and channels have been assigned.";
     DEBUG("hull.acre.init","Hull3 ACRE init finished.");
-};
-
-hull3_acre_fnc_setSettings = {
-    DECLARE(_value) = ["ACRE", "revealToAi"] call hull3_config_fnc_getBool;
-    [_value] call acre_api_fnc_setRevealToAI;
-    DEBUG("hull3.acre.settings",FMT_1("Set 'revealToAi' to '%1'.",_value));
-    _value = ["ACRE", "lossModelScale"] call hull3_config_fnc_getNumber;
-    [_value] call acre_api_fnc_setLossModelScale;
-    DEBUG("hull3.acre.settings",FMT_1("Set 'lossModelScale' to '%1'.",_value));
-    _value = ["ACRE", "fullDuplex"] call hull3_config_fnc_getBool;
-    [_value] call acre_api_fnc_setFullDuplex;
-    DEBUG("hull3.acre.settings",FMT_1("Set 'fullDuplex' to '%1'.",_value));
-    _value = ["ACRE", "interference"] call hull3_config_fnc_getBool;
-    [_value] call acre_api_fnc_setInterference;
-    DEBUG("hull3.acre.settings",FMT_1("Set 'interference' to '%1'.",_value));
-    _value = ["ACRE", "ignoreAntennaDirection"] call hull3_config_fnc_getBool;
-    [_value] call acre_api_fnc_ignoreAntennaDirection;
-    DEBUG("hull3.acre.settings",FMT_1("Set 'ignoreAntennaDirection' to '%1'.",_value));
-    ACRE_TEST_OCCLUSION = true;
-    DEBUG("hull3.acre.settings",FMT_1("Set 'ACRE_TEST_OCCLUSION' to '%1'.",ACRE_TEST_OCCLUSION));
 };
 
 hull3_acre_fnc_addLanguages = {
