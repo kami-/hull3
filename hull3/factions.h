@@ -909,6 +909,84 @@ class Faction {
         };
     };
 
+    class CUP_CDF_DES {
+        gear = "AKS74_CDF";
+        uniform = "CUP_CDF_DES";
+        name = "CDF (Desert)";
+        description = "Desert CDF with AKS74's";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"desert"};
+        rolePrefix = "CDF";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_UAZ_Unarmed_CDF"},
+            {"SL", "CUP_B_UAZ_Unarmed_CDF"},
+            {"FT", "CUP_B_Ural_CDF"},
+            {"ATTCH", "CUP_B_Ural_CDF"},
+            {"ENG", "CUP_B_Ural_Repair_CDF"},
+            {"APC", "CUP_B_BTR60_CDF"},
+            {"IFV", "CUP_B_BMP2_CDF"},
+            {"SPAAG", "CUP_B_ZSU23_CDF"},
+            {"TNK", "CUP_B_T72_CDF"},
+            {"TH", "CUP_B_Mi17_CDF"},
+            {"AH", "CUP_B_Mi24_D_CDF"},
+            {"CAS", "CUP_B_Su25_CDF"},
+            {"Technical", "CUP_B_UAZ_MG_CDF"}
+        };
+    };
+
+    class CUP_CDF_FOR {
+        gear = "AKS74_CDF";
+        uniform = "CUP_CDF_FOR";
+        name = "CDF (Forest)";
+        description = "Forest CDF with AKS74's";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland"};
+        rolePrefix = "CDF";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_UAZ_Unarmed_CDF"},
+            {"SL", "CUP_B_UAZ_Unarmed_CDF"},
+            {"FT", "CUP_B_Ural_CDF"},
+            {"ATTCH", "CUP_B_Ural_CDF"},
+            {"ENG", "CUP_B_Ural_Repair_CDF"},
+            {"APC", "CUP_B_BTR60_CDF"},
+            {"IFV", "CUP_B_BMP2_CDF"},
+            {"SPAAG", "CUP_B_ZSU23_CDF"},
+            {"TNK", "CUP_B_T72_CDF"},
+            {"TH", "CUP_B_Mi17_CDF"},
+            {"AH", "CUP_B_Mi24_D_CDF"},
+            {"CAS", "CUP_B_Su25_CDF"},
+            {"Technical", "CUP_B_UAZ_MG_CDF"}
+        };
+    };
+
+    class CUP_CDF_MOU {
+        gear = "AKS74_CDF";
+        uniform = "CUP_CDF_MOU";
+        name = "CDF (Mountain)";
+        description = "Mountain CDF with AKS74's";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland"};
+        rolePrefix = "CDF";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_UAZ_Unarmed_CDF"},
+            {"SL", "CUP_B_UAZ_Unarmed_CDF"},
+            {"FT", "CUP_B_Ural_CDF"},
+            {"ATTCH", "CUP_B_Ural_CDF"},
+            {"ENG", "CUP_B_Ural_Repair_CDF"},
+            {"APC", "CUP_B_BTR60_CDF"},
+            {"IFV", "CUP_B_BMP2_CDF"},
+            {"SPAAG", "CUP_B_ZSU23_CDF"},
+            {"TNK", "CUP_B_T72_CDF"},
+            {"TH", "CUP_B_Mi17_CDF"},
+            {"AH", "CUP_B_Mi24_D_CDF"},
+            {"CAS", "CUP_B_Su25_CDF"},
+            {"Technical", "CUP_B_UAZ_MG_CDF"}
+        };
+    };
+
     class IF44_GER {
         gear = "IF44_GER_G";
         uniform = "IF44_GER_U";
@@ -2418,6 +2496,32 @@ class Faction {
         };
     };
 
+    class CUP_RACS_MECH {
+        gear = "M16A3_RACS";
+        uniform = "CUP_RACS_MECH";
+        name = "Royal Army Corps of Sahrani (Mechanised)";
+        description = "Mechanised Uniforms and M16A3's";
+        languages[] = {{"resistance", 100}};
+        side = "resistance";
+        camouflage[] = {"desert"};
+        rolePrefix = "Royal Army Corps of Sahrani";
+        vehicleClassnames[] = {
+            {"CO", "CUP_I_LR_Transport_RACS"},
+            {"SL", "CUP_I_LR_Transport_RACS"},
+            {"FT", "CUP_I_LR_Transport_RACS"},
+            {"ATTCH", "CUP_I_LR_Transport_RACS"},
+            {"ENG", "B_Truck_01_Repair_F"},
+            {"APC", "CUP_I_M113_RACS"},
+            {"IFV", "CUP_O_BMP2_SLA"},
+            {"SPAAG", "CUP_I_M163_RACS"},
+            {"TNK", "CUP_I_T72_RACS"},
+            {"TH", "CUP_I_SA330_Puma_HC2_RACS"},
+            {"AH", "CUP_B_AH1Z"},
+            {"CAS", "CUP_B_AV8B_Hydra19"},
+            {"Technical", "CUP_B_LR_Special_M2_GB_D"}
+        };
+    };
+
     class CUP_TK_LOC {
         gear = "AKM_TKL";
         uniform = "CUP_TK_LOC";
@@ -2495,5 +2599,83 @@ class Faction {
             {"Technical", "LIB_US_M3_Halftrack"}
         };
     };
-    
+
+    class CUP_CDF_DES_UN {
+        gear = "M16A3_CDF";
+        uniform = "CUP_CDF_DES_UN";
+        name = "CDF UN (Desert)";
+        description = "Desert United Nations with M16A3's";
+        languages[] = {{"resistance", 100}};
+        side = "resistance";
+        camouflage[] = {"desert"};
+        rolePrefix = "CDF UN";
+        vehicleClassnames[] = {
+            {"CO", "CUP_I_UAZ_Unarmed_UN"},
+            {"SL", "CUP_I_UAZ_Unarmed_UN"},
+            {"FT", "CUP_I_Ural_UN"},
+            {"ATTCH", "CUP_I_Ural_UN"},
+            {"ENG", "CUP_I_Ural_Repair_UN"},
+            {"APC", "CUP_I_M113_UN"},
+            {"IFV", "CUP_I_BMP2_UN"},
+            {"SPAAG", "CUP_B_ZSU23_CDF"},
+            {"TNK", "CUP_B_T72_CDF"},
+            {"TH", "CUP_I_Mi17_UN"},
+            {"AH", "CUP_I_Mi24_D_UN"},
+            {"CAS", "CUP_B_Su25_CDF"},
+            {"Technical", "CUP_I_UAZ_MG_UN"}
+        };
+    };
+
+    class CUP_CDF_FOR_UN {
+        gear = "M16A3_CDF";
+        uniform = "CUP_CDF_FOR_UN";
+        name = "CDF UN (Forest)";
+        description = "Forest United Nations with M16A3's";
+        languages[] = {{"resistance", 100}};
+        side = "resistance";
+        camouflage[] = {"woodland"};
+        rolePrefix = "CDF UN";
+        vehicleClassnames[] = {
+            {"CO", "CUP_I_UAZ_Unarmed_UN"},
+            {"SL", "CUP_I_UAZ_Unarmed_UN"},
+            {"FT", "CUP_I_Ural_UN"},
+            {"ATTCH", "CUP_I_Ural_UN"},
+            {"ENG", "CUP_I_Ural_Repair_UN"},
+            {"APC", "CUP_I_M113_UN"},
+            {"IFV", "CUP_I_BMP2_UN"},
+            {"SPAAG", "CUP_B_ZSU23_CDF"},
+            {"TNK", "CUP_B_T72_CDF"},
+            {"TH", "CUP_I_Mi17_UN"},
+            {"AH", "CUP_I_Mi24_D_UN"},
+            {"CAS", "CUP_B_Su25_CDF"},
+            {"Technical", "CUP_I_UAZ_MG_UN"}
+        };
+    };
+
+    class CUP_CDF_MOU_UN {
+        gear = "M16A3_CDF";
+        uniform = "CUP_CDF_MOU_UN";
+        name = "CDF UN (Mountain)";
+        description = "Mountain United Nations with M16A3's";
+        languages[] = {{"resistance", 100}};
+        side = "resistance";
+        camouflage[] = {"woodland"};
+        rolePrefix = "CDF UN";
+        vehicleClassnames[] = {
+            {"CO", "CUP_I_UAZ_Unarmed_UN"},
+            {"SL", "CUP_I_UAZ_Unarmed_UN"},
+            {"FT", "CUP_I_Ural_UN"},
+            {"ATTCH", "CUP_I_Ural_UN"},
+            {"ENG", "CUP_I_Ural_Repair_UN"},
+            {"APC", "CUP_I_M113_UN"},
+            {"IFV", "CUP_I_BMP2_UN"},
+            {"SPAAG", "CUP_B_ZSU23_CDF"},
+            {"TNK", "CUP_B_T72_CDF"},
+            {"TH", "CUP_I_Mi17_UN"},
+            {"AH", "CUP_I_Mi24_D_UN"},
+            {"CAS", "CUP_B_Su25_CDF"},
+            {"Technical", "CUP_I_UAZ_MG_UN"}
+        };
+    };
+
 };
