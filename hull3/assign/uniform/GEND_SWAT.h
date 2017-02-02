@@ -2,7 +2,7 @@ class GEND_SWAT {
     class Rifleman {
         headGear = "CUP_H_USArmy_Helmet_Pro_gog";
         goggles = "G_Bandanna_blk";
-        uniform = "U_B_GEN_Soldier_F_ARK";
+        uniform = "U_B_GEN_Soldier_F";
         vest = "V_PlateCarrier1_blk";
         backpack = "B_Kitbag_rgr";
     };

@@ -3,7 +3,7 @@ class CUP_TKA_OD {
         headGear = "CUP_H_TK_Helmet";
         goggles = "CUP_TK_NeckScarf";
         uniform = "CUP_U_O_TK_Green";
-        vest = "CUP_V_O_TK_Vest_1_ARM";
+        vest = "CUP_V_O_TK_Vest_1";
         backpack = "B_Kitbag_rgr";
     };
 
@@ -17,13 +17,13 @@ class CUP_TKA_OD {
 
     class Crew : Rifleman {
         headGear = "CUP_H_TK_TankerHelmet";
-        vest = "CUP_V_O_TK_CrewBelt_ARM";
+        vest = "CUP_V_O_TK_CrewBelt";
         backpack = "CUP_B_SLA_Medicbag";
     };
 
     class CO : Officer {
         uniform = "CUP_U_O_TK_Officer";
-        vest = "CUP_V_O_TK_OfficerBelt2_ARM";
+        vest = "CUP_V_O_TK_OfficerBelt2";
     };
 
     class XO : CO {
@@ -34,7 +34,7 @@ class CUP_TKA_OD {
 
     class Medic : Rifleman {
         backpack = "B_Carryall_oli";
-        vest = "CUP_V_O_TK_Vest_2_ARM";
+        vest = "CUP_V_O_TK_Vest_2";
     };
 
     class FTL : Leader {
@@ -147,7 +147,7 @@ class CUP_TKA_OD {
 
     class P : Crew {
         headGear = "CUP_H_TK_PilotHelmet";
-        vest = "CUP_V_O_TK_CrewBelt_ARM";
+        vest = "CUP_V_O_TK_CrewBelt";
         backpack = "B_Parachute";
         goggles = "G_Aviator";
     };

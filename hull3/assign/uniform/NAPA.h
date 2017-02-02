@@ -3,7 +3,7 @@ class NAPA {
         headGear = "H_Booniehat_oli";
         goggles = "G_Bandanna_oli";
         uniform = "CUP_U_I_GUE_Flecktarn2";
-        vest = "CUP_V_I_Carrier_Belt_ARM";
+        vest = "CUP_V_I_Carrier_Belt";
         backpack = "CUP_B_AlicePack_Bedroll";
     };
 
@@ -28,8 +28,8 @@ class NAPA {
     class CO : Officer {
         headGear = "CUP_H_NAPA_Fedora";
         goggles = "G_Aviator";
-        uniform = "U_BG_Guerilla2_3_ARK";
-        vest = "CUP_V_I_Guerilla_Jacket_ARM";
+        uniform = "U_BG_Guerilla2_3";
+        vest = "CUP_V_I_Guerilla_Jacket";
     };
 
     class XO : Officer {

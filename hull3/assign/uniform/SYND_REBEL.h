@@ -2,15 +2,15 @@ class SYND_REBEL {
     class Rifleman {
         headGear = "H_Booniehat_oli";
         goggles = "";
-        uniform = "U_I_C_Soldier_Para_1_F_ARK";
-        vest = "CUP_V_RUS_Smersh_1_ARM";
+        uniform = "U_I_C_Soldier_Para_1_F";
+        vest = "CUP_V_RUS_Smersh_1";
         backpack = "B_Kitbag_rgr";
     };
 
     class Leader : Rifleman {
         headGear = "H_Cap_oli_hs";
-        uniform = "U_I_C_Soldier_Para_3_F_ARK";
-        vest = "CUP_V_RUS_Smersh_2_ARM";
+        uniform = "U_I_C_Soldier_Para_3_F";
+        vest = "CUP_V_RUS_Smersh_2";
     };
 
     class Officer : Leader {
@@ -22,8 +22,8 @@ class SYND_REBEL {
     class Crew : Rifleman {
         headGear = "CUP_H_RUS_TSH_4_Brown";
         goggles = "";
-        uniform = "U_I_C_Soldier_Para_5_F_ARK";
-        vest = "CUP_V_O_TK_CrewBelt_ARM";
+        uniform = "U_I_C_Soldier_Para_5_F";
+        vest = "CUP_V_O_TK_CrewBelt";
         backpack = "CUP_B_SLA_Medicbag";
     };
 
@@ -46,7 +46,7 @@ class SYND_REBEL {
 
     class AR : Rifleman {
         headGear = "H_Watchcap_camo";
-        uniform = "U_I_C_Soldier_Para_4_F_ARK";
+        uniform = "U_I_C_Soldier_Para_4_F";
     };
 
     class AAR : Rifleman {
@@ -138,7 +138,7 @@ class SYND_REBEL {
     class SN : Rifleman {
         headGear = "";
         goggles = "G_Balaclava_oli";
-        uniform = "U_I_C_Soldier_Bandit_2_F_ARK";
+        uniform = "U_I_C_Soldier_Bandit_2_F";
     };
 
     class SP : SN {

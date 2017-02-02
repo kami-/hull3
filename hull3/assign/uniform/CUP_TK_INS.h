@@ -3,38 +3,38 @@ class CUP_TK_INS {
         headGear = "CUP_H_TKI_Lungee_01";
         goggles = "";
         uniform = "CUP_O_TKI_Khet_Partug_01";
-        vest = "CUP_V_OI_TKI_Jacket4_02_ARM";
+        vest = "CUP_V_OI_TKI_Jacket4_02";
         backpack = "CUP_B_AlicePack_Khaki";
     };
 
     class Leader : Rifleman {
         uniform = "CUP_O_TKI_Khet_Partug_01";
-        vest = "CUP_V_OI_TKI_Jacket3_01_ARM";
+        vest = "CUP_V_OI_TKI_Jacket3_01";
         headGear = "CUP_H_TKI_Pakol_1_02";
     };
 
     class Officer : Leader {
         headGear = "CUP_H_TKI_SkullCap_03";
         uniform = "CUP_O_TKI_Khet_Partug_04";
-        vest = "CUP_V_OI_TKI_Jacket1_01_ARM";
+        vest = "CUP_V_OI_TKI_Jacket1_01";
     };
 
     class Crew : Rifleman {
         headGear = "CUP_H_TK_TankerHelmet";
-        vest = "CUP_V_OI_TKI_Jacket3_02_ARM";
+        vest = "CUP_V_OI_TKI_Jacket3_02";
     };
 
     class CO : Officer {
         headGear = "CUP_H_TKI_Lungee_Open_02";
         uniform = "CUP_O_TKI_Khet_Partug_03";
-        vest = "CUP_V_I_Guerilla_Jacket_ARM";
+        vest = "CUP_V_I_Guerilla_Jacket";
         goggles = "G_Aviator";
     };
 
     class XO : CO {
         headGear = "CUP_H_TKI_Lungee_Open_05";
         uniform = "CUP_O_TKI_Khet_Partug_06";
-        vest = "CUP_V_OI_TKI_Jacket2_03_ARM";
+        vest = "CUP_V_OI_TKI_Jacket2_03";
     };
 
     class SL : Officer {
@@ -44,7 +44,7 @@ class CUP_TK_INS {
         backpack = "CUP_B_AlicePack_Khaki";
         uniform = "CUP_O_TKI_Khet_Partug_05";
         headGear = "CUP_H_TKI_SkullCap_06";
-        vest = "CUP_V_OI_TKI_Jacket3_03_ARM";
+        vest = "CUP_V_OI_TKI_Jacket3_03";
     };
 
     class FTL : Leader {
@@ -52,20 +52,20 @@ class CUP_TK_INS {
 
     class AR : Rifleman {
         uniform = "CUP_O_TKI_Khet_Partug_07";
-        vest = "CUP_V_OI_TKI_Jacket1_02_ARM";
+        vest = "CUP_V_OI_TKI_Jacket1_02";
         headGear = "CUP_H_TKI_Lungee_03";
     };
 
     class AAR : Rifleman {
         backpack = "CUP_B_AlicePack_Khaki";
         uniform = "CUP_O_TKI_Khet_Partug_08";
-        vest = "CUP_V_OI_TKI_Jacket4_03_ARM";
+        vest = "CUP_V_OI_TKI_Jacket4_03";
         headGear = "CUP_H_TKI_Pakol_2_04";
     };
 
     class RAT : Rifleman {
         uniform = "CUP_O_TKI_Khet_Partug_02";
-        vest = "CUP_V_OI_TKI_Jacket3_02_ARM";
+        vest = "CUP_V_OI_TKI_Jacket3_02";
         headGear = "CUP_H_TKI_Lungee_06";
     };
 
@@ -152,13 +152,13 @@ class CUP_TK_INS {
     class SN : Rifleman {
         headGear = "CUP_H_TKI_Lungee_01";
         uniform = "CUP_O_TKI_Khet_Partug_04";
-        vest = "CUP_V_OI_TKI_Jacket4_01_ARM";
+        vest = "CUP_V_OI_TKI_Jacket4_01";
     };
 
     class SP : SN {
         headGear = "CUP_H_TKI_Lungee_03";
         uniform = "CUP_O_TKI_Khet_Partug_02";
-        vest = "CUP_V_OI_TKI_Jacket1_03_ARM";
+        vest = "CUP_V_OI_TKI_Jacket1_03";
     };
 
     class VC : Crew {
@@ -173,7 +173,7 @@ class CUP_TK_INS {
     class P : Crew {
         headGear = "CUP_H_TK_PilotHelmet";
         uniform = "CUP_U_C_Pilot_01";
-        vest = "CUP_V_OI_TKI_Jacket3_01_ARM";
+        vest = "CUP_V_OI_TKI_Jacket3_01";
         backpack = "B_Parachute";
         goggles = "G_Aviator";
     };
