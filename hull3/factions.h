@@ -1195,58 +1195,6 @@ class Faction {
         };
     };
 
-    class MNP_CH_HWD {
-        gear = "Katiba_CN";
-        uniform = "CN_H_WD";
-        name = "PLA Universal (Heavy)";
-        description = "CSAT Style Chinese Universal Uniforms and Katiba";
-        languages[] = {{"east", 100}};
-        side = "east";
-        camouflage[] = {"woodland", "desert"};
-        rolePrefix = "PLA Ground Forces";
-        vehicleClassnames[] = {
-            {"CO", "O_MRAP_02_F"},
-            {"SL", "O_MRAP_02_F"},
-            {"FT", "O_MRAP_02_F"},
-            {"ATTCH", "O_MRAP_02_F"},
-            {"ENG", "O_Truck_03_repair_F"},
-            {"APC", "O_APC_Wheeled_02_rcws_F"},
-            {"IFV", "O_APC_Tracked_02_cannon_F"},
-            {"SPAAG", "O_APC_Tracked_02_AA_F"},
-            {"TNK", "O_MBT_02_cannon_F"},
-            {"TH", "O_Heli_Light_02_F"},
-            {"AH", "O_Heli_Attack_02_F"},
-            {"CAS", "O_Plane_CAS_02_F"},
-            {"Technical", "CUP_O_UAZ_MG_SLA"}
-        };
-    };
-
-    class MNP_CH_HDE {
-        gear = "Katiba_CN";
-        uniform = "CN_H_DE";
-        name = "PLA Desert (Heavy)";
-        description = "CSAT Style Chinese Desert Uniforms and Katiba";
-        languages[] = {{"east", 100}};
-        side = "east";
-        camouflage[] = {"desert"};
-        rolePrefix = "PLA Ground Forces";
-        vehicleClassnames[] = {
-            {"CO", "O_MRAP_02_F"},
-            {"SL", "O_MRAP_02_F"},
-            {"FT", "O_MRAP_02_F"},
-            {"ATTCH", "O_MRAP_02_F"},
-            {"ENG", "O_Truck_03_repair_F"},
-            {"APC", "O_APC_Wheeled_02_rcws_F"},
-            {"IFV", "O_APC_Tracked_02_cannon_F"},
-            {"SPAAG", "O_APC_Tracked_02_AA_F"},
-            {"TNK", "O_MBT_02_cannon_F"},
-            {"TH", "O_Heli_Light_02_F"},
-            {"AH", "O_Heli_Attack_02_F"},
-            {"CAS", "O_Plane_CAS_02_F"},
-            {"Technical", "CUP_O_UAZ_MG_SLA"}
-        };
-    };
-
     class MNP_RU_VDV_WD {
         gear = "AK12_RU";
         uniform = "RU_WD_DIG";
@@ -1282,58 +1230,6 @@ class Faction {
         side = "east";
         camouflage[] = {"desert"};
         rolePrefix = "Russian VDV";
-        vehicleClassnames[] = {
-            {"CO", "CUP_O_UAZ_Unarmed_RU"},
-            {"SL", "CUP_O_UAZ_Unarmed_RU"},
-            {"FT", "CUP_O_UAZ_Unarmed_RU"},
-            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
-            {"ENG", "CUP_O_Ural_Repair_SLA"},
-            {"APC", "CUP_O_BRDM2_SLA"},
-            {"IFV", "CUP_O_BMP2_RU"},
-            {"SPAAG", "CUP_O_ZSU23_SLA"},
-            {"TNK", "CUP_O_T72_RU"},
-            {"TH", "CUP_O_Mi8_RU"},
-            {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_RU_3"},
-            {"Technical", "CUP_O_UAZ_MG_RU"}
-        };
-    };
-
-    class MNP_RU_HWD {
-        gear = "AK12_RU";
-        uniform = "RU_H_WD";
-        name = "Russian Heavy Woodland";
-        description = "CSAT Style Digital Woodland Uniforms and AK-12's";
-        languages[] = {{"east", 100}};
-        side = "east";
-        camouflage[] = {"woodland"};
-        rolePrefix = "Russian Army";
-        vehicleClassnames[] = {
-            {"CO", "CUP_O_UAZ_Unarmed_RU"},
-            {"SL", "CUP_O_UAZ_Unarmed_RU"},
-            {"FT", "CUP_O_UAZ_Unarmed_RU"},
-            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
-            {"ENG", "CUP_O_Ural_Repair_SLA"},
-            {"APC", "CUP_O_BRDM2_SLA"},
-            {"IFV", "CUP_O_BMP2_RU"},
-            {"SPAAG", "CUP_O_ZSU23_SLA"},
-            {"TNK", "CUP_O_T72_RU"},
-            {"TH", "CUP_O_Mi8_RU"},
-            {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_RU_3"},
-            {"Technical", "CUP_O_UAZ_MG_RU"}
-        };
-    };
-
-    class MNP_RU_HDE {
-        gear = "AK12_RU";
-        uniform = "RU_H_DE";
-        name = "Russian Heavy Desert";
-        description = "CSAT Style Digital Desert Uniforms and AK-12's";
-        languages[] = {{"east", 100}};
-        side = "east";
-        camouflage[] = {"desert"};
-        rolePrefix = "Russian Army";
         vehicleClassnames[] = {
             {"CO", "CUP_O_UAZ_Unarmed_RU"},
             {"SL", "CUP_O_UAZ_Unarmed_RU"},
