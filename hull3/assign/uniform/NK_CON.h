@@ -3,13 +3,13 @@ class NK_CON {
         headGear = "MNP_Helmet_SOV_Steel";
         goggles = "";
         uniform = "MNP_CombatUniform_NKR_Rg";
-        vest = "CUP_V_O_SLA_Flak_Vest03_ARM";
+        vest = "CUP_V_O_SLA_Flak_Vest03";
         backpack = "CUP_B_CivPack_WDL";
     };
 
     class Leader : Rifleman {
         uniform = "MNP_CombatUniform_NKR_Sh";
-        vest = "CUP_V_O_SLA_Flak_Vest02_ARM";
+        vest = "CUP_V_O_SLA_Flak_Vest02";
     };
 
     class Officer : Leader {
@@ -18,7 +18,7 @@ class NK_CON {
 
     class Crew : Rifleman {
         headGear = "CUP_H_SLA_TankerHelmet";
-        vest = "CUP_V_O_TK_CrewBelt_ARM";
+        vest = "CUP_V_O_TK_CrewBelt";
         backpack = "CUP_B_SLA_Medicbag";
     };
 

@@ -24,7 +24,7 @@ class CUP_NAPA_WD {
         headGear = "CUP_H_SLA_TankerHelmet";
         uniform = "CUP_U_I_GUE_Woodland1";
         goggles = "G_Bandanna_oli";
-        vest = "CUP_V_O_TK_CrewBelt_ARM";
+        vest = "CUP_V_O_TK_CrewBelt";
         backpack = "B_AssaultPack_rgr";
     };
 
@@ -32,7 +32,7 @@ class CUP_NAPA_WD {
         headGear = "CUP_H_NAPA_Fedora";
         uniform = "U_I_G_resistanceLeader_F";
         goggles = "G_Aviator";
-        vest = "CUP_V_I_Guerilla_Jacket_ARM";
+        vest = "CUP_V_I_Guerilla_Jacket";
     };
 
     class XO : Officer {
@@ -162,7 +162,7 @@ class CUP_NAPA_WD {
     class P : Crew {
         uniform = "CUP_U_C_Pilot_01";
         headGear = "CUP_H_PMC_EP_Headset";
-        vest = "CUP_V_O_TK_CrewBelt_ARM";
+        vest = "CUP_V_O_TK_CrewBelt";
         backpack = "B_Parachute";
         goggles = "G_Aviator";
     };

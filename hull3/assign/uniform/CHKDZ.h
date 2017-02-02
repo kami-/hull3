@@ -3,7 +3,7 @@ class CHKDZ {
         headGear = "";
         goggles = "G_Balaclava_oli";
         uniform = "CUP_U_O_CHDKZ_Kam_01";
-        vest = "CUP_V_O_Ins_Carrier_Rig_Light_ARM";
+        vest = "CUP_V_O_Ins_Carrier_Rig_Light";
         backpack = "CUP_B_AlicePack_Bedroll";
     };
 
@@ -11,7 +11,7 @@ class CHKDZ {
         headGear = "H_Bandanna_khk_hs";
         goggles = "G_Bandanna_oli";
         uniform = "CUP_U_O_CHDKZ_Kam_04";
-        vest = "CUP_V_O_Ins_Carrier_Rig_Com_ARM";
+        vest = "CUP_V_O_Ins_Carrier_Rig_Com";
     };
 
     class Officer : Leader {
@@ -42,7 +42,7 @@ class CHKDZ {
         goggles = "";
         headGear = "CUP_H_ChDKZ_Beanie";
         uniform = "CUP_U_O_CHDKZ_Kam_03";
-        vest = "CUP_V_RUS_Smersh_1_ARM";
+        vest = "CUP_V_RUS_Smersh_1";
     };
 
     class FTL : Leader {
@@ -52,7 +52,7 @@ class CHKDZ {
         goggles = "G_Balaclava_blk";
         headGear = "";
         uniform = "CUP_U_O_CHDKZ_Kam_08";
-        vest = "CUP_V_O_Ins_Carrier_Rig_MG_ARM";
+        vest = "CUP_V_O_Ins_Carrier_Rig_MG";
     };
 
     class AAR : Rifleman {
