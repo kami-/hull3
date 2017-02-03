@@ -19,7 +19,7 @@ class CSAT {
     class Crew : Rifleman {
         headGear = "H_HelmetCrew_O";
         uniform = "U_O_CombatUniform_ocamo";
-        vest = "V_BandollierB_cbr";
+        vest = "V_BandollierB_cbr_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 
@@ -132,7 +132,7 @@ class CSAT {
         headGear = "H_MilCap_ocamo";
         goggles = "G_Bandanna_tan";
         uniform = "U_O_SpecopsUniform_ocamo";
-        vest = "V_HarnessO_brn";
+        vest = "V_HarnessO_brn_ARM";
         backpack = "B_AssaultPack_ocamo";
     };
 
@@ -151,7 +151,7 @@ class CSAT {
     class P : Crew {
         headGear = "H_PilotHelmetHeli_O";
         uniform = "U_O_PilotCoveralls";
-        vest = "V_Rangemaster_belt";
+        vest = "V_Rangemaster_belt_ARM";
         backpack = "B_Parachute";
     };
 

@@ -20,7 +20,7 @@ class AAF_WD {
     class Crew : Rifleman {
         headGear = "H_HelmetCrew_I";
         uniform = "U_I_CombatUniform_shortsleeve";
-        vest = "V_BandollierB_oli";
+        vest = "V_BandollierB_oli_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 
@@ -136,7 +136,7 @@ class AAF_WD {
         headGear = "H_Cap_headphones";
         goggles = "G_Bandanna_khk";
         uniform = "U_I_CombatUniform_shortsleeve";
-        vest = "V_BandollierB_oli";
+        vest = "V_BandollierB_oli_ARM";
         backpack = "B_AssaultPack_dgtl";
     };
 
@@ -155,7 +155,7 @@ class AAF_WD {
     class P : Crew {
         headGear = "H_PilotHelmetHeli_I";
         uniform = "U_I_HeliPilotCoveralls";
-        vest = "V_TacVest_khk";
+        vest = "V_TacVest_khk_ARM";
         backpack = "B_Parachute";
     };
 

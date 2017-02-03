@@ -18,7 +18,7 @@ class USA_MC_DRK {
     class Crew : Rifleman {
         headGear = "H_HelmetCrew_I";
         uniform = "MNP_CombatUniform_TS_B";
-        vest = "V_BandollierB_rgr";
+        vest = "V_BandollierB_rgr_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 
@@ -135,7 +135,7 @@ class USA_MC_DRK {
         headGear = "H_Cap_headphones";
         goggles = "CUP_FR_NeckScarf";
         uniform = "MNP_CombatUniform_TS_B";
-        vest = "CUP_V_B_RRV_TL";
+        vest = "CUP_V_B_RRV_TL_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 
@@ -154,7 +154,7 @@ class USA_MC_DRK {
     class P : Crew {
         headGear = "H_PilotHelmetHeli_O";
         uniform = "U_B_HeliPilotCoveralls";
-        vest = "V_TacVest_oli";
+        vest = "V_TacVest_oli_ARM";
         backpack = "B_Parachute";
     };
 

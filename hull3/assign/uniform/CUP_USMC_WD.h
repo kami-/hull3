@@ -23,7 +23,7 @@ class CUP_USMC_WD {
         headGear = "H_HelmetCrew_I";
         uniform = "CUP_U_B_USMC_MARPAT_WDL_RolledUp";
         goggles = "CUP_FR_NeckScarf2";
-        vest = "V_Rangemaster_belt";
+        vest = "V_Rangemaster_belt_ARM";
         backpack = "B_AssaultPack_cbr";
     };
 

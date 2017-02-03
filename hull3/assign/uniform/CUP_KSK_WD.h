@@ -22,7 +22,7 @@ class CUP_KSK_WD {
         headGear = "H_HelmetCrew_I";
         uniform = "CUP_U_B_GER_Flecktarn_2";
         goggles = "CUP_FR_NeckScarf2";
-        vest = "CUP_V_B_GER_Carrier_Rig_2_Brown";
+        vest = "CUP_V_B_GER_Carrier_Rig_2_Brown_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 
@@ -139,7 +139,7 @@ class CUP_KSK_WD {
         headGear = "CUP_H_PMC_PRR_Headset";
         goggles = "G_Balaclava_oli";
         uniform = "CUP_U_B_GER_Flecktarn_2";
-        vest = "CUP_V_B_GER_Carrier_Rig";
+        vest = "CUP_V_B_GER_Carrier_Rig_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 

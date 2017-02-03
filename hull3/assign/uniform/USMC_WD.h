@@ -18,7 +18,7 @@ class USMC_WD {
     class Crew : Rifleman {
         headGear = "H_HelmetCrew_I";
         uniform = "MNP_CombatUniform_USMC_ST";
-        vest = "V_BandollierB_cbr";
+        vest = "V_BandollierB_cbr_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 
@@ -134,7 +134,7 @@ class USMC_WD {
         headGear = "H_Watchcap_camo";
         goggles = "G_Bandanna_oli";
         uniform = "MNP_CombatUniform_USMC_ST";
-        vest = "V_BandollierB_rgr";
+        vest = "V_BandollierB_rgr_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 
@@ -153,7 +153,7 @@ class USMC_WD {
     class P : Crew {
         headGear = "H_PilotHelmetHeli_O";
         uniform = "U_B_HeliPilotCoveralls";
-        vest = "V_TacVest_oli";
+        vest = "V_TacVest_oli_ARM";
         backpack = "B_Parachute";
     };
 

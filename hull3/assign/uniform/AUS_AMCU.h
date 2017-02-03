@@ -18,7 +18,7 @@ class AUS_AMCU {
     class Crew : Rifleman {
         headGear = "H_HelmetCrew_I";
         uniform = "MNP_CombatUniform_AMCU_ST";
-        vest = "V_BandollierB_rgr";
+        vest = "V_BandollierB_rgr_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 
@@ -135,7 +135,7 @@ class AUS_AMCU {
         headGear = "MNP_Boonie_AMCU";
         goggles = "G_Bandanna_khk";
         uniform = "MNP_CombatUniform_AMCU_ST";
-        vest = "CUP_V_B_RRV_Scout3";
+        vest = "CUP_V_B_RRV_Scout3_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 
@@ -154,7 +154,7 @@ class AUS_AMCU {
     class P : Crew {
         headGear = "H_PilotHelmetHeli_O";
         uniform = "U_B_HeliPilotCoveralls";
-        vest = "V_TacVest_oli";
+        vest = "V_TacVest_oli_ARM";
         backpack = "B_Parachute";
     };
 

@@ -16,7 +16,7 @@ class CSAT_SN {
 
     class Crew : Rifleman {
         headGear = "H_HelmetCrew_B";
-        vest = "V_BandollierB_blk";
+        vest = "V_BandollierB_blk_ARM";
         backpack = "MNP_B_WB_AP";
     };
 
@@ -128,7 +128,7 @@ class CSAT_SN {
     class SN : Rifleman {
         headGear = "H_Watchcap_blk";
         goggles = "G_Bandanna_aviator";
-        vest = "V_BandollierB_blk";
+        vest = "V_BandollierB_blk_ARM";
         backpack = "MNP_B_WB_AP";
     };
 
@@ -147,7 +147,7 @@ class CSAT_SN {
     class P : Crew {
         headGear = "H_PilotHelmetHeli_B";
         uniform = "MNP_CombatUniform_Russia_arctic";
-        vest = "V_TacVest_blk";
+        vest = "V_TacVest_blk_ARM";
         backpack = "B_Parachute";
     };
 

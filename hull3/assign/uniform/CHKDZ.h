@@ -24,7 +24,7 @@ class CHKDZ {
         headGear = "CUP_H_RUS_TSH_4_Brown";
         uniform = "CUP_U_O_CHDKZ_Kam_07";
         goggles = "";
-        vest = "CUP_V_O_TK_CrewBelt";
+        vest = "CUP_V_O_TK_CrewBelt_ARM";
         backpack = "CUP_B_SLA_Medicbag";
     };
 

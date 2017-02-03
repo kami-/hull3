@@ -18,7 +18,7 @@ class NOR_DE {
     class Crew : Rifleman {
         headGear = "H_HelmetCrew_I";
         uniform = "MNP_CombatUniform_NOR_D_B";
-        vest = "V_BandollierB_oli";
+        vest = "V_BandollierB_oli_ARM";
         backpack = "B_AssaultPack_cbr";
     };
 
@@ -133,7 +133,7 @@ class NOR_DE {
         headGear = "MNP_Boonie_NOR_D";
         goggles = "G_Bandanna_tan";
         uniform = "MNP_CombatUniform_NOR_D_B";
-        vest = "V_BandollierB_khk";
+        vest = "V_BandollierB_khk_ARM";
         backpack = "B_AssaultPack_cbr";
     };
 
@@ -152,7 +152,7 @@ class NOR_DE {
     class P : Crew {
         headGear = "H_PilotHelmetHeli_O";
         uniform = "MNP_CombatUniform_NOR_D_A";
-        vest = "V_TacVest_khk";
+        vest = "V_TacVest_khk_ARM";
         backpack = "B_Parachute";
     };
 

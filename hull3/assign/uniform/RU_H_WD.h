@@ -17,7 +17,7 @@ class RU_H_WD {
 
     class Crew : Rifleman {
         headGear = "CUP_H_SLA_TankerHelmet";
-        vest = "V_BandollierB_oli";
+        vest = "V_BandollierB_oli_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 
@@ -148,7 +148,7 @@ class RU_H_WD {
     class P : Crew {
         headGear = "CUP_H_SLA_Pilot_Helmet";
         uniform = "MNP_CombatUniform_Russia_Heavy";
-        vest = "V_TacVest_oli";
+        vest = "V_TacVest_oli_ARM";
         backpack = "B_Parachute";
     };
 

@@ -17,7 +17,7 @@ class RU_H_DE {
 
     class Crew : Rifleman {
         headGear = "CUP_H_TK_TankerHelmet";
-        vest = "V_BandollierB_khk";
+        vest = "V_BandollierB_khk_ARM";
         backpack = "B_AssaultPack_cbr";
     };
 
@@ -129,7 +129,7 @@ class RU_H_DE {
     class SN : Rifleman {
         headGear = "H_Bandanna_khk_hs";
         goggles = "G_Bandanna_khk";
-        vest = "V_BandollierB_cbr";
+        vest = "V_BandollierB_cbr_ARM";
         backpack = "B_AssaultPack_cbr";
     };
 
@@ -148,7 +148,7 @@ class RU_H_DE {
     class P : Crew {
         headGear = "CUP_H_SLA_Pilot_Helmet";
         uniform = "MNP_CombatUniform_Russia_Heavy_D";
-        vest = "V_TacVest_oli";
+        vest = "V_TacVest_oli_ARM";
         backpack = "B_Parachute";
     };
 

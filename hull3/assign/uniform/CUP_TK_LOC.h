@@ -21,7 +21,7 @@ class CUP_TK_LOC {
 
     class Crew : Rifleman {
         headGear = "CUP_H_TK_TankerHelmet";
-        vest = "V_Rangemaster_belt";
+        vest = "V_Rangemaster_belt_ARM";
     };
 
     class CO : Officer {

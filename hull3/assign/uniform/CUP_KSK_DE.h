@@ -22,7 +22,7 @@ class CUP_KSK_DE {
         headGear = "H_HelmetCrew_I";
         uniform = "CUP_U_B_GER_Tropentarn_2";
         goggles = "CUP_FR_NeckScarf2";
-        vest = "CUP_V_B_GER_Carrier_Rig_2_Brown";
+        vest = "CUP_V_B_GER_Carrier_Rig_2_Brown_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 
@@ -140,7 +140,7 @@ class CUP_KSK_DE {
     class SN : Rifleman {
         headGear = "CUP_H_PMC_PRR_Headset";
         uniform = "CUP_U_B_GER_Tropentarn_2";
-        vest = "CUP_V_B_GER_Carrier_Rig";
+        vest = "CUP_V_B_GER_Carrier_Rig_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 

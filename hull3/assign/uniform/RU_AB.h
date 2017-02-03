@@ -131,7 +131,7 @@ class RU_AB {
         headGear = "H_Bandanna_khk_hs";
         uniform = "MNP_CombatUniform_RO3_Sh";
         goggles = "G_Bandanna_oli";
-        vest = "V_Chestrig_oli";
+        vest = "V_Chestrig_oli_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 
