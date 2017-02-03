@@ -17,7 +17,7 @@ class NPA_WD {
 
     class Crew : Rifleman {
         headGear = "CUP_H_SLA_TankerHelmet";
-        vest = "V_BandollierB_oli";
+        vest = "V_BandollierB_oli_ARM";
         goggles = "G_Bandanna_oli";
         backpack = "B_AssaultPack_rgr";
     };
@@ -130,7 +130,7 @@ class NPA_WD {
     class SN : Rifleman {
         headGear = "H_Shemag_olive_hs";
         goggles = "";
-        vest = "V_BandollierB_oli";
+        vest = "V_BandollierB_oli_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 
@@ -148,7 +148,7 @@ class NPA_WD {
 
     class P : Crew {
         headGear = "CUP_H_SLA_Pilot_Helmet";
-        vest = "V_TacVest_oli";
+        vest = "V_TacVest_oli_ARM";
         backpack = "B_Parachute";
     };
 

@@ -20,7 +20,7 @@ class RU_WD_DIG {
     class Crew : Rifleman {
         headGear = "CUP_H_SLA_TankerHelmet";
         uniform = "MNP_CombatUniform_RU_Med_B";
-        vest = "V_BandollierB_rgr";
+        vest = "V_BandollierB_rgr_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 
@@ -156,7 +156,7 @@ class RU_WD_DIG {
     class P : Crew {
         headGear = "CUP_H_SLA_Pilot_Helmet";
         uniform = "MNP_CombatUniform_RU_Med";
-        vest = "V_TacVest_oli";
+        vest = "V_TacVest_oli_ARM";
         backpack = "B_Parachute";
     };
 

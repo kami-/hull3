@@ -20,7 +20,7 @@ class NATO {
     class Crew : Rifleman {
         headGear = "H_HelmetCrew_B";
         uniform = "U_B_CombatUniform_mcam_tshirt";
-        vest = "V_BandollierB_rgr";
+        vest = "V_BandollierB_rgr_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 
@@ -138,7 +138,7 @@ class NATO {
         headGear = "H_Watchcap_khk";
         goggles = "G_Bandanna_khk";
         uniform = "U_B_CombatUniform_mcam_vest";
-        vest = "V_BandollierB_rgr";
+        vest = "V_BandollierB_rgr_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 
@@ -157,7 +157,7 @@ class NATO {
     class P : Crew {
         headGear = "H_PilotHelmetHeli_O";
         uniform = "U_B_HeliPilotCoveralls";
-        vest = "V_TacVest_oli";
+        vest = "V_TacVest_oli_ARM";
         backpack = "B_Parachute";
     };
 

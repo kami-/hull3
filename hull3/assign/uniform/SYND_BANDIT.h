@@ -168,7 +168,7 @@ class SYND_BANDIT {
     class P : Crew {
         headGear = "CUP_H_RUS_ZSH_Shield_Up";
         goggles = "G_Aviator";
-        vest = "V_TacVest_oli";
+        vest = "V_TacVest_oli_ARM";
         backpack = "B_Parachute";
         uniform = "CUP_U_C_Pilot_01";
     };

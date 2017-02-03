@@ -3,13 +3,13 @@ class NK_REG {
         headGear = "MNP_Helmet_SOVC_NK";
         goggles = "";
         uniform = "MNP_CombatUniform_NKC_Rg";
-        vest = "CUP_V_O_SLA_Flak_Vest03";
+        vest = "CUP_V_O_SLA_Flak_Vest03_ARM";
         backpack = "CUP_B_CivPack_WDL";
     };
 
     class Leader : Rifleman {
         uniform = "MNP_CombatUniform_NKC_Sh";
-        vest = "CUP_V_O_SLA_Flak_Vest02";
+        vest = "CUP_V_O_SLA_Flak_Vest02_ARM";
     };
 
     class Officer : Leader {
@@ -131,7 +131,7 @@ class NK_REG {
         headGear = "H_Bandanna_khk_hs";
         uniform = "MNP_CombatUniform_NKC_Sh";
         goggles = "G_Bandanna_oli";
-        vest = "V_BandollierB_rgr";
+        vest = "V_BandollierB_rgr_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 
@@ -150,7 +150,7 @@ class NK_REG {
     class P : Crew {
         headGear = "H_PilotHelmetHeli_O";
         uniform = "MNP_CombatUniform_NKC_Rg";
-        vest = "V_TacVest_oli";
+        vest = "V_TacVest_oli_ARM";
         backpack = "B_Parachute";
     };
 

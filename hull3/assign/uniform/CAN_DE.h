@@ -18,7 +18,7 @@ class CAN_DE {
     class Crew : Rifleman {
         headGear = "H_HelmetCrew_I";
         uniform = "MNP_CombatUniform_Canada_DS";
-        vest = "V_BandollierB_khk";
+        vest = "V_BandollierB_khk_ARM";
         backpack = "B_AssaultPack_cbr";
     };
 
@@ -133,7 +133,7 @@ class CAN_DE {
         headGear = "MNP_Boonie_CAN_D";
         goggles = "G_Bandanna_khk";
         uniform = "MNP_CombatUniform_Canada_DS";
-        vest = "V_BandollierB_khk";
+        vest = "V_BandollierB_khk_ARM";
         backpack = "B_AssaultPack_cbr";
     };
 
@@ -152,7 +152,7 @@ class CAN_DE {
     class P : Crew {
         headGear = "H_PilotHelmetHeli_O";
         uniform = "MNP_CombatUniform_Canada_D";
-        vest = "V_TacVest_oli";
+        vest = "V_TacVest_oli_ARM";
         backpack = "B_Parachute";
     };
 

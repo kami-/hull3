@@ -16,7 +16,7 @@ class CN_WD2 {
 
     class Crew : Rifleman {
         headGear = "CUP_H_SLA_TankerHelmet";
-        vest = "V_BandollierB_blk";
+        vest = "V_BandollierB_blk_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 
@@ -128,7 +128,7 @@ class CN_WD2 {
     class SN : Rifleman {
         headGear = "H_Booniehat_oli";
         goggles = "G_Bandanna_oli";
-        vest = "V_BandollierB_rgr";
+        vest = "V_BandollierB_rgr_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 
@@ -147,7 +147,7 @@ class CN_WD2 {
     class P : Crew {
         headGear = "CUP_H_SLA_Pilot_Helmet";
         uniform = "MNP_CombatUniform_China_J";
-        vest = "V_TacVest_oli";
+        vest = "V_TacVest_oli_ARM";
         backpack = "B_Parachute";
     };
 

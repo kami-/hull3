@@ -20,7 +20,7 @@ class LVM_WD {
 
     class Crew : Rifleman {
         headGear = "CUP_H_SLA_TankerHelmet";
-        vest = "V_BandollierB_rgr";
+        vest = "V_BandollierB_rgr_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 
@@ -140,7 +140,7 @@ class LVM_WD {
         headGear = "H_Bandanna_khk_hs";
         goggles = "G_Bandanna_oli";
         uniform = "MNP_CombatUniform_Militia_B";
-        vest = "V_BandollierB_rgr";
+        vest = "V_BandollierB_rgr_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 
@@ -159,7 +159,7 @@ class LVM_WD {
     class P : Crew {
         headGear = "CUP_H_SLA_Pilot_Helmet";
         uniform = "MNP_CombatUniform_Militia_B";
-        vest = "V_TacVest_oli";
+        vest = "V_TacVest_oli_ARM";
         backpack = "B_Parachute";
     };
 

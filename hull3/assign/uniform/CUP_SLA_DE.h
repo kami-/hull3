@@ -3,12 +3,12 @@ class CUP_SLA_DE {
         headGear = "CUP_H_SLA_Helmet";
         goggles = "";
         uniform = "CUP_U_O_SLA_Desert";
-        vest = "CUP_V_O_SLA_Flak_Vest03";
+        vest = "CUP_V_O_SLA_Flak_Vest03_ARM";
         backpack = "CUP_B_CivPack_WDL";
     };
 
     class Leader : Rifleman {
-        vest = "CUP_V_O_SLA_Flak_Vest02";
+        vest = "CUP_V_O_SLA_Flak_Vest02_ARM";
     };
 
     class Officer : Leader {
@@ -131,7 +131,7 @@ class CUP_SLA_DE {
     class SN : Rifleman {
         headGear = "CUP_H_SLA_Boonie";
         goggles = "G_Bandanna_oli";
-        vest = "CUP_V_O_SLA_Flak_Vest02";
+        vest = "CUP_V_O_SLA_Flak_Vest02_ARM";
         backpack = "CUP_B_CivPack_WDL";
     };
 

@@ -19,7 +19,7 @@ class CSAT_TRP {
     class Crew : Rifleman {
         headGear = "H_HelmetCrew_O_ghex_F";
         uniform = "U_O_T_Soldier_F";
-        vest = "V_BandollierB_rgr";
+        vest = "V_BandollierB_rgr_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 
@@ -147,7 +147,7 @@ class CSAT_TRP {
     class P : Crew {
         headGear = "H_PilotHelmetHeli_O";
         uniform = "U_O_PilotCoveralls";
-        vest = "V_Rangemaster_belt";
+        vest = "V_Rangemaster_belt_ARM";
         backpack = "B_Parachute";
     };
 

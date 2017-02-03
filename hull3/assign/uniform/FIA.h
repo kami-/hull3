@@ -21,7 +21,7 @@ class FIA {
     class Crew : Rifleman {
         headGear = "H_HelmetCrew_I";
         uniform = "U_BG_Guerilla2_2";
-        vest = "V_BandollierB_oli";
+        vest = "V_BandollierB_oli_ARM";
         goggles = "";
         backpack = "B_AssaultPack_rgr";
     };
@@ -145,7 +145,7 @@ class FIA {
         headGear = "H_Watchcap_khk";
         goggles = "G_Bandanna_aviator";
         uniform = "U_BG_Guerilla3_1";
-        vest = "V_BandollierB_rgr";
+        vest = "V_BandollierB_rgr_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 
@@ -164,7 +164,7 @@ class FIA {
     class P : Crew {
         headGear = "H_Cap_oli_hs";
         uniform = "U_BG_Guerilla2_2";
-        vest = "V_TacVest_blk";
+        vest = "V_TacVest_blk_ARM";
         backpack = "B_Parachute";
         goggles = "G_Aviator";
     };

@@ -19,7 +19,7 @@ class USA_WD {
     class Crew : Rifleman {
         headGear = "H_HelmetCrew_I";
         uniform = "MNP_CombatUniform_Wood_B";
-        vest = "V_BandollierB_rgr";
+        vest = "V_BandollierB_rgr_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 
@@ -136,7 +136,7 @@ class USA_WD {
         headGear = "H_Booniehat_oli";
         goggles = "G_Bandanna_oli";
         uniform = "MNP_CombatUniform_Wood_B";
-        vest = "V_BandollierB_oli";
+        vest = "V_BandollierB_oli_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 
@@ -155,7 +155,7 @@ class USA_WD {
     class P : Crew {
         headGear = "H_PilotHelmetHeli_O";
         uniform = "U_B_HeliPilotCoveralls";
-        vest = "V_TacVest_oli";
+        vest = "V_TacVest_oli_ARM";
         backpack = "B_Parachute";
     };
 

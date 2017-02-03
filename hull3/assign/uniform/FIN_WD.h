@@ -18,7 +18,7 @@ class FIN_WD {
     class Crew : Rifleman {
         headGear = "H_HelmetCrew_I";
         uniform = "MNP_CombatUniform_Fin_B";
-        vest = "V_BandollierB_oli";
+        vest = "V_BandollierB_oli_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 
@@ -132,7 +132,7 @@ class FIN_WD {
         headGear = "MNP_Boonie_FIN";
         goggles = "G_Bandanna_oli";
         uniform = "MNP_CombatUniform_Fin_B";
-        vest = "V_BandollierB_rgr";
+        vest = "V_BandollierB_rgr_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 
@@ -151,7 +151,7 @@ class FIN_WD {
     class P : Crew {
         headGear = "H_PilotHelmetHeli_I";
         uniform = "MNP_CombatUniform_Fin_A";
-        vest = "V_TacVest_oli";
+        vest = "V_TacVest_oli_ARM";
         backpack = "B_Parachute";
     };
 

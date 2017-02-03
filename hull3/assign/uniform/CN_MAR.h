@@ -17,7 +17,7 @@ class CN_MAR {
 
     class Crew : Rifleman {
         headGear = "CUP_H_SLA_TankerHelmet";
-        vest = "V_BandollierB_blk";
+        vest = "V_BandollierB_blk_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 
@@ -129,7 +129,7 @@ class CN_MAR {
     class SN : Rifleman {
         headGear = "MNP_Boonie_CM";
         goggles = "G_Bandanna_blk";
-        vest = "V_BandollierB_rgr";
+        vest = "V_BandollierB_rgr_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 
@@ -148,7 +148,7 @@ class CN_MAR {
     class P : Crew {
         headGear = "CUP_H_SLA_Pilot_Helmet";
         uniform = "MNP_CombatUniform_CMAR";
-        vest = "V_TacVest_oli";
+        vest = "V_TacVest_oli_ARM";
         backpack = "B_Parachute";
     };
 

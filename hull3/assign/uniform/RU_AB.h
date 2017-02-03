@@ -3,13 +3,13 @@ class RU_AB {
         headGear = "CUP_H_SLA_Helmet";
         goggles = "";
         uniform = "MNP_CombatUniform_RO3_Rg";
-        vest = "CUP_V_O_SLA_Flak_Vest03";
+        vest = "CUP_V_O_SLA_Flak_Vest03_ARM";
         backpack = "CUP_B_CivPack_WDL";
     };
 
     class Leader : Rifleman {
         uniform = "MNP_CombatUniform_RO3_Sh";
-        vest = "CUP_V_O_SLA_Flak_Vest02";
+        vest = "CUP_V_O_SLA_Flak_Vest02_ARM";
     };
 
     class Officer : Leader {
@@ -131,7 +131,7 @@ class RU_AB {
         headGear = "H_Bandanna_khk_hs";
         uniform = "MNP_CombatUniform_RO3_Sh";
         goggles = "G_Bandanna_oli";
-        vest = "V_Chestrig_oli";
+        vest = "V_Chestrig_oli_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 

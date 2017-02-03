@@ -20,7 +20,7 @@ class USMC_SN {
     class Crew : Rifleman {
         headGear = "H_HelmetCrew_I";
         uniform = "MNP_CombatUniform_USMC_arctic_B";
-        vest = "V_BandollierB_blk";
+        vest = "V_BandollierB_blk_ARM";
         backpack = "MNP_B_WB_AP";
     };
 
@@ -136,7 +136,7 @@ class USMC_SN {
         headGear = "H_Watchcap_blk";
         goggles = "G_Bandanna_blk";
         uniform = "MNP_CombatUniform_USMC_arctic_B";
-        vest = "V_BandollierB_blk";
+        vest = "V_BandollierB_blk_ARM";
         backpack = "MNP_B_WB_AP";
     };
 
@@ -155,7 +155,7 @@ class USMC_SN {
     class P : Crew {
         headGear = "H_PilotHelmetHeli_O";
         uniform = "U_B_HeliPilotCoveralls";
-        vest = "V_TacVest_oli";
+        vest = "V_TacVest_oli_ARM";
         backpack = "B_Parachute";
     };
 
