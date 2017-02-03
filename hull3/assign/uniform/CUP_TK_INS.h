@@ -52,7 +52,7 @@ class CUP_TK_INS {
 
     class AR : Rifleman {
         uniform = "CUP_O_TKI_Khet_Partug_07";
-        vest = "CUP_V_OI_TKI_Jacket1_02";
+        vest = "CUP_V_OI_TKI_Jacket1_02_ARM";
         headGear = "CUP_H_TKI_Lungee_03";
     };
 

@@ -11,7 +11,7 @@ class SYND_BANDIT {
         headGear = "H_Booniehat_tan";
         goggles = "CUP_FR_NeckScarf2";
         uniform = "U_I_C_Soldier_Bandit_2_F";
-        vest = "CUP_V_I_Carrier_Belt";
+        vest = "CUP_V_I_Carrier_Belt_ARM";
     };
 
     class Officer : Leader {

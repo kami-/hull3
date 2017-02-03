@@ -3,7 +3,7 @@ class NAPA {
         headGear = "H_Booniehat_oli";
         goggles = "G_Bandanna_oli";
         uniform = "CUP_U_I_GUE_Flecktarn2";
-        vest = "CUP_V_I_Carrier_Belt";
+        vest = "CUP_V_I_Carrier_Belt_ARM";
         backpack = "CUP_B_AlicePack_Bedroll";
     };
 
