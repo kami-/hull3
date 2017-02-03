@@ -3,7 +3,7 @@ class SYND_BANDIT {
         headGear = "H_Cap_red";
         goggles = "G_Bandanna_beast";
         uniform = "U_I_C_Soldier_Bandit_5_F";
-        vest = "CUP_V_O_Ins_Carrier_Rig_Light";
+        vest = "CUP_V_O_Ins_Carrier_Rig_Light_ARM";
         backpack = "B_Kitbag_rgr";
     };
 
@@ -18,14 +18,14 @@ class SYND_BANDIT {
         headGear = "MNP_MC_Rev";
         goggles = "G_Aviator";
         uniform = "U_I_C_Soldier_Bandit_3_F";
-        vest = "CUP_V_RUS_Smersh_2";
+        vest = "CUP_V_RUS_Smersh_2_ARM";
     };
 
     class Crew : Rifleman {
         headGear = "CUP_H_RUS_TSH_4_Brown";
         goggles = "";
         uniform = "U_I_C_Soldier_Bandit_4_F";
-        vest = "CUP_V_O_TK_CrewBelt";
+        vest = "CUP_V_O_TK_CrewBelt_ARM";
         backpack = "CUP_B_SLA_Medicbag";
     };
 
@@ -42,7 +42,7 @@ class SYND_BANDIT {
         headGear = "H_Bandanna_sgg";
         goggles = "";
         uniform = "U_I_C_Soldier_Bandit_1_F";
-        vest = "CUP_V_OI_TKI_Jacket2_01";
+        vest = "CUP_V_OI_TKI_Jacket2_01_ARM";
         backpack = "B_Carryall_oli";
     };
 
@@ -53,7 +53,7 @@ class SYND_BANDIT {
         headGear = "H_Bandanna_sgg";
         goggles = "";
         uniform = "U_I_C_Soldier_Bandit_1_F";
-        vest = "CUP_V_OI_TKI_Jacket2_01";
+        vest = "CUP_V_OI_TKI_Jacket2_01_ARM";
     };
 
     class AAR : Rifleman {
@@ -61,7 +61,7 @@ class SYND_BANDIT {
         headGear = "CUP_H_PMC_Cap_Back_Tan";
         goggles = "G_Bandanna_oli";
         uniform = "U_I_C_Soldier_Bandit_4_F";
-        vest = "CUP_V_OI_TKI_Jacket2_01";
+        vest = "CUP_V_OI_TKI_Jacket2_01_ARM";
     };
 
     class RAT : Rifleman {
@@ -150,7 +150,7 @@ class SYND_BANDIT {
         headGear = "";
         goggles = "G_Balaclava_oli";
         uniform = "U_I_C_Soldier_Bandit_2_F";
-        vest = "CUP_V_RUS_Smersh_1";
+        vest = "CUP_V_RUS_Smersh_1_ARM";
     };
 
     class SP : SN {

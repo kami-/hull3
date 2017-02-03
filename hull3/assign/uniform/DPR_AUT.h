@@ -20,7 +20,7 @@ class DPR_AUT {
     class Crew : Rifleman {
         headGear = "CUP_H_SLA_TankerHelmet";
         uniform = "MNP_CombatUniform_DPR_A";
-        vest = "CUP_V_O_TK_CrewBelt";
+        vest = "CUP_V_O_TK_CrewBelt_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 
@@ -134,7 +134,7 @@ class DPR_AUT {
     class SN : Rifleman {
         headGear = "H_Cap_headphones";
         goggles = "G_Bandanna_oli";
-        vest = "CUP_V_B_RRV_TL";
+        vest = "CUP_V_B_RRV_TL_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 

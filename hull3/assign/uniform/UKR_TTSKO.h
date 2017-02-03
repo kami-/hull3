@@ -18,7 +18,7 @@ class UKR_TTSKO {
     class Crew : Rifleman {
         headGear = "CUP_H_SLA_TankerHelmet";
         uniform = "MNP_CombatUniform_Ukrainian";
-        vest = "CUP_V_O_TK_CrewBelt";
+        vest = "CUP_V_O_TK_CrewBelt_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 
@@ -132,7 +132,7 @@ class UKR_TTSKO {
 
     class SN : Rifleman {
         headGear = "MNP_MC_UKR";
-        vest = "CUP_V_B_GER_Carrier_Rig";
+        vest = "CUP_V_B_GER_Carrier_Rig_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 

@@ -20,7 +20,7 @@ class CUP_SLA_PAR {
 
     class Crew : Rifleman {
         headGear = "CUP_H_SLA_TankerHelmet";
-        vest = "CUP_V_O_TK_CrewBelt";
+        vest = "CUP_V_O_TK_CrewBelt_ARM";
         backpack = "CUP_B_SLA_Medicbag";
     };
 
@@ -155,7 +155,7 @@ class CUP_SLA_PAR {
 
     class P : Crew {
         headGear = "CUP_H_SLA_Pilot_Helmet";
-        vest = "CUP_V_O_TK_CrewBelt";
+        vest = "CUP_V_O_TK_CrewBelt_ARM";
         backpack = "B_Parachute";
         goggles = "G_Aviator";
     };

@@ -135,7 +135,7 @@ class USA_MC_DRK {
         headGear = "H_Cap_headphones";
         goggles = "CUP_FR_NeckScarf";
         uniform = "MNP_CombatUniform_TS_B";
-        vest = "CUP_V_B_RRV_TL";
+        vest = "CUP_V_B_RRV_TL_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 

@@ -135,7 +135,7 @@ class AUS_AMCU {
         headGear = "MNP_Boonie_AMCU";
         goggles = "G_Bandanna_khk";
         uniform = "MNP_CombatUniform_AMCU_ST";
-        vest = "CUP_V_B_RRV_Scout3";
+        vest = "CUP_V_B_RRV_Scout3_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 

@@ -3,12 +3,12 @@ class CUP_SLA_MIL {
         headGear = "CUP_H_SLA_Helmet";
         goggles = "";
         uniform = "CUP_U_O_SLA_Green";
-        vest = "CUP_V_O_SLA_Carrier_Belt";
+        vest = "CUP_V_O_SLA_Carrier_Belt_ARM";
         backpack = "CUP_B_CivPack_WDL";
     };
 
     class Leader : Rifleman {
-        vest = "CUP_V_O_SLA_Carrier_Belt03";
+        vest = "CUP_V_O_SLA_Carrier_Belt03_ARM";
         headGear = "CUP_H_SLA_SLCap";
     };
 
@@ -20,7 +20,7 @@ class CUP_SLA_MIL {
     class Crew : Rifleman {
         headGear = "CUP_H_SLA_TankerHelmet";
         uniform = "CUP_U_O_SLA_Overalls_Tank";
-        vest = "CUP_V_O_TK_CrewBelt";
+        vest = "CUP_V_O_TK_CrewBelt_ARM";
         backpack = "CUP_B_SLA_Medicbag";
     };
 
@@ -132,7 +132,7 @@ class CUP_SLA_MIL {
     class SN : Rifleman {
         headGear = "CUP_H_SLA_Boonie";
         goggles = "G_Bandanna_oli";
-        vest = "CUP_V_O_SLA_Carrier_Belt03";
+        vest = "CUP_V_O_SLA_Carrier_Belt03_ARM";
         backpack = "CUP_B_CivPack_WDL";
     };
 
@@ -151,7 +151,7 @@ class CUP_SLA_MIL {
     class P : Crew {
         uniform = "CUP_U_O_SLA_Overalls_Pilot";
         headGear = "CUP_H_SLA_Pilot_Helmet";
-        vest = "CUP_V_O_TK_CrewBelt";
+        vest = "CUP_V_O_TK_CrewBelt_ARM";
         backpack = "B_Parachute";
         goggles = "G_Aviator";
     };

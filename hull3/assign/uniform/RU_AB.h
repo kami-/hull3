@@ -18,7 +18,7 @@ class RU_AB {
 
     class Crew : Rifleman {
         headGear = "CUP_H_SLA_TankerHelmet";
-        vest = "CUP_V_O_TK_CrewBelt";
+        vest = "CUP_V_O_TK_CrewBelt_ARM";
         backpack = "CUP_B_SLA_Medicbag";
     };
 
@@ -150,7 +150,7 @@ class RU_AB {
     class P : Crew {
         headGear = "H_PilotHelmetHeli_O";
         uniform = "MNP_CombatUniform_RO3_Rg";
-        vest = "CUP_V_O_TK_CrewBelt";
+        vest = "CUP_V_O_TK_CrewBelt_ARM";
         backpack = "B_Parachute";
     };
 

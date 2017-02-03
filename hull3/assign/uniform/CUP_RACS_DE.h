@@ -20,7 +20,7 @@ class CUP_RACS_DE {
     class Crew : Rifleman {
         headGear = "H_HelmetCrew_I";
         uniform = "CUP_U_I_RACS_Desert_2";
-        vest = "CUP_V_I_RACS_Carrier_Rig_3";
+        vest = "CUP_V_I_RACS_Carrier_Rig_3_ARM";
         backpack = "B_AssaultPack_cbr";
     };
 

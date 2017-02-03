@@ -135,7 +135,7 @@ class USA_MC {
         headGear = "H_Cap_headphones";
         goggles = "CUP_FR_NeckScarf2";
         uniform = "MNP_CombatUniform_DS_B";
-        vest = "CUP_V_B_RRV_Scout3";
+        vest = "CUP_V_B_RRV_Scout3_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 

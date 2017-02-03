@@ -19,7 +19,7 @@ class IRN_DE {
     class Crew : Rifleman {
         headGear = "CUP_H_TK_TankerHelmet";
         uniform = "MNP_CombatUniform_IR_IRGC_A";
-        vest = "CUP_V_O_TK_CrewBelt";
+        vest = "CUP_V_O_TK_CrewBelt_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 
@@ -133,7 +133,7 @@ class IRN_DE {
     class SN : Rifleman {
         headGear = "CUP_H_TK_Lungee";
         goggles = "";
-        vest = "CUP_V_B_GER_Carrier_Rig";
+        vest = "CUP_V_B_GER_Carrier_Rig_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 

@@ -19,7 +19,7 @@ class CUP_RU_EMR {
     class Crew : Rifleman {
         headGear = "CUP_H_RUS_TSH_4_Brown";
         uniform = "CUP_U_O_RUS_EMR_2";
-        vest = "CUP_V_O_TK_CrewBelt";
+        vest = "CUP_V_O_TK_CrewBelt_ARM";
         backpack = "CUP_B_SLA_Medicbag";
     };
 
@@ -134,7 +134,7 @@ class CUP_RU_EMR {
         headGear = "CUP_H_RUS_ZSH_1_Goggles";
         uniform = "CUP_U_O_RUS_EMR_2";
         goggles = "G_Balaclava_oli";
-        vest = "CUP_V_O_TK_Vest_1";
+        vest = "CUP_V_O_TK_Vest_1_ARM";
     };
 
     class SP : SN {
@@ -152,7 +152,7 @@ class CUP_RU_EMR {
     class P : Crew {
         headGear = "CUP_H_RUS_ZSH_Shield_Up";
         uniform = "CUP_U_O_RUS_EMR_2_VDV";
-        vest = "CUP_V_O_TK_CrewBelt";
+        vest = "CUP_V_O_TK_CrewBelt_ARM";
         backpack = "B_Parachute";
     };
 

@@ -3,7 +3,7 @@ class IRN_QF_DE {
         headGear = "CUP_H_TK_Lungee";
         goggles = "CUP_TK_NeckScarf";
         uniform = "MNP_CombatUniform_IR_IRGC_Med";
-        vest = "CUP_V_B_RRV_Scout3";
+        vest = "CUP_V_B_RRV_Scout3_ARM";
         backpack = "B_Kitbag_rgr";
     };
 
@@ -19,7 +19,7 @@ class IRN_QF_DE {
     class Crew : Rifleman {
         uniform = "MNP_CombatUniform_IR_IRGC_Med_B";
         headGear = "CUP_H_TK_TankerHelmet";
-        vest = "CUP_V_O_TK_CrewBelt";
+        vest = "CUP_V_O_TK_CrewBelt_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 
@@ -34,7 +34,7 @@ class IRN_QF_DE {
 
     class Medic : Rifleman {
         backpack = "B_Carryall_oli";
-        vest = "CUP_V_B_RRV_Medic";
+        vest = "CUP_V_B_RRV_Medic_ARM";
         uniform = "MNP_CombatUniform_IR_IRGC_Med_B";
     };
 
@@ -43,7 +43,7 @@ class IRN_QF_DE {
 
     class AR : Rifleman {
         uniform = "MNP_CombatUniform_IR_IRGC_Med_B";
-        vest = "CUP_V_B_RRV_MG";
+        vest = "CUP_V_B_RRV_MG_ARM";
     };
 
     class AAR : Rifleman {
@@ -135,7 +135,7 @@ class IRN_QF_DE {
     class SN : Rifleman {
         headGear = "CUP_H_TK_Lungee";
         goggles = "";
-        vest = "CUP_V_B_GER_Carrier_Rig";
+        vest = "CUP_V_B_GER_Carrier_Rig_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 
