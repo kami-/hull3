@@ -56,7 +56,7 @@ class CUP_BAF_MTP {
     };
 
     class RAT : Rifleman {
-        vest = "CUP_U_B_BAF_MTP_S6_UnRolled";
+        uniform = "CUP_U_B_BAF_MTP_S6_UnRolled";
     };
 
     class MMGG : AR {
