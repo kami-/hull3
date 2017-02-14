@@ -2239,7 +2239,7 @@ class Faction {
         gear = "RK62_FIN";
         uniform = "FIN_WD";
         name = "Finnish Army (Woodland)";
-        description = "Woodland Uniforms and Vz58's";
+        description = "Woodland Uniforms and RK62's";
         languages[] = {{"resistance", 100}};
         side = "resistance";
         camouflage[] = {"woodland"};
@@ -2265,7 +2265,7 @@ class Faction {
         gear = "RK62_FIN";
         uniform = "FIN_SN";
         name = "Finnish Army (Snow)";
-        description = "Snow Uniforms and Vz58's";
+        description = "Snow Uniforms and RK62's";
         languages[] = {{"resistance", 100}};
         side = "resistance";
         camouflage[] = {"snow"};
