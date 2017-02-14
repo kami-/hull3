@@ -2236,7 +2236,7 @@ class Faction {
     };
 
     class MNP_FIN_WD {
-        gear = "VZ58_FIN";
+        gear = "RK62_FIN";
         uniform = "FIN_WD";
         name = "Finnish Army (Woodland)";
         description = "Woodland Uniforms and Vz58's";
@@ -2262,7 +2262,7 @@ class Faction {
     };
 
     class MNP_FIN_SN {
-        gear = "VZ58_FIN";
+        gear = "RK62_FIN";
         uniform = "FIN_SN";
         name = "Finnish Army (Snow)";
         description = "Snow Uniforms and Vz58's";
