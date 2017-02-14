@@ -1092,10 +1092,10 @@ class Faction {
     };
 
     class MNP_CH_WD {
-        gear = "AK74_CN";
+        gear = "CAR95_CN";
         uniform = "CN_WD";
         name = "PLA Universal";
-        description = "Chinese Universal Uniforms and AK-74's";
+        description = "Chinese Universal Uniforms and CAR-95's";
         languages[] = {{"east", 100}};
         side = "east";
         camouflage[] = {"woodland", "desert"};
@@ -1118,10 +1118,10 @@ class Faction {
     };
 
     class MNP_CH_WD2 {
-        gear = "AK74_CN";
+        gear = "CAR95_CN";
         uniform = "CN_WD2";
         name = "PLA Woodland";
-        description = "Chinese Woodland Uniforms and AK-74's";
+        description = "Chinese Woodland Uniforms and CAR-95's";
         languages[] = {{"east", 100}};
         side = "east";
         camouflage[] = {"woodland"};
@@ -1144,10 +1144,10 @@ class Faction {
     };
 
     class MNP_CH_DE {
-        gear = "AK74_CN";
+        gear = "CAR95_CN";
         uniform = "CN_DE";
         name = "PLA Desert";
-        description = "Chinese Desert Uniforms and AK-74's";
+        description = "Chinese Desert Uniforms and CAR-95's";
         languages[] = {{"east", 100}};
         side = "east";
         camouflage[] = {"desert"};
@@ -1170,10 +1170,10 @@ class Faction {
     };
 
     class MNP_CH_MAR {
-        gear = "AKS74_CN";
+        gear = "CAR95_CN";
         uniform = "CN_MAR";
         name = "PLA Universal";
-        description = "Chinese Marine Uniforms and AK-74's";
+        description = "Chinese Marine Uniforms and CAR-95's";
         languages[] = {{"east", 100}};
         side = "east";
         camouflage[] = {"woodland", "desert"};
