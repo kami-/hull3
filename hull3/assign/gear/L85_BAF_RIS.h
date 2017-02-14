@@ -145,7 +145,7 @@ class L85_BAF_RIS {
     };
 
     class RAT : Rifleman {
-        secondaryWeapon = "CUP_launch_M136";
+        secondaryWeapon = "CUP_launch_NLAW";
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2}
@@ -180,7 +180,7 @@ class L85_BAF_RIS {
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
 
-     class HMGG : Rifleman {
+    class HMGG : Rifleman {
         backpack = "O_HMG_01_weapon_F";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -192,10 +192,10 @@ class L85_BAF_RIS {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class HMGAC : Rifleman {
     };
-    
+
     class MATG : RAT {
         secondaryWeapon = "CUP_launch_MAAWS";
         secondaryWeaponItems[] = {"CUP_MAAWS_HEAT_M", "CUP_optic_MAAWS_Scope"};
@@ -246,7 +246,7 @@ class L85_BAF_RIS {
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class DHATAG : HMGG {
         backpack = "O_HMG_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -257,7 +257,7 @@ class L85_BAF_RIS {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class DHATAC : Rifleman {
     };
 
@@ -292,7 +292,7 @@ class L85_BAF_RIS {
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class GMGAG : HMGG {
         backpack = "O_HMG_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -303,7 +303,7 @@ class L85_BAF_RIS {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class GMGAC : Rifleman {
     };
 
@@ -312,7 +312,7 @@ class L85_BAF_RIS {
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class MTRAG : MTRG {
         backpack = "O_Mortar_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -323,7 +323,7 @@ class L85_BAF_RIS {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class MTRAC : Rifleman {
     };
 
@@ -390,7 +390,7 @@ class L85_BAF_RIS {
     class Vehicle {
         weapons[] = {
             {"CUP_arifle_L85A2_NG", 4},
-            {"CUP_launch_M136", 5}
+            {"CUP_launch_NLAW", 5}
         };
         magazines[] = {
             {"30Rnd_556x45_Stanag", 15},
@@ -419,7 +419,7 @@ class L85_BAF_RIS {
     class Truck : Vehicle {
         weapons[] = {
             {"CUP_arifle_L85A2_NG", 4},
-            {"CUP_launch_M136", 10}
+            {"CUP_launch_NLAW", 10}
         };
         magazines[] = {
             {"30Rnd_556x45_Stanag", 40},
@@ -447,7 +447,7 @@ class L85_BAF_RIS {
     };
 
     class Armored : Truck {
-        weapons[] = {{"CUP_launch_M136", 10}};
+        weapons[] = {{"CUP_launch_NLAW", 10}};
         magazines[] = {
             {"30Rnd_556x45_Stanag", 40},
             {"30Rnd_556x45_Stanag", 20},
