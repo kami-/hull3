@@ -32,7 +32,7 @@ class Faction {
         description = "NATO Multicam with MX Series Weapons";
         languages[] = {{"west", 100}};
         side = "west";
-        camouflage[] = {"woodland", "desert"};
+        camouflage[] = {};
         rolePrefix = "NATO";
         vehicleClassnames[] = {
             {"CO", "B_MRAP_01_F"},
@@ -58,7 +58,7 @@ class Faction {
         description = "NATO Tropical with MX Series Weapons";
         languages[] = {{"west", 100}};
         side = "west";
-        camouflage[] = {"woodland"};
+        camouflage[] = {};
         rolePrefix = "NATO";
         vehicleClassnames[] = {
             {"CO", "B_MRAP_01_F"},
@@ -84,7 +84,7 @@ class Faction {
         description = "CTRG in woodland/temperate camo with HK-416 Series Weapons";
         languages[] = {{"west", 100}};
         side = "west";
-        camouflage[] = {"woodland", "desert"};
+        camouflage[] = {};
         rolePrefix = "CTRG";
         vehicleClassnames[] = {
             {"CO", "B_MRAP_01_F"},
@@ -110,7 +110,7 @@ class Faction {
         description = "CTRG in tropical camo with HK-416 Series Weapons";
         languages[] = {{"west", 100}};
         side = "west";
-        camouflage[] = {"woodland"};
+        camouflage[] = {};
         rolePrefix = "CTRG";
         vehicleClassnames[] = {
             {"CO", "B_MRAP_01_F"},
@@ -136,7 +136,7 @@ class Faction {
         description = "CTRG in urban camo with HK-416 Series Weapons";
         languages[] = {{"west", 100}};
         side = "west";
-        camouflage[] = {"woodland"};
+        camouflage[] = {};
         rolePrefix = "CTRG";
         vehicleClassnames[] = {
             {"CO", "B_MRAP_01_F"},
@@ -162,7 +162,7 @@ class Faction {
         description = "Patrol Police with MP5 series weapons";
         languages[] = {{"west", 100}};
         side = "west";
-        camouflage[] = {"woodland"};
+        camouflage[] = {};
         rolePrefix = "Gendarmes";
         vehicleClassnames[] = {
             {"CO", "B_GEN_Offroad_01_gen_F"},
@@ -1020,7 +1020,7 @@ class Faction {
         description = "CSAT Desert Uniforms and Katiba";
         languages[] = {{"east", 100}};
         side = "east";
-        camouflage[] = {"desert"};
+        camouflage[] = {};
         rolePrefix = "CSAT";
         vehicleClassnames[] = {
             {"CO", "O_MRAP_02_F"},
@@ -1046,7 +1046,7 @@ class Faction {
         description = "CSAT Tropical Uniforms and CAR-95 series weapons";
         languages[] = {{"east", 100}};
         side = "east";
-        camouflage[] = {"woodland"};
+        camouflage[] = {};
         rolePrefix = "CSAT";
         vehicleClassnames[] = {
             {"CO", "O_T_LSV_02_unarmed_F"},
@@ -1172,7 +1172,7 @@ class Faction {
     class MNP_CH_MAR {
         gear = "CAR95_CN";
         uniform = "CN_MAR";
-        name = "PLA Universal";
+        name = "PLA Marine";
         description = "Chinese Marine Uniforms and CAR-95's";
         languages[] = {{"east", 100}};
         side = "east";
