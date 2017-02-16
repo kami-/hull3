@@ -349,7 +349,6 @@ class AK47_NK {
         };
         backpackMagazines[] = {
             {"Toolkit", 1},
-            {"MineDetector", 1},
             {"DemoCharge_Remote_Mag", 3},
             {"SLAMDirectionalMine_Wire_Mag", 2}
         };
