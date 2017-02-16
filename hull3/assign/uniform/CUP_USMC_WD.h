@@ -8,14 +8,14 @@ class CUP_USMC_WD {
     };
 
     class Leader : Rifleman {
-        uniform = "CUP_U_B_USMC_MARPAT_WDL_RollUpKneepad";
+        uniform = "CUP_U_B_USMC_MARPAT_WDL_TwoKneepads";
         vest = "CUP_V_B_MTV_TL";
         headGear = "CUP_H_USMC_Goggles_HelmetWDL";
     };
 
     class Officer : Leader {
         headGear = "CUP_H_USMC_Headset_GoggleW_HelmetWDL";
-        uniform = "CUP_U_B_USMC_MARPAT_WDL_RollUpKneepad";
+        uniform = "CUP_U_B_USMC_MARPAT_WDL_TwoKneepads";
         vest = "CUP_V_B_MTV_PistolBlack";
     };
 
@@ -47,7 +47,7 @@ class CUP_USMC_WD {
     };
 
     class AR : Rifleman {
-        uniform = "CUP_U_B_USMC_MARPAT_WDL_RollUpKneepad";
+        uniform = "CUP_U_B_USMC_MARPAT_WDL_TwoKneepads";
         vest = "CUP_V_B_MTV_MG";
         headGear = "CUP_H_USMC_Headset_GoggleW_HelmetWDL";
     };
@@ -135,7 +135,7 @@ class CUP_USMC_WD {
     };
 
     class ENG : Rifleman {
-        uniform = "CUP_U_B_USMC_MARPAT_WDL_RollUpKneepad";
+        uniform = "CUP_U_B_USMC_MARPAT_WDL_TwoKneepads";
         backpack = "B_Carryall_khk";
     };
 
