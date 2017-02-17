@@ -273,7 +273,7 @@ class Faction {
             {"SL", "CUP_B_HMMWV_Unarmed_USA"},
             {"FT", "CUP_B_HMMWV_Unarmed_USA"},
             {"ATTCH", "CUP_B_HMMWV_Transport_USA"},
-            {"ENG", "B_Truck_01_Repair_F"},
+            {"ENG", "CUP_B_MTVR_Repair_USA"},
             {"APC", "CUP_B_AAV_USMC"},
             {"IFV", "CUP_B_LAV25M240_USMC"},
             {"SPAAG", "CUP_B_HMMWV_Avenger_USA"},
@@ -293,6 +293,58 @@ class Faction {
         languages[] = {{"west", 100}};
         side = "west";
         camouflage[] = {"woodland"};
+        rolePrefix = "USMC";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"SL", "CUP_B_HMMWV_Unarmed_USA"},
+            {"FT", "CUP_B_HMMWV_Unarmed_USA"},
+            {"ATTCH", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"ENG", "CUP_B_MTVR_Repair_USMC"},
+            {"APC", "CUP_B_AAV_USMC"},
+            {"IFV", "CUP_B_LAV25M240_USMC"},
+            {"SPAAG", "CUP_B_HMMWV_Avenger_USMC"},
+            {"TNK", "CUP_B_M1A1_Woodland_USMC"},
+            {"TH", "CUP_B_CH53E_USMC"},
+            {"AH", "CUP_B_AH1Z"},
+            {"CAS", "CUP_B_AV8B_Hydra19"},
+            {"Technical", "CUP_B_HMMWV_M2_USMC"}
+        };
+    };
+
+    class CUP_USMC_FROG_WD {
+        gear = "M16A4_USMC";
+        uniform = "CUP_USMC_FROG_WD";
+        name = "USMC Woodland FROG (CUP)";
+        description = "Woodland MARPAT with M16A4's (Late 2000's)";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland"};
+        rolePrefix = "USMC";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_HMMWV_Unarmed_USA"},
+            {"SL", "CUP_B_HMMWV_Unarmed_USA"},
+            {"FT", "CUP_B_HMMWV_Unarmed_USA"},
+            {"ATTCH", "CUP_B_HMMWV_Transport_USA"},
+            {"ENG", "B_Truck_01_Repair_F"},
+            {"APC", "CUP_B_AAV_USMC"},
+            {"IFV", "CUP_B_LAV25M240_USMC"},
+            {"SPAAG", "CUP_B_HMMWV_Avenger_USA"},
+            {"TNK", "CUP_B_M1A1_DES_USMC"},
+            {"TH", "CUP_B_CH53E_USMC"},
+            {"AH", "CUP_B_AH1Z"},
+            {"CAS", "CUP_B_AV8B_Hydra19"},
+            {"Technical", "CUP_B_HMMWV_M2_USMC"}
+        };
+    };
+
+    class CUP_USMC_FROG_DE {
+        gear = "M16A4_USMC";
+        uniform = "CUP_USMC_FROG_DE";
+        name = "USMC Desert FROG (CUP)";
+        description = "Desert MARPAT with M16A4's (Late 2000's)";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"desert"};
         rolePrefix = "USMC";
         vehicleClassnames[] = {
             {"CO", "CUP_B_HMMWV_Unarmed_USA"},
