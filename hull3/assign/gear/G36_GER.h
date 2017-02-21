@@ -1,7 +1,7 @@
 class G36_GER {
     class Rifleman {
-        primaryWeapon = "hlc_rifle_G36A1";
-        primaryWeaponItems[] = {"HLC_Optic_G36Dualoptic15x"};
+        primaryWeapon = "hlc_rifle_G36KA1KSK";
+        primaryWeaponItems[] = {"RH_compM2l", "RH_SFM952V"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -45,8 +45,8 @@ class G36_GER {
     };
 
     class Leader : Rifleman {
-        primaryWeapon = "hlc_rifle_G36A1AG36";
-        primaryWeaponItems[] = {"HLC_Optic_G36Dualoptic15x"};
+        primaryWeapon = "HLC_Rifle_G36KSKAG36";
+        primaryWeaponItems[] = {"RH_compM2l", "RH_SFM952V"};
         vestMagazines[] = {
             {"hlc_30rnd_556x45_EPR_G36", 6},
             {"1Rnd_HE_Grenade_shell", 4},
@@ -101,7 +101,8 @@ class G36_GER {
     };
 
     class Medic : Rifleman {
-        primaryWeapon = "hlc_rifle_G36KA1";
+        primaryWeapon = "hlc_rifle_G36C";
+        primaryWeaponItems[] = {"RH_compM21", "RH_SFM952V"};
         vestMagazines[] = {
             {"hlc_30rnd_556x45_EPR_G36", 6},
             {"hlc_30rnd_556x45_Tracers_G36", 2},
@@ -126,12 +127,12 @@ class G36_GER {
     };
 
     class AR : Rifleman {
-        primaryWeapon = "hlc_rifle_MG36";
-        primaryWeaponItems[] = {"HLC_Optic_G36Dualoptic15x"};
-        vestMagazines[] = {{"CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag", 2}};
+        primaryWeapon = "hlc_lmg_MG3";
+        primaryWeaponItems[] = {};
+        vestMagazines[] = {{"hlc_100Rnd_762x51_T_MG3", 2}};
         backpackMagazines[] = {
-            {"CUP_100Rnd_556x45_BetaCMag", 3},
-            {"CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag", 2}
+            {"hlc_100Rnd_762x51_M_MG3", 2},
+            {"hlc_100Rnd_762x51_T_MG3", 2}
         };
     };
 
@@ -139,14 +140,14 @@ class G36_GER {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"CUP_100Rnd_556x45_BetaCMag", 2},
-            {"CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag", 2}
+            {"hlc_100Rnd_762x51_M_MG3", 2},
+            {"hlc_100Rnd_762x51_T_MG3", 2}
         };
         binocular = "Binocular";
     };
 
     class RAT : Rifleman {
-        primaryWeapon = "hlc_rifle_G36KA1";
+        primaryWeapon = "hlc_rifle_G36KA1KSK";
         secondaryWeapon = "CUP_launch_M136";
         vestMagazines[] = {
             {"hlc_30rnd_556x45_EPR_G36", 6},
@@ -161,13 +162,13 @@ class G36_GER {
     };
 
     class MMGG : Rifleman {
-        primaryWeapon = "CUP_lmg_M240";
+        primaryWeapon = "hlc_lmg_MG3";
         primaryWeaponItems[] = {};
-        vestMagazines[] = {{"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 1}};
+        vestMagazines[] = {{"hlc_250Rnd_762x51_T_MG3", 1}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 4}
+            {"hlc_250Rnd_762x51_T_MG3", 2}
         };
     };
 
@@ -175,15 +176,15 @@ class G36_GER {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 4}
+            {"hlc_250Rnd_762x51_T_MG3", 2}
         };
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
 
-     class HMGG : Rifleman {
-        primaryWeapon = "hlc_rifle_G36KA1";
+    class HMGG : Rifleman {
+        primaryWeapon = "hlc_rifle_G36KA1KSK";
         backpack = "O_HMG_01_weapon_F";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -195,12 +196,12 @@ class G36_GER {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class HMGAC : Rifleman {
     };
-    
+
     class MATG : RAT {
-        primaryWeapon = "hlc_rifle_G36KA1";
+        primaryWeapon = "hlc_rifle_G36KA1KSK";
         secondaryWeapon = "CUP_launch_MAAWS";
         secondaryWeaponItems[] = {"CUP_MAAWS_HEAT_M", "CUP_optic_MAAWS_Scope"};
         backpackMagazines[] = {
@@ -226,7 +227,7 @@ class G36_GER {
     };
 
     class HATG : MATG {
-        primaryWeapon = "hlc_rifle_G36KA1";
+        primaryWeapon = "hlc_rifle_G36KA1KSK";
         secondaryWeapon = "CUP_launch_Javelin";
         secondaryWeaponItems[] = {"CUP_Javelin_M"};
         backpackMagazines[] = {{"CUP_Javelin_M", 1}};
@@ -246,12 +247,12 @@ class G36_GER {
     };
 
     class DHATG : Rifleman {
-        primaryWeapon = "hlc_rifle_G36KA1";
+        primaryWeapon = "hlc_rifle_G36KA1KSK";
         backpack = "O_AT_01_weapon_F";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class DHATAG : HMGG {
         backpack = "O_HMG_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -262,12 +263,12 @@ class G36_GER {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class DHATAC : Rifleman {
     };
 
     class SAMG : Rifleman {
-        primaryWeapon = "hlc_rifle_G36KA1";
+        primaryWeapon = "hlc_rifle_G36KA1KSK";
         secondaryWeapon = "CUP_launch_FIM92Stinger";
         secondaryWeaponItems[] = {"CUP_Stinger_M"};
         backpackMagazines[] = {{"CUP_Stinger_M", 1}};
@@ -294,12 +295,12 @@ class G36_GER {
     };
 
     class GMGG : Rifleman {
-        primaryWeapon = "hlc_rifle_G36KA1";
+        primaryWeapon = "hlc_rifle_G36KA1KSK";
         backpack = "O_GMG_01_weapon_F";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class GMGAG : HMGG {
         backpack = "O_HMG_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -310,17 +311,17 @@ class G36_GER {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class GMGAC : Rifleman {
     };
 
     class MTRG : Rifleman {
-        primaryWeapon = "hlc_rifle_G36KA1";
+        primaryWeapon = "hlc_rifle_G36KA1KSK";
         backpack = "O_Mortar_01_weapon_F";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class MTRAG : MTRG {
         backpack = "O_Mortar_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -331,12 +332,12 @@ class G36_GER {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class MTRAC : Rifleman {
     };
 
     class ENG : Rifleman {
-        primaryWeapon = "hlc_rifle_G36KA1";
+        primaryWeapon = "hlc_rifle_G36KA1KSK";
         vestMagazines[] = {
             {"hlc_30rnd_556x45_EPR_G36", 6},
             {"hlc_30rnd_556x45_Tracers_G36", 2}
@@ -376,7 +377,7 @@ class G36_GER {
     };
 
     class SP : Rifleman {
-        primaryWeapon = "hlc_rifle_G36KA1";
+        primaryWeapon = "hlc_rifle_G36KA1KSK";
         binocular = "ACE_VectorDay";
     };
 
@@ -398,13 +399,13 @@ class G36_GER {
 
     class Vehicle {
         weapons[] = {
-            {"hlc_rifle_G36A1", 4},
+            {"hlc_rifle_G36KA1KSK", 4},
             {"CUP_launch_M136", 5}
         };
         magazines[] = {
             {"hlc_30rnd_556x45_EPR_G36", 15},
             {"hlc_30rnd_556x45_EPR_G36", 15},
-            {"CUP_100Rnd_556x45_BetaCMag", 10},
+            {"hlc_100Rnd_762x51_M_MG3", 10},
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"UGL_FlareWhite_F", 5},
             {"ACE_HandFlare_White", 5},
@@ -427,14 +428,14 @@ class G36_GER {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"hlc_rifle_G36A1", 4},
+            {"hlc_rifle_G36KA1KSK", 4},
             {"CUP_launch_M136", 10}
         };
         magazines[] = {
             {"hlc_30rnd_556x45_EPR_G36", 40},
             {"hlc_30rnd_556x45_EPR_G36", 20},
-            {"CUP_100Rnd_556x45_BetaCMag", 20},
-            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
+            {"hlc_100Rnd_762x51_M_MG3", 20},
+            {"hlc_250Rnd_762x51_T_MG3", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
             {"SatchelCharge_Remote_Mag", 5},
@@ -460,8 +461,8 @@ class G36_GER {
         magazines[] = {
             {"hlc_30rnd_556x45_EPR_G36", 40},
             {"hlc_30rnd_556x45_EPR_G36", 20},
-            {"CUP_100Rnd_556x45_BetaCMag", 20},
-            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
+            {"hlc_100Rnd_762x51_M_MG3", 20},
+            {"hlc_250Rnd_762x51_T_MG3", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
             {"CUP_MAAWS_HEAT_M", 5},
