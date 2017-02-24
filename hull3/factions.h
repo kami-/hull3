@@ -1507,32 +1507,6 @@ class Faction {
         };
     };
 
-    class MNP_IRN_QF_WD {
-        gear = "Katiba_IRN";
-        uniform = "IRN_QF_WD";
-        name = "Iranian Quds Force Woodland";
-        description = "Woodland SF Uniform and Katiba";
-        languages[] = {{"east", 100}};
-        side = "east";
-        camouflage[] = {"woodland"};
-        rolePrefix = "Iranian Quds Force";
-        vehicleClassnames[] = {
-            {"CO", "CUP_O_UAZ_Unarmed_RU"},
-            {"SL", "CUP_O_UAZ_Unarmed_RU"},
-            {"FT", "CUP_O_UAZ_Unarmed_RU"},
-            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
-            {"ENG", "CUP_O_Ural_Repair_SLA"},
-            {"APC", "CUP_O_BRDM2_SLA"},
-            {"IFV", "CUP_I_BMP1_TK_GUE"},
-            {"SPAAG", "CUP_O_Ural_ZU23_SLA"},
-            {"TNK", "CUP_I_T55_TK_GUE"},
-            {"TH", "CUP_O_Mi8_RU"},
-            {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_RU_3"},
-            {"Technical", "CUP_O_UAZ_MG_SLA"}
-        };
-    };
-
     class MNP_IRN_DE {
         gear = "G3A3_IRN";
         uniform = "IRN_DE";
@@ -1578,32 +1552,6 @@ class Faction {
             {"IFV", "CUP_I_BMP1_TK_GUE"},
             {"SPAAG", "CUP_O_Ural_ZU23_SLA"},
             {"TNK", "CUP_I_T55_TK_GUE"},
-            {"TH", "CUP_O_Mi8_RU"},
-            {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_RU_3"},
-            {"Technical", "CUP_O_UAZ_MG_SLA"}
-        };
-    };
-
-    class MNP_IRN_QF_DE {
-        gear = "Katiba_IRN";
-        uniform = "IRN_QF_DE";
-        name = "Iranian Quds Force Desert";
-        description = "Desert SF Uniform and Katiba";
-        languages[] = {{"east", 100}};
-        side = "east";
-        camouflage[] = {"desert"};
-        rolePrefix = "Iranian Quds Force";
-        vehicleClassnames[] = {
-            {"CO", "CUP_O_UAZ_Unarmed_RU"},
-            {"SL", "CUP_O_UAZ_Unarmed_RU"},
-            {"FT", "CUP_O_UAZ_Unarmed_RU"},
-            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
-            {"ENG", "CUP_O_Ural_Repair_SLA"},
-            {"APC", "CUP_O_BRDM2_SLA"},
-            {"IFV", "CUP_I_BMP1_TK_GUE"},
-            {"SPAAG", "CUP_O_ZSU23_SLA"},
-            {"TNK", "CUP_O_T72_RU"},
             {"TH", "CUP_O_Mi8_RU"},
             {"AH", "CUP_O_Mi24_V_RU"},
             {"CAS", "CUP_O_Su25_RU_3"},
