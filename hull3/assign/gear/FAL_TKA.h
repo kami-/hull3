@@ -48,7 +48,7 @@ class FAL_TKA {
         primaryWeapon = "hlc_rifle_osw_GL";
         primaryWeaponItems[] = {};
         vestMagazines[] = {
-            {"hlc_20Rnd_762x51_B_fal", 4},
+            {"hlc_20Rnd_762x51_B_fal", 2},
             {"1Rnd_HE_Grenade_shell", 4},
             {"1Rnd_Smoke_Grenade_shell", 2},
             {"1Rnd_SmokeRed_Grenade_shell", 2},
@@ -103,7 +103,7 @@ class FAL_TKA {
         vestMagazines[] = {
             {"hlc_20Rnd_762x51_B_fal", 6},
             {"hlc_20Rnd_762x51_T_fal", 2},
-            {"SmokeShell", 4}
+            {"SmokeShell", 2}
         };
         backpackMagazines[] = {
             {"SmokeShellBlue", 4},
@@ -180,7 +180,7 @@ class FAL_TKA {
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
 
-     class HMGG : Rifleman {
+    class HMGG : Rifleman {
         backpack = "O_HMG_01_weapon_F";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -192,13 +192,13 @@ class FAL_TKA {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class HMGAC : Rifleman {
     };
-    
+
     class MATG : RAT {
         secondaryWeapon = "CUP_launch_RPG7V";
-        secondaryWeaponItems[] = {"CUP_PG7VL_M","CUP_optic_PGO7V3"};
+        secondaryWeaponItems[] = {"CUP_PG7VL_M", "CUP_optic_PGO7V3"};
         backpackMagazines[] = {
             {"CUP_PG7VL_M", 2},
             {"CUP_PG7VR_M", 1},
@@ -247,7 +247,7 @@ class FAL_TKA {
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class DHATAG : HMGG {
         backpack = "O_HMG_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -258,7 +258,7 @@ class FAL_TKA {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class DHATAC : Rifleman {
     };
 
@@ -293,7 +293,7 @@ class FAL_TKA {
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class GMGAG : HMGG {
         backpack = "O_HMG_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -304,7 +304,7 @@ class FAL_TKA {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class GMGAC : Rifleman {
     };
 
@@ -313,7 +313,7 @@ class FAL_TKA {
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class MTRAG : MTRG {
         backpack = "O_Mortar_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -324,7 +324,7 @@ class FAL_TKA {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class MTRAC : Rifleman {
     };
 
