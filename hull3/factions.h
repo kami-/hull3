@@ -2105,58 +2105,6 @@ class Faction {
         };
     };
 
-    class MNP_ASA {
-        gear = "AR15_ASA";
-        uniform = "ASA";
-        name = "Allied States of America";
-        description = "US Milita with AR-15's";
-        languages[] = {{"resistance", 100}};
-        side = "resistance";
-        camouflage[] = {"woodland"};
-        rolePrefix = "Allied State of America";
-        vehicleClassnames[] = {
-            {"CO", "CUP_B_HMMWV_Unarmed_USMC"},
-            {"SL", "CUP_B_HMMWV_Unarmed_USMC"},
-            {"FT", "CUP_B_HMMWV_Unarmed_USMC"},
-            {"ATTCH", "CUP_B_HMMWV_Unarmed_USMC"},
-            {"ENG", "B_Truck_01_Repair_F"},
-            {"APC", "CUP_B_M113_USA"},
-            {"IFV", "CUP_B_M2Bradley_USA_W"},
-            {"SPAAG", "CUP_B_M163_USA"},
-            {"TNK", "CUP_B_M1A1_Woodland_US_Army"},
-            {"TH", "CUP_B_UH60M_US"},
-            {"AH", "CUP_B_AH64D_USA"},
-            {"CAS", "CUP_B_A10_AT_USA"},
-            {"Technical", "CUP_B_HMMWV_M2_USMC"}
-        };
-    };
-
-    class MNP_ARC {
-        gear = "FAL_ARC";
-        uniform = "ARC";
-        name = "Altis Revolutionary Council";
-        description = "Olive Drab Rebels with FAL";
-        languages[] = {{"resistance", 100}};
-        side = "resistance";
-        camouflage[] = {"woodland"};
-        rolePrefix = "Altis Revolutionary Council";
-        vehicleClassnames[] = {
-            {"CO", "B_G_Offroad_01_F"},
-            {"SL", "B_G_Offroad_01_F"},
-            {"FT", "B_G_Offroad_01_F"},
-            {"ATTCH", "B_G_Offroad_01_F"},
-            {"ENG", "B_G_Offroad_01_repair_F"},
-            {"APC", "CUP_O_BRDM2_SLA"},
-            {"IFV", "CUP_O_BMP2_SLA"},
-            {"SPAAG", "CUP_O_ZSU23_SLA"},
-            {"TNK", "CUP_O_T72_SLA"},
-            {"TH", "CUP_C_Mi17_Civilian_RU"},
-            {"AH", "CUP_O_Mi8_SLA_2"},
-            {"CAS", "CUP_O_Su25_SLA"},
-            {"Technical", "B_G_Offroad_01_armed_F"}
-        };
-    };
-
     class MNP_IRE_WD {
         gear = "AUGA3_IRE";
         uniform = "IRE_WD";
