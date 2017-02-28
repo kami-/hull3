@@ -247,7 +247,7 @@ class Faction {
             {"SL", "CUP_B_HMMWV_Unarmed_USMC"},
             {"FT", "CUP_B_HMMWV_Unarmed_USMC"},
             {"ATTCH", "CUP_B_HMMWV_Unarmed_USMC"},
-            {"ENG", "B_Truck_01_Repair_F"},
+            {"ENG", "CUP_B_MTVR_Repair_USMC"},
             {"APC", "CUP_B_AAV_USMC"},
             {"IFV", "CUP_B_LAV25M240_USMC"},
             {"SPAAG", "CUP_B_HMMWV_Avenger_USMC"},
@@ -275,7 +275,7 @@ class Faction {
             {"ATTCH", "CUP_B_HMMWV_Transport_USA"},
             {"ENG", "CUP_B_MTVR_Repair_USA"},
             {"APC", "CUP_B_AAV_USMC"},
-            {"IFV", "CUP_B_LAV25M240_USMC"},
+            {"IFV", "CUP_B_LAV25M240_desert_USMC"},
             {"SPAAG", "CUP_B_HMMWV_Avenger_USA"},
             {"TNK", "CUP_B_M1A1_DES_USMC"},
             {"TH", "CUP_B_CH53E_USMC"},
@@ -296,8 +296,8 @@ class Faction {
         rolePrefix = "USMC";
         vehicleClassnames[] = {
             {"CO", "CUP_B_HMMWV_Unarmed_USMC"},
-            {"SL", "CUP_B_HMMWV_Unarmed_USA"},
-            {"FT", "CUP_B_HMMWV_Unarmed_USA"},
+            {"SL", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"FT", "CUP_B_HMMWV_Unarmed_USMC"},
             {"ATTCH", "CUP_B_HMMWV_Unarmed_USMC"},
             {"ENG", "CUP_B_MTVR_Repair_USMC"},
             {"APC", "CUP_B_AAV_USMC"},
@@ -321,15 +321,15 @@ class Faction {
         camouflage[] = {"woodland"};
         rolePrefix = "USMC";
         vehicleClassnames[] = {
-            {"CO", "CUP_B_HMMWV_Unarmed_USA"},
-            {"SL", "CUP_B_HMMWV_Unarmed_USA"},
-            {"FT", "CUP_B_HMMWV_Unarmed_USA"},
-            {"ATTCH", "CUP_B_HMMWV_Transport_USA"},
-            {"ENG", "B_Truck_01_Repair_F"},
+            {"CO", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"SL", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"FT", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"ATTCH", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"ENG", "CUP_B_MTVR_Repair_USMC"},
             {"APC", "CUP_B_AAV_USMC"},
             {"IFV", "CUP_B_LAV25M240_USMC"},
-            {"SPAAG", "CUP_B_HMMWV_Avenger_USA"},
-            {"TNK", "CUP_B_M1A1_DES_USMC"},
+            {"SPAAG", "CUP_B_HMMWV_Avenger_USMC"},
+            {"TNK", "CUP_B_M1A1_USMC"},
             {"TH", "CUP_B_CH53E_USMC"},
             {"AH", "CUP_B_AH1Z"},
             {"CAS", "CUP_B_AV8B_Hydra19"},
@@ -351,15 +351,15 @@ class Faction {
             {"SL", "CUP_B_HMMWV_Unarmed_USA"},
             {"FT", "CUP_B_HMMWV_Unarmed_USA"},
             {"ATTCH", "CUP_B_HMMWV_Transport_USA"},
-            {"ENG", "B_Truck_01_Repair_F"},
+            {"ENG", "CUP_B_MTVR_Repair_USA"},
             {"APC", "CUP_B_AAV_USMC"},
-            {"IFV", "CUP_B_LAV25M240_USMC"},
+            {"IFV", "CUP_B_LAV25M240_desert_USMC_USMC"},
             {"SPAAG", "CUP_B_HMMWV_Avenger_USA"},
             {"TNK", "CUP_B_M1A1_DES_USMC"},
             {"TH", "CUP_B_CH53E_USMC"},
             {"AH", "CUP_B_AH1Z"},
             {"CAS", "CUP_B_AV8B_Hydra19"},
-            {"Technical", "CUP_B_HMMWV_M2_USMC"}
+            {"Technical", "CUP_B_HMMWV_M2_USA"}
         };
     };
 
@@ -373,19 +373,19 @@ class Faction {
         camouflage[] = {"snow"};
         rolePrefix = "USMC";
         vehicleClassnames[] = {
-            {"CO", "CUP_B_HMMWV_Unarmed_USMC"},
-            {"SL", "CUP_B_HMMWV_Unarmed_USMC"},
-            {"FT", "CUP_B_HMMWV_Unarmed_USMC"},
-            {"ATTCH", "CUP_B_HMMWV_Unarmed_USMC"},
-            {"ENG", "B_Truck_01_Repair_F"},
+            {"CO", "CUP_B_HMMWV_Unarmed_NATO_T"},
+            {"SL", "CUP_B_HMMWV_Unarmed_NATO_T"},
+            {"FT", "CUP_B_HMMWV_Unarmed_NATO_T"},
+            {"ATTCH", "CUP_B_HMMWV_Unarmed_NATO_T"},
+            {"ENG", "B_T_Truck_01_Repair_F"},
             {"APC", "CUP_B_AAV_USMC"},
             {"IFV", "CUP_B_LAV25M240_USMC"},
-            {"SPAAG", "CUP_B_HMMWV_Avenger_USMC"},
-            {"TNK", "CUP_B_M1A1_Woodland_USMC"},
+            {"SPAAG", "CUP_B_HMMWV_Avenger_NATO_T"},
+            {"TNK", "CUP_B_M1A1_NATO_T"},
             {"TH", "CUP_B_CH47F_USA"},
             {"AH", "CUP_B_AH1Z"},
             {"CAS", "CUP_B_AV8B_Hydra19"},
-            {"Technical", "CUP_B_HMMWV_M2_USMC"}
+            {"Technical", "CUP_B_HMMWV_M2_NATO_T"}
         };
     };
 
@@ -403,10 +403,10 @@ class Faction {
             {"SL", "CUP_B_HMMWV_Unarmed_USA"},
             {"FT", "CUP_B_HMMWV_Unarmed_USA"},
             {"ATTCH", "CUP_B_HMMWV_Transport_USA"},
-            {"ENG", "B_Truck_01_Repair_F"},
+            {"ENG", "CUP_B_MTVR_Repair_USA"},
             {"APC", "CUP_B_M1126_ICV_M2_Desert_Slat"},
             {"IFV", "CUP_B_M2A3Bradley_USA_D"},
-            {"SPAAG", "CUP_B_HMMWV_Avenger_USA"},
+            {"SPAAG", "CUP_B_M6LineBacker_USA_D"},
             {"TNK", "CUP_B_M1A2_TUSK_MG_DES_US_Army"},
             {"TH", "CUP_B_UH60M_US"},
             {"AH", "CUP_B_AH64D_USA"},
@@ -429,7 +429,7 @@ class Faction {
             {"SL", "CUP_B_HMMWV_Unarmed_USA"},
             {"FT", "CUP_B_HMMWV_Unarmed_USA"},
             {"ATTCH", "CUP_B_HMMWV_Transport_USA"},
-            {"ENG", "B_Truck_01_Repair_F"},
+            {"ENG", "CUP_B_MTVR_Repair_USA"},
             {"APC", "CUP_B_M1126_ICV_M2_Desert_Slat"},
             {"IFV", "CUP_B_M2A3Bradley_USA_D"},
             {"SPAAG", "CUP_B_M6LineBacker_USA_D"},
@@ -455,10 +455,10 @@ class Faction {
             {"SL", "CUP_B_HMMWV_Unarmed_USMC"},
             {"FT", "CUP_B_HMMWV_Unarmed_USMC"},
             {"ATTCH", "CUP_B_HMMWV_Unarmed_USMC"},
-            {"ENG", "B_Truck_01_Repair_F"},
+            {"ENG", "CUP_B_MTVR_Repair_USMC"},
             {"APC", "CUP_B_M113_USA"},
             {"IFV", "CUP_B_M2Bradley_USA_W"},
-            {"SPAAG", "CUP_B_M163_USA"},
+            {"SPAAG", "CUP_B_M6LineBacker_USA_W"},
             {"TNK", "CUP_B_M1A1_Woodland_US_Army"},
             {"TH", "CUP_B_UH60M_US"},
             {"AH", "CUP_B_AH64D_USA"},
@@ -481,7 +481,7 @@ class Faction {
             {"SL", "CUP_B_HMMWV_Unarmed_USA"},
             {"FT", "CUP_B_HMMWV_Unarmed_USA"},
             {"ATTCH", "CUP_B_HMMWV_Transport_USA"},
-            {"ENG", "B_Truck_01_Repair_F"},
+            {"ENG", "CUP_B_MTVR_Repair_USA"},
             {"APC", "CUP_B_M113_USA"},
             {"IFV", "CUP_B_M2Bradley_USA_D"},
             {"SPAAG", "CUP_B_M6LineBacker_USA_D"},
@@ -507,7 +507,7 @@ class Faction {
             {"SL", "CUP_B_HMMWV_Unarmed_USA"},
             {"FT", "CUP_B_HMMWV_Unarmed_USA"},
             {"ATTCH", "CUP_B_HMMWV_Transport_USA"},
-            {"ENG", "B_Truck_01_Repair_F"},
+            {"ENG", "CUP_B_MTVR_Repair_USA"},
             {"APC", "CUP_B_M1126_ICV_M2_Desert_Slat"},
             {"IFV", "CUP_B_M2A3Bradley_USA_D"},
             {"SPAAG", "CUP_B_HMMWV_Avenger_USA"},
@@ -533,7 +533,7 @@ class Faction {
             {"SL", "CUP_B_HMMWV_Unarmed_USA"},
             {"FT", "CUP_B_HMMWV_Unarmed_USA"},
             {"ATTCH", "CUP_B_HMMWV_Transport_USA"},
-            {"ENG", "B_Truck_01_Repair_F"},
+            {"ENG", "CUP_B_MTVR_Repair_USA"},
             {"APC", "CUP_B_M1126_ICV_M2_Desert_Slat"},
             {"IFV", "CUP_B_M2A3Bradley_USA_D"},
             {"SPAAG", "CUP_B_M6LineBacker_USA_D"},
@@ -936,7 +936,7 @@ class Faction {
     };
 
     class CUP_BAF_MTP {
-        gear = "L85_BAF";
+        gear = "L85_BAF_RIS";
         uniform = "CUP_BAF_MTP";
         name = "British Armed Forces (MTP)";
         description = "Multicam DPM and L85's";
@@ -1127,10 +1127,10 @@ class Faction {
         camouflage[] = {"snow"};
         rolePrefix = "CSAT";
         vehicleClassnames[] = {
-            {"CO", "O_MRAP_02_F"},
-            {"SL", "O_MRAP_02_F"},
-            {"FT", "O_MRAP_02_F"},
-            {"ATTCH", "O_MRAP_02_F"},
+            {"CO", "CUP_O_UAZ_Unarmed_CSAT"},
+            {"SL", "CUP_O_UAZ_Unarmed_CSAT"},
+            {"FT", "CUP_O_UAZ_Unarmed_CSAT"},
+            {"ATTCH", "CUP_O_UAZ_Unarmed_CSAT"},
             {"ENG", "O_Truck_03_repair_F"},
             {"APC", "O_APC_Wheeled_02_rcws_F"},
             {"IFV", "O_APC_Tracked_02_cannon_F"},
@@ -1153,10 +1153,10 @@ class Faction {
         camouflage[] = {"woodland", "desert"};
         rolePrefix = "PLA Ground Forces";
         vehicleClassnames[] = {
-            {"CO", "CUP_O_UAZ_Unarmed_RU"},
-            {"SL", "CUP_O_UAZ_Unarmed_RU"},
-            {"FT", "CUP_O_UAZ_Unarmed_RU"},
-            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
+            {"CO", "CUP_O_UAZ_Unarmed_SLA"},
+            {"SL", "CUP_O_UAZ_Unarmed_SLA"},
+            {"FT", "CUP_O_UAZ_Unarmed_SLA"},
+            {"ATTCH", "CUP_O_UAZ_Unarmed_SLA"},
             {"ENG", "CUP_O_Ural_Repair_SLA"},
             {"APC", "CUP_O_BRDM2_SLA"},
             {"IFV", "CUP_I_BMP1_TK_GUE"},
@@ -1179,10 +1179,10 @@ class Faction {
         camouflage[] = {"woodland"};
         rolePrefix = "PLA Ground Forces";
         vehicleClassnames[] = {
-            {"CO", "CUP_O_UAZ_Unarmed_RU"},
-            {"SL", "CUP_O_UAZ_Unarmed_RU"},
-            {"FT", "CUP_O_UAZ_Unarmed_RU"},
-            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
+            {"CO", "CUP_O_UAZ_Unarmed_SLA"},
+            {"SL", "CUP_O_UAZ_Unarmed_SLA"},
+            {"FT", "CUP_O_UAZ_Unarmed_SLA"},
+            {"ATTCH", "CUP_O_UAZ_Unarmed_SLA"},
             {"ENG", "CUP_O_Ural_Repair_SLA"},
             {"APC", "CUP_O_BRDM2_SLA"},
             {"IFV", "CUP_I_BMP1_TK_GUE"},
@@ -1205,10 +1205,10 @@ class Faction {
         camouflage[] = {"desert"};
         rolePrefix = "PLA Ground Forces";
         vehicleClassnames[] = {
-            {"CO", "CUP_O_UAZ_Unarmed_RU"},
-            {"SL", "CUP_O_UAZ_Unarmed_RU"},
-            {"FT", "CUP_O_UAZ_Unarmed_RU"},
-            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
+            {"CO", "CUP_O_UAZ_Unarmed_SLA"},
+            {"SL", "CUP_O_UAZ_Unarmed_SLA"},
+            {"FT", "CUP_O_UAZ_Unarmed_SLA"},
+            {"ATTCH", "CUP_O_UAZ_Unarmed_SLA"},
             {"ENG", "CUP_O_Ural_Repair_SLA"},
             {"APC", "CUP_O_BRDM2_SLA"},
             {"IFV", "CUP_I_BMP1_TK_GUE"},
@@ -1231,10 +1231,10 @@ class Faction {
         camouflage[] = {"woodland", "desert"};
         rolePrefix = "PLAN Marines";
         vehicleClassnames[] = {
-            {"CO", "CUP_O_UAZ_Unarmed_RU"},
-            {"SL", "CUP_O_UAZ_Unarmed_RU"},
-            {"FT", "CUP_O_UAZ_Unarmed_RU"},
-            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
+            {"CO", "CUP_O_UAZ_Unarmed_SLA"},
+            {"SL", "CUP_O_UAZ_Unarmed_SLA"},
+            {"FT", "CUP_O_UAZ_Unarmed_SLA"},
+            {"ATTCH", "CUP_O_UAZ_Unarmed_SLA"},
             {"ENG", "CUP_O_Ural_Repair_SLA"},
             {"APC", "CUP_O_BRDM2_SLA"},
             {"IFV", "CUP_I_BMP1_TK_GUE"},
@@ -1261,10 +1261,10 @@ class Faction {
             {"SL", "CUP_O_UAZ_Unarmed_RU"},
             {"FT", "CUP_O_UAZ_Unarmed_RU"},
             {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
-            {"ENG", "CUP_O_Ural_Repair_SLA"},
-            {"APC", "CUP_O_BRDM2_SLA"},
+            {"ENG", "CUP_O_Ural_Repair_RU"},
+            {"APC", "CUP_O_BRDM2_RU"},
             {"IFV", "CUP_O_BMP2_RU"},
-            {"SPAAG", "CUP_O_ZSU23_SLA"},
+            {"SPAAG", "CUP_O_2S6_RU"},
             {"TNK", "CUP_O_T72_RU"},
             {"TH", "CUP_O_Mi8_RU"},
             {"AH", "CUP_O_Mi24_V_RU"},
@@ -1287,10 +1287,10 @@ class Faction {
             {"SL", "CUP_O_UAZ_Unarmed_RU"},
             {"FT", "CUP_O_UAZ_Unarmed_RU"},
             {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
-            {"ENG", "CUP_O_Ural_Repair_SLA"},
-            {"APC", "CUP_O_BRDM2_SLA"},
+            {"ENG", "CUP_O_Ural_Repair_RU"},
+            {"APC", "CUP_O_BRDM2_RU"},
             {"IFV", "CUP_O_BMP2_RU"},
-            {"SPAAG", "CUP_O_ZSU23_SLA"},
+            {"SPAAG", "CUP_O_2S6_RU"},
             {"TNK", "CUP_O_T72_RU"},
             {"TH", "CUP_O_Mi8_RU"},
             {"AH", "CUP_O_Mi24_V_RU"},
@@ -1365,10 +1365,10 @@ class Faction {
             {"SL", "CUP_O_UAZ_Unarmed_RU"},
             {"FT", "CUP_O_UAZ_Unarmed_RU"},
             {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
-            {"ENG", "CUP_O_Ural_Repair_SLA"},
-            {"APC", "CUP_O_BRDM2_SLA"},
-            {"IFV", "CUP_I_BMP1_TK_GUE"},
-            {"SPAAG", "CUP_O_ZSU23_SLA"},
+            {"ENG", "CUP_O_Ural_Repair_RU"},
+            {"APC", "CUP_O_BRDM2_RU"},
+            {"IFV", "CUP_O_BMP2_RU"},
+            {"SPAAG", "CUP_O_Ural_ZU23_RU"},
             {"TNK", "CUP_O_T72_RU"},
             {"TH", "CUP_O_Mi8_RU"},
             {"AH", "CUP_O_Mi24_V_RU"},
@@ -1413,10 +1413,10 @@ class Faction {
         camouflage[] = {"woodland"};
         rolePrefix = "KPA Conscripts";
         vehicleClassnames[] = {
-            {"CO", "CUP_O_UAZ_Unarmed_RU"},
-            {"SL", "CUP_O_UAZ_Unarmed_RU"},
-            {"FT", "CUP_O_UAZ_Unarmed_RU"},
-            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
+            {"CO", "CUP_O_UAZ_Unarmed_SLA"},
+            {"SL", "CUP_O_UAZ_Unarmed_SLA"},
+            {"FT", "CUP_O_UAZ_Unarmed_SLA"},
+            {"ATTCH", "CUP_O_UAZ_Unarmed_SLA"},
             {"ENG", "CUP_O_Ural_Repair_SLA"},
             {"APC", "CUP_O_BRDM2_SLA"},
             {"IFV", "CUP_I_BMP1_TK_GUE"},
@@ -1439,10 +1439,10 @@ class Faction {
         camouflage[] = {"woodland"};
         rolePrefix = "KPA Regulars";
         vehicleClassnames[] = {
-            {"CO", "CUP_O_UAZ_Unarmed_RU"},
-            {"SL", "CUP_O_UAZ_Unarmed_RU"},
-            {"FT", "CUP_O_UAZ_Unarmed_RU"},
-            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
+            {"CO", "CUP_O_UAZ_Unarmed_SLA"},
+            {"SL", "CUP_O_UAZ_Unarmed_SLA"},
+            {"FT", "CUP_O_UAZ_Unarmed_SLA"},
+            {"ATTCH", "CUP_O_UAZ_Unarmed_SLA"},
             {"ENG", "CUP_O_Ural_Repair_SLA"},
             {"APC", "CUP_O_BRDM2_SLA"},
             {"IFV", "CUP_I_BMP1_TK_GUE"},
@@ -1680,7 +1680,7 @@ class Faction {
             {"ENG", "CUP_O_Ural_Repair_TKA"},
             {"APC", "CUP_O_BMP1P_TKA"},
             {"IFV", "CUP_O_BMP2_TKA"},
-            {"SPAAG", "CUP_O_BMP2_ZU_TKA"},
+            {"SPAAG", "CUP_O_Ural_ZU23_TKM"},
             {"TNK", "CUP_O_T55_TK"},
             {"TH", "CUP_O_Mi17_TK"},
             {"AH", "CUP_O_Mi24_D_TK"},
@@ -1699,17 +1699,17 @@ class Faction {
         camouflage[] = {"woodland"};
         rolePrefix = "Sahrani Liberation Army";
         vehicleClassnames[] = {
-            {"CO", "CUP_O_UAZ_Unarmed_RU"},
-            {"SL", "CUP_O_UAZ_Unarmed_RU"},
-            {"FT", "CUP_O_UAZ_Unarmed_RU"},
-            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
+            {"CO", "CUP_O_UAZ_Unarmed_SLA"},
+            {"SL", "CUP_O_UAZ_Unarmed_SLA"},
+            {"FT", "CUP_O_UAZ_Unarmed_SLA"},
+            {"ATTCH", "CUP_O_UAZ_Unarmed_SLA"},
             {"ENG", "CUP_O_Ural_Repair_SLA"},
             {"APC", "CUP_O_BRDM2_SLA"},
             {"IFV", "CUP_O_BMP2_SLA"},
             {"SPAAG", "CUP_O_ZSU23_SLA"},
             {"TNK", "CUP_O_T72_SLA"},
             {"TH", "CUP_O_Mi8_SLA_1"},
-            {"AH", "CUP_O_Mi24_V_RU"},
+            {"AH", "CUP_O_Mi24_D_SLA"},
             {"CAS", "CUP_O_Su25_SLA"},
             {"Technical", "CUP_O_UAZ_MG_SLA"}
         };
@@ -1725,17 +1725,17 @@ class Faction {
         camouflage[] = {"desert"};
         rolePrefix = "Sahrani Liberation Army";
         vehicleClassnames[] = {
-            {"CO", "CUP_O_UAZ_Unarmed_RU"},
-            {"SL", "CUP_O_UAZ_Unarmed_RU"},
-            {"FT", "CUP_O_UAZ_Unarmed_RU"},
-            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
+            {"CO", "CUP_O_UAZ_Unarmed_SLA"},
+            {"SL", "CUP_O_UAZ_Unarmed_SLA"},
+            {"FT", "CUP_O_UAZ_Unarmed_SLA"},
+            {"ATTCH", "CUP_O_UAZ_Unarmed_SLA"},
             {"ENG", "CUP_O_Ural_Repair_SLA"},
             {"APC", "CUP_O_BRDM2_SLA"},
             {"IFV", "CUP_O_BMP2_SLA"},
             {"SPAAG", "CUP_O_ZSU23_SLA"},
             {"TNK", "CUP_O_T72_SLA"},
             {"TH", "CUP_O_Mi8_SLA_1"},
-            {"AH", "CUP_O_Mi24_V_RU"},
+            {"AH", "CUP_O_Mi24_D_SLA"},
             {"CAS", "CUP_O_Su25_SLA"},
             {"Technical", "CUP_O_UAZ_MG_SLA"}
         };
@@ -1751,17 +1751,17 @@ class Faction {
         camouflage[] = {"woodland", "desert"};
         rolePrefix = "Sahrani Liberation Army";
         vehicleClassnames[] = {
-            {"CO", "CUP_O_UAZ_Unarmed_RU"},
-            {"SL", "CUP_O_UAZ_Unarmed_RU"},
-            {"FT", "CUP_O_UAZ_Unarmed_RU"},
-            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
+            {"CO", "CUP_O_UAZ_Unarmed_SLA"},
+            {"SL", "CUP_O_UAZ_Unarmed_SLA"},
+            {"FT", "CUP_O_UAZ_Unarmed_SLA"},
+            {"ATTCH", "CUP_O_UAZ_Unarmed_SLA"},
             {"ENG", "CUP_O_Ural_Repair_SLA"},
             {"APC", "CUP_O_BRDM2_SLA"},
             {"IFV", "CUP_O_BMP2_SLA"},
             {"SPAAG", "CUP_O_ZSU23_SLA"},
             {"TNK", "CUP_O_T72_SLA"},
             {"TH", "CUP_O_Mi8_SLA_1"},
-            {"AH", "CUP_O_Mi24_V_RU"},
+            {"AH", "CUP_O_Mi24_D_SLA"},
             {"CAS", "CUP_O_Su25_SLA"},
             {"Technical", "CUP_O_UAZ_MG_SLA"}
         };
@@ -1777,17 +1777,17 @@ class Faction {
         camouflage[] = {"woodland", "desert"};
         rolePrefix = "SLA Militia";
         vehicleClassnames[] = {
-            {"CO", "CUP_O_UAZ_Unarmed_RU"},
-            {"SL", "CUP_O_UAZ_Unarmed_RU"},
-            {"FT", "CUP_O_UAZ_Unarmed_RU"},
-            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
+            {"CO", "CUP_O_UAZ_Militia_SLA"},
+            {"SL", "CUP_O_UAZ_Militia_SLA"},
+            {"FT", "CUP_O_UAZ_Militia_SLA"},
+            {"ATTCH", "CUP_O_UAZ_Militia_SLA"},
             {"ENG", "CUP_O_Ural_Repair_SLA"},
             {"APC", "CUP_O_BRDM2_SLA"},
             {"IFV", "CUP_O_BMP2_SLA"},
             {"SPAAG", "CUP_O_ZSU23_SLA"},
             {"TNK", "CUP_O_T72_SLA"},
             {"TH", "CUP_O_Mi8_SLA_1"},
-            {"AH", "CUP_O_Mi24_V_RU"},
+            {"AH", "CUP_O_Mi24_D_SLA"},
             {"CAS", "CUP_O_Su25_SLA"},
             {"Technical", "CUP_O_UAZ_MG_SLA"}
         };
@@ -1803,17 +1803,17 @@ class Faction {
         camouflage[] = {"woodland"};
         rolePrefix = "SLA Partisans";
         vehicleClassnames[] = {
-            {"CO", "CUP_O_UAZ_Unarmed_RU"},
-            {"SL", "CUP_O_UAZ_Unarmed_RU"},
-            {"FT", "CUP_O_UAZ_Unarmed_RU"},
-            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
+            {"CO", "CUP_O_UAZ_Unarmed_SLA"},
+            {"SL", "CUP_O_UAZ_Unarmed_SLA"},
+            {"FT", "CUP_O_UAZ_Unarmed_SLA"},
+            {"ATTCH", "CUP_O_UAZ_Unarmed_SLA"},
             {"ENG", "CUP_O_Ural_Repair_SLA"},
             {"APC", "CUP_O_BRDM2_SLA"},
             {"IFV", "CUP_O_BMP2_SLA"},
             {"SPAAG", "CUP_O_ZSU23_SLA"},
             {"TNK", "CUP_O_T72_SLA"},
             {"TH", "CUP_O_Mi8_SLA_1"},
-            {"AH", "CUP_O_Mi24_V_RU"},
+            {"AH", "CUP_O_Mi24_D_SLA"},
             {"CAS", "CUP_O_Su25_SLA"},
             {"Technical", "CUP_O_UAZ_MG_SLA"}
         };
@@ -1833,7 +1833,7 @@ class Faction {
             {"SL", "CUP_O_UAZ_Unarmed_RU"},
             {"FT", "CUP_O_UAZ_Unarmed_RU"},
             {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
-            {"ENG", "CUP_O_Ural_Repair_SLA"},
+            {"ENG", "CUP_O_Ural_Repair_RU"},
             {"APC", "CUP_O_BMP2_RU"},
             {"IFV", "CUP_O_BMP3_RU"},
             {"SPAAG", "CUP_O_2S6M_RU"},
@@ -1859,7 +1859,7 @@ class Faction {
             {"SL", "CUP_O_UAZ_Unarmed_RU"},
             {"FT", "CUP_O_UAZ_Unarmed_RU"},
             {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
-            {"ENG", "CUP_O_Ural_Repair_SLA"},
+            {"ENG", "CUP_O_Ural_Repair_RU"},
             {"APC", "CUP_O_BMP2_RU"},
             {"IFV", "CUP_O_BMP3_RU"},
             {"SPAAG", "CUP_O_2S6M_RU"},
@@ -2193,11 +2193,11 @@ class Faction {
         camouflage[] = {"woodland"};
         rolePrefix = "Finnish Army";
         vehicleClassnames[] = {
-            {"CO", "CUP_O_UAZ_Unarmed_RU"},
-            {"SL", "CUP_O_UAZ_Unarmed_RU"},
-            {"FT", "CUP_O_UAZ_Unarmed_RU"},
-            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
-            {"ENG", "CUP_O_Ural_Repair_SLA"},
+            {"CO", "CUP_O_UAZ_Unarmed_CDF"},
+            {"SL", "CUP_O_UAZ_Unarmed_CDF"},
+            {"FT", "CUP_O_UAZ_Unarmed_CDF"},
+            {"ATTCH", "CUP_O_UAZ_Unarmed_CDF"},
+            {"ENG", "CUP_O_Ural_Repair_CDF"},
             {"APC", "CUP_I_BMP1_TK_GUE"},
             {"IFV", "CUP_O_BMP2_SLA"},
             {"SPAAG", "CUP_O_ZSU23_SLA"},
@@ -2219,11 +2219,11 @@ class Faction {
         camouflage[] = {"snow"};
         rolePrefix = "Finnish Army";
         vehicleClassnames[] = {
-            {"CO", "CUP_O_UAZ_Unarmed_RU"},
-            {"SL", "CUP_O_UAZ_Unarmed_RU"},
-            {"FT", "CUP_O_UAZ_Unarmed_RU"},
-            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
-            {"ENG", "CUP_O_Ural_Repair_SLA"},
+            {"CO", "CUP_O_UAZ_Unarmed_CDF"},
+            {"SL", "CUP_O_UAZ_Unarmed_CDF"},
+            {"FT", "CUP_O_UAZ_Unarmed_CDF"},
+            {"ATTCH", "CUP_O_UAZ_Unarmed_CDF"},
+            {"ENG", "CUP_O_Ural_Repair_CDF"},
             {"APC", "CUP_I_BMP1_TK_GUE"},
             {"IFV", "CUP_O_BMP2_SLA"},
             {"SPAAG", "CUP_O_ZSU23_SLA"},
@@ -2303,7 +2303,7 @@ class Faction {
             {"ATTCH", "CUP_I_LR_Transport_RACS"},
             {"ENG", "B_Truck_01_Repair_F"},
             {"APC", "CUP_I_M113_RACS"},
-            {"IFV", "CUP_O_BMP2_SLA"},
+            {"IFV", "CUP_I_AAV_RACS"},
             {"SPAAG", "CUP_I_M163_RACS"},
             {"TNK", "CUP_I_T72_RACS"},
             {"TH", "CUP_I_SA330_Puma_HC2_RACS"},
@@ -2329,7 +2329,7 @@ class Faction {
             {"ATTCH", "CUP_I_LR_Transport_RACS"},
             {"ENG", "B_Truck_01_Repair_F"},
             {"APC", "CUP_I_M113_RACS"},
-            {"IFV", "CUP_O_BMP2_SLA"},
+            {"IFV", "CUP_I_AAV_RACS"},
             {"SPAAG", "CUP_I_M163_RACS"},
             {"TNK", "CUP_I_T72_RACS"},
             {"TH", "CUP_I_SA330_Puma_HC2_RACS"},
@@ -2355,7 +2355,7 @@ class Faction {
             {"ATTCH", "CUP_I_LR_Transport_RACS"},
             {"ENG", "B_Truck_01_Repair_F"},
             {"APC", "CUP_I_M113_RACS"},
-            {"IFV", "CUP_O_BMP2_SLA"},
+            {"IFV", "CUP_I_AAV_RACS"},
             {"SPAAG", "CUP_I_M163_RACS"},
             {"TNK", "CUP_I_T72_RACS"},
             {"TH", "CUP_I_SA330_Puma_HC2_RACS"},
@@ -2401,8 +2401,8 @@ class Faction {
         camouflage[] = {"woodland"};
         rolePrefix = "NAPA";
         vehicleClassnames[] = {
-            {"CO", "CUP_O_UAZ_Unarmed_RU"},
-            {"SL", "CUP_O_UAZ_Unarmed_RU"},
+            {"CO", "CUP_O_UAZ_Unarmed_SLA"},
+            {"SL", "CUP_O_UAZ_Unarmed_SLA"},
             {"FT", "CUP_B_LR_Transport_GB_W"},
             {"ATTCH", "CUP_B_LR_Transport_GB_W"},
             {"ENG", "CUP_O_Ural_Repair_SLA"},
