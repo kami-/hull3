@@ -41,7 +41,7 @@ class CUP_TK_LOC {
     };
 
     class Medic : Rifleman {
-        uniform = "CUP_O_TKI_Khet_Jeans_03";
+        uniform = "CUP_O_TKI_Khet_Partug_06";
         headGear = "CUP_H_TKI_SkullCap_06";
         vest = "CUP_V_OI_TKI_Jacket2_06_ARM";
     };
