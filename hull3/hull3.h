@@ -96,7 +96,6 @@ class Hull3 {
         #include "assign\uniform\USA_RAN.h"
         #include "assign\uniform\USA_RAN_SCO.h"
         #include "assign\uniform\USA_SCO.h"
-        #include "assign\uniform\USMC_DE.h"
         #include "assign\uniform\USMC_SN.h"
         #include "assign\uniform\CUP_USMC_FROG_WD.h"
         #include "assign\uniform\CUP_USMC_FROG_DE.h"
