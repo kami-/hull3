@@ -233,58 +233,6 @@ class Faction {
         };
     };
 
-    class MNP_USMC_WD {
-        gear = "M4A1_USMC";
-        uniform = "USMC_WD";
-        name = "USMC Woodland";
-        description = "Woodland MARPAT with M4A1's (Modern or Near Future)";
-        languages[] = {{"west", 100}};
-        side = "west";
-        camouflage[] = {"woodland"};
-        rolePrefix = "USMC";
-        vehicleClassnames[] = {
-            {"CO", "CUP_B_HMMWV_Unarmed_USMC"},
-            {"SL", "CUP_B_HMMWV_Unarmed_USMC"},
-            {"FT", "CUP_B_HMMWV_Unarmed_USMC"},
-            {"ATTCH", "CUP_B_HMMWV_Unarmed_USMC"},
-            {"ENG", "CUP_B_MTVR_Repair_USMC"},
-            {"APC", "CUP_B_AAV_USMC"},
-            {"IFV", "CUP_B_LAV25M240_USMC"},
-            {"SPAAG", "CUP_B_HMMWV_Avenger_USMC"},
-            {"TNK", "CUP_B_M1A1_Woodland_USMC"},
-            {"TH", "CUP_B_CH53E_USMC"},
-            {"AH", "CUP_B_AH1Z"},
-            {"CAS", "CUP_B_AV8B_Hydra19"},
-            {"Technical", "CUP_B_HMMWV_M2_USMC"}
-        };
-    };
-
-    class MNP_USMC_DE {
-        gear = "M4A1_USMC";
-        uniform = "USMC_DE";
-        name = "USMC Desert";
-        description = "Desert MARPAT with M4A1's (Modern or Near Future)";
-        languages[] = {{"west", 100}};
-        side = "west";
-        camouflage[] = {"desert"};
-        rolePrefix = "USMC";
-        vehicleClassnames[] = {
-            {"CO", "CUP_B_HMMWV_Unarmed_USA"},
-            {"SL", "CUP_B_HMMWV_Unarmed_USA"},
-            {"FT", "CUP_B_HMMWV_Unarmed_USA"},
-            {"ATTCH", "CUP_B_HMMWV_Transport_USA"},
-            {"ENG", "CUP_B_MTVR_Repair_USA"},
-            {"APC", "CUP_B_AAV_USMC"},
-            {"IFV", "CUP_B_LAV25M240_desert_USMC"},
-            {"SPAAG", "CUP_B_HMMWV_Avenger_USA"},
-            {"TNK", "CUP_B_M1A1_DES_USMC"},
-            {"TH", "CUP_B_CH53E_USMC"},
-            {"AH", "CUP_B_AH1Z"},
-            {"CAS", "CUP_B_AV8B_Hydra19"},
-            {"Technical", "CUP_B_HMMWV_M2_USA"}
-        };
-    };
-
     class CUP_USMC_WD {
         gear = "M16A4_USMC";
         uniform = "CUP_USMC_WD";
@@ -312,10 +260,10 @@ class Faction {
     };
 
     class CUP_USMC_FROG_WD {
-        gear = "M16A4_USMC";
+        gear = "M4A1_USMC";
         uniform = "CUP_USMC_FROG_WD";
         name = "USMC Woodland FROG (CUP)";
-        description = "Woodland MARPAT with M16A4's (Late 2000's)";
+        description = "Woodland MARPAT with M4A1's (Late 2000's)";
         languages[] = {{"west", 100}};
         side = "west";
         camouflage[] = {"woodland"};
@@ -338,10 +286,10 @@ class Faction {
     };
 
     class CUP_USMC_FROG_DE {
-        gear = "M16A4_USMC";
+        gear = "M4A1_USMC";
         uniform = "CUP_USMC_FROG_DE";
         name = "USMC Desert FROG (CUP)";
-        description = "Desert MARPAT with M16A4's (Late 2000's)";
+        description = "Desert MARPAT with M4A1's (Late 2000's)";
         languages[] = {{"west", 100}};
         side = "west";
         camouflage[] = {"desert"};
@@ -542,58 +490,6 @@ class Faction {
             {"AH", "CUP_B_AH64D_USA"},
             {"CAS", "CUP_B_A10_CAS_USA"},
             {"Technical", "CUP_B_HMMWV_M2_USA"}
-        };
-    };
-
-    class MNP_US_MC {
-        gear = "M4A1_US";
-        uniform = "USA_MC";
-        name = "US Army Multicam";
-        description = "Multicam uniforms with M4A1's";
-        languages[] = {{"west", 100}};
-        side = "west";
-        camouflage[] = {"woodland", "desert"};
-        rolePrefix = "US Army";
-        vehicleClassnames[] = {
-            {"CO", "CUP_B_HMMWV_Unarmed_USA"},
-            {"SL", "CUP_B_HMMWV_Unarmed_USA"},
-            {"FT", "CUP_B_HMMWV_Unarmed_USA"},
-            {"ATTCH", "CUP_B_HMMWV_Transport_USA"},
-            {"ENG", "B_Truck_01_Repair_F"},
-            {"APC", "CUP_B_M1126_ICV_M2_Desert_Slat"},
-            {"IFV", "CUP_B_M2A3Bradley_USA_D"},
-            {"SPAAG", "CUP_B_M6LineBacker_USA_D"},
-            {"TNK", "CUP_B_M1A2_TUSK_MG_DES_US_Army"},
-            {"TH", "CUP_B_UH60M_US"},
-            {"AH", "CUP_B_AH64D_USA"},
-            {"CAS", "CUP_B_A10_CAS_USA"},
-            {"Technical", "CUP_B_HMMWV_M2_USA"}
-        };
-    };
-
-    class MNP_US_MC_DRK {
-        gear = "M4A1_US";
-        uniform = "USA_MC_DRK";
-        name = "US Army Dark Multicam";
-        description = "Dark Green Multicam uniforms with M4A1's";
-        languages[] = {{"west", 100}};
-        side = "west";
-        camouflage[] = {"woodland"};
-        rolePrefix = "US Army";
-        vehicleClassnames[] = {
-            {"CO", "CUP_B_HMMWV_Unarmed_USA"},
-            {"SL", "CUP_B_HMMWV_Unarmed_USA"},
-            {"FT", "CUP_B_HMMWV_Unarmed_USA"},
-            {"ATTCH", "CUP_B_HMMWV_Transport_USA"},
-            {"ENG", "B_Truck_01_Repair_F"},
-            {"APC", "CUP_B_M1126_ICV_M2_Woodland_Slat"},
-            {"IFV", "CUP_B_M2A3Bradley_USA_W"},
-            {"SPAAG", "CUP_B_M6LineBacker_USA_W"},
-            {"TNK", "CUP_B_M1A2_TUSK_MG_US_Army"},
-            {"TH", "CUP_B_UH60M_US"},
-            {"AH", "CUP_B_AH64D_USA"},
-            {"CAS", "CUP_B_A10_CAS_USA"},
-            {"Technical", "CUP_B_HMMWV_M2_USMC"}
         };
     };
 
@@ -939,7 +835,7 @@ class Faction {
         gear = "L85_BAF_RIS";
         uniform = "CUP_BAF_MTP";
         name = "British Armed Forces (MTP)";
-        description = "Multicam DPM and L85's";
+        description = "Multicam DPM and L85's and NLAW AT";
         languages[] = {{"west", 100}};
         side = "west";
         camouflage[] = {"desert"};
@@ -1247,32 +1143,6 @@ class Faction {
         };
     };
 
-    class MNP_RU_VDV_WD {
-        gear = "AK12_RU";
-        uniform = "RU_WD_DIG";
-        name = "Russian VDV Woodland";
-        description = "Digital Woodland Uniforms and AK-12's";
-        languages[] = {{"east", 100}};
-        side = "east";
-        camouflage[] = {"woodland"};
-        rolePrefix = "Russian VDV";
-        vehicleClassnames[] = {
-            {"CO", "CUP_O_UAZ_Unarmed_RU"},
-            {"SL", "CUP_O_UAZ_Unarmed_RU"},
-            {"FT", "CUP_O_UAZ_Unarmed_RU"},
-            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
-            {"ENG", "CUP_O_Ural_Repair_RU"},
-            {"APC", "CUP_O_BRDM2_RU"},
-            {"IFV", "CUP_O_BMP2_RU"},
-            {"SPAAG", "CUP_O_2S6_RU"},
-            {"TNK", "CUP_O_T72_RU"},
-            {"TH", "CUP_O_Mi8_RU"},
-            {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_RU_3"},
-            {"Technical", "CUP_O_UAZ_MG_RU"}
-        };
-    };
-
     class MNP_RU_VDV_DE {
         gear = "AK12_RU";
         uniform = "RU_DE";
@@ -1299,58 +1169,6 @@ class Faction {
         };
     };
 
-    class MNP_RU_WD {
-        gear = "AK74_RU";
-        uniform = "RU_WD_FL";
-        name = "Russian Woodland (Flora)";
-        description = "Woodland Flora Uniforms and AK-74's";
-        languages[] = {{"east", 100}};
-        side = "east";
-        camouflage[] = {"woodland"};
-        rolePrefix = "Russian Army";
-        vehicleClassnames[] = {
-            {"CO", "CUP_O_UAZ_Unarmed_RU"},
-            {"SL", "CUP_O_UAZ_Unarmed_RU"},
-            {"FT", "CUP_O_UAZ_Unarmed_RU"},
-            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
-            {"ENG", "CUP_O_Ural_Repair_SLA"},
-            {"APC", "CUP_O_BRDM2_SLA"},
-            {"IFV", "CUP_O_BMP2_RU"},
-            {"SPAAG", "CUP_O_ZSU23_SLA"},
-            {"TNK", "CUP_O_T72_RU"},
-            {"TH", "CUP_O_Mi8_RU"},
-            {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_RU_3"},
-            {"Technical", "CUP_O_UAZ_MG_RU"}
-        };
-    };
-
-    class MNP_RU_TTK {
-        gear = "AK74_RU";
-        uniform = "RU_WD_TT";
-        name = "Russian Woodland (TTSkO";
-        description = "Woodland TTSkO Uniforms and AK-74's";
-        languages[] = {{"east", 100}};
-        side = "east";
-        camouflage[] = {"woodland"};
-        rolePrefix = "Soviet Army";
-        vehicleClassnames[] = {
-            {"CO", "CUP_O_UAZ_Unarmed_RU"},
-            {"SL", "CUP_O_UAZ_Unarmed_RU"},
-            {"FT", "CUP_O_UAZ_Unarmed_RU"},
-            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
-            {"ENG", "CUP_O_Ural_Repair_SLA"},
-            {"APC", "CUP_O_BRDM2_SLA"},
-            {"IFV", "CUP_I_BMP1_TK_GUE"},
-            {"SPAAG", "CUP_O_ZSU23_SLA"},
-            {"TNK", "CUP_O_T72_RU"},
-            {"TH", "CUP_O_Mi8_RU"},
-            {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_RU_3"},
-            {"Technical", "CUP_O_UAZ_MG_RU"}
-        };
-    };
-
     class MNP_RU_AIR {
         gear = "AKS74_RU";
         uniform = "RU_AB";
@@ -1369,32 +1187,6 @@ class Faction {
             {"APC", "CUP_O_BRDM2_RU"},
             {"IFV", "CUP_O_BMP2_RU"},
             {"SPAAG", "CUP_O_Ural_ZU23_RU"},
-            {"TNK", "CUP_O_T72_RU"},
-            {"TH", "CUP_O_Mi8_RU"},
-            {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_RU_3"},
-            {"Technical", "CUP_O_UAZ_MG_RU"}
-        };
-    };
-
-    class MNP_RU_REED {
-        gear = "AEK_RU";
-        uniform = "RU_REED";
-        name = "Russian MVD Woodland";
-        description = "Woodland Reed Uniforms and AEK's";
-        languages[] = {{"east", 100}};
-        side = "east";
-        camouflage[] = {"woodland"};
-        rolePrefix = "Russian MVD";
-        vehicleClassnames[] = {
-            {"CO", "CUP_O_UAZ_Unarmed_RU"},
-            {"SL", "CUP_O_UAZ_Unarmed_RU"},
-            {"FT", "CUP_O_UAZ_Unarmed_RU"},
-            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
-            {"ENG", "CUP_O_Ural_Repair_SLA"},
-            {"APC", "CUP_O_BTR90_RU"},
-            {"IFV", "CUP_O_BMP2_RU"},
-            {"SPAAG", "CUP_O_ZSU23_SLA"},
             {"TNK", "CUP_O_T72_RU"},
             {"TH", "CUP_O_Mi8_RU"},
             {"AH", "CUP_O_Mi24_V_RU"},
