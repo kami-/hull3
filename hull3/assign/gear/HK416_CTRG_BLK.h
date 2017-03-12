@@ -334,7 +334,7 @@ class HK416_CTRG_BLK {
     };
 
     class ENG : Rifleman {
-        primaryWeaponItems[] = {"RH_t1", "RH_SFM952V"};
+        primaryWeaponItems[] = {"RH_compM2", "RH_SFM952V"};
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2}

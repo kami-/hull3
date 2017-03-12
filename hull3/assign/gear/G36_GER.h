@@ -148,7 +148,7 @@ class G36_GER {
 
     class RAT : Rifleman {
         primaryWeapon = "hlc_rifle_G36KA1KSK";
-        secondaryWeapon = "CUP_launch_M136";
+        secondaryWeapon = "CUP_launch_M72A6";
         vestMagazines[] = {
             {"hlc_30rnd_556x45_EPR_G36", 6},
             {"hlc_30rnd_556x45_Tracers_G36", 2}
@@ -185,13 +185,13 @@ class G36_GER {
 
     class HMGG : Rifleman {
         primaryWeapon = "hlc_rifle_G36KA1KSK";
-        backpack = "O_HMG_01_weapon_F";
+        backpack = "CUP_B_M2_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
 
     class HMGAG : HMGG {
-        backpack = "O_HMG_01_support_F";
+        backpack = "CUP_B_M2_MiniTripod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
@@ -248,13 +248,13 @@ class G36_GER {
 
     class DHATG : Rifleman {
         primaryWeapon = "hlc_rifle_G36KA1KSK";
-        backpack = "O_AT_01_weapon_F";
+        backpack = "CUP_B_Tow_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
 
     class DHATAG : HMGG {
-        backpack = "O_HMG_01_support_F";
+        backpack = "CUP_B_TOW_Tripod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
             {"Chemlight_green", 2},
@@ -296,13 +296,13 @@ class G36_GER {
 
     class GMGG : Rifleman {
         primaryWeapon = "hlc_rifle_G36KA1KSK";
-        backpack = "O_GMG_01_weapon_F";
+        backpack = "CUP_B_Mk19_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
 
     class GMGAG : HMGG {
-        backpack = "O_HMG_01_support_F";
+        backpack = "CUP_B_Mk19_Tripod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
             {"Chemlight_green", 2},
@@ -317,13 +317,13 @@ class G36_GER {
 
     class MTRG : Rifleman {
         primaryWeapon = "hlc_rifle_G36KA1KSK";
-        backpack = "O_Mortar_01_weapon_F";
+        backpack = "CUP_B_M252_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
 
     class MTRAG : MTRG {
-        backpack = "O_Mortar_01_support_F";
+        backpack = "CUP_B_M252_Bipod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
             {"Chemlight_green", 2},
@@ -400,7 +400,7 @@ class G36_GER {
     class Vehicle {
         weapons[] = {
             {"hlc_rifle_G36KA1KSK", 4},
-            {"CUP_launch_M136", 5}
+            {"CUP_launch_M72A6", 5}
         };
         magazines[] = {
             {"hlc_30rnd_556x45_EPR_G36", 15},
@@ -429,7 +429,7 @@ class G36_GER {
     class Truck : Vehicle {
         weapons[] = {
             {"hlc_rifle_G36KA1KSK", 4},
-            {"CUP_launch_M136", 10}
+            {"CUP_launch_M72A6", 10}
         };
         magazines[] = {
             {"hlc_30rnd_556x45_EPR_G36", 40},
@@ -457,7 +457,7 @@ class G36_GER {
     };
 
     class Armored : Truck {
-        weapons[] = {{"CUP_launch_M136", 10}};
+        weapons[] = {{"CUP_launch_M72A6", 10}};
         magazines[] = {
             {"hlc_30rnd_556x45_EPR_G36", 40},
             {"hlc_30rnd_556x45_EPR_G36", 20},

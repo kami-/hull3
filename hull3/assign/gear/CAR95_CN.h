@@ -197,7 +197,7 @@ class CAR95_CN {
 
     class HMGG : Rifleman {
         primaryWeapon = "arifle_CTAR_blk_F";
-        backpack = "O_HMG_01_weapon_F";
+        backpack = "CUP_B_DShkM_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
@@ -207,7 +207,7 @@ class CAR95_CN {
             {"Chemlight_green", 2},
             {"SmokeShell", 1}
         };
-        backpack = "O_HMG_01_support_F";
+        backpack = "CUP_B_DShkM_TripodLow_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
@@ -258,13 +258,13 @@ class CAR95_CN {
 
     class DHATG : Rifleman {
         primaryWeapon = "arifle_CTAR_blk_F";
-        backpack = "O_AT_01_weapon_F";
+        backpack = "CUP_B_Metis_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
 
     class DHATAG : HMGG {
-        backpack = "O_HMG_01_support_F";
+        backpack = "CUP_B_Metis_Tripod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
             {"Chemlight_green", 2},
@@ -306,13 +306,13 @@ class CAR95_CN {
 
     class GMGG : Rifleman {
         primaryWeapon = "arifle_CTAR_blk_F";
-        backpack = "O_GMG_01_weapon_F";
+        backpack = "CUP_B_AGS30_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
 
     class GMGAG : HMGG {
-        backpack = "O_HMG_01_support_F";
+        backpack = "CUP_B_AGS30_Tripod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
             {"Chemlight_green", 2},
@@ -327,13 +327,13 @@ class CAR95_CN {
 
     class MTRG : Rifleman {
         primaryWeapon = "arifle_CTAR_blk_F";
-        backpack = "O_Mortar_01_weapon_F";
+        backpack = "CUP_B_Podnos_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
 
     class MTRAG : MTRG {
-        backpack = "O_Mortar_01_support_F";
+        backpack = "CUP_B_Podnos_Bipod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
             {"Chemlight_green", 2},

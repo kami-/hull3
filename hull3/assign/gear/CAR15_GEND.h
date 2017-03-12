@@ -148,7 +148,7 @@ class CAR15_GEND {
 
     class RAT : Rifleman {
         primaryWeaponItems[] = {"RH_compM2l"};
-        secondaryWeapon = "CUP_launch_M136";
+        secondaryWeapon = "CUP_launch_M72A6";
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2}
@@ -185,13 +185,13 @@ class CAR15_GEND {
     };
 
     class HMGG : Rifleman {
-        backpack = "O_HMG_01_weapon_F";
+        backpack = "CUP_B_M2_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
 
     class HMGAG : HMGG {
-        backpack = "O_HMG_01_support_F";
+        backpack = "CUP_B_M2_MiniTripod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
@@ -245,13 +245,13 @@ class CAR15_GEND {
     };
 
     class DHATG : Rifleman {
-        backpack = "O_AT_01_weapon_F";
+        backpack = "CUP_B_Tow_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
 
     class DHATAG : HMGG {
-        backpack = "O_HMG_01_support_F";
+        backpack = "CUP_B_TOW_Tripod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
             {"Chemlight_green", 2},
@@ -291,13 +291,13 @@ class CAR15_GEND {
     };
 
     class GMGG : Rifleman {
-        backpack = "O_GMG_01_weapon_F";
+        backpack = "CUP_B_Mk19_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
 
     class GMGAG : HMGG {
-        backpack = "O_HMG_01_support_F";
+        backpack = "CUP_B_Mk19_Tripod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
             {"Chemlight_green", 2},
@@ -311,13 +311,13 @@ class CAR15_GEND {
     };
 
     class MTRG : Rifleman {
-        backpack = "O_Mortar_01_weapon_F";
+        backpack = "CUP_B_M252_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
 
     class MTRAG : MTRG {
-        backpack = "O_Mortar_01_support_F";
+        backpack = "CUP_B_M252_Bipod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
             {"Chemlight_green", 2},
@@ -393,7 +393,7 @@ class CAR15_GEND {
     class Vehicle {
         weapons[] = {
             {"hlc_rifle_Colt727", 4},
-            {"CUP_launch_M136", 5}
+            {"CUP_launch_M72A6", 5}
         };
         magazines[] = {
             {"30Rnd_556x45_Stanag", 15},
@@ -422,7 +422,7 @@ class CAR15_GEND {
     class Truck : Vehicle {
         weapons[] = {
             {"hlc_rifle_Colt727", 4},
-            {"CUP_launch_M136", 10}
+            {"CUP_launch_M72A6", 10}
         };
         magazines[] = {
             {"30Rnd_556x45_Stanag", 40},
@@ -450,7 +450,7 @@ class CAR15_GEND {
     };
 
     class Armored : Truck {
-        weapons[] = {{"CUP_launch_M136", 10}};
+        weapons[] = {{"CUP_launch_M72A6", 10}};
         magazines[] = {
             {"30Rnd_556x45_Stanag", 40},
             {"30Rnd_556x45_Stanag", 20},

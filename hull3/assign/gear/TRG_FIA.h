@@ -192,13 +192,13 @@ class TRG_FIA {
 
     class HMGG : Rifleman {
         primaryWeapon = "arifle_TRG20_F";
-        backpack = "O_HMG_01_weapon_F";
+        backpack = "CUP_B_M2_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class HMGAG : HMGG {
-        backpack = "O_HMG_01_support_F";
+        backpack = "CUP_B_M2_MiniTripod_Bag";
         uniformMagazines[] = {
             {"Chemlight_green", 2},
             {"SmokeShell", 1}
@@ -207,7 +207,7 @@ class TRG_FIA {
         assignItems[] = {"ItemGPS"};
         vestRadios[] = {"ACRE_PRC152"};
     };
-    
+
     class HMGAC : Rifleman {
     };
 
@@ -259,16 +259,16 @@ class TRG_FIA {
         uniformRadios[] = {"ACRE_PRC343"};
         assignItems[] = {};
     };
-    
+
     class DHATG : Rifleman {
         primaryWeapon = "arifle_TRG20_F";
-        backpack = "O_AT_01_weapon_F";
+        backpack = "CUP_B_Tow_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class DHATAG : HMGG {
-        backpack = "O_HMG_01_support_F";
+        backpack = "CUP_B_TOW_Tripod_Bag";
         vestRadios[] = {"ACRE_PRC152"};
         uniformMagazines[] = {
             {"Chemlight_green", 2},
@@ -277,7 +277,7 @@ class TRG_FIA {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class DHATAC : Rifleman {
     };
 
@@ -309,13 +309,13 @@ class TRG_FIA {
 
     class GMGG : Rifleman {
         primaryWeapon = "arifle_TRG20_F";
-        backpack = "O_GMG_01_weapon_F";
+        backpack = "CUP_B_Mk19_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class GMGAG : HMGG {
-        backpack = "O_HMG_01_support_F";
+        backpack = "CUP_B_Mk19_Tripod_Bag";
         vestRadios[] = {"ACRE_PRC152"};
         uniformMagazines[] = {
             {"Chemlight_green", 2},
@@ -324,19 +324,19 @@ class TRG_FIA {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class GMGAC : Rifleman {
     };
 
     class MTRG : Rifleman {
         primaryWeapon = "arifle_TRG20_F";
-        backpack = "O_Mortar_01_weapon_F";
+        backpack = "CUP_B_M252_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class MTRAG : MTRG {
-        backpack = "O_Mortar_01_support_F";
+        backpack = "CUP_B_M252_Bipod_Bag";
         vestRadios[] = {"ACRE_PRC152"};
         uniformMagazines[] = {
             {"Chemlight_green", 2},
@@ -345,7 +345,7 @@ class TRG_FIA {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class MTRAC : Rifleman {
     };
 

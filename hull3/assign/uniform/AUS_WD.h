@@ -13,6 +13,7 @@ class AUS_WD {
     };
 
     class Officer : Leader {
+        headGear = "MNP_Boonie_AUS";
     };
 
     class Crew : Rifleman {
@@ -84,7 +85,7 @@ class AUS_WD {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -158,4 +159,5 @@ class AUS_WD {
 
     class PCM : P {
     };
+
 };
