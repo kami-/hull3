@@ -147,7 +147,7 @@ class G3KA4_NOR {
     };
 
     class RAT : Rifleman {
-        secondaryWeapon = "CUP_launch_M136";
+        secondaryWeapon = "CUP_launch_M72A6";
         vestMagazines[] = {
             {"hlc_20rnd_762x51_b_G3", 6},
             {"hlc_20rnd_762x51_T_G3", 2}
@@ -184,22 +184,22 @@ class G3KA4_NOR {
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
 
-     class HMGG : Rifleman {
-        backpack = "O_HMG_01_weapon_F";
+    class HMGG : Rifleman {
+        backpack = "CUP_B_M2_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
 
     class HMGAG : HMGG {
-        backpack = "O_HMG_01_support_F";
+        backpack = "CUP_B_M2_MiniTripod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class HMGAC : Rifleman {
     };
-    
+
     class MATG : RAT {
         secondaryWeapon = "CUP_launch_MAAWS";
         secondaryWeaponItems[] = {"CUP_MAAWS_HEAT_M", "CUP_optic_MAAWS_Scope"};
@@ -245,13 +245,13 @@ class G3KA4_NOR {
     };
 
     class DHATG : Rifleman {
-        backpack = "O_AT_01_weapon_F";
+        backpack = "CUP_B_Tow_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class DHATAG : HMGG {
-        backpack = "O_HMG_01_support_F";
+        backpack = "CUP_B_TOW_Tripod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
             {"Chemlight_green", 2},
@@ -260,7 +260,7 @@ class G3KA4_NOR {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class DHATAC : Rifleman {
     };
 
@@ -291,13 +291,13 @@ class G3KA4_NOR {
     };
 
     class GMGG : Rifleman {
-        backpack = "O_GMG_01_weapon_F";
+        backpack = "CUP_B_Mk19_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class GMGAG : HMGG {
-        backpack = "O_HMG_01_support_F";
+        backpack = "CUP_B_Mk19_Tripod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
             {"Chemlight_green", 2},
@@ -306,18 +306,18 @@ class G3KA4_NOR {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class GMGAC : Rifleman {
     };
 
     class MTRG : Rifleman {
-        backpack = "O_Mortar_01_weapon_F";
+        backpack = "CUP_B_M252_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class MTRAG : MTRG {
-        backpack = "O_Mortar_01_support_F";
+        backpack = "CUP_B_M252_Bipod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
             {"Chemlight_green", 2},
@@ -326,7 +326,7 @@ class G3KA4_NOR {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class MTRAC : Rifleman {
     };
 
@@ -396,7 +396,7 @@ class G3KA4_NOR {
     class Vehicle {
         weapons[] = {
             {"hlc_rifle_g3ka4", 4},
-            {"CUP_launch_M136", 5}
+            {"CUP_launch_M72A6", 5}
         };
         magazines[] = {
             {"hlc_20rnd_762x51_T_G3", 15},
@@ -425,7 +425,7 @@ class G3KA4_NOR {
     class Truck : Vehicle {
         weapons[] = {
             {"hlc_rifle_g3ka4", 4},
-            {"CUP_launch_M136", 10}
+            {"CUP_launch_M72A6", 10}
         };
         magazines[] = {
             {"hlc_20rnd_762x51_T_G3", 40},
@@ -453,7 +453,7 @@ class G3KA4_NOR {
     };
 
     class Armored : Truck {
-        weapons[] = {{"CUP_launch_M136", 10}};
+        weapons[] = {{"CUP_launch_M72A6", 10}};
         magazines[] = {
             {"hlc_20rnd_762x51_T_G3", 40},
             {"hlc_20rnd_762x51_b_G3", 20},

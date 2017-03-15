@@ -13,6 +13,7 @@ class NZ {
     };
 
     class Officer : Leader {
+        headGear = "MNP_Boonie_NZ";
     };
 
     class Crew : Rifleman {
@@ -84,7 +85,7 @@ class NZ {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -158,4 +159,5 @@ class NZ {
 
     class PCM : P {
     };
+
 };

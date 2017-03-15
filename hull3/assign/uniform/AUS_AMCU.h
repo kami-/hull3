@@ -13,6 +13,7 @@ class AUS_AMCU {
     };
 
     class Officer : Leader {
+        headGear = "MNP_Boonie_AMCU";
     };
 
     class Crew : Rifleman {
@@ -86,7 +87,7 @@ class AUS_AMCU {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -160,4 +161,5 @@ class AUS_AMCU {
 
     class PCM : P {
     };
+
 };

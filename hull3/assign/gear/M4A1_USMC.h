@@ -102,7 +102,7 @@ class M4A1_USMC {
 
     class Medic : Rifleman {
         primaryWeapon = "hlc_rifle_M4";
-        primaryWeaponItems[] = {"RH_t1", "RH_SFM952V"};
+        primaryWeaponItems[] = {"RH_compM2", "RH_SFM952V"};
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2},
@@ -149,7 +149,7 @@ class M4A1_USMC {
     };
 
     class RAT : Rifleman {
-        primaryWeaponItems[] = {"RH_t1", "RH_SFM952V"};
+        primaryWeaponItems[] = {"RH_compM2", "RH_SFM952V"};
         secondaryWeapon = "CUP_launch_M136";
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
@@ -186,13 +186,13 @@ class M4A1_USMC {
     };
 
     class HMGG : Rifleman {
-        backpack = "O_HMG_01_weapon_F";
+        backpack = "CUP_B_M2_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
 
     class HMGAG : HMGG {
-        backpack = "O_HMG_01_support_F";
+        backpack = "CUP_B_M2_MiniTripod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
@@ -246,13 +246,13 @@ class M4A1_USMC {
     };
 
     class DHATG : Rifleman {
-        backpack = "O_AT_01_weapon_F";
+        backpack = "CUP_B_Tow_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
 
     class DHATAG : HMGG {
-        backpack = "O_HMG_01_support_F";
+        backpack = "CUP_B_TOW_Tripod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
             {"Chemlight_green", 2},
@@ -292,13 +292,13 @@ class M4A1_USMC {
     };
 
     class GMGG : Rifleman {
-        backpack = "O_GMG_01_weapon_F";
+        backpack = "CUP_B_Mk19_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
 
     class GMGAG : HMGG {
-        backpack = "O_HMG_01_support_F";
+        backpack = "CUP_B_Mk19_Tripod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
             {"Chemlight_green", 2},
@@ -312,13 +312,13 @@ class M4A1_USMC {
     };
 
     class MTRG : Rifleman {
-        backpack = "O_Mortar_01_weapon_F";
+        backpack = "CUP_B_M252_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
 
     class MTRAG : MTRG {
-        backpack = "O_Mortar_01_support_F";
+        backpack = "CUP_B_M252_Bipod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
             {"Chemlight_green", 2},
@@ -332,7 +332,7 @@ class M4A1_USMC {
     };
 
     class ENG : Rifleman {
-        primaryWeaponItems[] = {"RH_t1", "RH_SFM952V"};
+        primaryWeaponItems[] = {"RH_compM2", "RH_SFM952V"};
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2}

@@ -75,7 +75,7 @@ class M16A4_ROK {
 
     class Crew : Rifleman {
         primaryWeapon = "hlc_rifle_CQBR";
-        primaryWeaponItems[] = {"RH_t1", "RH_SFM952V"};
+        primaryWeaponItems[] = {"RH_compM2", "RH_SFM952V"};
         uniformMagazines[] = {
             {"Chemlight_green", 2},
             {"SmokeShell", 1}
@@ -149,7 +149,7 @@ class M16A4_ROK {
     class RAT : Rifleman {
         primaryWeapon = "hlc_rifle_M4";
         primaryWeaponItems[] = {"RH_compM2", "RH_SFM952V"};
-        secondaryWeapon = "CUP_launch_M136";
+        secondaryWeapon = "CUP_launch_M72A6";
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2}
@@ -187,23 +187,23 @@ class M16A4_ROK {
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
 
-     class HMGG : Rifleman {
+    class HMGG : Rifleman {
         primaryWeapon = "hlc_rifle_M4";
-        backpack = "O_HMG_01_weapon_F";
+        backpack = "CUP_B_M2_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
 
     class HMGAG : HMGG {
-        backpack = "O_HMG_01_support_F";
+        backpack = "CUP_B_M2_MiniTripod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class HMGAC : Rifleman {
     };
-    
+
     class MATG : RAT {
         secondaryWeapon = "CUP_launch_MAAWS";
         secondaryWeaponItems[] = {"CUP_MAAWS_HEAT_M", "CUP_optic_MAAWS_Scope"};
@@ -250,13 +250,13 @@ class M16A4_ROK {
 
     class DHATG : Rifleman {
         primaryWeapon = "hlc_rifle_M4";
-        backpack = "O_AT_01_weapon_F";
+        backpack = "CUP_B_Tow_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class DHATAG : HMGG {
-        backpack = "O_HMG_01_support_F";
+        backpack = "CUP_B_TOW_Tripod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
             {"Chemlight_green", 2},
@@ -265,7 +265,7 @@ class M16A4_ROK {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class DHATAC : Rifleman {
     };
 
@@ -299,13 +299,13 @@ class M16A4_ROK {
 
     class GMGG : Rifleman {
         primaryWeapon = "hlc_rifle_M4";
-        backpack = "O_GMG_01_weapon_F";
+        backpack = "CUP_B_Mk19_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class GMGAG : HMGG {
-        backpack = "O_HMG_01_support_F";
+        backpack = "CUP_B_Mk19_Tripod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
             {"Chemlight_green", 2},
@@ -314,19 +314,19 @@ class M16A4_ROK {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class GMGAC : Rifleman {
     };
 
     class MTRG : Rifleman {
         primaryWeapon = "hlc_rifle_M4";
-        backpack = "O_Mortar_01_weapon_F";
+        backpack = "CUP_B_M252_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class MTRAG : MTRG {
-        backpack = "O_Mortar_01_support_F";
+        backpack = "CUP_B_M252_Bipod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
             {"Chemlight_green", 2},
@@ -335,7 +335,7 @@ class M16A4_ROK {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class MTRAC : Rifleman {
     };
 
@@ -403,7 +403,7 @@ class M16A4_ROK {
     class Vehicle {
         weapons[] = {
             {"CUP_arifle_M16A4_Base", 2},
-            {"CUP_launch_M136", 5},
+            {"CUP_launch_M72A6", 5},
             {"hlc_rifle_M4", 2}
         };
         magazines[] = {
@@ -433,7 +433,7 @@ class M16A4_ROK {
     class Truck : Vehicle {
         weapons[] = {
             {"CUP_arifle_M16A4_Base", 2},
-            {"CUP_launch_M136", 10},
+            {"CUP_launch_M72A6", 10},
             {"hlc_rifle_M4", 2}
         };
         magazines[] = {
@@ -462,7 +462,7 @@ class M16A4_ROK {
     };
 
     class Armored : Truck {
-        weapons[] = {{"CUP_launch_M136", 10}};
+        weapons[] = {{"CUP_launch_M72A6", 10}};
         magazines[] = {
             {"30Rnd_556x45_Stanag", 40},
             {"30Rnd_556x45_Stanag", 20},

@@ -74,7 +74,7 @@ class AUGA3_NZ {
     };
 
     class Crew : Rifleman {
-        primaryWeapon = "hlc_rifle_auga2para";
+        primaryWeapon = "hlc_rifle_auga3";
         primaryWeaponItems[] = {};
         uniformMagazines[] = {
             {"Chemlight_green", 2},
@@ -145,7 +145,7 @@ class AUGA3_NZ {
     };
 
     class RAT : Rifleman {
-        secondaryWeapon = "CUP_launch_M136";
+        secondaryWeapon = "CUP_launch_M72A6";
         vestMagazines[] = {
             {"hlc_30Rnd_556x45_B_AUG", 6},
             {"hlc_30Rnd_556x45_T_AUG", 2}
@@ -180,22 +180,22 @@ class AUGA3_NZ {
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
 
-     class HMGG : Rifleman {
-        backpack = "O_HMG_01_weapon_F";
+    class HMGG : Rifleman {
+        backpack = "CUP_B_M2_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
 
     class HMGAG : HMGG {
-        backpack = "O_HMG_01_support_F";
+        backpack = "CUP_B_M2_MiniTripod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class HMGAC : Rifleman {
     };
-    
+
     class MATG : RAT {
         secondaryWeapon = "CUP_launch_MAAWS";
         secondaryWeaponItems[] = {"CUP_MAAWS_HEAT_M", "CUP_optic_MAAWS_Scope"};
@@ -241,13 +241,13 @@ class AUGA3_NZ {
     };
 
     class DHATG : Rifleman {
-        backpack = "O_AT_01_weapon_F";
+        backpack = "CUP_B_Tow_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class DHATAG : HMGG {
-        backpack = "O_HMG_01_support_F";
+        backpack = "CUP_B_TOW_Tripod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
             {"Chemlight_green", 2},
@@ -256,7 +256,7 @@ class AUGA3_NZ {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class DHATAC : Rifleman {
     };
 
@@ -287,13 +287,13 @@ class AUGA3_NZ {
     };
 
     class GMGG : Rifleman {
-        backpack = "O_GMG_01_weapon_F";
+        backpack = "CUP_B_Mk19_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class GMGAG : HMGG {
-        backpack = "O_HMG_01_support_F";
+        backpack = "CUP_B_Mk19_Tripod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
             {"Chemlight_green", 2},
@@ -302,18 +302,18 @@ class AUGA3_NZ {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class GMGAC : Rifleman {
     };
 
     class MTRG : Rifleman {
-        backpack = "O_Mortar_01_weapon_F";
+        backpack = "CUP_B_M252_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class MTRAG : MTRG {
-        backpack = "O_Mortar_01_support_F";
+        backpack = "CUP_B_M252_Bipod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
             {"Chemlight_green", 2},
@@ -322,7 +322,7 @@ class AUGA3_NZ {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class MTRAC : Rifleman {
     };
 
@@ -388,7 +388,7 @@ class AUGA3_NZ {
     class Vehicle {
         weapons[] = {
             {"hlc_rifle_auga3", 4},
-            {"CUP_launch_M136", 5}
+            {"CUP_launch_M72A6", 5}
         };
         magazines[] = {
             {"hlc_30Rnd_556x45_B_AUG", 15},
@@ -417,7 +417,7 @@ class AUGA3_NZ {
     class Truck : Vehicle {
         weapons[] = {
             {"hlc_rifle_auga3", 4},
-            {"CUP_launch_M136", 10}
+            {"CUP_launch_M72A6", 10}
         };
         magazines[] = {
             {"hlc_30Rnd_556x45_B_AUG", 40},
@@ -445,7 +445,7 @@ class AUGA3_NZ {
     };
 
     class Armored : Truck {
-        weapons[] = {{"CUP_launch_M136", 10}};
+        weapons[] = {{"CUP_launch_M72A6", 10}};
         magazines[] = {
             {"hlc_30Rnd_556x45_B_AUG", 40},
             {"hlc_30Rnd_556x45_B_AUG", 20},
