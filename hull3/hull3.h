@@ -290,10 +290,6 @@ class Hull3 {
         disableRemoteSensors = 1;                       // Disables RemoteSensors
     };
 
-    class ShackTac {
-        STUI_Occlusion = 0;
-    };
-
     class GarbageCollector {
         isEnabled = 1;
         canRemoveCorpses = 1;
