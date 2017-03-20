@@ -11,7 +11,7 @@ class MP5_GEND {
         backpackWeapons[] = {};
         uniformMagazines[] = {
             {"HandGrenade", 1},
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         vestMagazines[] = {
@@ -71,7 +71,7 @@ class MP5_GEND {
         primaryWeapon = "hlc_smg_mp5k_PDW";
         primaryWeaponItems[] = {};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -82,7 +82,7 @@ class MP5_GEND {
 
     class CO : Officer {
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
     };
@@ -248,7 +248,7 @@ class MP5_GEND {
         backpack = "CUP_B_TOW_Tripod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         binocular = "ACE_VectorDay";
@@ -270,7 +270,7 @@ class MP5_GEND {
             {"CUP_Stinger_M", 1}
         };
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -294,7 +294,7 @@ class MP5_GEND {
         backpack = "CUP_B_Mk19_Tripod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         binocular = "ACE_VectorDay";
@@ -314,7 +314,7 @@ class MP5_GEND {
         backpack = "CUP_B_M252_Bipod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         binocular = "ACE_VectorDay";

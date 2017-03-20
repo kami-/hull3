@@ -11,7 +11,7 @@ class Katiba_CSAT {
         backpackWeapons[] = {};
         uniformMagazines[] = {
             {"HandGrenade", 1},
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         vestMagazines[] = {
@@ -47,7 +47,7 @@ class Katiba_CSAT {
     class Leader : Rifleman {
         primaryWeapon = "arifle_Katiba_GL_F";
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         vestMagazines[] = {
@@ -80,7 +80,7 @@ class Katiba_CSAT {
         primaryWeapon = "SMG_02_F";
         primaryWeaponItems[] = {"RH_SFM952V"};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -106,7 +106,7 @@ class Katiba_CSAT {
     class Medic : Rifleman {
         primaryWeapon = "arifle_Katiba_C_F";
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         vestMagazines[] = {
@@ -184,7 +184,7 @@ class Katiba_CSAT {
 
     class MMGAG : Rifleman {
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         backpackMagazines[] = {
@@ -206,7 +206,7 @@ class Katiba_CSAT {
     
     class HMGAG : HMGG {
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         backpack = "O_HMG_01_support_F";
@@ -229,7 +229,7 @@ class Katiba_CSAT {
 
     class MATAG : Rifleman {
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         backpackMagazines[] = {
@@ -255,7 +255,7 @@ class Katiba_CSAT {
 
     class HATAG : MATAG {
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         backpackMagazines[] = {
@@ -278,7 +278,7 @@ class Katiba_CSAT {
         backpack = "O_HMG_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         binocular = "ACE_VectorDay";
@@ -301,7 +301,7 @@ class Katiba_CSAT {
             {"Titan_AA", 2}
         };
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -326,7 +326,7 @@ class Katiba_CSAT {
         backpack = "O_HMG_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         binocular = "ACE_VectorDay";
@@ -347,7 +347,7 @@ class Katiba_CSAT {
         backpack = "O_Mortar_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         binocular = "ACE_VectorDay";
@@ -360,7 +360,7 @@ class Katiba_CSAT {
     class ENG : Rifleman {
         primaryWeapon = "arifle_Katiba_C_F";
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         vestMagazines[] = {
@@ -389,7 +389,7 @@ class Katiba_CSAT {
         handgunWeapon = "hgun_Rook40_F";
         primaryWeaponItems[] = {"optic_MRCO"};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         vestMagazines[] = {

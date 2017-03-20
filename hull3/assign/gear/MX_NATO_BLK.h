@@ -11,7 +11,7 @@ class MX_NATO_BLK {
         backpackWeapons[] = {};
         uniformMagazines[] = {
             {"HandGrenade", 1},
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         vestMagazines[] = {
@@ -48,7 +48,7 @@ class MX_NATO_BLK {
         primaryWeapon = "arifle_MX_GL_Black_F";
         primaryWeaponItems[] = {"RH_SFM952V"};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         vestMagazines[] = {
@@ -81,7 +81,7 @@ class MX_NATO_BLK {
         primaryWeapon = "SMG_01_F";
         primaryWeaponItems[] = {"RH_SFM952V"};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -108,7 +108,7 @@ class MX_NATO_BLK {
         primaryWeapon = "arifle_MXC_Black_F";
         primaryWeaponItems[] = {"RH_SFM952V"};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         vestMagazines[] = {
@@ -185,7 +185,7 @@ class MX_NATO_BLK {
 
     class MMGAG : Rifleman {
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         backpackMagazines[] = {
@@ -207,7 +207,7 @@ class MX_NATO_BLK {
 
     class HMGAG : HMGG {
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         backpack = "O_HMG_01_support_F";
@@ -227,7 +227,7 @@ class MX_NATO_BLK {
 
     class MATAG : Rifleman {
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         backpackMagazines[] = {{"NLAW_F", 3}};
@@ -250,7 +250,7 @@ class MX_NATO_BLK {
 
     class HATAG : MATAG {
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         backpackMagazines[] = {
@@ -276,7 +276,7 @@ class MX_NATO_BLK {
         backpack = "O_HMG_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         binocular = "ACE_VectorDay";
@@ -300,7 +300,7 @@ class MX_NATO_BLK {
             {"Titan_AA", 2}
         };
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -325,7 +325,7 @@ class MX_NATO_BLK {
         backpack = "O_HMG_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         binocular = "ACE_VectorDay";
@@ -346,7 +346,7 @@ class MX_NATO_BLK {
         backpack = "O_Mortar_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         binocular = "ACE_VectorDay";
@@ -360,7 +360,7 @@ class MX_NATO_BLK {
         primaryWeapon = "arifle_MXC_Black_F";
         primaryWeaponItems[] = {"RH_SFM952V"};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         vestMagazines[] = {
@@ -389,7 +389,7 @@ class MX_NATO_BLK {
         handgunWeapon = "hgun_P07_F";
         primaryWeaponItems[] = {"optic_Hamr", "RH_SFM952V", "bipod_01_F_blk"};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         vestMagazines[] = {

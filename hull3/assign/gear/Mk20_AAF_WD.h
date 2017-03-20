@@ -10,7 +10,7 @@ class Mk20_AAF_WD {
         vestWeapons[] = {};
         backpackWeapons[] = {};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         vestMagazines[] = {
@@ -76,7 +76,7 @@ class Mk20_AAF_WD {
         primaryWeapon = "hgun_PDW2000_F";
         primaryWeaponItems[] = {"RH_SFM952V"};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -182,7 +182,7 @@ class Mk20_AAF_WD {
             {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M", 4}
         };
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         binocular = "ACE_VectorDay";
@@ -201,7 +201,7 @@ class Mk20_AAF_WD {
         backpack = "CUP_B_M2_MiniTripod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         binocular = "ACE_VectorDay";
@@ -224,7 +224,7 @@ class Mk20_AAF_WD {
             {"NLAW_F", 3}
         };
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         binocular = "ACE_VectorDay";
@@ -250,7 +250,7 @@ class Mk20_AAF_WD {
             {"Titan_AT", 2}
         };
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
     };
@@ -271,7 +271,7 @@ class Mk20_AAF_WD {
         backpack = "CUP_B_TOW_Tripod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         binocular = "ACE_VectorDay";
@@ -294,7 +294,7 @@ class Mk20_AAF_WD {
             {"Titan_AA", 2}
         };
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -318,7 +318,7 @@ class Mk20_AAF_WD {
         backpack = "CUP_B_Mk19_Tripod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         binocular = "ACE_VectorDay";
@@ -339,7 +339,7 @@ class Mk20_AAF_WD {
         backpack = "CUP_B_M252_Bipod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         binocular = "ACE_VectorDay";
@@ -378,7 +378,7 @@ class Mk20_AAF_WD {
         handgunWeapon = "hgun_ACPC2_F";
         primaryWeaponItems[] = {"optic_MRCO", "RH_SFM952V", "bipod_03_F_blk"};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         vestMagazines[] = {
