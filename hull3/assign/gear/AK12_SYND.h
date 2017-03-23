@@ -9,7 +9,7 @@ class AK12_SYND {
         uniformWeapons[] = {};
         vestWeapons[] = {};
         backpackWeapons[] = {};
-        uniformMagazines[] = {{"Chemlight_green", 2}};
+        uniformMagazines[] = {{"ACE_Chemlight_HiRed", 2}};
         vestMagazines[] = {
             {"hlc_30Rnd_545x39_B_AK", 6},
             {"hlc_30Rnd_545x39_T_AK", 2}
@@ -73,7 +73,7 @@ class AK12_SYND {
         primaryWeapon = "hlc_rifle_aku12";
         primaryWeaponItems[] = {};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -256,7 +256,7 @@ class AK12_SYND {
         backpack = "CUP_B_SPG9_Tripod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         binocular = "ACE_VectorDay";
@@ -280,7 +280,7 @@ class AK12_SYND {
             {"CUP_Igla_M", 1}
         };
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -305,7 +305,7 @@ class AK12_SYND {
         backpack = "CUP_B_AGS30_Tripod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         binocular = "ACE_VectorDay";
@@ -326,7 +326,7 @@ class AK12_SYND {
         backpack = "CUP_B_Podnos_Bipod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         binocular = "ACE_VectorDay";

@@ -11,7 +11,7 @@ class CAR95_CSAT {
         backpackWeapons[] = {};
         uniformMagazines[] = {
             {"HandGrenade", 1},
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         vestMagazines[] = {
@@ -47,7 +47,7 @@ class CAR95_CSAT {
     class Leader : Rifleman {
         primaryWeapon = "arifle_CTAR_GL_blk_F";
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         vestMagazines[] = {
@@ -80,7 +80,7 @@ class CAR95_CSAT {
         primaryWeapon = "SMG_02_F";
         primaryWeaponItems[] = {"RH_SFM952V"};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -106,7 +106,7 @@ class CAR95_CSAT {
     class Medic : Rifleman {
         primaryWeapon = "arifle_CTAR_blk_F";
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         vestMagazines[] = {
@@ -183,7 +183,7 @@ class CAR95_CSAT {
 
     class MMGAG : Rifleman {
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         backpackMagazines[] = {
@@ -205,7 +205,7 @@ class CAR95_CSAT {
 
     class HMGAG : HMGG {
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         backpack = "O_HMG_01_support_F";
@@ -228,7 +228,7 @@ class CAR95_CSAT {
 
     class MATAG : Rifleman {
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         backpackMagazines[] = {
@@ -254,7 +254,7 @@ class CAR95_CSAT {
 
     class HATAG : MATAG {
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         backpackMagazines[] = {
@@ -277,7 +277,7 @@ class CAR95_CSAT {
         backpack = "O_HMG_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         binocular = "ACE_VectorDay";
@@ -300,7 +300,7 @@ class CAR95_CSAT {
             {"Titan_AA", 2}
         };
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -325,7 +325,7 @@ class CAR95_CSAT {
         backpack = "O_HMG_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         binocular = "ACE_VectorDay";
@@ -346,7 +346,7 @@ class CAR95_CSAT {
         backpack = "O_Mortar_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         binocular = "ACE_VectorDay";
@@ -359,7 +359,7 @@ class CAR95_CSAT {
     class ENG : Rifleman {
         primaryWeapon = "arifle_CTAR_blk_F";
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         vestMagazines[] = {
@@ -388,7 +388,7 @@ class CAR95_CSAT {
         handgunWeapon = "hgun_Rook40_F";
         primaryWeaponItems[] = {"optic_MRCO"};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         vestMagazines[] = {

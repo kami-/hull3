@@ -10,7 +10,7 @@ class TRG_FIA {
         vestWeapons[] = {};
         backpackWeapons[] = {};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         vestMagazines[] = {
@@ -76,7 +76,7 @@ class TRG_FIA {
         primaryWeapon = "SMG_02_F";
         primaryWeaponItems[] = {"RH_SFM952V"};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         vestRadios[] = {"ACRE_PRC152"};
@@ -182,7 +182,7 @@ class TRG_FIA {
             {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M", 4}
         };
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         binocular = "ACE_VectorDay";
@@ -200,7 +200,7 @@ class TRG_FIA {
     class HMGAG : HMGG {
         backpack = "CUP_B_M2_MiniTripod_Bag";
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         binocular = "ACE_VectorDay";
@@ -224,7 +224,7 @@ class TRG_FIA {
             {"NLAW_F", 3}
         };
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         binocular = "ACE_VectorDay";
@@ -250,7 +250,7 @@ class TRG_FIA {
             {"Titan_AT", 2}
         };
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
     };
@@ -271,7 +271,7 @@ class TRG_FIA {
         backpack = "CUP_B_TOW_Tripod_Bag";
         vestRadios[] = {"ACRE_PRC152"};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         binocular = "ACE_VectorDay";
@@ -294,7 +294,7 @@ class TRG_FIA {
             {"Titan_AA", 2}
         };
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         vestRadios[] = {"ACRE_PRC152"};
@@ -318,7 +318,7 @@ class TRG_FIA {
         backpack = "CUP_B_Mk19_Tripod_Bag";
         vestRadios[] = {"ACRE_PRC152"};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         binocular = "ACE_VectorDay";
@@ -339,7 +339,7 @@ class TRG_FIA {
         backpack = "CUP_B_M252_Bipod_Bag";
         vestRadios[] = {"ACRE_PRC152"};
         uniformMagazines[] = {
-            {"Chemlight_green", 2},
+            {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         binocular = "ACE_VectorDay";
