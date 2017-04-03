@@ -301,7 +301,7 @@ class Faction {
             {"ATTCH", "CUP_B_HMMWV_Transport_USA"},
             {"ENG", "CUP_B_MTVR_Repair_USA"},
             {"APC", "CUP_B_AAV_USMC"},
-            {"IFV", "CUP_B_LAV25M240_desert_USMC_USMC"},
+            {"IFV", "CUP_B_LAV25M240_desert_USMC"},
             {"SPAAG", "CUP_B_HMMWV_Avenger_USA"},
             {"TNK", "CUP_B_M1A1_DES_USMC"},
             {"TH", "CUP_B_CH53E_USMC"},
