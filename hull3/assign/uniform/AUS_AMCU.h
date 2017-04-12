@@ -3,13 +3,13 @@ class AUS_AMCU {
         headGear = "MNP_Helmet_AMCU";
         goggles = "";
         uniform = "MNP_CombatUniform_AMCU_T";
-        vest = "MNP_Vest_AMCU_2";
+        vest = "MNP_Vest_AMCU_2_ARM";
         backpack = "B_Kitbag_rgr";
     };
 
     class Leader : Rifleman {
         uniform = "MNP_CombatUniform_AMCU_ST";
-        vest = "MNP_Vest_AMCU";
+        vest = "MNP_Vest_AMCU_ARM";
     };
 
     class Officer : Leader {

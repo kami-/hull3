@@ -3,19 +3,19 @@ class CUP_KSK_DE {
         headGear = "CUP_H_Ger_Boonie_desert";
         goggles = "CUP_FR_NeckScarf2";
         uniform = "CUP_U_B_GER_Tropentarn_1";
-        vest = "CUP_V_B_GER_Carrier_Vest";
+        vest = "CUP_V_B_GER_Carrier_Vest_ARM";
         backpack = "B_AssaultPack_cbr";
     };
 
     class Leader : Rifleman {
         uniform = "CUP_U_B_GER_Tropentarn_2";
-        vest = "CUP_V_B_GER_Carrier_Vest_3";
+        vest = "CUP_V_B_GER_Carrier_Vest_3_ARM";
         headGear = "H_Bandanna_khk_hs";
     };
 
     class Officer : Leader {
         headGear = "CUP_H_PMC_PRR_Headset";
-        vest = "CUP_V_B_GER_Carrier_Vest_2";
+        vest = "CUP_V_B_GER_Carrier_Vest_2_ARM";
     };
 
     class Crew : Rifleman {
@@ -159,7 +159,7 @@ class CUP_KSK_DE {
     class P : Crew {
         uniform = "CUP_U_B_USMC_PilotOverall";
         headGear = "CUP_H_USMC_Helmet_Pilot";
-        vest = "CUP_V_B_PilotVest";
+        vest = "CUP_V_B_PilotVest_ARM";
         backpack = "B_Parachute";
         goggles = "G_Aviator";
     };

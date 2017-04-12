@@ -3,7 +3,7 @@ class CTRG_TRP {
         headGear = "H_HelmetB_TI_tna_F";
         goggles = "";
         uniform = "U_B_CTRG_Soldier_F";
-        vest = "V_PlateCarrier2_rgr_noflag_F";
+        vest = "V_PlateCarrier2_rgr_noflag_F_ARM";
         backpack = "B_Kitbag_rgr";
     };
 

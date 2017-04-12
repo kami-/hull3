@@ -3,12 +3,12 @@ class CSAT_TRP {
         headGear = "H_HelmetO_ghex_F";
         goggles = "";
         uniform = "U_O_T_Soldier_F";
-        vest = "V_PlateCarrier2_rgr_noflag_F";
+        vest = "V_PlateCarrier2_rgr_noflag_F_ARM";
         backpack = "B_Kitbag_rgr";
     };
 
     class Leader : Rifleman {
-        vest = "V_PlateCarrier1_rgr_noflag_F";
+        vest = "V_PlateCarrier1_rgr_noflag_F_ARM";
     };
 
     class Officer : Leader {

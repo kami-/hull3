@@ -3,13 +3,13 @@ class CAN_WD {
         headGear = "MNP_Helmet_Canada_T";
         goggles = "";
         uniform = "MNP_CombatUniform_Canada";
-        vest = "MNP_Vest_Canada_T2";
+        vest = "MNP_Vest_Canada_T2_ARM";
         backpack = "B_Kitbag_rgr";
     };
 
     class Leader : Rifleman {
         uniform = "MNP_CombatUniform_Canada_S";
-        vest = "MNP_Vest_Canada_T";
+        vest = "MNP_Vest_Canada_T_ARM";
     };
 
     class Officer : Leader {

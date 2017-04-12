@@ -3,13 +3,13 @@ class RU_DE {
         headGear = "MNP_Helmet_PAGST_RD";
         goggles = "";
         uniform = "MNP_CombatUniform_RU_Med_D";
-        vest = "MNP_Vest_RU_D2";
+        vest = "MNP_Vest_RU_D2_ARM";
         backpack = "B_Kitbag_cbr";
     };
 
     class Leader : Rifleman {
         uniform = "MNP_CombatUniform_RU_Med_DB";
-        vest = "MNP_Vest_RU_D";
+        vest = "MNP_Vest_RU_D_ARM";
         headGear = "MNP_MilCap_RU_D";
     };
 
@@ -125,7 +125,7 @@ class RU_DE {
 
     class ENG : Rifleman {
         uniform = "MNP_CombatUniform_RU_Med_DB";
-        vest = "MNP_Vest_RU_D";
+        vest = "MNP_Vest_RU_D_ARM";
         backpack = "B_Carryall_khk";
     };
 
@@ -136,7 +136,7 @@ class RU_DE {
         headGear = "H_Bandanna_khk_hs";
         goggles = "G_Bandanna_tan";
         uniform = "MNP_CombatUniform_RU_Med_DB";
-        vest = "MNP_Vest_Light_R3";
+        vest = "MNP_Vest_Light_R3_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 

@@ -3,7 +3,7 @@ class CTRG_WD {
         headGear = "H_HelmetB_light";
         goggles = "";
         uniform = "U_B_CTRG_1";
-        vest = "V_PlateCarrier2_rgr_noflag_F";
+        vest = "V_PlateCarrier2_rgr_noflag_F_ARM";
         backpack = "B_Kitbag_rgr";
     };
 
@@ -13,7 +13,7 @@ class CTRG_WD {
     };
 
     class Officer : Leader {
-        vest = "V_PlateCarrier1_rgr_noflag_F";
+        vest = "V_PlateCarrier1_rgr_noflag_F_ARM";
     };
 
     class Crew : Rifleman {

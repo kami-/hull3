@@ -3,14 +3,14 @@ class USA_RAN {
         headGear = "H_HelmetSpecB";
         goggles = "G_Bandanna_blk";
         uniform = "MNP_CombatUniform_Ranger_C";
-        vest = "V_PlateCarrier2_rgr";
+        vest = "V_PlateCarrier2_rgr_ARM";
         backpack = "B_Kitbag_rgr";
     };
 
     class Leader : Rifleman {
         uniform = "MNP_CombatUniform_Ranger_B";
         headGear = "H_HelmetB_light";
-        vest = "V_PlateCarrier1_rgr";
+        vest = "V_PlateCarrier1_rgr_ARM";
         goggles = "";
     };
 

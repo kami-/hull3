@@ -3,24 +3,24 @@ class CUP_RACS_MECH {
         headGear = "CUP_H_RACS_Helmet_mech";
         goggles = "";
         uniform = "CUP_U_I_RACS_mech_1";
-        vest = "CUP_V_I_RACS_Carrier_Vest_2";
+        vest = "CUP_V_I_RACS_Carrier_Vest_2_ARM";
         backpack = "B_Kitbag_cbr";
     };
 
     class Leader : Rifleman {
-        vest = "CUP_V_I_RACS_Carrier_Vest_3";
+        vest = "CUP_V_I_RACS_Carrier_Vest_3_ARM";
         headGear = "CUP_H_RACS_Helmet_Headset_mech";
     };
 
     class Officer : Leader {
         headGear = "CUP_H_RACS_Beret_Blue";
-        vest = "CUP_V_I_RACS_Carrier_Vest_3";
+        vest = "CUP_V_I_RACS_Carrier_Vest_3_ARM";
     };
 
     class Crew : Rifleman {
         headGear = "CUP_H_USMC_ACVC_WDL";
         uniform = "CUP_U_I_RACS_mech_2";
-        vest = "CUP_V_I_RACS_Carrier_Vest_2";
+        vest = "CUP_V_I_RACS_Carrier_Vest_2_ARM";
         backpack = "B_AssaultPack_cbr";
     };
 
@@ -136,7 +136,7 @@ class CUP_RACS_MECH {
         headGear = "CUP_H_PMC_Cap_Back_EP_Tan";
         goggles = "CUP_FR_NeckScarf2";
         uniform = "CUP_U_I_RACS_mech_2";
-        vest = "CUP_V_I_RACS_Carrier_Vest_3";
+        vest = "CUP_V_I_RACS_Carrier_Vest_3_ARM";
         backpack = "B_AssaultPack_cbr";
     };
 
@@ -155,7 +155,7 @@ class CUP_RACS_MECH {
     class P : Crew {
         uniform = "CUP_U_I_RACS_PilotOverall";
         headGear = "H_PilotHelmetHeli_O";
-        vest = "CUP_V_B_PilotVest";
+        vest = "CUP_V_B_PilotVest_ARM";
         backpack = "B_Parachute";
         goggles = "G_Aviator";
     };

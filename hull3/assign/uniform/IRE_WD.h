@@ -3,13 +3,13 @@ class IRE_WD {
         headGear = "MNP_Helmet_Ireland";
         goggles = "";
         uniform = "MNP_CombatUniform_Ireland";
-        vest = "MNP_Vest_Ireland";
+        vest = "MNP_Vest_Ireland_ARM";
         backpack = "B_Kitbag_rgr";
     };
 
     class Leader : Rifleman {
         uniform = "MNP_CombatUniform_Ireland_S";
-        vest = "MNP_Vest_Ireland_B";
+        vest = "MNP_Vest_Ireland_B_ARM";
     };
 
     class Officer : Leader {

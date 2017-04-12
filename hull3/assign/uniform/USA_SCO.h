@@ -3,13 +3,13 @@ class USA_SCO {
         headGear = "MNP_Helmet_Scorpion";
         goggles = "";
         uniform = "MNP_CombatUniform_Scorpion_A";
-        vest = "MNP_Vest_Scorpion_1";
+        vest = "MNP_Vest_Scorpion_1_ARM";
         backpack = "B_Kitbag_rgr";
     };
 
     class Leader : Rifleman {
         uniform = "MNP_CombatUniform_Scorpion_B";
-        vest = "MNP_Vest_Scorpion_2";
+        vest = "MNP_Vest_Scorpion_2_ARM";
     };
 
     class Officer : Leader {

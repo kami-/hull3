@@ -3,12 +3,12 @@ class CN_WD {
         headGear = "MNP_Helmet_China";
         goggles = "";
         uniform = "MNP_CombatUniform_China";
-        vest = "MNP_Vest_ChinaH_T2";
+        vest = "MNP_Vest_ChinaH_T2_ARM";
         backpack = "B_Kitbag_rgr";
     };
 
     class Leader : Rifleman {
-        vest = "MNP_Vest_ChinaH_T";
+        vest = "MNP_Vest_ChinaH_T_ARM";
     };
 
     class Officer : Leader {

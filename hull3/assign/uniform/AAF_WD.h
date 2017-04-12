@@ -3,13 +3,13 @@ class AAF_WD {
         headGear = "H_HelmetIA";
         goggles = "";
         uniform = "U_I_CombatUniform";
-        vest = "V_PlateCarrierIA2_dgtl";
+        vest = "V_PlateCarrierIA2_dgtl_ARM";
         backpack = "B_Kitbag_rgr";
     };
 
     class Leader : Rifleman {
         uniform = "U_I_CombatUniform_shortsleeve";
-        vest = "V_PlateCarrierIAGL_dgtl";
+        vest = "V_PlateCarrierIAGL_dgtl_ARM";
     };
 
     class Officer : Leader {

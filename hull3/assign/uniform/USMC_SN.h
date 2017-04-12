@@ -3,13 +3,13 @@ class USMC_SN {
         headGear = "MNP_Helmet_USMC_arctic";
         goggles = "G_Balaclava_blk";
         uniform = "MNP_CombatUniform_USMC_arctic";
-        vest = "V_PlateCarrier1_blk";
+        vest = "V_PlateCarrier1_blk_ARM";
         backpack = "MNP_B_WB_KB";
     };
 
     class Leader : Rifleman {
         uniform = "MNP_CombatUniform_USMC_arctic_B";
-        vest = "V_PlateCarrier1_blk";
+        vest = "V_PlateCarrier1_blk_ARM";
         goggles = "G_Bandanna_blk";
     };
 
@@ -125,7 +125,7 @@ class USMC_SN {
 
     class ENG : Rifleman {
         uniform = "MNP_CombatUniform_USMC_arctic_B";
-        vest = "V_PlateCarrier1_blk";
+        vest = "V_PlateCarrier1_blk_ARM";
         backpack = "MNP_B_RUW_CA";
     };
 

@@ -3,13 +3,13 @@ class CUP_CDF_FOR {
         headGear = "CUP_H_CDF_H_PASGT_FST";
         goggles = "";
         uniform = "CUP_U_B_CDF_FST_1";
-        vest = "CUP_V_CDF_6B3_1_FST";
+        vest = "CUP_V_CDF_6B3_1_FST_ARM";
         backpack = "CUP_B_AlicePack_Khaki";
     };
 
     class Leader : Rifleman {
         uniform = "CUP_U_B_CDF_FST_2";
-        vest = "CUP_V_CDF_6B3_5_FST";
+        vest = "CUP_V_CDF_6B3_5_FST_ARM";
     };
 
     class Officer : Leader {
@@ -18,7 +18,7 @@ class CUP_CDF_FOR {
 
     class Crew : Rifleman {
         headGear = "CUP_H_RUS_TSH_4_Brown";
-        vest = "CUP_V_CDF_6B3_2_FST";
+        vest = "CUP_V_CDF_6B3_2_FST_ARM";
         backpack = "CUP_B_SLA_Medicbag";
     };
 
@@ -36,11 +36,11 @@ class CUP_CDF_FOR {
     };
 
     class FTL : Leader {
-        vest = "CUP_V_CDF_6B3_4_FST";
+        vest = "CUP_V_CDF_6B3_4_FST_ARM";
     };
 
     class AR : Rifleman {
-        vest = "CUP_V_CDF_6B3_3_FST";
+        vest = "CUP_V_CDF_6B3_3_FST_ARM";
     };
 
     class AAR : Rifleman {
@@ -51,7 +51,7 @@ class CUP_CDF_FOR {
     };
 
     class MMGG : AR {
-        vest = "CUP_V_CDF_6B3_3_FST";
+        vest = "CUP_V_CDF_6B3_3_FST_ARM";
         backpack = "CUP_B_AlicePack_Khaki";
     };
 
@@ -134,7 +134,7 @@ class CUP_CDF_FOR {
         headGear = "H_Bandanna_khk";
         uniform = "CUP_U_B_CDF_FST_2";
         goggles = "G_Bandanna_khk";
-        vest = "CUP_V_CDF_6B3_2_FST";
+        vest = "CUP_V_CDF_6B3_2_FST_ARM";
         backpack = "CUP_B_SLA_Medicbag";
     };
 
@@ -153,7 +153,7 @@ class CUP_CDF_FOR {
     class P : Crew {
         headGear = "CUP_H_RUS_ZSH_Shield_Up";
         uniform = "CUP_U_B_CDF_FST_1";
-        vest = "CUP_V_CDF_6B3_2_FST";
+        vest = "CUP_V_CDF_6B3_2_FST_ARM";
         backpack = "B_Parachute";
     };
 

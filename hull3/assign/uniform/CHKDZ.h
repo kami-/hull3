@@ -163,7 +163,7 @@ class CHKDZ {
 
     class P : Crew {
         headGear = "CUP_H_SLA_Pilot_Helmet";
-        vest = "CUP_V_B_PilotVest";
+        vest = "CUP_V_B_PilotVest_ARM";
         goggles = "G_Aviator";
         backpack = "B_Parachute";
     };
