@@ -2313,4 +2313,56 @@ class Faction {
         };
     };
 
+    class CUP_ION_PMC {
+        gear = "SCAR_L_PMC";
+        uniform = "CUP_ION_PMC";
+        name = "ION PMC";
+        description = "ION PMC with black SCAR-L";
+        languages[] = {{"resistance", 100}};
+        side = "resistance";
+        camouflage[] = {"desert", "woodland"};
+        rolePrefix = "ION PMC";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_HMMWV_Transport_NATO_T"},
+            {"SL", "CUP_B_HMMWV_Unarmed_NATO_T"},
+            {"FT", "CUP_B_HMMWV_Unarmed_NATO_T"},
+            {"ATTCH", "CUP_B_HMMWV_Unarmed_NATO_T"},
+            {"ENG", "B_T_Truck_01_Repair_F"},
+            {"APC", "CUP_B_M1126_ICV_M2_Woodland_Slat"},
+            {"IFV", "CUP_B_M2Bradley_NATO_T"},
+            {"SPAAG", "CUP_B_M6LineBacker_NATO_T"},
+            {"TNK", "CUP_B_M1A1_NATO_T"},
+            {"TH", "CUP_I_Ka60_GL_Blk_ION"},
+            {"AH", "CUP_I_Mi24_Mk4_AT_ION"},
+            {"CAS", "CUP_B_F35B_CAS_USMC"},
+            {"Technical", "CUP_B_HMMWV_M2_NATO_T"}
+        };
+    };
+
+    class CUP_ION_PMC_SN {
+        gear = "SCAR_L_PMC";
+        uniform = "CUP_ION_PMC_SN";
+        name = "ION PMC (Arctic)";
+        description = "Arctic ION PMC with black SCAR-L";
+        languages[] = {{"resistance", 100}};
+        side = "resistance";
+        camouflage[] = {"snow"};
+        rolePrefix = "ION PMC";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_HMMWV_Transport_NATO_T"},
+            {"SL", "CUP_B_HMMWV_Unarmed_NATO_T"},
+            {"FT", "CUP_B_HMMWV_Unarmed_NATO_T"},
+            {"ATTCH", "CUP_B_HMMWV_Unarmed_NATO_T"},
+            {"ENG", "B_T_Truck_01_Repair_F"},
+            {"APC", "CUP_B_M1126_ICV_M2_Woodland_Slat"},
+            {"IFV", "CUP_B_M2Bradley_NATO_T"},
+            {"SPAAG", "CUP_B_M6LineBacker_NATO_T"},
+            {"TNK", "CUP_B_M1A1_NATO_T"},
+            {"TH", "CUP_I_Ka60_GL_Blk_ION"},
+            {"AH", "CUP_I_Mi24_Mk4_AT_ION"},
+            {"CAS", "CUP_B_F35B_CAS_USMC"},
+            {"Technical", "CUP_B_HMMWV_M2_NATO_T"}
+        };
+    };
+
 };
