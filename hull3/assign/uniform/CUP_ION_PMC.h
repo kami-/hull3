@@ -56,7 +56,7 @@ class CUP_ION_PMC {
 
     class RAT : Rifleman {
         headGear = "CUP_H_USArmy_Helmet_ECH1_Sand";
-		uniform = "CUP_I_B_PMC_Unit_5";
+        uniform = "CUP_I_B_PMC_Unit_5";
         goggles = "CUP_FR_NeckScarf";
     };
 
