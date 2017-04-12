@@ -3,7 +3,7 @@ class IRN_RG_DE {
         headGear = "H_Bandanna_sgg";
         goggles = "CUP_TK_NeckScarf";
         uniform = "MNP_CombatUniform_IR_IRGC_Med";
-        vest = "MNP_Vest_OD_A";
+        vest = "MNP_Vest_OD_A_ARM";
         backpack = "B_Kitbag_rgr";
     };
 
@@ -13,7 +13,7 @@ class IRN_RG_DE {
     };
 
     class Officer : Leader {
-        vest = "MNP_Vest_OD_B";
+        vest = "MNP_Vest_OD_B_ARM";
         goggles = "G_Aviator";
     };
 
@@ -152,7 +152,7 @@ class IRN_RG_DE {
 
     class P : Crew {
         headGear = "CUP_H_SLA_Pilot_Helmet";
-        vest = "CUP_V_B_PilotVest";
+        vest = "CUP_V_B_PilotVest_ARM";
         goggles = "G_Aviator";
         backpack = "B_Parachute";
     };

@@ -3,13 +3,13 @@ class NZ {
         headGear = "MNP_Helmet_NZ";
         goggles = "";
         uniform = "MNP_CombatUniform_NZ_A";
-        vest = "MNP_Vest_NZ_2";
+        vest = "MNP_Vest_NZ_2_ARM";
         backpack = "B_Kitbag_rgr";
     };
 
     class Leader : Rifleman {
         uniform = "MNP_CombatUniform_NZ_B";
-        vest = "MNP_Vest_NZ_1";
+        vest = "MNP_Vest_NZ_1_ARM";
     };
 
     class Officer : Leader {

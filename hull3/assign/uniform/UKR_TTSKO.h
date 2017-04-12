@@ -3,12 +3,12 @@ class UKR_TTSKO {
         headGear = "MNP_Helmet_PAGST_UKR";
         goggles = "";
         uniform = "MNP_CombatUniform_Ukrainian";
-        vest = "MNP_Vest_UKR_A";
+        vest = "MNP_Vest_UKR_A_ARM";
         backpack = "B_Kitbag_rgr";
     };
 
     class Leader : Rifleman {
-        vest = "MNP_Vest_UKR_B";
+        vest = "MNP_Vest_UKR_B_ARM";
     };
 
     class Officer : Leader {
@@ -150,7 +150,7 @@ class UKR_TTSKO {
 
     class P : Crew {
         headGear = "CUP_H_SLA_Pilot_Helmet";
-        vest = "CUP_V_B_PilotVest";
+        vest = "CUP_V_B_PilotVest_ARM";
         goggles = "G_Aviator";
         backpack = "B_Parachute";
     };

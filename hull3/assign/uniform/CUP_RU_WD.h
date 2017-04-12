@@ -3,13 +3,13 @@ class CUP_RU_WD {
         headGear = "CUP_H_RUS_6B27";
         goggles = "";
         uniform = "CUP_U_O_RUS_Flora_1";
-        vest = "CUP_V_RUS_6B3_2";
+        vest = "CUP_V_RUS_6B3_2_ARM";
         backpack = "CUP_B_CivPack_WDL";
     };
 
     class Leader : Rifleman {
         uniform = "CUP_U_O_RUS_Flora_2";
-        vest = "CUP_V_RUS_6B3_1";
+        vest = "CUP_V_RUS_6B3_1_ARM";
     };
 
     class Officer : Leader {
@@ -41,7 +41,7 @@ class CUP_RU_WD {
     };
 
     class AR : Rifleman {
-        vest = "CUP_V_RUS_6B3_3";
+        vest = "CUP_V_RUS_6B3_3_ARM";
     };
 
     class AAR : Rifleman {

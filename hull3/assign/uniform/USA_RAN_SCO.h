@@ -3,14 +3,14 @@ class USA_RAN_SCO {
         headGear = "H_HelmetB_light";
         goggles = "G_Bandanna_tan";
         uniform = "MNP_CombatUniform_Ranger_Sco_A";
-        vest = "MNP_Vest_Scorpion_1";
+        vest = "MNP_Vest_Scorpion_1_ARM";
         backpack = "B_Kitbag_rgr";
     };
 
     class Leader : Rifleman {
         uniform = "MNP_CombatUniform_Ranger_Sco_B";
         headGear = "H_HelmetB_light_black";
-        vest = "MNP_Vest_Scorpion_2";
+        vest = "MNP_Vest_Scorpion_2_ARM";
         goggles = "CUP_TK_NeckScarf";
     };
 

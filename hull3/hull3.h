@@ -99,8 +99,8 @@ class Hull3 {
         #include "assign\uniform\USMC_SN.h"
         #include "assign\uniform\CUP_USMC_FROG_WD.h"
         #include "assign\uniform\CUP_USMC_FROG_DE.h"
-		#include "assign\uniform\CUP_ION_PMC_SN.h"
-		#include "assign\uniform\CUP_ION_PMC.h"
+        #include "assign\uniform\CUP_ION_PMC_SN.h"
+        #include "assign\uniform\CUP_ION_PMC.h"
 
         unitBaseClass = "Rifleman";
     };
@@ -172,8 +172,8 @@ class Hull3 {
         #include "assign\gear\SCAR_H_US.h"
         #include "assign\gear\TRG_FIA.h"
         #include "assign\gear\VZ58_FIN.h"
-		#include "assign\gear\SCAR_L_PMC.h"
-        #include "assign\gear\RK62_FIN.h"		
+        #include "assign\gear\SCAR_L_PMC.h"
+        #include "assign\gear\RK62_FIN.h"        
 
         unitBaseClass = "Rifleman";
         vehicleBaseClass = "Vehicle";

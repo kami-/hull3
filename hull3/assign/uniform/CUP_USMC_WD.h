@@ -3,20 +3,20 @@ class CUP_USMC_WD {
         headGear = "CUP_H_USMC_HelmetWDL";
         goggles = "";
         uniform = "CUP_U_B_USMC_MARPAT_WDL_Sleeves";
-        vest = "CUP_V_B_MTV_Pouches";
+        vest = "CUP_V_B_MTV_Pouches_ARM";
         backpack = "B_Kitbag_cbr";
     };
 
     class Leader : Rifleman {
         uniform = "CUP_U_B_USMC_MARPAT_WDL_TwoKneepads";
-        vest = "CUP_V_B_MTV_TL";
+        vest = "CUP_V_B_MTV_TL_ARM";
         headGear = "CUP_H_USMC_Goggles_HelmetWDL";
     };
 
     class Officer : Leader {
         headGear = "CUP_H_USMC_Headset_GoggleW_HelmetWDL";
         uniform = "CUP_U_B_USMC_MARPAT_WDL_TwoKneepads";
-        vest = "CUP_V_B_MTV_PistolBlack";
+        vest = "CUP_V_B_MTV_PistolBlack_ARM";
     };
 
     class Crew : Rifleman {
@@ -48,7 +48,7 @@ class CUP_USMC_WD {
 
     class AR : Rifleman {
         uniform = "CUP_U_B_USMC_MARPAT_WDL_TwoKneepads";
-        vest = "CUP_V_B_MTV_MG";
+        vest = "CUP_V_B_MTV_MG_ARM";
         headGear = "CUP_H_USMC_Headset_GoggleW_HelmetWDL";
     };
 
@@ -58,7 +58,7 @@ class CUP_USMC_WD {
 
     class RAT : Rifleman {
         uniform = "CUP_U_B_USMC_MARPAT_WDL_TwoKneepads";
-        vest = "CUP_V_B_MTV_Patrol";
+        vest = "CUP_V_B_MTV_Patrol_ARM";
         headGear = "CUP_H_USMC_Goggles_HelmetWDL";
     };
 
@@ -146,7 +146,7 @@ class CUP_USMC_WD {
         headGear = "CUP_H_USMC_Headset_GoggleW_HelmetWDL";
         goggles = "G_Bandanna_khk";
         uniform = "CUP_U_B_FR_Officer";
-        vest = "CUP_V_B_MTV_Marksman";
+        vest = "CUP_V_B_MTV_Marksman_ARM";
         backpack = "B_AssaultPack_cbr";
     };
 
@@ -165,7 +165,7 @@ class CUP_USMC_WD {
     class P : Crew {
         headGear = "CUP_H_USMC_Helmet_Pilot";
         uniform = "CUP_U_B_USMC_PilotOverall";
-        vest = "CUP_V_B_PilotVest";
+        vest = "CUP_V_B_PilotVest_ARM";
         backpack = "B_Parachute";
         goggles = "G_Aviator";
     };

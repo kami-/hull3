@@ -3,12 +3,12 @@ class CSAT {
         headGear = "H_HelmetO_ocamo";
         goggles = "";
         uniform = "U_O_CombatUniform_ocamo";
-        vest = "MNP_Vest_NZ_2";
+        vest = "MNP_Vest_NZ_2_ARM";
         backpack = "B_Kitbag_cbr";
     };
 
     class Leader : Rifleman {
-        vest = "MNP_Vest_NZ_1";
+        vest = "MNP_Vest_NZ_1_ARM";
     };
 
     class Officer : Leader {

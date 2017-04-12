@@ -16,7 +16,7 @@ class CUP_USMC_FROG_WD {
     class Officer : Leader {
         headGear = "CUP_H_USMC_LWH_NVGMOUNT_ESS_HS_WDL";
         uniform = "CUP_U_B_USMC_FROG2_WMARPAT";
-        vest = "CUP_V_B_MTV_PistolBlack";
+        vest = "CUP_V_B_MTV_PistolBlack_ARM";
     };
 
     class Crew : Rifleman {
@@ -182,7 +182,7 @@ class CUP_USMC_FROG_WD {
     class P : Crew {
         headGear = "CUP_H_USMC_Helmet_Pilot";
         uniform = "CUP_U_B_USMC_PilotOverall";
-        vest = "CUP_V_B_PilotVest";
+        vest = "CUP_V_B_PilotVest_ARM";
         backpack = "B_Parachute";
         goggles = "G_Aviator";
     };

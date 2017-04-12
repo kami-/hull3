@@ -3,13 +3,13 @@ class PMC_OD {
         headGear = "MNP_Helmet_OD";
         goggles = "";
         uniform = "MNP_CombatUniform_OD_Rg";
-        vest = "MNP_Vest_OD_A";
+        vest = "MNP_Vest_OD_A_ARM";
         backpack = "B_Kitbag_rgr";
     };
 
     class Leader : Rifleman {
         uniform = "MNP_CombatUniform_OD_Sh";
-        vest = "MNP_Vest_OD_B";
+        vest = "MNP_Vest_OD_B_ARM";
     };
 
     class Officer : Leader {
@@ -134,7 +134,7 @@ class PMC_OD {
         headGear = "MNP_MC_OD";
         goggles = "G_Bandanna_oli";
         uniform = "MNP_CombatUniform_OD_Sh";
-        vest = "MNP_Vest_Light_OD";
+        vest = "MNP_Vest_Light_OD_ARM";
         backpack = "B_AssaultPack_rgr";
     };
 

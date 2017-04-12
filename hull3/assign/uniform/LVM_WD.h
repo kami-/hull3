@@ -3,13 +3,13 @@ class LVM_WD {
         headGear = "H_Bandanna_khk";
         goggles = "";
         uniform = "MNP_CombatUniform_Militia_E";
-        vest = "MNP_Vest_OD_A";
+        vest = "MNP_Vest_OD_A_ARM";
         backpack = "B_Kitbag_rgr";
     };
 
     class Leader : Rifleman {
         uniform = "MNP_CombatUniform_Militia_B";
-        vest = "MNP_Vest_OD_B";
+        vest = "MNP_Vest_OD_B_ARM";
         headGear = "H_Cap_oli_hs";
     };
 

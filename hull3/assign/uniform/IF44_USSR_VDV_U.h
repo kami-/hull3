@@ -3,25 +3,25 @@ class IF44_USSR_VDV_U {
         headGear = "H_LIB_SOV_RA_PrivateCap";
         goggles = "";
         uniform = "U_LIB_SOV_Razvedchik_am";
-        vest = "V_LIB_SOV_RA_MosinBelt";
+        vest = "V_LIB_SOV_RA_MosinBelt_ARM";
         backpack = "B_LIB_SOV_RA_Rucksack_Green";
     };
 
     class Leader : Rifleman {
         uniform = "U_LIB_SOV_Razvedchik_lis";
-        vest = "V_LIB_SOV_RA_PPShBelt";
+        vest = "V_LIB_SOV_RA_PPShBelt_ARM";
     };
 
     class Officer : Leader {
         uniform = "U_LIB_SOV_Razvedchik_mix";
-        vest = "V_LIB_SOV_RA_OfficerVest";
+        vest = "V_LIB_SOV_RA_OfficerVest_ARM";
         backpack = "B_LIB_SOV_RA_GasBag";
     };
 
     class Crew : Rifleman {
         headGear = "H_LIB_SOV_TankHelmet";
         uniform = "U_LIB_SOV_Tank_ryadovoi";
-        vest = "V_LIB_SOV_RA_MosinBelt";
+        vest = "V_LIB_SOV_RA_MosinBelt_ARM";
         backpack = "B_LIB_SOV_RA_GasBag";
     };
 
@@ -44,11 +44,11 @@ class IF44_USSR_VDV_U {
     };
 
     class AR : Rifleman {
-        vest = "V_LIB_SOV_RA_SVTBelt";
+        vest = "V_LIB_SOV_RA_SVTBelt_ARM";
     };
 
     class AAR : Rifleman {
-        vest = "V_LIB_SOV_RA_PPShBelt";
+        vest = "V_LIB_SOV_RA_PPShBelt_ARM";
     };
 
     class RAT : Rifleman {
@@ -56,7 +56,7 @@ class IF44_USSR_VDV_U {
 
     class MMGG : AR {
         backpack = "B_LIB_SOV_RA_MGAmmoBag_Empty";
-        vest = "V_LIB_SOV_RA_MGBelt";
+        vest = "V_LIB_SOV_RA_MGBelt_ARM";
     };
 
     class MMGAG : AAR {
@@ -129,7 +129,7 @@ class IF44_USSR_VDV_U {
 
     class ENG : Rifleman {
         uniform = "U_LIB_SOV_Razvedchik_lis";
-        vest = "V_LIB_SOV_IShBrVestPPShDisc";
+        vest = "V_LIB_SOV_IShBrVestPPShDisc_ARM";
     };
 
     class ENGA : ENG {
@@ -138,7 +138,7 @@ class IF44_USSR_VDV_U {
     class SN : Rifleman {
         headGear = "H_LIB_SOV_RA_PrivateCap";
         uniform = "U_LIB_SOV_Razvedchik_mix";
-        vest = "V_LIB_SOV_RA_SniperVest";
+        vest = "V_LIB_SOV_RA_SniperVest_ARM";
     };
 
     class SP : SN {
@@ -158,7 +158,7 @@ class IF44_USSR_VDV_U {
     class P : Crew {
         headGear = "H_LIB_SOV_PilotHelmet";
         uniform = "U_LIB_SOV_Pilot";
-        vest = "V_LIB_SOV_RA_MosinBelt";
+        vest = "V_LIB_SOV_RA_MosinBelt_ARM";
         backpack = "B_LIB_SOV_RA_Paradrop";
     };
 

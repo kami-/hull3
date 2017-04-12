@@ -3,13 +3,13 @@ class AUS_WD {
         headGear = "MNP_Helmet_Australia";
         goggles = "";
         uniform = "MNP_CombatUniform_Australia";
-        vest = "MNP_Vest_Australia";
+        vest = "MNP_Vest_Australia_ARM";
         backpack = "B_Kitbag_rgr";
     };
 
     class Leader : Rifleman {
         uniform = "MNP_CombatUniform_Australia_S";
-        vest = "MNP_Vest_Australia_B";
+        vest = "MNP_Vest_Australia_B_ARM";
     };
 
     class Officer : Leader {

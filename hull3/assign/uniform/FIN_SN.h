@@ -3,13 +3,13 @@ class FIN_SN {
         headGear = "MNP_Helmet_FIN_A";
         goggles = "";
         uniform = "MNP_CombatUniform_Finarctic_A";
-        vest = "MNP_Vest_FIN_2";
+        vest = "MNP_Vest_FIN_2_ARM";
         backpack = "MNP_B_WB_KB";
     };
 
     class Leader : Rifleman {
         uniform = "MNP_CombatUniform_Finarctic_B";
-        vest = "MNP_Vest_FIN_1";
+        vest = "MNP_Vest_FIN_1_ARM";
     };
 
     class Officer : Leader {

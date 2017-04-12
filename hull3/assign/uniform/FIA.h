@@ -3,7 +3,7 @@ class FIA {
         headGear = "H_Cap_oli_hs";
         goggles = "G_Bandanna_tan";
         uniform = "U_BG_Guerilla1_1";
-        vest = "V_PlateCarrier1_blk";
+        vest = "V_PlateCarrier1_blk_ARM";
         backpack = "B_Kitbag_rgr";
     };
 

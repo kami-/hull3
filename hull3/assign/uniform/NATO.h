@@ -3,18 +3,18 @@ class NATO {
         headGear = "H_HelmetB";
         goggles = "";
         uniform = "U_B_CombatUniform_mcam_worn";
-        vest = "V_PlateCarrier2_rgr";
+        vest = "V_PlateCarrier2_rgr_ARM";
         backpack = "B_Kitbag_cbr";
     };
 
     class Leader : Rifleman {
         uniform = "U_B_CombatUniform_mcam_vest";
-        vest = "V_PlateCarrierGL_rgr";
+        vest = "V_PlateCarrierGL_rgr_ARM";
     };
 
     class Officer : Leader {
         headGear = "H_MilCap_mcamo";
-        vest = "V_PlateCarrier1_rgr";
+        vest = "V_PlateCarrier1_rgr_ARM";
     };
 
     class Crew : Rifleman {
@@ -127,7 +127,7 @@ class NATO {
 
     class ENG : Rifleman {
         uniform = "U_B_CombatUniform_mcam_vest";
-        vest = "V_PlateCarrier2_rgr";
+        vest = "V_PlateCarrier2_rgr_ARM";
         backpack = "B_Carryall_oli";
     };
 

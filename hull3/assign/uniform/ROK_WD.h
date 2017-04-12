@@ -3,13 +3,13 @@ class ROK_WD {
         headGear = "MNP_Helmet_ROK";
         goggles = "";
         uniform = "MNP_CombatUniform_ROK_A";
-        vest = "MNP_Vest_ROK_2";
+        vest = "MNP_Vest_ROK_2_ARM";
         backpack = "B_Kitbag_rgr";
     };
 
     class Leader : Rifleman {
         uniform = "MNP_CombatUniform_ROK_B";
-        vest = "MNP_Vest_ROK_1";
+        vest = "MNP_Vest_ROK_1_ARM";
     };
 
     class Officer : Leader {

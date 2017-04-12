@@ -3,13 +3,13 @@ class USA_WD {
         headGear = "MNP_Helmet_M81";
         goggles = "";
         uniform = "MNP_CombatUniform_Wood_A";
-        vest = "MNP_Vest_M81";
+        vest = "MNP_Vest_M81_ARM";
         backpack = "B_Kitbag_rgr";
     };
 
     class Leader : Rifleman {
         uniform = "MNP_CombatUniform_Wood_B";
-        vest = "MNP_Vest_M81b";
+        vest = "MNP_Vest_M81b_ARM";
     };
 
     class Officer : Leader {
@@ -34,7 +34,7 @@ class USA_WD {
 
     class Medic : Rifleman {
         backpack = "B_Carryall_oli";
-        vest = "MNP_Vest_M81b";
+        vest = "MNP_Vest_M81b_ARM";
     };
 
     class FTL : Leader {

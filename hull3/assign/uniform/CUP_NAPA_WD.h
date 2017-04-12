@@ -3,12 +3,12 @@ class CUP_NAPA_WD {
         headGear = "CUP_H_Ger_Boonie_Flecktarn";
         goggles = "G_Bandanna_blk";
         uniform = "CUP_U_I_GUE_Flecktarn2";
-        vest = "CUP_V_B_GER_Carrier_Vest";
+        vest = "CUP_V_B_GER_Carrier_Vest_ARM";
         backpack = "B_Kitbag_rgr";
     };
 
     class Leader : Rifleman {
-        vest = "CUP_V_B_GER_Carrier_Vest_3";
+        vest = "CUP_V_B_GER_Carrier_Vest_3_ARM";
         goggles = "G_Bandanna_oli";
         headGear = "H_Watchcap_camo";
     };
@@ -17,7 +17,7 @@ class CUP_NAPA_WD {
         headGear = "MNP_MC_OD";
         goggles = "";
         uniform = "CUP_U_I_GUE_Flecktarn";
-        vest = "CUP_V_B_GER_Carrier_Vest_2";
+        vest = "CUP_V_B_GER_Carrier_Vest_2_ARM";
     };
 
     class Crew : Rifleman {

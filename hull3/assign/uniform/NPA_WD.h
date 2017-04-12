@@ -3,7 +3,7 @@ class NPA_WD {
         headGear = "H_Shemag_olive";
         goggles = "";
         uniform = "MNP_CombatUniform_DPM";
-        vest = "MNP_Vest_Light_DPM";
+        vest = "MNP_Vest_Light_DPM_ARM";
         backpack = "B_Kitbag_rgr";
     };
 

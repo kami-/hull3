@@ -3,24 +3,24 @@ class IF44_GER_U {
         headGear = "H_LIB_GER_Helmet";
         goggles = "";
         uniform = "U_LIB_GER_Schutze";
-        vest = "V_LIB_GER_VestKar98";
+        vest = "V_LIB_GER_VestKar98_ARM";
         backpack = "B_LIB_GER_A_frame";
     };
 
     class Leader : Rifleman {
         uniform = "U_LIB_GER_Unterofficer";
-        vest = "V_LIB_GER_VestUnterofficer";
+        vest = "V_LIB_GER_VestUnterofficer_ARM";
     };
 
     class Officer : Leader {
         uniform = "U_LIB_GER_Leutnant";
-        vest = "V_LIB_GER_FieldOfficer";
+        vest = "V_LIB_GER_FieldOfficer_ARM";
     };
 
     class Crew : Rifleman {
         headGear = "H_LIB_GER_TankPrivateCap";
         uniform = "U_LIB_GER_Tank_crew_private";
-        vest = "V_LIB_GER_TankPrivateBelt";
+        vest = "V_LIB_GER_TankPrivateBelt_ARM";
     };
 
     class CO : Officer {
@@ -46,18 +46,18 @@ class IF44_GER_U {
 
     class AR : Rifleman {
         uniform = "U_LIB_GER_Gefreiter";
-        vest = "V_LIB_GER_VestSTG";
+        vest = "V_LIB_GER_VestSTG_ARM";
     };
 
     class AAR : Rifleman {
-        vest = "V_LIB_GER_VestG43";
+        vest = "V_LIB_GER_VestG43_ARM";
     };
 
     class RAT : Rifleman {
     };
 
     class MMGG : AR {
-        vest = "V_LIB_GER_VestMG";
+        vest = "V_LIB_GER_VestMG_ARM";
     };
 
     class MMGAG : AAR {

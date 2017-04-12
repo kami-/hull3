@@ -3,13 +3,13 @@ class NOR_DE {
         headGear = "MNP_Helmet_NOR_D";
         goggles = "";
         uniform = "MNP_CombatUniform_NOR_D_A";
-        vest = "MNP_Vest_NOR_D_2";
+        vest = "MNP_Vest_NOR_D_2_ARM";
         backpack = "B_Kitbag_cbr";
     };
 
     class Leader : Rifleman {
         uniform = "MNP_CombatUniform_NOR_D_B";
-        vest = "MNP_Vest_NOR_D_1";
+        vest = "MNP_Vest_NOR_D_1_ARM";
     };
 
     class Officer : Leader {

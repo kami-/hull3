@@ -3,7 +3,7 @@ class CSAT_SN {
         headGear = "MNP_Helmet_Russia_arctic";
         goggles = "";
         uniform = "MNP_CombatUniform_Russia_arctic";
-        vest = "V_PlateCarrier1_blk";
+        vest = "V_PlateCarrier1_blk_ARM";
         backpack = "MNP_B_WB_KB";
     };
 

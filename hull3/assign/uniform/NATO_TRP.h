@@ -3,18 +3,18 @@ class NATO_TRP {
         headGear = "H_HelmetB_tna_F";
         goggles = "";
         uniform = "U_B_T_Soldier_F";
-        vest = "V_PlateCarrier2_tna_F";
+        vest = "V_PlateCarrier2_tna_F_ARM";
         backpack = "B_Kitbag_rgr";
     };
 
     class Leader : Rifleman {
         uniform = "U_B_T_Soldier_SL_F";
-        vest = "V_PlateCarrierGL_tna_F";
+        vest = "V_PlateCarrierGL_tna_F_ARM";
     };
 
     class Officer : Leader {
         headGear = "H_MilCap_tna_F";
-        vest = "V_PlateCarrier1_tna_F";
+        vest = "V_PlateCarrier1_tna_F_ARM";
     };
 
     class Crew : Rifleman {
