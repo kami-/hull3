@@ -16,7 +16,7 @@ class CAR95_CN {
         };
         vestMagazines[] = {
             {"30Rnd_580x42_Mag_F", 6},
-            {"30Rnd_65x39_caseless_green_mag_Tracer", 2}
+            {"30Rnd_580x42_Mag_Tracer_F", 2}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},

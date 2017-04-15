@@ -200,18 +200,20 @@ class AUGA3_IRE {
     class MATG : RAT {
         secondaryWeapon = "CUP_launch_MAAWS";
         secondaryWeaponItems[] = {"CUP_MAAWS_HEAT_M", "CUP_optic_MAAWS_Scope"};
-        backpackMagazines[] = {{"CUP_MAAWS_HEAT_M", 3}};
-        assignItems[] = {"ItemGPS"};
-        uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
+        backpackMagazines[] = {
+            {"CUP_MAAWS_HEAT_M", 2},
+            {"CUP_MAAWS_HEDP_M", 1}
+        };
     };
 
     class MATAG : Rifleman {
         backpackMagazines[] = {
-            {"HandGrenade", 1},
-            {"hlc_30Rnd_556x45_T_AUG", 2},
-            {"CUP_MAAWS_HEAT_M", 3}
+            {"CUP_MAAWS_HEAT_M", 2},
+            {"CUP_MAAWS_HEDP_M", 1}
         };
         binocular = "ACE_VectorDay";
+        assignItems[] = {"ItemGPS"};
+        uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
 
     class MATAC : MATAG {
