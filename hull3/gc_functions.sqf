@@ -12,12 +12,26 @@ hull3_gc_fnc_preInit = {
     hull3_gc_canRemoveCorpses = ["GarbageCollector", "canRemoveCorpses"] call hull3_config_fnc_getBool;
     hull3_gc_canRemoveWrecks = ["GarbageCollector", "canRemoveWrecks"] call hull3_config_fnc_getBool;
     hull3_gc_canRemoveGroups = ["GarbageCollector", "canRemoveGroups"] call hull3_config_fnc_getBool;
+
+    hull3_gc_panicCps = ["GarbageCollector", "panicCps"] call hull3_config_fnc_getNumber;
+
     hull3_gc_corpseLimit = ["GarbageCollector", "corpseLimit"] call hull3_config_fnc_getNumber;
+    hull3_gc_panicCorpseLimit = ["GarbageCollector", "panicCorpseLimit"] call hull3_config_fnc_getNumber;
     hull3_gc_corpseMaxTime = ["GarbageCollector", "corpseMaxTime"] call hull3_config_fnc_getNumber;
+    hull3_gc_panicCorpseMaxTime = ["GarbageCollector", "panicCorpseMaxTime"] call hull3_config_fnc_getNumber;
+
     hull3_gc_wreckLimit = ["GarbageCollector", "wreckLimit"] call hull3_config_fnc_getNumber;
+    hull3_gc_panicWreckLimit = ["GarbageCollector", "panicWreckLimit"] call hull3_config_fnc_getNumber;
     hull3_gc_wreckMaxTime = ["GarbageCollector", "wreckMaxTime"] call hull3_config_fnc_getNumber;
+    hull3_gc_panicWreckMaxTime = ["GarbageCollector", "panicWreckMaxTime"] call hull3_config_fnc_getNumber;
+
     hull3_gc_groupMaxTime = ["GarbageCollector", "groupMaxTime"] call hull3_config_fnc_getNumber;
     hull3_gc_checkDelay = ["GarbageCollector", "checkDelay"] call hull3_config_fnc_getNumber;
+
+    hull3_gc_currentCorpseLimit = hull3_gc_corpseLimit;
+    hull3_gc_currentCorpseMaxTime = hull3_gc_corpseMaxTime;
+    hull3_gc_currentWreckLimit = hull3_gc_wreckLimit;
+    hull3_gc_currentWreckMaxTime = hull3_gc_wreckMaxTime;
 };
 
 hull3_gc_fnc_start = {
@@ -44,6 +58,7 @@ hull3_gc_fnc_stop = {
 
 hull3_gc_fnc_monitor = {
     while {hull3_gc_isEnabled} do {
+        [] call hull3_gc_fnc_adjustConfig;
         [] call hull3_gc_fnc_monitorCorpses;
         [] call hull3_gc_fnc_monitorWrecks;
         [] call hull3_gc_fnc_monitorGroups;
@@ -51,41 +66,66 @@ hull3_gc_fnc_monitor = {
     };
 };
 
+hull3_gc_fnc_adjustConfig = {
+    if !(missionNamespace getVariable ["ark_asm_enabled", false]) exitWith {};
+    private _currentCps = [] call ark_asm_fnc_getCurrentCps;
+    if (_currentCps <= hull3_gc_panicCps) then {
+        hull3_gc_currentCorpseLimit = hull3_gc_panicCorpseLimit;
+        hull3_gc_currentCorpseMaxTime = hull3_gc_panicCorpseMaxTime;
+        hull3_gc_currentWreckLimit = hull3_gc_panicWreckLimit;
+        hull3_gc_currentWreckMaxTime = hull3_gc_panicWreckMaxTime;
+    } else {
+        hull3_gc_currentCorpseLimit = hull3_gc_corpseLimit;
+        hull3_gc_currentCorpseMaxTime = hull3_gc_corpseMaxTime;
+        hull3_gc_currentWreckLimit = hull3_gc_wreckLimit;
+        hull3_gc_currentWreckMaxTime = hull3_gc_wreckMaxTime;
+    };
+};
+
 hull3_gc_fnc_monitorCorpses = {
     if (hull3_gc_canRemoveCorpses) then {
         DEBUG("hull3.gc","Starting next corpse GC check.");
-        [hull3_gc_corpseLimit, hull3_gc_corpseMaxTime, {_x isKindOf "Man"}] call hull3_gc_fnc_tryRemovingUnits;
+        [hull3_gc_currentCorpseLimit, hull3_gc_currentCorpseMaxTime, {_x isKindOf "Man"}] call hull3_gc_fnc_tryRemovingUnits;
     };
 };
 
 hull3_gc_fnc_monitorWrecks = {
     if (hull3_gc_canRemoveWrecks) then {
         DEBUG("hull3.gc","Starting next wreck GC check.");
-        [hull3_gc_wreckLimit, hull3_gc_wreckMaxTime, {!(_x isKindOf "Man")}] call hull3_gc_fnc_tryRemovingUnits;
+        [hull3_gc_currentWreckLimit, hull3_gc_currentWreckMaxTime, {!(_x isKindOf "Man")}] call hull3_gc_fnc_tryRemovingUnits;
     };
 };
 
 hull3_gc_fnc_tryRemovingUnits = {
-    FUN_ARGS_3(_limit,_maxTime,_isKindOfFunc);
+    params ["_limit", "_maxTime", "_isKindOfFunc"];
 
-    DECLARE(_units) = [];
-    FILTER_PUSH_ALL(_units,allDead,{GC_CAN_REMOVE(_x) && _isKindOfFunc});
-    DEBUG("hull3.gc",FMT_1("'%1' dead units.",{GC_CAN_REMOVE(_x)} count _units));
-    if ({GC_CAN_REMOVE(_x)} count _units > _limit) then {
-        DEBUG("hull3.gc",FMT_1("Limit '%1' reached, starting to remove units.",_limit));
-        DECLARE(_removeCount) = 0;
-        {
-            if (isNil {_x getVariable "hull3_gc_firstCheck"}) then {
-                _x setVariable ["hull3_gc_firstCheck", time, false];
-                TRACE("hull3.gc",FMT_2("Setting 'firstCheck' of unit '%1' to '%2'.",_x,time));
-            };
-            if ([_x, _maxTime] call hull3_gc_fnc_canRemoveUnit) then {
-                TRACE("hull3.gc",FMT_1("Removing unit '%1'.",_x));
-                deleteVehicle _x;
-                INC(_removeCount);
-            };
-        } foreach _units;
-        DEBUG("hull3.gc",FMT_1("Removed '%1' units.",_removeCount));
+    private _units = allDead select { GC_CAN_REMOVE(_x) && _isKindOfFunc };
+    DEBUG("hull3.gc",FMT_1("'%1' dead units.",count _units));
+    private _limitReached = count _units > _limit;
+    private _removedCount = 0;
+    {
+        if (isNil {_x getVariable "hull3_gc_firstCheck"}) then {
+            _x setVariable ["hull3_gc_firstCheck", time, false];
+            TRACE("hull3.gc",FMT_2("Setting 'firstCheck' of unit '%1' to '%2'.",_x,time));
+        };
+        if (_limitReached && { [_x, _maxTime] call hull3_gc_fnc_canRemoveUnit }) then {
+            TRACE("hull3.gc",FMT_3("Limit '%1' and max time '%2' reached, removing unit '%3'.",_limit,_maxTime,_x));
+            deleteVehicle _x;
+            _removedCount = _removedCount + 1;
+        };
+    } foreach _units;
+    DEBUG("hull3.gc",FMT_2("Removed '%1' units for reaching max time '%2'.",_removedCount,_maxTime));
+
+    private _existingUnits = _units select { !isNil {_x} && {!isNull _x} };
+    if (count _existingUnits > _limit) then {
+        DEBUG("hull3.gc",FMT_1("Limit '%1' reached, starting to remove '%2' units.",_limit,count _existingUnits - _limit));
+        _removedCount = 0;
+        for "_i" from 0 to (count _existingUnits - _limit - 1) do {
+            TRACE("hull3.gc",FMT_1("Removing unit '%1'.",_existingUnits select _i));
+            deleteVehicle (_existingUnits select _i);
+            _removedCount = _removedCount + 1;
+        };
+        DEBUG("hull3.gc",FMT_1("Removed '%1' units.",_removedCount));
     };
 };
 
