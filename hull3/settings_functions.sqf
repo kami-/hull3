@@ -27,6 +27,10 @@ hull3_settings_fnc_setNonStandardGeneralSettings = {
         disableRemoteSensors true;
         DEBUG("hull3.settings","RemoteSensors are disabled.");
     };
+    if (!(["General", "enableEnvironment"] call hull3_config_fnc_getBool)) then {
+        enableEnvironment [false, true];
+        DEBUG("hull3.settings","Ambient animals are disabled.");
+    };
 };
 
 hull3_settings_fnc_setPlayerSettings = {

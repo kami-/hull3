@@ -291,6 +291,7 @@ class Hull3 {
         BIS_noCoreConversations = 1;                    // Disables BIS unit conversations
         enableSaving = 0;                               // Enables game saving
         disableRemoteSensors = 1;                       // Disables RemoteSensors
+        enableEnvironment = 0;                          // Disables ambient animals but keeps sounds
     };
 
     class GarbageCollector {
