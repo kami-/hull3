@@ -3,7 +3,7 @@ class Default {
         headGear = "";
         goggles = "";
         uniform = "";
-        vest = "_ARM";
+        vest = "";
         backpack = "";
     };
 };
