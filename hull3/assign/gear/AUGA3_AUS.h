@@ -81,7 +81,7 @@ class AUGA3_AUS {
             {"SmokeShell", 1}
         };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
-        vestMagazines[] = {{"hlc_25Rnd_9x19mm_M882_AUG", 4}};
+        vestMagazines[] = {{"hlc_30Rnd_556x45_B_AUG", 4}};
         backpackMagazines[] = {};
         assignItems[] = {"ItemGPS", "ACE_NVG_Wide"};
     };
