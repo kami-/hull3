@@ -141,7 +141,7 @@ class M16A4_ROK {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 2},
-            {"hlc_200rnd_556x45_T_SAW", 2}
+            {"CUP_200Rnd_TE1_Red_Tracer_556x45_M249", 2}
         };
         binocular = "Binocular";
     };
