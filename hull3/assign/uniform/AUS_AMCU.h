@@ -154,7 +154,6 @@ class AUS_AMCU {
 
     class P : Crew {
         headGear = "H_PilotHelmetHeli_O";
-        uniform = "U_B_HeliPilotCoveralls";
         vest = "V_TacVest_oli_ARM";
         backpack = "B_Parachute";
     };
