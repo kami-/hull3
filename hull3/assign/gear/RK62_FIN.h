@@ -229,15 +229,15 @@ class RK62_FIN {
     };
 
     class HATG : MATG {
-        secondaryWeapon = "launch_I_Titan_short_F";
-        secondaryWeaponItems[] = {"Titan_AT"};
-        backpackMagazines[] = {{"Titan_AT", 1}};
+        secondaryWeapon = "CUP_launch_Javelin";
+        secondaryWeaponItems[] = {"CUP_Javelin_M"};
+        backpackMagazines[] = {{"CUP_Javelin_M", 1}};
     };
 
     class HATAG : MATAG {
         backpackMagazines[] = {
             {"HandGrenade", 1},
-            {"Titan_AT", 2}
+            {"CUP_Javelin_M", 2}
         };
         uniformMagazines[] = {
             {"ACE_Chemlight_HiRed", 2},
@@ -440,6 +440,7 @@ class RK62_FIN {
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 40},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
             {"NLAW_F", 5},
+            {"CUP_Javelin_M", 5},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
             {"HandGrenade", 10},

@@ -196,7 +196,7 @@ class VZ58_FIN {
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class HMGAG : HMGG {
         backpack = "O_HMG_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -207,7 +207,7 @@ class VZ58_FIN {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class HMGAC : Rifleman {
     };
 
@@ -257,14 +257,14 @@ class VZ58_FIN {
         uniformRadios[] = {"ACRE_PRC343"};
         assignItems[] = {};
     };
-    
+
     class DHATG : Rifleman {
         primaryWeapon = "CUP_arifle_Sa58RIS2";
         backpack = "O_AT_01_weapon_F";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class DHATAG : HMGG {
         backpack = "O_HMG_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -275,7 +275,7 @@ class VZ58_FIN {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class DHATAC : Rifleman {
     };
 
@@ -310,7 +310,7 @@ class VZ58_FIN {
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class GMGAG : HMGG {
         backpack = "O_HMG_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -321,7 +321,7 @@ class VZ58_FIN {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class GMGAC : Rifleman {
     };
 
@@ -330,7 +330,7 @@ class VZ58_FIN {
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class MTRAG : MTRG {
         backpack = "O_Mortar_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -341,7 +341,7 @@ class VZ58_FIN {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class MTRAC : Rifleman {
     };
 
@@ -454,6 +454,7 @@ class VZ58_FIN {
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
             {"NLAW_F", 5},
+            {"Titan_AT", 5},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
             {"HandGrenade", 10},

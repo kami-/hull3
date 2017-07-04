@@ -457,6 +457,7 @@ class TRG_FIA {
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
             {"NLAW_F", 5},
+            {"Titan_AT", 5},
             {"HandGrenade", 10},
             {"SmokeShell", 10}
         };

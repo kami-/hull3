@@ -186,27 +186,27 @@ class AK74_RU {
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
 
-     class HMGG : Rifleman {
+    class HMGG : Rifleman {
         primaryWeapon = "hlc_rifle_aks74u";
         backpack = "CUP_B_Kord_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class HMGAG : HMGG {
         backpack = "CUP_B_Kord_Tripod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class HMGAC : Rifleman {
     };
-   
+
     class MATG : RAT {
         primaryWeapon = "hlc_rifle_aks74u";
         secondaryWeapon = "CUP_launch_RPG7V";
-        secondaryWeaponItems[] = {"CUP_PG7VL_M","CUP_optic_PGO7V3"};
+        secondaryWeaponItems[] = {"CUP_PG7VL_M", "CUP_optic_PGO7V3"};
         backpackMagazines[] = {
             {"CUP_PG7VL_M", 2},
             {"CUP_PG7VR_M", 1},
@@ -253,7 +253,7 @@ class AK74_RU {
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class DHATAG : HMGG {
         backpack = "CUP_B_Metis_Tripod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -264,7 +264,7 @@ class AK74_RU {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class DHATAC : Rifleman {
     };
 
@@ -302,7 +302,7 @@ class AK74_RU {
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class GMGAG : HMGG {
         backpack = "CUP_B_AGS30_Tripod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -313,7 +313,7 @@ class AK74_RU {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class GMGAC : Rifleman {
     };
 
@@ -323,7 +323,7 @@ class AK74_RU {
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class MTRAG : MTRG {
         backpack = "CUP_B_Podnos_Bipod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -334,7 +334,7 @@ class AK74_RU {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class MTRAC : Rifleman {
     };
 
@@ -469,6 +469,7 @@ class AK74_RU {
             {"hlc_GRD_White", 10},
             {"CUP_PG7V_M", 5},
             {"CUP_PG7VL_M", 2},
+            {"CUP_AT13_M", 5},
             {"CUP_FlareWhite_GP25_M", 10},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},

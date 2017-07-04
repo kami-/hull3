@@ -435,6 +435,7 @@ class M4A1_USMC {
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
             {"CUP_SMAW_HEAA_M", 5},
+            {"CUP_Javelin_M", 5},
             {"HandGrenade", 10},
             {"SmokeShell", 10}
         };

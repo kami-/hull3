@@ -442,6 +442,7 @@ class M16A4_CAN {
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
             {"CUP_MAAWS_HEAT_M", 5},
+            {"CUP_Javelin_M", 5},
             {"HandGrenade", 10},
             {"SmokeShell", 10}
         };

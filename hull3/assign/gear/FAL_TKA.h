@@ -435,6 +435,7 @@ class FAL_TKA {
             {"UGL_FlareWhite_F", 10},
             {"CUP_PG7VL_M", 5},
             {"CUP_PG7V_M", 5},
+            {"CUP_AT13_M", 5},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
             {"HandGrenade", 10},

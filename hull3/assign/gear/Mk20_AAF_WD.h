@@ -459,6 +459,7 @@ class Mk20_AAF_WD {
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
             {"NLAW_F", 5},
+            {"Titan_AT", 5},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
             {"HandGrenade", 10},

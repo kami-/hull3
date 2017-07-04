@@ -170,7 +170,6 @@ class Katiba_CSAT {
         };
     };
 
-
     class MMGG : Rifleman {
         primaryWeapon = "CUP_lmg_Pecheneg";
         primaryWeaponItems[] = {};
@@ -197,13 +196,13 @@ class Katiba_CSAT {
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
 
-     class HMGG : Rifleman {
+    class HMGG : Rifleman {
         primaryWeapon = "arifle_Katiba_C_F";
         backpack = "O_HMG_01_weapon_F";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class HMGAG : HMGG {
         uniformMagazines[] = {
             {"ACE_Chemlight_HiRed", 2},
@@ -214,10 +213,10 @@ class Katiba_CSAT {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class HMGAC : Rifleman {
     };
-   
+
     class MATG : RAT {
         secondaryWeapon = "launch_RPG32_F";
         secondaryWeaponItems[] = {"RPG32_F"};
@@ -273,7 +272,7 @@ class Katiba_CSAT {
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class DHATAG : HMGG {
         backpack = "O_HMG_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -284,7 +283,7 @@ class Katiba_CSAT {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class DHATAC : Rifleman {
     };
 
@@ -321,7 +320,7 @@ class Katiba_CSAT {
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class GMGAG : HMGG {
         backpack = "O_HMG_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -332,7 +331,7 @@ class Katiba_CSAT {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class GMGAC : Rifleman {
     };
 
@@ -342,7 +341,7 @@ class Katiba_CSAT {
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
     };
-    
+
     class MTRAG : MTRG {
         backpack = "O_Mortar_01_support_F";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -353,7 +352,7 @@ class Katiba_CSAT {
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
     };
-    
+
     class MTRAC : Rifleman {
     };
 
@@ -470,6 +469,7 @@ class Katiba_CSAT {
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
             {"RPG32_F", 5},
+            {"Titan_AT", 5},
             {"HandGrenade", 10},
             {"SmokeShell", 10}
         };

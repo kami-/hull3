@@ -448,6 +448,7 @@ class AK74_NK {
             {"ACE_HandFlare_White", 10},
             {"CUP_PG7V_M", 5},
             {"CUP_PG7VL_M", 2},
+            {"CUP_AT13_M", 5},
             {"CUP_FlareWhite_GP25_M", 10},
             {"HandGrenade", 10},
             {"SmokeShell", 10}
