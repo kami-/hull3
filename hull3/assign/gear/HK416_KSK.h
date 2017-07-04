@@ -439,6 +439,7 @@ class HK416_KSK {
             {"UGL_FlareWhite_F", 10},
             {"CUP_M136_M", 10},
             {"CUP_MAAWS_HEAT_M", 5},
+            {"CUP_Javelin_M", 5},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
             {"HandGrenade", 10},

@@ -428,6 +428,7 @@ class M16A2_US {
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
             {"CUP_MAAWS_HEAT_M", 5},
+            {"CUP_Dragon_EP1_M", 5},
             {"HandGrenade", 10},
             {"SmokeShell", 10}
         };
