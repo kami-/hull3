@@ -101,6 +101,7 @@ class Hull3 {
         #include "assign\uniform\CUP_USMC_FROG_DE.h"
         #include "assign\uniform\CUP_ION_PMC_SN.h"
         #include "assign\uniform\CUP_ION_PMC.h"
+        #include "assign\uniform\USA_WD.h"
 
         unitBaseClass = "Rifleman";
     };
