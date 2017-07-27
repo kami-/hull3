@@ -14,7 +14,7 @@ class CUP_ION_PMC {
 
     class Officer : Leader {
         headGear = "H_Cap_blk_ION";
-        vest = "CUP_V_PMC_CIRAS_Coyote_Grenadier_ARM";
+        vest = "CUP_V_PMC_CIRAS_Coyote_TL_ARM";
     };
 
     class Crew : Rifleman {
