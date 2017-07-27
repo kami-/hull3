@@ -171,7 +171,9 @@ class Hull3 {
         #include "assign\gear\TRG_FIA.h"
         #include "assign\gear\VZ58_FIN.h"
         #include "assign\gear\SCAR_L_PMC.h"
-        #include "assign\gear\RK62_FIN.h"        
+        #include "assign\gear\RK62_FIN.h"
+        #include "assign\gear\ACR_BLK_PMC.h"
+        #include "assign\gear\ACR_TAN_PMC.h"
 
         unitBaseClass = "Rifleman";
         vehicleBaseClass = "Vehicle";

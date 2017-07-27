@@ -2314,10 +2314,10 @@ class Faction {
     };
 
     class CUP_ION_PMC {
-        gear = "SCAR_L_PMC";
+        gear = "ACR_TAN_PMC";
         uniform = "CUP_ION_PMC";
         name = "ION PMC";
-        description = "ION PMC with black SCAR-L";
+        description = "ION PMC with tan ACR";
         languages[] = {{"resistance", 100}};
         side = "resistance";
         camouflage[] = {"desert", "woodland"};
@@ -2340,10 +2340,10 @@ class Faction {
     };
 
     class CUP_ION_PMC_SN {
-        gear = "SCAR_L_PMC";
+        gear = "ACR_BLK_PMC";
         uniform = "CUP_ION_PMC_SN";
         name = "ION PMC (Arctic)";
-        description = "Arctic ION PMC with black SCAR-L";
+        description = "Arctic ION PMC with black ACR";
         languages[] = {{"resistance", 100}};
         side = "resistance";
         camouflage[] = {"snow"};
