@@ -102,6 +102,7 @@ class Hull3 {
         #include "assign\uniform\CUP_ION_PMC_SN.h"
         #include "assign\uniform\CUP_ION_PMC.h"
         #include "assign\uniform\USA_WD.h"
+        #include "assign\uniform\USA_OD.h"
 
         unitBaseClass = "Rifleman";
     };
@@ -175,6 +176,7 @@ class Hull3 {
         #include "assign\gear\RK62_FIN.h"
         #include "assign\gear\ACR_BLK_PMC.h"
         #include "assign\gear\ACR_TAN_PMC.h"
+        #include "assign\gear\M14_COLT.h"
 
         unitBaseClass = "Rifleman";
         vehicleBaseClass = "Vehicle";
