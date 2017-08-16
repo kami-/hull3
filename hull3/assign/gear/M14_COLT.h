@@ -58,7 +58,7 @@ class M14_COLT {
             {"1Rnd_HE_Grenade_shell", 4},
             {"1Rnd_Smoke_Grenade_shell", 2},
             {"1Rnd_SmokeRed_Grenade_shell", 2},
-            {"hlc_20Rnd_762x51_Mdim_M14", 2},
+            {"hlc_20Rnd_762x51_Mdim_M14", 2}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
