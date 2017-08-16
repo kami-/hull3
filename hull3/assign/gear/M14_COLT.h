@@ -89,7 +89,7 @@ class M14_COLT {
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         vestMagazines[] = {{"CUP_7Rnd_45ACP_1911", 4}};
         backpackMagazines[] = {};
-        assignItems[] = {"ItemGPS", "ACE_NVG_Wide"};
+        assignItems[] = {"ItemGPS", "ACE_NVG_Gen1"};
     };
 
     class CO : Officer {

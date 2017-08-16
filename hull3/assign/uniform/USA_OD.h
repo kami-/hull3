@@ -23,7 +23,6 @@ class USA_OD {
     };
 
     class CO : Officer {
-        uniform = "CUP_U_O_TK_Officer";
     };
 
     class XO : CO {
