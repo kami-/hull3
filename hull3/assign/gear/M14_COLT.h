@@ -89,7 +89,7 @@ class M14_COLT {
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         vestMagazines[] = {{"CUP_7Rnd_45ACP_1911", 4}};
         backpackMagazines[] = {};
-        assignItems[] = {"ItemGPS", "ACE_NVG_Gen1"};
+        assignItems[] = {"ACE_NVG_Gen1"};
     };
 
     class CO : Officer {
@@ -400,8 +400,7 @@ class M14_COLT {
             {"SmokeShell", 5}
         };
         items[] = {
-            {"Toolkit", 1},
-            {"ItemGPS", 1}
+            {"Toolkit", 1}
         };
         radios[] = {
             {"ACRE_PRC343", 2},
@@ -434,8 +433,7 @@ class M14_COLT {
         };
         items[] = {
             {"ACE_M26_Clacker", 1},
-            {"Toolkit", 1},
-            {"ItemGPS", 1}
+            {"Toolkit", 1}
         };
         radios[] = {
             {"ACRE_PRC343", 2},
@@ -461,8 +459,7 @@ class M14_COLT {
         };
         items[] = {
             {"ACE_M26_Clacker", 1},
-            {"Toolkit", 1},
-            {"ItemGPS", 1}
+            {"Toolkit", 1}
         };
         radios[] = {
             {"ACRE_PRC343", 2},
