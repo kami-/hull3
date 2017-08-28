@@ -145,6 +145,7 @@ class USA_OD {
     };
 
     class P : Crew {
+        headGear = "CUP_H_USMC_Helmet_Pilot";
         backpack = "B_Parachute";
         goggles = "G_Aviator";
     };
