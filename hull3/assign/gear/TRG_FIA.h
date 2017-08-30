@@ -5,7 +5,7 @@ class TRG_FIA {
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
-        addHandgunItems[] = {};
+        handgunItems[] = {};
         uniformWeapons[] = {};
         vestWeapons[] = {};
         backpackWeapons[] = {};

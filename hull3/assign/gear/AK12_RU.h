@@ -5,7 +5,7 @@ class AK12_RU {
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
-        addHandgunItems[] = {};
+        handgunItems[] = {};
         uniformWeapons[] = {};
         vestWeapons[] = {};
         backpackWeapons[] = {};

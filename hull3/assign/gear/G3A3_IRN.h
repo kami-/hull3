@@ -5,7 +5,7 @@ class G3A3_IRN {
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
-        addHandgunItems[] = {};
+        handgunItems[] = {};
         uniformWeapons[] = {};
         vestWeapons[] = {};
         backpackWeapons[] = {};

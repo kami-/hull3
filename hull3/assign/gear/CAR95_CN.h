@@ -5,7 +5,7 @@ class CAR95_CN {
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
-        addHandgunItems[] = {};
+        handgunItems[] = {};
         uniformWeapons[] = {};
         vestWeapons[] = {};
         backpackWeapons[] = {};
