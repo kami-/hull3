@@ -46,12 +46,14 @@ class L85_BAF_RIS {
     class Leader : Rifleman {
         primaryWeapon = "CUP_arifle_L85A2_GL";
         primaryWeaponItems[] = {"optic_Holosight_blk_F", "RH_SFM952V"};
+        handgunWeapon = "CUP_hgun_Glock17_blk";
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"1Rnd_HE_Grenade_shell", 4},
             {"1Rnd_Smoke_Grenade_shell", 2},
             {"1Rnd_SmokeRed_Grenade_shell", 2},
-            {"30Rnd_556x45_Stanag_Tracer_Red", 2}
+            {"30Rnd_556x45_Stanag_Tracer_Red", 2},
+            {"CUP_17Rnd_9x19_glock17", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},

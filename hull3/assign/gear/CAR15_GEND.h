@@ -47,12 +47,14 @@ class CAR15_GEND {
     class Leader : Rifleman {
         primaryWeapon = "hlc_rifle_Colt727_GL";
         primaryWeaponItems[] = {"RH_compM2l"};
+        handgunWeapon = "CUP_hgun_Glock17_blk";
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"1Rnd_HE_Grenade_shell", 4},
             {"1Rnd_Smoke_Grenade_shell", 2},
             {"1Rnd_SmokeRed_Grenade_shell", 2},
-            {"30Rnd_556x45_Stanag_Tracer_Red", 2}
+            {"30Rnd_556x45_Stanag_Tracer_Red", 2},
+            {"CUP_17Rnd_9x19_glock17", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},

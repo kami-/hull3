@@ -47,6 +47,7 @@ class G3KA4_NOR {
     class Leader : Rifleman {
         primaryWeapon = "HLC_Rifle_g3ka4_GL";
         primaryWeaponItems[] = {"RH_compm4s", "RH_SFM952V"};
+        handgunWeapon = "CUP_hgun_Glock17_blk";
         vestMagazines[] = {
             {"hlc_20rnd_762x51_b_G3", 6},
             {"1Rnd_HE_Grenade_shell", 4},
@@ -61,7 +62,8 @@ class G3KA4_NOR {
             {"hlc_20rnd_762x51_T_G3", 2},
             {"1Rnd_Smoke_Grenade_shell", 2},
             {"1Rnd_SmokeRed_Grenade_shell", 2},
-            {"UGL_FlareWhite_F", 2}
+            {"UGL_FlareWhite_F", 2},
+            {"CUP_17Rnd_9x19_glock17", 3}
         };
         assignItems[] = {"ItemGPS"};
         binocular = "Binocular";
@@ -92,7 +94,8 @@ class G3KA4_NOR {
     class XO : CO {
         backpackMagazines[] = {
             {"1Rnd_Smoke_Grenade_shell", 8},
-            {"1Rnd_SmokeRed_Grenade_shell", 8}
+            {"1Rnd_SmokeRed_Grenade_shell", 8},
+            {"CUP_17Rnd_9x19_glock17", 3}
         };
         backpackRadios[] = {"ACRE_PRC117F"};
     };

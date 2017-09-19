@@ -46,10 +46,12 @@ class RK62_FIN {
 
     class Leader : Rifleman {
         primaryWeapon = "hlc_rifle_RK62";
+        handgunWeapon = "CUP_hgun_Glock17_blk";
         primaryWeaponItems[] = {};
         vestMagazines[] = {
             {"30Rnd_762x39_Mag_F", 4},
-            {"30Rnd_762x39_Mag_Tracer_F", 2}
+            {"30Rnd_762x39_Mag_Tracer_F", 2},
+            {"CUP_17Rnd_9x19_glock17", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
@@ -123,11 +125,11 @@ class RK62_FIN {
     class AR : Rifleman {
         primaryWeapon = "CUP_lmg_PKM";
         primaryWeaponItems[] = {};
-        vestMagazines[] = {{"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 4}};
+        vestMagazines[] = {{"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 2}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 8}
+            {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 3}
         };
     };
 
@@ -135,7 +137,7 @@ class RK62_FIN {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 6}
+            {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 4}
         };
         binocular = "Binocular";
     };
