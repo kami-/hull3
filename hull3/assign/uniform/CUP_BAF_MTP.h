@@ -132,8 +132,8 @@ class CUP_BAF_MTP {
     };
 
     class ENG : Rifleman {
-        uniform = "CUP_V_BAF_Osprey_Mk4_MTP_Rifleman";
-        vest = "CUP_V_BAF_Osprey_Mk2_DDPM_Sapper_ARM";
+        uniform = "CUP_U_B_BAF_MTP_S1_RolledUp";
+        vest = "CUP_V_BAF_Osprey_Mk4_MTP_Rifleman_ARM";
         backpack = "CUP_B_Bergen_BAF";
         headGear = "CUP_H_BAF_Helmet_4_MTP";
     };

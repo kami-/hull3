@@ -47,9 +47,11 @@ class MP5_GEND {
     class Leader : Rifleman {
         primaryWeapon = "hlc_smg_mp5a3";
         primaryWeaponItems[] = {};
+        handgunWeapon = "CUP_hgun_Glock17_blk";
         vestMagazines[] = {
             {"hlc_30Rnd_9x19_B_MP5", 6},
-            {"hlc_30Rnd_9x19_GD_MP5", 2}
+            {"hlc_30Rnd_9x19_GD_MP5", 2},
+            {"CUP_17Rnd_9x19_glock17", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},

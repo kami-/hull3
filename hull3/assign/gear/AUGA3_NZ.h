@@ -47,12 +47,14 @@ class AUGA3_NZ {
     class Leader : Rifleman {
         primaryWeapon = "hlc_rifle_auga3_GL";
         primaryWeaponItems[] = {"optic_Holosight_blk_F", "RH_SFM952V"};
+        handgunWeapon = "CUP_hgun_Glock17_blk";
         vestMagazines[] = {
             {"hlc_30Rnd_556x45_B_AUG", 6},
             {"1Rnd_HE_Grenade_shell", 4},
             {"1Rnd_Smoke_Grenade_shell", 2},
             {"1Rnd_SmokeRed_Grenade_shell", 2},
-            {"hlc_30Rnd_556x45_T_AUG", 2}
+            {"hlc_30Rnd_556x45_T_AUG", 2},
+            {"CUP_17Rnd_9x19_glock17", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},

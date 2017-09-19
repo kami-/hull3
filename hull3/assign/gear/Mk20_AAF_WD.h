@@ -46,12 +46,14 @@ class Mk20_AAF_WD {
     class Leader : Rifleman {
         primaryWeapon = "arifle_Mk20_GL_F";
         primaryWeaponItems[] = {"optic_ACO_grn", "RH_SFM952V"};
+        handgunWeapon = "hgun_ACPC2_F";
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"1Rnd_HE_Grenade_shell", 4},
             {"1Rnd_Smoke_Grenade_shell", 2},
             {"1Rnd_SmokeRed_Grenade_shell", 2},
-            {"30Rnd_556x45_Stanag_Tracer_Yellow", 2}
+            {"30Rnd_556x45_Stanag_Tracer_Yellow", 2},
+            {"9Rnd_45ACP_Mag", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 2},

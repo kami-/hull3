@@ -46,11 +46,13 @@ class FAL_PMC {
 
     class Leader : Rifleman {
         primaryWeapon = "hlc_rifle_osw_GL";
+        handgunWeapon = "CUP_hgun_Glock17_blk";
         vestMagazines[] = {
             {"hlc_20Rnd_762x51_B_fal", 6},
             {"1Rnd_HE_Grenade_shell", 4},
             {"1Rnd_Smoke_Grenade_shell", 2},
-            {"1Rnd_SmokeRed_Grenade_shell", 2}
+            {"1Rnd_SmokeRed_Grenade_shell", 2},
+            {"CUP_17Rnd_9x19_glock17", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
