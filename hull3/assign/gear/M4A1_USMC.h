@@ -47,12 +47,14 @@ class M4A1_USMC {
     class Leader : Rifleman {
         primaryWeapon = "hlc_rifle_m4m203";
         primaryWeaponItems[] = {"optic_Holosight_blk_F", "RH_SFM952V"};
+        handgunWeapon = "hlc_Pistol_M11A1";
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"1Rnd_HE_Grenade_shell", 4},
             {"1Rnd_Smoke_Grenade_shell", 2},
             {"1Rnd_SmokeRed_Grenade_shell", 2},
-            {"30Rnd_556x45_Stanag_Tracer_Red", 2}
+            {"30Rnd_556x45_Stanag_Tracer_Red", 2},
+            {"hlc_13Rnd_9x19_B_P228", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
@@ -205,14 +207,14 @@ class M4A1_USMC {
         secondaryWeapon = "CUP_launch_Mk153Mod0";
         secondaryWeaponItems[] = {"CUP_SMAW_HEAA_M", "CUP_optic_SMAW_Scope"};
         backpackMagazines[] = {
-            {"CUP_SMAW_HEAA_M", 2},
+            {"CUP_SMAW_HEAA_M", 1},
             {"CUP_SMAW_HEDP_M", 1}
         };
     };
 
     class MATAG : Rifleman {
         backpackMagazines[] = {
-            {"CUP_SMAW_HEAA_M", 2},
+            {"CUP_SMAW_HEAA_M", 1},
             {"CUP_SMAW_HEDP_M", 1}
         };
         binocular = "ACE_VectorDay";

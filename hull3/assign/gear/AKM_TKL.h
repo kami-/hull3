@@ -46,12 +46,14 @@ class AKM_TKL {
     class Leader : Rifleman {
         primaryWeapon = "hlc_rifle_akmgl";
         primaryWeaponItems[] = {};
+        handgunWeapon = "CUP_hgun_Colt1911";
         vestMagazines[] = {
             {"hlc_30Rnd_762x39_b_ak", 3},
             {"hlc_VOG25_AK", 4},
             {"hlc_GRD_White", 2},
             {"hlc_GRD_Red", 2},
-            {"hlc_30Rnd_762x39_t_ak", 2}
+            {"hlc_30Rnd_762x39_t_ak", 2},
+            {"CUP_7Rnd_45ACP_1911", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
