@@ -47,12 +47,14 @@ class MIX_LVM {
     class Leader : Rifleman {
         primaryWeapon = "hlc_rifle_Colt727_GL";
         primaryWeaponItems[] = {};
+        handgunWeapon = "CUP_hgun_Colt1911";
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"1Rnd_HE_Grenade_shell", 4},
             {"1Rnd_Smoke_Grenade_shell", 2},
             {"1Rnd_SmokeRed_Grenade_shell", 2},
-            {"30Rnd_556x45_Stanag_Tracer_Yellow", 2}
+            {"30Rnd_556x45_Stanag_Tracer_Yellow", 2},
+            {"CUP_7Rnd_45ACP_1911", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},

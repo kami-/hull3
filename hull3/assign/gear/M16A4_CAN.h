@@ -47,12 +47,14 @@ class M16A4_CAN {
     class Leader : Rifleman {
         primaryWeapon = "CUP_arifle_M16A4_GL";
         primaryWeaponItems[] = {"optic_Holosight_blk_F", "RH_SFM952V"};
+        handgunWeapon = "hlc_pistol_P226US";
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"1Rnd_HE_Grenade_shell", 4},
             {"1Rnd_Smoke_Grenade_shell", 2},
             {"1Rnd_SmokeRed_Grenade_shell", 2},
-            {"30Rnd_556x45_Stanag_Tracer_Red", 2}
+            {"30Rnd_556x45_Stanag_Tracer_Red", 2},
+            {"hlc_15Rnd_9x19_B_P226", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},

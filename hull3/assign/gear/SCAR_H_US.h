@@ -47,12 +47,14 @@ class SCAR_H_US {
     class Leader : Rifleman {
         primaryWeapon = "CUP_arifle_Mk17_STD_EGLM";
         primaryWeaponItems[] = {"optic_Holosight_blk_F", "RH_SFM952V_tan"};
+        handgunWeapon = "CUP_hgun_M9";
         vestMagazines[] = {
             {"CUP_20Rnd_762x51_B_SCAR", 4},
             {"1Rnd_HE_Grenade_shell", 4},
             {"1Rnd_Smoke_Grenade_shell", 2},
             {"1Rnd_SmokeRed_Grenade_shell", 2},
-            {"CUP_20Rnd_TE1_Red_Tracer_762x51_SCAR", 2}
+            {"CUP_20Rnd_TE1_Red_Tracer_762x51_SCAR", 2},
+            {"CUP_15Rnd_9x19_M9", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
