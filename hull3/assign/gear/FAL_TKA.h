@@ -47,12 +47,14 @@ class FAL_TKA {
     class Leader : Rifleman {
         primaryWeapon = "hlc_rifle_osw_GL";
         primaryWeaponItems[] = {};
+        handgunWeapon = "CUP_hgun_Makarov";
         vestMagazines[] = {
             {"hlc_20Rnd_762x51_B_fal", 2},
             {"1Rnd_HE_Grenade_shell", 4},
             {"1Rnd_Smoke_Grenade_shell", 2},
             {"1Rnd_SmokeRed_Grenade_shell", 2},
-            {"hlc_20Rnd_762x51_T_fal", 2}
+            {"hlc_20Rnd_762x51_T_fal", 2},
+            {"CUP_8Rnd_9x18_Makarov_M", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},

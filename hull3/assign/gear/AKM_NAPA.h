@@ -46,12 +46,14 @@ class AKM_NAPA {
     class Leader : Rifleman {
         primaryWeapon = "hlc_rifle_akmgl";
         primaryWeaponItems[] = {};
+        handgunWeapon = "CUP_hgun_Makarov";
         vestMagazines[] = {
             {"hlc_30Rnd_762x39_b_ak", 3},
             {"hlc_VOG25_AK", 4},
             {"hlc_GRD_White", 2},
             {"hlc_GRD_Red", 2},
-            {"hlc_30Rnd_762x39_t_ak", 2}
+            {"hlc_30Rnd_762x39_t_ak", 2},
+            {"CUP_8Rnd_9x18_Makarov_M", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
