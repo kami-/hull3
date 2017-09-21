@@ -47,12 +47,14 @@ class Katiba_IRN {
     class Leader : Rifleman {
         primaryWeapon = "arifle_Katiba_GL_F";
         primaryWeaponItems[] = {"RH_SFM952V"};
+        handgunWeapon = "hlc_pistol_P226US";
         vestMagazines[] = {
             {"30Rnd_65x39_caseless_green", 6},
             {"1Rnd_HE_Grenade_shell", 4},
             {"1Rnd_Smoke_Grenade_shell", 2},
             {"1Rnd_SmokeRed_Grenade_shell", 2},
-            {"30Rnd_65x39_caseless_green_mag_Tracer", 2}
+            {"30Rnd_65x39_caseless_green_mag_Tracer", 2},
+            {"hlc_15Rnd_9x19_B_P226", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
@@ -133,7 +135,7 @@ class Katiba_IRN {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
             {"150Rnd_762x54_Box", 2},
-            {"150Rnd_762x54_Box_Tracer", 4}
+            {"150Rnd_762x54_Box_Tracer", 3}
         };
     };
 

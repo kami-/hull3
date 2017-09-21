@@ -47,12 +47,14 @@ class AK12_RU {
     class Leader : Rifleman {
         primaryWeapon = "hlc_rifle_ak12GL";
         primaryWeaponItems[] = {"RH_SFM952V"};
+        handgunWeapon = "hgun_Rook40_F";
         vestMagazines[] = {
             {"hlc_30Rnd_545x39_B_AK", 6},
             {"hlc_VOG25_AK", 4},
             {"hlc_GRD_White", 2},
             {"hlc_GRD_red", 2},
-            {"hlc_30Rnd_545x39_T_AK", 1}
+            {"hlc_30Rnd_545x39_T_AK", 1},
+            {"16Rnd_9x21_Mag", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},

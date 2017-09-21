@@ -88,6 +88,7 @@ class Hull3 {
         #include "assign\uniform\ROK_WD.h"
         #include "assign\uniform\RU_AB.h"
         #include "assign\uniform\RU_DE.h"
+        #include "assign\uniform\RU_SPETSNAZ.h"
         #include "assign\uniform\SYND_BANDIT.h"
         #include "assign\uniform\SYND_REBEL.h"
         #include "assign\uniform\UKR_TTSKO.h"
