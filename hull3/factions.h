@@ -1663,6 +1663,32 @@ class Faction {
         };
     };
 
+    class RU_SPETSNAZ {
+        gear = "AK12_RU";
+        uniform = "RU_SPETSNAZ";
+        name = "Russian Spetsnaz";
+        description = "Modern Russian Spetsnaz and AK-12's";
+        languages[] = {{"east", 100}};
+        side = "east";
+        camouflage[] = {"desert", "woodland"};
+        rolePrefix = "Spetsnaz";
+        vehicleClassnames[] = {
+            {"CO", "CUP_O_UAZ_Unarmed_RU"},
+            {"SL", "CUP_O_UAZ_Unarmed_RU"},
+            {"FT", "CUP_O_UAZ_Unarmed_RU"},
+            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
+            {"ENG", "CUP_O_Ural_Repair_RU"},
+            {"APC", "CUP_O_BMP2_RU"},
+            {"IFV", "CUP_O_BMP3_RU"},
+            {"SPAAG", "CUP_O_2S6M_RU"},
+            {"TNK", "CUP_O_T72_RU"},
+            {"TH", "CUP_O_Mi8_RU"},
+            {"AH", "CUP_O_Mi24_V_RU"},
+            {"CAS", "CUP_O_Su25_RU_3"},
+            {"Technical", "CUP_O_UAZ_MG_RU"}
+        };
+    };
+
     class CUP_RU_EMR {
         gear = "AK74M_RU";
         uniform = "CUP_RU_EMR";
