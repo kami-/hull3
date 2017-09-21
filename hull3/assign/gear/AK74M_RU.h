@@ -1,7 +1,7 @@
 class AK74M_RU {
     class Rifleman {
         primaryWeapon = "hlc_rifle_ak74m";
-        primaryWeaponItems[] = {};
+        primaryWeaponItems[] = {"hlc_optic_kobra"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -46,13 +46,15 @@ class AK74M_RU {
 
     class Leader : Rifleman {
         primaryWeapon = "hlc_rifle_ak74m_gl";
-        primaryWeaponItems[] = {};
+        primaryWeaponItems[] = {"hlc_optic_kobra"};
+        handgunWeapon = "hgun_Rook40_F";
         vestMagazines[] = {
             {"hlc_30Rnd_545x39_B_AK", 4},
             {"hlc_VOG25_AK", 4},
             {"hlc_GRD_White", 2},
             {"hlc_GRD_red", 2},
-            {"hlc_30Rnd_545x39_T_AK", 2}
+            {"hlc_30Rnd_545x39_T_AK", 2},
+            {"16Rnd_9x21_Mag", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
@@ -103,7 +105,7 @@ class AK74M_RU {
 
     class Medic : Rifleman {
         primaryWeapon = "hlc_rifle_ak74m";
-        primaryWeaponItems[] = {};
+        primaryWeaponItems[] = {"hlc_optic_kobra"};
         vestMagazines[] = {
             {"hlc_30Rnd_545x39_B_AK", 6},
             {"hlc_30Rnd_545x39_T_AK", 2},
@@ -129,7 +131,7 @@ class AK74M_RU {
 
     class AR : Rifleman {
         primaryWeapon = "hlc_rifle_rpk74n";
-        primaryWeaponItems[] = {};
+        primaryWeaponItems[] = {"hlc_optic_kobra"};
         vestMagazines[] = {{"hlc_45Rnd_545x39_t_rpk", 2}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
@@ -340,7 +342,7 @@ class AK74M_RU {
 
     class ENG : Rifleman {
         primaryWeapon = "hlc_rifle_ak74m";
-        primaryWeaponItems[] = {};
+        primaryWeaponItems[] = {"hlc_optic_kobra"};
         vestMagazines[] = {
             {"hlc_30Rnd_545x39_B_AK", 6},
             {"hlc_30Rnd_545x39_T_AK", 2}
