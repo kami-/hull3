@@ -239,7 +239,7 @@ class RK62_FIN {
     class HATAG : MATAG {
         backpackMagazines[] = {
             {"HandGrenade", 1},
-            {"CUP_Javelin_M", 2}
+            {"CUP_Javelin_M", 1}
         };
         uniformMagazines[] = {
             {"ACE_Chemlight_HiRed", 2},

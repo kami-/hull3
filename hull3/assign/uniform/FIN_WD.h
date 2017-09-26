@@ -84,7 +84,7 @@ class FIN_WD {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -149,12 +149,14 @@ class FIN_WD {
     };
 
     class P : Crew {
-        headGear = "H_PilotHelmetHeli_I";
+        headGear = "H_PilotHelmetHeli_O";
         uniform = "MNP_CombatUniform_Fin_A";
         vest = "V_TacVest_oli_ARM";
         backpack = "B_Parachute";
     };
 
     class PCM : P {
+        headGear = "H_CrewHelmetHeli_O";
     };
+
 };
