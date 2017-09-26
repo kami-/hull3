@@ -91,6 +91,17 @@ hull3_unit_fnc_friendlyFireEH = {
     _damage;
 };
 
+hull3_unit_fnc_addAceThrowableThrownEH = {
+    FUN_ARGS_1(_unit);
+
+    private "_ehId";
+    _ehId = ["ace_throwableThrown", {
+        [_this select 1] call ace_frag_fnc_addBlackList;
+        deleteVehicle (_this select 1);
+    }] call CBA_fnc_addEventHandler;
+    _unit setVariable ["hull3_eh_ace_throwableThrown", _ehId];
+};
+
 hull3_unit_fnc_killedEH = {
     FUN_ARGS_2(_unit,_killer);
 
