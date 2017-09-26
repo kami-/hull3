@@ -194,7 +194,7 @@ hull3_mission_fnc_clientSafetyTimerLoop = {
     if (!isNil {hull3_mission_safetyTimerEnd} && {hull3_mission_safetyTimerEnd > 0}) then {
         [] call hull3_mission_fnc_addHostSafetyTimerStopAction;
         [player] call hull3_unit_fnc_addFiredEHs;
-        [player] call hull3_unit_fnc_addGrenadeEHs;
+        [player] call hull3_unit_fnc_addAceThrowableThrownEH;
         DEBUG("hull3.mission.safetytimer","Starting safety timer loop.");
         [{
           {
@@ -206,7 +206,7 @@ hull3_mission_fnc_clientSafetyTimerLoop = {
           if ([] call hull3_mission_fnc_hasSafetyTimerEnded) then {
               [_this select 1] call CBA_fnc_removePerFrameHandler;
               player removeEventHandler ["Fired", player getVariable "hull3_eh_fired"];
-              ["ace_throwableThrown", player getVariable "hull3_grenade_fired"] call CBA_fnc_removeEventHandler;
+              ["ace_throwableThrown", player getVariable "hull3_eh_ace_throwableThrown"] call CBA_fnc_removeEventHandler;
               DEBUG("hull3.mission.safetytimer","Safety timer has ended. Removed fired EH.");
           };
         }, 0, []] call CBA_fnc_addPerFrameHandler;
