@@ -126,12 +126,11 @@ class FAL_TKA {
     };
 
     class AR : Rifleman {
-        primaryWeapon = "hlc_rifle_rpk";
+        primaryWeapon = "hlc_rifle_rpk_75rnd";
         primaryWeaponItems[] = {};
-        vestMagazines[] = {{"hlc_45Rnd_762x39_m_rpk", 2}};
+        vestMagazines[] = {{"hlc_75Rnd_762x39_m_rpk", 4}};
         backpackMagazines[] = {
-            {"hlc_45Rnd_762x39_m_rpk", 4},
-            {"hlc_45Rnd_762x39_t_rpk", 2}
+            {"hlc_75Rnd_762x39_m_rpk", 3}
         };
     };
 
@@ -139,8 +138,7 @@ class FAL_TKA {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_45Rnd_762x39_m_rpk", 4},
-            {"hlc_45Rnd_762x39_t_rpk", 2}
+            {"hlc_75Rnd_762x39_m_rpk", 3}
         };
         binocular = "Binocular";
     };
@@ -401,7 +399,7 @@ class FAL_TKA {
         magazines[] = {
             {"hlc_20Rnd_762x51_B_fal", 15},
             {"hlc_20Rnd_762x51_B_fal", 15},
-            {"hlc_45Rnd_762x39_m_rpk", 20},
+            {"hlc_75Rnd_762x39_m_rpk", 20},
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"UGL_FlareWhite_F", 5},
             {"CUP_PG7V_M", 2},
@@ -431,7 +429,7 @@ class FAL_TKA {
         magazines[] = {
             {"hlc_20Rnd_762x51_B_fal", 40},
             {"hlc_20Rnd_762x51_B_fal", 20},
-            {"hlc_45Rnd_762x39_m_rpk", 40},
+            {"hlc_75Rnd_762x39_m_rpk", 40},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
@@ -460,7 +458,7 @@ class FAL_TKA {
         magazines[] = {
             {"hlc_20Rnd_762x51_B_fal", 40},
             {"hlc_20Rnd_762x51_B_fal", 20},
-            {"hlc_45Rnd_762x39_m_rpk", 40},
+            {"hlc_75Rnd_762x39_m_rpk", 40},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
