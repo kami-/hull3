@@ -142,8 +142,7 @@ class ARM_IRN {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_75Rnd_762x39_m_rpk", 4},
-            {"hlc_75Rnd_762x39_m_rpk", 2}
+            {"hlc_75Rnd_762x39_m_rpk", 3}
         };
         binocular = "Binocular";
     };
