@@ -127,14 +127,13 @@ class AKM_CHKDZ {
     };
 
     class AR : Rifleman {
-        primaryWeapon = "hlc_rifle_rpk";
+        primaryWeapon = "hlc_rifle_rpk_75rnd";
         primaryWeaponItems[] = {};
-        vestMagazines[] = {{"hlc_45Rnd_762x39_m_rpk", 4}};
+        vestMagazines[] = {{"hlc_75Rnd_762x39_m_rpk", 4}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_45Rnd_762x39_m_rpk", 4},
-            {"hlc_45Rnd_762x39_t_rpk", 4}
+            {"hlc_75Rnd_762x39_m_rpk", 4}
         };
     };
 
@@ -142,8 +141,8 @@ class AKM_CHKDZ {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_45Rnd_762x39_m_rpk", 4},
-            {"hlc_45Rnd_762x39_t_rpk", 2}
+            {"hlc_75Rnd_762x39_m_rpk", 4},
+            {"hlc_75Rnd_762x39_m_rpk", 2}
         };
         binocular = "Binocular";
     };
@@ -408,7 +407,7 @@ class AKM_CHKDZ {
         magazines[] = {
             {"hlc_30Rnd_762x39_b_ak", 15},
             {"hlc_30Rnd_762x39_b_ak", 15},
-            {"hlc_45Rnd_762x39_m_rpk", 20},
+            {"hlc_75Rnd_762x39_m_rpk", 20},
             {"hlc_GRD_White", 5},
             {"ACE_HandFlare_White", 5},
             {"CUP_PG7V_M", 2},
@@ -438,7 +437,7 @@ class AKM_CHKDZ {
         magazines[] = {
             {"hlc_30Rnd_762x39_b_ak", 40},
             {"hlc_30Rnd_762x39_b_ak", 20},
-            {"hlc_45Rnd_762x39_m_rpk", 40},
+            {"hlc_75Rnd_762x39_m_rpk", 40},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
             {"hlc_GRD_White", 10},
             {"SatchelCharge_Remote_Mag", 5},
@@ -467,7 +466,7 @@ class AKM_CHKDZ {
         magazines[] = {
             {"hlc_30Rnd_762x39_b_ak", 40},
             {"hlc_30Rnd_762x39_b_ak", 20},
-            {"hlc_45Rnd_762x39_m_rpk", 40},
+            {"hlc_75Rnd_762x39_m_rpk", 40},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
             {"hlc_GRD_White", 10},
             {"CUP_PG7VL_M", 5},
