@@ -23,24 +23,54 @@ class Extended_PostInit_EventHandlers {
     };
 };
 
+class CfgFactionClasses {
+    class NO_CATEGORY;
+    class Hull3 : NO_CATEGORY {
+        displayName = "Hull3";
+    };
+};
+
 class CfgVehicles {
     class Logic;
+    class Module_F : Logic {
+        class ModuleDescription {};
+    };
 
-    class Hull3_DisableGroupMarkers_Module : Logic {
-        displayName = "Hull3: Disable Group Markers";
-        icon = ADDON_PATH(resources\hull3_module.paa);
-        vehicleClass = "Modules";
-        class Eventhandlers {
-            init = "hull3_marker_isGroupEnabled = false;";
+    class Hull3_DisableGroupMarkers_Module : Module_F {
+        scope = 2;
+        displayName = "Disable Group Markers";
+        icon = ADDON_PATH(resources\hull3_module.paa)
+        category = "Hull3";
+        function = "hull3_marker_fnc_disableGroupMarkers";
+        functionPriority = 1;
+        isGlobal = 1;
+        isTriggerActivated = 0;
+        is3DEN = 0;
+
+        class Arguments {};
+
+        class ModuleDescription : ModuleDescription {
+            description = "Disable group markers for all players";
+            sync[] = {};
         };
     };
 
-    class Hull3_DisableFireTeamMarkers_Module : Logic {
-        displayName = "Hull3: Disable Fire Team Member Markers";
-        icon = ADDON_PATH(resources\hull3_module.paa);
-        vehicleClass = "Modules";
-        class Eventhandlers {
-            init = "hull3_marker_isFireTeamEnabled = false;";
+    class Hull3_DisableFireTeamMarkers_Module : Module_F {
+        scope = 2;
+        displayName = "Disable Fire Team Member Markers";
+        icon = ADDON_PATH(resources\hull3_module.paa)
+        category = "Hull3";
+        function = "hull3_marker_fnc_disableFireTeamMarkers";
+        functionPriority = 1;
+        isGlobal = 1;
+        isTriggerActivated = 0;
+        is3DEN = 0;
+
+        class Arguments {};
+
+        class ModuleDescription : ModuleDescription {
+            description = "Disable fire team markers for all players";
+            sync[] = {};
         };
     };
 };
