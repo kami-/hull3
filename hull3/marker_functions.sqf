@@ -25,6 +25,14 @@ hull3_marker_fnc_postInit = {
     };
 };
 
+hull3_marker_fnc_disableGroupMarkers = {
+    hull3_marker_isGroupEnabled = false;
+};
+
+hull3_marker_fnc_disableFireTeamMarkers = {
+    hull3_marker_isFireTeamEnabled = false;
+};
+
 hull3_marker_fnc_initMarker = {
     FUN_ARGS_3(_unit,_markerText,_markerColor);
 
