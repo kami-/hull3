@@ -50,7 +50,6 @@ class ACR_BLK_PMC {
         handgunWeapon = "hlc_pistol_P226R_357Elite";
         vestMagazines[] = {
             {"hlc_30rnd_68x43_FMJ", 6},
-            {"1Rnd_HE_Grenade_shell", 4},
             {"hlc_30rnd_68x43_MFMJ", 2},
             {"hlc_12Rnd_357SIG_JHP_P226", 3}
         };
