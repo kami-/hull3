@@ -431,6 +431,7 @@ class M16A3_RACS {
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
             {"CUP_MAAWS_HEAT_M", 5},
+            {"CUP_Dragon_EP1_M", 5},
             {"HandGrenade", 10},
             {"SmokeShell", 10}
         };
@@ -456,7 +457,6 @@ class M16A3_RACS {
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
             {"CUP_MAAWS_HEAT_M", 5},
-            {"CUP_Dragon_EP1_M", 5},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
             {"HandGrenade", 10},
