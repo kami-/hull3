@@ -34,8 +34,6 @@ hull3_settings_fnc_setNonStandardGeneralSettings = {
 };
 
 hull3_settings_fnc_setPlayerSettings = {
-    player addRating (["General", "addRating"] call hull3_config_fnc_getNumber);
-    DEBUG("hull3.settings",FMT_2("Added '%1' rating to player. New rating is '%2'.",AS_ARRAY_2("General", "addRating") call hull3_config_fnc_getNumber,rating player));
     player setVariable ["BIS_noCoreConversations", ["General", "BIS_noCoreConversations"] call hull3_config_fnc_getBool];
     DEBUG("hull3.settings",FMT_1("Player variable 'BIS_noCoreConversations' is set to '%1'.",AS_ARRAY_2("General", "BIS_noCoreConversations") call hull3_config_fnc_getBool));
 };
