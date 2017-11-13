@@ -22,6 +22,7 @@ class Hull3 {
         #include "assign\uniform\CUP_BAF_WD.h"
         #include "assign\uniform\CUP_BAF_DE.h"
         #include "assign\uniform\CUP_BAF_MTP.h"
+        #include "assign\uniform\BAF_CBRN.h"
         #include "assign\uniform\CUP_CDF_DES.h"
         #include "assign\uniform\CUP_CDF_FOR.h"
         #include "assign\uniform\CUP_CDF_MOU.h"
@@ -90,6 +91,7 @@ class Hull3 {
         #include "assign\uniform\RU_DE.h"
         #include "assign\uniform\RU_SPETSNAZ.h"
         #include "assign\uniform\SYND_BANDIT.h"
+        #include "assign\uniform\RU_CBRN.h"
         #include "assign\uniform\SYND_REBEL.h"
         #include "assign\uniform\UKR_TTSKO.h"
         #include "assign\uniform\USA_ACU.h"
@@ -102,6 +104,7 @@ class Hull3 {
         #include "assign\uniform\CUP_USMC_FROG_DE.h"
         #include "assign\uniform\CUP_ION_PMC_SN.h"
         #include "assign\uniform\CUP_ION_PMC.h"
+        #include "assign\uniform\PMC_CBRN.h"
         #include "assign\uniform\USA_WD.h"
         #include "assign\uniform\USA_OD.h"
 
