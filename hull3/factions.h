@@ -857,6 +857,32 @@ class Faction {
         };
     };
 
+    class BAF_CBRN {
+        gear = "L85_BAF_RIS";
+        uniform = "BAF_CBRN";
+        name = "British Armed Forces (CBRN)";
+        description = "Multicam CBRN and L85's and NLAW AT";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {};
+        rolePrefix = "BAF";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_LR_Transport_GB_D"},
+            {"SL", "CUP_B_LR_Transport_GB_D"},
+            {"FT", "CUP_B_LR_Transport_GB_D"},
+            {"ATTCH", "CUP_B_LR_Transport_GB_D"},
+            {"ENG", "CUP_B_LR_Transport_GB_D"},
+            {"APC", "CUP_B_FV432_Bulldog_GB_D_RWS"},
+            {"IFV", "CUP_B_MCV80_GB_D"},
+            {"SPAAG", "CUP_B_M163_USA"},
+            {"TNK", "CUP_B_FV510_GB_D_SLAT"},
+            {"TH", "CUP_B_Merlin_HC3A_GB_Armed"},
+            {"AH", "CUP_B_AH1_BAF"},
+            {"CAS", "CUP_B_GR9_Mk82_GB"},
+            {"Technical", "CUP_B_LR_Special_M2_GB_D"}
+        };
+    };
+
     class CUP_CDF_DES {
         gear = "AKS74_CDF";
         uniform = "CUP_CDF_DES";
@@ -1663,6 +1689,32 @@ class Faction {
         };
     };
 
+    class RU_CBRN {
+        gear = "AK74M_RU";
+        uniform = "RU_CBRN";
+        name = "Russian Army (CBRN)";
+        description = "CBRN Russian Army and AK-74M's";
+        languages[] = {{"east", 100}};
+        side = "east";
+        camouflage[] = {};
+        rolePrefix = "Russian Army";
+        vehicleClassnames[] = {
+            {"CO", "CUP_O_UAZ_Unarmed_RU"},
+            {"SL", "CUP_O_UAZ_Unarmed_RU"},
+            {"FT", "CUP_O_UAZ_Unarmed_RU"},
+            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
+            {"ENG", "CUP_O_Ural_Repair_RU"},
+            {"APC", "CUP_O_BMP2_RU"},
+            {"IFV", "CUP_O_BMP3_RU"},
+            {"SPAAG", "CUP_O_2S6M_RU"},
+            {"TNK", "CUP_O_T72_RU"},
+            {"TH", "CUP_O_Mi8_RU"},
+            {"AH", "CUP_O_Mi24_V_RU"},
+            {"CAS", "CUP_O_Su25_RU_3"},
+            {"Technical", "CUP_O_UAZ_MG_RU"}
+        };
+    };
+
     class RU_SPETSNAZ {
         gear = "AK12_RU";
         uniform = "RU_SPETSNAZ";
@@ -2373,6 +2425,32 @@ class Faction {
         languages[] = {{"resistance", 100}};
         side = "resistance";
         camouflage[] = {"desert", "woodland"};
+        rolePrefix = "ION PMC";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_HMMWV_Transport_NATO_T"},
+            {"SL", "CUP_B_HMMWV_Unarmed_NATO_T"},
+            {"FT", "CUP_B_HMMWV_Unarmed_NATO_T"},
+            {"ATTCH", "CUP_B_HMMWV_Unarmed_NATO_T"},
+            {"ENG", "B_T_Truck_01_Repair_F"},
+            {"APC", "CUP_B_M1126_ICV_M2_Woodland_Slat"},
+            {"IFV", "CUP_B_M2Bradley_NATO_T"},
+            {"SPAAG", "CUP_B_M6LineBacker_NATO_T"},
+            {"TNK", "CUP_B_M1A1_NATO_T"},
+            {"TH", "CUP_I_Ka60_GL_Blk_ION"},
+            {"AH", "CUP_I_Mi24_Mk4_AT_ION"},
+            {"CAS", "CUP_B_F35B_CAS_USMC"},
+            {"Technical", "CUP_B_HMMWV_M2_NATO_T"}
+        };
+    };
+
+    class PMC_CBRN {
+        gear = "ACR_BLK_PMC";
+        uniform = "PMC_CBRN";
+        name = "ION PMC CBRN";
+        description = "ION PMC CBRN with black ACR";
+        languages[] = {{"resistance", 100}};
+        side = "resistance";
+        camouflage[] = {};
         rolePrefix = "ION PMC";
         vehicleClassnames[] = {
             {"CO", "CUP_B_HMMWV_Transport_NATO_T"},
