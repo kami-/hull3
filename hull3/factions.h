@@ -961,32 +961,6 @@ class Faction {
         };
     };
 
-    class IF44_GER {
-        gear = "IF44_GER_G";
-        uniform = "IF44_GER_U";
-        name = "German Wehrmacht (IF44)";
-        description = "IRON FRONT ONLY: German Wehrmacht in Field Grey";
-        languages[] = {{"west", 100}};
-        side = "west";
-        camouflage[] = {};
-        rolePrefix = "Wehrmacht";
-        vehicleClassnames[] = {
-            {"CO", "LIB_Kfz1"},
-            {"SL", "LIB_opelblitz_open_y_camo"},
-            {"FT", "LIB_opelblitz_open_y_camo"},
-            {"ATTCH", "LIB_opelblitz_open_y_camo"},
-            {"ENG", "LIB_opelblitz_open_y_camo"},
-            {"APC", "LIB_StuG_III_G"},
-            {"IFV", "LIB_PzKpfwIV_H"},
-            {"SPAAG", "LIB_PzKpfwV"},
-            {"TNK", "LIB_PzKpfwVI_E"},
-            {"TH", "LIB_FW190F8"},
-            {"AH", "LIB_FW190F8"},
-            {"CAS", "LIB_Ju87"},
-            {"Technical", "CUP_B_LR_Special_M2_GB_D"}
-        };
-    };
-
     class USA_OD {
         gear = "M14_COLT";
         uniform = "USA_OD";
@@ -1793,32 +1767,6 @@ class Faction {
         };
     };
 
-    class IF44_USSR {
-        gear = "IF44_USSR_G";
-        uniform = "IF44_USSR_U";
-        name = "Red Army (IF44)";
-        description = "IRON FRONT ONLY: Red Army in Summer Uniforms";
-        languages[] = {{"east", 100}};
-        side = "east";
-        camouflage[] = {};
-        rolePrefix = "Red Army";
-        vehicleClassnames[] = {
-            {"CO", "LIB_Willys_MB"},
-            {"SL", "LIB_zis5v"},
-            {"FT", "LIB_zis5v"},
-            {"ATTCH", "LIB_zis5v"},
-            {"ENG", "LIB_zis5v"},
-            {"APC", "LIB_SU85"},
-            {"IFV", "LIB_T34_76"},
-            {"SPAAG", "LIB_T34_85"},
-            {"TNK", "LIB_JS2_43"},
-            {"TH", "LIB_P39"},
-            {"AH", "LIB_P39"},
-            {"CAS", "LIB_Pe2"},
-            {"Technical", "LIB_Scout_M3"}
-        };
-    };
-
     class IND_F {
         gear = "Mk20_AAF_WD";
         uniform = "AAF_WD";
@@ -2310,32 +2258,6 @@ class Faction {
             {"AH", "CUP_I_Mi24_D_ION"},
             {"CAS", "CUP_O_Su25_TKA"},
             {"Technical", "CUP_O_UAZ_MG_SLA"}
-        };
-    };
-
-    class IF44_USA {
-        gear = "IF44_USA_G";
-        uniform = "IF44_USA_U";
-        name = "US Army (IF44)";
-        description = "IRON FRONT ONLY: US Army";
-        languages[] = {{"resistance", 100}};
-        side = "resistance";
-        camouflage[] = {};
-        rolePrefix = "US Army";
-        vehicleClassnames[] = {
-            {"CO", "LIB_US_Willys_MB"},
-            {"SL", "LIB_US_GMC_Open"},
-            {"FT", "LIB_US_GMC_Open"},
-            {"ATTCH", "LIB_US_GMC_Open"},
-            {"ENG", "LIB_US_GMC_Open"},
-            {"APC", "LIB_US_M3_Halftrack"},
-            {"IFV", "LIB_US_Scout_M3"},
-            {"SPAAG", "LIB_M4A3_75_Tubes"},
-            {"TNK", "LIB_M4A3_75"},
-            {"TH", "LIB_P47"},
-            {"AH", "LIB_P47"},
-            {"CAS", "LIB_P47"},
-            {"Technical", "LIB_US_M3_Halftrack"}
         };
     };
 
