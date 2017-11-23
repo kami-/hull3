@@ -101,6 +101,27 @@ class Hull3 {
         #include "assign\uniform\PMC_CBRN.h"
         #include "assign\uniform\USA_WD.h"
         #include "assign\uniform\USA_OD.h"
+		#include "assign\uniform\FOW_USMC_U.h"
+        #include "assign\uniform\FOW_USA_U.h"
+        #include "assign\uniform\FOW_USA_PAC_U.h"
+        #include "assign\uniform\FOW_USA_PARA_U.h"
+        #include "assign\uniform\FOW_BAF_U.h"
+        #include "assign\uniform\FOW_BAF_PARA_U.h"
+        #include "assign\uniform\FOW_BAF_PAC_U.h"
+        #include "assign\uniform\FOW_AUS_U.h"
+        #include "assign\uniform\FOW_CAN_U.h"
+        #include "assign\uniform\FOW_BAF_ESX_U.h"
+        #include "assign\uniform\FOW_BAF_COM_U.h"
+        #include "assign\uniform\IF44_POL_U.h"
+        #include "assign\uniform\IF44_GER_SN_U.h"
+        #include "assign\uniform\FOW_GER_U.h"
+        #include "assign\uniform\FOW_GER_PARA_U.h"
+        #include "assign\uniform\FOW_GER_SS_U.h"
+        #include "assign\uniform\FOW_IJA_U.h"
+        #include "assign\uniform\FOW_IJA_SNLF_U.h"
+        #include "assign\uniform\IF44_USSR_U.h"
+        #include "assign\uniform\IF44_USSR_SN_U.h"
+        #include "assign\uniform\IF44_USSR_NKVD_U.h"
 
         unitBaseClass = "Rifleman";
     };
@@ -172,6 +193,15 @@ class Hull3 {
         #include "assign\gear\ACR_BLK_PMC.h"
         #include "assign\gear\ACR_TAN_PMC.h"
         #include "assign\gear\M14_COLT.h"
+        #include "assign\gear\FOW_USA_G.h"
+        #include "assign\gear\FOW_USMC_G.h"
+        #include "assign\gear\FOW_BAF_42_G.h"
+        #include "assign\gear\FOW_BAF_44_G.h"
+        #include "assign\gear\FOW_BAF_PAC_G.h"
+        #include "assign\gear\FOW_GER_G.h"
+        #include "assign\gear\FOW_GER_PARA_G.h"
+        #include "assign\gear\FOW_IJA_G.h"
+        #include "assign\gear\IF44_USSR_G.h"
 
         unitBaseClass = "Rifleman";
         vehicleBaseClass = "Vehicle";
