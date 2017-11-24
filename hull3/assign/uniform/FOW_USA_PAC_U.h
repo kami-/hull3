@@ -3,14 +3,14 @@ class FOW_USA_PAC_U {
         headGear = "fow_h_us_m1";
         goggles = "";
         uniform = "fow_u_us_hbt_01_private";
-        vest = "fow_v_us_garand";
+        vest = "fow_v_us_garand_ARM";
         backpack = "fow_b_us_m1928";
     };
 
     class Leader : Rifleman {
         headGear = "fow_h_us_m1_nco";
         uniform = "fow_u_us_m37_02_private";
-        vest = "fow_v_us_carbine_nco";
+        vest = "fow_v_us_carbine_nco_ARM";
     };
 
     class Officer : Leader {
@@ -21,7 +21,7 @@ class FOW_USA_PAC_U {
     class Crew : Rifleman {
         headGear = "H_LIB_US_Helmet_Tank";
         uniform = "fow_u_us_pilot_01";
-        vest = "fow_v_us_45";
+        vest = "fow_v_us_45_ARM";
         backpack = "fow_b_us_m1944";
     };
 
@@ -29,7 +29,7 @@ class FOW_USA_PAC_U {
     };
 
     class XO : CO {
-        vest = "fow_v_us_thompson_nco";
+        vest = "fow_v_us_thompson_nco_ARM";
         backpack = "fow_b_us_radio";
     };
 
@@ -38,29 +38,29 @@ class FOW_USA_PAC_U {
 
     class Medic : Rifleman {
         headGear = "fow_h_us_m1_medic";
-        vest = "fow_v_us_carbine";
+        vest = "fow_v_us_carbine_ARM";
         backpack = "fow_b_us_m1944";
         uniform = "fow_u_us_hbt_02_private";
     };
 
     class FTL : Leader {
-        vest = "fow_v_us_thompson";
+        vest = "fow_v_us_thompson_ARM";
     };
 
     class AR : Rifleman {
         headGear = "fow_h_us_m1_closed";
         uniform = "fow_u_us_hbt_01_private";
-        vest = "fow_v_us_bar";
+        vest = "fow_v_us_bar_ARM";
     };
 
     class AAR : Rifleman {
         backpack = "fow_b_us_m1928";
-        vest = "fow_v_us_grenade";
+        vest = "fow_v_us_grenade_ARM";
     };
 
     class RAT : Rifleman {
         headGear = "fow_h_us_m1_folded";
-        vest = "fow_v_us_carbine";
+        vest = "fow_v_us_carbine_ARM";
     };
 
     class MMGG : AR {
@@ -68,36 +68,36 @@ class FOW_USA_PAC_U {
     };
 
     class MMGAG : AAR {
-        vest = "fow_v_us_asst_mg";
+        vest = "fow_v_us_asst_mg_ARM";
     };
 
     class HMGG : AR {
-        vest = "fow_v_us_carbine";
+        vest = "fow_v_us_carbine_ARM";
         backpack = "fow_b_usa_m1919_weapon";
     };
 
     class HMGAG : AAR {
-        vest = "fow_v_us_asst_mg";
+        vest = "fow_v_us_asst_mg_ARM";
         backpack = "fow_b_usa_m1919_support";
     };
 
     class HMGAC : AAR {
-        vest = "fow_v_us_garand";
+        vest = "fow_v_us_garand_ARM";
         backpack = "fow_b_usa_m1919_weapon";
     };
 
     class MATG : RAT {
-        vest = "fow_v_us_carbine";
+        vest = "fow_v_us_carbine_ARM";
         backpack = "fow_b_us_rocket_bag";
     };
 
     class MATAG : AAR {
-        vest = "fow_v_us_thompson";
+        vest = "fow_v_us_thompson_ARM";
         backpack = "fow_b_us_rocket_bag";
     };
 
     class MATAC : MATAG {
-        vest = "fow_v_us_garand";
+        vest = "fow_v_us_garand_ARM";
         backpack = "fow_b_us_rocket_bag";
     };
 
@@ -138,23 +138,23 @@ class FOW_USA_PAC_U {
     };
 
     class MTRG : AR {
-        vest = "fow_v_us_carbine";
+        vest = "fow_v_us_carbine_ARM";
         backpack = "fow_b_us_m2_mortar_weapon";
     };
 
     class MTRAG : AAR {
-        vest = "fow_v_us_thompson";
+        vest = "fow_v_us_thompson_ARM";
         backpack = "fow_b_us_m2_mortar_support";
     };
 
     class MTRAC : AAR {
-        vest = "fow_v_us_garand";
+        vest = "fow_v_us_garand_ARM";
         backpack = "fow_b_us_m2_mortar_weapon";
     };
 
     class ENG : Rifleman {
         uniform = "fow_u_us_hbt_01_private";
-        vest = "fow_v_us_carbine_eng";
+        vest = "fow_v_us_carbine_eng_ARM";
         backpack = "fow_b_us_m1944";
         headGear = "fow_h_us_m1";
     };
@@ -165,7 +165,7 @@ class FOW_USA_PAC_U {
     class SN : Rifleman {
         headGear = "fow_h_us_m1";
         uniform = "fow_u_us_hbt_02_private";
-        vest = "fow_v_us_garand";
+        vest = "fow_v_us_garand_ARM";
         backpack = "fow_b_us_bandoleer";
     };
 
@@ -184,7 +184,7 @@ class FOW_USA_PAC_U {
     class P : Crew {
         headGear = "fow_h_us_flight_helmet";
         uniform = "fow_u_us_pilot_02";
-        vest = "fow_v_us_45";
+        vest = "fow_v_us_45_ARM";
         backpack = "B_Parachute";
     };
 

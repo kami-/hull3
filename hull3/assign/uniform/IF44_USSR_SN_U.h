@@ -3,12 +3,12 @@ class IF44_USSR_SN_U {
         headGear = "H_LIB_SOV_RA_Helmet_w";
         goggles = "";
         uniform = "U_LIB_SOV_Strelok_w";
-        vest = "V_LIB_SOV_RA_MosinBelt";
+        vest = "V_LIB_SOV_RA_MosinBelt_ARM";
         backpack = "B_LIB_SOV_RA_Shinel";
     };
 
     class Leader : Rifleman {
-        vest = "V_LIB_SOV_RA_OfficerVest";
+        vest = "V_LIB_SOV_RA_OfficerVest_ARM";
         backpack = "B_LIB_SOV_RA_GasBag";
     };
 
@@ -20,13 +20,13 @@ class IF44_USSR_SN_U {
     class Crew : Rifleman {
         headGear = "H_LIB_SOV_TankHelmet";
         uniform = "U_LIB_SOV_Tank_ryadovoi";
-        vest = "V_LIB_SOV_RAZV_MGBelt";
+        vest = "V_LIB_SOV_RAZV_MGBelt_ARM";
         backpack = "B_LIB_SOV_RA_GasBag";
     };
 
     class CO : Officer {
         uniform = "U_LIB_SOV_Strelok_2_w";
-        vest = "V_LIB_SOV_RA_OfficerVest";
+        vest = "V_LIB_SOV_RA_OfficerVest_ARM";
     };
 
     class XO : CO {
@@ -40,7 +40,7 @@ class IF44_USSR_SN_U {
     class Medic : Rifleman {
         backpack = "B_LIB_SOV_RA_MedicalBag_Empty";
         uniform = "U_LIB_SOV_Strelok_w";
-        vest = "V_LIB_SOV_RA_SVTBelt";
+        vest = "V_LIB_SOV_RA_SVTBelt_ARM";
         headGear = "H_LIB_SOV_RA_Helmet_w";
     };
 
@@ -50,19 +50,19 @@ class IF44_USSR_SN_U {
     };
 
     class AR : Rifleman {
-        vest = "V_LIB_SOV_RA_MGBelt";
+        vest = "V_LIB_SOV_RA_MGBelt_ARM";
         headGear = "H_LIB_SOV_RA_Helmet_w";
         uniform = "U_LIB_SOV_Strelok_2_w";
         backpack = "B_LIB_SOV_RA_MGAmmoBag_Empty";
     };
 
     class AAR : Rifleman {
-        vest = "V_LIB_SOV_RA_MGBelt";
+        vest = "V_LIB_SOV_RA_MGBelt_ARM";
         backpack = "B_LIB_SOV_RA_MGAmmoBag_Empty";
     };
 
     class RAT : Rifleman {
-        vest = "V_LIB_SOV_RA_MosinBelt";
+        vest = "V_LIB_SOV_RA_MosinBelt_ARM";
         uniform = "U_LIB_SOV_Strelok_w";
     };
 
@@ -75,16 +75,16 @@ class IF44_USSR_SN_U {
 
     class HMGG : AR {
         backpack = "LIB_Maxim_Bar";
-        vest = "V_LIB_SOV_IShBrVestMG";
+        vest = "V_LIB_SOV_IShBrVestMG_ARM";
     };
 
     class HMGAG : AAR {
         backpack = "LIB_Maxim_Bag";
-        vest = "V_LIB_SOV_IShBrVestPPShDisc";
+        vest = "V_LIB_SOV_IShBrVestPPShDisc_ARM";
     };
 
     class HMGAC : HMGG {
-        vest = "V_LIB_SOV_IShBrVestPPShMag";
+        vest = "V_LIB_SOV_IShBrVestPPShMag_ARM";
         backpack = "LIB_Maxim_Bar";
     };
 
@@ -145,19 +145,19 @@ class IF44_USSR_SN_U {
     class ENG : Rifleman {
         uniform = "U_LIB_SOV_Strelok_2_w";
         headGear = "H_LIB_SOV_Ushanka";
-        vest = "V_LIB_SOV_RA_PPShBelt";
+        vest = "V_LIB_SOV_RA_PPShBelt_ARM";
         backpack = "B_LIB_SOV_RA_GasBag";
     };
 
     class ENGA : ENG {
         uniform = "U_LIB_SOV_Strelok_w";
-        vest = "V_LIB_SOV_RA_MosinBelt";
+        vest = "V_LIB_SOV_RA_MosinBelt_ARM";
         headGear = "H_LIB_SOV_Ushanka";
     };
 
     class SN : Rifleman {
         uniform = "U_LIB_SOV_Sniper_w";
-        vest = "V_LIB_SOV_RA_SniperVest";
+        vest = "V_LIB_SOV_RA_SniperVest_ARM";
         headGear = "H_LIB_SOV_RA_Helmet_w";
         backpack = "B_LIB_SOV_RA_Shinel";
     };
@@ -167,7 +167,7 @@ class IF44_USSR_SN_U {
 
     class VC : Crew {
         uniform = "U_LIB_SOV_Tank_kapitan";
-        vest = "V_LIB_SOV_RA_TankOfficerSet";
+        vest = "V_LIB_SOV_RA_TankOfficerSet_ARM";
     };
 
     class VG : Crew {
@@ -179,7 +179,7 @@ class IF44_USSR_SN_U {
     class P : Crew {
         headGear = "H_LIB_SOV_PilotHelmet";
         uniform = "U_LIB_SOV_Pilot";
-        vest = "V_LIB_SOV_RA_Belt";
+        vest = "V_LIB_SOV_RA_Belt_ARM";
         backpack = "B_Parachute";
     };
 
