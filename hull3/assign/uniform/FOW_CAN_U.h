@@ -19,13 +19,13 @@ class FOW_CAN {
     class Crew : Rifleman {
         headGear = "fow_h_uk_beret_rtr";
         uniform = "fow_u_uk_bd40_can_01_private";
-        vest = "fow_v_uk_officer";
+        vest = "fow_v_uk_officer_ARM";
         backpack = "fow_b_uk_p37";
     };
 
     class CO : Officer {
         uniform = "fow_u_uk_bd40_can_01_lieutenant";
-        vest = "fow_v_uk_officer";
+        vest = "fow_v_uk_officer_ARM";
     };
 
     class XO : CO {
@@ -47,7 +47,7 @@ class FOW_CAN {
     };
 
     class AR : Rifleman {
-        vest = "fow_v_uk_bren";
+        vest = "fow_v_uk_bren_ARM";
         headGear = "fow_h_uk_mk3";
         uniform = "fow_u_uk_bd40_01_lance_corporal";
         backpack = "fow_b_uk_bergenpack";
@@ -136,7 +136,7 @@ class FOW_CAN {
 
     class ENG : Rifleman {
         uniform = "fow_u_uk_bd40_can_01_sergeant";
-        vest = "fow_v_uk_bren";
+        vest = "fow_v_uk_bren_ARM";
         backpack = "fow_b_uk_p37_shovel";
     };
 
@@ -165,7 +165,7 @@ class FOW_CAN {
     class P : Crew {
         headGear = "fow_h_us_flight_helmet";
         uniform = "fow_u_uk_bd40_can_01_sergeant";
-        vest = "fow_v_uk_officer";
+        vest = "fow_v_uk_officer_ARM";
         backpack = "B_Parachute";
     };
 

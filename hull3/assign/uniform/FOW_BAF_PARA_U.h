@@ -8,7 +8,7 @@ class FOW_BAF_PARA_U {
     };
 
     class Leader : Rifleman {
-        vest = "fow_v_uk_para_sten";
+        vest = "fow_v_uk_para_sten_ARM";
     };
 
     class Officer : Leader {
@@ -19,13 +19,13 @@ class FOW_BAF_PARA_U {
     class Crew : Rifleman {
         headGear = "fow_h_uk_beret_rtr";
         uniform = "fow_u_uk_bd40_private";
-        vest = "fow_v_uk_officer_green";
+        vest = "fow_v_uk_officer_green_ARM";
         backpack = "fow_b_uk_p37_blanco";
     };
 
     class CO : Officer {
         uniform = "fow_u_uk_parasmock";
-        vest = "fow_v_uk_officer_green";
+        vest = "fow_v_uk_officer_green_ARM";
     };
 
     class XO : CO {
@@ -47,7 +47,7 @@ class FOW_BAF_PARA_U {
     };
 
     class AR : Rifleman {
-        vest = "fow_v_uk_para_bren";
+        vest = "fow_v_uk_para_bren_ARM";
         headGear = "fow_h_uk_mk2_para_camo";
         uniform = "fow_u_uk_parasmock";
         backpack = "fow_b_uk_bergenpack";
@@ -58,7 +58,7 @@ class FOW_BAF_PARA_U {
     };
 
     class RAT : Rifleman {
-        vest = "fow_v_uk_para_sten";
+        vest = "fow_v_uk_para_sten_ARM";
     };
 
     class MMGG : AR {
@@ -136,7 +136,7 @@ class FOW_BAF_PARA_U {
 
     class ENG : Rifleman {
         uniform = "fow_u_uk_parasmock";
-        vest = "fow_v_uk_para_bren";
+        vest = "fow_v_uk_para_bren_ARM";
         backpack = "fow_b_uk_p37_blanco_shovel";
     };
 
@@ -165,7 +165,7 @@ class FOW_BAF_PARA_U {
     class P : Crew {
         headGear = "fow_h_us_flight_helmet";
         uniform = "fow_u_uk_bd40_sergeant";
-        vest = "fow_v_uk_officer_green";
+        vest = "fow_v_uk_officer_green_ARM";
         backpack = "B_Parachute";
     };
 

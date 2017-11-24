@@ -3,12 +3,12 @@ class IF44_GER_SN_U {
         headGear = "H_LIB_GER_Helmet_w";
         goggles = "";
         uniform = "U_LIB_GER_Soldier_camo_w";
-        vest = "fow_v_heer_k98";
+        vest = "fow_v_heer_k98_ARM";
         backpack = "fow_b_heer_aframe";
     };
 
     class Leader : Rifleman {
-        vest = "fow_v_heer_mp40_nco";
+        vest = "fow_v_heer_mp40_nco_ARM";
     };
 
     class Officer : Leader {
@@ -19,13 +19,13 @@ class IF44_GER_SN_U {
     class Crew : Rifleman {
         headGear = "fow_h_ger_m38_feldmutze_panzer";
         uniform = "fow_u_ger_tankcrew_01_shutz";
-        vest = "fow_v_heer_tankcrew_p38";
+        vest = "fow_v_heer_tankcrew_p38_ARM";
         backpack = "fow_b_heer_aframe";
     };
 
     class CO : Officer {
         uniform = "U_LIB_GER_Scharfschutze_2_w";
-        vest = "fow_v_heer_mp40_nco";
+        vest = "fow_v_heer_mp40_nco_ARM";
     };
 
     class XO : CO {
@@ -38,7 +38,7 @@ class IF44_GER_SN_U {
 
     class Medic : Rifleman {
         backpack = "fow_b_tornister_medic";
-        vest = "fow_v_heer_g43";
+        vest = "fow_v_heer_g43_ARM";
         uniform = "U_LIB_GER_Scharfschutze_2_w";
         headGear = "H_LIB_GER_Helmet_Medic";
     };
@@ -46,11 +46,11 @@ class IF44_GER_SN_U {
     class FTL : Leader {
         headGear = "H_LIB_GER_Fieldcap";
         uniform = "U_LIB_GER_Scharfschutze_2_w";
-        vest = "fow_v_heer_mp44";
+        vest = "fow_v_heer_mp44_ARM";
     };
 
     class AR : Rifleman {
-        vest = "fow_v_heer_mg";
+        vest = "fow_v_heer_mg_ARM";
         headGear = "H_LIB_GER_Helmet_Glasses_w";
         uniform = "U_LIB_GER_Soldier_camo_w";
         backpack = "fow_b_heer_ammo_belt";
@@ -59,12 +59,12 @@ class IF44_GER_SN_U {
     class AAR : Rifleman {
         headGear = "H_LIB_GER_Helmet_net_w";
         backpack = "fow_b_ammoboxes_mg34_42";
-        vest = "fow_v_heer_k98_ass";
+        vest = "fow_v_heer_k98_ass_ARM";
     };
 
     class RAT : Rifleman {
         uniform = "U_LIB_GER_Soldier3_w";
-        vest = "fow_v_heer_g43";
+        vest = "fow_v_heer_g43_ARM";
         backpack = "fow_b_grenadebag";
     };
 
@@ -73,7 +73,7 @@ class IF44_GER_SN_U {
 
     class MMGAG : AAR {
         uniform = "U_LIB_GER_Scharfschutze_2_w";
-        vest = "fow_v_heer_k98_ass";
+        vest = "fow_v_heer_k98_ass_ARM";
         backpack = "fow_b_ammoboxes";
     };
 
@@ -93,7 +93,7 @@ class IF44_GER_SN_U {
     class MATAG : MATG {
         headGear = "H_LIB_GER_Helmet_net_w";
         uniform = "U_LIB_GER_Soldier_camo_w";
-        vest = "fow_v_heer_mp40";
+        vest = "fow_v_heer_mp40_ARM";
     };
 
     class MATAC : MATG {
@@ -147,13 +147,13 @@ class IF44_GER_SN_U {
     class ENG : Rifleman {
         uniform = "U_LIB_GER_Scharfschutze_2_w";
         headGear = "H_LIB_GER_Fieldcap";
-        vest = "fow_v_heer_mp40";
+        vest = "fow_v_heer_mp40_ARM";
         backpack = "fow_b_uk_bergenpack";
     };
 
     class ENGA : ENG {
         uniform = "U_LIB_GER_Soldier_camo_w";
-        vest = "fow_v_heer_k98";
+        vest = "fow_v_heer_k98_ARM";
     };
 
     class SN : Rifleman {
@@ -176,7 +176,7 @@ class IF44_GER_SN_U {
     class P : Crew {
         headGear = "H_LIB_GER_LW_PilotHelmet";
         uniform = "U_LIB_GER_LW_pilot";
-        vest = "V_LIB_GER_OfficerBelt";
+        vest = "V_LIB_GER_OfficerBelt_ARM";
         backpack = "B_Parachute";
     };
 

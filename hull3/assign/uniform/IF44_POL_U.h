@@ -3,12 +3,12 @@ class IF44_POL_U {
         headGear = "H_LIB_WP_Helmet";
         goggles = "";
         uniform = "U_LIB_WP_Soldier_camo_1";
-        vest = "fow_v_heer_k98";
+        vest = "fow_v_heer_k98_ARM";
         backpack = "fow_b_heer_aframe";
     };
 
     class Leader : Rifleman {
-        vest = "fow_v_heer_mp40_nco";
+        vest = "fow_v_heer_mp40_nco_ARM";
     };
 
     class Officer : Leader {
@@ -19,13 +19,13 @@ class IF44_POL_U {
     class Crew : Rifleman {
         headGear = "H_LIB_WP_Cap";
         uniform = "U_LIB_WP_Soldier_camo_1";
-        vest = "fow_v_heer_tankcrew_p38";
+        vest = "fow_v_heer_tankcrew_p38_ARM";
         backpack = "fow_b_heer_aframe";
     };
 
     class CO : Officer {
         uniform = "U_LIB_WP_Soldier_camo_2";
-        vest = "fow_v_heer_mp40_nco";
+        vest = "fow_v_heer_mp40_nco_ARM";
     };
 
     class XO : CO {
@@ -47,7 +47,7 @@ class IF44_POL_U {
     };
 
     class AR : Rifleman {
-        vest = "fow_v_heer_mg";
+        vest = "fow_v_heer_mg_ARM";
         headGear = "H_LIB_WP_Helmet_camo";
         uniform = "U_LIB_WP_Soldier_camo_3";
         backpack = "fow_b_heer_ammo_belt";
@@ -58,7 +58,7 @@ class IF44_POL_U {
     };
 
     class RAT : Rifleman {
-        vest = "fow_v_heer_g43";
+        vest = "fow_v_heer_g43_ARM";
         backpack = "fow_b_grenadebag";
     };
 
@@ -137,7 +137,7 @@ class IF44_POL_U {
     class ENG : Rifleman {
         uniform = "U_LIB_WP_Soldier_camo_1";
         headGear = "H_LIB_WP_Cap";
-        vest = "fow_v_heer_g43";
+        vest = "fow_v_heer_g43_ARM";
         backpack = "fow_b_uk_bergenpack";
     };
 
