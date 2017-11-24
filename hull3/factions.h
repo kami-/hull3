@@ -2417,4 +2417,550 @@ class Faction {
         };
     };
 
+    class FOW_USMC {
+        gear = "FOW_USMC_G";
+        uniform = "FOW_USMC_U";
+        name = "FOW USMC";
+        description = "United States Marine Corps - Pacific Theatre";
+        languages[] = {{"resistance", 100}};
+        side = "resistance";
+        camouflage[] = {};
+        rolePrefix = "USMC";
+        vehicleClassnames[] = {
+            {"CO", "LIB_US_Willys_MB"},
+            {"SL", "LIB_US_GMC_Open"},
+            {"FT", "LIB_US_Willys_MB"},
+            {"ATTCH", "LIB_US_Willys_MB"},
+            {"ENG", "LIB_US_GMC_Ammo"},
+            {"APC", "fow_v_lvta2_usmc"},
+            {"IFV", "LIB_US_M3_Halftrack"},
+            {"SPAAG", "LIB_M8_Greyhound"},
+            {"TNK", "LIB_M4A3_75_Tubes"},
+            {"TH", "LIB_C47_Skytrain"},
+            {"AH", "LIB_P47"},
+            {"CAS", "LIB_P47"},
+            {"Technical", "LIB_US_Scout_M3_FFV"}
+        };
+    };
+
+    class FOW_USA_PAC {
+        gear = "FOW_USA_G";
+        uniform = "FOW_USA_PAC_U";
+        name = "FOW US Army Pacific";
+        description = "United States Army - Pacific Theatre";
+        languages[] = {{"resistance", 100}};
+        side = "resistance";
+        camouflage[] = {};
+        rolePrefix = "US Army";
+        vehicleClassnames[] = {
+            {"CO", "LIB_US_Willys_MB"},
+            {"SL", "LIB_US_GMC_Open"},
+            {"FT", "LIB_US_Willys_MB"},
+            {"ATTCH", "LIB_US_Willys_MB"},
+            {"ENG", "LIB_US_GMC_Ammo"},
+            {"APC", "fow_v_lvta2_usmc"},
+            {"IFV", "LIB_US_M3_Halftrack"},
+            {"SPAAG", "LIB_M8_Greyhound"},
+            {"TNK", "LIB_M4A3_75_Tubes"},
+            {"TH", "LIB_C47_Skytrain"},
+            {"AH", "LIB_P47"},
+            {"CAS", "LIB_P47"},
+            {"Technical", "LIB_US_Scout_M3_FFV"}
+        };
+    };
+
+    class FOW_USA {
+        gear = "FOW_USA_G";
+        uniform = "FOW_USA_U";
+        name = "FOW US Army";
+        description = "United States Army - European Theatre";
+        languages[] = {{"resistance", 100}};
+        side = "resistance";
+        camouflage[] = {};
+        rolePrefix = "US Army";
+        vehicleClassnames[] = {
+            {"CO", "LIB_US_Willys_MB"},
+            {"SL", "LIB_US_GMC_Open"},
+            {"FT", "LIB_US_Willys_MB"},
+            {"ATTCH", "LIB_US_Willys_MB"},
+            {"ENG", "LIB_US_GMC_Ammo"},
+            {"APC", "LIB_US_M3_Halftrack"},
+            {"IFV", "LIB_M8_Greyhound"},
+            {"SPAAG", "LIB_M5A1_Stuart"},
+            {"TNK", "LIB_M4A3_75"},
+            {"TH", "LIB_C47_Skytrain"},
+            {"AH", "LIB_P47"},
+            {"CAS", "LIB_P47"},
+            {"Technical", "LIB_US_Scout_M3_FFV"}
+        };
+    };
+
+    class FOW_USA_PARA {
+        gear = "FOW_USA_G";
+        uniform = "FOW_USA_PARA_U";
+        name = "FOW US Army Airborne";
+        description = "United States Army Airborne - European Theatre";
+        languages[] = {{"resistance", 100}};
+        side = "resistance";
+        camouflage[] = {};
+        rolePrefix = "US Army Airborne";
+        vehicleClassnames[] = {
+            {"CO", "LIB_US_Willys_MB"},
+            {"SL", "LIB_US_GMC_Open"},
+            {"FT", "LIB_US_Willys_MB"},
+            {"ATTCH", "LIB_US_Willys_MB"},
+            {"ENG", "LIB_US_GMC_Ammo"},
+            {"APC", "LIB_US_M3_Halftrack"},
+            {"IFV", "LIB_M8_Greyhound"},
+            {"SPAAG", "LIB_M5A1_Stuart"},
+            {"TNK", "LIB_M4A3_75"},
+            {"TH", "LIB_C47_Skytrain"},
+            {"AH", "LIB_P47"},
+            {"CAS", "LIB_P47"},
+            {"Technical", "LIB_US_Scout_M3_FFV"}
+        };
+    };
+
+    class FOW_BAF {
+        gear = "FOW_BAF_42_G";
+        uniform = "FOW_BAF_U";
+        name = "FOW British Army (1942)";
+        description = "British Army 1942";
+        languages[] = {{"resistance", 100}};
+        side = "resistance";
+        camouflage[] = {};
+        rolePrefix = "British Army";
+        vehicleClassnames[] = {
+            {"CO", "LIB_US_Willys_MB"},
+            {"SL", "LIB_US_GMC_Open"},
+            {"FT", "LIB_US_Willys_MB"},
+            {"ATTCH", "LIB_US_Willys_MB"},
+            {"ENG", "LIB_US_GMC_Ammo"},
+            {"APC", "fow_v_universalCarrier"},
+            {"IFV", "fow_v_cromwell_uk"},
+            {"SPAAG", "LIB_US_M3_Halftrack"},
+            {"TNK", "LIB_M4A4_FIREFLY"},
+            {"TH", "LIB_C47_Skytrain"},
+            {"AH", "LIB_P47"},
+            {"CAS", "LIB_P47"},
+            {"Technical", "fow_v_universalCarrier"}
+        };
+    };
+
+    class FOW_BAF_PARA {
+        gear = "FOW_BAF_42_G";
+        uniform = "FOW_BAF_U";
+        name = "FOW British Army 2Para (1942)";
+        description = "British Army 2Para 1942";
+        languages[] = {{"resistance", 100}};
+        side = "resistance";
+        camouflage[] = {};
+        rolePrefix = "British Army Airborne";
+        vehicleClassnames[] = {
+            {"CO", "LIB_US_Willys_MB"},
+            {"SL", "LIB_US_GMC_Open"},
+            {"FT", "LIB_US_Willys_MB"},
+            {"ATTCH", "LIB_US_Willys_MB"},
+            {"ENG", "LIB_US_GMC_Ammo"},
+            {"APC", "fow_v_universalCarrier"},
+            {"IFV", "fow_v_cromwell_uk"},
+            {"SPAAG", "LIB_US_M3_Halftrack"},
+            {"TNK", "LIB_M4A4_FIREFLY"},
+            {"TH", "LIB_C47_Skytrain"},
+            {"AH", "LIB_P47"},
+            {"CAS", "LIB_P47"},
+            {"Technical", "fow_v_universalCarrier"}
+        };
+    };
+
+    class FOW_BAF_PAC {
+        gear = "FOW_BAF_PAC_G";
+        uniform = "FOW_BAF_PAC_U";
+        name = "FOW British Army Pacific";
+        description = "British Army Pacific";
+        languages[] = {{"resistance", 100}};
+        side = "resistance";
+        camouflage[] = {};
+        rolePrefix = "British Army";
+        vehicleClassnames[] = {
+            {"CO", "LIB_US_Willys_MB"},
+            {"SL", "LIB_US_GMC_Open"},
+            {"FT", "LIB_US_Willys_MB"},
+            {"ATTCH", "LIB_US_Willys_MB"},
+            {"ENG", "LIB_US_GMC_Ammo"},
+            {"APC", "fow_v_universalCarrier"},
+            {"IFV", "fow_v_lvta2_usmc"},
+            {"SPAAG", "LIB_US_M3_Halftrack"},
+            {"TNK", "LIB_M4A3_75"},
+            {"TH", "LIB_C47_Skytrain"},
+            {"AH", "LIB_P47"},
+            {"CAS", "LIB_P47"},
+            {"Technical", "fow_v_universalCarrier"}
+        };
+    };
+
+    class FOW_AUS {
+        gear = "FOW_BAF_PAC_G";
+        uniform = "FOW_AUS_U";
+        name = "FOW Australian Army Pacific";
+        description = "Australian Army Pacific";
+        languages[] = {{"resistance", 100}};
+        side = "resistance";
+        camouflage[] = {};
+        rolePrefix = "Australian Army";
+        vehicleClassnames[] = {
+            {"CO", "LIB_US_Willys_MB"},
+            {"SL", "LIB_US_GMC_Open"},
+            {"FT", "LIB_US_Willys_MB"},
+            {"ATTCH", "LIB_US_Willys_MB"},
+            {"ENG", "LIB_US_GMC_Ammo"},
+            {"APC", "fow_v_universalCarrier"},
+            {"IFV", "fow_v_lvta2_usmc"},
+            {"SPAAG", "LIB_US_M3_Halftrack"},
+            {"TNK", "LIB_M4A3_75"},
+            {"TH", "LIB_C47_Skytrain"},
+            {"AH", "LIB_P47"},
+            {"CAS", "LIB_P47"},
+            {"Technical", "fow_v_universalCarrier"}
+        };
+    };
+
+    class FOW_CAN {
+        gear = "FOW_BAF_44_G";
+        uniform = "FOW_CAN_U";
+        name = "FOW Canadian Army";
+        description = "Royal Winnipeg Rifles";
+        languages[] = {{"resistance", 100}};
+        side = "resistance";
+        camouflage[] = {};
+        rolePrefix = "Royal Winnipeg Rifles";
+        vehicleClassnames[] = {
+            {"CO", "LIB_US_Willys_MB"},
+            {"SL", "LIB_US_GMC_Open"},
+            {"FT", "LIB_US_Willys_MB"},
+            {"ATTCH", "LIB_US_Willys_MB"},
+            {"ENG", "LIB_US_GMC_Ammo"},
+            {"APC", "fow_v_universalCarrier"},
+            {"IFV", "LIB_M4A4_FIREFLY"},
+            {"SPAAG", "LIB_US_M3_Halftrack"},
+            {"TNK", "LIB_M4A4_FIREFLY"},
+            {"TH", "LIB_C47_Skytrain"},
+            {"AH", "LIB_P47"},
+            {"CAS", "LIB_P47"},
+            {"Technical", "fow_v_universalCarrier"}
+        };
+    };
+
+    class FOW_BAF_ESX {
+        gear = "FOW_BAF_44_G";
+        uniform = "FOW_BAF_ESX_U";
+        name = "FOW British Army Essex Regiment (1944)";
+        description = "Essex Regiment (1944)";
+        languages[] = {{"resistance", 100}};
+        side = "resistance";
+        camouflage[] = {};
+        rolePrefix = "British Army";
+        vehicleClassnames[] = {
+            {"CO", "LIB_US_Willys_MB"},
+            {"SL", "LIB_US_GMC_Open"},
+            {"FT", "LIB_US_Willys_MB"},
+            {"ATTCH", "LIB_US_Willys_MB"},
+            {"ENG", "LIB_US_GMC_Ammo"},
+            {"APC", "fow_v_universalCarrier"},
+            {"IFV", "fow_v_cromwell_uk"},
+            {"SPAAG", "LIB_US_M3_Halftrack"},
+            {"TNK", "LIB_M4A4_FIREFLY"},
+            {"TH", "LIB_C47_Skytrain"},
+            {"AH", "LIB_P47"},
+            {"CAS", "LIB_P47"},
+            {"Technical", "fow_v_universalCarrier"}
+        };
+    };
+
+    class FOW_BAF_COM {
+        gear = "FOW_BAF_42_G";
+        uniform = "FOW_BAF_COM_U";
+        name = "FOW British Army Commandos";
+        description = "British Army Commandos";
+        languages[] = {{"resistance", 100}};
+        side = "resistance";
+        camouflage[] = {};
+        rolePrefix = "British Army Commando";
+        vehicleClassnames[] = {
+            {"CO", "LIB_US_Willys_MB"},
+            {"SL", "LIB_US_GMC_Open"},
+            {"FT", "LIB_US_Willys_MB"},
+            {"ATTCH", "LIB_US_Willys_MB"},
+            {"ENG", "LIB_US_GMC_Ammo"},
+            {"APC", "fow_v_universalCarrier"},
+            {"IFV", "fow_v_cromwell_uk"},
+            {"SPAAG", "LIB_US_M3_Halftrack"},
+            {"TNK", "LIB_M4A4_FIREFLY"},
+            {"TH", "LIB_C47_Skytrain"},
+            {"AH", "LIB_P47"},
+            {"CAS", "LIB_P47"},
+            {"Technical", "fow_v_universalCarrier"}
+        };
+    };
+
+    class IF44_POL {
+        gear = "FOW_GER_G";
+        uniform = "IF44_POL_U";
+        name = "IF44 Polish Home Army";
+        description = "Polish Home Army";
+        languages[] = {{"resistance", 100}};
+        side = "resistance";
+        camouflage[] = {};
+        rolePrefix = "Polish Home Army";
+        vehicleClassnames[] = {
+            {"CO", "LIB_Kfz1"},
+            {"SL", "LIB_OpelBlitz_Open_Y_Camo"},
+            {"FT", "LIB_Kfz1"},
+            {"ATTCH", "LIB_Kfz1"},
+            {"ENG", "LIB_OpelBlitz_Ammo"},
+            {"APC", "LIB_Sdkfz251"},
+            {"IFV", "LIB_StuG_III_G"},
+            {"SPAAG", "LIB_FlakPanzerIV_Wirbelwind"},
+            {"TNK", "LIB_PzKpfwIV_H"},
+            {"TH", "LIB_FW190F8"},
+            {"AH", "LIB_FW190F8"},
+            {"CAS", "LIB_FW190F8"},
+            {"Technical", "LIB_Kfz1_MG42"}
+        };
+    };
+
+    class IF44_GER_SN {
+        gear = "FOW_GER_G";
+        uniform = "IF44_GER_SN_U";
+        name = "IF44 Heer Snow";
+        description = "German Army Snow";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {};
+        rolePrefix = "Heer";
+        vehicleClassnames[] = {
+            {"CO", "LIB_Kfz1_w"},
+            {"SL", "LIB_OpelBlitz_Open_Y_Camo"},
+            {"FT", "LIB_Kfz1_w"},
+            {"ATTCH", "LIB_Kfz1_w"},
+            {"ENG", "LIB_OpelBlitz_Ammo"},
+            {"APC", "LIB_Sdkfz251_w"},
+            {"IFV", "LIB_StuG_III_G_w"},
+            {"SPAAG", "LIB_FlakPanzerIV_Wirbelwind_w"},
+            {"TNK", "LIB_PzKpfwIV_H_w"},
+            {"TH", "LIB_JU87_w"},
+            {"AH", "LIB_JU87_w"},
+            {"CAS", "LIB_JU87_w"},
+            {"Technical", "LIB_Kfz1_MG42"}
+        };
+    };
+
+    class FOW_GER {
+        gear = "FOW_GER_G";
+        uniform = "FOW_GER_U";
+        name = "FOW German Army";
+        description = "Heer";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {};
+        rolePrefix = "Heer";
+        vehicleClassnames[] = {
+            {"CO", "LIB_Kfz1"},
+            {"SL", "LIB_OpelBlitz_Open_Y_Camo"},
+            {"FT", "LIB_Kfz1"},
+            {"ATTCH", "LIB_Kfz1"},
+            {"ENG", "LIB_OpelBlitz_Ammo"},
+            {"APC", "LIB_Sdkfz251"},
+            {"IFV", "LIB_StuG_III_G"},
+            {"SPAAG", "LIB_FlakPanzerIV_Wirbelwind"},
+            {"TNK", "LIB_PzKpfwIV_H"},
+            {"TH", "LIB_FW190F8"},
+            {"AH", "LIB_FW190F8"},
+            {"CAS", "LIB_FW190F8"},
+            {"Technical", "LIB_Kfz1_MG42"}
+        };
+    };
+
+    class FOW_GER_PARA {
+        gear = "FOW_GER_PARA_G";
+        uniform = "FOW_GER_PARA_U";
+        name = "FOW Fallschirmjager";
+        description = "German Airborne";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {};
+        rolePrefix = "Fallschirmjager";
+        vehicleClassnames[] = {
+            {"CO", "LIB_Kfz1"},
+            {"SL", "LIB_OpelBlitz_Open_Y_Camo"},
+            {"FT", "LIB_Kfz1"},
+            {"ATTCH", "LIB_Kfz1"},
+            {"ENG", "LIB_OpelBlitz_Ammo"},
+            {"APC", "LIB_Sdkfz251"},
+            {"IFV", "LIB_StuG_III_G"},
+            {"SPAAG", "LIB_FlakPanzerIV_Wirbelwind"},
+            {"TNK", "LIB_PzKpfwIV_H"},
+            {"TH", "LIB_FW190F8"},
+            {"AH", "LIB_FW190F8"},
+            {"CAS", "LIB_FW190F8"},
+            {"Technical", "LIB_Kfz1_MG42"}
+        };
+    };
+
+    class FOW_GER_SS {
+        gear = "FOW_GER_G";
+        uniform = "FOW_GER_SS_U";
+        name = "FOW German SS";
+        description = "SS";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {};
+        rolePrefix = "SS";
+        vehicleClassnames[] = {
+            {"CO", "LIB_Kfz1"},
+            {"SL", "LIB_OpelBlitz_Open_Y_Camo"},
+            {"FT", "LIB_Kfz1"},
+            {"ATTCH", "LIB_Kfz1"},
+            {"ENG", "LIB_OpelBlitz_Ammo"},
+            {"APC", "LIB_Sdkfz251"},
+            {"IFV", "LIB_StuG_III_G"},
+            {"SPAAG", "LIB_FlakPanzerIV_Wirbelwind"},
+            {"TNK", "LIB_PzKpfwIV_H"},
+            {"TH", "LIB_FW190F8"},
+            {"AH", "LIB_FW190F8"},
+            {"CAS", "LIB_FW190F8"},
+            {"Technical", "LIB_Kfz1_MG42"}
+        };
+    };
+
+    class FOW_IJA {
+        gear = "FOW_IJA_G";
+        uniform = "FOW_IJA_U";
+        name = "FOW Imperial Japan";
+        description = "Imperial Japan";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {};
+        rolePrefix = "IJA";
+        vehicleClassnames[] = {
+            {"CO", "fow_v_type97_truck_ija"},
+            {"SL", "fow_v_type97_truck_open_ija"},
+            {"FT", "fow_v_type97_truck_ija"},
+            {"ATTCH", "fow_v_type97_truck_ija"},
+            {"ENG", "fow_v_type97_truck_utility_ija"},
+            {"APC", "fow_ija_type95_HaGo_1_ija"},
+            {"IFV", "fow_ija_type95_HaGo_2_ija"},
+            {"SPAAG", "fow_ija_type95_HaGo_3_ija"},
+            {"TNK", "fow_ija_type95_HaGo_1_ija"},
+            {"TH", "LIB_RBAF_Ju87"},
+            {"AH", "LIB_RBAF_Ju87"},
+            {"CAS", "LIB_RBAF_Ju87"},
+            {"Technical", "LIB_Kfz1_MG42"}
+        };
+    };
+
+    class FOW_IJA_SNLF {
+        gear = "FOW_IJA_G";
+        uniform = "FOW_IJA_SNLF_U";
+        name = "FOW Imperial Japan SNLF";
+        description = "Imperial Japan Naval Landing Force";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {};
+        rolePrefix = "SNLF";
+        vehicleClassnames[] = {
+            {"CO", "fow_v_type97_truck_ija"},
+            {"SL", "fow_v_type97_truck_open_ija"},
+            {"FT", "fow_v_type97_truck_ija"},
+            {"ATTCH", "fow_v_type97_truck_ija"},
+            {"ENG", "fow_v_type97_truck_utility_ija"},
+            {"APC", "fow_ija_type95_HaGo_1_ija"},
+            {"IFV", "fow_ija_type95_HaGo_2_ija"},
+            {"SPAAG", "fow_ija_type95_HaGo_3_ija"},
+            {"TNK", "fow_ija_type95_HaGo_1_ija"},
+            {"TH", "LIB_RBAF_Ju87"},
+            {"AH", "LIB_RBAF_Ju87"},
+            {"CAS", "LIB_RBAF_Ju87"},
+            {"Technical", "LIB_Kfz1_MG42"}
+        };
+    };
+
+    class IF44_USSR {
+        gear = "IF44_USSR_G";
+        uniform = "IF44_USSR_U";
+        name = "FOW Red Army";
+        description = "Red Army";
+        languages[] = {{"east", 100}};
+        side = "east";
+        camouflage[] = {};
+        rolePrefix = "Red Army";
+        vehicleClassnames[] = {
+            {"CO", "LIB_Willys_MB"},
+            {"SL", "LIB_Zis5v"},
+            {"FT", "LIB_Willys_MB"},
+            {"ATTCH", "LIB_Willys_MB"},
+            {"ENG", "LIB_Zis6_Parm"},
+            {"APC", "LIB_SOV_M3_Halftrack"},
+            {"IFV", "LIB_SU85"},
+            {"SPAAG", "LIB_Zis5v_61K"},
+            {"TNK", "LIB_T34_85"},
+            {"TH", "LIB_Li2"},
+            {"AH", "LIB_RA_P39_3"},
+            {"CAS", "LIB_RA_P39_3"},
+            {"Technical", "LIB_Scout_M3_FFV"}
+        };
+    };
+
+    class IF44_USSR_NKVD {
+        gear = "IF44_USSR_G";
+        uniform = "IF44_USSR_NKVD_U";
+        name = "FOW NKVD";
+        description = "People's Commissariat for Internal Affairs";
+        languages[] = {{"east", 100}};
+        side = "east";
+        camouflage[] = {};
+        rolePrefix = "NKVD";
+        vehicleClassnames[] = {
+            {"CO", "LIB_Willys_MB"},
+            {"SL", "LIB_Zis5v"},
+            {"FT", "LIB_Willys_MB"},
+            {"ATTCH", "LIB_Willys_MB"},
+            {"ENG", "LIB_Zis6_Parm"},
+            {"APC", "LIB_SOV_M3_Halftrack"},
+            {"IFV", "LIB_SU85"},
+            {"SPAAG", "LIB_Zis5v_61K"},
+            {"TNK", "LIB_T34_85"},
+            {"TH", "LIB_Li2"},
+            {"AH", "LIB_RA_P39_3"},
+            {"CAS", "LIB_RA_P39_3"},
+            {"Technical", "LIB_Scout_M3_FFV"}
+        };
+    };
+
+    class IF44_USSR_SN {
+        gear = "IF44_USSR_G";
+        uniform = "IF44_USSR_SN_U";
+        name = "FOW Red Army (Snow)";
+        description = "Red Army Winter";
+        languages[] = {{"east", 100}};
+        side = "east";
+        camouflage[] = {};
+        rolePrefix = "Red Army";
+        vehicleClassnames[] = {
+            {"CO", "LIB_Willys_MB_w"},
+            {"SL", "LIB_ZisV5_w"},
+            {"FT", "LIB_Willys_MB_w"},
+            {"ATTCH", "LIB_Willys_MB_w"},
+            {"ENG", "LIB_Zis6_parm_w"},
+            {"APC", "LIB_SOV_M3Halftrack_w"},
+            {"IFV", "LIB_SU85_w"},
+            {"SPAAG", "LIB_Zis5v_61K"},
+            {"TNK", "LIB_T34_85_w"},
+            {"TH", "LIB_Li2"},
+            {"AH", "LIB_P39_w"},
+            {"CAS", "LIB_P39_w"},
+            {"Technical", "LIB_Scout_M3_FFV_w"}
+        };
+    };
+
 };
