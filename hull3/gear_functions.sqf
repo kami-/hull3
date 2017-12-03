@@ -94,6 +94,7 @@ hull3_gear_fnc_assignVehicleInit = {
     clearMagazineCargoGlobal _vehicle;
     clearWeaponCargoGlobal _vehicle;
     clearItemCargoGlobal _vehicle;
+    clearBackpackCargoGlobal _vehicle;
     DEBUG("hull3.gear.assign",FMT_1("Initialized vehicle '%1' gear.",_vehicle));
 };
 
