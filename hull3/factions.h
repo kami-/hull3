@@ -2948,7 +2948,7 @@ class Faction {
         rolePrefix = "Red Army";
         vehicleClassnames[] = {
             {"CO", "LIB_Willys_MB_w"},
-            {"SL", "LIB_ZisV5_w"},
+            {"SL", "LIB_Zis5v_w"},
             {"FT", "LIB_Willys_MB_w"},
             {"ATTCH", "LIB_Willys_MB_w"},
             {"ENG", "LIB_Zis6_parm_w"},

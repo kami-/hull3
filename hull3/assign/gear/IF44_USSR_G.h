@@ -261,7 +261,10 @@ class IF44_USSR_G {
     class VC : Crew {
         binocular = "binocular";
         primaryWeapon = "LIB_PPSh41_m";
-        vestMagazines[] = {{"LIB_71Rnd_762x25", 4}};
+        vestMagazines[] = {
+            {"LIB_71Rnd_762x25", 4},
+            {"LIB_8Rnd_762x25", 3}
+        };
     };
 
     class VG : Crew {

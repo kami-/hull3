@@ -258,7 +258,10 @@ class FOW_IJA_G {
     class VC : Crew {
         binocular = "binocular";
         primaryWeapon = "fow_w_type100";
-        vestMagazines[] = {{"fow_32Rnd_8x22", 4}};
+        vestMagazines[] = {
+            {"fow_32Rnd_8x22", 4},
+            {"fow_8Rnd_8x22", 3}
+        };
     };
 
     class VG : Crew {

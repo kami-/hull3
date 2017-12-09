@@ -340,7 +340,10 @@ class FOW_USA_G {
     class VC : Crew {
         binocular = "binocular";
         primaryWeapon = "fow_w_m3";
-        vestMagazines[] = {{"fow_30Rnd_45acp", 4}};
+        vestMagazines[] = {
+            {"fow_30Rnd_45acp", 4},
+            {"fow_7Rnd_45acp", 3}
+        };
     };
 
     class VG : Crew {
