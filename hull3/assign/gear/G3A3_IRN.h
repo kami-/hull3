@@ -400,7 +400,7 @@ class G3A3_IRN {
     class Vehicle {
         weapons[] = {
             {"hlc_rifle_g3a3", 4},
-            {"CUP_launch_RPG18", 2}
+            {"ARK_launch_RPG22", 2}
         };
         magazines[] = {
             {"hlc_20rnd_762x51_T_G3", 15},
@@ -430,7 +430,7 @@ class G3A3_IRN {
     class Truck : Vehicle {
         weapons[] = {
             {"hlc_rifle_g3a3", 4},
-            {"CUP_launch_RPG18", 4}
+            {"ARK_launch_RPG22", 4}
         };
         magazines[] = {
             {"hlc_20rnd_762x51_T_G3", 40},
@@ -460,7 +460,7 @@ class G3A3_IRN {
     };
 
     class Armored : Truck {
-        weapons[] = {{"CUP_launch_RPG18", 4}};
+        weapons[] = {{"ARK_launch_RPG22", 4}};
         magazines[] = {
             {"hlc_20rnd_762x51_T_G3", 40},
             {"hlc_20rnd_762x51_b_G3", 20},

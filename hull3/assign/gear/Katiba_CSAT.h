@@ -157,7 +157,7 @@ class Katiba_CSAT {
     class RAT : Rifleman {
         primaryWeapon = "arifle_Katiba_C_F";
         primaryWeaponItems[] = {"RH_SFM952V"};
-        secondaryWeapon = "CUP_launch_RPG18";
+        secondaryWeapon = "ARK_launch_RPG22";
         vestMagazines[] = {
             {"30Rnd_65x39_caseless_green", 6},
             {"30Rnd_65x39_caseless_green_mag_Tracer", 2}
@@ -428,7 +428,7 @@ class Katiba_CSAT {
     class Vehicle {
         weapons[] = {
             {"arifle_Katiba_F", 2},
-            {"CUP_launch_RPG18", 5},
+            {"ARK_launch_RPG22", 5},
             {"arifle_Katiba_C_F", 2}
         };
         magazines[] = {
@@ -457,7 +457,7 @@ class Katiba_CSAT {
     class Truck : Vehicle {
         weapons[] = {
             {"arifle_Katiba_F", 2},
-            {"CUP_launch_RPG18", 10},
+            {"ARK_launch_RPG22", 10},
             {"arifle_Katiba_C_F", 2}
         };
         magazines[] = {
@@ -486,7 +486,7 @@ class Katiba_CSAT {
     };
 
     class Armored : Truck {
-        weapons[] = {{"CUP_launch_RPG18", 10}};
+        weapons[] = {{"ARK_launch_RPG22", 10}};
         magazines[] = {
             {"30Rnd_65x39_caseless_green", 60},
             {"150Rnd_762x54_Box", 20},

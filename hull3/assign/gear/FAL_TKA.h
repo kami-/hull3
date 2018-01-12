@@ -394,7 +394,7 @@ class FAL_TKA {
     class Vehicle {
         weapons[] = {
             {"hlc_rifle_FAL5061", 4},
-            {"CUP_launch_RPG18", 2}
+            {"ARK_launch_RPG22", 2}
         };
         magazines[] = {
             {"hlc_20Rnd_762x51_B_fal", 15},
@@ -424,7 +424,7 @@ class FAL_TKA {
     class Truck : Vehicle {
         weapons[] = {
             {"hlc_rifle_FAL5061", 4},
-            {"CUP_launch_RPG18", 5}
+            {"ARK_launch_RPG22", 5}
         };
         magazines[] = {
             {"hlc_20Rnd_762x51_B_fal", 40},
@@ -454,7 +454,7 @@ class FAL_TKA {
     };
 
     class Armored : Truck {
-        weapons[] = {{"CUP_launch_RPG18", 5}};
+        weapons[] = {{"ARK_launch_RPG22", 5}};
         magazines[] = {
             {"hlc_20Rnd_762x51_B_fal", 40},
             {"hlc_20Rnd_762x51_B_fal", 20},
