@@ -961,32 +961,6 @@ class Faction {
         };
     };
 
-    class USA_OD {
-        gear = "M14_COLT";
-        uniform = "USA_OD";
-        name = "US Army Olive Drab";
-        description = "US Army OD with vietnam era gear";
-        languages[] = {{"west", 100}};
-        side = "west";
-        camouflage[] = {"woodland"};
-        rolePrefix = "US Army";
-        vehicleClassnames[] = {
-            {"CO", "CUP_B_HMMWV_Unarmed_USA"},
-            {"SL", "CUP_B_HMMWV_Unarmed_USA"},
-            {"FT", "CUP_B_HMMWV_Unarmed_USA"},
-            {"ATTCH", "CUP_B_HMMWV_Transport_USA"},
-            {"ENG", "CUP_B_MTVR_Repair_USA"},
-            {"APC", "CUP_B_M113_USA"},
-            {"IFV", "CUP_B_M2Bradley_USA_D"},
-            {"SPAAG", "CUP_B_M6LineBacker_USA_D"},
-            {"TNK", "CUP_B_M1A1_DES_US_Army"},
-            {"TH", "CUP_B_UH60M_US"},
-            {"AH", "CUP_B_AH64D_USA"},
-            {"CAS", "CUP_B_A10_CAS_USA"},
-            {"Technical", "CUP_B_HMMWV_M2_USA"}
-        };
-    };
-
     class OPF_F {
         gear = "Katiba_CSAT";
         uniform = "CSAT";
@@ -2960,6 +2934,266 @@ class Faction {
             {"AH", "LIB_P39_w"},
             {"CAS", "LIB_P39_w"},
             {"Technical", "LIB_Scout_M3_FFV_w"}
+        };
+    };
+
+    class USM_USA_80_WD {
+        gear = "M16A2_US";
+        uniform = "USM_USA_80_WD";
+        name = "1980 US Army Woodland";
+        description = "Woodland uniforms with M16A2";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland"};
+        rolePrefix = "US Army";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"SL", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"FT", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"ATTCH", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"ENG", "CUP_B_MTVR_Repair_USMC"},
+            {"APC", "CUP_B_M113_USA"},
+            {"IFV", "CUP_B_M2Bradley_USA_W"},
+            {"SPAAG", "CUP_B_M6LineBacker_USA_W"},
+            {"TNK", "CUP_B_M60A3_USMC"},
+            {"TH", "CUP_B_UH60M_US"},
+            {"AH", "CUP_B_AH64D_USA"},
+            {"CAS", "CUP_B_A10_AT_USA"},
+            {"Technical", "CUP_B_HMMWV_M2_USMC"}
+        };
+    };
+
+    class USM_USMC_80_WD {
+        gear = "M16A2_US";
+        uniform = "USM_USMC_80_WD";
+        name = "1980 US Marines Woodland";
+        description = "Woodland uniforms with M16A2";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland"};
+        rolePrefix = "USMC";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"SL", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"FT", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"ATTCH", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"ENG", "CUP_B_MTVR_Repair_USMC"},
+            {"APC", "CUP_B_M113_USA"},
+            {"IFV", "CUP_B_M2Bradley_USA_W"},
+            {"SPAAG", "CUP_B_M6LineBacker_USA_W"},
+            {"TNK", "CUP_B_M60A3_USMC"},
+            {"TH", "CUP_B_UH60M_US"},
+            {"AH", "CUP_B_AH64D_USA"},
+            {"CAS", "CUP_B_A10_AT_USA"},
+            {"Technical", "CUP_B_HMMWV_M2_USMC"}
+        };
+    };
+
+    class USM_USA_90_WD {
+        gear = "M4_US";
+        uniform = "USM_USA_90_WD";
+        name = "1990 US Army Woodland";
+        description = "Woodland uniforms with M4 Carbines";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland"};
+        rolePrefix = "US Army";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"SL", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"FT", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"ATTCH", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"ENG", "CUP_B_MTVR_Repair_USMC"},
+            {"APC", "CUP_B_M113_USA"},
+            {"IFV", "CUP_B_M2Bradley_USA_W"},
+            {"SPAAG", "CUP_B_M6LineBacker_USA_W"},
+            {"TNK", "CUP_B_M60A3_USMC"},
+            {"TH", "CUP_B_UH60M_US"},
+            {"AH", "CUP_B_AH64D_USA"},
+            {"CAS", "CUP_B_A10_AT_USA"},
+            {"Technical", "CUP_B_HMMWV_M2_USMC"}
+        };
+    };
+
+    class USM_USMC_90_WD {
+        gear = "M16A4_USMC";
+        uniform = "USM_USMC_90_WD";
+        name = "1990 US Marines Woodland";
+        description = "Woodland uniforms with M16A4s";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland"};
+        rolePrefix = "USMC";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"SL", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"FT", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"ATTCH", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"ENG", "CUP_B_MTVR_Repair_USMC"},
+            {"APC", "CUP_B_M113_USA"},
+            {"IFV", "CUP_B_M2Bradley_USA_W"},
+            {"SPAAG", "CUP_B_M6LineBacker_USA_W"},
+            {"TNK", "CUP_B_M60A3_USMC"},
+            {"TH", "CUP_B_UH60M_US"},
+            {"AH", "CUP_B_AH64D_USA"},
+            {"CAS", "CUP_B_A10_AT_USA"},
+            {"Technical", "CUP_B_HMMWV_M2_USMC"}
+        };
+    };
+
+    class USM_RAN_90_WD {
+        gear = "M4_US";
+        uniform = "USM_RAN_90_WD";
+        name = "1990 US Rangers Woodland";
+        description = "Woodland uniforms with M4 Carbines";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland"};
+        rolePrefix = "US Rangers";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"SL", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"FT", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"ATTCH", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"ENG", "CUP_B_MTVR_Repair_USMC"},
+            {"APC", "CUP_B_M113_USA"},
+            {"IFV", "CUP_B_M2Bradley_USA_W"},
+            {"SPAAG", "CUP_B_M6LineBacker_USA_W"},
+            {"TNK", "CUP_B_M60A3_USMC"},
+            {"TH", "CUP_B_UH60M_US"},
+            {"AH", "CUP_B_AH64D_USA"},
+            {"CAS", "CUP_B_A10_AT_USA"},
+            {"Technical", "CUP_B_HMMWV_M2_USMC"}
+        };
+    };
+
+    class USM_USA_70_OD {
+        gear = "M14_USA";
+        uniform = "USM_USA_70_OD";
+        name = "1970 US Army OD Green";
+        description = "OD uniforms with M14";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {};
+        rolePrefix = "US Army";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"SL", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"FT", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"ATTCH", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"ENG", "CUP_B_MTVR_Repair_USMC"},
+            {"APC", "CUP_B_M113_USA"},
+            {"IFV", "CUP_B_M2Bradley_USA_W"},
+            {"SPAAG", "CUP_B_M6LineBacker_USA_W"},
+            {"TNK", "CUP_B_M60A3_USMC"},
+            {"TH", "CUP_B_UH60M_US"},
+            {"AH", "CUP_B_AH64D_USA"},
+            {"CAS", "CUP_B_A10_AT_USA"},
+            {"Technical", "CUP_B_HMMWV_M2_USMC"}
+        };
+    };
+
+    class USM_USA_80_CC_DE {
+        gear = "M16A2_US";
+        uniform = "USM_USA_80_CC_DE";
+        name = "1980s US Army 'Chocolate Chip' Desert";
+        description = "Desert uniforms with M16A2";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"desert"};
+        rolePrefix = "US Army";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_HMMWV_Unarmed_USA"},
+            {"SL", "CUP_B_HMMWV_Unarmed_USA"},
+            {"FT", "CUP_B_HMMWV_Unarmed_USA"},
+            {"ATTCH", "CUP_B_HMMWV_Transport_USA"},
+            {"ENG", "CUP_B_MTVR_Repair_USA"},
+            {"APC", "CUP_B_M113_USA"},
+            {"IFV", "CUP_B_M2Bradley_USA_D"},
+            {"SPAAG", "CUP_B_M6LineBacker_USA_D"},
+            {"TNK", "CUP_B_M1A1_DES_US_Army"},
+            {"TH", "CUP_B_UH60M_US"},
+            {"AH", "CUP_B_AH64D_USA"},
+            {"CAS", "CUP_B_A10_CAS_USA"},
+            {"Technical", "CUP_B_HMMWV_M2_USA"}
+        };
+    };
+
+    class USM_USMC_80_CC_DE {
+        gear = "M16A2_US";
+        uniform = "USM_USMC_80_CC_DE";
+        name = "1980s US Marines 'Chocolate Chip' Desert";
+        description = "Desert uniforms with M16A2";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"desert"};
+        rolePrefix = "USMC";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_HMMWV_Unarmed_USA"},
+            {"SL", "CUP_B_HMMWV_Unarmed_USA"},
+            {"FT", "CUP_B_HMMWV_Unarmed_USA"},
+            {"ATTCH", "CUP_B_HMMWV_Transport_USA"},
+            {"ENG", "CUP_B_MTVR_Repair_USA"},
+            {"APC", "CUP_B_M113_USA"},
+            {"IFV", "CUP_B_M2Bradley_USA_D"},
+            {"SPAAG", "CUP_B_M6LineBacker_USA_D"},
+            {"TNK", "CUP_B_M1A1_DES_US_Army"},
+            {"TH", "CUP_B_UH60M_US"},
+            {"AH", "CUP_B_AH64D_USA"},
+            {"CAS", "CUP_B_A10_CAS_USA"},
+            {"Technical", "CUP_B_HMMWV_M2_USA"}
+        };
+    };
+
+    class USM_USA_90_DE {
+        gear = "M4_US";
+        uniform = "USM_USA_90_DE";
+        name = "1990s US Army Desert";
+        description = "Desert uniforms with M4 Carbines";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"desert"};
+        rolePrefix = "US Army";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_HMMWV_Unarmed_USA"},
+            {"SL", "CUP_B_HMMWV_Unarmed_USA"},
+            {"FT", "CUP_B_HMMWV_Unarmed_USA"},
+            {"ATTCH", "CUP_B_HMMWV_Transport_USA"},
+            {"ENG", "CUP_B_MTVR_Repair_USA"},
+            {"APC", "CUP_B_M113_USA"},
+            {"IFV", "CUP_B_M2Bradley_USA_D"},
+            {"SPAAG", "CUP_B_M6LineBacker_USA_D"},
+            {"TNK", "CUP_B_M1A1_DES_US_Army"},
+            {"TH", "CUP_B_UH60M_US"},
+            {"AH", "CUP_B_AH64D_USA"},
+            {"CAS", "CUP_B_A10_CAS_USA"},
+            {"Technical", "CUP_B_HMMWV_M2_USA"}
+        };
+    };
+
+    class USM_USMC_90_DE {
+        gear = "M16A4_USMC";
+        uniform = "USM_USMC_90_DE";
+        name = "1990s US Marines Desert";
+        description = "Desert uniforms with M16A4";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"desert"};
+        rolePrefix = "USMC";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_HMMWV_Unarmed_USA"},
+            {"SL", "CUP_B_HMMWV_Unarmed_USA"},
+            {"FT", "CUP_B_HMMWV_Unarmed_USA"},
+            {"ATTCH", "CUP_B_HMMWV_Transport_USA"},
+            {"ENG", "CUP_B_MTVR_Repair_USA"},
+            {"APC", "CUP_B_M113_USA"},
+            {"IFV", "CUP_B_M2Bradley_USA_D"},
+            {"SPAAG", "CUP_B_M6LineBacker_USA_D"},
+            {"TNK", "CUP_B_M1A1_DES_US_Army"},
+            {"TH", "CUP_B_UH60M_US"},
+            {"AH", "CUP_B_AH64D_USA"},
+            {"CAS", "CUP_B_A10_CAS_USA"},
+            {"Technical", "CUP_B_HMMWV_M2_USA"}
         };
     };
 

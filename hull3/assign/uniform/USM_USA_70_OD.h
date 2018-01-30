@@ -1,56 +1,64 @@
-class USA_OD {
+class USM_USA_70_OD {
     class Rifleman {
         headGear = "CUP_H_USArmy_Helmet_M1_Olive";
         goggles = "";
-        uniform = "CUP_U_O_TK_Green";
-        vest = "CUP_V_RUS_Smersh_1_ARM";
+        uniform = "usm_bdu_odg";
+        vest = "usm_vest_LBE_rm_m_ARM";
         backpack = "CUP_B_AlicePack_Khaki";
     };
 
     class Leader : Rifleman {
-        vest = "CUP_V_RUS_Smersh_2_ARM";
-        headGear = "H_Booniehat_oli";
+        uniform = "usm_bdu_odg";
+        vest = "usm_vest_LBE_rmp_m_ARM";
     };
 
     class Officer : Leader {
-        goggles = "G_Aviator";
+        headGear = "usm_bdu_cap_odg";
     };
 
     class Crew : Rifleman {
-        headGear = "H_HelmetCrew_I";
-        vest = "CUP_V_O_TK_CrewBelt_ARM";
-        backpack = "CUP_B_SLA_Medicbag";
+        headGear = "usm_helmet_cvc";
+        uniform = "usm_bdu_odg";
+        vest = "usm_vest_LBE_rmp_m_ARM";
+        backpack = "CUP_B_AlicePack_Khaki";
     };
 
     class CO : Officer {
     };
 
     class XO : CO {
+        backpack = "usm_pack_st138_prc77";
     };
 
     class SL : Officer {
     };
 
     class Medic : Rifleman {
-        backpack = "CUP_B_AlicePack_Bedroll";
-        vest = "CUP_V_RUS_Smersh_2_ARM";
+        backpack = "usm_pack_m5_medic";
+        vest = "usm_vest_LBE_rm_m_ARM";
     };
 
     class FTL : Leader {
+        headGear = "usm_bdu_boonie_odg";
     };
 
     class AR : Rifleman {
+        uniform = "usm_bdu_odg";
+        vest = "usm_vest_LBE_mg_m_ARM";
+        backpack = "usm_pack_762x51_ammobelts";
     };
 
     class AAR : Rifleman {
-        backpack = "CUP_B_AlicePack_Bedroll";
+        backpack = "usm_pack_762x51_bandoliers";
     };
 
     class RAT : Rifleman {
+        vest = "usm_vest_LBE_gr_ARM";
+        backpack = "CUP_B_AlicePack_Khaki";
     };
 
     class MMGG : AR {
-        backpack = "CUP_B_AlicePack_Bedroll";
+        backpack = "usm_pack_762x51_ammobelts";
     };
 
     class MMGAG : AAR {
@@ -66,20 +74,22 @@ class USA_OD {
     };
 
     class MATG : RAT {
-        backpack = "CUP_B_AlicePack_Bedroll";
+        backpack = "usm_pack_alice";
     };
 
-    class MATAG : AAR {
+    class MATAG : RAT {
+        backpack = "usm_pack_alice";
     };
 
     class MATAC : MATAG {
     };
 
     class HATG : RAT {
-        backpack = "CUP_B_AlicePack_Bedroll";
+        backpack = "usm_pack_alice";
     };
 
     class HATAG : AAR {
+        backpack = "usm_pack_alice";
     };
 
     class HATAC : HATAG {
@@ -122,14 +132,19 @@ class USA_OD {
     };
 
     class ENG : Rifleman {
-        backpack = "CUP_B_AlicePack_Bedroll";
+        uniform = "usm_bdu_odg";
+        headGear = "usm_bdu_boonie_odg";
+        backpack = "usm_pack_alice";
     };
 
     class ENGA : ENG {
     };
 
     class SN : Rifleman {
-        headGear = "CUP_B_SLA_Medicbag";
+        headGear = "H_Bandanna_khk";
+        uniform = "usm_bdu_odg";
+        vest = "usm_vest_LBE_rmp_m_ARM";
+        backpack = "CUP_B_AlicePack_Khaki";
     };
 
     class SP : SN {
@@ -145,9 +160,10 @@ class USA_OD {
     };
 
     class P : Crew {
-        headGear = "CUP_H_USMC_Helmet_Pilot";
+        headGear = "CUP_H_BAF_Helmet_Pilot";
+        uniform = "usm_bdu_odg";
+        vest = "usm_vest_LBE_rmp_m_ARM";
         backpack = "B_Parachute";
-        goggles = "G_Aviator";
     };
 
     class PCM : P {
