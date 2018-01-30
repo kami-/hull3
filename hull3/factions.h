@@ -961,32 +961,6 @@ class Faction {
         };
     };
 
-    class USA_OD {
-        gear = "M14_COLT";
-        uniform = "USA_OD";
-        name = "US Army Olive Drab";
-        description = "US Army OD with vietnam era gear";
-        languages[] = {{"west", 100}};
-        side = "west";
-        camouflage[] = {"woodland"};
-        rolePrefix = "US Army";
-        vehicleClassnames[] = {
-            {"CO", "CUP_B_HMMWV_Unarmed_USA"},
-            {"SL", "CUP_B_HMMWV_Unarmed_USA"},
-            {"FT", "CUP_B_HMMWV_Unarmed_USA"},
-            {"ATTCH", "CUP_B_HMMWV_Transport_USA"},
-            {"ENG", "CUP_B_MTVR_Repair_USA"},
-            {"APC", "CUP_B_M113_USA"},
-            {"IFV", "CUP_B_M2Bradley_USA_D"},
-            {"SPAAG", "CUP_B_M6LineBacker_USA_D"},
-            {"TNK", "CUP_B_M1A1_DES_US_Army"},
-            {"TH", "CUP_B_UH60M_US"},
-            {"AH", "CUP_B_AH64D_USA"},
-            {"CAS", "CUP_B_A10_CAS_USA"},
-            {"Technical", "CUP_B_HMMWV_M2_USA"}
-        };
-    };
-
     class OPF_F {
         gear = "Katiba_CSAT";
         uniform = "CSAT";

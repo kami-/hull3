@@ -48,14 +48,14 @@ class M14_US {
         primaryWeapon = "hlc_rifle_M14";
         handgunWeapon = "CUP_hgun_Colt1911";
         vestMagazines[] = {
-            {"hlc_20Rnd_762x51_B_M14", 6},
+            {"hlc_20Rnd_762x51_B_M14", 4},
             {"hlc_20Rnd_762x51_T_M14", 2},
             {"CUP_7Rnd_45ACP_1911", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_20Rnd_762x51_B_M14", 4},
+            {"hlc_20Rnd_762x51_B_M14", 6},
             {"hlc_20Rnd_762x51_T_M14", 2}
         };
         assignItems[] = {};
@@ -93,7 +93,7 @@ class M14_US {
 
     class Medic : Rifleman {
         vestMagazines[] = {
-            {"hlc_20Rnd_762x51_B_M14", 6},
+            {"hlc_20Rnd_762x51_B_M14", 4},
             {"hlc_20Rnd_762x51_T_M14", 2},
             {"SmokeShell", 4}
         };
@@ -120,10 +120,10 @@ class M14_US {
         handgunWeapon = "CUP_hgun_Colt1911";
         primaryWeaponItems[] = {};
         vestMagazines[] = {
-            {"hlc_100Rnd_762x51_T_M60E4", 1},
+            {"hlc_100Rnd_762x51_T_M60E4", 2},
             {"CUP_7Rnd_45ACP_1911", 3}
         };
-        backpackMagazines[] = {{"hlc_100Rnd_762x51_T_M60E4", 8}};
+        backpackMagazines[] = {{"hlc_100Rnd_762x51_T_M60E4", 5}};
     };
 
     class AAR : Rifleman {
