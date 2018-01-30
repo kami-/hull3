@@ -122,6 +122,16 @@ class Hull3 {
         #include "assign\uniform\IF44_USSR_U.h"
         #include "assign\uniform\IF44_USSR_SN_U.h"
         #include "assign\uniform\IF44_USSR_NKVD_U.h"
+        #include "assign\uniform\USM_USA_80_WD.h"
+        #include "assign\uniform\USM_USMC_80_WD.h"
+        #include "assign\uniform\USM_USA_80_CC_DE.h"
+        #include "assign\uniform\USM_USMC_80_CC_DE.h"
+        #include "assign\uniform\USM_USA_90_WD.h"
+        #include "assign\uniform\USM_USMC_90_WD.h"
+        #include "assign\uniform\USM_RAN_90_WD.h"
+        #include "assign\uniform\USM_USA_90_DE.h"
+        #include "assign\uniform\USM_USMC_90_DE.h"
+        #include "assign\uniform\USM_USA_70_OD.h"
 
         unitBaseClass = "Rifleman";
     };
@@ -202,6 +212,7 @@ class Hull3 {
         #include "assign\gear\FOW_GER_PARA_G.h"
         #include "assign\gear\FOW_IJA_G.h"
         #include "assign\gear\IF44_USSR_G.h"
+        #include "assign\gear\M14_US.h"
 
         unitBaseClass = "Rifleman";
         vehicleBaseClass = "Vehicle";
