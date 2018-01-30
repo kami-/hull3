@@ -3068,7 +3068,7 @@ class Faction {
     };
 
     class USM_USA_70_OD {
-        gear = "M14_USA";
+        gear = "M14_US";
         uniform = "USM_USA_70_OD";
         name = "1970 US Army OD Green";
         description = "OD uniforms with M14";
