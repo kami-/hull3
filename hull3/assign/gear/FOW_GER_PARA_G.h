@@ -101,6 +101,7 @@ class FOW_GER_PARA_G {
 
     class FTL : Leader {
         primaryWeapon = "fow_w_fg42";
+        uniformRadios[] = {};
         vestMagazines[] = {
             {"fow_20Rnd_792x57", 8},
             {"fow_13Rnd_9x19", 3}
