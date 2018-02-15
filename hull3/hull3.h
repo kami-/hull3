@@ -29,6 +29,8 @@ class Hull3 {
         #include "assign\uniform\CUP_CDF_DES_UN.h"
         #include "assign\uniform\CUP_CDF_FOR_UN.h"
         #include "assign\uniform\CUP_CDF_MOU_UN.h"
+        #include "assign\uniform\CUP_CDF_SN.h"
+        #include "assign\uniform\CUP_CDF_SN_UN.h"
         #include "assign\uniform\CUP_KSK_DE.h"
         #include "assign\uniform\CUP_KSK_WD.h"
         #include "assign\uniform\CUP_NAPA_WD.h"
