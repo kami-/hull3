@@ -106,6 +106,7 @@ class FOW_USA_G {
 
     class FTL : Leader {
         primaryWeapon = "fow_w_m1a1_thompson";
+        uniformRadios[] = {};
         vestMagazines[] = {
             {"fow_30Rnd_45acp", 8},
             {"fow_7Rnd_45acp", 3}

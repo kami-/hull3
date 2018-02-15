@@ -961,6 +961,32 @@ class Faction {
         };
     };
 
+    class CUP_CDF_SN {
+        gear = "AKS74_CDF";
+        uniform = "CUP_CDF_SN";
+        name = "CDF (Winter)";
+        description = "Winter CDF with AKS74's";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"snow"};
+        rolePrefix = "CDF";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_UAZ_Unarmed_CDF"},
+            {"SL", "CUP_B_UAZ_Unarmed_CDF"},
+            {"FT", "CUP_B_Ural_CDF"},
+            {"ATTCH", "CUP_B_Ural_CDF"},
+            {"ENG", "CUP_B_Ural_Repair_CDF"},
+            {"APC", "CUP_B_BTR60_CDF"},
+            {"IFV", "CUP_B_BMP2_CDF"},
+            {"SPAAG", "CUP_B_ZSU23_CDF"},
+            {"TNK", "CUP_B_T72_CDF"},
+            {"TH", "CUP_B_Mi17_CDF"},
+            {"AH", "CUP_B_Mi24_D_CDF"},
+            {"CAS", "CUP_B_Su25_CDF"},
+            {"Technical", "CUP_B_UAZ_MG_CDF"}
+        };
+    };
+
     class OPF_F {
         gear = "Katiba_CSAT";
         uniform = "CSAT";
@@ -2295,6 +2321,32 @@ class Faction {
         languages[] = {{"resistance", 100}};
         side = "resistance";
         camouflage[] = {"woodland"};
+        rolePrefix = "CDF UN";
+        vehicleClassnames[] = {
+            {"CO", "CUP_I_UAZ_Unarmed_UN"},
+            {"SL", "CUP_I_UAZ_Unarmed_UN"},
+            {"FT", "CUP_I_Ural_UN"},
+            {"ATTCH", "CUP_I_Ural_UN"},
+            {"ENG", "CUP_I_Ural_Repair_UN"},
+            {"APC", "CUP_I_M113_UN"},
+            {"IFV", "CUP_I_BMP2_UN"},
+            {"SPAAG", "CUP_B_ZSU23_CDF"},
+            {"TNK", "CUP_B_T72_CDF"},
+            {"TH", "CUP_I_Mi17_UN"},
+            {"AH", "CUP_I_Mi24_D_UN"},
+            {"CAS", "CUP_B_Su25_CDF"},
+            {"Technical", "CUP_I_UAZ_MG_UN"}
+        };
+    };
+
+    class CUP_CDF_SN_UN {
+        gear = "M16A3_CDF";
+        uniform = "CUP_CDF_SN_UN";
+        name = "CDF UN (Winter)";
+        description = "Winter United Nations with M16A3's";
+        languages[] = {{"resistance", 100}};
+        side = "resistance";
+        camouflage[] = {"snow"};
         rolePrefix = "CDF UN";
         vehicleClassnames[] = {
             {"CO", "CUP_I_UAZ_Unarmed_UN"},

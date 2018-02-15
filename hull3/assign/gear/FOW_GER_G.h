@@ -105,6 +105,7 @@ class FOW_GER_G {
             {"fow_30Rnd_792x33", 8},
             {"fow_8Rnd_9x19", 3}
         };
+        uniformRadios[] = {};
         backpackMagazines[] = {
             {"fow_e_m24_spli", 2},
             {"SmokeShell", 1},

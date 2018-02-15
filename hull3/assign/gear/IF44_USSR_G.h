@@ -101,9 +101,10 @@ class IF44_USSR_G {
 
     class FTL : Leader {
         primaryWeapon = "LIB_PPSh41_m";
+        uniformRadios[] = {};
         vestMagazines[] = {
             {"LIB_71Rnd_762x25", 8},
-            {"fow_8Rnd_8x22", 3}
+            {"LIB_8Rnd_762x25", 3}
         };
         backpackMagazines[] = {
             {"LIB_rg42", 2},

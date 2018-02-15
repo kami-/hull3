@@ -36,16 +36,16 @@ class FOW_USMC_G {
     };
 
     class Leader : Rifleman {
-        primaryWeapon = "fow_w_m1a1_thompson";
+        primaryWeapon = "fow_w_m1_carbine";
         handgunWeapon = "fow_w_m1911";
         vestMagazines[] = {
-            {"fow_30Rnd_45acp", 8},
+            {"fow_15Rnd_762x33", 8},
             {"fow_7Rnd_45acp", 3}
         };
         backpackMagazines[] = {
             {"fow_e_mk2", 2},
             {"SmokeShell", 1},
-            {"fow_30Rnd_45acp", 6}
+            {"fow_15Rnd_762x33", 6}
         };
         assignItems[] = {};
         uniformRadios[] = {"ACRE_PRC343"};
@@ -72,6 +72,11 @@ class FOW_USMC_G {
     };
 
     class XO : CO {
+        primaryWeapon = "fow_w_m1a1_thompson";
+        vestMagazines[] = {
+            {"fow_30Rnd_45acp", 8},
+            {"fow_7Rnd_45acp", 3}
+        };
         backpackRadios[] = {"ACRE_PRC152"};
     };
 
@@ -79,14 +84,14 @@ class FOW_USMC_G {
     };
 
     class Medic : Rifleman {
-        primaryWeapon = "fow_w_m1_carbine";
+        primaryWeapon = "fow_w_m3";
         vestMagazines[] = {
-            {"fow_15Rnd_762x33", 8},
+            {"fow_30Rnd_45acp", 8},
             {"SmokeShell", 4}
         };
         backpackMagazines[] = {
             {"SmokeShellBlue", 4},
-            {"fow_15Rnd_762x33", 2}
+            {"fow_30Rnd_45acp", 2}
         };
         assignItems[] = {};
         binocular = "Binocular";
@@ -100,6 +105,17 @@ class FOW_USMC_G {
     };
 
     class FTL : Leader {
+        primaryWeapon = "fow_w_m55_reising";
+        uniformRadios[] = {};
+        vestMagazines[] = {
+            {"fow_20Rnd_45acp", 8},
+            {"fow_7Rnd_45acp", 3}
+        };
+        backpackMagazines[] = {
+            {"fow_e_mk2", 2},
+            {"SmokeShell", 1},
+            {"fow_20Rnd_45acp", 6}
+        };
     };
 
     class AR : Rifleman {
@@ -128,12 +144,12 @@ class FOW_USMC_G {
     };
 
     class RAT : Rifleman {
-        primaryWeapon = "fow_w_m55_reising";
-        vestMagazines[] = {{"fow_20Rnd_45acp", 8}};
+        primaryWeapon = "fow_w_m1_carbine";
+        vestMagazines[] = {{"fow_15Rnd_762x33", 8}};
         backpackMagazines[] = {
             {"fow_e_mk2", 2},
             {"SmokeShell", 1},
-            {"fow_20Rnd_45acp", 6},
+            {"fow_15Rnd_762x33", 6},
             {"fow_e_tnt_halfpound", 2}
         };
     };
@@ -154,12 +170,16 @@ class FOW_USMC_G {
     };
 
     class MMGAG : Rifleman {
-        primaryWeapon = "fow_w_m1a1_thompson";
-        vestMagazines[] = {{"fow_30Rnd_45acp", 8}};
+        primaryWeapon = "fow_w_m1_carbine";
+        handgunWeapon = "fow_w_m1911";
+        vestMagazines[] = {
+            {"fow_15Rnd_762x33", 8},
+            {"fow_7Rnd_45acp", 4}
+        };
         backpackMagazines[] = {
             {"fow_e_mk2", 1},
             {"SmokeShell", 1},
-            {"fow_30Rnd_45acp", 2},
+            {"fow_15Rnd_762x33", 2},
             {"fow_100Rnd_762x63", 4}
         };
         uniformMagazines[] = {{"SmokeShell", 1}};
@@ -176,12 +196,10 @@ class FOW_USMC_G {
         backpackMedicalItems[] = {};
     };
 
-    class HMGAG : HMGG {
-        primaryWeapon = "fow_w_m1a1_thompson";
-        vestMagazines[] = {{"fow_30Rnd_45acp", 8}};
+    class HMGAG : MMGAG {
         backpack = "CUP_B_M2_MiniTripod_Bag";
+        backpackMagazines[] = {};
         uniformRadios[] = {"ACRE_PRC343"};
-        uniformMagazines[] = {{"SmokeShell", 1}};
         binocular = "binocular";
         assignItems[] = {};
     };
@@ -199,7 +217,7 @@ class FOW_USMC_G {
     };
 
     class MATAG : Rifleman {
-        primaryWeapon = "fow_w_m1a1_thompson";
+        primaryWeapon = "fow_w_m3";
         vestMagazines[] = {{"fow_30Rnd_45acp", 8}};
         backpackMagazines[] = {
             {"fow_e_mk2", 1},
@@ -264,7 +282,7 @@ class FOW_USMC_G {
 
     class MTRAG : MTRG {
         backpack = "fow_b_us_m2_mortar_support";
-        primaryWeapon = "fow_w_m1a1_thompson";
+        primaryWeapon = "fow_w_m3";
         vestMagazines[] = {{"fow_30Rnd_45acp", 8}};
         uniformRadios[] = {"ACRE_PRC343"};
         uniformMagazines[] = {{"SmokeShell", 1}};
@@ -281,8 +299,8 @@ class FOW_USMC_G {
     };
 
     class ENG : Rifleman {
-        primaryWeapon = "fow_w_m1a1_thompson";
-        vestMagazines[] = {{"fow_30Rnd_45acp", 8}};
+        primaryWeapon = "fow_w_m1_carbine";
+        vestMagazines[] = {{"fow_15Rnd_762x33", 8}};
         backpackMagazines[] = {
             {"Toolkit", 1},
             {"DemoCharge_Remote_Mag", 5}
@@ -352,10 +370,10 @@ class FOW_USMC_G {
             {"fow_15Rnd_762x33", 50},
             {"fow_8Rnd_762x63", 50},
             {"fow_30Rnd_45acp", 50},
+            {"fow_20Rnd_45acp", 50},
             {"fow_100Rnd_762x63", 25},
             {"fow_20Rnd_762x63", 50},
             {"fow_1Rnd_m9a1", 25},
-            {"fow_20Rnd_45acp", 50},
             {"fow_1Rnd_m6a1", 15},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
