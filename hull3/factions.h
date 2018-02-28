@@ -2037,19 +2037,19 @@ class Faction {
         camouflage[] = {"woodland"};
         rolePrefix = "Finnish Army";
         vehicleClassnames[] = {
-            {"CO", "CUP_O_UAZ_Unarmed_CDF"},
-            {"SL", "CUP_O_UAZ_Unarmed_CDF"},
-            {"FT", "CUP_O_UAZ_Unarmed_CDF"},
-            {"ATTCH", "CUP_O_UAZ_Unarmed_CDF"},
-            {"ENG", "CUP_O_Ural_Repair_CDF"},
-            {"APC", "CUP_I_BMP1_TK_GUE"},
-            {"IFV", "CUP_O_BMP2_SLA"},
-            {"SPAAG", "CUP_O_ZSU23_SLA"},
-            {"TNK", "CUP_O_T72_SLA"},
-            {"TH", "CUP_O_Mi8_RU"},
-            {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_RU_3"},
-            {"Technical", "CUP_O_UAZ_MG_SLA"}
+            {"CO", "CUP_B_UAZ_Unarmed_CDF"},
+            {"SL", "CUP_B_UAZ_Unarmed_CDF"},
+            {"FT", "CUP_B_UAZ_Unarmed_CDF"},
+            {"ATTCH", "CUP_B_UAZ_Unarmed_CDF"},
+            {"ENG", "CUP_B_Ural_Repair_CDF"},
+            {"APC", "CUP_B_BTR60_CDF"},
+            {"IFV", "CUP_B_BMP2_CDF"},
+            {"SPAAG", "CUP_B_ZSU23_CDF"},
+            {"TNK", "CUP_B_T72_CDF"},
+            {"TH", "CUP_B_Mi17_CDF"},
+            {"AH", "CUP_B_Mi24_D_Dynamic_CDF"},
+            {"CAS", "CUP_B_Su25_Dyn_CDF"},
+            {"Technical", "CUP_B_UAZ_MG_CDF"}
         };
     };
 
@@ -2063,19 +2063,19 @@ class Faction {
         camouflage[] = {"snow"};
         rolePrefix = "Finnish Army";
         vehicleClassnames[] = {
-            {"CO", "CUP_O_UAZ_Unarmed_CDF"},
-            {"SL", "CUP_O_UAZ_Unarmed_CDF"},
-            {"FT", "CUP_O_UAZ_Unarmed_CDF"},
-            {"ATTCH", "CUP_O_UAZ_Unarmed_CDF"},
-            {"ENG", "CUP_O_Ural_Repair_CDF"},
-            {"APC", "CUP_I_BMP1_TK_GUE"},
-            {"IFV", "CUP_O_BMP2_SLA"},
-            {"SPAAG", "CUP_O_ZSU23_SLA"},
-            {"TNK", "CUP_O_T72_SLA"},
-            {"TH", "CUP_O_Mi8_RU"},
-            {"AH", "CUP_O_Mi24_V_RU"},
-            {"CAS", "CUP_O_Su25_RU_3"},
-            {"Technical", "CUP_O_UAZ_MG_SLA"}
+            {"CO", "CUP_B_UAZ_Unarmed_CDF"},
+            {"SL", "CUP_B_UAZ_Unarmed_CDF"},
+            {"FT", "CUP_B_UAZ_Unarmed_CDF"},
+            {"ATTCH", "CUP_B_UAZ_Unarmed_CDF"},
+            {"ENG", "CUP_B_Ural_Repair_CDF"},
+            {"APC", "CUP_B_BTR60_CDF"},
+            {"IFV", "CUP_B_BMP2_CDF"},
+            {"SPAAG", "CUP_B_ZSU23_CDF"},
+            {"TNK", "CUP_B_T72_CDF"},
+            {"TH", "CUP_B_Mi17_CDF"},
+            {"AH", "CUP_B_Mi24_D_Dynamic_CDF"},
+            {"CAS", "CUP_B_Su25_Dyn_CDF"},
+            {"Technical", "CUP_B_UAZ_MG_CDF"}
         };
     };
 
