@@ -136,6 +136,10 @@ class M16A3_RACS {
     };
 
     class AAR : Rifleman {
+        vestMagazines[] = {
+            {"30Rnd_556x45_Stanag", 8},
+            {"30Rnd_556x45_Stanag_Tracer_Red", 4}
+        };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
