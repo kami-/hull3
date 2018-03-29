@@ -128,7 +128,7 @@ class HK416_KSK {
 
     class AR : Rifleman {
         primaryWeapon = "arifle_SPAR_02_blk_F";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"RH_compM2", "RH_SFM952V", "RH_HBLM"};
         vestMagazines[] = {{"150Rnd_556x45_Drum_Mag_F", 3}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
