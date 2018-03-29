@@ -150,7 +150,7 @@ class CAR15_GEND {
 
     class RAT : Rifleman {
         primaryWeaponItems[] = {"RH_compM2l"};
-        secondaryWeapon = "CUP_launch_M72A6";
+        secondaryWeapon = "ARK_launch_M72E9";
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2}
@@ -395,7 +395,7 @@ class CAR15_GEND {
     class Vehicle {
         weapons[] = {
             {"hlc_rifle_Colt727", 4},
-            {"CUP_launch_M72A6", 5}
+            {"ARK_launch_M72E9", 5}
         };
         magazines[] = {
             {"30Rnd_556x45_Stanag", 15},
@@ -424,7 +424,7 @@ class CAR15_GEND {
     class Truck : Vehicle {
         weapons[] = {
             {"hlc_rifle_Colt727", 4},
-            {"CUP_launch_M72A6", 10}
+            {"ARK_launch_M72E9", 10}
         };
         magazines[] = {
             {"30Rnd_556x45_Stanag", 40},
@@ -453,7 +453,7 @@ class CAR15_GEND {
     };
 
     class Armored : Truck {
-        weapons[] = {{"CUP_launch_M72A6", 10}};
+        weapons[] = {{"ARK_launch_M72E9", 10}};
         magazines[] = {
             {"30Rnd_556x45_Stanag", 40},
             {"30Rnd_556x45_Stanag", 20},
