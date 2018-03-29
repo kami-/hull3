@@ -132,7 +132,7 @@ class HK416_CTRG_TRP {
 
     class AR : Rifleman {
         primaryWeapon = "arifle_SPAR_02_khk_F";
-        primaryWeaponItems[] = {"bipod_01_F_blk", "RH_SFM952V"};
+        primaryWeaponItems[] = {"optic_Holosight_khk_F", "RH_HBLM_tg", "RH_SFM952V"};
         vestMagazines[] = {{"150Rnd_556x45_Drum_Mag_F", 2}};
         backpackMagazines[] = {
             {"150Rnd_556x45_Drum_Mag_F", 2},

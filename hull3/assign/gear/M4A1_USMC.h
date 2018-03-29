@@ -130,7 +130,7 @@ class M4A1_USMC {
 
     class AR : Rifleman {
         primaryWeapon = "arifle_SPAR_02_blk_F";
-        primaryWeaponItems[] = {"RH_SFM952V", "RH_HBLM"};
+        primaryWeaponItems[] = {"RH_compM2", "RH_SFM952V", "RH_HBLM"};
         vestMagazines[] = {{"150Rnd_556x45_Drum_Mag_F", 4}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
