@@ -145,7 +145,7 @@ class AUGA3_AUS {
     };
 
     class RAT : Rifleman {
-        secondaryWeapon = "CUP_launch_M72A6";
+        secondaryWeapon = "ARK_launch_M72E9";
         vestMagazines[] = {
             {"hlc_30Rnd_556x45_B_AUG", 6},
             {"hlc_30Rnd_556x45_T_AUG", 2}
@@ -391,7 +391,7 @@ class AUGA3_AUS {
     class Vehicle {
         weapons[] = {
             {"hlc_rifle_auga3", 4},
-            {"CUP_launch_M72A6", 5}
+            {"ARK_launch_M72E9", 5}
         };
         magazines[] = {
             {"hlc_30Rnd_556x45_B_AUG", 15},
@@ -420,7 +420,7 @@ class AUGA3_AUS {
     class Truck : Vehicle {
         weapons[] = {
             {"hlc_rifle_auga3", 4},
-            {"CUP_launch_M72A6", 10}
+            {"ARK_launch_M72E9", 10}
         };
         magazines[] = {
             {"hlc_30Rnd_556x45_B_AUG", 40},
@@ -449,7 +449,7 @@ class AUGA3_AUS {
     };
 
     class Armored : Truck {
-        weapons[] = {{"CUP_launch_M72A6", 10}};
+        weapons[] = {{"ARK_launch_M72E9", 10}};
         magazines[] = {
             {"hlc_30Rnd_556x45_B_AUG", 40},
             {"hlc_30Rnd_556x45_B_AUG", 20},

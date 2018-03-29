@@ -149,7 +149,7 @@ class M16A4_ROK {
     class RAT : Rifleman {
         primaryWeapon = "hlc_rifle_M4";
         primaryWeaponItems[] = {"RH_compM2", "RH_SFM952V"};
-        secondaryWeapon = "CUP_launch_M72A6";
+        secondaryWeapon = "ARK_launch_M72E9";
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2}
@@ -403,7 +403,7 @@ class M16A4_ROK {
     class Vehicle {
         weapons[] = {
             {"CUP_arifle_M16A4_Base", 2},
-            {"CUP_launch_M72A6", 5},
+            {"ARK_launch_M72E9", 5},
             {"hlc_rifle_M4", 2}
         };
         magazines[] = {
@@ -433,7 +433,7 @@ class M16A4_ROK {
     class Truck : Vehicle {
         weapons[] = {
             {"CUP_arifle_M16A4_Base", 2},
-            {"CUP_launch_M72A6", 10},
+            {"ARK_launch_M72E9", 10},
             {"hlc_rifle_M4", 2}
         };
         magazines[] = {
@@ -463,7 +463,7 @@ class M16A4_ROK {
     };
 
     class Armored : Truck {
-        weapons[] = {{"CUP_launch_M72A6", 10}};
+        weapons[] = {{"ARK_launch_M72E9", 10}};
         magazines[] = {
             {"30Rnd_556x45_Stanag", 40},
             {"30Rnd_556x45_Stanag", 20},
