@@ -199,18 +199,18 @@ class L85_BAF_RIS {
     };
 
     class MATG : RAT {
-        secondaryWeapon = "CUP_launch_MAAWS";
-        secondaryWeaponItems[] = {"CUP_MAAWS_HEAT_M", "CUP_optic_MAAWS_Scope"};
+        secondaryWeapon = "launch_MRAWS_green_rail_F";
+        secondaryWeaponItems[] = {"MRAWS_HEAT_F"};
         backpackMagazines[] = {
-            {"CUP_MAAWS_HEAT_M", 2},
-            {"CUP_MAAWS_HEDP_M", 1}
+            {"MRAWS_HEAT_F", 2},
+            {"MRAWS_HE_F", 1}
         };
     };
 
     class MATAG : Rifleman {
         backpackMagazines[] = {
-            {"CUP_MAAWS_HEAT_M", 2},
-            {"CUP_MAAWS_HEDP_M", 1}
+            {"MRAWS_HEAT_F", 2},
+            {"MRAWS_HE_F", 1}
         };
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
@@ -431,7 +431,7 @@ class L85_BAF_RIS {
             {"UGL_FlareWhite_F", 10},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
-            {"CUP_MAAWS_HEAT_M", 5},
+            {"MRAWS_HEAT_F", 5},
             {"CUP_Javelin_M", 5},
             {"HandGrenade", 10},
             {"SmokeShell", 10}
@@ -457,7 +457,7 @@ class L85_BAF_RIS {
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
-            {"CUP_MAAWS_HEAT_M", 5},
+            {"MRAWS_HEAT_F", 5},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
             {"HandGrenade", 10},
