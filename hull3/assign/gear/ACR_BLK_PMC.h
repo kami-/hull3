@@ -201,15 +201,15 @@ class ACR_BLK_PMC {
         secondaryWeapon = "launch_MRAWS_green_rail_F";
         secondaryWeaponItems[] = {"MRAWS_HEAT_F"};
         backpackMagazines[] = {
-            {"MRAWS_HEAT_F", 2},
-            {"MRAWS_HE_F", 1}
+            {"MRAWS_HEAT_F", 4},
+            {"MRAWS_HE_F", 2}
         };
     };
 
     class MATAG : Rifleman {
         backpackMagazines[] = {
-            {"MRAWS_HEAT_F", 2},
-            {"MRAWS_HE_F", 1}
+            {"MRAWS_HEAT_F", 4},
+            {"MRAWS_HE_F", 2}
         };
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
