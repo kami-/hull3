@@ -202,18 +202,18 @@ class G36_KSK {
 
     class MATG : RAT {
         primaryWeapon = "hlc_rifle_G36KA1KSK";
-        secondaryWeapon = "CUP_launch_MAAWS";
-        secondaryWeaponItems[] = {"CUP_MAAWS_HEAT_M", "CUP_optic_MAAWS_Scope"};
+        secondaryWeapon = "launch_MRAWS_green_rail_F";
+        secondaryWeaponItems[] = {"MRAWS_HEAT_F"};
         backpackMagazines[] = {
-            {"CUP_MAAWS_HEAT_M", 2},
-            {"CUP_MAAWS_HEDP_M", 1}
+            {"MRAWS_HEAT_F", 4},
+            {"MRAWS_HE_F", 2}
         };
     };
 
     class MATAG : Rifleman {
         backpackMagazines[] = {
-            {"CUP_MAAWS_HEAT_M", 2},
-            {"CUP_MAAWS_HEDP_M", 1}
+            {"MRAWS_HEAT_F", 4},
+            {"MRAWS_HE_F", 2}
         };
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
@@ -440,7 +440,7 @@ class G36_KSK {
             {"UGL_FlareWhite_F", 10},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
-            {"CUP_MAAWS_HEAT_M", 5},
+            {"MRAWS_HEAT_F", 5},
             {"CUP_Javelin_M", 5},
             {"HandGrenade", 10},
             {"SmokeShell", 10}
@@ -466,7 +466,7 @@ class G36_KSK {
             {"hlc_250Rnd_762x51_T_MG3", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
-            {"CUP_MAAWS_HEAT_M", 5},
+            {"MRAWS_HEAT_F", 5},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
             {"HandGrenade", 10},
