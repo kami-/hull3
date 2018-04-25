@@ -401,7 +401,7 @@ class Katiba_IRN {
     class Vehicle {
         weapons[] = {
             {"arifle_Katiba_F", 2},
-            {"ARK_launch_RPG22", 2},
+            {"CUP_launch_RPG18", 2},
             {"arifle_Katiba_C_F", 2}
         };
         magazines[] = {
@@ -431,7 +431,7 @@ class Katiba_IRN {
     class Truck : Vehicle {
         weapons[] = {
             {"arifle_Katiba_F", 2},
-            {"ARK_launch_RPG22", 4},
+            {"CUP_launch_RPG18", 4},
             {"arifle_Katiba_C_F", 2}
         };
         magazines[] = {
@@ -461,7 +461,7 @@ class Katiba_IRN {
     };
 
     class Armored : Truck {
-        weapons[] = {{"ARK_launch_RPG22", 4}};
+        weapons[] = {{"CUP_launch_RPG18", 4}};
         magazines[] = {
             {"30Rnd_65x39_caseless_green", 60},
             {"150Rnd_762x54_Box", 20},

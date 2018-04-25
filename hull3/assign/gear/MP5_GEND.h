@@ -389,7 +389,7 @@ class MP5_GEND {
     class Vehicle {
         weapons[] = {
             {"hlc_smg_mp5a3", 4},
-            {"ARK_launch_M72E9", 5}
+            {"CUP_launch_M72A6", 5}
         };
         magazines[] = {
             {"hlc_30Rnd_9x19_B_MP5", 15},
@@ -418,7 +418,7 @@ class MP5_GEND {
     class Truck : Vehicle {
         weapons[] = {
             {"hlc_smg_mp5a3", 4},
-            {"ARK_launch_M72E9", 10}
+            {"CUP_launch_M72A6", 10}
         };
         magazines[] = {
             {"hlc_30Rnd_9x19_B_MP5", 40},
@@ -447,7 +447,7 @@ class MP5_GEND {
     };
 
     class Armored : Truck {
-        weapons[] = {{"ARK_launch_M72E9", 10}};
+        weapons[] = {{"CUP_launch_M72A6", 10}};
         magazines[] = {
             {"hlc_30Rnd_9x19_B_MP5", 40},
             {"hlc_30Rnd_9x19_B_MP5", 20},

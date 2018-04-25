@@ -150,7 +150,7 @@ class G3KA4_NOR {
     };
 
     class RAT : Rifleman {
-        secondaryWeapon = "ARK_launch_M72E9";
+        secondaryWeapon = "CUP_launch_M72A6";
         vestMagazines[] = {
             {"hlc_20rnd_762x51_b_G3", 6},
             {"hlc_20rnd_762x51_T_G3", 2}
@@ -399,7 +399,7 @@ class G3KA4_NOR {
     class Vehicle {
         weapons[] = {
             {"hlc_rifle_g3ka4", 4},
-            {"ARK_launch_M72E9", 5}
+            {"CUP_launch_M72A6", 5}
         };
         magazines[] = {
             {"hlc_20rnd_762x51_T_G3", 15},
@@ -428,7 +428,7 @@ class G3KA4_NOR {
     class Truck : Vehicle {
         weapons[] = {
             {"hlc_rifle_g3ka4", 4},
-            {"ARK_launch_M72E9", 10}
+            {"CUP_launch_M72A6", 10}
         };
         magazines[] = {
             {"hlc_20rnd_762x51_T_G3", 40},
@@ -457,7 +457,7 @@ class G3KA4_NOR {
     };
 
     class Armored : Truck {
-        weapons[] = {{"ARK_launch_M72E9", 10}};
+        weapons[] = {{"CUP_launch_M72A6", 10}};
         magazines[] = {
             {"hlc_20rnd_762x51_T_G3", 40},
             {"hlc_20rnd_762x51_b_G3", 20},

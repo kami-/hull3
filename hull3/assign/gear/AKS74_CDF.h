@@ -407,7 +407,7 @@ class AKS74_CDF {
     class Vehicle {
         weapons[] = {
             {"hlc_rifle_ak74", 4},
-            {"ARK_launch_RPG22", 2}
+            {"CUP_launch_RPG18", 2}
         };
         magazines[] = {
             {"hlc_30Rnd_545x39_B_AK", 30},
@@ -436,7 +436,7 @@ class AKS74_CDF {
     class Truck : Vehicle {
         weapons[] = {
             {"hlc_rifle_ak74", 4},
-            {"ARK_launch_RPG22", 4}
+            {"CUP_launch_RPG18", 4}
         };
         magazines[] = {
             {"hlc_30Rnd_545x39_B_AK", 60},
@@ -465,7 +465,7 @@ class AKS74_CDF {
     };
 
     class Armored : Truck {
-        weapons[] = {{"ARK_launch_RPG22", 4}};
+        weapons[] = {{"CUP_launch_RPG18", 4}};
         magazines[] = {
             {"hlc_30Rnd_545x39_B_AK", 60},
             {"hlc_45Rnd_545x39_t_rpk", 20},

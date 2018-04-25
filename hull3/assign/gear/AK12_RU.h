@@ -410,7 +410,7 @@ class AK12_RU {
     class Vehicle {
         weapons[] = {
             {"hlc_rifle_ak12", 2},
-            {"ARK_launch_RPG22", 5},
+            {"CUP_launch_RPG18", 5},
             {"hlc_rifle_ak12", 2}
         };
         magazines[] = {
@@ -440,7 +440,7 @@ class AK12_RU {
     class Truck : Vehicle {
         weapons[] = {
             {"hlc_rifle_ak12", 2},
-            {"ARK_launch_RPG22", 10},
+            {"CUP_launch_RPG18", 10},
             {"hlc_rifle_ak12", 2}
         };
         magazines[] = {
@@ -470,7 +470,7 @@ class AK12_RU {
     };
 
     class Armored : Truck {
-        weapons[] = {{"ARK_launch_RPG22", 10}};
+        weapons[] = {{"CUP_launch_RPG18", 10}};
         magazines[] = {
             {"hlc_30Rnd_545x39_B_AK", 60},
             {"hlc_60Rnd_545x39_t_rpk", 20},

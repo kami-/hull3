@@ -156,7 +156,7 @@ class CAR95_CN {
     class RAT : Rifleman {
         primaryWeapon = "arifle_CTAR_blk_F";
         primaryWeaponItems[] = {"RH_SFM952V"};
-        secondaryWeapon = "ARK_launch_RPG22";
+        secondaryWeapon = "CUP_launch_RPG18";
         vestMagazines[] = {
             {"30Rnd_580x42_Mag_F", 6},
             {"30Rnd_580x42_Mag_Tracer_F", 2}
@@ -420,7 +420,7 @@ class CAR95_CN {
     class Vehicle {
         weapons[] = {
             {"arifle_CTAR_blk_F", 2},
-            {"ARK_launch_RPG22", 5},
+            {"CUP_launch_RPG18", 5},
             {"arifle_CTAR_blk_F", 2}
         };
         magazines[] = {
@@ -449,7 +449,7 @@ class CAR95_CN {
     class Truck : Vehicle {
         weapons[] = {
             {"arifle_CTAR_blk_F", 2},
-            {"ARK_launch_RPG22", 10},
+            {"CUP_launch_RPG18", 10},
             {"arifle_CTAR_blk_F", 2}
         };
         magazines[] = {
@@ -479,7 +479,7 @@ class CAR95_CN {
     };
 
     class Armored : Truck {
-        weapons[] = {{"ARK_launch_RPG22", 10}};
+        weapons[] = {{"CUP_launch_RPG18", 10}};
         magazines[] = {
             {"30Rnd_580x42_Mag_F", 60},
             {"100Rnd_580x42_Mag_F", 20},

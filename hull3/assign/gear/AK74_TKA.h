@@ -410,7 +410,7 @@ class AK74_TKA {
     class Vehicle {
         weapons[] = {
             {"hlc_rifle_ak74_dirty2", 2},
-            {"ARK_launch_RPG22", 2},
+            {"CUP_launch_RPG18", 2},
             {"hlc_rifle_aks74", 2}
         };
         magazines[] = {
@@ -440,7 +440,7 @@ class AK74_TKA {
     class Truck : Vehicle {
         weapons[] = {
             {"hlc_rifle_ak74_dirty2", 2},
-            {"ARK_launch_RPG22", 4},
+            {"CUP_launch_RPG18", 4},
             {"hlc_rifle_aks74", 2}
         };
         magazines[] = {
@@ -470,7 +470,7 @@ class AK74_TKA {
     };
 
     class Armored : Truck {
-        weapons[] = {{"ARK_launch_RPG22", 4}};
+        weapons[] = {{"CUP_launch_RPG18", 4}};
         magazines[] = {
             {"hlc_30Rnd_545x39_B_AK", 60},
             {"hlc_45Rnd_545x39_t_rpk", 20},

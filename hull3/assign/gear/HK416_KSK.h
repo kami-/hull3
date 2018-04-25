@@ -150,7 +150,7 @@ class HK416_KSK {
 
     class RAT : Rifleman {
         primaryWeapon = "arifle_SPAR_01_blk_F";
-        secondaryWeapon = "ARK_launch_M72E9";
+        secondaryWeapon = "CUP_launch_M72A6";
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2}
@@ -397,7 +397,7 @@ class HK416_KSK {
     class Vehicle {
         weapons[] = {
             {"arifle_SPAR_01_blk_F", 2},
-            {"ARK_launch_M72E9", 5},
+            {"CUP_launch_M72A6", 5},
             {"arifle_SPAR_01_blk_F", 2}
         };
         magazines[] = {
@@ -427,7 +427,7 @@ class HK416_KSK {
     class Truck : Vehicle {
         weapons[] = {
             {"arifle_SPAR_01_blk_F", 2},
-            {"ARK_launch_M72E9", 10},
+            {"CUP_launch_M72A6", 10},
             {"arifle_SPAR_01_blk_F", 2}
         };
         magazines[] = {
@@ -458,7 +458,7 @@ class HK416_KSK {
     };
 
     class Armored : Truck {
-        weapons[] = {{"ARK_launch_M72E9", 10}};
+        weapons[] = {{"CUP_launch_M72A6", 10}};
         magazines[] = {
             {"30Rnd_556x45_Stanag", 40},
             {"30Rnd_556x45_Stanag", 20},
