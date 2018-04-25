@@ -148,7 +148,7 @@ class G36_KSK {
 
     class RAT : Rifleman {
         primaryWeapon = "hlc_rifle_G36KA1KSK";
-        secondaryWeapon = "ARK_launch_M72E9";
+        secondaryWeapon = "CUP_launch_M72A6";
         vestMagazines[] = {
             {"hlc_30rnd_556x45_EPR_G36", 6},
             {"hlc_30rnd_556x45_Tracers_G36", 2}
@@ -400,7 +400,7 @@ class G36_KSK {
     class Vehicle {
         weapons[] = {
             {"hlc_rifle_G36KA1KSK", 4},
-            {"ARK_launch_M72E9", 5}
+            {"CUP_launch_M72A6", 5}
         };
         magazines[] = {
             {"hlc_30rnd_556x45_EPR_G36", 15},
@@ -429,7 +429,7 @@ class G36_KSK {
     class Truck : Vehicle {
         weapons[] = {
             {"hlc_rifle_G36KA1KSK", 4},
-            {"ARK_launch_M72E9", 10}
+            {"CUP_launch_M72A6", 10}
         };
         magazines[] = {
             {"hlc_30rnd_556x45_EPR_G36", 40},
@@ -458,7 +458,7 @@ class G36_KSK {
     };
 
     class Armored : Truck {
-        weapons[] = {{"ARK_launch_M72E9", 10}};
+        weapons[] = {{"CUP_launch_M72A6", 10}};
         magazines[] = {
             {"hlc_30rnd_556x45_EPR_G36", 40},
             {"hlc_30rnd_556x45_EPR_G36", 20},
