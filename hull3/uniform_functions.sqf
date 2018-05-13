@@ -55,15 +55,22 @@ hull3_uniform_fnc_assignObjectTemplate = {
     FUN_ARGS_5(_object,_gearTemplate,_uniformTemplate,_gearClass,_assignables);
 
     {
-        DECLARE_3(_x,_field,_configType,_assignFunc);
-        private ["_configFunc", "_configValue"];
-        _configFunc = CONFIG_TYPE_FUNCTIONS select _configType;
-        _configValue = [TYPE_CLASS_GEAR, _gearTemplate, _gearClass, _field] call _configFunc;
-        if (_configValue == "") then {
-            _configValue = [TYPE_CLASS_UNIFORM, _uniformTemplate, _gearClass, _field] call _configFunc;
-        };
+        _x params ["_field", "_configType", "_assignFunc"];
+        private _configValue = [_gearTemplate, _uniformTemplate, _gearClass, _field, _configType] call hull3_uniform_fnc_getConfigValue;
         [_object, _configValue] call _assignFunc;
     } foreach _assignables;
+};
+
+hull3_uniform_fnc_getConfigValue = {
+    params ["_gearTemplate", "_uniformTemplate", "_gearClass", "_field", "_configType"];
+
+    private _configFunc = CONFIG_TYPE_FUNCTIONS select _configType;
+    private _configValue = [TYPE_CLASS_GEAR, _gearTemplate, _gearClass, _field] call _configFunc;
+    if (_configValue == "") then {
+        _configValue = [TYPE_CLASS_UNIFORM, _uniformTemplate, _gearClass, _field] call _configFunc;
+    };
+
+    _configValue;
 };
 
 hull3_uniform_fnc_assignHeadGear = {
@@ -82,6 +89,18 @@ hull3_uniform_fnc_assignGoggles = {
         _unit addGoggles _goggles;
         TRACE("hull3.uniform.assign",FMT_2("Assigned goggles '%1' to unit '%2'.",_goggles,_unit));
     };
+};
+
+hull3_uniform_fnc_assignGogglesOnJip = {
+    params ["_unit"];
+
+    private _gearTemplate = _unit getVariable ["hull3_gear_template", ""];
+    private _uniformTemplate = _unit getVariable ["hull3_uniform_template", ""];
+    private _gearClass = _unit getVariable ["hull3_gear_class", ""];
+    if (!isMultiplayer || { !didJIP } || { _gearTemplate == "" } || { _uniformTemplate == "" } || { _gearClass == "" }) exitWith {};
+    removeGoggles _unit;
+    private _goggles = [_gearTemplate, _uniformTemplate, _gearClass, "goggles", CONFIG_TYPE_TEXT] call hull3_uniform_fnc_getConfigValue;
+    [_unit, _goggles] call hull3_uniform_fnc_assignGoggles;
 };
 
 hull3_uniform_fnc_assignUniform = {
