@@ -309,5 +309,12 @@ hull3_mission_fnc_receiveJipSync = {
 };
 
 hull3_mission_fnc_edenInit = {
-    set3DENMissionAttributes [["Intel","timeOfChanges",28800]];
+    set3DENMissionAttributes [
+        ["Intel","timeOfChanges",28800],
+        ["Intel","wavesForced",1],
+        ["Intel","windForced",1],
+        ["Intel","year",2014],
+        ["Intel","month",1],
+        ["Intel","day",31]
+    ];
 };
