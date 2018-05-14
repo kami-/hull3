@@ -81,5 +81,18 @@ class CfgRespawnTemplates {
     };
 };
 
+class Cfg3DEN {
+    class EventHandlers {
+        class Hull3 {
+            OnMissionLoad       = "[] call hull3_mission_fnc_edenInit";
+            OnMissionNew        = "[] call hull3_mission_fnc_edenInit";
+            OnMissionPreview    = "[] call hull3_mission_fnc_edenInit";
+            OnMissionPreviewEnd = "[] call hull3_mission_fnc_edenInit";
+            OnTerrainNew        = "[] call hull3_mission_fnc_edenInit";
+            OnMissionSave       = "[] call hull3_mission_fnc_edenInit";
+        };
+    };
+};
+
 // Hull3
 #include "hull3.h"

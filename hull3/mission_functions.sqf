@@ -307,3 +307,7 @@ hull3_mission_fnc_receiveJipSync = {
     hull3_mission_safetyTimerAbort = _safetyTimerAbort;
     ["mission.jip.received", _customArguments] call hull3_event_fnc_emitEvent;
 };
+
+hull3_mission_fnc_edenInit = {
+    set3DENMissionAttributes [["Intel","timeOfChanges",28800]];
+};
