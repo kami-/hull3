@@ -23,6 +23,12 @@ class Extended_PostInit_EventHandlers {
     };
 };
 
+class Extended_PreStart_EventHandlers {
+    class Hull3 {
+        init = "[] call compile preProcessFileLineNumbers 'x\ark\addons\hull3\eden_functions.sqf';";
+    };
+};
+
 class CfgFactionClasses {
     class NO_CATEGORY;
     class Hull3 : NO_CATEGORY {
@@ -84,12 +90,12 @@ class CfgRespawnTemplates {
 class Cfg3DEN {
     class EventHandlers {
         class Hull3 {
-            OnMissionLoad       = "[] call hull3_mission_fnc_edenInit";
-            OnMissionNew        = "[] call hull3_mission_fnc_edenInit";
-            OnMissionPreview    = "[] call hull3_mission_fnc_edenInit";
-            OnMissionPreviewEnd = "[] call hull3_mission_fnc_edenInit";
-            OnTerrainNew        = "[] call hull3_mission_fnc_edenInit";
-            OnMissionSave       = "[] call hull3_mission_fnc_edenInit";
+            OnMissionLoad       = "[] call hull3_eden_fnc_intelSettings; systemChat 'EH Fired';";
+            OnMissionNew        = "[] call hull3_eden_fnc_intelSettings; systemChat 'EH Fired';";
+            OnMissionPreview    = "[] call hull3_eden_fnc_intelSettings; systemChat 'EH Fired';";
+            OnMissionPreviewEnd = "[] call hull3_eden_fnc_intelSettings; systemChat 'EH Fired';";
+            OnTerrainNew        = "[] call hull3_eden_fnc_intelSettings; systemChat 'EH Fired';";
+            OnMissionSave       = "[] call hull3_eden_fnc_intelSettings; systemChat 'EH Fired';";
         };
     };
 };
