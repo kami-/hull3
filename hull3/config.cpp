@@ -23,6 +23,12 @@ class Extended_PostInit_EventHandlers {
     };
 };
 
+class Extended_PreStart_EventHandlers {
+    class Hull3 {
+        init = "[] call compile preProcessFileLineNumbers 'x\ark\addons\hull3\eden_functions.sqf';";
+    };
+};
+
 class CfgFactionClasses {
     class NO_CATEGORY;
     class Hull3 : NO_CATEGORY {
@@ -78,6 +84,19 @@ class CfgVehicles {
 class CfgRespawnTemplates {
     class Hull3_RespawnHandler {
         onPlayerRespawn = "hull3_unit_fnc_onPlayerRespawn";
+    };
+};
+
+class Cfg3DEN {
+    class EventHandlers {
+        class Hull3 {
+            OnMissionLoad       = "call (uiNamespace getVariable 'hull3_eden_fnc_intelSettings');"
+            OnMissionNew        = "call (uiNamespace getVariable 'hull3_eden_fnc_intelSettings');"
+            OnMissionPreview    = "call (uiNamespace getVariable 'hull3_eden_fnc_intelSettings');"
+            OnMissionPreviewEnd = "call (uiNamespace getVariable 'hull3_eden_fnc_intelSettings');"
+            OnTerrainNew        = "call (uiNamespace getVariable 'hull3_eden_fnc_intelSettings');"
+            OnMissionSave       = "call (uiNamespace getVariable 'hull3_eden_fnc_intelSettings');"
+        };
     };
 };
 
