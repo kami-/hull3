@@ -90,12 +90,12 @@ class CfgRespawnTemplates {
 class Cfg3DEN {
     class EventHandlers {
         class Hull3 {
-            OnMissionLoad       = "[] call hull3_eden_fnc_intelSettings; systemChat 'EH Fired';";
-            OnMissionNew        = "[] call hull3_eden_fnc_intelSettings; systemChat 'EH Fired';";
-            OnMissionPreview    = "[] call hull3_eden_fnc_intelSettings; systemChat 'EH Fired';";
-            OnMissionPreviewEnd = "[] call hull3_eden_fnc_intelSettings; systemChat 'EH Fired';";
-            OnTerrainNew        = "[] call hull3_eden_fnc_intelSettings; systemChat 'EH Fired';";
-            OnMissionSave       = "[] call hull3_eden_fnc_intelSettings; systemChat 'EH Fired';";
+            OnMissionLoad       = "call (uiNamespace getVariable 'hull3_eden_fnc_intelSettings');"
+            OnMissionNew        = "call (uiNamespace getVariable 'hull3_eden_fnc_intelSettings');"
+            OnMissionPreview    = "call (uiNamespace getVariable 'hull3_eden_fnc_intelSettings');"
+            OnMissionPreviewEnd = "call (uiNamespace getVariable 'hull3_eden_fnc_intelSettings');"
+            OnTerrainNew        = "call (uiNamespace getVariable 'hull3_eden_fnc_intelSettings');"
+            OnMissionSave       = "call (uiNamespace getVariable 'hull3_eden_fnc_intelSettings');"
         };
     };
 };
