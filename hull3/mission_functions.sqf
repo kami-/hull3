@@ -69,7 +69,7 @@ hull3_mission_fnc_readMissionParamValues = {
 
 hull3_mission_fnc_getDateTime = {
     if (isNil {hull3_mission_date}) then {
-        hull3_mission_date = [2014, 1, 31];
+        hull3_mission_date = [2035, 6, 12];
         TRACE("hull3.mission.datetime",FMT_1("Mission param 'hull3_mission_date' was not set, using default '%1'.",hull3_mission_date));
     };
     if (isNil {hull3_mission_timeOfDay}) then {
