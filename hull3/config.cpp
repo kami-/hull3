@@ -90,12 +90,12 @@ class CfgRespawnTemplates {
 class Cfg3DEN {
     class EventHandlers {
         class Hull3 {
-            OnMissionLoad       = "call (uiNamespace getVariable 'hull3_eden_fnc_intelSettings');"
-            OnMissionNew        = "call (uiNamespace getVariable 'hull3_eden_fnc_intelSettings');"
-            OnMissionPreview    = "call (uiNamespace getVariable 'hull3_eden_fnc_intelSettings');"
-            OnMissionPreviewEnd = "call (uiNamespace getVariable 'hull3_eden_fnc_intelSettings');"
-            OnTerrainNew        = "call (uiNamespace getVariable 'hull3_eden_fnc_intelSettings');"
-            OnMissionSave       = "call (uiNamespace getVariable 'hull3_eden_fnc_intelSettings');"
+            OnMissionLoad       = "call (uiNamespace getVariable 'hull3_eden_fnc_intelSettings');";
+            OnMissionNew        = "call (uiNamespace getVariable 'hull3_eden_fnc_intelSettings');";
+            OnMissionPreview    = "call (uiNamespace getVariable 'hull3_eden_fnc_intelSettings');";
+            OnMissionPreviewEnd = "call (uiNamespace getVariable 'hull3_eden_fnc_intelSettings');";
+            OnTerrainNew        = "call (uiNamespace getVariable 'hull3_eden_fnc_intelSettings');";
+            OnMissionSave       = "call (uiNamespace getVariable 'hull3_eden_fnc_intelSettings');";
         };
     };
 };
