@@ -123,7 +123,7 @@ hull3_mission_fnc_setWeather = {
 hull3_mission_fnc_setEnviroment = {
     setDate ([] call hull3_mission_fnc_getDateTime);
     [0, [] call hull3_mission_fnc_getWeather] call hull3_mission_fnc_setWeather;
-    [{([] call hull3_mission_fnc_getFog) call BIS_fnc_setFog;}] call CBA_fnc_execNextFrame;
+    [{([] call hull3_mission_fnc_getFog) call BIS_fnc_setFog;}, [], 10] call CBA_fnc_waitAndExecute;
     DEBUG("hull3.mission.weather",FMT_3("Environment was set. Date to '%1', fog to '%2' and weather to '%3'.",[] call hull3_mission_fnc_getDateTime,[] call hull3_mission_fnc_getFog,[] call hull3_mission_fnc_getWeather));
 };
 
