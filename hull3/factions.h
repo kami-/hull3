@@ -2236,7 +2236,7 @@ class Faction {
     };
 
     class CUP_CDF_DES_UN {
-        gear = "M16A3_CDF";
+        gear = "SIG550_CDF";
         uniform = "CUP_CDF_DES_UN";
         name = "CDF UN (Desert)";
         description = "Desert United Nations with M16A3's";
@@ -2262,7 +2262,7 @@ class Faction {
     };
 
     class CUP_CDF_FOR_UN {
-        gear = "M16A3_CDF";
+        gear = "SIG550_CDF";
         uniform = "CUP_CDF_FOR_UN";
         name = "CDF UN (Forest)";
         description = "Forest United Nations with M16A3's";
@@ -2288,7 +2288,7 @@ class Faction {
     };
 
     class CUP_CDF_MOU_UN {
-        gear = "M16A3_CDF";
+        gear = "SIG550_CDF";
         uniform = "CUP_CDF_MOU_UN";
         name = "CDF UN (Mountain)";
         description = "Mountain United Nations with M16A3's";
@@ -2314,7 +2314,7 @@ class Faction {
     };
 
     class CUP_CDF_SN_UN {
-        gear = "M16A3_CDF";
+        gear = "SIG550_CDF";
         uniform = "CUP_CDF_SN_UN";
         name = "CDF UN (Winter)";
         description = "Winter United Nations with M16A3's";
