@@ -7,6 +7,8 @@
 hull3_mission_fnc_preInit = {
     hull3_mission_isJip = false;
     [] call hull3_mission_fnc_addEventHandlers;
+    [] call hull3_mission_fnc_evaluateParams;
+    [] call hull3_mission_fnc_readMissionParamValues;
     DEBUG("hull3.mission","Mission functions preInit finished.");
 };
 
@@ -15,13 +17,11 @@ hull3_mission_fnc_addEventHandlers = {
 };
 
 hull3_mission_fnc_init = {
-    [] call hull3_mission_fnc_evaluateParams;
     hull3_mission_safetyTimerAbort = false;
 };
 
 hull3_mission_fnc_serverInit = {
     [] call hull3_mission_fnc_addServerEHs;
-    [] call hull3_mission_fnc_readMissionParamValues;
     [] call hull3_mission_fnc_setEnviroment;
     [] spawn hull3_mission_fnc_serverSafetyTimerLoop;
     DEBUG("hull3.mission","Server init finished.");
@@ -78,6 +78,14 @@ hull3_mission_fnc_getDateTime = {
     };
 
     [hull3_mission_date select 0, hull3_mission_date select 1, hull3_mission_date select 2, hull3_mission_timeOfDay select 0, hull3_mission_timeOfDay select 1];
+};
+
+hull3_mission_fnc_isNightTime = {
+    private _nightTimeStart = 17 * 60 + 50;
+    private _nightTimeEnd = 4 * 60;
+    private _currentTime = (hull3_mission_timeOfDay select 0) * 60 + (hull3_mission_timeOfDay select 1);
+
+    _currentTime >= _nightTimeStart || {_currentTime <= _nightTimeEnd};
 };
 
 hull3_mission_fnc_getFog = {

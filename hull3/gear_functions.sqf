@@ -64,6 +64,7 @@ hull3_gear_fnc_assignUnit = {
     [_unit, _gearTemplate, _uniformTemplate, _gearClass] call hull3_uniform_fnc_assignUniformTemplate;
     [_unit, _faction, _gearTemplate, _gearClass] call hull3_gear_fnc_assignUnitInit;
     [_unit, _gearTemplate, _gearClass] call hull3_gear_fnc_assignUnitTemplate;
+    [_unit] call hull3_gear_fnc_tryRemoveNightGear;
 };
 
 hull3_gear_fnc_assignVehicle = {
@@ -303,4 +304,15 @@ hull3_gear_fnc_removeRadios = {
     {
         _unit removeItem _x;
     } forEach _radios;
+};
+
+hull3_gear_fnc_tryRemoveNightGear = {
+    params ["_unit"];
+
+    if !([] call hull3_mission_fnc_isNightTime) exitWith {};
+    DEBUG("hull3.gear.assign.night",FMT_1("Removing night gear from unit '%1'.",_unit));
+    {
+        _unit removeMagazineGlobal _x;
+    } foreach ((magazines _unit) select { _x == "ACE_Chemlight_HiRed" });
+    _unit removeItems "ACE_Flashlight_KSF1";
 };
