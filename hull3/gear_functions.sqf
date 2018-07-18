@@ -309,7 +309,7 @@ hull3_gear_fnc_removeRadios = {
 hull3_gear_fnc_tryRemoveNightGear = {
     params ["_unit"];
 
-    if !([] call hull3_mission_fnc_isNightTime) exitWith {};
+    if ([] call hull3_mission_fnc_isNightTime) exitWith {};
     DEBUG("hull3.gear.assign.night",FMT_1("Removing night gear from unit '%1'.",_unit));
     {
         _unit removeMagazineGlobal _x;
