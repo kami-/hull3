@@ -3,12 +3,12 @@
 #include "\userconfig\hull3\log\mission.h"
 #include "logbook.h"
 
+#define DEFAULT_TIME_OF_DAY [12, 0]
+
 
 hull3_mission_fnc_preInit = {
     hull3_mission_isJip = false;
     [] call hull3_mission_fnc_addEventHandlers;
-    [] call hull3_mission_fnc_evaluateParams;
-    [] call hull3_mission_fnc_readMissionParamValues;
     DEBUG("hull3.mission","Mission functions preInit finished.");
 };
 
@@ -17,11 +17,13 @@ hull3_mission_fnc_addEventHandlers = {
 };
 
 hull3_mission_fnc_init = {
+    [] call hull3_mission_fnc_evaluateParams;
     hull3_mission_safetyTimerAbort = false;
 };
 
 hull3_mission_fnc_serverInit = {
     [] call hull3_mission_fnc_addServerEHs;
+    [] call hull3_mission_fnc_readMissionParamValues;
     [] call hull3_mission_fnc_setEnviroment;
     [] spawn hull3_mission_fnc_serverSafetyTimerLoop;
     DEBUG("hull3.mission","Server init finished.");
@@ -73,17 +75,25 @@ hull3_mission_fnc_getDateTime = {
         TRACE("hull3.mission.datetime",FMT_1("Mission param 'hull3_mission_date' was not set, using default '%1'.",hull3_mission_date));
     };
     if (isNil {hull3_mission_timeOfDay}) then {
-        hull3_mission_timeOfDay = [12, 0];
+        hull3_mission_timeOfDay = DEFAULT_TIME_OF_DAY;
         TRACE("hull3.mission.datetime",FMT_1("Mission param 'hull3_mission_timeOfDay' was not set, using default '%1'.",hull3_mission_timeOfDay));
     };
 
     [hull3_mission_date select 0, hull3_mission_date select 1, hull3_mission_date select 2, hull3_mission_timeOfDay select 0, hull3_mission_timeOfDay select 1];
 };
 
+hull3_mission_fnc_getTimeOfDay = {
+    private _paramIdx = "true" configClasses (missionConfigFile >> "Params") findIf { configName _x == "Hull3_TimeOfDay" };
+    if (_paramIdx == -1) exitWith { DEFAULT_TIME_OF_DAY; };
+
+    (["MissionParams", "time"] call hull3_config_fnc_getArray) select (paramsArray select _paramIdx);
+};
+
 hull3_mission_fnc_isNightTime = {
     private _nightTimeStart = 17 * 60 + 50;
     private _nightTimeEnd = 4 * 60;
-    private _currentTime = (hull3_mission_timeOfDay select 0) * 60 + (hull3_mission_timeOfDay select 1);
+    private _timeOfDay = [] call hull3_mission_fnc_getTimeOfDay;
+    private _currentTime = (_timeOfDay select 0) * 60 + (_timeOfDay select 1);
 
     _currentTime >= _nightTimeStart || {_currentTime <= _nightTimeEnd};
 };
