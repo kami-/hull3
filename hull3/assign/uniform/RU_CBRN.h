@@ -1,6 +1,6 @@
 class RU_CBRN {
     class Rifleman {
-        headGear = "H_PASGT_basic_blue_F";
+        headGear = "MNP_Helmet_PAGST_BK";
         goggles = "skn_s10_balaclava_blue_dry";
         uniform = "skn_u_nbc_opf_blue";
         vest = "skn_o_elbv_worn_no_bp_ARM";
