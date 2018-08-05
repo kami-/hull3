@@ -19,9 +19,9 @@ class MissionParams {
 
     // Fog Strength, Decay, Base
     fog[] = {
-        {0,     0,      0}, // Light
-        {0.2,   0,      0}, // Medium
-        {0.4,   0,      0} // Heavy
+        {0, 0, 0}, // Light
+        {0.2, 0, 0}, // Medium
+        {0.4, 0, 0} // Heavy
     };
 
     // Overcast, Rain, Rainbow, Lightnings, Wind Strength, Wind Gusts, Waves, Humidity

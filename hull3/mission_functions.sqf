@@ -127,7 +127,7 @@ hull3_mission_fnc_getWeather = {
 };
 
 hull3_mission_fnc_setWeather = {
-    FUN_ARGS_2(_time,_weather);
+    params ["_time","_weather"];
 
     [(_weather select 0)] call BIS_fnc_setOvercast;
     _time setRain (_weather select 1);
@@ -139,9 +139,9 @@ hull3_mission_fnc_setWeather = {
 };
 
 hull3_mission_fnc_setEnviroment = {
-    setDate ([] call hull3_mission_fnc_getDateTime);
+    [([] call hull3_mission_fnc_getDateTime),true] call BIS_fnc_setDate;
     [0, [] call hull3_mission_fnc_getWeather] call hull3_mission_fnc_setWeather;
-    [{([] call hull3_mission_fnc_getFog) call BIS_fnc_setFog;}, [], 10] call CBA_fnc_waitAndExecute;
+    ([] call hull3_mission_fnc_getFog) remoteExec ["bis_fnc_setFog",0];
     DEBUG("hull3.mission.weather",FMT_3("Environment was set. Date to '%1', fog to '%2' and weather to '%3'.",[] call hull3_mission_fnc_getDateTime,[] call hull3_mission_fnc_getFog,[] call hull3_mission_fnc_getWeather));
 };
 
@@ -189,7 +189,7 @@ hull3_mission_fnc_serverSafetyTimerLoop = {
 };
 
 hull3_mission_fnc_serverSafetyTimerCountDown = {
-    FUN_ARGS_1(_isAborted);
+    params ["_isAborted"];
 
     if (_isAborted) then {
         DECLARE(_countDownLength) = if (isMultiplayer) then {10} else {0};
@@ -232,7 +232,7 @@ hull3_mission_fnc_clientSafetyTimerLoop = {
 };
 
 hull3_mission_fnc_handleSafetyTimeChange = {
-    FUN_ARGS_2(_isCountDown,_timeValue);
+    params ["_isCountDown","_timeValue"];
 
     DEBUG("hull3.mission.safetytimer",FMT_1("Safety timer has been changed. Received value '%1'.",AS_ARRAY_2(_isCountDown,_timeValue)));
     DECLARE(_message) = "Game is not live. Waiting for host to start it. (%1 minutes)";
@@ -304,7 +304,7 @@ hull3_mission_fnc_getJipSync = {
 };
 
 hull3_mission_fnc_sendJipSync = {
-    FUN_ARGS_1(_client);
+    params ["_client"];
 
     hull3_mission_jipPacket = [date];
     PUSH(hull3_mission_jipPacket,hull3_mission_safetyTimer);
@@ -316,11 +316,9 @@ hull3_mission_fnc_sendJipSync = {
 };
 
 hull3_mission_fnc_receiveJipSync = {
-    FUN_ARGS_4(_date,_safetyTimer,_safetyTimerAbort,_customArguments);
+    params ["","_safetyTimer","_safetyTimerAbort","_customArguments"];
 
     DEBUG("hull3.mission.jip",FMT_2("Received JIP sync '%1' from server for client '%2'.",owner player,_this));
-    setDate _date;
-    hull3_mission_date = _date;
     hull3_mission_safetyTimer = _safetyTimer;
     hull3_mission_safetyTimerAbort = _safetyTimerAbort;
     ["mission.jip.received", _customArguments] call hull3_event_fnc_emitEvent;
