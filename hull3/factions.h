@@ -410,7 +410,7 @@ class Faction {
             {"TNK", "CUP_B_M60A3_USMC"},
             {"TH", "CUP_B_UH60M_US"},
             {"AH", "CUP_B_AH64D_DL_USA"},
-            {"CAS", "CUP_B_A10_AT_DYN_USA"},
+            {"CAS", "CUP_B_A10_DYN_USA"},
             {"Technical", "CUP_B_HMMWV_M2_USMC"}
         };
     };
@@ -2984,7 +2984,7 @@ class Faction {
             {"TNK", "CUP_B_M60A3_USMC"},
             {"TH", "CUP_B_UH60M_US"},
             {"AH", "CUP_B_AH64D_DL_USA"},
-            {"CAS", "CUP_B_A10_AT_DYN_USA"},
+            {"CAS", "CUP_B_A10_DYN_USA"},
             {"Technical", "CUP_B_HMMWV_M2_USMC"}
         };
     };
@@ -3010,7 +3010,7 @@ class Faction {
             {"TNK", "CUP_B_M60A3_USMC"},
             {"TH", "CUP_B_UH60S_USN"},
             {"AH", "CUP_B_MH60L_DAP_4x_USN"},
-            {"CAS", "CUP_B_A10_AT_DYN_USA"},
+            {"CAS", "CUP_B_A10_DYN_USA"},
             {"Technical", "CUP_B_HMMWV_M2_USMC"}
         };
     };
@@ -3036,7 +3036,7 @@ class Faction {
             {"TNK", "CUP_B_M60A3_USMC"},
             {"TH", "CUP_B_UH60M_US"},
             {"AH", "CUP_B_AH64D_DL_USA"},
-            {"CAS", "CUP_B_A10_AT_DYN_USA"},
+            {"CAS", "CUP_B_A10_DYN_USA"},
             {"Technical", "CUP_B_HMMWV_M2_USMC"}
         };
     };
@@ -3062,7 +3062,7 @@ class Faction {
             {"TNK", "CUP_B_M1A1_Woodland_USMC"},
             {"TH", "CUP_B_UH60S_USN"},
             {"AH", "CUP_B_MH60L_DAP_4x_USN"},
-            {"CAS", "CUP_B_A10_AT_DYN_USA"},
+            {"CAS", "CUP_B_A10_DYN_USA"},
             {"Technical", "CUP_B_HMMWV_M2_USMC"}
         };
     };
@@ -3088,7 +3088,7 @@ class Faction {
             {"TNK", "CUP_B_M60A3_USMC"},
             {"TH", "CUP_B_UH60M_US"},
             {"AH", "CUP_B_AH64D_DL_USA"},
-            {"CAS", "CUP_B_A10_AT_DYN_USA"},
+            {"CAS", "CUP_B_A10_DYN_USA"},
             {"Technical", "CUP_B_HMMWV_M2_USMC"}
         };
     };
@@ -3114,7 +3114,7 @@ class Faction {
             {"TNK", "CUP_B_M60A3_USMC"},
             {"TH", "CUP_B_CH47F_USA"},
             {"AH", "CUP_B_AH6J_USA"},
-            {"CAS", "CUP_B_A10_AT_DYN_USA"},
+            {"CAS", "CUP_B_A10_DYN_USA"},
             {"Technical", "CUP_B_HMMWV_M2_USMC"}
         };
     };

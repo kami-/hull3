@@ -31,7 +31,7 @@ hull3_mission_fnc_serverInit = {
 
 hull3_mission_fnc_clientInit = {
     hull3_mission_safetyTimerActionIds = [-1, -1, -1];
-    hull3_mission_isJip = SLX_XEH_MACHINE select 1;
+    hull3_mission_isJip = SLX_XEH_MACHINE #1;
     if (hull3_mission_isJip) then {
         [] call hull3_mission_fnc_getJipSync;
     };
