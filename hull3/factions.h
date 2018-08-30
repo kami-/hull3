@@ -1794,10 +1794,10 @@ class Faction {
     };
 
     class IND_C_F_REBEL {
-        gear = "AK12_SYND";
+        gear = "AKM_SYND";
         uniform = "SYND_REBEL";
         name = "Syndikat Rebels";
-        description = "Paramilitary camo and AK-12's";
+        description = "Paramilitary camo and AKM";
         languages[] = {{"resistance", 100}};
         side = "resistance";
         camouflage[] = {"woodland"};
