@@ -220,17 +220,19 @@ class MX_NATO {
     };
 
     class MATG : RAT {
-        secondaryWeapon = "launch_NLAW_F";
-        secondaryWeaponItems[] = {"NLAW_F"};
-        backpackMagazines[] = {{"NLAW_F", 3}};
+        secondaryWeapon = "launch_MRAWS_green_rail_F";
+        secondaryWeaponItems[] = {"MRAWS_HEAT_F"};
+        backpackMagazines[] = {
+            {"MRAWS_HEAT_F", 4},
+            {"MRAWS_HE_F", 2}
+        };
     };
 
     class MATAG : Rifleman {
-        uniformMagazines[] = {
-            {"ACE_Chemlight_HiRed", 2},
-            {"SmokeShell", 1}
+        backpackMagazines[] = {
+            {"MRAWS_HEAT_F", 4},
+            {"MRAWS_HE_F", 2}
         };
-        backpackMagazines[] = {{"NLAW_F", 3}};
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -469,7 +471,7 @@ class MX_NATO {
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
-            {"NLAW_F", 5},
+            {"MRAWS_HEAT_F", 5},
             {"Titan_AT", 5},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
@@ -497,7 +499,7 @@ class MX_NATO {
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
-            {"NLAW_F", 5},
+            {"MRAWS_HEAT_F", 5},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
             {"HandGrenade", 10},
