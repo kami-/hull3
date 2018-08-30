@@ -206,19 +206,18 @@ class RK62_FIN {
     };
 
     class MATG : RAT {
-        secondaryWeapon = "launch_NLAW_F";
-        secondaryWeaponItems[] = {"NLAW_F"};
-        backpackMagazines[] = {{"NLAW_F", 3}};
+        secondaryWeapon = "launch_MRAWS_green_rail_F";
+        secondaryWeaponItems[] = {"MRAWS_HEAT_F"};
+        backpackMagazines[] = {
+            {"MRAWS_HEAT_F", 4},
+            {"MRAWS_HE_F", 2}
+        };
     };
 
     class MATAG : Rifleman {
         backpackMagazines[] = {
-            {"HandGrenade", 1},
-            {"NLAW_F", 3}
-        };
-        uniformMagazines[] = {
-            {"ACE_Chemlight_HiRed", 2},
-            {"SmokeShell", 1}
+            {"MRAWS_HEAT_F", 4},
+            {"MRAWS_HE_F", 2}
         };
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
@@ -226,8 +225,9 @@ class RK62_FIN {
     };
 
     class MATAC : MATAG {
-        uniformRadios[] = {"ACRE_PRC343"};
         assignItems[] = {};
+        binocular = "Binocular";
+        uniformRadios[] = {"ACRE_PRC343"};
     };
 
     class HATG : MATG {
@@ -441,7 +441,7 @@ class RK62_FIN {
             {"30Rnd_762x39_Mag_Tracer_F", 20},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 40},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
-            {"NLAW_F", 5},
+            {"MRAWS_HEAT_F", 5},
             {"CUP_Javelin_M", 5},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
@@ -468,7 +468,7 @@ class RK62_FIN {
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 40},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
             {"SatchelCharge_Remote_Mag", 5},
-            {"NLAW_F", 5},
+            {"MRAWS_HEAT_F", 5},
             {"ACE_HandFlare_White", 10},
             {"HandGrenade", 10},
             {"SmokeShell", 10}
