@@ -151,7 +151,7 @@ class M16A4_USMC {
     class RAT : Rifleman {
         primaryWeapon = "CUP_arifle_M16A4_Base";
         primaryWeaponItems[] = {"RH_compM2", "RH_SFM952V"};
-        secondaryWeapon = "CUP_launch_M72A6";
+        secondaryWeapon = "CUP_launch_M136";
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2}
@@ -402,7 +402,7 @@ class M16A4_USMC {
     class Vehicle {
         weapons[] = {
             {"CUP_arifle_M16A4_Base", 2},
-            {"CUP_launch_M72A6", 5},
+            {"CUP_launch_M136", 5},
             {"hlc_rifle_M4", 2}
         };
         magazines[] = {
@@ -432,7 +432,7 @@ class M16A4_USMC {
     class Truck : Vehicle {
         weapons[] = {
             {"CUP_arifle_M16A4_Base", 2},
-            {"CUP_launch_M72A6", 10},
+            {"CUP_launch_M136", 10},
             {"hlc_rifle_M4", 2}
         };
         magazines[] = {
@@ -462,7 +462,7 @@ class M16A4_USMC {
     };
 
     class Armored : Truck {
-        weapons[] = {{"CUP_launch_M72A6", 10}};
+        weapons[] = {{"CUP_launch_M136", 10}};
         magazines[] = {
             {"30Rnd_556x45_Stanag", 40},
             {"30Rnd_556x45_Stanag", 20},
