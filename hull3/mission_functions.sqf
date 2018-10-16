@@ -109,7 +109,7 @@ hull3_mission_fnc_getFog = {
 
 hull3_mission_fnc_getWeather = {
     if (isNil {hull3_mission_weather}) then {
-        hull3_mission_weather = [0, 0, 0, 0, 0, 0, 0, 0];
+        hull3_mission_weather = [0, 0, 0, 0, 0, 0, 0];
         TRACE("hull3.mission.weather",FMT_1("Mission param 'hull3_mission_weather' was not set, using default '%1'.",hull3_mission_weather));
     };
     if (hull3_mission_weather #0 == -1 && {isServer}) then {
@@ -118,7 +118,7 @@ hull3_mission_fnc_getWeather = {
         TRACE("hull3.mission.weather",FMT_1("Random weather was selected. Generated random weather '%1' for server.",hull3_mission_weather));
     } else {
         if (!isDedicated && !isServer) then {
-            hull3_mission_weather = [0, 0, 0, 0, 0, 0, 0, 0];
+            hull3_mission_weather = [0, 0, 0, 0, 0, 0, 0];
             TRACE("hull3.mission.weather",FMT_1("Random weather was selected. Using default weather '%1' for client.",hull3_mission_weather));
         };
     };
