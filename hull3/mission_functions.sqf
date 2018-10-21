@@ -213,21 +213,31 @@ hull3_mission_fnc_clientSafetyTimerLoop = {
         [] call hull3_mission_fnc_addHostSafetyTimerStopAction;
         [player] call hull3_unit_fnc_addFiredEHs;
         [player] call hull3_unit_fnc_addAceThrowableThrownEH;
+        private _playerWeapons = [];
+
+        { 
+            if (!(_x isEqualTo "")) then { 
+                _playerWeapons pushback _x;
+            }; 
+        } forEach [primaryWeapon player,handgunWeapon player]; 
+
         DEBUG("hull3.mission.safetytimer","Starting safety timer loop.");
         [{
-          {
-            if (!(_x in (player getVariable ["ace_safemode_safedWeapons", []]))) then {
-                [player, _x, _x] call ace_safemode_fnc_lockSafety;
-            };
-          } foreach [primaryWeapon player, handgunWeapon player];
+            params ["_args", "_id"];
+            _args params ["_playerWeapons"];
+            {
+                if (!(_x in (player getVariable ["ace_safemode_safedWeapons", []]))) then {
+                    [player, _x, _x] call ace_safemode_fnc_lockSafety;
+                };
+            } foreach _playerWeapons;
 
-          if ([] call hull3_mission_fnc_hasSafetyTimerEnded) then {
-              [_this #1] call CBA_fnc_removePerFrameHandler;
-              player removeEventHandler ["Fired", player getVariable "hull3_eh_fired"];
-              ["ace_throwableThrown", player getVariable "hull3_eh_ace_throwableThrown"] call CBA_fnc_removeEventHandler;
-              DEBUG("hull3.mission.safetytimer","Safety timer has ended. Removed fired EH.");
-          };
-        }, 0, []] call CBA_fnc_addPerFrameHandler;
+            if ([] call hull3_mission_fnc_hasSafetyTimerEnded) then {
+                [_this #1] call CBA_fnc_removePerFrameHandler;
+                player removeEventHandler ["Fired", player getVariable "hull3_eh_fired"];
+                ["ace_throwableThrown", player getVariable "hull3_eh_ace_throwableThrown"] call CBA_fnc_removeEventHandler;
+                DEBUG("hull3.mission.safetytimer","Safety timer has ended. Removed fired EH.");
+            };
+        }, 0, [_playerWeapons]] call CBA_fnc_addPerFrameHandler;
     };
 };
 
