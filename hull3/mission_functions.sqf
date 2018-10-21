@@ -213,13 +213,20 @@ hull3_mission_fnc_clientSafetyTimerLoop = {
         [] call hull3_mission_fnc_addHostSafetyTimerStopAction;
         [player] call hull3_unit_fnc_addFiredEHs;
         [player] call hull3_unit_fnc_addAceThrowableThrownEH;
+        private _playerWeapons = [primaryWeapon player,handgunWeapon player];
+
+        if (_x isEqualTo "") then {
+            private _playerWeaponIdx = _playerWeapons find _x;
+            _playerWeapons deleteAt _playerWeaponIdx;
+        };
+
         DEBUG("hull3.mission.safetytimer","Starting safety timer loop.");
         [{
           {
             if (!(_x in (player getVariable ["ace_safemode_safedWeapons", []]))) then {
                 [player, _x, _x] call ace_safemode_fnc_lockSafety;
             };
-          } foreach [primaryWeapon player, handgunWeapon player];
+          } foreach _playerWeapons;
 
           if ([] call hull3_mission_fnc_hasSafetyTimerEnded) then {
               [_this #1] call CBA_fnc_removePerFrameHandler;
