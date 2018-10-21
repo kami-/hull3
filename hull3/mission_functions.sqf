@@ -224,6 +224,8 @@ hull3_mission_fnc_clientSafetyTimerLoop = {
 
         DEBUG("hull3.mission.safetytimer","Starting safety timer loop.");
         [{
+          params ["_args", "_id"];
+          _args params ["_playerWeapons"];
           {
             if (!(_x in (player getVariable ["ace_safemode_safedWeapons", []]))) then {
                 [player, _x, _x] call ace_safemode_fnc_lockSafety;
@@ -236,7 +238,7 @@ hull3_mission_fnc_clientSafetyTimerLoop = {
               ["ace_throwableThrown", player getVariable "hull3_eh_ace_throwableThrown"] call CBA_fnc_removeEventHandler;
               DEBUG("hull3.mission.safetytimer","Safety timer has ended. Removed fired EH.");
           };
-        }, 0, []] call CBA_fnc_addPerFrameHandler;
+        }, 0, [_playerWeapons]] call CBA_fnc_addPerFrameHandler;
     };
 };
 
