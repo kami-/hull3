@@ -215,10 +215,12 @@ hull3_mission_fnc_clientSafetyTimerLoop = {
         [player] call hull3_unit_fnc_addAceThrowableThrownEH;
         private _playerWeapons = [primaryWeapon player,handgunWeapon player];
 
-        if (_x isEqualTo "") then {
-            private _playerWeaponIdx = _playerWeapons find _x;
-            _playerWeapons deleteAt _playerWeaponIdx;
-        };
+        {
+            if (_x isEqualTo "") then {
+                private _playerWeaponIdx = _playerWeapons find _x;
+                _playerWeapons deleteAt _playerWeaponIdx;
+            };
+        } forEach _playerWeapons;
 
         DEBUG("hull3.mission.safetytimer","Starting safety timer loop.");
         [{
