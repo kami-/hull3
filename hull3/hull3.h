@@ -337,7 +337,7 @@ class Hull3 {
         canRemoveWrecks = 1;
         canRemoveGroups = 1;
 
-        panicCps = 30;
+        panicCps = 20;
 
         corpseLimit = 40;
         panicCorpseLimit = 10;
