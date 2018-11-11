@@ -27,7 +27,10 @@ class M4A1_USMC {
         basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch"};
         assignItems[] = {};
         binocular = "";
-        uniformItems[] = {{"ACE_Flashlight_KSF1", 1}};
+        uniformItems[] = {
+            {"ACE_Flashlight_KSF1", 1},
+            {"ACE_wirecutter", 1}
+        };
         vestItems[] = {};
         backpackItems[] = {};
         uniformRadios[] = {"ACRE_PRC343"};
