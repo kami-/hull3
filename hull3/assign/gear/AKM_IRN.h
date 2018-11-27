@@ -1,4 +1,4 @@
-class ARM_IRN {
+class AKM_IRN {
     class Rifleman {
         primaryWeapon = "hlc_rifle_akm";
         primaryWeaponItems[] = {};
