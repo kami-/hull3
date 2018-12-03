@@ -3,25 +3,25 @@ class CUP_BAF_WD {
         headGear = "CUP_H_BAF_Helmet_1_DPM";
         goggles = "";
         uniform = "CUP_U_B_BAF_DPM_S2_UnRolled";
-        vest = "CUP_V_BAF_Osprey_Mk2_DPM_Soldier2_ARM";
+        vest = "CUP_V_B_BAF_DPM_Osprey_Mk3_Rifleman_ARM";
         backpack = "CUP_B_Bergen_BAF";
     };
 
     class Leader : Rifleman {
         headGear = "CUP_H_BAF_Helmet_4_DPM";
         uniform = "CUP_U_B_BAF_DPM_S1_RolledUp";
-        vest = "CUP_V_BAF_Osprey_Mk2_DPM_Soldier2_ARM";
+        vest = "CUP_V_B_BAF_DPM_Osprey_Mk3_Grenadier_ARM";
     };
 
     class Officer : Leader {
         headGear = "CUP_H_BAF_Officer_Beret_PRR_U";
-        vest = "CUP_V_BAF_Osprey_Mk2_DPM_Officer_ARM";
+        vest = "CUP_V_B_BAF_DPM_Osprey_Mk3_Officer_ARM";
     };
 
     class Crew : Rifleman {
         headGear = "CUP_H_BAF_Crew_Helmet_DPM";
         uniform = "CUP_U_B_BAF_DPM_S1_RolledUp";
-        vest = "CUP_V_BAF_Osprey_Mk2_DPM_Crewman_ARM";
+        vest = "CUP_V_B_BAF_DPM_Osprey_Mk3_Crewman_ARM";
         backpack = "B_AssaultPack_cbr";
         goggles = "CUP_FR_NeckScarf2";
     };
@@ -38,7 +38,7 @@ class CUP_BAF_WD {
     class Medic : Rifleman {
         headGear = "CUP_H_BAF_Helmet_3_DPM";
         uniform = "CUP_U_B_BAF_DPM_S2_UnRolled";
-        vest = "CUP_V_BAF_Osprey_Mk2_DPM_Medic_ARM";
+        vest = "CUP_V_B_BAF_DPM_Osprey_Mk3_Medic_ARM";
         backpack = "CUP_B_Bergen_BAF";
     };
 
@@ -48,14 +48,14 @@ class CUP_BAF_WD {
     class AR : Rifleman {
         headGear = "CUP_H_BAF_Helmet_2_DPM";
         uniform = "CUP_U_B_BAF_DPM_Tshirt";
-        vest = "CUP_V_BAF_Osprey_Mk2_DPM_Soldier1_ARM";
+        vest = "CUP_V_B_BAF_DPM_Osprey_Mk3_AutomaticRifleman_ARM";
     };
 
     class AAR : Rifleman {
     };
 
     class RAT : Rifleman {
-        vest = "CUP_V_BAF_Osprey_Mk2_DPM_Soldier1_ARM";
+        vest = "CUP_V_B_BAF_DPM_Osprey_Mk3_Scout_ARM";
     };
 
     class MMGG : AR {
@@ -132,7 +132,7 @@ class CUP_BAF_WD {
 
     class ENG : Rifleman {
         uniform = "CUP_U_B_BAF_DPM_Tshirt";
-        vest = "CUP_V_BAF_Osprey_Mk2_DPM_Sapper_ARM";
+        vest = "CUP_V_B_BAF_DPM_Osprey_Mk3_Engineer_ARM";
         backpack = "CUP_B_Bergen_BAF";
         headGear = "CUP_H_BAF_Helmet_4_DPM";
     };
@@ -144,7 +144,7 @@ class CUP_BAF_WD {
         headGear = "CUP_H_BAF_Helmet_1_DPM";
         goggles = "CUP_FR_NeckScarf2";
         uniform = "CUP_U_B_BAF_DPM_S1_RolledUp";
-        vest = "CUP_V_BAF_Osprey_Mk2_DPM_Scout_ARM";
+        vest = "CUP_V_B_BAF_DPM_Osprey_Mk3_Empty_ARM";
         backpack = "B_AssaultPack_cbr";
     };
 
@@ -163,7 +163,6 @@ class CUP_BAF_WD {
     class P : Crew {
         headGear = "CUP_H_BAF_Helmet_Pilot";
         uniform = "CUP_U_B_BAF_DPM_S1_RolledUp";
-        vest = "CUP_V_BAF_Osprey_Mk2_DPM_Pilot_ARM";
         backpack = "B_Parachute";
     };
 
