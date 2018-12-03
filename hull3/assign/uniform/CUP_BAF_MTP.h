@@ -38,7 +38,7 @@ class CUP_BAF_MTP {
     class Medic : Rifleman {
         headGear = "CUP_H_BAF_Helmet_3_MTP";
         uniform = "CUP_U_B_BAF_MTP_S4_UnRolled";
-        vest = "CUP_V_B_BAF_MTP_Osprey_Mk4_Rifleman_ARM";
+        vest = "CUP_V_B_BAF_MTP_Osprey_Mk4_Medic_ARM";
         backpack = "CUP_B_Bergen_BAF";
     };
 
