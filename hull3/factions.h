@@ -1730,7 +1730,7 @@ class Faction {
             {"FT", "CUP_O_UAZ_Unarmed_CHDKZ"},
             {"ATTCH", "CUP_O_UAZ_Unarmed_CHDKZ"},
             {"ENG", "CUP_O_Ural_Repair_CHDKZ"},
-            {"APC", "CUP_O_MTLB_pk_WDL_ChDKZ"},
+            {"APC", "CUP_O_MTLB_pk_ChDKZ"},
             {"IFV", "CUP_O_BMP2_CHDKZ"},
             {"SPAAG", "CUP_O_ZSU23_ChDKZ"},
             {"TNK", "CUP_O_T72_CHDKZ"},

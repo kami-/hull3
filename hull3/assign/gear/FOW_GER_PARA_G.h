@@ -274,6 +274,12 @@ class FOW_GER_PARA_G {
     };
 
     class SN : Rifleman {
+        primaryWeapon = "fow_w_k98_scoped";
+        handgunWeapon = "fow_w_p640p";
+        vestMagazines[] = {
+            {"fow_5Rnd_792x57", 8},
+            {"fow_13Rnd_9x19", 3}
+        };
         uniformRadios[] = {"ACRE_PRC343"};
     };
 
