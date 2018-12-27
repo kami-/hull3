@@ -14,14 +14,14 @@ class L85_BAF_RIS {
             {"SmokeShell", 1}
         };
         vestMagazines[] = {
-            {"30Rnd_556x45_Stanag", 6},
-            {"30Rnd_556x45_Stanag_Tracer_Red", 2}
+            {"CUP_30Rnd_556x45_Stanag_L85", 6},
+            {"CUP_30Rnd_556x45_Stanag_L85_Tracer_Red", 2}
         };
         backpackMagazines[] = {
             {"HandGrenade", 2},
             {"SmokeShell", 1},
-            {"30Rnd_556x45_Stanag", 4},
-            {"30Rnd_556x45_Stanag_Tracer_Red", 2}
+            {"CUP_30Rnd_556x45_Stanag_L85", 4},
+            {"CUP_30Rnd_556x45_Stanag_L85_Tracer_Red", 2}
         };
         basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch"};
         assignItems[] = {};
@@ -51,18 +51,18 @@ class L85_BAF_RIS {
         primaryWeaponItems[] = {"optic_Holosight_blk_F", "RH_SFM952V"};
         handgunWeapon = "CUP_hgun_Glock17_blk";
         vestMagazines[] = {
-            {"30Rnd_556x45_Stanag", 6},
+            {"CUP_30Rnd_556x45_Stanag_L85", 6},
             {"1Rnd_HE_Grenade_shell", 4},
             {"1Rnd_Smoke_Grenade_shell", 2},
             {"1Rnd_SmokeRed_Grenade_shell", 2},
-            {"30Rnd_556x45_Stanag_Tracer_Red", 2},
+            {"CUP_30Rnd_556x45_Stanag_L85_Tracer_Red", 2},
             {"CUP_17Rnd_9x19_glock17", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"30Rnd_556x45_Stanag", 4},
-            {"30Rnd_556x45_Stanag_Tracer_Red", 2},
+            {"CUP_30Rnd_556x45_Stanag_L85", 4},
+            {"CUP_30Rnd_556x45_Stanag_L85_Tracer_Red", 2},
             {"1Rnd_Smoke_Grenade_shell", 2},
             {"1Rnd_SmokeRed_Grenade_shell", 2},
             {"UGL_FlareWhite_F", 2}
@@ -84,7 +84,7 @@ class L85_BAF_RIS {
             {"SmokeShell", 1}
         };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
-        vestMagazines[] = {{"30Rnd_556x45_Stanag", 4}};
+        vestMagazines[] = {{"CUP_30Rnd_556x45_Stanag_L85", 4}};
         backpackMagazines[] = {};
         assignItems[] = {"ItemGPS", "ACE_NVG_Wide"};
     };
@@ -105,13 +105,13 @@ class L85_BAF_RIS {
 
     class Medic : Rifleman {
         vestMagazines[] = {
-            {"30Rnd_556x45_Stanag", 6},
-            {"30Rnd_556x45_Stanag_Tracer_Red", 2},
+            {"CUP_30Rnd_556x45_Stanag_L85", 6},
+            {"CUP_30Rnd_556x45_Stanag_L85_Tracer_Red", 2},
             {"SmokeShell", 4}
         };
         backpackMagazines[] = {
             {"SmokeShellBlue", 4},
-            {"30Rnd_556x45_Stanag", 2}
+            {"CUP_30Rnd_556x45_Stanag_L85", 2}
         };
         assignItems[] = {"ItemGPS"};
         binocular = "Binocular";
@@ -152,14 +152,14 @@ class L85_BAF_RIS {
     class RAT : Rifleman {
         secondaryWeapon = "CUP_launch_NLAW";
         vestMagazines[] = {
-            {"30Rnd_556x45_Stanag", 6},
-            {"30Rnd_556x45_Stanag_Tracer_Red", 2}
+            {"CUP_30Rnd_556x45_Stanag_L85", 6},
+            {"CUP_30Rnd_556x45_Stanag_L85_Tracer_Red", 2}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"30Rnd_556x45_Stanag", 4},
-            {"30Rnd_556x45_Stanag_Tracer_Red", 2}
+            {"CUP_30Rnd_556x45_Stanag_L85", 4},
+            {"CUP_30Rnd_556x45_Stanag_L85_Tracer_Red", 2}
         };
     };
 
@@ -334,8 +334,8 @@ class L85_BAF_RIS {
 
     class ENG : Rifleman {
         vestMagazines[] = {
-            {"30Rnd_556x45_Stanag", 6},
-            {"30Rnd_556x45_Stanag_Tracer_Red", 2}
+            {"CUP_30Rnd_556x45_Stanag_L85", 6},
+            {"CUP_30Rnd_556x45_Stanag_L85_Tracer_Red", 2}
         };
         backpackMagazines[] = {
             {"Toolkit", 1},
@@ -397,8 +397,8 @@ class L85_BAF_RIS {
             {"CUP_launch_NLAW", 5}
         };
         magazines[] = {
-            {"30Rnd_556x45_Stanag", 15},
-            {"30Rnd_556x45_Stanag", 15},
+            {"CUP_30Rnd_556x45_Stanag_L85", 15},
+            {"CUP_30Rnd_556x45_Stanag_L85", 15},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 10},
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"UGL_FlareWhite_F", 5},
@@ -426,8 +426,8 @@ class L85_BAF_RIS {
             {"CUP_launch_NLAW", 10}
         };
         magazines[] = {
-            {"30Rnd_556x45_Stanag", 40},
-            {"30Rnd_556x45_Stanag", 20},
+            {"CUP_30Rnd_556x45_Stanag_L85", 40},
+            {"CUP_30Rnd_556x45_Stanag_L85", 20},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
@@ -454,8 +454,8 @@ class L85_BAF_RIS {
     class Armored : Truck {
         weapons[] = {{"CUP_launch_NLAW", 10}};
         magazines[] = {
-            {"30Rnd_556x45_Stanag", 40},
-            {"30Rnd_556x45_Stanag", 20},
+            {"CUP_30Rnd_556x45_Stanag_L85", 40},
+            {"CUP_30Rnd_556x45_Stanag_L85", 20},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},

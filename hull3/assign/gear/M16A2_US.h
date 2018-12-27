@@ -15,14 +15,14 @@ class M16A2_US {
             {"SmokeShell", 1}
         };
         vestMagazines[] = {
-            {"30Rnd_556x45_Stanag", 6},
-            {"30Rnd_556x45_Stanag_Tracer_Red", 2}
+            {"CUP_30Rnd_556x45_Stanag", 6},
+            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"30Rnd_556x45_Stanag", 4},
-            {"30Rnd_556x45_Stanag_Tracer_Red", 2}
+            {"CUP_30Rnd_556x45_Stanag", 4},
+            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2}
         };
         basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch"};
         assignItems[] = {};
@@ -51,18 +51,18 @@ class M16A2_US {
         primaryWeapon = "CUP_arifle_M16A2_GL";
         handgunWeapon = "CUP_hgun_M9";
         vestMagazines[] = {
-            {"30Rnd_556x45_Stanag", 6},
+            {"CUP_30Rnd_556x45_Stanag", 6},
             {"1Rnd_HE_Grenade_shell", 4},
             {"1Rnd_Smoke_Grenade_shell", 2},
             {"1Rnd_SmokeRed_Grenade_shell", 2},
-            {"30Rnd_556x45_Stanag_Tracer_Red", 2},
+            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2},
             {"CUP_15Rnd_9x19_M9", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"30Rnd_556x45_Stanag", 4},
-            {"30Rnd_556x45_Stanag_Tracer_Red", 2},
+            {"CUP_30Rnd_556x45_Stanag", 4},
+            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2},
             {"1Rnd_Smoke_Grenade_shell", 2},
             {"1Rnd_SmokeRed_Grenade_shell", 2},
             {"UGL_FlareWhite_F", 2}
@@ -84,7 +84,7 @@ class M16A2_US {
             {"SmokeShell", 1}
         };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
-        vestMagazines[] = {{"30Rnd_556x45_Stanag", 4}};
+        vestMagazines[] = {{"CUP_30Rnd_556x45_Stanag", 4}};
         backpackMagazines[] = {};
         assignItems[] = {"ItemGPS", "ACE_NVG_Wide"};
     };
@@ -105,13 +105,13 @@ class M16A2_US {
 
     class Medic : Rifleman {
         vestMagazines[] = {
-            {"30Rnd_556x45_Stanag", 6},
-            {"30Rnd_556x45_Stanag_Tracer_Red", 2},
+            {"CUP_30Rnd_556x45_Stanag", 6},
+            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2},
             {"SmokeShell", 4}
         };
         backpackMagazines[] = {
             {"SmokeShellBlue", 4},
-            {"30Rnd_556x45_Stanag", 2}
+            {"CUP_30Rnd_556x45_Stanag", 2}
         };
         assignItems[] = {"ItemGPS"};
         binocular = "Binocular";
@@ -151,14 +151,14 @@ class M16A2_US {
         primaryWeaponItems[] = {};
         secondaryWeapon = "CUP_launch_M72A6";
         vestMagazines[] = {
-            {"30Rnd_556x45_Stanag", 6},
-            {"30Rnd_556x45_Stanag_Tracer_Red", 2}
+            {"CUP_30Rnd_556x45_Stanag", 6},
+            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"30Rnd_556x45_Stanag", 4},
-            {"30Rnd_556x45_Stanag_Tracer_Red", 2}
+            {"CUP_30Rnd_556x45_Stanag", 4},
+            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2}
         };
     };
 
@@ -332,8 +332,8 @@ class M16A2_US {
 
     class ENG : Rifleman {
         vestMagazines[] = {
-            {"30Rnd_556x45_Stanag", 6},
-            {"30Rnd_556x45_Stanag_Tracer_Red", 2}
+            {"CUP_30Rnd_556x45_Stanag", 6},
+            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2}
         };
         backpackMagazines[] = {
             {"Toolkit", 1},
@@ -395,8 +395,8 @@ class M16A2_US {
             {"CUP_launch_M72A6", 5}
         };
         magazines[] = {
-            {"30Rnd_556x45_Stanag", 15},
-            {"30Rnd_556x45_Stanag", 15},
+            {"CUP_30Rnd_556x45_Stanag", 15},
+            {"CUP_30Rnd_556x45_Stanag", 15},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 10},
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"UGL_FlareWhite_F", 5},
@@ -424,8 +424,8 @@ class M16A2_US {
             {"CUP_launch_M72A6", 10}
         };
         magazines[] = {
-            {"30Rnd_556x45_Stanag", 40},
-            {"30Rnd_556x45_Stanag", 20},
+            {"CUP_30Rnd_556x45_Stanag", 40},
+            {"CUP_30Rnd_556x45_Stanag", 20},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
             {"hlc_100Rnd_762x51_M_M60E4", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
@@ -452,8 +452,8 @@ class M16A2_US {
     class Armored : Truck {
         weapons[] = {{"CUP_launch_M72A6", 10}};
         magazines[] = {
-            {"30Rnd_556x45_Stanag", 40},
-            {"30Rnd_556x45_Stanag", 20},
+            {"CUP_30Rnd_556x45_Stanag", 40},
+            {"CUP_30Rnd_556x45_Stanag", 20},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
             {"hlc_100Rnd_762x51_M_M60E4", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
