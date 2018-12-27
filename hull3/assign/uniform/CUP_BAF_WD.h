@@ -161,7 +161,7 @@ class CUP_BAF_WD {
     };
 
     class P : Crew {
-        headGear = "CUP_H_BAF_Helmet_Pilot";
+        headGear = "CUP_H_BAF_PILOT";
         uniform = "CUP_U_B_BAF_DPM_S1_RolledUp";
         backpack = "B_Parachute";
     };
