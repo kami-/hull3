@@ -1,6 +1,6 @@
 class CUP_BAF_WD {
     class Rifleman {
-        headGear = "CUP_H_BAF_Helmet_1_DPM";
+        headGear = "CUP_H_BAF_DPM_Mk6_EMPTY";
         goggles = "";
         uniform = "CUP_U_B_BAF_DPM_S2_UnRolled";
         vest = "CUP_V_B_BAF_DPM_Osprey_Mk3_Rifleman_ARM";
@@ -8,7 +8,7 @@ class CUP_BAF_WD {
     };
 
     class Leader : Rifleman {
-        headGear = "CUP_H_BAF_Helmet_4_DPM";
+        headGear = "CUP_H_BAF_DPM_Mk6_EMPTY_PRR";
         uniform = "CUP_U_B_BAF_DPM_S1_RolledUp";
         vest = "CUP_V_B_BAF_DPM_Osprey_Mk3_Grenadier_ARM";
     };
@@ -19,7 +19,7 @@ class CUP_BAF_WD {
     };
 
     class Crew : Rifleman {
-        headGear = "CUP_H_BAF_Crew_Helmet_DPM";
+        headGear = "CUP_H_BAF_DPM_Mk6_CREW_PRR";
         uniform = "CUP_U_B_BAF_DPM_S1_RolledUp";
         vest = "CUP_V_B_BAF_DPM_Osprey_Mk3_Crewman_ARM";
         backpack = "B_AssaultPack_cbr";
@@ -36,7 +36,7 @@ class CUP_BAF_WD {
     };
 
     class Medic : Rifleman {
-        headGear = "CUP_H_BAF_Helmet_3_DPM";
+        headGear = "CUP_H_BAF_DPM_Mk6_NETTING_PRR";
         uniform = "CUP_U_B_BAF_DPM_S2_UnRolled";
         vest = "CUP_V_B_BAF_DPM_Osprey_Mk3_Medic_ARM";
         backpack = "CUP_B_Bergen_BAF";
@@ -46,7 +46,7 @@ class CUP_BAF_WD {
     };
 
     class AR : Rifleman {
-        headGear = "CUP_H_BAF_Helmet_2_DPM";
+        headGear = "CUP_H_BAF_DPM_Mk6_GOGGLES_PRR";
         uniform = "CUP_U_B_BAF_DPM_Tshirt";
         vest = "CUP_V_B_BAF_DPM_Osprey_Mk3_AutomaticRifleman_ARM";
     };
@@ -134,14 +134,14 @@ class CUP_BAF_WD {
         uniform = "CUP_U_B_BAF_DPM_Tshirt";
         vest = "CUP_V_B_BAF_DPM_Osprey_Mk3_Engineer_ARM";
         backpack = "CUP_B_Bergen_BAF";
-        headGear = "CUP_H_BAF_Helmet_4_DPM";
+        headGear = "CUP_H_BAF_DPM_Mk6_GLASS_PRR";
     };
 
     class ENGA : ENG {
     };
 
     class SN : Rifleman {
-        headGear = "CUP_H_BAF_Helmet_1_DPM";
+        headGear = "CUP_H_BAF_DPM_Mk6_NETTING_PRR";
         goggles = "CUP_FR_NeckScarf2";
         uniform = "CUP_U_B_BAF_DPM_S1_RolledUp";
         vest = "CUP_V_B_BAF_DPM_Osprey_Mk3_Empty_ARM";
