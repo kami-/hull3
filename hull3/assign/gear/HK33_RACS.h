@@ -1,7 +1,7 @@
-class M16A3_RACS {
+class HK33_RACS {
     class Rifleman {
-        primaryWeapon = "hlc_rifle_Colt727";
-        primaryWeaponItems[] = {};
+        primaryWeapon = "hlc_rifle_hk33a2RIS";
+        primaryWeaponItems[] = {"RH_SFM952V", "RH_compM2l"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -15,14 +15,14 @@ class M16A3_RACS {
             {"SmokeShell", 1}
         };
         vestMagazines[] = {
-            {"30Rnd_556x45_Stanag", 6},
-            {"30Rnd_556x45_Stanag_Tracer_Red", 2}
+            {"hlc_30rnd_556x45_b_HK33", 6},
+            {"hlc_30rnd_556x45_t_HK33", 2}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"30Rnd_556x45_Stanag", 4},
-            {"30Rnd_556x45_Stanag_Tracer_Red", 2}
+            {"hlc_30rnd_556x45_b_HK33", 4},
+            {"hlc_30rnd_556x45_t_HK33", 2}
         };
         basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch"};
         assignItems[] = {};
@@ -48,21 +48,21 @@ class M16A3_RACS {
     };
 
     class Leader : Rifleman {
-        primaryWeapon = "hlc_rifle_Colt727_GL";
+        primaryWeapon = "hlc_rifle_hk33a2RIS_GL";
         handgunWeapon = "CUP_hgun_Glock17_blk";
         vestMagazines[] = {
-            {"30Rnd_556x45_Stanag", 6},
+            {"hlc_30rnd_556x45_b_HK33", 5},
             {"1Rnd_HE_Grenade_shell", 4},
             {"1Rnd_Smoke_Grenade_shell", 2},
             {"1Rnd_SmokeRed_Grenade_shell", 2},
-            {"30Rnd_556x45_Stanag_Tracer_Red", 2},
+            {"hlc_30rnd_556x45_t_HK33", 2},
             {"CUP_17Rnd_9x19_glock17", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"30Rnd_556x45_Stanag", 4},
-            {"30Rnd_556x45_Stanag_Tracer_Red", 2},
+            {"hlc_30rnd_556x45_b_HK33", 4},
+            {"hlc_30rnd_556x45_t_HK33", 2},
             {"1Rnd_Smoke_Grenade_shell", 2},
             {"1Rnd_SmokeRed_Grenade_shell", 2},
             {"UGL_FlareWhite_F", 2}
@@ -78,14 +78,14 @@ class M16A3_RACS {
     };
 
     class Crew : Rifleman {
-        primaryWeapon = "hlc_rifle_Colt727";
+        primaryWeapon = "hlc_rifle_hk53RAS";
         primaryWeaponItems[] = {};
         uniformMagazines[] = {
             {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
-        vestMagazines[] = {{"30Rnd_556x45_Stanag", 4}};
+        vestMagazines[] = {{"hlc_30rnd_556x45_b_HK33", 4}};
         backpackMagazines[] = {};
         assignItems[] = {"ItemGPS", "ACE_NVG_Wide"};
     };
@@ -106,13 +106,13 @@ class M16A3_RACS {
 
     class Medic : Rifleman {
         vestMagazines[] = {
-            {"30Rnd_556x45_Stanag", 6},
-            {"30Rnd_556x45_Stanag_Tracer_Red", 2},
+            {"hlc_30rnd_556x45_b_HK33", 6},
+            {"hlc_30rnd_556x45_t_HK33", 2},
             {"SmokeShell", 4}
         };
         backpackMagazines[] = {
             {"SmokeShellBlue", 4},
-            {"30Rnd_556x45_Stanag", 2}
+            {"hlc_30rnd_556x45_b_HK33", 2}
         };
         assignItems[] = {"ItemGPS"};
         binocular = "Binocular";
@@ -129,7 +129,7 @@ class M16A3_RACS {
     };
 
     class AR : Rifleman {
-        primaryWeapon = "CUP_lmg_M249_E2";
+        primaryWeapon = "CUP_lmg_minimipara";
         primaryWeaponItems[] = {};
         vestMagazines[] = {{"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 1}};
         backpackMagazines[] = {
@@ -140,8 +140,8 @@ class M16A3_RACS {
 
     class AAR : Rifleman {
         vestMagazines[] = {
-            {"30Rnd_556x45_Stanag", 8},
-            {"30Rnd_556x45_Stanag_Tracer_Red", 4}
+            {"hlc_30rnd_556x45_b_HK33", 6},
+            {"hlc_30rnd_556x45_t_HK33", 4}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
@@ -153,28 +153,27 @@ class M16A3_RACS {
     };
 
     class RAT : Rifleman {
-        primaryWeaponItems[] = {};
-        secondaryWeapon = "CUP_launch_M72A6";
+        secondaryWeapon = "CUP_launch_M136";
         vestMagazines[] = {
-            {"30Rnd_556x45_Stanag", 6},
-            {"30Rnd_556x45_Stanag_Tracer_Red", 2}
+            {"hlc_30rnd_556x45_b_HK33", 6},
+            {"hlc_30rnd_556x45_t_HK33", 2}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"30Rnd_556x45_Stanag", 4},
-            {"30Rnd_556x45_Stanag_Tracer_Red", 2}
+            {"hlc_30rnd_556x45_b_HK33", 4},
+            {"hlc_30rnd_556x45_t_HK33", 2}
         };
     };
 
     class MMGG : Rifleman {
-        primaryWeapon = "CUP_lmg_M240";
+        primaryWeapon = "hlc_lmg_MG3";
         primaryWeaponItems[] = {};
-        vestMagazines[] = {{"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M", 1}};
+        vestMagazines[] = {{"hlc_250Rnd_762x51_M_MG3", 1}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M", 4}
+            {"hlc_250Rnd_762x51_M_MG3", 2}
         };
     };
 
@@ -182,7 +181,7 @@ class M16A3_RACS {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M", 4}
+            {"hlc_250Rnd_762x51_M_MG3", 2}
         };
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
@@ -209,14 +208,14 @@ class M16A3_RACS {
         secondaryWeapon = "launch_MRAWS_green_rail_F";
         secondaryWeaponItems[] = {"MRAWS_HEAT_F"};
         backpackMagazines[] = {
-            {"MRAWS_HEAT_F", 4},
+            {"MRAWS_HEAT_F", 3},
             {"MRAWS_HE_F", 2}
         };
     };
 
     class MATAG : Rifleman {
         backpackMagazines[] = {
-            {"MRAWS_HEAT_F", 4},
+            {"MRAWS_HEAT_F", 3},
             {"MRAWS_HE_F", 2}
         };
         binocular = "ACE_VectorDay";
@@ -337,8 +336,8 @@ class M16A3_RACS {
 
     class ENG : Rifleman {
         vestMagazines[] = {
-            {"30Rnd_556x45_Stanag", 6},
-            {"30Rnd_556x45_Stanag_Tracer_Red", 2}
+            {"hlc_30rnd_556x45_b_HK33", 6},
+            {"hlc_30rnd_556x45_t_HK33", 2}
         };
         backpackMagazines[] = {
             {"Toolkit", 1},
@@ -358,17 +357,17 @@ class M16A3_RACS {
     };
 
     class SN : Rifleman {
-        primaryWeapon = "hlc_rifle_M21";
-        handgunWeapon = "CUP_hgun_Colt1911";
-        primaryWeaponItems[] = {"hlc_optic_artel_m14"};
+        primaryWeapon = "hlc_rifle_psg1";
+        handgunWeapon = "CUP_hgun_Glock17_blk";
+        primaryWeaponItems[] = {};
         vestMagazines[] = {
-            {"hlc_20Rnd_762x51_B_M14", 4},
-            {"CUP_7Rnd_45ACP_1911", 3}
+            {"hlc_20rnd_762x51_b_G3", 4},
+            {"CUP_17Rnd_9x19_glock17", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_20Rnd_762x51_B_M14", 3}
+            {"hlc_20rnd_762x51_b_G3", 3}
         };
         assignItems[] = {"ItemGPS"};
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -396,12 +395,12 @@ class M16A3_RACS {
 
     class Vehicle {
         weapons[] = {
-            {"hlc_rifle_Colt727", 4},
-            {"CUP_launch_M72A6", 5}
+            {"hlc_rifle_hk33a2RIS", 4},
+            {"CUP_launch_M136", 5}
         };
         magazines[] = {
-            {"30Rnd_556x45_Stanag", 15},
-            {"30Rnd_556x45_Stanag", 15},
+            {"hlc_30rnd_556x45_b_HK33", 15},
+            {"hlc_30rnd_556x45_b_HK33", 15},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 10},
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"UGL_FlareWhite_F", 5},
@@ -425,14 +424,14 @@ class M16A3_RACS {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"hlc_rifle_Colt727", 4},
-            {"CUP_launch_M72A6", 10}
+            {"hlc_rifle_hk33a2RIS", 4},
+            {"CUP_launch_M136", 10}
         };
         magazines[] = {
-            {"30Rnd_556x45_Stanag", 40},
-            {"30Rnd_556x45_Stanag", 20},
+            {"hlc_30rnd_556x45_b_HK33", 40},
+            {"hlc_30rnd_556x45_b_HK33", 20},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
-            {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M", 10},
+            {"hlc_250Rnd_762x51_M_MG3", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
             {"SatchelCharge_Remote_Mag", 5},
@@ -455,12 +454,12 @@ class M16A3_RACS {
     };
 
     class Armored : Truck {
-        weapons[] = {{"CUP_launch_M72A6", 10}};
+        weapons[] = {{"CUP_launch_M136", 10}};
         magazines[] = {
-            {"30Rnd_556x45_Stanag", 40},
-            {"30Rnd_556x45_Stanag", 20},
+            {"hlc_30rnd_556x45_b_HK33", 40},
+            {"hlc_30rnd_556x45_b_HK33", 20},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
-            {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M", 10},
+            {"hlc_250Rnd_762x51_M_MG3", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
             {"MRAWS_HEAT_F", 5},

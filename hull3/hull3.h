@@ -181,7 +181,6 @@ class Hull3 {
         #include "assign\gear\MP5_GEND.h"
         #include "assign\gear\M16A2_US.h"
         #include "assign\gear\M16A3_CDF.h"
-        #include "assign\gear\M16A3_RACS.h"
         #include "assign\gear\M16A4_CAN.h"
         #include "assign\gear\M16A4_ROK.h"
         #include "assign\gear\M16A4_USMC.h"
@@ -212,7 +211,8 @@ class Hull3 {
         #include "assign\gear\IF44_USSR_G.h"
         #include "assign\gear\M14_US.h"
         #include "assign\gear\SIG550_CDF.h"
-
+        #include "assign\gear\HK33_RACS.h"
+		
         unitBaseClass = "Rifleman";
         vehicleBaseClass = "Vehicle";
     };
