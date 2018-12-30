@@ -1,26 +1,25 @@
 class CUP_RACS_URB {
     class Rifleman {
-        headGear = "CUP_H_RACS_Helmet_DPAT";
+        headGear = "CUP_H_RACS_Helmet_TPAT";
         goggles = "";
         uniform = "CUP_U_I_RACS_Urban_1";
-        vest = "CUP_V_I_RACS_Carrier_Vest_ARM";
+        vest = "CUP_V_B_Interceptor_Rifleman_Grey_ARM";
         backpack = "B_AssaultPack_cbr";
     };
 
     class Leader : Rifleman {
-        vest = "CUP_V_I_RACS_Carrier_Vest_3_ARM";
-        headGear = "CUP_H_RACS_Helmet_Goggles_DPAT";
+        vest = "CUP_V_B_Interceptor_Grenadier_Grey_ARM";
+        headGear = "CUP_H_RACS_Helmet_Goggles_TPAT";
     };
 
     class Officer : Leader {
-        headGear = "CUP_H_RACS_Helmet_Headset_DPAT";
-        vest = "CUP_V_I_RACS_Carrier_Vest_2_ARM";
+        headGear = "CUP_H_RACS_Beret_Blue";
     };
 
     class Crew : Rifleman {
         headGear = "H_HelmetCrew_I";
         uniform = "CUP_U_I_RACS_Urban_2";
-        vest = "CUP_V_I_RACS_Carrier_Rig_3_ARM";
+        vest = "CUP_V_B_Interceptor_Base_Grey_ARM";
         backpack = "B_AssaultPack_cbr";
     };
 
@@ -39,6 +38,7 @@ class CUP_RACS_URB {
     };
 
     class FTL : Leader {
+        headgear = "CUP_H_RACS_Helmet_Headset_TPAT";
     };
 
     class AR : Rifleman {
@@ -57,12 +57,14 @@ class CUP_RACS_URB {
     };
 
     class MMGAG : AAR {
+        headGear = "CUP_H_RACS_Helmet_Headset_TPAT";
     };
 
     class HMGG : AR {
     };
 
     class HMGAG : AAR {
+        headGear = "CUP_H_RACS_Helmet_Headset_TPAT";
     };
 
     class HMGAC : AAR {
@@ -73,6 +75,7 @@ class CUP_RACS_URB {
     };
 
     class MATAG : AAR {
+        headGear = "CUP_H_RACS_Helmet_Headset_TPAT";
     };
 
     class MATAC : MATAG {
@@ -83,6 +86,7 @@ class CUP_RACS_URB {
     };
 
     class HATAG : AAR {
+        headGear = "CUP_H_RACS_Helmet_Headset_TPAT";
     };
 
     class HATAC : HATAG {
@@ -92,6 +96,7 @@ class CUP_RACS_URB {
     };
 
     class DHATAG : AAR {
+        headGear = "CUP_H_RACS_Helmet_Headset_TPAT";
     };
 
     class DHATAC : AAR {
@@ -111,6 +116,7 @@ class CUP_RACS_URB {
     };
 
     class GMGAG : AAR {
+        headGear = "CUP_H_RACS_Helmet_Headset_TPAT";
     };
 
     class GMGAC : AAR {
@@ -120,12 +126,14 @@ class CUP_RACS_URB {
     };
 
     class MTRAG : AAR {
+        headGear = "CUP_H_RACS_Helmet_Headset_TPAT";
     };
 
     class MTRAC : AAR {
     };
 
     class ENG : Rifleman {
+        headGear = "CUP_H_RACS_Helmet_Headset_TPAT";
         backpack = "B_Carryall_khk";
     };
 
@@ -133,10 +141,10 @@ class CUP_RACS_URB {
     };
 
     class SN : Rifleman {
-        headGear = "H_Cap_tan";
+        headGear = "CUP_H_RACS_Helmet_Headset_TPAT";
         goggles = "G_Bandanna_tan";
         uniform = "CUP_U_I_RACS_Urban_2";
-        vest = "CUP_V_I_RACS_Carrier_Vest_2_ARM";
+        vest = "CUP_V_B_Interceptor_Rifleman_Grey_ARM";
         backpack = "B_AssaultPack_cbr";
     };
 

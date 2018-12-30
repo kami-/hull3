@@ -2106,10 +2106,10 @@ class Faction {
     };
 
     class CUP_RACS_DE {
-        gear = "M16A3_RACS";
+        gear = "HK33_RACS";
         uniform = "CUP_RACS_DE";
         name = "Royal Army Corps of Sahrani (Desert)";
-        description = "Desert Uniforms and M16A3's";
+        description = "Desert Uniforms and HK33's";
         languages[] = {{"resistance", 100}};
         side = "resistance";
         camouflage[] = {"desert"};
@@ -2132,10 +2132,10 @@ class Faction {
     };
 
     class CUP_RACS_URB {
-        gear = "M16A3_RACS";
+        gear = "HK33_RACS";
         uniform = "CUP_RACS_URB";
         name = "Royal Army Corps of Sahrani (Urban)";
-        description = "Urban Uniforms and M16A3's";
+        description = "Urban (night) Uniforms and HK33's";
         languages[] = {{"resistance", 100}};
         side = "resistance";
         camouflage[] = {"desert"};
@@ -2158,13 +2158,13 @@ class Faction {
     };
 
     class CUP_RACS_MECH {
-        gear = "M16A3_RACS";
+        gear = "HK33_RACS";
         uniform = "CUP_RACS_MECH";
         name = "Royal Army Corps of Sahrani (Mechanised)";
-        description = "Mechanised Uniforms and M16A3's";
+        description = "Tigerstripe Uniforms and HK33's";
         languages[] = {{"resistance", 100}};
         side = "resistance";
-        camouflage[] = {"desert"};
+        camouflage[] = {"woodland"};
         rolePrefix = "Royal Army Corps of Sahrani";
         vehicleClassnames[] = {
             {"CO", "CUP_I_LR_Transport_RACS"},
