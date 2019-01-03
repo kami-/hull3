@@ -148,7 +148,6 @@ class CUP_BAF_MTP {
         headGear = "CUP_H_BAF_MTP_Mk7_PRR_SCRIM_B";
         goggles = "CUP_FR_NeckScarf2";
         uniform = "CUP_U_B_BAF_MTP_S3_RolledUp";
-        vest = "CUP_V_B_BAF_MTP_Osprey_Mk4_Empty_ARM";
         backpack = "B_AssaultPack_cbr";
     };
 

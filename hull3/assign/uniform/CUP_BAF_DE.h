@@ -144,7 +144,6 @@ class CUP_BAF_DE {
         headGear = "CUP_H_BAF_DDPM_Mk6_NETTING_PRR";
         goggles = "CUP_FR_NeckScarf2";
         uniform = "CUP_U_B_BAF_DDPM_S1_RolledUp";
-        vest = "CUP_V_B_BAF_DDPM_Osprey_Mk3_Empty_ARM";
         backpack = "B_AssaultPack_cbr";
     };
 
