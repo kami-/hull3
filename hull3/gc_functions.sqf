@@ -110,7 +110,11 @@ hull3_gc_fnc_tryRemovingUnits = {
         };
         if (_limitReached && { [_x, _maxTime] call hull3_gc_fnc_canRemoveUnit }) then {
             TRACE("hull3.gc",FMT_3("Limit '%1' and max time '%2' reached, removing unit '%3'.",_limit,_maxTime,_x));
-            deleteVehicle _x;
+            if (isNull objectParent _x) then {
+                deleteVehicle _x;
+            } else {
+                objectParent _x deleteVehicleCrew _x;
+            };
             _removedCount = _removedCount + 1;
         };
     } foreach _units;
@@ -121,7 +125,13 @@ hull3_gc_fnc_tryRemovingUnits = {
         DEBUG("hull3.gc",FMT_1("Limit '%1' reached, starting to remove '%2' units.",_limit,count _existingUnits - _limit));
         _removedCount = 0;
         for "_i" from 0 to (count _existingUnits - _limit - 1) do {
-            TRACE("hull3.gc",FMT_1("Removing unit '%1'.",_existingUnits select _i));
+            private _selectedExistingUnit = _existingUnits select _i;
+            TRACE("hull3.gc",FMT_1("Removing unit '%1'.",_selectedExistingUnit));
+            if (isNull objectParent _selectedExistingUnit) then {
+                deleteVehicle _selectedExistingUnit;
+            } else {
+                objectParent _selectedExistingUnit deleteVehicleCrew _selectedExistingUnit;
+            };
             deleteVehicle (_existingUnits select _i);
             _removedCount = _removedCount + 1;
         };
