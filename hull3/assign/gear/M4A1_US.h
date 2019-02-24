@@ -79,7 +79,7 @@ class M4A1_US {
     };
 
     class Crew : Rifleman {
-        primaryWeapon = "hlc_rifle_CQBR";
+        primaryWeapon = "CUP_arifle_M4A1_black";
         primaryWeaponItems[] = {"RH_SFM952V"};
         uniformMagazines[] = {
             {"ACE_Chemlight_HiRed", 2},
