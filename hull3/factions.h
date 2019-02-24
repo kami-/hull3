@@ -3097,7 +3097,7 @@ class Faction {
         gear = "M14_US";
         uniform = "USM_USA_70_OD";
         name = "1970 US Army OD Green";
-        description = "OD uniforms with M14";
+        description = "OD uniforms with M14 or M16A1";
         languages[] = {{"west", 100}};
         side = "west";
         camouflage[] = {};

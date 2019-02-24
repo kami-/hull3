@@ -212,6 +212,7 @@ class Hull3 {
         #include "assign\gear\M14_US.h"
         #include "assign\gear\SIG550_CDF.h"
         #include "assign\gear\HK33_RACS.h"
+        #include "assign\gear\M16A1_US.h"
 		
         unitBaseClass = "Rifleman";
         vehicleBaseClass = "Vehicle";
