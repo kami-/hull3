@@ -180,7 +180,6 @@ class Hull3 {
         #include "assign\gear\L85_BAF_RIS.h"
         #include "assign\gear\MP5_GEND.h"
         #include "assign\gear\M16A2_US.h"
-        #include "assign\gear\M16A3_CDF.h"
         #include "assign\gear\M16A4_CAN.h"
         #include "assign\gear\M16A4_ROK.h"
         #include "assign\gear\M16A4_USMC.h"
