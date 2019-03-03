@@ -363,17 +363,17 @@ class G36_GER {
     };
 
     class SN : Rifleman {
-        primaryWeapon = "CUP_srifle_L129A1_HG";
+        primaryWeapon = "CUP_srifle_G22_wdl";
         handgunWeapon = "CUP_hgun_Glock17";
-        primaryWeaponItems[] = {"RH_ta31rco", "RH_SFM952V", "RH_HBLM"};
+        primaryWeaponItems[] = {"CUP_optic_Leupold_VX3", "RH_HBLM"};
         vestMagazines[] = {
-            {"CUP_20Rnd_762x51_L129_M", 4},
+            {"CUP_5Rnd_762x67_G22", 4},
             {"CUP_17Rnd_9x19_glock17", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"CUP_20Rnd_762x51_L129_M", 3}
+            {"CUP_5Rnd_762x67_G22", 3}
         };
         assignItems[] = {"ItemGPS"};
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
