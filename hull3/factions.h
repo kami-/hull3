@@ -52,7 +52,7 @@ class Faction {
     };
 
     class BLU_T_F {
-        gear = "MX_NATO_TRP";
+        gear = "MX_NATO";
         uniform = "NATO_TRP";
         name = "NATO";
         description = "NATO Tropical with MX Series Weapons";
@@ -104,7 +104,7 @@ class Faction {
     };
 
     class BLU_CTRG_F_TRP {
-        gear = "HK416_CTRG_TRP";
+        gear = "HK416_CTRG_BLK";
         uniform = "CTRG_TRP";
         name = "CTRG";
         description = "CTRG in tropical camo with HK-416 Series Weapons";
