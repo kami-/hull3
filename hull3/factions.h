@@ -1144,10 +1144,10 @@ class Faction {
     };
 
     class MNP_RU_VDV_DE {
-        gear = "AK12_RU";
+        gear = "AK74MZ_RU";
         uniform = "RU_DE";
         name = "Russian VDV Desert";
-        description = "Digital Desert Uniforms and AK-12's";
+        description = "Digital Desert Uniforms and Zenitco AK-74M's";
         languages[] = {{"east", 100}};
         side = "east";
         camouflage[] = {"desert"};
@@ -1664,10 +1664,10 @@ class Faction {
     };
 
     class RU_SPETSNAZ {
-        gear = "AK12_RU";
+        gear = "AK74MZ_RU";
         uniform = "RU_SPETSNAZ";
         name = "Russian Spetsnaz";
-        description = "Modern Russian Spetsnaz and AK-12's";
+        description = "Modern Russian Spetsnaz and Zenitco AK-74M's";
         languages[] = {{"east", 100}};
         side = "east";
         camouflage[] = {"desert", "woodland"};
