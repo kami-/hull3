@@ -1,7 +1,7 @@
 class AKS74_CDF {
     class Rifleman {
-        primaryWeapon = "hlc_rifle_aks74";
-        primaryWeaponItems[] = {"hlc_optic_kobra"};
+        primaryWeapon = "CUP_arifle_AKS74";
+        primaryWeaponItems[] = {"RH_SFM952V", "CUP_optic_ekp_8_02"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -15,14 +15,14 @@ class AKS74_CDF {
             {"SmokeShell", 1}
         };
         vestMagazines[] = {
-            {"hlc_30Rnd_545x39_B_AK", 6},
-            {"hlc_30Rnd_545x39_T_AK", 2}
+            {"CUP_30Rnd_545x39_AK_M", 6},
+            {"CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK_M", 2}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_30Rnd_545x39_B_AK", 4},
-            {"hlc_30Rnd_545x39_T_AK", 2}
+            {"CUP_30Rnd_545x39_AK_M", 4},
+            {"CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK_M", 2}
         };
         basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch"};
         assignItems[] = {};
@@ -48,25 +48,25 @@ class AKS74_CDF {
     };
 
     class Leader : Rifleman {
-        primaryWeapon = "hlc_rifle_aks74_GL";
-        primaryWeaponItems[] = {"hlc_optic_kobra"};
+        primaryWeapon = "CUP_arifle_AKS74_GL";
+        primaryWeaponItems[] = {"RH_SFM952V", "CUP_optic_ekp_8_02"};
         handgunWeapon = "CUP_hgun_Makarov";
         vestMagazines[] = {
-            {"hlc_30Rnd_545x39_B_AK", 4},
-            {"hlc_VOG25_AK", 4},
-            {"hlc_GRD_White", 2},
-            {"hlc_GRD_red", 2},
-            {"hlc_30Rnd_545x39_T_AK", 2},
+            {"CUP_30Rnd_545x39_AK_M", 4},
+            {"CUP_1Rnd_HE_GP25_M", 4},
+            {"CUP_1Rnd_SMOKE_GP25_M", 2},
+            {"CUP_1Rnd_SMOKE_GP25_M", 2},
+            {"CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK_M", 2},
             {"CUP_8Rnd_9x18_Makarov_M", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_30Rnd_545x39_B_AK", 6},
-            {"hlc_30Rnd_545x39_T_AK", 2},
+            {"CUP_30Rnd_545x39_AK_M", 6},
+            {"CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK_M", 2},
             {"CUP_FlareWhite_GP25_M", 2},
-            {"hlc_GRD_White", 2},
-            {"hlc_GRD_red", 2}
+            {"CUP_1Rnd_SMOKE_GP25_M", 2},
+            {"CUP_1Rnd_SMOKE_GP25_M", 2}
         };
         assignItems[] = {"ItemGPS"};
         binocular = "Binocular";
@@ -79,14 +79,14 @@ class AKS74_CDF {
     };
 
     class Crew : Rifleman {
-        primaryWeapon = "hlc_rifle_aks74u";
+        primaryWeapon = "CUP_arifle_AKS74U";
         primaryWeaponItems[] = {};
         uniformMagazines[] = {
             {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
-        vestMagazines[] = {{"hlc_30Rnd_545x39_B_AK", 4}};
+        vestMagazines[] = {{"CUP_30Rnd_545x39_AK_M", 4}};
         backpackMagazines[] = {};
         assignItems[] = {"ItemGPS", "ACE_NVG_Wide"};
     };
@@ -96,9 +96,9 @@ class AKS74_CDF {
 
     class XO : CO {
         backpackMagazines[] = {
-            {"hlc_GRD_White", 8},
+            {"CUP_1Rnd_SMOKE_GP25_M", 8},
             {"CUP_FlareWhite_GP25_M", 8},
-            {"hlc_GRD_red", 8}
+            {"CUP_1Rnd_SMOKE_GP25_M", 8}
         };
         backpackRadios[] = {"ACRE_PRC117F"};
     };
@@ -107,15 +107,14 @@ class AKS74_CDF {
     };
 
     class Medic : Rifleman {
-        primaryWeapon = "hlc_rifle_aks74u";
         vestMagazines[] = {
-            {"hlc_30Rnd_545x39_B_AK", 6},
-            {"hlc_30Rnd_545x39_T_AK", 2},
+            {"CUP_30Rnd_545x39_AK_M", 6},
+            {"CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK_M", 2},
             {"SmokeShell", 4}
         };
         backpackMagazines[] = {
             {"SmokeShellBlue", 4},
-            {"hlc_30Rnd_545x39_B_AK", 2}
+            {"CUP_30Rnd_545x39_AK_M", 2}
         };
         assignItems[] = {"ItemGPS"};
         binocular = "Binocular";
@@ -132,13 +131,13 @@ class AKS74_CDF {
     };
 
     class AR : Rifleman {
-        primaryWeapon = "hlc_rifle_rpk74n";
-        primaryWeaponItems[] = {"hlc_optic_kobra"};
-        vestMagazines[] = {{"hlc_45Rnd_545x39_t_rpk", 2}};
+        primaryWeapon = "CUP_arifle_RPK74_45";
+        primaryWeaponItems[] = {"RH_SFM952V", "CUP_optic_ekp_8_02"};
+        vestMagazines[] = {{"CUP_60Rnd_TE1_Yellow_Tracer_545x39_AK74M_M", 2}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_45Rnd_545x39_t_rpk", 6}
+            {"CUP_60Rnd_TE1_Yellow_Tracer_545x39_AK74M_M", 6}
         };
     };
 
@@ -146,23 +145,22 @@ class AKS74_CDF {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_45Rnd_545x39_t_rpk", 4}
+            {"CUP_60Rnd_TE1_Yellow_Tracer_545x39_AK74M_M", 4}
         };
         binocular = "Binocular";
     };
 
     class RAT : Rifleman {
-        primaryWeapon = "hlc_rifle_aks74u";
         secondaryWeapon = "CUP_launch_RPG7V";
         secondaryWeaponItems[] = {"CUP_PG7V_M"};
         vestMagazines[] = {
-            {"hlc_30Rnd_545x39_B_AK", 6},
-            {"hlc_30Rnd_545x39_T_AK", 2}
+            {"CUP_30Rnd_545x39_AK_M", 6},
+            {"CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK_M", 2}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_30Rnd_545x39_B_AK", 4},
+            {"CUP_30Rnd_545x39_AK_M", 4},
             {"CUP_PG7V_M", 2}
         };
     };
@@ -182,7 +180,7 @@ class AKS74_CDF {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_30Rnd_545x39_T_AK", 2},
+            {"CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK_M", 2},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 3}
         };
         binocular = "ACE_VectorDay";
@@ -191,7 +189,6 @@ class AKS74_CDF {
     };
 
     class HMGG : Rifleman {
-        primaryWeapon = "hlc_rifle_aks74u";
         backpack = "CUP_B_DShkM_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -208,7 +205,6 @@ class AKS74_CDF {
     };
 
     class MATG : RAT {
-        primaryWeapon = "hlc_rifle_aks74u";
         secondaryWeapon = "CUP_launch_RPG7V";
         secondaryWeaponItems[] = {"CUP_PG7VL_M", "CUP_optic_PGO7V3"};
         backpackMagazines[] = {
@@ -252,7 +248,6 @@ class AKS74_CDF {
     };
 
     class DHATG : Rifleman {
-        primaryWeapon = "hlc_rifle_aks74u";
         backpack = "CUP_B_Metis_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -273,7 +268,6 @@ class AKS74_CDF {
     };
 
     class SAMG : Rifleman {
-        primaryWeapon = "hlc_rifle_aks74u";
         secondaryWeapon = "CUP_launch_Igla";
         secondaryWeaponItems[] = {"CUP_Igla_M"};
         backpackMagazines[] = {{"CUP_Igla_M", 1}};
@@ -282,7 +276,7 @@ class AKS74_CDF {
     class SAMAG : Rifleman {
         backpackMagazines[] = {
             {"HandGrenade", 1},
-            {"hlc_30Rnd_545x39_T_AK", 2},
+            {"CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK_M", 2},
             {"CUP_Igla_M", 1}
         };
         uniformMagazines[] = {
@@ -301,7 +295,6 @@ class AKS74_CDF {
     };
 
     class GMGG : Rifleman {
-        primaryWeapon = "hlc_rifle_aks74u";
         backpack = "CUP_B_AGS30_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -322,7 +315,6 @@ class AKS74_CDF {
     };
 
     class MTRG : Rifleman {
-        primaryWeapon = "hlc_rifle_aks74u";
         backpack = "CUP_B_Podnos_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -343,11 +335,9 @@ class AKS74_CDF {
     };
 
     class ENG : Rifleman {
-        primaryWeapon = "hlc_rifle_aks74";
-        primaryWeaponItems[] = {"hlc_optic_kobra"};
         vestMagazines[] = {
-            {"hlc_30Rnd_545x39_B_AK", 6},
-            {"hlc_30Rnd_545x39_T_AK", 2}
+            {"CUP_30Rnd_545x39_AK_M", 6},
+            {"CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK_M", 2}
         };
         backpackMagazines[] = {
             {"Toolkit", 1},
@@ -386,8 +376,8 @@ class AKS74_CDF {
     class SP : Rifleman {
         binocular = "ACE_VectorDay";
         vestMagazines[] = {
-            {"hlc_30Rnd_545x39_B_AK", 4},
-            {"hlc_30Rnd_545x39_T_AK", 2}
+            {"CUP_30Rnd_545x39_AK_M", 4},
+            {"CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK_M", 2}
         };
     };
 
@@ -409,13 +399,14 @@ class AKS74_CDF {
 
     class Vehicle {
         weapons[] = {
-            {"hlc_rifle_ak74", 4},
+            {"CUP_arifle_AKS74", 2},
             {"CUP_launch_RPG18", 2}
         };
         magazines[] = {
-            {"hlc_30Rnd_545x39_B_AK", 30},
-            {"hlc_45Rnd_545x39_t_rpk", 10},
-            {"hlc_GRD_White", 5},
+            {"CUP_30Rnd_545x39_AK_M", 20},
+            {"CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK_M", 10},
+            {"CUP_60Rnd_TE1_Yellow_Tracer_545x39_AK74M_M", 10},
+            {"CUP_1Rnd_SMOKE_GP25_M", 5},
             {"ACE_HandFlare_White", 5},
             {"CUP_PG7V_M", 2},
             {"CUP_FlareWhite_GP25_M", 5},
@@ -438,14 +429,15 @@ class AKS74_CDF {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"hlc_rifle_ak74", 4},
+            {"CUP_arifle_AKS74", 2},
             {"CUP_launch_RPG18", 4}
         };
         magazines[] = {
-            {"hlc_30Rnd_545x39_B_AK", 60},
-            {"hlc_45Rnd_545x39_t_rpk", 20},
+            {"CUP_30Rnd_545x39_AK_M", 40},
+            {"CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK_M", 20},
+            {"CUP_60Rnd_TE1_Yellow_Tracer_545x39_AK74M_M", 20},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
-            {"hlc_GRD_White", 10},
+            {"CUP_1Rnd_SMOKE_GP25_M", 10},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
             {"CUP_PG7V_M", 5},
@@ -470,10 +462,11 @@ class AKS74_CDF {
     class Armored : Truck {
         weapons[] = {{"CUP_launch_RPG18", 4}};
         magazines[] = {
-            {"hlc_30Rnd_545x39_B_AK", 60},
-            {"hlc_45Rnd_545x39_t_rpk", 20},
+            {"CUP_30Rnd_545x39_AK_M", 40},
+            {"CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK_M", 20},
+            {"CUP_60Rnd_TE1_Yellow_Tracer_545x39_AK74M_M", 20},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
-            {"hlc_GRD_White", 10},
+            {"CUP_1Rnd_SMOKE_GP25_M", 10},
             {"CUP_PG7V_M", 5},
             {"CUP_PG7VL_M", 5},
             {"CUP_FlareWhite_GP25_M", 10},

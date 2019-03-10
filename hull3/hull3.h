@@ -138,7 +138,7 @@ class Hull3 {
 
     class Gear {
         #include "assign\gear\Default.h"
-        #include "assign\gear\AK12_RU.h"
+        #include "assign\gear\AK74MZ_RU.h"
         #include "assign\gear\AK47_NK.h"
         #include "assign\gear\AK74_NK.h"
         #include "assign\gear\AK74_RU.h"
