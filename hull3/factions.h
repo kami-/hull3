@@ -3223,4 +3223,108 @@ class Faction {
         };
     };
 
+    class CUP_CZ_DE_90 {
+        gear = "VZ58_CZ";
+        uniform = "CUP_CZ_DE_90";
+        name = "1990s Czech Army";
+        description = "Desert uniforms with Vz 58";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"desert"};
+        rolePrefix = "Czech Army";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_UAZ_Unarmed_ACR"},
+            {"SL", "CUP_B_LR_Transport_CZ_D"},
+            {"FT", "CUP_B_UAZ_Unarmed_ACR"},
+            {"ATTCH", "CUP_B_LR_Transport_CZ_D"},
+            {"ENG", "CUP_B_T818_Reammo_CZ_DES"},
+            {"APC", "CUP_B_BMP2_CZ_Des"},
+            {"IFV", "CUP_B_BMP2_CZ_Des"},
+            {"SPAAG", "CUP_B_BMP2_CZ_Des"},
+            {"TNK", "CUP_B_T72_CZ"},
+            {"TH", "CUP_B_Mi171Sh_Unarmed_ACR"},
+            {"AH", "CUP_B_Mi35_Dynamic_CZ_Des"},
+            {"CAS", "CUP_B_L39_CZ"},
+            {"Technical", "CUP_B_UAZ_MG_ACR"}
+        };
+    };
+
+    class CUP_CZ_DE_10 {
+        gear = "BREN805_CZ";
+        uniform = "CUP_CZ_DE_10";
+        name = "2010s Czech Army";
+        description = "Desert uniforms with Bren 805";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"desert"};
+        rolePrefix = "Czech Army";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_UAZ_Unarmed_ACR"},
+            {"SL", "CUP_B_LR_Transport_CZ_D"},
+            {"FT", "CUP_B_UAZ_Unarmed_ACR"},
+            {"ATTCH", "CUP_B_LR_Transport_CZ_D"},
+            {"ENG", "CUP_B_T818_Reammo_CZ_DES"},
+            {"APC", "CUP_B_BMP2_CZ_Des"},
+            {"IFV", "CUP_B_BMP2_CZ_Des"},
+            {"SPAAG", "CUP_B_BMP2_CZ_Des"},
+            {"TNK", "CUP_B_T72_CZ"},
+            {"TH", "CUP_B_Mi171Sh_Unarmed_ACR"},
+            {"AH", "CUP_B_Mi35_Dynamic_CZ_Des"},
+            {"CAS", "CUP_B_L39_CZ"},
+            {"Technical", "CUP_B_UAZ_MG_ACR"}
+        };
+    };
+
+    class CUP_CZ_WD_90 {
+        gear = "VZ58_CZ";
+        uniform = "CUP_CZ_WD_90";
+        name = "1990s Czech Army";
+        description = "Woodland uniforms with Vz 58";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland"};
+        rolePrefix = "Czech Army";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_UAZ_Unarmed_ACR"},
+            {"SL", "CUP_B_LR_Transport_CZ_W"},
+            {"FT", "CUP_B_UAZ_Unarmed_ACR"},
+            {"ATTCH", "CUP_B_LR_Transport_CZ_W"},
+            {"ENG", "CUP_B_T818_Reammo_CZ_WDL"},
+            {"APC", "CUP_B_BMP2_CZ"},
+            {"IFV", "CUP_B_BMP2_CZ"},
+            {"SPAAG", "CUP_B_BMP2_CZ"},
+            {"TNK", "CUP_B_T72_CZ"},
+            {"TH", "CUP_B_Mi171Sh_Unarmed_ACR"},
+            {"AH", "CUP_B_Mi35_Dynamic_CZ_Dark"},
+            {"CAS", "CUP_B_L39_CZ_GREY"},
+            {"Technical", "CUP_B_UAZ_MG_ACR"}
+        };
+    };
+
+    class CUP_CZ_WD_10 {
+        gear = "BREN805_CZ";
+        uniform = "CUP_CZ_WD_10";
+        name = "2010s Czech Army";
+        description = "Woodland uniforms with Bren 805";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland"};
+        rolePrefix = "Czech Army";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_UAZ_Unarmed_ACR"},
+            {"SL", "CUP_B_LR_Transport_CZ_W"},
+            {"FT", "CUP_B_UAZ_Unarmed_ACR"},
+            {"ATTCH", "CUP_B_LR_Transport_CZ_W"},
+            {"ENG", "CUP_B_T818_Reammo_CZ_WDL"},
+            {"APC", "CUP_B_BMP2_CZ"},
+            {"IFV", "CUP_B_BMP2_CZ"},
+            {"SPAAG", "CUP_B_BMP2_CZ"},
+            {"TNK", "CUP_B_T72_CZ"},
+            {"TH", "CUP_B_Mi171Sh_Unarmed_ACR"},
+            {"AH", "CUP_B_Mi35_Dynamic_CZ_Dark"},
+            {"CAS", "CUP_B_L39_CZ_GREY"},
+            {"Technical", "CUP_B_UAZ_MG_ACR"}
+        };
+    };
+
 };
