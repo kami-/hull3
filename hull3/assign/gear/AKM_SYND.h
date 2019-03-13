@@ -352,7 +352,6 @@ class AKM_SYND {
     class ENG : Rifleman {
         primaryWeapon = "CUP_arifle_AKMS";
         primaryWeaponItems[] = {"RH_SFM952V"};
-        primaryWeaponItems[] = {};
         vestMagazines[] = {
             {"CUP_30Rnd_762x39_AK47_M", 6},
             {"CUP_30Rnd_TE1_Green_Tracer_762x39_AK47_M", 2}
