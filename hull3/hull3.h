@@ -132,6 +132,10 @@ class Hull3 {
         #include "assign\uniform\USM_USA_90_DE.h"
         #include "assign\uniform\USM_USMC_90_DE.h"
         #include "assign\uniform\USM_USA_70_OD.h"
+        #include "assign\uniform\CUP_CZ_DE_10.h"
+        #include "assign\uniform\CUP_CZ_WD_10.h"
+        #include "assign\uniform\CUP_CZ_DE_90.h"
+        #include "assign\uniform\CUP_CZ_WD_90.h"
 
         unitBaseClass = "Rifleman";
     };
@@ -202,6 +206,8 @@ class Hull3 {
         #include "assign\gear\SIG550_CDF.h"
         #include "assign\gear\HK33_RACS.h"
         #include "assign\gear\M16A1_US.h"
+        #include "assign\gear\VZ58_CZ.h"
+        #include "assign\gear\BREN805_CZ.h"
 		
         unitBaseClass = "Rifleman";
         vehicleBaseClass = "Vehicle";
