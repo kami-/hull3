@@ -37,15 +37,15 @@ hull3_unit_fnc_onPlayerRespawn = {
 };
 
 hull3_unit_fnc_playerInit = {
-    [] call hull3_unit_fnc_waitForPlayer;
+    call hull3_unit_fnc_waitForPlayer;
 
-    [] call hull3_marker_fnc_addMarkers;
-    [] spawn hull3_marker_fnc_updateAllMarkers;
-    [] spawn hull3_marker_fnc_updateCustomMarkers;
-    [] call hull3_mission_fnc_addPlayerEHs;
+    call hull3_marker_fnc_addMarkers;
+    call hull3_marker_fnc_updateAllMarkers;
+    call hull3_marker_fnc_updateCustomMarkers;
+    call hull3_mission_fnc_addPlayerEHs;
     [] spawn hull3_mission_fnc_clientSafetyTimerLoop;
-    [] call hull3_unit_fnc_setFireTeamColors;
-    [player] call hull3_uniform_fnc_assignGogglesOnJip;
+    call hull3_unit_fnc_setFireTeamColors;
+    player call hull3_uniform_fnc_assignGogglesOnJip;
 };
 
 hull3_unit_fnc_foreachNonPlayerUnits = {
