@@ -184,7 +184,7 @@ class Hull3 {
         #include "assign\gear\M4A1_US.h"
         #include "assign\gear\M4A1_USMC.h"
         #include "assign\gear\M4_US.h"
-        #include "assign\gear\MIX_LVM.h"
+        #include "assign\gear\AKMS_LVM.h"
         #include "assign\gear\Mk20_AAF_WD.h"
         #include "assign\gear\MX_NATO.h"
         #include "assign\gear\SCAR_L_US.h"
