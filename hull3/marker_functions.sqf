@@ -191,7 +191,7 @@ hull3_marker_fnc_addFireTeamMarkers = {
 
     if (hull3_marker_isFireTeamEnabled) then {
         {
-            _x call hull3_marker_fnc_addFireTeamMarker;
+            [_x] call hull3_marker_fnc_addFireTeamMarker;
         } foreach (units group _unit);
         PUSH(hull3_marker_updatableMarkers,AS_ARRAY_2(hull3_marker_fireTeam,hull3_marker_fnc_updateFireTeamMarkers));
     };
