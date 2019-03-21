@@ -1,6 +1,6 @@
 class CUP_SLA_MIL {
     class Rifleman {
-        headGear = "CUP_H_SLA_Helmet";
+        headGear = "CUP_H_SLA_Helmet_BLK";
         goggles = "";
         uniform = "CUP_U_O_SLA_Green";
         vest = "CUP_V_O_SLA_Carrier_Belt_ARM";
@@ -9,7 +9,6 @@ class CUP_SLA_MIL {
 
     class Leader : Rifleman {
         vest = "CUP_V_O_SLA_Carrier_Belt03_ARM";
-        headGear = "CUP_H_SLA_SLCap";
     };
 
     class Officer : Leader {
@@ -130,7 +129,7 @@ class CUP_SLA_MIL {
     };
 
     class SN : Rifleman {
-        headGear = "CUP_H_SLA_Boonie";
+        headGear = "CUP_H_SLA_Beret";
         goggles = "G_Bandanna_oli";
         vest = "CUP_V_O_SLA_Carrier_Belt03_ARM";
         backpack = "CUP_B_CivPack_WDL";

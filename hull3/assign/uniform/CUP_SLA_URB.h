@@ -1,15 +1,14 @@
 class CUP_SLA_URB {
     class Rifleman {
-        headGear = "CUP_H_SLA_Helmet";
+        headGear = "CUP_H_SLA_Helmet_URB";
         goggles = "";
         uniform = "CUP_U_O_SLA_Urban";
-        vest = "CUP_V_O_SLA_Flak_Vest03_ARM";
+        vest = "CUP_V_O_SLA_6B3_1_URB_ARM";
         backpack = "CUP_B_CivPack_WDL";
     };
 
     class Leader : Rifleman {
-        vest = "CUP_V_O_SLA_Flak_Vest02_ARM";
-        headGear = "CUP_H_SLA_SLCap";
+        vest = "CUP_V_O_SLA_6B3_5_URB_ARM";
     };
 
     class Officer : Leader {
@@ -38,9 +37,11 @@ class CUP_SLA_URB {
     };
 
     class FTL : Leader {
+        vest = "CUP_V_O_SLA_6B3_4_URB_ARM";
     };
 
     class AR : Rifleman {
+        vest = "CUP_V_O_SLA_6B3_3_URB_ARM";
     };
 
     class AAR : Rifleman {
@@ -48,6 +49,7 @@ class CUP_SLA_URB {
     };
 
     class RAT : Rifleman {
+        vest = "CUP_V_O_SLA_6B3_2_URB_ARM";
     };
 
     class MMGG : AR {
@@ -130,9 +132,9 @@ class CUP_SLA_URB {
     };
 
     class SN : Rifleman {
-        headGear = "CUP_H_SLA_Boonie";
+        headGear = "CUP_H_SLA_Boonie_URB";
         goggles = "G_Bandanna_oli";
-        vest = "CUP_V_O_SLA_Flak_Vest02_ARM";
+        vest = "CUP_V_O_SLA_6B3_2_URB_ARM";
         backpack = "CUP_B_CivPack_WDL";
     };
 

@@ -1820,10 +1820,10 @@ class Faction {
     };
 
     class MNP_MIL_WD {
-        gear = "MIX_LVM";
+        gear = "AKMS_LVM";
         uniform = "LVM_WD";
         name = "Local Militia (Woodland)";
-        description = "Woodland Militia with Mixed Weapons";
+        description = "Woodland Militia with AKMS";
         languages[] = {{"resistance", 100}};
         side = "resistance";
         camouflage[] = {"woodland"};
@@ -1846,10 +1846,10 @@ class Faction {
     };
 
     class MNP_MIL_DE {
-        gear = "MIX_LVM";
+        gear = "AKMS_LVM";
         uniform = "LVM_DE";
         name = "Local Militia (Desert)";
-        description = "Desert Militia with Mixed Weapons";
+        description = "Desert Militia with AKMS";
         languages[] = {{"resistance", 100}};
         side = "resistance";
         camouflage[] = {"desert"};
