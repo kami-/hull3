@@ -385,12 +385,12 @@ class M16A1_US {
 
     class Vehicle {
         weapons[] = {
-            {"CUP_arifle_M16A1", 4},
-            {"CUP_launch_M72A6", 5}
+            {"CUP_arifle_M16A1", 2},
+            {"CUP_launch_M72A6", 4}
         };
         magazines[] = {
-            {"CUP_20Rnd_556x45_Stanag", 15},
-            {"CUP_20Rnd_556x45_Stanag", 15},
+            {"CUP_20Rnd_556x45_Stanag", 20},
+            {"CUP_20Rnd_556x45_Stanag_Tracer_Red", 10},
             {"hlc_100Rnd_762x51_T_M60E4", 10},
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"CUP_1Rnd_HE_M203", 10},
@@ -412,12 +412,12 @@ class M16A1_US {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"CUP_arifle_M16A1", 4},
+            {"CUP_arifle_M16A1", 2},
             {"CUP_launch_M72A6", 10}
         };
         magazines[] = {
             {"CUP_20Rnd_556x45_Stanag", 40},
-            {"CUP_20Rnd_556x45_Stanag", 20},
+            {"CUP_20Rnd_556x45_Stanag_Tracer_Red", 20},
             {"hlc_100Rnd_762x51_T_M60E4", 50},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
@@ -444,7 +444,7 @@ class M16A1_US {
         weapons[] = {{"CUP_launch_M72A6", 10}};
         magazines[] = {
             {"CUP_20Rnd_556x45_Stanag", 40},
-            {"CUP_20Rnd_556x45_Stanag", 20},
+            {"CUP_20Rnd_556x45_Stanag_Tracer_Red", 20},
             {"hlc_100Rnd_762x51_T_M60E4", 30},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"CUP_1Rnd_HE_M203", 20},

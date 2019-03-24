@@ -395,12 +395,12 @@ class HK33_RACS {
 
     class Vehicle {
         weapons[] = {
-            {"hlc_rifle_hk33a2RIS", 4},
-            {"CUP_launch_M136", 5}
+            {"hlc_rifle_hk33a2RIS", 2},
+            {"CUP_launch_M136", 3}
         };
         magazines[] = {
-            {"hlc_30rnd_556x45_b_HK33", 15},
-            {"hlc_30rnd_556x45_b_HK33", 15},
+            {"hlc_30rnd_556x45_b_HK33", 20},
+            {"hlc_30rnd_556x45_t_HK33", 10},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 10},
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"UGL_FlareWhite_F", 5},
@@ -424,12 +424,12 @@ class HK33_RACS {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"hlc_rifle_hk33a2RIS", 4},
+            {"hlc_rifle_hk33a2RIS", 2},
             {"CUP_launch_M136", 10}
         };
         magazines[] = {
             {"hlc_30rnd_556x45_b_HK33", 40},
-            {"hlc_30rnd_556x45_b_HK33", 20},
+            {"hlc_30rnd_556x45_t_HK33", 20},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
             {"hlc_250Rnd_762x51_M_MG3", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
@@ -457,7 +457,7 @@ class HK33_RACS {
         weapons[] = {{"CUP_launch_M136", 10}};
         magazines[] = {
             {"hlc_30rnd_556x45_b_HK33", 40},
-            {"hlc_30rnd_556x45_b_HK33", 20},
+            {"hlc_30rnd_556x45_t_HK33", 20},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
             {"hlc_250Rnd_762x51_M_MG3", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},

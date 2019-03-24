@@ -77,7 +77,7 @@ class M16A4_ROK {
     };
 
     class Crew : Rifleman {
-        primaryWeapon = "hlc_rifle_CQBR";
+        primaryWeapon = "CUP_arifle_M4A1_black";
         primaryWeaponItems[] = {"RH_compM2", "RH_SFM952V"};
         uniformMagazines[] = {
             {"ACE_Chemlight_HiRed", 2},
@@ -104,7 +104,7 @@ class M16A4_ROK {
     };
 
     class Medic : Rifleman {
-        primaryWeapon = "hlc_rifle_M4";
+        primaryWeapon = "CUP_arifle_M4A1_black";
         primaryWeaponItems[] = {"RH_compm4s", "RH_SFM952V"};
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
@@ -150,7 +150,7 @@ class M16A4_ROK {
     };
 
     class RAT : Rifleman {
-        primaryWeapon = "hlc_rifle_M4";
+        primaryWeapon = "CUP_arifle_M4A1_black";
         primaryWeaponItems[] = {"RH_compM2", "RH_SFM952V"};
         secondaryWeapon = "CUP_launch_M72A6";
         vestMagazines[] = {
@@ -191,7 +191,7 @@ class M16A4_ROK {
     };
 
     class HMGG : Rifleman {
-        primaryWeapon = "hlc_rifle_M4";
+        primaryWeapon = "CUP_arifle_M4A1_black";
         backpack = "CUP_B_M2_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -252,7 +252,7 @@ class M16A4_ROK {
     };
 
     class DHATG : Rifleman {
-        primaryWeapon = "hlc_rifle_M4";
+        primaryWeapon = "CUP_arifle_M4A1_black";
         backpack = "CUP_B_Tow_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -273,14 +273,14 @@ class M16A4_ROK {
     };
 
     class SAMG : Rifleman {
-        primaryWeapon = "hlc_rifle_M4";
+        primaryWeapon = "CUP_arifle_M4A1_black";
         secondaryWeapon = "CUP_launch_FIM92Stinger";
         secondaryWeaponItems[] = {"CUP_Stinger_M"};
         backpackMagazines[] = {{"CUP_Stinger_M", 1}};
     };
 
     class SAMAG : Rifleman {
-        primaryWeapon = "hlc_rifle_M4";
+        primaryWeapon = "CUP_arifle_M4A1_black";
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"CUP_Stinger_M", 1}
@@ -301,7 +301,7 @@ class M16A4_ROK {
     };
 
     class GMGG : Rifleman {
-        primaryWeapon = "hlc_rifle_M4";
+        primaryWeapon = "CUP_arifle_M4A1_black";
         backpack = "CUP_B_Mk19_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -322,7 +322,7 @@ class M16A4_ROK {
     };
 
     class MTRG : Rifleman {
-        primaryWeapon = "hlc_rifle_M4";
+        primaryWeapon = "CUP_arifle_M4A1_black";
         backpack = "CUP_B_M252_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -343,7 +343,7 @@ class M16A4_ROK {
     };
 
     class ENG : Rifleman {
-        primaryWeapon = "hlc_rifle_M4";
+        primaryWeapon = "CUP_arifle_M4A1_black";
         primaryWeaponItems[] = {"RH_compM2", "RH_SFM952V"};
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
@@ -406,12 +406,11 @@ class M16A4_ROK {
     class Vehicle {
         weapons[] = {
             {"CUP_arifle_M16A4_Base", 2},
-            {"CUP_launch_M72A6", 5},
-            {"hlc_rifle_M4", 2}
+            {"CUP_launch_M72A6", 4}
         };
         magazines[] = {
-            {"30Rnd_556x45_Stanag", 15},
-            {"30Rnd_556x45_Stanag", 15},
+            {"30Rnd_556x45_Stanag", 20},
+            {"30Rnd_556x45_Stanag_Tracer_Red", 10},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 10},
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"UGL_FlareWhite_F", 5},
@@ -436,12 +435,11 @@ class M16A4_ROK {
     class Truck : Vehicle {
         weapons[] = {
             {"CUP_arifle_M16A4_Base", 2},
-            {"CUP_launch_M72A6", 10},
-            {"hlc_rifle_M4", 2}
+            {"CUP_launch_M72A6", 10}
         };
         magazines[] = {
             {"30Rnd_556x45_Stanag", 40},
-            {"30Rnd_556x45_Stanag", 20},
+            {"30Rnd_556x45_Stanag_Tracer_Red", 20},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
             {"hlc_100Rnd_762x51_B_M60E4", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
@@ -469,7 +467,7 @@ class M16A4_ROK {
         weapons[] = {{"CUP_launch_M72A6", 10}};
         magazines[] = {
             {"30Rnd_556x45_Stanag", 40},
-            {"30Rnd_556x45_Stanag", 20},
+            {"30Rnd_556x45_Stanag_Tracer_Red", 20},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
             {"hlc_100Rnd_762x51_B_M60E4", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},

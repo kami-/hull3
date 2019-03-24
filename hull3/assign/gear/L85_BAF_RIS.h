@@ -393,12 +393,12 @@ class L85_BAF_RIS {
 
     class Vehicle {
         weapons[] = {
-            {"CUP_arifle_L85A2_NG", 4},
-            {"CUP_launch_NLAW", 5}
+            {"CUP_arifle_L85A2_NG", 2},
+            {"CUP_launch_NLAW", 4}
         };
         magazines[] = {
-            {"CUP_30Rnd_556x45_Stanag_L85", 15},
-            {"CUP_30Rnd_556x45_Stanag_L85", 15},
+            {"CUP_30Rnd_556x45_Stanag_L85", 20},
+            {"CUP_30Rnd_556x45_Stanag_L85_Tracer_Red", 10},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 10},
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"UGL_FlareWhite_F", 5},
@@ -422,12 +422,12 @@ class L85_BAF_RIS {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"CUP_arifle_L85A2_NG", 4},
+            {"CUP_arifle_L85A2_NG", 2},
             {"CUP_launch_NLAW", 10}
         };
         magazines[] = {
-            {"CUP_30Rnd_556x45_Stanag_L85", 40},
             {"CUP_30Rnd_556x45_Stanag_L85", 20},
+            {"CUP_30Rnd_556x45_Stanag_L85_Tracer_Red", 10},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
@@ -454,8 +454,8 @@ class L85_BAF_RIS {
     class Armored : Truck {
         weapons[] = {{"CUP_launch_NLAW", 10}};
         magazines[] = {
-            {"CUP_30Rnd_556x45_Stanag_L85", 40},
             {"CUP_30Rnd_556x45_Stanag_L85", 20},
+            {"CUP_30Rnd_556x45_Stanag_L85_Tracer_Red", 10},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},

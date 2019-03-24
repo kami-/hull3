@@ -355,11 +355,11 @@ class L85_BAF {
 
     class SN : Rifleman {
         primaryWeapon = "CUP_srifle_L129A1_HG";
-        handgunWeapon = "CUP_hgun_Glock17";
+        handgunWeapon = "hlc_pistol_P226US";
         primaryWeaponItems[] = {"RH_ta31rco", "RH_SFM952V", "RH_HBLM"};
         vestMagazines[] = {
             {"CUP_20Rnd_762x51_L129_M", 4},
-            {"CUP_17Rnd_9x19_glock17", 3}
+            {"hlc_15Rnd_9x19_B_P226", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
@@ -392,12 +392,12 @@ class L85_BAF {
 
     class Vehicle {
         weapons[] = {
-            {"CUP_arifle_L85A2", 4},
-            {"CUP_launch_M72A6", 5}
+            {"CUP_arifle_L85A2", 2},
+            {"CUP_launch_M72A6", 4}
         };
         magazines[] = {
-            {"CUP_30Rnd_556x45_Stanag_L85", 15},
-            {"CUP_30Rnd_556x45_Stanag_L85", 15},
+            {"CUP_30Rnd_556x45_Stanag_L85", 20},
+            {"CUP_30Rnd_556x45_Stanag_L85_Tracer_Red", 10},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 10},
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"UGL_FlareWhite_F", 5},
@@ -421,12 +421,12 @@ class L85_BAF {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"CUP_arifle_L85A2", 4},
+            {"CUP_arifle_L85A2", 2},
             {"CUP_launch_M72A6", 10}
         };
         magazines[] = {
             {"CUP_30Rnd_556x45_Stanag_L85", 40},
-            {"CUP_30Rnd_556x45_Stanag_L85", 20},
+            {"CUP_30Rnd_556x45_Stanag_L85_Tracer_Red", 210},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
@@ -454,7 +454,7 @@ class L85_BAF {
         weapons[] = {{"CUP_launch_M72A6", 10}};
         magazines[] = {
             {"CUP_30Rnd_556x45_Stanag_L85", 40},
-            {"CUP_30Rnd_556x45_Stanag_L85", 20},
+            {"CUP_30Rnd_556x45_Stanag_L85_Tracer_Red", 20},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},

@@ -399,7 +399,7 @@ class VZ58_CZ {
 
     class Vehicle {
         weapons[] = {
-            {"hlc_rifle_SG550", 2},
+            {"CUP_arifle_Sa58RIS2", 2},
             {"CUP_launch_M72A6", 4}
         };
         magazines[] = {
@@ -429,8 +429,8 @@ class VZ58_CZ {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"hlc_rifle_SG550", 2},
-            {"CUP_launch_M72A6", 4}
+            {"CUP_arifle_Sa58RIS2", 2},
+            {"CUP_launch_M72A6", 10}
         };
         magazines[] = {
             {"CUP_30Rnd_Sa58_M", 40},
@@ -460,7 +460,7 @@ class VZ58_CZ {
     };
 
     class Armored : Truck {
-        weapons[] = {{"CUP_launch_M72A6", 4}};
+        weapons[] = {{"CUP_launch_M72A6", 10}};
         magazines[] = {
             {"CUP_30Rnd_Sa58_M", 40},
             {"CUP_30Rnd_Sa58_M_TracerG", 20},

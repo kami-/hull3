@@ -49,6 +49,7 @@ class Katiba_CSAT {
 
     class Leader : Rifleman {
         primaryWeapon = "arifle_Katiba_GL_F";
+        handgunWeapon = "hgun_Rook40_F";
         uniformMagazines[] = {
             {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
@@ -58,7 +59,8 @@ class Katiba_CSAT {
             {"1Rnd_HE_Grenade_shell", 4},
             {"1Rnd_Smoke_Grenade_shell", 2},
             {"1Rnd_SmokeRed_Grenade_shell", 2},
-            {"30Rnd_65x39_caseless_green_mag_Tracer", 2}
+            {"30Rnd_65x39_caseless_green_mag_Tracer", 2},
+            {"16Rnd_9x21_Mag", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
@@ -431,11 +433,11 @@ class Katiba_CSAT {
     class Vehicle {
         weapons[] = {
             {"arifle_Katiba_F", 2},
-            {"CUP_launch_RPG18", 5},
-            {"arifle_Katiba_C_F", 2}
+            {"CUP_launch_RPG18", 4}
         };
         magazines[] = {
-            {"30Rnd_65x39_caseless_green", 30},
+            {"30Rnd_65x39_caseless_green", 20},
+            {"30Rnd_65x39_caseless_green_mag_Tracer", 10},
             {"150Rnd_762x54_Box", 10},
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"UGL_FlareWhite_F", 5},
@@ -460,11 +462,11 @@ class Katiba_CSAT {
     class Truck : Vehicle {
         weapons[] = {
             {"arifle_Katiba_F", 2},
-            {"CUP_launch_RPG18", 10},
-            {"arifle_Katiba_C_F", 2}
+            {"CUP_launch_RPG18", 10}
         };
         magazines[] = {
-            {"30Rnd_65x39_caseless_green", 60},
+            {"30Rnd_65x39_caseless_green", 40},
+            {"30Rnd_65x39_caseless_green_mag_Tracer", 20},
             {"150Rnd_762x54_Box", 20},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
@@ -491,7 +493,8 @@ class Katiba_CSAT {
     class Armored : Truck {
         weapons[] = {{"CUP_launch_RPG18", 10}};
         magazines[] = {
-            {"30Rnd_65x39_caseless_green", 60},
+            {"30Rnd_65x39_caseless_green", 40},
+            {"30Rnd_65x39_caseless_green_mag_Tracer", 20},
             {"150Rnd_762x54_Box", 20},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
