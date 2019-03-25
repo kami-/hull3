@@ -1897,32 +1897,6 @@ class Faction {
         };
     };
 
-    class MNP_NPA_DE {
-        gear = "AKM_NPA";
-        uniform = "NPA_DE";
-        name = "National People's Army (Desert)";
-        description = "Desert DPM Militia with AKM's";
-        languages[] = {{"resistance", 100}};
-        side = "resistance";
-        camouflage[] = {"desert"};
-        rolePrefix = "National Peoples Army";
-        vehicleClassnames[] = {
-            {"CO", "CUP_O_UAZ_Unarmed_RU"},
-            {"SL", "CUP_O_UAZ_Unarmed_RU"},
-            {"FT", "CUP_C_LR_Transport_CTK"},
-            {"ATTCH", "CUP_C_LR_Transport_CTK"},
-            {"ENG", "CUP_O_Ural_Repair_SLA"},
-            {"APC", "CUP_O_MTLB_pk_TK_MILITIA"},
-            {"IFV", "CUP_O_BMP2_SLA"},
-            {"SPAAG", "CUP_O_Ural_ZU23_SLA"},
-            {"TNK", "CUP_I_T55_TK_GUE"},
-            {"TH", "CUP_C_Mi17_Civilian_RU"},
-            {"AH", "CUP_O_Mi8_SLA_2"},
-            {"CAS", "CUP_O_Su25_Dyn_SLA"},
-            {"Technical", "CUP_O_UAZ_MG_SLA"}
-        };
-    };
-
     class MNP_IRE_WD {
         gear = "AUGA3_IRE";
         uniform = "IRE_WD";
