@@ -78,8 +78,6 @@ class Hull3 {
         #include "assign\uniform\NK_REG.h"
         #include "assign\uniform\NOR_DE.h"
         #include "assign\uniform\NOR_WD.h"
-        #include "assign\uniform\NPA_DE.h"
-        #include "assign\uniform\NPA_WD.h"
         #include "assign\uniform\NZ.h"
         #include "assign\uniform\ROK_WD.h"
         #include "assign\uniform\RU_AB.h"
@@ -138,7 +136,7 @@ class Hull3 {
         #include "assign\uniform\CUP_CZ_WD_90.h"
         #include "assign\uniform\IDF_90.h"
         #include "assign\uniform\IDF_10.h"
-        #include "assign\uniform\ROK_SEALh"
+        #include "assign\uniform\ROK_SEAL.h"
 
         unitBaseClass = "Rifleman";
     };
@@ -156,7 +154,6 @@ class Hull3 {
         #include "assign\gear\AK74_UKR.h"
         #include "assign\gear\AKM_NAPA.h"
         #include "assign\gear\AKM_CHKDZ.h"
-        #include "assign\gear\AKM_NPA.h"
         #include "assign\gear\AKM_IRN.h"
         #include "assign\gear\AKM_SLA.h"
         #include "assign\gear\AKM_SYND.h"
