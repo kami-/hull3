@@ -1,4 +1,4 @@
-class UNIFORM_TEST {
+class IRN_ARMY {
     class Rifleman {
         headGear = "MNP_Helmet_PAGST_IRGC";
         goggles = "";
