@@ -361,11 +361,11 @@ class M4A1_USMC {
 
     class SN : Rifleman {
         primaryWeapon = "hlc_rifle_m14dmr";
-        handgunWeapon = "CUP_hgun_M9";
+        handgunWeapon = "hlc_Pistol_M11A1";
         primaryWeaponItems[] = {"hlc_optic_artel_m14"};
         vestMagazines[] = {
             {"hlc_20Rnd_762x51_B_M14", 4},
-            {"CUP_15Rnd_9x19_M9", 3}
+            {"hlc_13Rnd_9x19_B_P228", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
@@ -398,12 +398,12 @@ class M4A1_USMC {
 
     class Vehicle {
         weapons[] = {
-            {"CUP_arifle_M4A1_black", 4},
-            {"CUP_launch_M136", 5}
+            {"CUP_arifle_M4A1_black", 2},
+            {"CUP_launch_M136", 4}
         };
         magazines[] = {
-            {"CUP_30Rnd_556x45_Stanag", 15},
-            {"CUP_30Rnd_556x45_Stanag", 15},
+            {"CUP_30Rnd_556x45_Stanag", 20},
+            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 10},
             {"CUP_100Rnd_556x45_BetaCMag_ar15", 10},
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"UGL_FlareWhite_F", 5},
@@ -427,12 +427,12 @@ class M4A1_USMC {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"CUP_arifle_M4A1_black", 4},
+            {"CUP_arifle_M4A1_black", 2},
             {"CUP_launch_M136", 10}
         };
         magazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 40},
-            {"CUP_30Rnd_556x45_Stanag", 20},
+            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 20},
             {"CUP_100Rnd_556x45_BetaCMag_ar15", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
@@ -460,7 +460,7 @@ class M4A1_USMC {
         weapons[] = {{"CUP_launch_M136", 10}};
         magazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 40},
-            {"CUP_30Rnd_556x45_Stanag", 20},
+            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 20},
             {"CUP_100Rnd_556x45_BetaCMag_ar15", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},

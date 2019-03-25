@@ -393,12 +393,12 @@ class AUGA3_AUS {
 
     class Vehicle {
         weapons[] = {
-            {"hlc_rifle_auga3", 4},
-            {"CUP_launch_M72A6", 5}
+            {"hlc_rifle_auga3", 2},
+            {"CUP_launch_M72A6", 4}
         };
         magazines[] = {
-            {"hlc_30Rnd_556x45_B_AUG", 15},
-            {"hlc_30Rnd_556x45_B_AUG", 15},
+            {"hlc_30Rnd_556x45_B_AUG", 20},
+            {"hlc_30Rnd_556x45_T_AUG", 10},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 10},
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"UGL_FlareWhite_F", 5},
@@ -422,12 +422,12 @@ class AUGA3_AUS {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"hlc_rifle_auga3", 4},
+            {"hlc_rifle_auga3", 2},
             {"CUP_launch_M72A6", 10}
         };
         magazines[] = {
             {"hlc_30Rnd_556x45_B_AUG", 40},
-            {"hlc_30Rnd_556x45_B_AUG", 20},
+            {"hlc_30Rnd_556x45_T_AUG", 20},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
@@ -455,7 +455,7 @@ class AUGA3_AUS {
         weapons[] = {{"CUP_launch_M72A6", 10}};
         magazines[] = {
             {"hlc_30Rnd_556x45_B_AUG", 40},
-            {"hlc_30Rnd_556x45_B_AUG", 20},
+            {"hlc_30Rnd_556x45_T_AUG", 20},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},

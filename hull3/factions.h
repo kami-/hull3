@@ -3327,4 +3327,82 @@ class Faction {
         };
     };
 
+    class MNP_IDF_90 {
+        gear = "M16A2_IDF";
+        uniform = "IDF_90";
+        name = "1990s Israeli Defence Forces";
+        description = "IDF with M16A2 and M4";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland", "desert"};
+        rolePrefix = "IDF";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_HMMWV_Transport_NATO_T"},
+            {"SL", "B_Truck_01_covered_F"},
+            {"FT", "CUP_B_HMMWV_Transport_NATO_T"},
+            {"ATTCH", "CUP_B_HMMWV_Transport_NATO_T"},
+            {"ENG", "B_Truck_01_ammo_F"},
+            {"APC", "CUP_B_M113_desert_USA"},
+            {"IFV", "B_MBT_01_cannon_F"},
+            {"SPAAG", "CUP_B_M163_USA"},
+            {"TNK", "B_MBT_01_cannon_F"},
+            {"TH", "CUP_B_UH1D_GER_KSK_Des"},
+            {"AH", "CUP_B_AH64_DL_USA"},
+            {"CAS", "B_Plane_Fighter_01_F"},
+            {"Technical", "CUP_B_HMMWV_M2_NATO_T"}
+        };
+    };
+
+    class MNP_IDF_10 {
+        gear = "TAVOR_IDF";
+        uniform = "IDF_10";
+        name = "2010s Israeli Defence Forces";
+        description = "IDF with Tavors";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland", "desert"};
+        rolePrefix = "IDF";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_HMMWV_Transport_NATO_T"},
+            {"SL", "B_Truck_01_covered_F"},
+            {"FT", "CUP_B_HMMWV_Transport_NATO_T"},
+            {"ATTCH", "CUP_B_HMMWV_Transport_NATO_T"},
+            {"ENG", "B_Truck_01_ammo_F"},
+            {"APC", "CUP_B_BMP2_CZ"},
+            {"IFV", "CUP_B_BMP2_CZ"},
+            {"SPAAG", "CUP_B_M163_USA"},
+            {"TNK", "B_MBT_01_TUSK_F"},
+            {"TH", "CUP_B_Mi171Sh_Unarmed_ACR"},
+            {"AH", "CUP_B_AH64D_DL_USA"},
+            {"CAS", "CUP_B_F35B_CAS_USMC"},
+            {"Technical", "CUP_B_HMMWV_M2_GPK_NATO_T"}
+        };
+    };
+
+    class MNP_ROK_SEAL {
+        gear = "HK416_ROK";
+        uniform = "ROK_SEAL";
+        name = "Republic of Korea Navy Seals";
+        description = "Digital Tiger uniforms with HK416's";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland"};
+        rolePrefix = "ROKN Seals";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"SL", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"FT", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"ATTCH", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"ENG", "B_Truck_01_Repair_F"},
+            {"APC", "CUP_B_M113_USA"},
+            {"IFV", "CUP_B_M113_USA"},
+            {"SPAAG", "CUP_B_M163_USA"},
+            {"TNK", "CUP_B_M1A1_Woodland_US_Army"},
+            {"TH", "CUP_B_UH60M_US"},
+            {"AH", "CUP_B_AH1Z_Dynamic_USMC"},
+            {"CAS", "CUP_B_AV8B_DYN_USMC"},
+            {"Technical", "CUP_B_HMMWV_M2_USA"}
+        };
+    };
+
 };

@@ -16,13 +16,13 @@ class ACR_BLK_PMC {
         };
         vestMagazines[] = {
             {"hlc_30rnd_68x43_FMJ", 6},
-            {"hlc_30rnd_68x43_MFMJ", 2}
+            {"hlc_30rnd_68x43_Tracer", 2}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
             {"hlc_30rnd_68x43_FMJ", 4},
-            {"hlc_30rnd_68x43_MFMJ", 2}
+            {"hlc_30rnd_68x43_Tracer", 2}
         };
         basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch"};
         assignItems[] = {};
@@ -53,14 +53,14 @@ class ACR_BLK_PMC {
         handgunWeapon = "hlc_pistol_P226R_357Elite";
         vestMagazines[] = {
             {"hlc_30rnd_68x43_FMJ", 6},
-            {"hlc_30rnd_68x43_MFMJ", 2},
+            {"hlc_30rnd_68x43_Tracer", 2},
             {"hlc_12Rnd_357SIG_JHP_P226", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
             {"hlc_30rnd_68x43_FMJ", 4},
-            {"hlc_30rnd_68x43_MFMJ", 2}
+            {"hlc_30rnd_68x43_Tracer", 2}
         };
         assignItems[] = {"ItemGPS"};
         binocular = "Binocular";
@@ -103,7 +103,7 @@ class ACR_BLK_PMC {
         primaryWeaponItems[] = {"RH_compM2l", "RH_SFM952V"};
         vestMagazines[] = {
             {"hlc_30rnd_68x43_FMJ", 6},
-            {"hlc_30rnd_68x43_MFMJ", 2},
+            {"hlc_30rnd_68x43_Tracer", 2},
             {"SmokeShell", 4}
         };
         backpackMagazines[] = {
@@ -150,13 +150,13 @@ class ACR_BLK_PMC {
         secondaryWeapon = "CUP_launch_M136";
         vestMagazines[] = {
             {"hlc_30rnd_68x43_FMJ", 6},
-            {"hlc_30rnd_68x43_MFMJ", 2}
+            {"hlc_30rnd_68x43_Tracer", 2}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
             {"hlc_30rnd_68x43_FMJ", 4},
-            {"hlc_30rnd_68x43_MFMJ", 2}
+            {"hlc_30rnd_68x43_Tracer", 2}
         };
     };
 
@@ -339,7 +339,7 @@ class ACR_BLK_PMC {
         primaryWeaponItems[] = {"RH_compM2l", "RH_SFM952V"};
         vestMagazines[] = {
             {"hlc_30rnd_68x43_FMJ", 6},
-            {"hlc_30rnd_68x43_MFMJ", 2}
+            {"hlc_30rnd_68x43_Tracer", 2}
         };
         backpackMagazines[] = {
             {"Toolkit", 1},
@@ -360,11 +360,11 @@ class ACR_BLK_PMC {
 
     class SN : Rifleman {
         primaryWeapon = "srifle_EBR_F";
-        handgunWeapon = "hgun_ACPC2_F";
+        handgunWeapon = "hlc_pistol_P226R_357Elite";
         primaryWeaponItems[] = {"optic_Hamr", "RH_SFM952V", "RH_HBLM"};
         vestMagazines[] = {
             {"20Rnd_762x51_Mag", 4},
-            {"9Rnd_45ACP_Mag", 3}
+            {"hlc_12Rnd_357SIG_JHP_P226", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
@@ -398,12 +398,11 @@ class ACR_BLK_PMC {
     class Vehicle {
         weapons[] = {
             {"hlc_rifle_ACR68_full_black", 2},
-            {"CUP_launch_M136", 5},
-            {"hlc_rifle_ACR68_Carb_black", 2}
+            {"CUP_launch_M136", 4}
         };
         magazines[] = {
-            {"hlc_30rnd_68x43_FMJ", 15},
-            {"hlc_30rnd_68x43_MFMJ", 15},
+            {"hlc_30rnd_68x43_FMJ", 20},
+            {"hlc_30rnd_68x43_Tracer", 10},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 10},
             {"ACE_HandFlare_White", 5},
             {"HandGrenade", 5},
@@ -426,12 +425,11 @@ class ACR_BLK_PMC {
     class Truck : Vehicle {
         weapons[] = {
             {"hlc_rifle_ACR68_full_black", 2},
-            {"CUP_launch_M136", 10},
-            {"hlc_rifle_ACR68_Carb_black", 2}
+            {"CUP_launch_M136", 10}
         };
         magazines[] = {
             {"hlc_30rnd_68x43_FMJ", 40},
-            {"hlc_30rnd_68x43_MFMJ", 20},
+            {"hlc_30rnd_68x43_Tracer", 20},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"SatchelCharge_Remote_Mag", 5},
@@ -457,7 +455,7 @@ class ACR_BLK_PMC {
         weapons[] = {{"CUP_launch_M136", 10}};
         magazines[] = {
             {"hlc_30rnd_68x43_FMJ", 40},
-            {"hlc_30rnd_68x43_MFMJ", 20},
+            {"hlc_30rnd_68x43_Tracer", 20},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"MRAWS_HEAT_F", 5},

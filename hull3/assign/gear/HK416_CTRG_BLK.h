@@ -398,12 +398,12 @@ class HK416_CTRG_BLK {
 
     class Vehicle {
         weapons[] = {
-            {"arifle_SPAR_01_blk_F", 4},
-            {"CUP_launch_M136", 5}
+            {"arifle_SPAR_01_blk_F", 2},
+            {"CUP_launch_M136", 4}
         };
         magazines[] = {
-            {"30Rnd_556x45_Stanag", 15},
-            {"30Rnd_556x45_Stanag", 15},
+            {"30Rnd_556x45_Stanag", 20},
+            {"30Rnd_556x45_Stanag_Tracer_Red", 10},
             {"150Rnd_556x45_Drum_Mag_F", 10},
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"UGL_FlareWhite_F", 5},
@@ -427,12 +427,12 @@ class HK416_CTRG_BLK {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"arifle_SPAR_01_blk_F", 4},
+            {"arifle_SPAR_01_blk_F", 2},
             {"CUP_launch_M136", 10}
         };
         magazines[] = {
             {"30Rnd_556x45_Stanag", 40},
-            {"30Rnd_556x45_Stanag", 20},
+            {"30Rnd_556x45_Stanag_Tracer_Red", 20},
             {"150Rnd_556x45_Drum_Mag_F", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
@@ -460,7 +460,7 @@ class HK416_CTRG_BLK {
         weapons[] = {{"CUP_launch_M136", 10}};
         magazines[] = {
             {"30Rnd_556x45_Stanag", 40},
-            {"30Rnd_556x45_Stanag", 20},
+            {"30Rnd_556x45_Stanag_Tracer_Red", 20},
             {"150Rnd_556x45_Drum_Mag_F", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},

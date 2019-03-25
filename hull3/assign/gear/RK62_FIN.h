@@ -368,11 +368,11 @@ class RK62_FIN {
 
     class SN : Rifleman {
         primaryWeapon = "CUP_srifle_SVD";
-        handgunWeapon = "hgun_P07_F";
+        handgunWeapon = "CUP_hgun_Glock17_blk";
         primaryWeaponItems[] = {"CUP_optic_PSO_1"};
         vestMagazines[] = {
             {"CUP_10Rnd_762x54_SVD_M", 4},
-            {"16Rnd_9x21_Mag", 3}
+            {"CUP_17Rnd_9x19_glock17", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
@@ -409,12 +409,12 @@ class RK62_FIN {
 
     class Vehicle {
         weapons[] = {
-            {"hlc_rifle_RK62", 4},
-            {"CUP_launch_NLAW", 5}
+            {"hlc_rifle_RK62", 2},
+            {"CUP_launch_NLAW", 4}
         };
         magazines[] = {
-            {"30Rnd_762x39_Mag_F", 15},
-            {"30Rnd_762x39_Mag_Tracer_F", 15},
+            {"30Rnd_762x39_Mag_F", 20},
+            {"30Rnd_762x39_Mag_Tracer_F", 10},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 20},
             {"ACE_HandFlare_White", 5},
             {"HandGrenade", 5},
@@ -436,7 +436,7 @@ class RK62_FIN {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"hlc_rifle_RK62", 4},
+            {"hlc_rifle_RK62", 2},
             {"CUP_launch_NLAW", 10}
         };
         magazines[] = {

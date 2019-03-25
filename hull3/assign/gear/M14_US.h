@@ -385,12 +385,12 @@ class M14_US {
 
     class Vehicle {
         weapons[] = {
-            {"hlc_rifle_M14", 4},
-            {"CUP_launch_M72A6", 5}
+            {"hlc_rifle_M14", 2},
+            {"CUP_launch_M72A6", 4}
         };
         magazines[] = {
-            {"hlc_20Rnd_762x51_B_M14", 15},
-            {"hlc_20Rnd_762x51_B_M14", 15},
+            {"hlc_20Rnd_762x51_B_M14", 20},
+            {"hlc_20Rnd_762x51_T_M14", 10},
             {"hlc_100Rnd_762x51_T_M60E4", 10},
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"CUP_1Rnd_HE_M203", 10},
@@ -412,12 +412,12 @@ class M14_US {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"hlc_rifle_M14", 4},
+            {"hlc_rifle_M14", 2},
             {"CUP_launch_M72A6", 10}
         };
         magazines[] = {
             {"hlc_20Rnd_762x51_B_M14", 40},
-            {"hlc_20Rnd_762x51_B_M14", 20},
+            {"hlc_20Rnd_762x51_T_M14", 20},
             {"hlc_100Rnd_762x51_T_M60E4", 50},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
@@ -444,7 +444,7 @@ class M14_US {
         weapons[] = {{"CUP_launch_M72A6", 10}};
         magazines[] = {
             {"hlc_20Rnd_762x51_B_M14", 40},
-            {"hlc_20Rnd_762x51_B_M14", 20},
+            {"hlc_20Rnd_762x51_T_M14", 20},
             {"hlc_100Rnd_762x51_T_M60E4", 30},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"CUP_1Rnd_HE_M203", 20},

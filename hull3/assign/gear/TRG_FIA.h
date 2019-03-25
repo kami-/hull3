@@ -416,12 +416,11 @@ class TRG_FIA {
     class Vehicle {
         weapons[] = {
             {"arifle_TRG21_F", 2},
-            {"CUP_launch_M136", 5},
-            {"arifle_TRG20_F", 2}
+            {"CUP_launch_M136", 4}
         };
         magazines[] = {
-            {"30Rnd_556x45_Stanag", 15},
-            {"30Rnd_556x45_Stanag", 15},
+            {"30Rnd_556x45_Stanag", 20},
+            {"30Rnd_556x45_Stanag_Tracer_Red", 10},
             {"200Rnd_65x39_cased_Box", 10},
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"UGL_FlareWhite_F", 5},
@@ -446,12 +445,11 @@ class TRG_FIA {
     class Truck : Vehicle {
         weapons[] = {
             {"arifle_TRG21_F", 2},
-            {"CUP_launch_M136", 10},
-            {"arifle_TRG20_F", 2}
+            {"CUP_launch_M136", 10}
         };
         magazines[] = {
             {"30Rnd_556x45_Stanag", 40},
-            {"30Rnd_556x45_Stanag", 20},
+            {"30Rnd_556x45_Stanag_Tracer_Red", 20},
             {"200Rnd_65x39_cased_Box", 20},
             {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
@@ -479,7 +477,7 @@ class TRG_FIA {
         weapons[] = {{"CUP_launch_M136", 10}};
         magazines[] = {
             {"30Rnd_556x45_Stanag", 40},
-            {"30Rnd_556x45_Stanag", 20},
+            {"30Rnd_556x45_Stanag_Tracer_Red", 20},
             {"200Rnd_65x39_cased_Box", 20},
             {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
