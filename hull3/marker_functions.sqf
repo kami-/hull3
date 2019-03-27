@@ -114,13 +114,9 @@ hull3_marker_fnc_addUnitMarker = {
 hull3_marker_fnc_updateAllMarkers = {
     [
         {
-            params ["_args", "_id"];
-
-            if (count hull3_marker_updatableMarkers > 0) then {
-                {
-                    [_x select 0] call (_x select 1);
-                } foreach hull3_marker_updatableMarkers;
-            };
+            {
+                [_x select 0] call (_x select 1);
+            } foreach hull3_marker_updatableMarkers;
         },
         hull3_marker_defaultDelay
     ] call CBA_fnc_addPerFrameHandler;
@@ -129,12 +125,9 @@ hull3_marker_fnc_updateAllMarkers = {
 hull3_marker_fnc_updateCustomMarkers = {
     [
         {
-            params ["_args", "_id"];
-
             {
                 [_x] call hull3_marker_fnc_updateCustomMarker;
             } foreach hull3_marker_custom;
-
         },
         1
     ] call CBA_fnc_addPerFrameHandler;
