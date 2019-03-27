@@ -207,7 +207,7 @@ class Hull3 {
         #include "assign\gear\M16A2_IDF.h"
         #include "assign\gear\TAVOR_IDF.h"
         #include "assign\gear\HK416_ROK.h"
-		
+
         unitBaseClass = "Rifleman";
         vehicleBaseClass = "Vehicle";
     };
@@ -232,7 +232,7 @@ class Hull3 {
         isGroupEnabled = 1;
         isFireTeamEnabled = 1;
 
-        defaultDelay = 4;
+        defaultDelay = 3;
 
         class MedicMarker {
             size[] = {0.5, 0.5};

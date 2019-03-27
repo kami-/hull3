@@ -34,7 +34,7 @@ hull3_marker_fnc_disableFireTeamMarkers = {
 };
 
 hull3_marker_fnc_initMarker = {
-    FUN_ARGS_3(_unit,_markerText,_markerColor);
+    params ["_unit", "_markerText", "_markerColor"];
 
     PUSH(hull3_marker_rawGroupMarkers, AS_ARRAY_4(_unit,_unit getVariable "hull3_gear_class",_markerText,_markerColor));
 };
@@ -59,7 +59,7 @@ hull3_marker_fnc_addGroupAndUnitMarkers = {
 };
 
 hull3_marker_fnc_addGroupAndUnitMarker = {
-    FUN_ARGS_4(_unit,_gearClass,_markerText,_markerColor);
+    params ["_unit", "_gearClass", "_markerText", "_markerColor"];
 
     private "_markerName";
     call {
@@ -89,7 +89,7 @@ hull3_marker_fnc_addGroupAndUnitMarker = {
 };
 
 hull3_marker_fnc_addGroupMarker = {
-    FUN_ARGS_4(_unit,_markerType,_markerText,_markerColor);
+    params ["_unit", "_markerType", "_markerText", "_markerColor"];
 
     (group _unit) setGroupId [_markerText];
     if (hull3_marker_isGroupEnabled) then {
@@ -112,34 +112,33 @@ hull3_marker_fnc_addUnitMarker = {
 };
 
 hull3_marker_fnc_updateAllMarkers = {
-    if (count hull3_marker_updatableMarkers > 0) then {
-        waitUntil {
+    [
+        {
             {
                 [_x select 0] call (_x select 1);
             } foreach hull3_marker_updatableMarkers;
-            sleep hull3_marker_defaultDelay;
-            false;
-        };
-    };
+        },
+        hull3_marker_defaultDelay
+    ] call CBA_fnc_addPerFrameHandler;
 };
 
 hull3_marker_fnc_updateCustomMarkers = {
-    waitUntil {
+    [
         {
-            _x call hull3_marker_fnc_updateCustomMarker;
-        } foreach hull3_marker_custom;
-        sleep 1;
-        false;
-    };
+            {
+                [_x] call hull3_marker_fnc_updateCustomMarker;
+            } foreach hull3_marker_custom;
+        },
+        1
+    ] call CBA_fnc_addPerFrameHandler;
 };
 
 hull3_marker_fnc_updateGroupMarkers = {
-    FUN_ARGS_1(_groups);
+    params ["_groups"];
 
     {
-        private ["_group", "_markerName"];
-        _group = _x;
-        _markerName = _group getVariable "hull3_marker_group";
+        private _group = _x;
+        private _markerName = _group getVariable "hull3_marker_group";
         if ({alive _x} count units _group > 0) then {
             _markerName setMarkerPosLocal getPosASL leader _group;
         }
@@ -147,12 +146,11 @@ hull3_marker_fnc_updateGroupMarkers = {
 };
 
 hull3_marker_fnc_updateUnitMarkers = {
-    FUN_ARGS_1(_units);
+    params ["_units"];
 
     {
-        private ["_unit", "_markerName"];
-        _unit = _x;
-        _markerName = _unit getVariable "hull3_marker_unit";
+        private _unit = _x;
+        private _markerName = _unit getVariable "hull3_marker_unit";
         if (alive _unit) then {
             _markerName setMarkerPosLocal getPosASL _unit;
         }
@@ -160,12 +158,11 @@ hull3_marker_fnc_updateUnitMarkers = {
 };
 
 hull3_marker_fnc_updateFireTeamMarkers = {
-    FUN_ARGS_1(_fireTeam);
+    params ["_fireTeam"];
 
     {
-        private ["_unit", "_markerName"];
-        _unit = _x;
-        _markerName = _unit getVariable "hull3_marker_fireTeam";
+        private _unit = _x;
+        private _markerName = _unit getVariable "hull3_marker_fireTeam";
         if (alive _unit) then {
             _markerName setMarkerPosLocal getPosASL _unit;
             _markerName setMarkerDirLocal getDir _unit;
@@ -174,7 +171,7 @@ hull3_marker_fnc_updateFireTeamMarkers = {
 };
 
 hull3_marker_fnc_updateCustomMarker = {
-    FUN_ARGS_5(_markerName,_isActive,_lastUpdate,_object,_delay);
+    params ["_markerName", "_isActive", "_lastUpdate", "_object", "_delay"];
 
     if (_isActive && {alive _object} && {time - _lastUpdate >= _delay}) then {
         _markerName setMarkerPosLocal getPosASL _object;
@@ -183,7 +180,7 @@ hull3_marker_fnc_updateCustomMarker = {
 };
 
 hull3_marker_fnc_addFireTeamMarkers = {
-    FUN_ARGS_1(_unit);
+    params ["_unit"];
 
     if (hull3_marker_isFireTeamEnabled) then {
         {
@@ -194,7 +191,7 @@ hull3_marker_fnc_addFireTeamMarkers = {
 };
 
 hull3_marker_fnc_addFireTeamMarker = {
-    FUN_ARGS_1(_unit);
+    params ["_unit"];
 
     _markerName = format ["hull3_marker_fireTeam_%1", _unit];
     [
@@ -211,7 +208,7 @@ hull3_marker_fnc_addFireTeamMarker = {
 };
 
 hull3_marker_fnc_addCustomSideMarker = {
-    FUN_ARGS_2(_object,_side);
+    params ["_object", "_side"];
 
     if (side player == _side) then {
         DECLARE(_arguments) = [_object];
@@ -223,7 +220,7 @@ hull3_marker_fnc_addCustomSideMarker = {
 };
 
 hull3_marker_fnc_addCustomMarker = {
-    FUN_ARGS_1(_object);
+    params ["_object"];
 
     private ["_delay", "_shape", "_type", "_color", "_size", "_text", "_markerIndex", "_markerName"];
     if (count _this < 7) then {_text = ["Marker", "DefaultCustomMarker", "text"] call hull3_config_fnc_getText}      else {_text  = _this select 6};
@@ -241,7 +238,7 @@ hull3_marker_fnc_addCustomMarker = {
 };
 
 hull3_marker_fnc_deactivateCustomMarker = {
-    FUN_ARGS_1(_markerIndex);
+    params ["_markerIndex"];
 
     if (count hull3_marker_custom > _markerIndex) then {
         (hull3_marker_custom select _markerIndex) set [1, false];
@@ -249,7 +246,7 @@ hull3_marker_fnc_deactivateCustomMarker = {
 };
 
 hull3_marker_fnc_activateCustomMarker = {
-    FUN_ARGS_1(_markerIndex);
+    params ["_markerIndex"];
 
     if (count hull3_marker_custom > _markerIndex) then {
         (hull3_marker_custom select _markerIndex) set [1, true];
@@ -257,7 +254,7 @@ hull3_marker_fnc_activateCustomMarker = {
 };
 
 hull3_marker_fnc_deleteCustomMarker = {
-    FUN_ARGS_1(_markerIndex);
+    params ["_markerIndex"];
 
     if (count hull3_marker_custom > _markerIndex) then {
         DECLARE(_markerData) = hull3_marker_custom select _markerIndex;
@@ -267,7 +264,7 @@ hull3_marker_fnc_deleteCustomMarker = {
 };
 
 hull3_marker_fnc_createMarker = {
-    FUN_ARGS_7(_name,_position,_shape,_type,_color,_text,_size);
+    params ["_name", "_position", "_shape", "_type", "_color", "_text", "_size"];
 
     createMarkerLocal [_name, _position];
     _name setMarkerShapeLocal _shape;
