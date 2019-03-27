@@ -132,9 +132,7 @@ class FAL_TKA {
         primaryWeapon = "hlc_rifle_rpk_75rnd";
         primaryWeaponItems[] = {};
         vestMagazines[] = {{"hlc_75Rnd_762x39_m_rpk", 4}};
-        backpackMagazines[] = {
-            {"hlc_75Rnd_762x39_m_rpk", 3}
-        };
+        backpackMagazines[] = {{"hlc_75Rnd_762x39_m_rpk", 3}};
     };
 
     class AAR : Rifleman {
@@ -396,12 +394,12 @@ class FAL_TKA {
 
     class Vehicle {
         weapons[] = {
-            {"hlc_rifle_FAL5061", 4},
+            {"hlc_rifle_FAL5061", 2},
             {"CUP_launch_RPG18", 2}
         };
         magazines[] = {
-            {"hlc_20Rnd_762x51_B_fal", 15},
-            {"hlc_20Rnd_762x51_B_fal", 15},
+            {"hlc_20Rnd_762x51_B_fal", 20},
+            {"hlc_20Rnd_762x51_T_fal", 10},
             {"hlc_75Rnd_762x39_m_rpk", 20},
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"UGL_FlareWhite_F", 5},
@@ -426,12 +424,12 @@ class FAL_TKA {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"hlc_rifle_FAL5061", 4},
-            {"CUP_launch_RPG18", 5}
+            {"hlc_rifle_FAL5061", 2},
+            {"CUP_launch_RPG18", 4}
         };
         magazines[] = {
             {"hlc_20Rnd_762x51_B_fal", 40},
-            {"hlc_20Rnd_762x51_B_fal", 20},
+            {"hlc_20Rnd_762x51_T_fal", 20},
             {"hlc_75Rnd_762x39_m_rpk", 40},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
@@ -457,10 +455,10 @@ class FAL_TKA {
     };
 
     class Armored : Truck {
-        weapons[] = {{"CUP_launch_RPG18", 5}};
+        weapons[] = {{"CUP_launch_RPG18", 4}};
         magazines[] = {
             {"hlc_20Rnd_762x51_B_fal", 40},
-            {"hlc_20Rnd_762x51_B_fal", 20},
+            {"hlc_20Rnd_762x51_T_fal", 20},
             {"hlc_75Rnd_762x39_m_rpk", 40},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},

@@ -360,11 +360,11 @@ class G3KA4_NOR {
 
     class SN : Rifleman {
         primaryWeapon = "hlc_rifle_psg1";
-        handgunWeapon = "hgun_P07_F";
+        handgunWeapon = "CUP_hgun_Glock17_blk";
         primaryWeaponItems[] = {};
         vestMagazines[] = {
             {"hlc_20rnd_762x51_b_G3", 4},
-            {"16Rnd_9x21_Mag", 3}
+            {"CUP_17Rnd_9x19_glock17", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
@@ -401,12 +401,12 @@ class G3KA4_NOR {
 
     class Vehicle {
         weapons[] = {
-            {"hlc_rifle_g3ka4", 4},
-            {"CUP_launch_M72A6", 5}
+            {"hlc_rifle_g3ka4", 2},
+            {"CUP_launch_M72A6", 4}
         };
         magazines[] = {
-            {"hlc_20rnd_762x51_T_G3", 15},
-            {"hlc_20rnd_762x51_b_G3", 15},
+            {"hlc_20rnd_762x51_T_G3", 10},
+            {"hlc_20rnd_762x51_b_G3", 20},
             {"hlc_100Rnd_762x51_M_MG3", 10},
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"UGL_FlareWhite_F", 5},
@@ -430,12 +430,12 @@ class G3KA4_NOR {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"hlc_rifle_g3ka4", 4},
+            {"hlc_rifle_g3ka4", 2},
             {"CUP_launch_M72A6", 10}
         };
         magazines[] = {
-            {"hlc_20rnd_762x51_T_G3", 40},
-            {"hlc_20rnd_762x51_b_G3", 20},
+            {"hlc_20rnd_762x51_T_G3", 20},
+            {"hlc_20rnd_762x51_b_G3", 40},
             {"hlc_100Rnd_762x51_M_MG3", 20},
             {"hlc_100Rnd_762x51_M_MG3", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
@@ -462,8 +462,8 @@ class G3KA4_NOR {
     class Armored : Truck {
         weapons[] = {{"CUP_launch_M72A6", 10}};
         magazines[] = {
-            {"hlc_20rnd_762x51_T_G3", 40},
-            {"hlc_20rnd_762x51_b_G3", 20},
+            {"hlc_20rnd_762x51_T_G3", 20},
+            {"hlc_20rnd_762x51_b_G3", 40},
             {"hlc_100Rnd_762x51_M_MG3", 20},
             {"hlc_100Rnd_762x51_M_MG3", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},

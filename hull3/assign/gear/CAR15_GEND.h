@@ -360,11 +360,11 @@ class CAR15_GEND {
 
     class SN : Rifleman {
         primaryWeapon = "hlc_rifle_psg1A1";
-        handgunWeapon = "hgun_ACPC2_F";
+        handgunWeapon = "CUP_hgun_Glock17_blk";
         primaryWeaponItems[] = {"hlc_optic_accupoint_g3", "bipod_01_F_blk"};
         vestMagazines[] = {
             {"hlc_20rnd_762x51_b_G3", 4},
-            {"9Rnd_45ACP_Mag", 3}
+            {"CUP_17Rnd_9x19_glock17", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
@@ -397,12 +397,12 @@ class CAR15_GEND {
 
     class Vehicle {
         weapons[] = {
-            {"hlc_rifle_Colt727", 4},
-            {"CUP_launch_M72A6", 5}
+            {"hlc_rifle_Colt727", 2},
+            {"CUP_launch_M72A6", 4}
         };
         magazines[] = {
-            {"30Rnd_556x45_Stanag", 15},
-            {"30Rnd_556x45_Stanag", 15},
+            {"30Rnd_556x45_Stanag", 20},
+            {"30Rnd_556x45_Stanag_Tracer_Red", 10},
             {"hlc_50rnd_556x45_EPR", 10},
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"UGL_FlareWhite_F", 5},
@@ -426,12 +426,12 @@ class CAR15_GEND {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"hlc_rifle_Colt727", 4},
+            {"hlc_rifle_Colt727", 2},
             {"CUP_launch_M72A6", 10}
         };
         magazines[] = {
             {"30Rnd_556x45_Stanag", 40},
-            {"30Rnd_556x45_Stanag", 20},
+            {"30Rnd_556x45_Stanag_Tracer_Red", 20},
             {"hlc_50rnd_556x45_EPR", 20},
             {"hlc_100Rnd_762x51_M_M60E4", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
@@ -459,7 +459,7 @@ class CAR15_GEND {
         weapons[] = {{"CUP_launch_M72A6", 10}};
         magazines[] = {
             {"30Rnd_556x45_Stanag", 40},
-            {"30Rnd_556x45_Stanag", 20},
+            {"30Rnd_556x45_Stanag_Tracer_Red", 20},
             {"hlc_50rnd_556x45_EPR", 20},
             {"hlc_100Rnd_762x51_M_M60E4", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},

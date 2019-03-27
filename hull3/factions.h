@@ -389,58 +389,6 @@ class Faction {
         };
     };
 
-    class MNP_US_WD {
-        gear = "M16A2_US";
-        uniform = "USA_WD";
-        name = "US Army Woodland";
-        description = "Woodland uniforms with M16A2";
-        languages[] = {{"west", 100}};
-        side = "west";
-        camouflage[] = {"woodland"};
-        rolePrefix = "US Army";
-        vehicleClassnames[] = {
-            {"CO", "CUP_B_HMMWV_Unarmed_USMC"},
-            {"SL", "CUP_B_HMMWV_Unarmed_USMC"},
-            {"FT", "CUP_B_HMMWV_Unarmed_USMC"},
-            {"ATTCH", "CUP_B_HMMWV_Unarmed_USMC"},
-            {"ENG", "CUP_B_MTVR_Repair_USMC"},
-            {"APC", "CUP_B_M113_USA"},
-            {"IFV", "CUP_B_M2Bradley_USA_W"},
-            {"SPAAG", "CUP_B_M6LineBacker_USA_W"},
-            {"TNK", "CUP_B_M60A3_USMC"},
-            {"TH", "CUP_B_UH60M_US"},
-            {"AH", "CUP_B_AH64D_DL_USA"},
-            {"CAS", "CUP_B_A10_DYN_USA"},
-            {"Technical", "CUP_B_HMMWV_M2_USMC"}
-        };
-    };
-
-    class MNP_US_DE {
-        gear = "M16A2_US";
-        uniform = "USA_DE";
-        name = "US Army Desert";
-        description = "3 Colour Desert uniforms with M16A2";
-        languages[] = {{"west", 100}};
-        side = "west";
-        camouflage[] = {"desert"};
-        rolePrefix = "US Army";
-        vehicleClassnames[] = {
-            {"CO", "CUP_B_HMMWV_Unarmed_USA"},
-            {"SL", "CUP_B_HMMWV_Unarmed_USA"},
-            {"FT", "CUP_B_HMMWV_Unarmed_USA"},
-            {"ATTCH", "CUP_B_HMMWV_Transport_USA"},
-            {"ENG", "CUP_B_MTVR_Repair_USA"},
-            {"APC", "CUP_B_M113_USA"},
-            {"IFV", "CUP_B_M2Bradley_USA_D"},
-            {"SPAAG", "CUP_B_M6LineBacker_USA_D"},
-            {"TNK", "CUP_B_M1A1_DES_US_Army"},
-            {"TH", "CUP_B_UH60M_US"},
-            {"AH", "CUP_B_AH64D_DL_USA"},
-            {"CAS", "CUP_B_A10_DYN_USA"},
-            {"Technical", "CUP_B_HMMWV_M2_USA"}
-        };
-    };
-
     class MNP_US_RAN_SCO {
         gear = "SCAR_H_US";
         uniform = "USA_RAN_SCO";
@@ -1247,14 +1195,14 @@ class Faction {
         };
     };
 
-    class MNP_IRN_WD {
+    class MNP_IRN_ARMY {
         gear = "G3A3_IRN";
-        uniform = "IRN_WD";
-        name = "Iranian Army Woodland";
-        description = "Woodland Uniform and G3A3's";
+        uniform = "IRN_ARMY";
+        name = "Iranian Army";
+        description = "Iran Army armed with G3A3's";
         languages[] = {{"east", 100}};
         side = "east";
-        camouflage[] = {"woodland"};
+        camouflage[] = {"desert"};
         rolePrefix = "Iranian Army";
         vehicleClassnames[] = {
             {"CO", "CUP_O_UAZ_Unarmed_RU"},
@@ -1273,14 +1221,14 @@ class Faction {
         };
     };
 
-    class MNP_IRN_RG_WD {
+    class MNP_IRN_RG {
         gear = "AKM_IRN";
-        uniform = "IRN_RG_WD";
-        name = "Iranian Revolutionary Guard Woodland";
-        description = "Woodland Militia Uniform and AKM's";
+        uniform = "IRN_RG";
+        name = "Iranian Revolutionary Guard";
+        description = "Iran Revolutionary Guard with AKM's";
         languages[] = {{"east", 100}};
         side = "east";
-        camouflage[] = {"woodland"};
+        camouflage[] = {"desert"};
         rolePrefix = "Iranian Revolutionary Guard";
         vehicleClassnames[] = {
             {"CO", "CUP_O_UAZ_Unarmed_RU"},
@@ -1292,58 +1240,6 @@ class Faction {
             {"IFV", "CUP_I_BMP1_TK_GUE"},
             {"SPAAG", "CUP_O_ZSU23_SLA"},
             {"TNK", "CUP_O_T72_RU"},
-            {"TH", "CUP_O_Mi8_RU"},
-            {"AH", "CUP_O_Mi24_V_Dynamic_RU"},
-            {"CAS", "CUP_O_Su25_Dyn_RU"},
-            {"Technical", "CUP_O_UAZ_MG_SLA"}
-        };
-    };
-
-    class MNP_IRN_DE {
-        gear = "G3A3_IRN";
-        uniform = "IRN_DE";
-        name = "Iranian Army Desert";
-        description = "Desert Uniform and G3A3's";
-        languages[] = {{"east", 100}};
-        side = "east";
-        camouflage[] = {"desert"};
-        rolePrefix = "Iranian Army";
-        vehicleClassnames[] = {
-            {"CO", "CUP_O_UAZ_Unarmed_RU"},
-            {"SL", "CUP_O_UAZ_Unarmed_RU"},
-            {"FT", "CUP_O_UAZ_Unarmed_RU"},
-            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
-            {"ENG", "CUP_O_Ural_Repair_SLA"},
-            {"APC", "CUP_O_MTLB_pk_TK_MILITIA"},
-            {"IFV", "CUP_I_BMP1_TK_GUE"},
-            {"SPAAG", "CUP_O_ZSU23_SLA"},
-            {"TNK", "CUP_O_T72_RU"},
-            {"TH", "CUP_O_Mi8_RU"},
-            {"AH", "CUP_O_Mi24_V_Dynamic_RU"},
-            {"CAS", "CUP_O_Su25_Dyn_RU"},
-            {"Technical", "CUP_O_UAZ_MG_SLA"}
-        };
-    };
-
-    class MNP_IRN_RG_DE {
-        gear = "AKM_IRN";
-        uniform = "IRN_RG_DE";
-        name = "Iranian Revolutionary Guard Desert";
-        description = "Desert Militia Uniform and AKM's";
-        languages[] = {{"east", 100}};
-        side = "east";
-        camouflage[] = {"desert"};
-        rolePrefix = "Iranian Revolutionary Guard";
-        vehicleClassnames[] = {
-            {"CO", "CUP_O_UAZ_Unarmed_RU"},
-            {"SL", "CUP_O_UAZ_Unarmed_RU"},
-            {"FT", "CUP_O_UAZ_Unarmed_RU"},
-            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
-            {"ENG", "CUP_O_Ural_Repair_SLA"},
-            {"APC", "CUP_O_MTLB_pk_TK_MILITIA"},
-            {"IFV", "CUP_I_BMP1_TK_GUE"},
-            {"SPAAG", "CUP_O_Ural_ZU23_SLA"},
-            {"TNK", "CUP_I_T55_TK_GUE"},
             {"TH", "CUP_O_Mi8_RU"},
             {"AH", "CUP_O_Mi24_V_Dynamic_RU"},
             {"CAS", "CUP_O_Su25_Dyn_RU"},
@@ -1820,10 +1716,10 @@ class Faction {
     };
 
     class MNP_MIL_WD {
-        gear = "MIX_LVM";
+        gear = "AKMS_LVM";
         uniform = "LVM_WD";
         name = "Local Militia (Woodland)";
-        description = "Woodland Militia with Mixed Weapons";
+        description = "Woodland Militia with AKMS";
         languages[] = {{"resistance", 100}};
         side = "resistance";
         camouflage[] = {"woodland"};
@@ -1846,10 +1742,10 @@ class Faction {
     };
 
     class MNP_MIL_DE {
-        gear = "MIX_LVM";
+        gear = "AKMS_LVM";
         uniform = "LVM_DE";
         name = "Local Militia (Desert)";
-        description = "Desert Militia with Mixed Weapons";
+        description = "Desert Militia with AKMS";
         languages[] = {{"resistance", 100}};
         side = "resistance";
         camouflage[] = {"desert"};
@@ -1887,32 +1783,6 @@ class Faction {
             {"ATTCH", "CUP_C_LR_Transport_CTK"},
             {"ENG", "CUP_O_Ural_Repair_SLA"},
             {"APC", "CUP_I_MTLB_pk_NAPA"},
-            {"IFV", "CUP_O_BMP2_SLA"},
-            {"SPAAG", "CUP_O_Ural_ZU23_SLA"},
-            {"TNK", "CUP_I_T55_TK_GUE"},
-            {"TH", "CUP_C_Mi17_Civilian_RU"},
-            {"AH", "CUP_O_Mi8_SLA_2"},
-            {"CAS", "CUP_O_Su25_Dyn_SLA"},
-            {"Technical", "CUP_O_UAZ_MG_SLA"}
-        };
-    };
-
-    class MNP_NPA_DE {
-        gear = "AKM_NPA";
-        uniform = "NPA_DE";
-        name = "National People's Army (Desert)";
-        description = "Desert DPM Militia with AKM's";
-        languages[] = {{"resistance", 100}};
-        side = "resistance";
-        camouflage[] = {"desert"};
-        rolePrefix = "National Peoples Army";
-        vehicleClassnames[] = {
-            {"CO", "CUP_O_UAZ_Unarmed_RU"},
-            {"SL", "CUP_O_UAZ_Unarmed_RU"},
-            {"FT", "CUP_C_LR_Transport_CTK"},
-            {"ATTCH", "CUP_C_LR_Transport_CTK"},
-            {"ENG", "CUP_O_Ural_Repair_SLA"},
-            {"APC", "CUP_O_MTLB_pk_TK_MILITIA"},
             {"IFV", "CUP_O_BMP2_SLA"},
             {"SPAAG", "CUP_O_Ural_ZU23_SLA"},
             {"TNK", "CUP_I_T55_TK_GUE"},
@@ -3324,6 +3194,84 @@ class Faction {
             {"AH", "CUP_B_Mi35_Dynamic_CZ_Dark"},
             {"CAS", "CUP_B_L39_CZ_GREY"},
             {"Technical", "CUP_B_UAZ_MG_ACR"}
+        };
+    };
+
+    class MNP_IDF_90 {
+        gear = "M16A2_IDF";
+        uniform = "IDF_90";
+        name = "1990s Israeli Defence Forces";
+        description = "IDF with M16A2 and M4";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland", "desert"};
+        rolePrefix = "IDF";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_HMMWV_Transport_NATO_T"},
+            {"SL", "B_Truck_01_covered_F"},
+            {"FT", "CUP_B_HMMWV_Transport_NATO_T"},
+            {"ATTCH", "CUP_B_HMMWV_Transport_NATO_T"},
+            {"ENG", "B_Truck_01_ammo_F"},
+            {"APC", "CUP_B_M113_desert_USA"},
+            {"IFV", "B_MBT_01_cannon_F"},
+            {"SPAAG", "CUP_B_M163_USA"},
+            {"TNK", "B_MBT_01_cannon_F"},
+            {"TH", "CUP_B_UH1D_GER_KSK_Des"},
+            {"AH", "CUP_B_AH64_DL_USA"},
+            {"CAS", "B_Plane_Fighter_01_F"},
+            {"Technical", "CUP_B_HMMWV_M2_NATO_T"}
+        };
+    };
+
+    class MNP_IDF_10 {
+        gear = "TAVOR_IDF";
+        uniform = "IDF_10";
+        name = "2010s Israeli Defence Forces";
+        description = "IDF with Tavors";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland", "desert"};
+        rolePrefix = "IDF";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_HMMWV_Transport_NATO_T"},
+            {"SL", "B_Truck_01_covered_F"},
+            {"FT", "CUP_B_HMMWV_Transport_NATO_T"},
+            {"ATTCH", "CUP_B_HMMWV_Transport_NATO_T"},
+            {"ENG", "B_Truck_01_ammo_F"},
+            {"APC", "CUP_B_BMP2_CZ"},
+            {"IFV", "CUP_B_BMP2_CZ"},
+            {"SPAAG", "CUP_B_M163_USA"},
+            {"TNK", "B_MBT_01_TUSK_F"},
+            {"TH", "CUP_B_Mi171Sh_Unarmed_ACR"},
+            {"AH", "CUP_B_AH64D_DL_USA"},
+            {"CAS", "CUP_B_F35B_CAS_USMC"},
+            {"Technical", "CUP_B_HMMWV_M2_GPK_NATO_T"}
+        };
+    };
+
+    class MNP_ROK_SEAL {
+        gear = "HK416_ROK";
+        uniform = "ROK_SEAL";
+        name = "Republic of Korea Navy Seals";
+        description = "Digital Tiger uniforms with HK416's";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland"};
+        rolePrefix = "ROKN Seals";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"SL", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"FT", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"ATTCH", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"ENG", "B_Truck_01_Repair_F"},
+            {"APC", "CUP_B_M113_USA"},
+            {"IFV", "CUP_B_M113_USA"},
+            {"SPAAG", "CUP_B_M163_USA"},
+            {"TNK", "CUP_B_M1A1_Woodland_US_Army"},
+            {"TH", "CUP_B_UH60M_US"},
+            {"AH", "CUP_B_AH1Z_Dynamic_USMC"},
+            {"CAS", "CUP_B_AV8B_DYN_USMC"},
+            {"Technical", "CUP_B_HMMWV_M2_USA"}
         };
     };
 

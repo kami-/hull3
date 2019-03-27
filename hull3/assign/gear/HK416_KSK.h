@@ -398,7 +398,7 @@ class HK416_KSK {
     class Vehicle {
         weapons[] = {
             {"CUP_arifle_HK416_Black", 2},
-            {"CUP_launch_M72A6", 5}
+            {"CUP_launch_M72A6", 4}
         };
         magazines[] = {
             {"CUP_30Rnd_556x45_Emag", 15},

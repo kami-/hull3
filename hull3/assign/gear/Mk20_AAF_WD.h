@@ -422,12 +422,11 @@ class Mk20_AAF_WD {
     class Vehicle {
         weapons[] = {
             {"arifle_Mk20_F", 2},
-            {"CUP_launch_M136", 5},
-            {"arifle_Mk20C_F", 2}
+            {"CUP_launch_M136", 2}
         };
         magazines[] = {
-            {"30Rnd_556x45_Stanag", 15},
-            {"30Rnd_556x45_Stanag", 15},
+            {"30Rnd_556x45_Stanag", 20},
+            {"30Rnd_556x45_Stanag_Tracer_Yellow", 10},
             {"200Rnd_65x39_cased_Box", 10},
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"UGL_FlareWhite_F", 5},
@@ -452,12 +451,11 @@ class Mk20_AAF_WD {
     class Truck : Vehicle {
         weapons[] = {
             {"arifle_Mk20_F", 2},
-            {"CUP_launch_M136", 10},
-            {"arifle_Mk20C_F", 2}
+            {"CUP_launch_M136", 10}
         };
         magazines[] = {
             {"30Rnd_556x45_Stanag", 40},
-            {"30Rnd_556x45_Stanag", 20},
+            {"30Rnd_556x45_Stanag_Tracer_Yellow", 20},
             {"200Rnd_65x39_cased_Box", 20},
             {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
@@ -485,7 +483,7 @@ class Mk20_AAF_WD {
         weapons[] = {{"CUP_launch_M136", 10}};
         magazines[] = {
             {"30Rnd_556x45_Stanag", 40},
-            {"30Rnd_556x45_Stanag", 20},
+            {"30Rnd_556x45_Stanag_Tracer_Yellow", 20},
             {"200Rnd_65x39_cased_Box", 20},
             {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},

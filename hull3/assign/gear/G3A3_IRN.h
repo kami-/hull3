@@ -361,11 +361,11 @@ class G3A3_IRN {
 
     class SN : Rifleman {
         primaryWeapon = "hlc_rifle_g3sg1";
-        handgunWeapon = "hgun_P07_F";
+        handgunWeapon = "hlc_pistol_P226US";
         primaryWeaponItems[] = {"hlc_optic_accupoint_g3"};
         vestMagazines[] = {
             {"hlc_20rnd_762x51_b_G3", 4},
-            {"16Rnd_9x21_Mag", 3}
+            {"hlc_15Rnd_9x19_B_P226", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
@@ -402,12 +402,12 @@ class G3A3_IRN {
 
     class Vehicle {
         weapons[] = {
-            {"hlc_rifle_g3a3", 4},
+            {"hlc_rifle_g3a3", 2},
             {"CUP_launch_RPG18", 2}
         };
         magazines[] = {
-            {"hlc_20rnd_762x51_T_G3", 15},
-            {"hlc_20rnd_762x51_b_G3", 15},
+            {"hlc_20rnd_762x51_T_G3", 10},
+            {"hlc_20rnd_762x51_b_G3", 20},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"UGL_FlareWhite_F", 5},
@@ -432,12 +432,12 @@ class G3A3_IRN {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"hlc_rifle_g3a3", 4},
+            {"hlc_rifle_g3a3", 2},
             {"CUP_launch_RPG18", 4}
         };
         magazines[] = {
-            {"hlc_20rnd_762x51_T_G3", 40},
-            {"hlc_20rnd_762x51_b_G3", 20},
+            {"hlc_20rnd_762x51_T_G3", 20},
+            {"hlc_20rnd_762x51_b_G3", 40},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 20},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
@@ -465,8 +465,8 @@ class G3A3_IRN {
     class Armored : Truck {
         weapons[] = {{"CUP_launch_RPG18", 4}};
         magazines[] = {
-            {"hlc_20rnd_762x51_T_G3", 40},
-            {"hlc_20rnd_762x51_b_G3", 20},
+            {"hlc_20rnd_762x51_T_G3", 20},
+            {"hlc_20rnd_762x51_b_G3", 40},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 20},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},

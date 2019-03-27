@@ -434,12 +434,11 @@ class MX_NATO {
     class Vehicle {
         weapons[] = {
             {"arifle_MX_F", 2},
-            {"CUP_launch_M136", 5},
-            {"arifle_MXC_F", 2}
+            {"CUP_launch_M136", 4}
         };
         magazines[] = {
-            {"30Rnd_65x39_caseless_mag", 15},
-            {"30Rnd_65x39_caseless_mag", 15},
+            {"30Rnd_65x39_caseless_mag", 20},
+            {"30Rnd_65x39_caseless_mag_Tracer", 10},
             {"100Rnd_65x39_caseless_mag", 10},
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"UGL_FlareWhite_F", 5},
@@ -464,12 +463,11 @@ class MX_NATO {
     class Truck : Vehicle {
         weapons[] = {
             {"arifle_MX_F", 2},
-            {"CUP_launch_M136", 10},
-            {"arifle_MXC_F", 2}
+            {"CUP_launch_M136", 10}
         };
         magazines[] = {
             {"30Rnd_65x39_caseless_mag", 40},
-            {"30Rnd_65x39_caseless_mag", 20},
+            {"30Rnd_65x39_caseless_mag_Tracer", 20},
             {"100Rnd_65x39_caseless_mag", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
@@ -497,7 +495,7 @@ class MX_NATO {
         weapons[] = {{"CUP_launch_M136", 10}};
         magazines[] = {
             {"30Rnd_65x39_caseless_mag", 40},
-            {"30Rnd_65x39_caseless_mag", 20},
+            {"30Rnd_65x39_caseless_mag_Tracer", 20},
             {"100Rnd_65x39_caseless_mag", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},

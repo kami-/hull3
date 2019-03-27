@@ -396,12 +396,12 @@ class SIG550_CDF {
 
     class Vehicle {
         weapons[] = {
-            {"hlc_rifle_SG550", 4},
-            {"CUP_launch_M72A6", 5}
+            {"hlc_rifle_SG550", 2},
+            {"CUP_launch_M72A6", 4}
         };
         magazines[] = {
-            {"hlc_30Rnd_556x45_EPR_sg550", 15},
-            {"hlc_30Rnd_556x45_EPR_sg550", 15},
+            {"hlc_30Rnd_556x45_EPR_sg550", 20},
+            {"hlc_30Rnd_556x45_T_sg550", 10},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 10},
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"UGL_FlareWhite_F", 5},
@@ -425,12 +425,12 @@ class SIG550_CDF {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"hlc_rifle_SG550", 4},
+            {"hlc_rifle_SG550", 2},
             {"CUP_launch_M72A6", 10}
         };
         magazines[] = {
             {"hlc_30Rnd_556x45_EPR_sg550", 40},
-            {"hlc_30Rnd_556x45_EPR_sg550", 20},
+            {"hlc_30Rnd_556x45_T_sg550", 20},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
             {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
@@ -458,7 +458,7 @@ class SIG550_CDF {
         weapons[] = {{"CUP_launch_M72A6", 10}};
         magazines[] = {
             {"hlc_30Rnd_556x45_EPR_sg550", 40},
-            {"hlc_30Rnd_556x45_EPR_sg550", 20},
+            {"hlc_30Rnd_556x45_T_sg550", 20},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
             {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},

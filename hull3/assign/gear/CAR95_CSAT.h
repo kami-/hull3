@@ -431,11 +431,11 @@ class CAR95_CSAT {
     class Vehicle {
         weapons[] = {
             {"arifle_CTAR_blk_F", 2},
-            {"CUP_launch_RPG18", 5},
-            {"arifle_CTAR_blk_F", 2}
+            {"CUP_launch_RPG18", 2}
         };
         magazines[] = {
-            {"30Rnd_580x42_Mag_F", 30},
+            {"30Rnd_580x42_Mag_F", 20},
+            {"30Rnd_65x39_caseless_green_mag_Tracer", 10},
             {"100Rnd_580x42_Mag_F", 10},
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"UGL_FlareWhite_F", 5},
@@ -460,11 +460,11 @@ class CAR95_CSAT {
     class Truck : Vehicle {
         weapons[] = {
             {"arifle_CTAR_blk_F", 2},
-            {"CUP_launch_RPG18", 10},
-            {"arifle_CTAR_blk_F", 2}
+            {"CUP_launch_RPG18", 4}
         };
         magazines[] = {
-            {"30Rnd_580x42_Mag_F", 60},
+            {"30Rnd_580x42_Mag_F", 40},
+            {"30Rnd_65x39_caseless_green_mag_Tracer", 20},
             {"100Rnd_580x42_Mag_F", 20},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
@@ -489,9 +489,10 @@ class CAR95_CSAT {
     };
 
     class Armored : Truck {
-        weapons[] = {{"CUP_launch_RPG18", 10}};
+        weapons[] = {{"CUP_launch_RPG18", 4}};
         magazines[] = {
-            {"30Rnd_580x42_Mag_F", 60},
+            {"30Rnd_580x42_Mag_F", 40},
+            {"30Rnd_65x39_caseless_green_mag_Tracer", 20},
             {"100Rnd_580x42_Mag_F", 20},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
