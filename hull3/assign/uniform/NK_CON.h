@@ -1,6 +1,6 @@
 class NK_CON {
     class Rifleman {
-        headGear = "MNP_Helmet_SOV_Steel";
+        headGear = "CUP_H_SLA_Helmet";
         goggles = "";
         uniform = "MNP_CombatUniform_NKR_Rg";
         vest = "CUP_V_O_SLA_Flak_Vest03_ARM";
