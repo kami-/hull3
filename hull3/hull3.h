@@ -239,8 +239,9 @@ class Hull3 {
         };
 
         class FireTeamMemberMarker {
+            alpha = 0.5;
             color = "ColorYellow";
-            size[] = {0.6, 0.6};
+            size[] = {0.5, 0.5};
         };
 
         class DefaultCustomMarker {
