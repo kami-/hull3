@@ -96,5 +96,16 @@ class Cfg3DEN {
     };
 };
 
+class CfgMarkers {
+    class Flag;
+    class Hull3_UnitMarker : Flag {
+        name = "Unit Icon";
+        icon = "\A3\ui_f\data\map\vehicleicons\iconMan_ca.paa";
+        color[] = {1, 0, 0, 1};
+        shadow = true;
+        scope = 1;
+    };
+};
+
 // Hull3
 #include "hull3.h"

@@ -198,7 +198,7 @@ hull3_marker_fnc_addFireTeamMarker = {
         _markerName,
         getPosATL _unit,
         "ICON",
-        "mil_triangle",
+        "Hull3_UnitMarker",
         ["Marker", "FireTeamMemberMarker", "color"] call hull3_config_fnc_getText,
         "",
         ["Marker", "FireTeamMemberMarker", "size"] call hull3_config_fnc_getArray
