@@ -201,7 +201,8 @@ hull3_marker_fnc_addFireTeamMarker = {
         "Hull3_UnitMarker",
         ["Marker", "FireTeamMemberMarker", "color"] call hull3_config_fnc_getText,
         "",
-        ["Marker", "FireTeamMemberMarker", "size"] call hull3_config_fnc_getArray
+        ["Marker", "FireTeamMemberMarker", "size"] call hull3_config_fnc_getArray,
+        ["Marker", "FireTeamMemberMarker", "alpha"] call hull3_config_fnc_getNumber
     ] call hull3_marker_fnc_createMarker;
     _unit setVariable ["hull3_marker_fireTeam", _markerName];
     PUSH(hull3_marker_fireTeam,_unit);
@@ -264,7 +265,7 @@ hull3_marker_fnc_deleteCustomMarker = {
 };
 
 hull3_marker_fnc_createMarker = {
-    params ["_name", "_position", "_shape", "_type", "_color", "_text", "_size"];
+    params ["_name", "_position", "_shape", "_type", "_color", "_text", "_size", "_alpha"];
 
     createMarkerLocal [_name, _position];
     _name setMarkerShapeLocal _shape;
@@ -273,6 +274,11 @@ hull3_marker_fnc_createMarker = {
     _name setMarkerTextLocal _text;
     if (!isNil "_size") then {
         _name setMarkerSizeLocal _size;
+    };
+    if (!isNil "_alpha") then {
+        _name setMarkerAlphaLocal _alpha;
+    } else {
+        _name setMarkerAlphaLocal 1;
     };
 
     _name;
