@@ -126,7 +126,7 @@ hull3_marker_fnc_updateCustomMarkers = {
     [
         {
             {
-                [_x] call hull3_marker_fnc_updateCustomMarker;
+                _x call hull3_marker_fnc_updateCustomMarker;
             } foreach hull3_marker_custom;
         },
         1
