@@ -3,25 +3,25 @@ class BAF_CBRN {
         headGear = "CUP_H_BAF_Helmet_4_MTP";
         goggles = "skn_m50_gas_mask_hood";
         uniform = "skn_u_nbc_bluf_mtp";
-        vest = "CUP_V_BAF_Osprey_Mk4_MTP_Rifleman_ARM";
+        vest = "skn_b_nbc_xrt_tac_brn_ARM";
         backpack = "CUP_B_Bergen_BAF";
     };
 
     class Leader : Rifleman {
         headGear = "CUP_H_BAF_Helmet_4_MTP";
         uniform = "skn_u_nbc_bluf_mtp";
-        vest = "CUP_V_BAF_Osprey_Mk4_MTP_SquadLeader_ARM";
+        vest = "skn_b_nbc_xrt_tac_brn_ARM";
     };
 
     class Officer : Leader {
         headGear = "CUP_H_BAF_Helmet_Net_2_MTP";
-        vest = "CUP_V_BAF_Osprey_Mk4_MTP_SquadLeader_ARM";
+        vest = "skn_b_nbc_xrt_tac_brn_ARM";
     };
 
     class Crew : Rifleman {
         headGear = "CUP_H_BAF_Crew_Helmet_MTP";
         uniform = "skn_u_nbc_bluf_mtp";
-        vest = "CUP_V_BAF_Osprey_Mk4_MTP_Rifleman_ARM";
+        vest = "skn_b_nbc_xrt_tac_brn_ARM";
         backpack = "B_AssaultPack_cbr";
         goggles = "skn_m50_gas_mask";
     };
@@ -38,18 +38,18 @@ class BAF_CBRN {
     class Medic : Rifleman {
         headGear = "CUP_H_BAF_Helmet_3_MTP";
         uniform = "skn_u_nbc_bluf_mtp";
-        vest = "CUP_V_BAF_Osprey_Mk4_MTP_Rifleman_ARM";
+        vest = "skn_b_nbc_xrt_tac_brn_ARM";
         backpack = "CUP_B_Bergen_BAF";
     };
 
     class FTL : Leader {
-        vest = "CUP_V_BAF_Osprey_Mk4_MTP_Grenadier_ARM";
+        vest = "skn_b_nbc_xrt_tac_brn_ARM";
     };
 
     class AR : Rifleman {
         headGear = "CUP_H_BAF_Helmet_Net_2_MTP";
         uniform = "skn_u_nbc_bluf_mtp";
-        vest = "CUP_V_BAF_Osprey_Mk4_MTP_MachineGunner_ARM";
+        vest = "skn_b_nbc_xrt_tac_brn_ARM";
     };
 
     class AAR : Rifleman {
@@ -133,7 +133,7 @@ class BAF_CBRN {
 
     class ENG : Rifleman {
         uniform = "skn_u_nbc_bluf_mtp";
-        vest = "CUP_V_BAF_Osprey_Mk4_MTP_Rifleman_ARM";
+        vest = "skn_b_nbc_xrt_tac_brn_ARM";
         backpack = "CUP_B_Bergen_BAF";
         headGear = "CUP_H_BAF_Helmet_4_MTP";
     };
@@ -145,7 +145,7 @@ class BAF_CBRN {
         headGear = "CUP_H_BAF_Helmet_4_MTP";
         goggles = "skn_m50_gas_mask_hood";
         uniform = "skn_u_nbc_bluf_mtp";
-        vest = "CUP_V_BAF_Osprey_Mk4_MTP_SquadLeader_ARM";
+        vest = "skn_b_nbc_xrt_tac_brn_ARM";
         backpack = "B_AssaultPack_cbr";
     };
 
@@ -164,7 +164,7 @@ class BAF_CBRN {
     class P : Crew {
         headGear = "CUP_H_BAF_Helmet_Pilot";
         uniform = "skn_u_nbc_bluf_mtp";
-        vest = "CUP_V_BAF_Osprey_Mk4_MTP_Rifleman_ARM";
+        vest = "skn_b_nbc_xrt_tac_brn_ARM";
         backpack = "B_LegStrapBag_olive_F";
     };
 
