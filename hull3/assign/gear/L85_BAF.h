@@ -426,7 +426,7 @@ class L85_BAF {
         };
         magazines[] = {
             {"CUP_30Rnd_556x45_Stanag_L85", 40},
-            {"CUP_30Rnd_556x45_Stanag_L85_Tracer_Red", 210},
+            {"CUP_30Rnd_556x45_Stanag_L85_Tracer_Red", 20},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
