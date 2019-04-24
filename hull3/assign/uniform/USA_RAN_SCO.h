@@ -2,13 +2,13 @@ class USA_RAN_SCO {
     class Rifleman {
         headGear = "H_HelmetB_light";
         goggles = "G_Bandanna_tan";
-        uniform = "MNP_CombatUniform_Ranger_Sco_A";
+        uniform = "MNP_CombatUniform_Ranger_A";
         vest = "MNP_Vest_Scorpion_1_ARM";
         backpack = "B_Kitbag_rgr";
     };
 
     class Leader : Rifleman {
-        uniform = "MNP_CombatUniform_Ranger_Sco_B";
+        uniform = "MNP_CombatUniform_Ranger_B";
         headGear = "H_HelmetB_light_black";
         vest = "MNP_Vest_Scorpion_2_ARM";
         goggles = "CUP_TK_NeckScarf";
@@ -21,7 +21,7 @@ class USA_RAN_SCO {
 
     class Crew : Rifleman {
         headGear = "H_HelmetCrew_B";
-        uniform = "MNP_CombatUniform_Ranger_Sco_B";
+        uniform = "MNP_CombatUniform_Ranger_B";
         vest = "V_BandollierB_rgr_ARM";
         backpack = "B_AssaultPack_rgr";
     };
@@ -37,7 +37,7 @@ class USA_RAN_SCO {
 
     class Medic : Rifleman {
         backpack = "B_Carryall_oli";
-        uniform = "MNP_CombatUniform_Ranger_Sco_B";
+        uniform = "MNP_CombatUniform_Ranger_B";
         goggles = "";
     };
 
@@ -45,7 +45,7 @@ class USA_RAN_SCO {
     };
 
     class AR : Rifleman {
-        uniform = "MNP_CombatUniform_Ranger_Sco_B";
+        uniform = "MNP_CombatUniform_Ranger_B";
     };
 
     class AAR : Rifleman {
@@ -128,7 +128,7 @@ class USA_RAN_SCO {
     };
 
     class ENG : Rifleman {
-        uniform = "MNP_CombatUniform_Ranger_Sco_B";
+        uniform = "MNP_CombatUniform_Ranger_B";
         backpack = "B_Carryall_oli";
     };
 
@@ -138,7 +138,7 @@ class USA_RAN_SCO {
     class SN : Rifleman {
         headGear = "H_Cap_headphones";
         goggles = "G_Bandanna_blk";
-        uniform = "MNP_CombatUniform_Ranger_Sco_B";
+        uniform = "MNP_CombatUniform_Ranger_B";
         vest = "V_BandollierB_rgr_ARM";
         backpack = "B_AssaultPack_rgr";
     };
