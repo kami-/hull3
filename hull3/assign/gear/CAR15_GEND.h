@@ -16,13 +16,13 @@ class CAR15_GEND {
         };
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 6},
-            {"CUP_CUP_30Rnd_556x45_Stanag_Tracer_Red", 2}
+            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
             {"CUP_30Rnd_556x45_Stanag", 4},
-            {"CUP_CUP_30Rnd_556x45_Stanag_Tracer_Red", 2}
+            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2}
         };
         basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch"};
         assignItems[] = {};
@@ -56,14 +56,14 @@ class CAR15_GEND {
             {"CUP_1Rnd_HE_M203", 4},
             {"CUP_1Rnd_Smoke_M203", 2},
             {"CUP_1Rnd_SmokeRed_M203", 2},
-            {"CUP_CUP_30Rnd_556x45_Stanag_Tracer_Red", 2},
+            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2},
             {"CUP_17Rnd_9x19_glock17", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
             {"CUP_30Rnd_556x45_Stanag", 4},
-            {"CUP_CUP_30Rnd_556x45_Stanag_Tracer_Red", 2},
+            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2},
             {"CUP_1Rnd_Smoke_M203", 2},
             {"CUP_1Rnd_SmokeRed_M203", 2},
             {"CUP_FlareWhite_M203", 2}
@@ -112,7 +112,7 @@ class CAR15_GEND {
     class Medic : Rifleman {
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 6},
-            {"CUP_CUP_30Rnd_556x45_Stanag_Tracer_Red", 2},
+            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2},
             {"SmokeShell", 4}
         };
         backpackMagazines[] = {
@@ -151,13 +151,13 @@ class CAR15_GEND {
         secondaryWeapon = "CUP_launch_M72A6";
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 6},
-            {"CUP_CUP_30Rnd_556x45_Stanag_Tracer_Red", 2}
+            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
             {"CUP_30Rnd_556x45_Stanag", 4},
-            {"CUP_CUP_30Rnd_556x45_Stanag_Tracer_Red", 2}
+            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2}
         };
     };
 
@@ -333,7 +333,7 @@ class CAR15_GEND {
     class ENG : Rifleman {
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 6},
-            {"CUP_CUP_30Rnd_556x45_Stanag_Tracer_Red", 2}
+            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2}
         };
         backpackMagazines[] = {
             {"Toolkit", 1},
@@ -396,7 +396,7 @@ class CAR15_GEND {
         };
         magazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 20},
-            {"CUP_CUP_30Rnd_556x45_Stanag_Tracer_Red", 10},
+            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 10},
             {"CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag_ar15", 10},
             {"CUP_1Rnd_Smoke_M203", 5},
             {"CUP_FlareWhite_M203", 5},
@@ -425,7 +425,7 @@ class CAR15_GEND {
         };
         magazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 40},
-            {"CUP_CUP_30Rnd_556x45_Stanag_Tracer_Red", 20},
+            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 20},
             {"CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag_ar15", 20},
             {"hlc_100Rnd_762x51_M_M60E4", 10},
             {"CUP_1Rnd_Smoke_M203", 10},
@@ -453,7 +453,7 @@ class CAR15_GEND {
         weapons[] = {{"CUP_launch_M72A6", 10}};
         magazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 40},
-            {"CUP_CUP_30Rnd_556x45_Stanag_Tracer_Red", 20},
+            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 20},
             {"CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag_ar15", 20},
             {"hlc_100Rnd_762x51_M_M60E4", 10},
             {"CUP_1Rnd_Smoke_M203", 10},

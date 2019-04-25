@@ -16,13 +16,13 @@ class M4_US {
         };
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 6},
-            {"CUP_CUP_30Rnd_556x45_Stanag_Tracer_Red", 2}
+            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
             {"CUP_30Rnd_556x45_Stanag", 4},
-            {"CUP_CUP_30Rnd_556x45_Stanag_Tracer_Red", 2}
+            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2}
         };
         basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch"};
         assignItems[] = {};
@@ -56,14 +56,14 @@ class M4_US {
             {"1Rnd_HE_Grenade_shell", 4},
             {"1Rnd_Smoke_Grenade_shell", 2},
             {"1Rnd_SmokeRed_Grenade_shell", 2},
-            {"CUP_CUP_30Rnd_556x45_Stanag_Tracer_Red", 2},
+            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2},
             {"CUP_15Rnd_9x19_M9", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
             {"CUP_30Rnd_556x45_Stanag", 4},
-            {"CUP_CUP_30Rnd_556x45_Stanag_Tracer_Red", 2},
+            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2},
             {"1Rnd_Smoke_Grenade_shell", 2},
             {"1Rnd_SmokeRed_Grenade_shell", 2},
             {"UGL_FlareWhite_F", 2}
@@ -106,7 +106,7 @@ class M4_US {
     class Medic : Rifleman {
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 6},
-            {"CUP_CUP_30Rnd_556x45_Stanag_Tracer_Red", 2},
+            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2},
             {"SmokeShell", 4}
         };
         backpackMagazines[] = {
@@ -151,13 +151,13 @@ class M4_US {
         secondaryWeapon = "CUP_launch_M72A6";
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 6},
-            {"CUP_CUP_30Rnd_556x45_Stanag_Tracer_Red", 2}
+            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
             {"CUP_30Rnd_556x45_Stanag", 4},
-            {"CUP_CUP_30Rnd_556x45_Stanag_Tracer_Red", 2}
+            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2}
         };
     };
 
@@ -332,7 +332,7 @@ class M4_US {
     class ENG : Rifleman {
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 6},
-            {"CUP_CUP_30Rnd_556x45_Stanag_Tracer_Red", 2}
+            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2}
         };
         backpackMagazines[] = {
             {"Toolkit", 1},
@@ -395,7 +395,7 @@ class M4_US {
         };
         magazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 20},
-            {"CUP_CUP_30Rnd_556x45_Stanag_Tracer_Red", 10},
+            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 10},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 10},
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"UGL_FlareWhite_F", 5},
@@ -424,7 +424,7 @@ class M4_US {
         };
         magazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 40},
-            {"CUP_CUP_30Rnd_556x45_Stanag_Tracer_Red", 20},
+            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 20},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
@@ -452,7 +452,7 @@ class M4_US {
         weapons[] = {{"CUP_launch_M72A6", 10}};
         magazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 40},
-            {"CUP_CUP_30Rnd_556x45_Stanag_Tracer_Red", 20},
+            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 20},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
