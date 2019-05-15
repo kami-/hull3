@@ -305,7 +305,7 @@ class FOW_IJA_G {
             {"ACRE_PRC343", 1},
             {"ACRE_PRC152", 1}
         };
-        medicalItems[] = {{"ACE_fieldDressing", 6}};
+        medicalItems[] = {{"ACE_fieldDressing", 100}};
     };
 
     class Car : Vehicle {

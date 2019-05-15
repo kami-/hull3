@@ -1,6 +1,6 @@
 class IF44_USSR_G {
     class Rifleman {
-        primaryWeapon = "LIB_M44";
+        primaryWeapon = "LIB_M9130";
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -131,6 +131,12 @@ class IF44_USSR_G {
     };
 
     class AAR : Rifleman {
+        primaryWeapon = "LIB_M9130";
+        primaryWeaponItems[] = {"LIB_ACC_GL_DYAKONOV_Empty"};
+        vestMagazines[] = {
+            {"LIB_5Rnd_762x54", 8},
+            {"LIB_1Rnd_G_DYAKONOV", 2}
+        };
         backpackMagazines[] = {
             {"LIB_rg42", 2},
             {"SmokeShell", 1},
@@ -219,12 +225,27 @@ class IF44_USSR_G {
     };
 
     class MTRG : Rifleman {
+        secondaryWeapon = "LIB_BM37_Barrel";
+        backpackMagazines[] = {
+            {"LIB_1Rnd_82mm_Mo_HE", 2},
+            {"LIB_1Rnd_82mm_Mo_Smoke", 1},
+            {"LIB_1Rnd_82mm_Mo_Illum", 1}
+        };
     };
 
     class MTRAG : Rifleman {
+        secondaryWeapon = "LIB_BM37_Tripod";
+        backpackMagazines[] = {
+            {"LIB_1Rnd_82mm_Mo_HE", 2},
+            {"LIB_1Rnd_82mm_Mo_Smoke", 1},
+            {"LIB_1Rnd_82mm_Mo_Illum", 1}
+        };
+        uniformRadios[] = {"ACRE_PRC343"};
     };
 
-    class MTRAC : MTRG {
+    class MTRAC : MTRAG {
+        secondaryWeapon = "";
+        uniformRadios[] = {};
     };
 
     class ENG : Rifleman {
@@ -243,7 +264,7 @@ class IF44_USSR_G {
     };
 
     class ENGA : ENG {
-        primaryWeapon = "LIB_M44";
+        primaryWeapon = "LIB_M9130";
         vestMagazines[] = {{"LIB_5Rnd_762x54", 8}};
         uniformRadios[] = {};
     };
@@ -286,7 +307,7 @@ class IF44_USSR_G {
 
     class Vehicle {
         weapons[] = {
-            {"LIB_M44", 1},
+            {"LIB_M9130", 1},
             {"LIB_PPSh41_m", 1}
         };
         magazines[] = {
@@ -299,7 +320,11 @@ class IF44_USSR_G {
             {"ACE_HandFlare_White", 10},
             {"LIB_rg42", 10},
             {"SmokeShell", 10},
-            {"LIB_rpg6", 25}
+            {"LIB_rpg6", 25},
+            {"LIB_1Rnd_G_DYAKONOV", 25},
+            {"LIB_1Rnd_82mm_Mo_HE", 15},
+            {"LIB_1Rnd_82mm_Mo_Smoke", 15},
+            {"LIB_1Rnd_82mm_Mo_Illum", 15}
         };
         items[] = {
             {"ACE_M26_Clacker", 1},
@@ -309,7 +334,7 @@ class IF44_USSR_G {
             {"ACRE_PRC343", 1},
             {"ACRE_PRC152", 1}
         };
-        medicalItems[] = {{"ACE_fieldDressing", 6}};
+        medicalItems[] = {{"ACE_fieldDressing", 100}};
     };
 
     class Car : Vehicle {
