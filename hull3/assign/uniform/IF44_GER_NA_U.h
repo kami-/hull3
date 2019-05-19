@@ -1,4 +1,4 @@
-class IF44_GER_NA_G {
+class IF44_GER_NA_U {
     class Rifleman {
         headGear = "H_LIB_DAK_Helmet_2";
         goggles = "";
