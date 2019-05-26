@@ -3,12 +3,12 @@ class IF44_BAF_PARA_SN_U {
         headGear = "H_LIB_UK_Para_Helmet_Mk2_w";
         goggles = "";
         uniform = "U_LIB_UK_DenisonSmock_w";
-        vest = "V_LIB_UK_P37_Rifleman_Blanco";
+        vest = "V_LIB_UK_P37_Rifleman_Blanco_ARM";
         backpack = "B_LIB_UK_HSack_Blanco";
     };
 
     class Leader : Rifleman {
-        vest = "V_LIB_UK_P37_Officer_Blanco";
+        vest = "V_LIB_UK_P37_Officer_Blanco_ARM";
     };
 
     class Officer : Leader {
@@ -18,7 +18,7 @@ class IF44_BAF_PARA_SN_U {
     class Crew : Rifleman {
         headGear = "H_LIB_UK_Beret_Tankist";
 		uniform = "U_LIB_UK_P37_w";
-        vest = "V_LIB_UK_P37_Crew";
+        vest = "V_LIB_UK_P37_Crew_ARM";
         backpack = "B_LIB_UK_HSack_Blanco";
     };
 
@@ -38,11 +38,11 @@ class IF44_BAF_PARA_SN_U {
     };
 
     class FTL : Leader {
-        vest = "V_LIB_UK_P37_Sten_Blanco";
+        vest = "V_LIB_UK_P37_Sten_Blanco_ARM";
     };
 
     class AR : Rifleman {
-        vest = "V_LIB_UK_P37_Heavy_Blanco";
+        vest = "V_LIB_UK_P37_Heavy_Blanco_ARM";
         headGear = "H_LIB_UK_Para_Helmet_Mk2_Net_w";
         backpack = "B_LIB_UK_HSack_Blanco_Cape";
     };
@@ -124,7 +124,7 @@ class IF44_BAF_PARA_SN_U {
     };
 
     class ENG : Rifleman {
-        vest = "V_LIB_UK_P37_Holster_Blanco";
+        vest = "V_LIB_UK_P37_Holster_Blanco_ARM";
     };
 
     class ENGA : ENG {
@@ -148,7 +148,7 @@ class IF44_BAF_PARA_SN_U {
 
     class P : Crew {
         headGear = "H_LIB_UK_Pilot_Cap";
-        vest = "V_LIB_UK_P37_Crew";
+        vest = "V_LIB_UK_P37_Crew_ARM";
         backpack = "B_Parachute";
     };
 

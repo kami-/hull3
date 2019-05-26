@@ -3,12 +3,12 @@ class IF44_USA_PARA_U {
         headGear = "H_LIB_US_AB_Helmet_Clear_1";
         goggles = "";
         uniform = "U_LIB_US_AB_Uniform_M42";
-        vest = "V_LIB_US_AB_Vest_Garand";
+        vest = "V_LIB_US_AB_Vest_Garand_ARM";
         backpack = "B_LIB_US_M36";
     };
 
     class Leader : Rifleman {
-        vest = "V_LIB_US_AB_Vest_Padded_Thompson_nco";
+        vest = "V_LIB_US_AB_Vest_Padded_Thompson_nco_ARM";
         headgear = "H_LIB_US_AB_Helmet_CO_2";
     };
 
@@ -27,7 +27,7 @@ class IF44_USA_PARA_U {
     };
 
     class XO : CO {
-        vest = "V_LIB_US_AB_Vest_Padded_Thompson_nco_Radio";
+        vest = "V_LIB_US_AB_Vest_Padded_Thompson_nco_Radio_ARM";
         backpack = "B_LIB_US_Radio_ACRE2";
     };
 
@@ -36,7 +36,7 @@ class IF44_USA_PARA_U {
 
     class Medic : Rifleman {
         uniform = "U_LIB_US_AB_Uniform_M42_Medic";
-        vest = "V_LIB_US_AB_Vest_Padded_Asst_MG";
+        vest = "V_LIB_US_AB_Vest_Padded_Asst_MG_ARM";
         headgear = "H_LIB_US_AB_Helmet_Clear_3";
         backpack = "B_LIB_US_M36";
     };
@@ -44,17 +44,17 @@ class IF44_USA_PARA_U {
     class FTL : Leader {
         headGear = "H_LIB_US_AB_Helmet_NCO_2";
         uniform = "U_LIB_US_AB_Uniform_M42_NCO";
-        vest = "V_LIB_US_AB_Vest_Padded_Thompson";
+        vest = "V_LIB_US_AB_Vest_Padded_Thompson_ARM";
     };
 
     class AR : Rifleman {
-        vest = "V_LIB_US_AB_Vest_Padded_Bar";
+        vest = "V_LIB_US_AB_Vest_Padded_Bar_ARM";
         uniform = "U_LIB_US_AB_Uniform_M42_corporal";
         headGear = "H_LIB_US_Helmet_Net_ns";
     };
 
     class AAR : Rifleman {
-        vest = "V_LIB_US_AB_Vest_Padded_Grenadier";
+        vest = "V_LIB_US_AB_Vest_Padded_Grenadier_ARM";
         headGear = "H_LIB_US_Helmet_os";
         backpack = "B_LIB_US_Bandoleer";
     };
@@ -62,7 +62,7 @@ class IF44_USA_PARA_U {
     class RAT : Rifleman {
         uniform = "U_LIB_US_AB_Uniform_M42_FC";
         backpack = "B_LIB_US_M36_Rope";
-        vest = "V_LIB_US_AB_Vest_Padded_Carbine";
+        vest = "V_LIB_US_AB_Vest_Padded_Carbine_ARM";
     };
 
     class MMGG : AR {
@@ -71,20 +71,20 @@ class IF44_USA_PARA_U {
 
     class MMGAG : AAR {
         headGear = "H_LIB_US_AB_Helmet_NCO_2";
-        vest = "V_LIB_US_AB_Vest_Padded_Carbine";
+        vest = "V_LIB_US_AB_Vest_Padded_Carbine_ARM";
     };
 
     class HMGG : AR {
-        vest = "V_LIB_US_Vest_M1919";
+        vest = "V_LIB_US_Vest_M1919_ARM";
     };
 
     class HMGAG : AAR {
         headGear = "H_LIB_US_AB_Helmet_NCO_2";
-        vest = "V_LIB_US_AB_Vest_Padded_Thompson";
+        vest = "V_LIB_US_AB_Vest_Padded_Thompson_ARM";
     };
 
     class HMGAC : HMGG {
-        vest = "V_LIB_US_AB_Vest_M1919";
+        vest = "V_LIB_US_AB_Vest_M1919_ARM";
     };
 
     class MATG : RAT {
@@ -93,7 +93,7 @@ class IF44_USA_PARA_U {
 
     class MATAG : MATG {
         headGear = "H_LIB_US_AB_Helmet_NCO_2";
-        vest = "V_LIB_US_AB_Vest_Padded_Thompson";
+        vest = "V_LIB_US_AB_Vest_Padded_Thompson_ARM";
         backpack = "B_LIB_US_M36_Rocketbag_Empty";
     };
 
@@ -138,21 +138,21 @@ class IF44_USA_PARA_U {
     };
 
     class MTRG : Rifleman {
-        vest = "V_LIB_US_AB_Vest_Padded_Carbine";
+        vest = "V_LIB_US_AB_Vest_Padded_Carbine_ARM";
     };
 
     class MTRAG : Rifleman {
-        vest = "V_LIB_US_AB_Vest_Padded_Thompson";
+        vest = "V_LIB_US_AB_Vest_Padded_Thompson_ARM";
     };
 
     class MTRAC : Rifleman {
-        vest = "V_LIB_US_AB_Vest_Padded_Carbine";
+        vest = "V_LIB_US_AB_Vest_Padded_Carbine_ARM";
     };
 
     class ENG : Rifleman {
         headGear = "H_LIB_US_AB_Helmet_NCO_2";
         uniform = "U_LIB_US_AB_Uniform_M42_NCO";
-        vest = "V_LIB_US_AB_Vest_Padded_Carbine_eng";
+        vest = "V_LIB_US_AB_Vest_Padded_Carbine_eng_ARM";
     };
 
     class ENGA : ENG {
@@ -178,7 +178,7 @@ class IF44_USA_PARA_U {
     class P : Crew {
         uniform = "U_LIB_US_Bomber_Pilot";
         headGear = "H_LIB_US_Helmet_Pilot_Glasses_Up";
-        vest = "V_LIB_US_LifeVest";
+        vest = "V_LIB_US_LifeVest_ARM";
         backpack = "B_Parachute";
     };
 

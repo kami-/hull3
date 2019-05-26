@@ -61,7 +61,7 @@ class IF44_USA_SN_U {
     };
 
     class MMGG : AR {
-        vest = "V_LIB_US_Vest_M1919";
+        vest = "V_LIB_US_Vest_M1919_ARM";
     };
 
     class MMGAG : AAR {
@@ -70,7 +70,7 @@ class IF44_USA_SN_U {
     };
 
     class HMGG : AR {
-        vest = "V_LIB_US_Vest_M1919";
+        vest = "V_LIB_US_Vest_M1919_ARM";
     };
 
     class HMGAG : AAR {
@@ -171,7 +171,7 @@ class IF44_USA_SN_U {
     class P : Crew {
         uniform = "U_LIB_US_Bomber_Pilot";
         headGear = "H_LIB_US_Helmet_Pilot_Glasses_Up";
-        vest = "V_LIB_US_LifeVest";
+        vest = "V_LIB_US_LifeVest_ARM";
         backpack = "B_Parachute";
     };
 
