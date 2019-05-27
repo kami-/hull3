@@ -16,6 +16,7 @@ hull3_unit_fnc_init = {
         _uniformEntry = [_initEntries, "uniform"] call hull3_config_fnc_getEntry;
         [_unit, _factionEntry, _gearEntry, _uniformEntry] call hull3_gear_fnc_assign;
         [_unit] call hull3_unit_fnc_addEHs;
+        doStop _unit; // Order doStop to stop AI wondering around over water (boats etc)
     };
     _markerEntry = [_initEntries, "marker"] call hull3_config_fnc_getEntry;
     if (count _markerEntry > 0) then {
