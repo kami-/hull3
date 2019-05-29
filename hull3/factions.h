@@ -3070,7 +3070,7 @@ class Faction {
     class IF44_USSR {
         gear = "IF44_USSR_G";
         uniform = "IF44_USSR_U";
-        name = "FOW Red Army";
+        name = "IF44 Red Army";
         description = "Red Army";
         languages[] = {{"east", 100}};
         side = "east";
@@ -3096,7 +3096,7 @@ class Faction {
     class IF44_USSR_NKVD {
         gear = "IF44_USSR_G";
         uniform = "IF44_USSR_NKVD_U";
-        name = "FOW NKVD";
+        name = "IF44 NKVD";
         description = "People's Commissariat for Internal Affairs";
         languages[] = {{"east", 100}};
         side = "east";
@@ -3122,7 +3122,7 @@ class Faction {
     class IF44_USSR_SN {
         gear = "IF44_USSR_G";
         uniform = "IF44_USSR_SN_U";
-        name = "FOW Red Army (Snow)";
+        name = "IF44 Red Army (Snow)";
         description = "Red Army Winter";
         languages[] = {{"east", 100}};
         side = "east";
