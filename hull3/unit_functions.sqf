@@ -53,7 +53,7 @@ hull3_unit_fnc_foreachNonPlayerUnits = {
         if (!isPlayer _x) then {
             doStop _x;
         };
-    } foreach allUnits;
+    } foreach (playableUnits + switchableUnits);
 };
 
 hull3_unit_fnc_addEHs = {
