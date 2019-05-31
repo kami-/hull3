@@ -4,7 +4,7 @@
 #include "logbook.h"
 
 hull3_unit_fnc_init = {
-    FUN_ARGS_1(_unit);
+    params ["_unit"];
 
     private ["_initEntries", "_markerEntry"];
     _initEntries = [_this] call hull3_config_fnc_getInitEntries;
@@ -16,7 +16,6 @@ hull3_unit_fnc_init = {
         _uniformEntry = [_initEntries, "uniform"] call hull3_config_fnc_getEntry;
         [_unit, _factionEntry, _gearEntry, _uniformEntry] call hull3_gear_fnc_assign;
         [_unit] call hull3_unit_fnc_addEHs;
-        doStop _unit; // Order doStop to stop AI wondering around over water (boats etc)
     };
     _markerEntry = [_initEntries, "marker"] call hull3_config_fnc_getEntry;
     if (count _markerEntry > 0) then {
@@ -50,17 +49,15 @@ hull3_unit_fnc_playerInit = {
 };
 
 hull3_unit_fnc_foreachNonPlayerUnits = {
-    FUN_ARGS_1(_func);
-
     {
         if (!isPlayer _x) then {
-            [_x] call _func;
+            doStop _x;
         };
     } foreach allUnits;
 };
 
 hull3_unit_fnc_addEHs = {
-    FUN_ARGS_1(_unit);
+    params ["_unit"];
 
     if (_unit isKindOf "CAManBase") then {
         private "_ehId";
@@ -72,7 +69,7 @@ hull3_unit_fnc_addEHs = {
 };
 
 hull3_unit_fnc_addFiredEHs = {
-    FUN_ARGS_1(_unit);
+    params ["_unit"];
 
     private "_ehId";
     _ehId = player addEventHandler ["Fired", {
@@ -83,7 +80,7 @@ hull3_unit_fnc_addFiredEHs = {
 };
 
 hull3_unit_fnc_friendlyFireEH = {
-    FUN_ARGS_5(_unit,_selectionName,_damage,_source,_projectile);
+    params ["_unit","_selectionName","_damage","_source","_projectile"];
 
     if (_selectionName == "" && {_unit != _source} && {side _unit == side _source}) then {
         DECLARE(_message) = LOGGING_FORMAT("hull.unit.friendlyFire","WARN",FMT_4("'%1' dealt '%2' damage with '%3' to '%4'!",_source,_damage,_projectile,_unit));
@@ -94,7 +91,7 @@ hull3_unit_fnc_friendlyFireEH = {
 };
 
 hull3_unit_fnc_addAceThrowableThrownEH = {
-    FUN_ARGS_1(_unit);
+    params ["_unit"];
 
     private "_ehId";
     _ehId = ["ace_throwableThrown", {
@@ -105,7 +102,7 @@ hull3_unit_fnc_addAceThrowableThrownEH = {
 };
 
 hull3_unit_fnc_killedEH = {
-    FUN_ARGS_2(_unit,_killer);
+    params ["_unit","_killer"];
 
     if (_unit != _killer && {side _unit == side _killer}) then {
         DECLARE(_message) = LOGGING_FORMAT("hull.unit.friendlyFire","WARN",FMT_2("'%1' killed '%2'!",_killer,_unit));
@@ -119,7 +116,7 @@ hull3_unit_fnc_killedEH = {
 };
 
 hull3_unit_fnc_getAssignedTeam = {
-    FUN_ARGS_1(_gearClass);
+    params ["_gearClass"];
 
     DECLARE(_team) = "";
     {
