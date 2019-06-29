@@ -95,7 +95,7 @@ hull3_gc_fnc_monitorDead = {
         private _deadAmount = count hull3_gc_deadUnits;
         private _limitReached = _deadAmount > hull3_gc_currentCorpseLimit;
         if (_limitReached) then {
-            TRACE("hull3.gc",FMT_2("Limit '%1' reached, removing unit '%2'.",_limit,_x));
+            TRACE("hull3.gc",FMT_1("Limit '%1' reached, removing units.",_limit));
             for "_i" from 0 to (_deadAmount - hull3_gc_currentCorpseLimit) do {
                 (hull3_gc_deadUnits #0) call hull3_gc_fnc_cleanDead;
                 hull3_gc_deadUnits deleteAt 0;
@@ -112,7 +112,7 @@ hull3_gc_fnc_monitorDead = {
         private _wreckAmount = count hull3_gc_deadVehicles;
         private _limitReached = _wreckAmount > hull3_gc_currentWreckLimit;
         if (_limitReached) then {
-            TRACE("hull3.gc",FMT_2("Limit '%1' reached, removing unit '%2'.",_limit,_x));
+            TRACE("hull3.gc",FMT_1("Limit '%1' reached, removing wrecks.",_limit));
             for "_i" from 0 to (_wreckAmount - hull3_gc_currentWreckLimit) do {
                 (hull3_gc_deadVehicles #0) call hull3_gc_fnc_cleanDead;
                 hull3_gc_deadVehicles deleteAt 0;

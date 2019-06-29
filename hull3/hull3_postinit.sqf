@@ -15,11 +15,11 @@ if (hull3_isEnabled) then {
         if (isServer) then {
             [] call hull3_mission_fnc_serverInit;
             [] call hull3_unit_fnc_foreachNonPlayerUnits;
-            [] spawn hull3_gc_fnc_start;
+            [] call hull3_gc_fnc_start;
         };
     } else {
         [] call hull3_mission_fnc_serverInit;
         [] call hull3_unit_fnc_foreachNonPlayerUnits;
-        [] spawn hull3_gc_fnc_start;
+        [] call hull3_gc_fnc_start;
     };
 };
