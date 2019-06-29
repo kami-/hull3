@@ -92,10 +92,11 @@ hull3_gc_fnc_monitorDead = {
     if (hull3_gc_canRemoveCorpses) then {
         DEBUG("hull3.gc","Starting next corpse GC check.");
         private _removedCount = 0;
-        private _limitReached = (count hull3_gc_deadUnits) > hull3_gc_currentCorpseLimit;
+        private _deadAmount = count hull3_gc_deadUnits;
+        private _limitReached = _deadAmount > hull3_gc_currentCorpseLimit;
         if (_limitReached) then {
             TRACE("hull3.gc",FMT_2("Limit '%1' reached, removing unit '%2'.",_limit,_x));
-            for "_i" from 0 to (hull3_gc_deadUnits - hull3_gc_currentCorpseLimit) do {
+            for "_i" from 0 to (_deadAmount - hull3_gc_currentCorpseLimit) do {
                 [(hull3_gc_deadUnits #0)] call ark_gc_fnc_cleanDead;
                 _removedCount = _removedCount + 1;
             };
@@ -106,10 +107,11 @@ hull3_gc_fnc_monitorDead = {
     if (hull3_gc_canRemoveWrecks) then {
         DEBUG("hull3.gc","Starting next wreck GC check.");
         private _removedCount = 0;
-        private _limitReached = (count hull3_gc_deadVehicles) > hull3_gc_currentWreckLimit;
+        private _wreckAmount = count hull3_gc_deadVehicles;
+        private _limitReached = _wreckAmount > hull3_gc_currentWreckLimit;
         if (_limitReached) then {
             TRACE("hull3.gc",FMT_2("Limit '%1' reached, removing unit '%2'.",_limit,_x));
-            for "_i" from 0 to (hull3_gc_deadVehicles - hull3_gc_currentWreckLimit) do {
+            for "_i" from 0 to (_wreckAmount - hull3_gc_currentWreckLimit) do {
                 [(hull3_gc_deadVehicles #0)] call ark_gc_fnc_cleanDead;
                 _removedCount = _removedCount + 1;
             };
