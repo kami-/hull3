@@ -102,6 +102,7 @@ hull3_gc_fnc_monitorDead = {
                 hull3_gc_deadUnits deleteAt 0;
                 _removedCount = _removedCount + 1;
             };
+        {if (count units _x == 0) then {deleteGroup _x}} forEach allGroups
         };
         DEBUG("hull3.gc",FMT_1("Removed '%1' units.",_removedCount));
     };
@@ -122,6 +123,16 @@ hull3_gc_fnc_monitorDead = {
         };
         DEBUG("hull3.gc",FMT_1("Removed '%1' wrecks.",_removedCount));
     };
+
+    {
+        if (count units _x == 0) then {
+            if (local _x) then {
+                deleteGroup _x;
+            } else {
+                _group remoteExec ["deleteGroup", groupOwner _group];
+            };
+        };
+    } forEach allGroups;
 };
 
 ark_gc_fnc_cleanDead = {
