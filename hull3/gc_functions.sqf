@@ -97,8 +97,7 @@ hull3_gc_fnc_monitorDead = {
         if (_limitReached) then {
             TRACE("hull3.gc",FMT_2("Limit '%1' reached, removing unit '%2'.",_limit,_x));
             for "_i" from 0 to (_deadAmount - hull3_gc_currentCorpseLimit) do {
-                private _unit = hull3_gc_deadUnits #0;
-                _unit call ark_gc_fnc_cleanDead;
+                (hull3_gc_deadUnits #0) call hull3_gc_fnc_cleanDead;
                 hull3_gc_deadUnits deleteAt 0;
                 _removedCount = _removedCount + 1;
             };
@@ -115,8 +114,7 @@ hull3_gc_fnc_monitorDead = {
         if (_limitReached) then {
             TRACE("hull3.gc",FMT_2("Limit '%1' reached, removing unit '%2'.",_limit,_x));
             for "_i" from 0 to (_wreckAmount - hull3_gc_currentWreckLimit) do {
-                private _veh = hull3_gc_deadVehicles #0;
-                _veh call ark_gc_fnc_cleanDead;
+                (hull3_gc_deadVehicles #0) call hull3_gc_fnc_cleanDead;
                 hull3_gc_deadVehicles deleteAt 0;
                 _removedCount = _removedCount + 1;
             };
@@ -124,18 +122,19 @@ hull3_gc_fnc_monitorDead = {
         DEBUG("hull3.gc",FMT_1("Removed '%1' wrecks.",_removedCount));
     };
 
+    // Engine should take care of this but it can't hurt to manually run every loop to do extra clean up
     {
         if (count units _x == 0) then {
             if (local _x) then {
                 deleteGroup _x;
             } else {
-                _group remoteExec ["deleteGroup", groupOwner _group];
+                _x remoteExec ["deleteGroup", groupOwner _x];
             };
         };
     } forEach allGroups;
 };
 
-ark_gc_fnc_cleanDead = {
+hull3_gc_fnc_cleanDead = {
     params ["_obj"];
 
     if (_obj isKindOf "CAManBase") then {
