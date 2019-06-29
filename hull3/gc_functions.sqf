@@ -56,7 +56,7 @@ hull3_gc_fnc_stop = {
 hull3_gc_fnc_monitor = {
     [
         {
-            if {hull3_gc_isEnabled} then {
+            if (hull3_gc_isEnabled) then {
                 call hull3_gc_fnc_adjustConfig;
                 call hull3_gc_fnc_monitorDead;
             };
