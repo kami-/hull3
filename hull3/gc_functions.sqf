@@ -56,10 +56,10 @@ hull3_gc_fnc_stop = {
 hull3_gc_fnc_monitor = {
     [
         {
-            if (hull3_gc_isEnabled) then {
-                call hull3_gc_fnc_adjustConfig;
-                call hull3_gc_fnc_monitorDead;
-            };
+            params ["", "_id"];
+            if !(hull3_gc_isEnabled) exitWith {_id call CBA_fnc_removePerFrameHandler};
+            call hull3_gc_fnc_adjustConfig;
+            call hull3_gc_fnc_monitorDead;
         },
         hull3_gc_checkDelay
     ] call CBA_fnc_addPerFrameHandler;
