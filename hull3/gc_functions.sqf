@@ -41,7 +41,7 @@ hull3_gc_fnc_start = {
             call hull3_gc_fnc_monitor;
             hull3_gc_deadUnits = [];
             hull3_gc_deadVehicles = [];
-            addMissionEventHandler ["EntityKilled",{call hull3_gc_fnc_sortDead}];
+            hull3_gc_eh_sortDead = addMissionEventHandler ["EntityKilled",{call hull3_gc_fnc_sortDead}];
         },
         [],
         5
@@ -52,6 +52,9 @@ hull3_gc_fnc_stop = {
     hull3_gc_canRemoveCorpses = false;
     hull3_gc_canRemoveWrecks = false;
     hull3_gc_isEnabled = false;
+    removeMissionEventHandler ["EntityKilled", hull3_gc_eh_sortDead];
+    hull3_gc_deadUnits = nil;
+    hull3_gc_deadVehicles = nil;
 };
 
 hull3_gc_fnc_monitor = {
