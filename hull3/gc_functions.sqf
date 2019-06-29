@@ -83,7 +83,9 @@ hull3_gc_fnc_sortDead = {
 
     if (_killed isKindOf "CAManBase") then {
          hull3_gc_deadUnits pushBack _killed;
-    } else {
+    };
+
+    if (_killed isKindOf "Car" || { _killed isKindOf "Tank" } || { _killed isKindOf "Air" } || { _killed isKindOf "Ship" }) then {
         hull3_gc_deadVehicles pushBack _killed;
     };
 };
