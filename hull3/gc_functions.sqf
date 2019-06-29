@@ -97,7 +97,7 @@ hull3_gc_fnc_monitorDead = {
         if (_limitReached) then {
             TRACE("hull3.gc",FMT_2("Limit '%1' of '%2' reached, removing corpses.",_deadAmount,hull3_gc_currentCorpseLimit));
             for "_i" from 0 to (_deadAmount - hull3_gc_currentCorpseLimit) do {
-                (hull3_gc_deadUnits deleteAt 0) call ark_gc_fnc_cleanDead;
+                (hull3_gc_deadUnits deleteAt 0) call hull3_gc_fnc_cleanDead;
                 _removedCount = _removedCount + 1;
             };
         };
@@ -112,7 +112,7 @@ hull3_gc_fnc_monitorDead = {
         if (_limitReached) then {
             TRACE("hull3.gc",FMT_2("Limit '%1' of '%2' reached, removing wrecks.",_wreckAmount,hull3_gc_currentWreckLimit));
             for "_i" from 0 to (_wreckAmount - hull3_gc_currentWreckLimit) do {
-                (hull3_gc_deadVehicles deleteAt 0) call ark_gc_fnc_cleanDead;
+                (hull3_gc_deadVehicles deleteAt 0) call hull3_gc_fnc_cleanDead;
                 _removedCount = _removedCount + 1;
             };
         };
