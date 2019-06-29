@@ -351,21 +351,15 @@ class Hull3 {
         isEnabled = 1;
         canRemoveCorpses = 1;
         canRemoveWrecks = 1;
-        canRemoveGroups = 1;
 
         panicCps = 20;
 
         corpseLimit = 40;
         panicCorpseLimit = 10;
-        corpseMaxTime = 600;
-        panicCorpseMaxTime = 20;
 
         wreckLimit = 10;
         panicWreckLimit = 3;
-        wreckMaxTime = 600;
-        panicWreckMaxTime = 60;
 
-        groupMaxTime = 90;
         checkDelay = 30;
     };
 };

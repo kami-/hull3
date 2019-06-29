@@ -3,10 +3,6 @@
 #include "\userconfig\hull3\log\gc.h"
 #include "logbook.h"
 
-#define GC_CAN_REMOVE(UNIT)                 (UNIT getVariable ["hull3_gc_canRemove", true])
-
-
-
 hull3_gc_fnc_preInit = {
     hull3_gc_isEnabled = ["GarbageCollector", "isEnabled"] call hull3_config_fnc_getBool;
     hull3_gc_canRemoveCorpses = ["GarbageCollector", "canRemoveCorpses"] call hull3_config_fnc_getBool;
@@ -38,10 +34,10 @@ hull3_gc_fnc_start = {
             hull3_gc_canRemoveCorpses = true;
             hull3_gc_canRemoveWrecks = true;
             hull3_gc_isEnabled = true;
-            call hull3_gc_fnc_monitor;
             hull3_gc_deadUnits = [];
             hull3_gc_deadVehicles = [];
             hull3_gc_eh_sortDead = addMissionEventHandler ["EntityKilled",{call hull3_gc_fnc_sortDead}];
+            call hull3_gc_fnc_monitor;
         },
         [],
         5
@@ -49,10 +45,10 @@ hull3_gc_fnc_start = {
 };
 
 hull3_gc_fnc_stop = {
+    removeMissionEventHandler ["EntityKilled", hull3_gc_eh_sortDead];
     hull3_gc_canRemoveCorpses = false;
     hull3_gc_canRemoveWrecks = false;
     hull3_gc_isEnabled = false;
-    removeMissionEventHandler ["EntityKilled", hull3_gc_eh_sortDead];
     hull3_gc_deadUnits = nil;
     hull3_gc_deadVehicles = nil;
 };
@@ -96,8 +92,7 @@ hull3_gc_fnc_monitorDead = {
     if (hull3_gc_canRemoveCorpses) then {
         DEBUG("hull3.gc","Starting next corpse GC check.");
         private _removedCount = 0;
-        private _totalDead = count hull3_gc_deadUnits;
-        private _limitReached =_totalDead > hull3_gc_currentCorpseLimit;
+        private _limitReached = (count hull3_gc_deadUnits) > hull3_gc_currentCorpseLimit;
         if (_limitReached) then {
             TRACE("hull3.gc",FMT_2("Limit '%1' reached, removing unit '%2'.",_limit,_x));
             for "_i" from 0 to (hull3_gc_deadUnits - hull3_gc_currentCorpseLimit) do {
@@ -111,11 +106,10 @@ hull3_gc_fnc_monitorDead = {
     if (hull3_gc_canRemoveWrecks) then {
         DEBUG("hull3.gc","Starting next wreck GC check.");
         private _removedCount = 0;
-        private _totalWrecks = count hull3_gc_deadVehicles;
-        private _limitReached =_totalWrecks > hull3_gc_currentWreckLimit;
+        private _limitReached = (count hull3_gc_deadVehicles) > hull3_gc_currentWreckLimit;
         if (_limitReached) then {
             TRACE("hull3.gc",FMT_2("Limit '%1' reached, removing unit '%2'.",_limit,_x));
-            for "_i" from 0 to (hull3_gc_deadVehicles - hull3_gc_currentCorpseLimit) do {
+            for "_i" from 0 to (hull3_gc_deadVehicles - hull3_gc_currentWreckLimit) do {
                 [(hull3_gc_deadVehicles select #0)] call ark_gc_fnc_cleanDead;
                 _removedCount = _removedCount + 1;
             };
