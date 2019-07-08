@@ -119,21 +119,21 @@ class M16A1_US {
     };
 
     class AR : Rifleman {
-        primaryWeapon = "hlc_lmg_m60";
+        primaryWeapon = "CUP_lmg_M60";
         handgunWeapon = "CUP_hgun_Colt1911";
         primaryWeaponItems[] = {};
         vestMagazines[] = {
-            {"hlc_100Rnd_762x51_T_M60E4", 2},
+            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 2},
             {"CUP_7Rnd_45ACP_1911", 3}
         };
-        backpackMagazines[] = {{"hlc_100Rnd_762x51_T_M60E4", 5}};
+        backpackMagazines[] = {{"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 5}};
     };
 
     class AAR : Rifleman {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_100Rnd_762x51_T_M60E4", 4}
+            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 4}
         };
         binocular = "Binocular";
     };
@@ -157,13 +157,13 @@ class M16A1_US {
     };
 
     class MMGG : Rifleman {
-        primaryWeapon = "hlc_lmg_m60";
+        primaryWeapon = "CUP_lmg_M60";
         primaryWeaponItems[] = {};
-        vestMagazines[] = {{"hlc_100Rnd_762x51_M_M60E4", 1}};
+        vestMagazines[] = {{"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 1}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_100Rnd_762x51_M_M60E4", 4}
+            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 4}
         };
     };
 
@@ -171,7 +171,7 @@ class M16A1_US {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_100Rnd_762x51_M_M60E4", 4}
+            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 4}
         };
         binocular = "Binocular";
         assignItems[] = {};
@@ -391,7 +391,7 @@ class M16A1_US {
         magazines[] = {
             {"CUP_20Rnd_556x45_Stanag", 20},
             {"CUP_20Rnd_556x45_Stanag_Tracer_Red", 10},
-            {"hlc_100Rnd_762x51_T_M60E4", 10},
+            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"CUP_1Rnd_HE_M203", 10},
             {"UGL_FlareWhite_F", 5},
@@ -418,7 +418,7 @@ class M16A1_US {
         magazines[] = {
             {"CUP_20Rnd_556x45_Stanag", 40},
             {"CUP_20Rnd_556x45_Stanag_Tracer_Red", 20},
-            {"hlc_100Rnd_762x51_T_M60E4", 50},
+            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 50},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
             {"CUP_1Rnd_HE_M203", 30},
@@ -445,7 +445,7 @@ class M16A1_US {
         magazines[] = {
             {"CUP_20Rnd_556x45_Stanag", 40},
             {"CUP_20Rnd_556x45_Stanag_Tracer_Red", 20},
-            {"hlc_100Rnd_762x51_T_M60E4", 30},
+            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 30},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"CUP_1Rnd_HE_M203", 20},
             {"UGL_FlareWhite_F", 10},
