@@ -162,14 +162,14 @@ class CAR15_GEND {
     };
 
     class MMGG : Rifleman {
-        primaryWeapon = "hlc_lmg_m60";
+        primaryWeapon = "CUP_lmg_M60";
         primaryWeaponItems[] = {};
-        vestMagazines[] = {{"hlc_100Rnd_762x51_M_M60E4", 1}};
+        vestMagazines[] = {{"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 1}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_100Rnd_762x51_M_M60E4", 2},
-            {"hlc_100Rnd_762x51_T_M60E4", 2}
+            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 2},
+            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 2}
         };
     };
 
@@ -177,7 +177,7 @@ class CAR15_GEND {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_100Rnd_762x51_M_M60E4", 4}
+            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 4}
         };
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
@@ -427,7 +427,7 @@ class CAR15_GEND {
             {"CUP_30Rnd_556x45_Stanag", 40},
             {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 20},
             {"CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag_ar15", 20},
-            {"hlc_100Rnd_762x51_M_M60E4", 10},
+            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"CUP_1Rnd_Smoke_M203", 10},
             {"CUP_FlareWhite_M203", 10},
             {"SatchelCharge_Remote_Mag", 5},
@@ -455,7 +455,7 @@ class CAR15_GEND {
             {"CUP_30Rnd_556x45_Stanag", 40},
             {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 20},
             {"CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag_ar15", 20},
-            {"hlc_100Rnd_762x51_M_M60E4", 10},
+            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"CUP_1Rnd_Smoke_M203", 10},
             {"CUP_FlareWhite_M203", 10},
             {"MRAWS_HEAT_F", 5},

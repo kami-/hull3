@@ -166,14 +166,14 @@ class M16A4_ROK {
     };
 
     class MMGG : Rifleman {
-        primaryWeapon = "hlc_lmg_M60E4";
+        primaryWeapon = "CUP_lmg_M60E4";
         primaryWeaponItems[] = {};
         vestMagazines[] = {{"hlc_100Rnd_762x51_B_M60E4", 2}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
             {"hlc_100Rnd_762x51_B_M60E4", 4},
-            {"hlc_100Rnd_762x51_T_M60E4", 3}
+            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 3}
         };
     };
 
@@ -183,7 +183,7 @@ class M16A4_ROK {
             {"SmokeShell", 1},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2},
             {"hlc_100Rnd_762x51_B_M60E4", 3},
-            {"hlc_100Rnd_762x51_T_M60E4", 2}
+            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 2}
         };
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
