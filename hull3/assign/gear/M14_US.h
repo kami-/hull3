@@ -400,11 +400,7 @@ class M14_US {
             {"SmokeShell", 5}
         };
         items[] = {{"Toolkit", 1}};
-        radios[] = {
-            {"ACRE_PRC343", 2},
-            {"ACRE_PRC152", 2}
-        };
-        medicalItems[] = {{"ACE_fieldDressing", 6}};
+        medicalItems[] = {{"ACE_fieldDressing", 50}};
     };
 
     class Car : Vehicle {
@@ -433,11 +429,7 @@ class M14_US {
             {"ACE_M26_Clacker", 1},
             {"Toolkit", 1}
         };
-        radios[] = {
-            {"ACRE_PRC343", 2},
-            {"ACRE_PRC152", 2}
-        };
-        medicalItems[] = {{"ACE_fieldDressing", 6}};
+        medicalItems[] = {{"ACE_fieldDressing", 50}};
     };
 
     class Armored : Truck {
@@ -459,11 +451,7 @@ class M14_US {
             {"ACE_M26_Clacker", 1},
             {"Toolkit", 1}
         };
-        radios[] = {
-            {"ACRE_PRC343", 2},
-            {"ACRE_PRC152", 2}
-        };
-        medicalItems[] = {{"ACE_fieldDressing", 6}};
+        medicalItems[] = {{"ACE_fieldDressing", 50}};
     };
 
 };

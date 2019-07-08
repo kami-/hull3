@@ -408,11 +408,7 @@ class MP5_GEND {
             {"Toolkit", 1},
             {"ItemGPS", 1}
         };
-        radios[] = {
-            {"ACRE_PRC343", 2},
-            {"ACRE_PRC152", 2}
-        };
-        medicalItems[] = {{"ACE_fieldDressing", 6}};
+        medicalItems[] = {{"ACE_fieldDressing", 50}};
     };
 
     class Car : Vehicle {
@@ -442,11 +438,7 @@ class MP5_GEND {
             {"Toolkit", 1},
             {"ItemGPS", 1}
         };
-        radios[] = {
-            {"ACRE_PRC343", 2},
-            {"ACRE_PRC152", 2}
-        };
-        medicalItems[] = {{"ACE_fieldDressing", 6}};
+        medicalItems[] = {{"ACE_fieldDressing", 50}};
     };
 
     class Armored : Truck {
@@ -469,11 +461,7 @@ class MP5_GEND {
             {"Toolkit", 1},
             {"ItemGPS", 1}
         };
-        radios[] = {
-            {"ACRE_PRC343", 2},
-            {"ACRE_PRC152", 2}
-        };
-        medicalItems[] = {{"ACE_fieldDressing", 6}};
+        medicalItems[] = {{"ACE_fieldDressing", 50}};
     };
 
 };
