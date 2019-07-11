@@ -122,7 +122,7 @@ hull3_gc_fnc_monitorDead = {
 
     // Engine should take care of this but it can't hurt to manually run every loop to do extra clean up
     {
-        if (count units _x isEqualTo 0) then {
+        if (units _x isEqualTo []) then {
             if (local _x) then {
                 deleteGroup _x;
             } else {
