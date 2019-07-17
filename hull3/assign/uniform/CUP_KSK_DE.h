@@ -1,92 +1,86 @@
 class CUP_KSK_DE {
     class Rifleman {
-        headGear = "CUP_H_Ger_Boonie_desert";
-        goggles = "CUP_FR_NeckScarf2";
+        headGear = "CUP_H_OpsCore_Covered_Tropen_NoHS";
+        goggles = "";
         uniform = "CUP_U_B_GER_Tropentarn_1";
-        vest = "CUP_V_B_GER_Carrier_Vest_ARM";
-        backpack = "B_AssaultPack_cbr";
+        vest = "CUP_V_B_GER_PVest3_Des";
+        backpack = "CUP_B_GER_Pack_Tropentarn";
     };
 
     class Leader : Rifleman {
         uniform = "CUP_U_B_GER_Tropentarn_2";
-        vest = "CUP_V_B_GER_Carrier_Vest_3_ARM";
-        headGear = "H_Bandanna_khk_hs";
+        vest = "CUP_V_B_GER_PVest2_Des";
     };
 
     class Officer : Leader {
-        headGear = "CUP_H_PMC_PRR_Headset";
-        vest = "CUP_V_B_GER_Carrier_Vest_2_ARM";
+        headGear = "CUP_H_Ger_Cap_EP_Tan1";
+        goggles = "CUP_FR_NeckScarf2";
     };
 
     class Crew : Rifleman {
-        headGear = "H_HelmetCrew_I";
-        uniform = "CUP_U_B_GER_Tropentarn_2";
-        goggles = "CUP_FR_NeckScarf2";
-        vest = "CUP_V_B_GER_Carrier_Rig_2_Brown_ARM";
-        backpack = "B_AssaultPack_rgr";
+        headGear = "CUP_H_USMC_ACVC_DES";
+        uniform = "CUP_U_B_GER_Tropentarn_1";
+        vest = "CUP_V_B_GER_Tactical_Trop";
     };
 
     class CO : Officer {
     };
 
     class XO : CO {
-        backpack = "B_Carryall_khk";
     };
 
     class SL : Officer {
     };
 
     class Medic : Rifleman {
-        backpack = "B_Carryall_khk";
-        uniform = "CUP_U_B_GER_Tropentarn_2";
     };
 
     class FTL : Leader {
+        headGear = "CUP_H_OpsCore_Covered_Tropen";
     };
 
     class AR : Rifleman {
-        headGear = "H_ShemagOpen_tan";
     };
 
     class AAR : Rifleman {
-        backpack = "B_Carryall_khk";
-        headGear = "H_Cap_tan";
+        uniform = "CUP_U_B_GER_Tropentarn_2";
     };
 
     class RAT : Rifleman {
     };
 
     class MMGG : AR {
-        backpack = "B_Carryall_khk";
     };
 
     class MMGAG : AAR {
+        goggles = "CUP_G_PMC_RadioHeadset";
     };
 
     class HMGG : AR {
     };
 
     class HMGAG : AAR {
+        headGear = "CUP_H_OpsCore_Covered_Tropen";
     };
 
     class HMGAC : AAR {
     };
 
     class MATG : RAT {
-        backpack = "B_Carryall_khk";
     };
 
     class MATAG : AAR {
+        headGear = "CUP_H_OpsCore_Covered_Tropen";
     };
 
     class MATAC : MATAG {
     };
 
     class HATG : RAT {
-        backpack = "B_Carryall_khk";
     };
 
     class HATAG : AAR {
+        headGear = "CUP_H_OpsCore_Covered_Tropen";
     };
 
     class HATAC : HATAG {
@@ -96,16 +90,17 @@ class CUP_KSK_DE {
     };
 
     class DHATAG : AAR {
+        headGear = "CUP_H_OpsCore_Covered_Tropen";
     };
 
     class DHATAC : AAR {
     };
 
     class SAMG : AR {
-        backpack = "B_Carryall_khk";
     };
 
     class SAMAG : AAR {
+        headGear = "CUP_H_OpsCore_Covered_Tropen";
     };
 
     class SAMAC : AAR {
@@ -115,6 +110,7 @@ class CUP_KSK_DE {
     };
 
     class GMGAG : AAR {
+        headGear = "CUP_H_OpsCore_Covered_Tropen";
     };
 
     class GMGAC : AAR {
@@ -124,24 +120,25 @@ class CUP_KSK_DE {
     };
 
     class MTRAG : AAR {
+        headGear = "CUP_H_OpsCore_Covered_Tropen";
     };
 
     class MTRAC : AAR {
     };
 
     class ENG : Rifleman {
+        headGear = "CUP_H_OpsCore_Covered_Tropen";
         uniform = "CUP_U_B_GER_Tropentarn_2";
-        backpack = "B_Carryall_khk";
     };
 
     class ENGA : ENG {
+        goggles = "";
     };
 
     class SN : Rifleman {
-        headGear = "CUP_H_PMC_PRR_Headset";
+        headGear = "CUP_H_Ger_Boonie_desert";
         uniform = "CUP_U_B_GER_Tropentarn_2";
-        vest = "CUP_V_B_GER_Carrier_Rig_ARM";
-        backpack = "B_AssaultPack_rgr";
+        vest = "CUP_V_B_GER_Tactical_Trop";
     };
 
     class SP : SN {
@@ -157,14 +154,12 @@ class CUP_KSK_DE {
     };
 
     class P : Crew {
-        uniform = "CUP_U_B_USMC_PilotOverall";
-        headGear = "CUP_H_USMC_Helmet_Pilot";
-        vest = "CUP_V_B_PilotVest_ARM";
+        headGear = "H_PilotHelmetHeli_B";
         backpack = "B_Parachute";
-        goggles = "G_Aviator";
     };
 
     class PCM : P {
+        headGear = "H_CrewHelmetHeli_B";
     };
 
 };
