@@ -1,25 +1,25 @@
-class GER_WD {
+class CUP_GER_WD {
     class Rifleman {
-        headGear = "MNP_Helmet_Germany";
+        headGear = "CUP_H_Ger_M92_Cover";
         goggles = "";
-        uniform = "MNP_CombatUniform_Germany";
-        vest = "MNP_Vest_Germany_2_ARM";
-        backpack = "B_Kitbag_rgr";
+        uniform = "CUP_U_B_GER_Flecktarn_1";
+        vest = "CUP_V_B_GER_PVest3";
+        backpack = "CUP_B_GER_Pack_Flecktarn";
     };
 
     class Leader : Rifleman {
-        uniform = "MNP_CombatUniform_Germany_S";
-        vest = "MNP_Vest_Germany_ARM";
+        uniform = "CUP_U_B_GER_Flecktarn_2";
+        vest = "CUP_V_B_GER_PVest2";
     };
 
     class Officer : Leader {
+        headGear = "CUP_H_Ger_Beret_Grn";
     };
 
     class Crew : Rifleman {
-        headGear = "H_HelmetCrew_I";
-        uniform = "MNP_CombatUniform_Germany_S";
-        vest = "V_BandollierB_rgr_ARM";
-        backpack = "B_AssaultPack_rgr";
+        headGear = "CUP_H_USMC_ACVC_WDL";
+        uniform = "CUP_U_B_GER_Flecktarn_1";
+        vest = "CUP_V_B_GER_Tactical_Fleck";
     };
 
     class CO : Officer {
@@ -32,63 +32,64 @@ class GER_WD {
     };
 
     class Medic : Rifleman {
-        backpack = "B_Carryall_oli";
     };
 
     class FTL : Leader {
+        goggles = "CUP_G_PMC_RadioHeadset";
     };
 
     class AR : Rifleman {
-        uniform = "MNP_CombatUniform_Germany_S";
     };
 
     class AAR : Rifleman {
-        backpack = "B_Carryall_oli";
+        uniform = "CUP_U_B_GER_Flecktarn_2";
     };
 
     class RAT : Rifleman {
     };
 
     class MMGG : AR {
-        backpack = "B_Carryall_oli";
     };
 
     class MMGAG : AAR {
+        goggles = "CUP_G_PMC_RadioHeadset";
     };
 
     class HMGG : AR {
     };
 
     class HMGAG : AAR {
+        goggles = "CUP_G_PMC_RadioHeadset";
     };
 
     class HMGAC : AAR {
     };
 
     class MATG : RAT {
-        backpack = "B_Carryall_oli";
     };
 
     class MATAG : AAR {
+        goggles = "CUP_G_PMC_RadioHeadset";
     };
 
     class MATAC : MATAG {
     };
 
     class HATG : RAT {
-        backpack = "B_Carryall_oli";
     };
 
     class HATAG : AAR {
+        goggles = "CUP_G_PMC_RadioHeadset";
     };
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
     class DHATAG : AAR {
+        goggles = "CUP_G_PMC_RadioHeadset";
     };
 
     class DHATAC : AAR {
@@ -98,6 +99,7 @@ class GER_WD {
     };
 
     class SAMAG : AAR {
+        goggles = "CUP_G_PMC_RadioHeadset";
     };
 
     class SAMAC : AAR {
@@ -107,6 +109,7 @@ class GER_WD {
     };
 
     class GMGAG : AAR {
+        goggles = "CUP_G_PMC_RadioHeadset";
     };
 
     class GMGAC : AAR {
@@ -116,25 +119,25 @@ class GER_WD {
     };
 
     class MTRAG : AAR {
+        goggles = "CUP_G_PMC_RadioHeadset";
     };
 
     class MTRAC : AAR {
     };
 
     class ENG : Rifleman {
-        uniform = "MNP_CombatUniform_Germany_S";
-        backpack = "B_Carryall_oli";
+        goggles = "CUP_G_PMC_RadioHeadset";
+        uniform = "CUP_U_B_GER_Flecktarn_2";
     };
 
     class ENGA : ENG {
+        goggles = "";
     };
 
     class SN : Rifleman {
-        headGear = "MNP_Boonie_GER_T";
-        goggles = "G_Bandanna_oli";
-        uniform = "MNP_CombatUniform_Germany_S";
-        vest = "V_BandollierB_rgr_ARM";
-        backpack = "B_AssaultPack_rgr";
+        headGear = "CUP_H_Ger_Boonie_Flecktarn";
+        uniform = "CUP_U_B_GER_Flecktarn_2";
+        vest = "CUP_V_B_GER_Tactical_Fleck";
     };
 
     class SP : SN {
@@ -150,12 +153,12 @@ class GER_WD {
     };
 
     class P : Crew {
-        headGear = "H_PilotHelmetHeli_O";
-        uniform = "MNP_CombatUniform_Germany";
-        vest = "V_TacVest_oli_ARM";
+        headGear = "H_PilotHelmetHeli_B";
         backpack = "B_Parachute";
     };
 
     class PCM : P {
+        headGear = "H_CrewHelmetHeli_B";
     };
+
 };

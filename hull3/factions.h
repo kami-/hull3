@@ -441,9 +441,9 @@ class Faction {
         };
     };
 
-    class MNP_GE_WD {
+    class CUP_GER_WD {
         gear = "G36_GER";
-        uniform = "GER_WD";
+        uniform = "CUP_GER_WD";
         name = "German Army Woodland";
         description = "Flecktarn uniforms with G36's";
         languages[] = {{"west", 100}};
@@ -451,9 +451,9 @@ class Faction {
         camouflage[] = {"woodland"};
         rolePrefix = "German Army";
         vehicleClassnames[] = {
-            {"CO", "CUP_B_Dingo_GER_Wdl"},
-            {"SL", "CUP_B_Dingo_GER_Wdl"},
-            {"FT", "CUP_B_Dingo_GER_Wdl"},
+            {"CO", "CUP_B_FENNEK_GER_Wdl"},
+            {"SL", "CUP_B_FENNEK_GER_Wdl"},
+            {"FT", "CUP_B_FENNEK_GER_Wdl"},
             {"ATTCH", "gm_demo_nato_mb_u1300l_cargo"},
             {"ENG", "B_Truck_01_Repair_F"},
             {"APC", "B_APC_Tracked_01_rcws_F"},
@@ -467,9 +467,9 @@ class Faction {
         };
     };
 
-    class MNP_GE_DE {
+    class CUP_GER_DE {
         gear = "G36_GER";
-        uniform = "GER_DE";
+        uniform = "CUP_GER_DE";
         name = "German Army Desert";
         description = "Tropentarn uniforms with G36's";
         languages[] = {{"west", 100}};
@@ -477,15 +477,15 @@ class Faction {
         camouflage[] = {"desert"};
         rolePrefix = "German Army";
         vehicleClassnames[] = {
-            {"CO", "CUP_B_Dingo_GER_Des"},
-            {"SL", "CUP_B_Dingo_GER_Des"},
-            {"FT", "CUP_B_Dingo_GER_Des"},
+            {"CO", "CUP_B_FENNEK_GER_Des"},
+            {"SL", "CUP_B_FENNEK_GER_Des"},
+            {"FT", "CUP_B_FENNEK_GER_Des"},
             {"ATTCH", "gm_demo_nato_mb_u1300l_cargo"},
             {"ENG", "B_Truck_01_Repair_F"},
             {"APC", "B_APC_Tracked_01_rcws_F"},
             {"IFV", "ARK_M113_USA_OD"},
             {"SPAAG", "I_LT_01_AA_F"},
-            {"TNK", "CUP_B_Leopard2A6_GER"},
+            {"TNK", "CUP_B_Leopard2A6DST_GER"},
             {"TH", "CUP_B_UH1D_GER_KSK_Des"},
             {"AH", "CUP_B_UH1D_gunship_GER_KSK_Des"},
             {"CAS", "B_Plane_CAS_01_F"},
@@ -503,9 +503,9 @@ class Faction {
         camouflage[] = {"woodland"};
         rolePrefix = "German KSK";
         vehicleClassnames[] = {
-            {"CO", "CUP_B_Dingo_GER_Wdl"},
-            {"SL", "CUP_B_Dingo_GER_Wdl"},
-            {"FT", "CUP_B_Dingo_GER_Wdl"},
+            {"CO", "CUP_B_FENNEK_GER_Wdl"},
+            {"SL", "CUP_B_FENNEK_GER_Wdl"},
+            {"FT", "CUP_B_FENNEK_GER_Wdl"},
             {"ATTCH", "gm_demo_nato_mb_u1300l_cargo"},
             {"ENG", "B_Truck_01_Repair_F"},
             {"APC", "B_APC_Tracked_01_rcws_F"},
@@ -529,15 +529,15 @@ class Faction {
         camouflage[] = {"desert"};
         rolePrefix = "German KSK";
         vehicleClassnames[] = {
-            {"CO", "CUP_B_Dingo_GER_Des"},
-            {"SL", "CUP_B_Dingo_GER_Des"},
-            {"FT", "CUP_B_Dingo_GER_Des"},
+            {"CO", "CUP_B_FENNEK_GER_Des"},
+            {"SL", "CUP_B_FENNEK_GER_Des"},
+            {"FT", "CUP_B_FENNEK_GER_Des"},
             {"ATTCH", "gm_demo_nato_mb_u1300l_cargo"},
             {"ENG", "B_Truck_01_Repair_F"},
             {"APC", "B_APC_Tracked_01_rcws_F"},
             {"IFV", "ARK_M113_USA_OD"},
             {"SPAAG", "I_LT_01_AA_F"},
-            {"TNK", "CUP_B_Leopard2A6_GER"},
+            {"TNK", "CUP_B_Leopard2A6DST_GER"},
             {"TH", "CUP_B_UH1D_GER_KSK_Des"},
             {"AH", "CUP_B_UH1D_gunship_GER_KSK_Des"},
             {"CAS", "B_Plane_CAS_01_F"},
