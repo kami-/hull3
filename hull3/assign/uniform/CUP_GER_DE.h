@@ -18,8 +18,9 @@ class CUP_GER_DE {
 
     class Crew : Rifleman {
         headGear = "CUP_H_USMC_ACVC_DES";
-        uniform = "CUP_U_B_GER_Tropentarn_1";
+        uniform = "CUP_U_B_GER_Overalls_Tank";
         vest = "CUP_V_B_GER_Tactical_Trop";
+        backpack = "CUP_B_GER_Medic_Tropentarn";
     };
 
     class CO : Officer {
@@ -138,6 +139,7 @@ class CUP_GER_DE {
         headGear = "CUP_H_Ger_Boonie_desert";
         uniform = "CUP_U_B_GER_Tropentarn_2";
         vest = "CUP_V_B_GER_Tactical_Trop";
+        bacpack = "CUP_B_GER_Medic_Tropentarn";
     };
 
     class SP : SN {
@@ -154,6 +156,7 @@ class CUP_GER_DE {
 
     class P : Crew {
         headGear = "H_PilotHelmetHeli_B";
+        uniform = "CUP_U_B_GER_Fleck_Overalls_Pilot";
         backpack = "B_Parachute";
     };
 
