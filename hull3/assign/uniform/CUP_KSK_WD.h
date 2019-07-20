@@ -2,14 +2,13 @@ class CUP_KSK_WD {
     class Rifleman {
         headGear = "CUP_H_OpsCore_Covered_Fleck_NoHS";
         goggles = "";
-        uniform = "CUP_U_B_GER_Flecktarn_1";
-        vest = "CUP_V_B_GER_PVest3";
+        uniform = "CUP_U_B_GER_Fleck_Crye";
+        vest = "CUP_V_B_GER_Carrier_Vest_ARM";
         backpack = "CUP_B_GER_Pack_Flecktarn";
     };
 
     class Leader : Rifleman {
-        uniform = "CUP_U_B_GER_Flecktarn_2";
-        vest = "CUP_V_B_GER_PVest2";
+        uniform = "CUP_U_B_GER_Fleck_Crye2";
     };
 
     class Officer : Leader {
@@ -19,8 +18,9 @@ class CUP_KSK_WD {
 
     class Crew : Rifleman {
         headGear = "CUP_H_USMC_ACVC_WDL";
-        uniform = "CUP_U_B_GER_Flecktarn_1";
+        uniform = "CUP_U_B_GER_Fleck_Overalls_Tank";
         vest = "CUP_V_B_GER_Tactical_Fleck";
+        backpack = "CUP_B_GER_Medic_FLecktarn";
     };
 
     class CO : Officer {
@@ -43,7 +43,7 @@ class CUP_KSK_WD {
     };
 
     class AAR : Rifleman {
-        uniform = "CUP_U_B_GER_Flecktarn_2";
+        uniform = "CUP_U_B_GER_Fleck_Crye2";
     };
 
     class RAT : Rifleman {
@@ -128,7 +128,7 @@ class CUP_KSK_WD {
 
     class ENG : Rifleman {
         headGear = "CUP_H_OpsCore_Covered_Fleck";
-        uniform = "CUP_U_B_GER_Flecktarn_2";
+        uniform = "CUP_U_B_GER_Fleck_Crye2";
     };
 
     class ENGA : ENG {
@@ -137,8 +137,8 @@ class CUP_KSK_WD {
 
     class SN : Rifleman {
         headGear = "CUP_H_Ger_Boonie_Flecktarn";
-        uniform = "CUP_U_B_GER_Flecktarn_2";
-        vest = "CUP_V_B_GER_Tactical_Fleck";
+        uniform = "CUP_U_B_GER_Fleck_Crye2";
+        backpack = "CUP_B_GER_Medic_FLecktarn";
     };
 
     class SP : SN {
@@ -155,6 +155,7 @@ class CUP_KSK_WD {
 
     class P : Crew {
         headGear = "H_PilotHelmetHeli_B";
+        uniform = "CUP_U_B_GER_Fleck_Overalls_Pilot";
         backpack = "B_Parachute";
     };
 
