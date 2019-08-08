@@ -273,20 +273,20 @@ hull3_gear_fnc_assignVehicleItems = {
 };
 
 hull3_gear_fnc_tryAssignRadios = {
-    FUN_ARGS_1(_unit);
+    params ["_unit"];
 
     if (_unit getVariable ["hull3_gear_radiosAssigned", false]) exitWith {};
-    private ["_gearTemplate", "_gearClass"];
-    _gearTemplate = _unit getVariable ["hull3_gear_template", DEFAULT_TEMPLATE_NAME];
-    _gearClass = _unit getVariable ["hull3_gear_class", hull3_gear_unitBaseClass];
+
+    private _gearTemplate = _unit getVariable ["hull3_gear_template", DEFAULT_TEMPLATE_NAME];
+    private _gearClass = _unit getVariable ["hull3_gear_class", hull3_gear_unitBaseClass];
     [_unit] call hull3_gear_fnc_removeRadios;
-    DECLARE(_assignables) = [
+    private _assignables = [
         ["uniformRadios",           CONFIG_TYPE_ARRAY,      "uniform",                  ASSIGN_UNIFORM_ITEM_FUNC,           CAN_ASSIGN_UNIFORM_ITEM_FUNC,           hull3_gear_fnc_assignSingleItemArray],
         ["vestRadios",              CONFIG_TYPE_ARRAY,      "vest",                     ASSIGN_VEST_ITEM_FUNC,              CAN_ASSIGN_VEST_ITEM_FUNC,              hull3_gear_fnc_assignSingleItemArray],
         ["backpackRadios",          CONFIG_TYPE_ARRAY,      "backpack",                 ASSIGN_BACKPACK_ITEM_FUNC,          CAN_ASSIGN_BACKPACK_ITEM_FUNC,          hull3_gear_fnc_assignSingleItemArray]
     ];
     {
-        DECLARE(_configValue) = [TYPE_CLASS_GEAR, _gearTemplate, _gearClass, _x select 0] call (CONFIG_TYPE_FUNCTIONS select (_x select 1));
+        private _configValue = [TYPE_CLASS_GEAR, _gearTemplate, _gearClass, _x select 0] call (CONFIG_TYPE_FUNCTIONS select (_x select 1));
         // ADD ACRE2 preset stuff here?
         [_x select 0, _unit, _configValue, _x select 2, _x select 3, _x select 4, _gearTemplate, _gearClass] call (_x select 5);
     } foreach _assignables;
@@ -296,9 +296,13 @@ hull3_gear_fnc_tryAssignRadios = {
 };
 
 hull3_gear_fnc_removeRadios = {
-    FUN_ARGS_1(_unit);
+    params ["_unit"];
 
     private _radios = [] call acre_api_fnc_getCurrentRadioList;
+    if (_radios isEqualTo []) exitWith {
+        DEBUG("hull3.gear.assign.acre",FMT_1("No radios required removing for '%1'.",_unit));
+    };
+
     DEBUG("hull3.gear.assign.acre",FMT_2("Removing radios from '%1' from unit '%2'.",_radios,_unit));
     {
         _unit removeItem _x;
