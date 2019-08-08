@@ -181,6 +181,7 @@ hull3_acre_fnc_setRadioChannels = {
     [
         {(_this #0) getVariable ["hull3_gear_radiosAssigned", false] && {call acre_api_fnc_isInitialized} },
         {
+            private _unit = (_this #0);
             private _defaultShortRangeChannel = ["ACRE", "ShortRange", "defaultChannel"] call hull3_config_fnc_getNumber;
             private _shortRangeChannelAssignments = ["ACRE", "ShortRange", "channels"] call hull3_config_fnc_getBothArray;
             private _shortRangeRadios = ["ACRE", "ShortRange", "radios"] call hull3_config_fnc_getArray;
@@ -197,12 +198,12 @@ hull3_acre_fnc_setRadioChannels = {
                     _channelAssignments = _longRangeChannelAssignments;
                     _defaultChannel = _defaultLongRangeChannel;
                 };
-                private _channel = [(_this #0), _channelAssignments, _defaultChannel] call hull3_acre_fnc_getRadioChannelFromGroupId;
+                private _channel = [_unit, _channelAssignments, _defaultChannel] call hull3_acre_fnc_getRadioChannelFromGroupId;
                 [_x, _channel] call acre_api_fnc_setRadioChannel;
             } foreach (call acre_api_fnc_getCurrentRadioList);
 
-            ["acre.channels.set", [(_this #0)]] call hull3_event_fnc_emitEvent;
-            (_this #0) globalChat "ACRE2 radios and channels have been assigned.";
+            ["acre.channels.set", [_unit] call hull3_event_fnc_emitEvent;
+            _unit globalChat "ACRE2 radios and channels have been assigned.";
         },
         [_unit]
     ] call CBA_fnc_waitUntilAndExecute;
