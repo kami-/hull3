@@ -202,7 +202,7 @@ hull3_acre_fnc_setRadioChannels = {
                 [_x, _channel] call acre_api_fnc_setRadioChannel;
             } foreach (call acre_api_fnc_getCurrentRadioList);
 
-            ["acre.channels.set", [_unit] call hull3_event_fnc_emitEvent;
+            ["acre.channels.set", [_unit]] call hull3_event_fnc_emitEvent;
             _unit globalChat "ACRE2 radios and channels have been assigned.";
         },
         [_unit]
