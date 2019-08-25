@@ -246,7 +246,6 @@ class L85_BAF_RIS {
     };
 
     class DHATG : Rifleman {
-        primaryWeapon = "hlc_rifle_M4";
         backpack = "CUP_B_Tow_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
