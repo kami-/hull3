@@ -77,14 +77,14 @@ class HK416_KSK {
     };
 
     class Crew : Rifleman {
-        primaryWeapon = "CUP_arifle_HK416_CQB_Black";
-        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
+        primaryWeapon = "CUP_smg_MP7";
+        primaryWeaponItems[] = {"CUP_acc_Flashlight", "CUP_optic_MicroT1_low"};
         uniformMagazines[] = {
             {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
-        vestMagazines[] = {{"CUP_30Rnd_556x45_Emag", 4}};
+        vestMagazines[] = {{"CUP_40Rnd_46x30_MP7", 4}};
         backpackMagazines[] = {};
         assignItems[] = {"ItemGPS", "ACE_NVG_Wide"};
     };
@@ -130,13 +130,13 @@ class HK416_KSK {
     };
 
     class AR : Rifleman {
-        primaryWeapon = "hlc_lmg_MG3";
+        primaryWeapon = "CUP_lmg_MG3";
         primaryWeaponItems[] = {};
-        vestMagazines[] = {{"hlc_100Rnd_762x51_M_MG3", 2}};
+        vestMagazines[] = {{"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 2}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_100Rnd_762x51_M_MG3", 4}
+            {"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 4}
         };
     };
 
@@ -144,7 +144,7 @@ class HK416_KSK {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_100Rnd_762x51_M_MG3", 2}
+            {"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 2}
         };
         binocular = "Binocular";
     };
@@ -165,13 +165,13 @@ class HK416_KSK {
     };
 
     class MMGG : Rifleman {
-        primaryWeapon = "hlc_lmg_MG3";
+        primaryWeapon = "CUP_lmg_MG3";
         primaryWeaponItems[] = {};
-        vestMagazines[] = {{"hlc_250Rnd_762x51_M_MG3", 1}};
+        vestMagazines[] = {{"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 1}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_250Rnd_762x51_M_MG3", 2}
+            {"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 2}
         };
     };
 
@@ -179,7 +179,7 @@ class HK416_KSK {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_250Rnd_762x51_M_MG3", 2}
+            {"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 2}
         };
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
@@ -403,7 +403,7 @@ class HK416_KSK {
         magazines[] = {
             {"CUP_30Rnd_556x45_Emag", 15},
             {"CUP_30Rnd_556x45_Emag_Tracer_Red", 15},
-            {"hlc_100Rnd_762x51_M_MG3", 10},
+            {"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"CUP_1Rnd_Smoke_M203", 5},
             {"CUP_FlareWhite_M203", 5},
             {"ACE_HandFlare_White", 5},
@@ -428,8 +428,7 @@ class HK416_KSK {
         magazines[] = {
             {"CUP_30Rnd_556x45_Emag", 40},
             {"CUP_30Rnd_556x45_Emag_Tracer_Red", 20},
-            {"hlc_100Rnd_762x51_M_MG3", 20},
-            {"hlc_250Rnd_762x51_M_MG3", 10},
+            {"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 30},
             {"CUP_1Rnd_Smoke_M203", 10},
             {"CUP_FlareWhite_M203", 10},
             {"MRAWS_HEAT_F", 5},
@@ -452,8 +451,7 @@ class HK416_KSK {
         magazines[] = {
             {"CUP_30Rnd_556x45_Emag", 40},
             {"CUP_30Rnd_556x45_Emag_Tracer_Red", 20},
-            {"hlc_100Rnd_762x51_M_MG3", 20},
-            {"hlc_250Rnd_762x51_M_MG3", 10},
+            {"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 30},
             {"CUP_1Rnd_Smoke_M203", 10},
             {"CUP_FlareWhite_M203", 10},
             {"MRAWS_HEAT_F", 5},

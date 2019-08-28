@@ -79,14 +79,14 @@ class G3KA4_NOR {
     };
 
     class Crew : Rifleman {
-        primaryWeapon = "hlc_smg_MP5N";
-        primaryWeaponItems[] = {};
+        primaryWeapon = "CUP_smg_MP7";
+        primaryWeaponItems[] = {"CUP_acc_Flashlight", "CUP_optic_MicroT1_low"};
         uniformMagazines[] = {
             {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
-        vestMagazines[] = {{"hlc_30Rnd_9x19_B_MP5", 4}};
+        vestMagazines[] = {{"CUP_40Rnd_46x30_MP7", 4}};
         backpackMagazines[] = {};
         assignItems[] = {"ItemGPS", "ACE_NVG_Wide"};
     };
@@ -133,21 +133,17 @@ class G3KA4_NOR {
     };
 
     class AR : Rifleman {
-        primaryWeapon = "hlc_lmg_MG3";
+        primaryWeapon = "CUP_lmg_MG3";
         primaryWeaponItems[] = {};
-        vestMagazines[] = {{"hlc_100Rnd_762x51_M_MG3", 2}};
-        backpackMagazines[] = {
-            {"hlc_100Rnd_762x51_M_MG3", 2},
-            {"hlc_100Rnd_762x51_T_MG3", 2}
-        };
+        vestMagazines[] = {{"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 2}};
+        backpackMagazines[] = {{"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 4}};
     };
 
     class AAR : Rifleman {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_100Rnd_762x51_M_MG3", 2},
-            {"hlc_100Rnd_762x51_T_MG3", 2}
+            {"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 4}
         };
         binocular = "Binocular";
     };
@@ -167,14 +163,13 @@ class G3KA4_NOR {
     };
 
     class MMGG : Rifleman {
-        primaryWeapon = "hlc_lmg_MG3";
+        primaryWeapon = "CUP_lmg_MG3";
         primaryWeaponItems[] = {};
-        vestMagazines[] = {{"hlc_100Rnd_762x51_M_MG3", 2}};
+        vestMagazines[] = {{"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 2}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_100Rnd_762x51_M_MG3", 2},
-            {"hlc_100Rnd_762x51_T_MG3", 2}
+            {"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 4}
         };
     };
 
@@ -182,8 +177,7 @@ class G3KA4_NOR {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_100Rnd_762x51_M_MG3", 2},
-            {"hlc_100Rnd_762x51_T_MG3", 2}
+            {"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 4}
         };
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
@@ -407,7 +401,7 @@ class G3KA4_NOR {
         magazines[] = {
             {"hlc_20rnd_762x51_T_G3", 10},
             {"hlc_20rnd_762x51_b_G3", 20},
-            {"hlc_100Rnd_762x51_M_MG3", 10},
+            {"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"UGL_FlareWhite_F", 5},
             {"ACE_HandFlare_White", 5},
@@ -432,8 +426,7 @@ class G3KA4_NOR {
         magazines[] = {
             {"hlc_20rnd_762x51_T_G3", 20},
             {"hlc_20rnd_762x51_b_G3", 40},
-            {"hlc_100Rnd_762x51_M_MG3", 20},
-            {"hlc_100Rnd_762x51_M_MG3", 10},
+            {"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 30},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
             {"MRAWS_HEAT_F", 5},
@@ -456,8 +449,7 @@ class G3KA4_NOR {
         magazines[] = {
             {"hlc_20rnd_762x51_T_G3", 20},
             {"hlc_20rnd_762x51_b_G3", 40},
-            {"hlc_100Rnd_762x51_M_MG3", 20},
-            {"hlc_100Rnd_762x51_M_MG3", 10},
+            {"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 30},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
             {"MRAWS_HEAT_F", 5},
