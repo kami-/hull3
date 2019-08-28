@@ -159,7 +159,8 @@ class CAR95_CN {
     class RAT : Rifleman {
         primaryWeapon = "arifle_CTAR_blk_F";
         primaryWeaponItems[] = {"CUP_acc_Flashlight"};
-        secondaryWeapon = "CUP_launch_RPG18";
+        secondaryWeapon = "CUP_launch_RPG7V";
+        secondaryWeaponItems[] = {"CUP_PG7V_M"};
         vestMagazines[] = {
             {"30Rnd_580x42_Mag_F", 6},
             {"30Rnd_580x42_Mag_Tracer_F", 2}
@@ -169,8 +170,7 @@ class CAR95_CN {
             {"SmokeShell", 1},
             {"30Rnd_580x42_Mag_F", 4},
             {"30Rnd_580x42_Mag_Tracer_F", 2},
-            {"30Rnd_580x42_Mag_F", 4},
-            {"30Rnd_580x42_Mag_Tracer_F", 2}
+            {"CUP_PG7V_M", 2}
         };
     };
 
@@ -222,20 +222,18 @@ class CAR95_CN {
     };
 
     class MATG : RAT {
-        secondaryWeapon = "CUP_launch_RPG7V";
-        secondaryWeaponItems[] = {"CUP_PG7VL_M", "CUP_optic_PGO7V3"};
+        secondaryWeapon = "launch_RPG32_green_F";
+        secondaryWeaponItems[] = {"RPG32_F"};
         backpackMagazines[] = {
-            {"CUP_PG7VL_M", 2},
-            {"CUP_PG7VR_M", 1},
-            {"CUP_OG7_M", 1}
+            {"RPG32_F", 2},
+            {"RPG32_HE_F", 1}
         };
     };
 
     class MATAG : Rifleman {
         backpackMagazines[] = {
-            {"CUP_PG7VL_M", 2},
-            {"CUP_PG7VR_M", 1},
-            {"CUP_OG7_M", 1}
+            {"RPG32_F", 2},
+            {"RPG32_HE_F", 1}
         };
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
@@ -459,7 +457,7 @@ class CAR95_CN {
             {"UGL_FlareWhite_F", 10},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
-            {"CUP_PG7VL_M", 5},
+            {"RPG32_F", 5},
             {"CUP_PG7V_M", 5},
             {"CUP_AT13_M", 5},
             {"HandGrenade", 10},
@@ -482,7 +480,7 @@ class CAR95_CN {
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
-            {"CUP_PG7VL_M", 5},
+            {"RPG32_F", 5},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
             {"HandGrenade", 10},
