@@ -53,9 +53,9 @@ class M4_US {
         handgunWeapon = "CUP_hgun_M9";
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 6},
-            {"1Rnd_HE_Grenade_shell", 4},
-            {"1Rnd_Smoke_Grenade_shell", 2},
-            {"1Rnd_SmokeRed_Grenade_shell", 2},
+            {"CUP_1Rnd_HE_M203", 4},
+            {"CUP_1Rnd_Smoke_M203", 2},
+            {"CUP_1Rnd_SmokeRed_M203", 2},
             {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2},
             {"CUP_15Rnd_9x19_M9", 3}
         };
@@ -64,9 +64,9 @@ class M4_US {
             {"SmokeShell", 1},
             {"CUP_30Rnd_556x45_Stanag", 4},
             {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2},
-            {"1Rnd_Smoke_Grenade_shell", 2},
-            {"1Rnd_SmokeRed_Grenade_shell", 2},
-            {"UGL_FlareWhite_F", 2}
+            {"CUP_1Rnd_Smoke_M203", 2},
+            {"CUP_1Rnd_SmokeRed_M203", 2},
+            {"CUP_FlareWhite_M203", 2}
         };
         assignItems[] = {"ItemGPS"};
         binocular = "Binocular";
@@ -94,8 +94,8 @@ class M4_US {
 
     class XO : CO {
         backpackMagazines[] = {
-            {"1Rnd_Smoke_Grenade_shell", 8},
-            {"1Rnd_SmokeRed_Grenade_shell", 8}
+            {"CUP_1Rnd_Smoke_M203", 8},
+            {"CUP_1Rnd_SmokeRed_M203", 8}
         };
         backpackRadios[] = {"ACRE_PRC117F"};
     };
@@ -397,8 +397,8 @@ class M4_US {
             {"CUP_30Rnd_556x45_Stanag", 20},
             {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 10},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 10},
-            {"1Rnd_Smoke_Grenade_shell", 5},
-            {"UGL_FlareWhite_F", 5},
+            {"CUP_1Rnd_Smoke_M203", 5},
+            {"CUP_FlareWhite_M203", 5},
             {"ACE_HandFlare_White", 5},
             {"HandGrenade", 5},
             {"SmokeShell", 5}
@@ -423,8 +423,8 @@ class M4_US {
             {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 20},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
-            {"1Rnd_Smoke_Grenade_shell", 10},
-            {"UGL_FlareWhite_F", 10},
+            {"CUP_1Rnd_Smoke_M203", 10},
+            {"CUP_FlareWhite_M203", 10},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
             {"MRAWS_HEAT_F", 5},
@@ -447,8 +447,8 @@ class M4_US {
             {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 20},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
-            {"1Rnd_Smoke_Grenade_shell", 10},
-            {"UGL_FlareWhite_F", 10},
+            {"CUP_1Rnd_Smoke_M203", 10},
+            {"CUP_FlareWhite_M203", 10},
             {"MRAWS_HEAT_F", 5},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},

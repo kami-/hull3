@@ -53,9 +53,9 @@ class SCAR_H_US {
         handgunWeapon = "CUP_hgun_M9";
         vestMagazines[] = {
             {"CUP_20Rnd_762x51_B_SCAR", 4},
-            {"1Rnd_HE_Grenade_shell", 4},
-            {"1Rnd_Smoke_Grenade_shell", 2},
-            {"1Rnd_SmokeRed_Grenade_shell", 2},
+            {"CUP_1Rnd_HE_M203", 4},
+            {"CUP_1Rnd_Smoke_M203", 2},
+            {"CUP_1Rnd_SmokeRed_M203", 2},
             {"CUP_20Rnd_TE1_Red_Tracer_762x51_SCAR", 2},
             {"CUP_15Rnd_9x19_M9", 3}
         };
@@ -64,9 +64,9 @@ class SCAR_H_US {
             {"SmokeShell", 1},
             {"CUP_20Rnd_762x51_B_SCAR", 6},
             {"CUP_20Rnd_TE1_Red_Tracer_762x51_SCAR", 2},
-            {"1Rnd_Smoke_Grenade_shell", 2},
-            {"1Rnd_SmokeRed_Grenade_shell", 2},
-            {"UGL_FlareWhite_F", 2}
+            {"CUP_1Rnd_Smoke_M203", 2},
+            {"CUP_1Rnd_SmokeRed_M203", 2},
+            {"CUP_FlareWhite_M203", 2}
         };
         assignItems[] = {"ItemGPS"};
         binocular = "Binocular";
@@ -96,8 +96,8 @@ class SCAR_H_US {
 
     class XO : CO {
         backpackMagazines[] = {
-            {"1Rnd_Smoke_Grenade_shell", 8},
-            {"1Rnd_SmokeRed_Grenade_shell", 8}
+            {"CUP_1Rnd_Smoke_M203", 8},
+            {"CUP_1Rnd_SmokeRed_M203", 8}
         };
         backpackRadios[] = {"ACRE_PRC117F"};
     };
@@ -417,8 +417,8 @@ class SCAR_H_US {
             {"CUP_20Rnd_762x51_B_SCAR", 20},
             {"CUP_20Rnd_TE1_Red_Tracer_762x51_SCAR", 10},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
-            {"1Rnd_Smoke_Grenade_shell", 5},
-            {"UGL_FlareWhite_F", 5},
+            {"CUP_1Rnd_Smoke_M203", 5},
+            {"CUP_FlareWhite_M203", 5},
             {"ACE_HandFlare_White", 5},
             {"HandGrenade", 5},
             {"SmokeShell", 5}
@@ -443,8 +443,8 @@ class SCAR_H_US {
             {"CUP_20Rnd_TE1_Red_Tracer_762x51_SCAR", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
-            {"1Rnd_Smoke_Grenade_shell", 10},
-            {"UGL_FlareWhite_F", 10},
+            {"CUP_1Rnd_Smoke_M203", 10},
+            {"CUP_FlareWhite_M203", 10},
             {"SatchelCharge_Remote_Mag", 5},
             {"MRAWS_HEAT_F", 5},
             {"CUP_Javelin_M", 5},
@@ -467,8 +467,8 @@ class SCAR_H_US {
             {"CUP_20Rnd_TE1_Red_Tracer_762x51_SCAR", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
-            {"1Rnd_Smoke_Grenade_shell", 10},
-            {"UGL_FlareWhite_F", 10},
+            {"CUP_1Rnd_Smoke_M203", 10},
+            {"CUP_FlareWhite_M203", 10},
             {"MRAWS_HEAT_F", 5},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},

@@ -55,7 +55,7 @@ class AKS74_CDF {
             {"CUP_30Rnd_545x39_AK_M", 4},
             {"CUP_1Rnd_HE_GP25_M", 4},
             {"CUP_1Rnd_SMOKE_GP25_M", 2},
-            {"CUP_1Rnd_SMOKE_GP25_M", 2},
+            {"CUP_1Rnd_SmokeRed_GP25_M", 2},
             {"CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK_M", 2},
             {"CUP_8Rnd_9x18_Makarov_M", 3}
         };
@@ -66,7 +66,7 @@ class AKS74_CDF {
             {"CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK_M", 2},
             {"CUP_FlareWhite_GP25_M", 2},
             {"CUP_1Rnd_SMOKE_GP25_M", 2},
-            {"CUP_1Rnd_SMOKE_GP25_M", 2}
+            {"CUP_1Rnd_SmokeRed_GP25_M", 2}
         };
         assignItems[] = {"ItemGPS"};
         binocular = "Binocular";

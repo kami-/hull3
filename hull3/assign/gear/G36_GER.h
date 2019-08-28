@@ -52,9 +52,9 @@ class G36_GER {
         primaryWeaponItems[] = {"RH_compM2l", "CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_G36", 6},
-            {"1Rnd_HE_Grenade_shell", 4},
-            {"1Rnd_Smoke_Grenade_shell", 2},
-            {"1Rnd_SmokeRed_Grenade_shell", 2},
+            {"CUP_1Rnd_HE_M203", 4},
+            {"CUP_1Rnd_Smoke_M203", 2},
+            {"CUP_1Rnd_SmokeRed_M203", 2},
             {"CUP_30Rnd_TE1_Red_Tracer_556x45_G36", 2}
         };
         backpackMagazines[] = {
@@ -62,9 +62,9 @@ class G36_GER {
             {"SmokeShell", 1},
             {"CUP_30Rnd_556x45_G36", 4},
             {"CUP_30Rnd_TE1_Red_Tracer_556x45_G36", 2},
-            {"1Rnd_Smoke_Grenade_shell", 2},
-            {"1Rnd_SmokeRed_Grenade_shell", 2},
-            {"UGL_FlareWhite_F", 2}
+            {"CUP_1Rnd_Smoke_M203", 2},
+            {"CUP_1Rnd_SmokeRed_M203", 2},
+            {"CUP_FlareWhite_M203", 2}
         };
         assignItems[] = {"ItemGPS"};
         binocular = "Binocular";
@@ -94,8 +94,8 @@ class G36_GER {
 
     class XO : CO {
         backpackMagazines[] = {
-            {"1Rnd_Smoke_Grenade_shell", 8},
-            {"1Rnd_SmokeRed_Grenade_shell", 8}
+            {"CUP_1Rnd_Smoke_M203", 8},
+            {"CUP_1Rnd_SmokeRed_M203", 8}
         };
         backpackRadios[] = {"ACRE_PRC117F"};
     };
@@ -409,8 +409,8 @@ class G36_GER {
             {"CUP_30Rnd_556x45_G36", 20},
             {"CUP_30Rnd_TE1_Red_Tracer_556x45_G36", 10},
             {"hlc_100Rnd_762x51_M_MG3", 10},
-            {"1Rnd_Smoke_Grenade_shell", 5},
-            {"UGL_FlareWhite_F", 5},
+            {"CUP_1Rnd_Smoke_M203", 5},
+            {"CUP_FlareWhite_M203", 5},
             {"ACE_HandFlare_White", 5},
             {"HandGrenade", 5},
             {"SmokeShell", 5}
@@ -435,8 +435,8 @@ class G36_GER {
             {"CUP_30Rnd_TE1_Red_Tracer_556x45_G36", 20},
             {"hlc_100Rnd_762x51_M_MG3", 20},
             {"hlc_250Rnd_762x51_T_MG3", 10},
-            {"1Rnd_Smoke_Grenade_shell", 10},
-            {"UGL_FlareWhite_F", 10},
+            {"CUP_1Rnd_Smoke_M203", 10},
+            {"CUP_FlareWhite_M203", 10},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
             {"MRAWS_HEAT_F", 5},
@@ -459,8 +459,8 @@ class G36_GER {
             {"CUP_30Rnd_TE1_Red_Tracer_556x45_G36", 20},
             {"hlc_100Rnd_762x51_M_MG3", 20},
             {"hlc_250Rnd_762x51_T_MG3", 10},
-            {"1Rnd_Smoke_Grenade_shell", 10},
-            {"UGL_FlareWhite_F", 10},
+            {"CUP_1Rnd_Smoke_M203", 10},
+            {"CUP_FlareWhite_M203", 10},
             {"MRAWS_HEAT_F", 5},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
