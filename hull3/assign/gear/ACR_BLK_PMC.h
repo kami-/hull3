@@ -1,7 +1,7 @@
 class ACR_BLK_PMC {
     class Rifleman {
         primaryWeapon = "hlc_rifle_ACR68_full_black";
-        primaryWeaponItems[] = {"RH_compm4s", "RH_SFM952V"};
+        primaryWeaponItems[] = {"RH_compm4s", "CUP_acc_Flashlight"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -49,7 +49,7 @@ class ACR_BLK_PMC {
 
     class Leader : Rifleman {
         primaryWeapon = "hlc_rifle_ACR68_mid_black";
-        primaryWeaponItems[] = {"optic_Holosight_blk_F", "RH_SFM952V"};
+        primaryWeaponItems[] = {"optic_Holosight_blk_F", "CUP_acc_Flashlight"};
         handgunWeapon = "hlc_pistol_P226R_357Elite";
         vestMagazines[] = {
             {"hlc_30rnd_68x43_FMJ", 6},
@@ -100,7 +100,7 @@ class ACR_BLK_PMC {
 
     class Medic : Rifleman {
         primaryWeapon = "hlc_rifle_ACR68_Carb_black";
-        primaryWeaponItems[] = {"RH_compM2l", "RH_SFM952V"};
+        primaryWeaponItems[] = {"RH_compM2l", "CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"hlc_30rnd_68x43_FMJ", 6},
             {"hlc_30rnd_68x43_Tracer", 2},
@@ -126,7 +126,7 @@ class ACR_BLK_PMC {
 
     class AR : Rifleman {
         primaryWeapon = "CUP_lmg_m249_pip4";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         vestMagazines[] = {{"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 1}};
         backpackMagazines[] = {
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 2},
@@ -146,7 +146,7 @@ class ACR_BLK_PMC {
 
     class RAT : Rifleman {
         primaryWeapon = "hlc_rifle_ACR68_Carb_black";
-        primaryWeaponItems[] = {"RH_compM2l", "RH_SFM952V"};
+        primaryWeaponItems[] = {"RH_compM2l", "CUP_acc_Flashlight"};
         secondaryWeapon = "CUP_launch_M136";
         vestMagazines[] = {
             {"hlc_30rnd_68x43_FMJ", 6},
@@ -336,7 +336,7 @@ class ACR_BLK_PMC {
 
     class ENG : Rifleman {
         primaryWeapon = "hlc_rifle_ACR68_Carb_black";
-        primaryWeaponItems[] = {"RH_compM2l", "RH_SFM952V"};
+        primaryWeaponItems[] = {"RH_compM2l", "CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"hlc_30rnd_68x43_FMJ", 6},
             {"hlc_30rnd_68x43_Tracer", 2}
@@ -361,7 +361,7 @@ class ACR_BLK_PMC {
     class SN : Rifleman {
         primaryWeapon = "srifle_EBR_F";
         handgunWeapon = "hlc_pistol_P226R_357Elite";
-        primaryWeaponItems[] = {"optic_Hamr", "RH_SFM952V", "RH_HBLM"};
+        primaryWeaponItems[] = {"optic_Hamr", "CUP_acc_Flashlight", "RH_HBLM"};
         vestMagazines[] = {
             {"20Rnd_762x51_Mag", 4},
             {"hlc_12Rnd_357SIG_JHP_P226", 3}

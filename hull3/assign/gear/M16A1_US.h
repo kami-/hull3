@@ -150,9 +150,9 @@ class M16A1_US {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"1Rnd_Smoke_Grenade_shell", 4},
-            {"1Rnd_SmokeRed_Grenade_shell", 2},
-            {"UGL_FlareWhite_F", 4}
+            {"CUP_1Rnd_Smoke_M203", 4},
+            {"CUP_1Rnd_SmokeRed_M203", 2},
+            {"CUP_FlareWhite_M203", 4}
         };
     };
 
@@ -392,9 +392,9 @@ class M16A1_US {
             {"CUP_20Rnd_556x45_Stanag", 20},
             {"CUP_20Rnd_556x45_Stanag_Tracer_Red", 10},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
-            {"1Rnd_Smoke_Grenade_shell", 5},
+            {"CUP_1Rnd_Smoke_M203", 5},
             {"CUP_1Rnd_HE_M203", 10},
-            {"UGL_FlareWhite_F", 5},
+            {"CUP_FlareWhite_M203", 5},
             {"ACE_HandFlare_White", 5},
             {"HandGrenade", 5},
             {"SmokeShell", 5}
@@ -415,8 +415,8 @@ class M16A1_US {
             {"CUP_20Rnd_556x45_Stanag", 40},
             {"CUP_20Rnd_556x45_Stanag_Tracer_Red", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 50},
-            {"1Rnd_Smoke_Grenade_shell", 10},
-            {"UGL_FlareWhite_F", 10},
+            {"CUP_1Rnd_Smoke_M203", 10},
+            {"CUP_FlareWhite_M203", 10},
             {"CUP_1Rnd_HE_M203", 30},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
@@ -438,9 +438,9 @@ class M16A1_US {
             {"CUP_20Rnd_556x45_Stanag", 40},
             {"CUP_20Rnd_556x45_Stanag_Tracer_Red", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 30},
-            {"1Rnd_Smoke_Grenade_shell", 10},
+            {"CUP_1Rnd_Smoke_M203", 10},
             {"CUP_1Rnd_HE_M203", 20},
-            {"UGL_FlareWhite_F", 10},
+            {"CUP_FlareWhite_M203", 10},
             {"MRAWS_HEAT_F", 5},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},

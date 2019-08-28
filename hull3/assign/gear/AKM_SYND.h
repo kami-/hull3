@@ -1,7 +1,7 @@
 class AKM_SYND {
     class Rifleman {
         primaryWeapon = "CUP_arifle_AKM";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -45,7 +45,7 @@ class AKM_SYND {
 
     class Leader : Rifleman {
         primaryWeapon = "CUP_arifle_AKM_GL";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         handgunWeapon = "CUP_hgun_Makarov";
         vestMagazines[] = {
             {"CUP_30Rnd_762x39_AK47_M", 4},
@@ -104,7 +104,7 @@ class AKM_SYND {
 
     class Medic : Rifleman {
         primaryWeapon = "CUP_arifle_AKMS";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"CUP_30Rnd_762x39_AK47_M", 6},
             {"CUP_30Rnd_TE1_Green_Tracer_762x39_AK47_M", 2},
@@ -130,7 +130,7 @@ class AKM_SYND {
 
     class AR : Rifleman {
         primaryWeapon = "CUP_arifle_RPK74";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         vestMagazines[] = {{"CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M", 2}};
         backpackMagazines[] = {
             {"HandGrenade", 2},
@@ -188,7 +188,7 @@ class AKM_SYND {
 
     class HMGG : Rifleman {
         primaryWeapon = "CUP_arifle_AKMS";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         backpack = "CUP_B_DShkM_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -206,7 +206,7 @@ class AKM_SYND {
 
     class MATG : RAT {
         primaryWeapon = "CUP_arifle_AKMS";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         secondaryWeapon = "CUP_launch_RPG7V";
         secondaryWeaponItems[] = {"CUP_PG7VL_M", "CUP_optic_PGO7V3"};
         backpackMagazines[] = {
@@ -235,7 +235,7 @@ class AKM_SYND {
 
     class HATG : MATG {
         primaryWeapon = "CUP_arifle_AKMS";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         secondaryWeapon = "CUP_launch_Metis";
         secondaryWeaponItems[] = {"CUP_AT13_M"};
         backpackMagazines[] = {{"CUP_AT13_M", 1}};
@@ -256,7 +256,7 @@ class AKM_SYND {
 
     class DHATG : Rifleman {
         primaryWeapon = "CUP_arifle_AKMS";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         backpack = "CUP_B_SPG9_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -278,7 +278,7 @@ class AKM_SYND {
 
     class SAMG : Rifleman {
         primaryWeapon = "CUP_arifle_AKMS";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         secondaryWeapon = "CUP_launch_Igla";
         secondaryWeaponItems[] = {"CUP_Igla_M"};
         backpackMagazines[] = {{"CUP_Igla_M", 1}};
@@ -307,7 +307,7 @@ class AKM_SYND {
 
     class GMGG : Rifleman {
         primaryWeapon = "CUP_arifle_AKMS";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         backpack = "CUP_B_AGS30_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -329,7 +329,7 @@ class AKM_SYND {
 
     class MTRG : Rifleman {
         primaryWeapon = "CUP_arifle_AKMS";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         backpack = "CUP_B_Podnos_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -351,7 +351,7 @@ class AKM_SYND {
 
     class ENG : Rifleman {
         primaryWeapon = "CUP_arifle_AKMS";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"CUP_30Rnd_762x39_AK47_M", 6},
             {"CUP_30Rnd_TE1_Green_Tracer_762x39_AK47_M", 2}

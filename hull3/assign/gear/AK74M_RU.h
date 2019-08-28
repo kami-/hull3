@@ -1,7 +1,7 @@
 class AK74M_RU {
     class Rifleman {
         primaryWeapon = "CUP_arifle_AK74M";
-        primaryWeaponItems[] = {"CUP_optic_ekp_8_02", "RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_optic_ekp_8_02", "CUP_acc_Flashlight"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -49,7 +49,7 @@ class AK74M_RU {
 
     class Leader : Rifleman {
         primaryWeapon = "CUP_arifle_AK74M_GL";
-        primaryWeaponItems[] = {"CUP_optic_ekp_8_02", "RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_optic_ekp_8_02", "CUP_acc_Flashlight"};
         handgunWeapon = "CUP_hgun_PMM";
         vestMagazines[] = {
             {"CUP_30Rnd_545x39_AK74M_M", 4},
@@ -132,7 +132,7 @@ class AK74M_RU {
 
     class AR : Rifleman {
         primaryWeapon = "CUP_arifle_RPK74M";
-        primaryWeaponItems[] = {"CUP_optic_ekp_8_02", "RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_optic_ekp_8_02", "CUP_acc_Flashlight"};
         vestMagazines[] = {{"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK74M_M", 2}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
@@ -168,7 +168,7 @@ class AK74M_RU {
 
     class MMGG : Rifleman {
         primaryWeapon = "CUP_lmg_Pecheneg";
-        primaryWeaponItems[] = {};
+        primaryWeaponItems[] = {"CUP_optic_PechenegScope"};
         vestMagazines[] = {{"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 1}};
         backpackMagazines[] = {
             {"HandGrenade", 1},

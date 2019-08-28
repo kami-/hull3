@@ -1,7 +1,7 @@
 class HK416_ROK {
     class Rifleman {
         primaryWeapon = "CUP_arifle_HK416_Black";
-        primaryWeaponItems[] = {"CUP_optic_Eotech533_Black", "RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_optic_Eotech533_Black", "CUP_acc_Flashlight"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -48,7 +48,7 @@ class HK416_ROK {
 
     class Leader : Rifleman {
         primaryWeapon = "CUP_arifle_HK416_M203_Black";
-        primaryWeaponItems[] = {"CUP_optic_Eotech533_Black", "RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_optic_Eotech533_Black", "CUP_acc_Flashlight"};
         handgunWeapon = "hlc_pistol_P226US";
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_PMAG_QP", 3},
@@ -79,7 +79,7 @@ class HK416_ROK {
 
     class Crew : Rifleman {
         primaryWeapon = "CUP_arifle_HK416_CQB_Black";
-        primaryWeaponItems[] = {"CUP_optic_Eotech533_Black", "RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_optic_Eotech533_Black", "CUP_acc_Flashlight"};
         uniformMagazines[] = {
             {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
@@ -107,7 +107,7 @@ class HK416_ROK {
 
     class Medic : Rifleman {
         primaryWeapon = "CUP_arifle_HK416_CQB_Black";
-        primaryWeaponItems[] = {"CUP_optic_Eotech533_Black", "RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_optic_Eotech533_Black", "CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_PMAG_QP", 4},
             {"CUP_30Rnd_556x45_PMAG_QP_Tracer_Red", 2},
@@ -153,7 +153,7 @@ class HK416_ROK {
 
     class RAT : Rifleman {
         primaryWeapon = "CUP_arifle_HK416_CQB_Black";
-        primaryWeaponItems[] = {"CUP_optic_Eotech533_Black", "RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_optic_Eotech533_Black", "CUP_acc_Flashlight"};
         secondaryWeapon = "CUP_launch_M72A6";
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_PMAG_QP", 6},
@@ -191,7 +191,7 @@ class HK416_ROK {
 
     class HMGG : Rifleman {
         primaryWeapon = "CUP_arifle_HK416_CQB_Black";
-        primaryWeaponItems[] = {"CUP_optic_Eotech533_Black", "RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_optic_Eotech533_Black", "CUP_acc_Flashlight"};
         backpack = "CUP_B_M2_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -209,7 +209,7 @@ class HK416_ROK {
 
     class MATG : RAT {
         primaryWeapon = "CUP_arifle_HK416_CQB_Black";
-        primaryWeaponItems[] = {"CUP_optic_Eotech533_Black", "RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_optic_Eotech533_Black", "CUP_acc_Flashlight"};
         secondaryWeapon = "launch_MRAWS_green_rail_F";
         secondaryWeaponItems[] = {"MRAWS_HEAT_F"};
         backpackMagazines[] = {
@@ -237,7 +237,7 @@ class HK416_ROK {
     class HATG : MATG {
         secondaryWeapon = "launch_O_Vorona_green_F";
         primaryWeapon = "CUP_arifle_HK416_CQB_Black";
-        primaryWeaponItems[] = {"CUP_optic_Eotech533_Black", "RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_optic_Eotech533_Black", "CUP_acc_Flashlight"};
         secondaryWeaponItems[] = {"Vorona_HEAT"};
         backpackMagazines[] = {
             {"Vorona_HEAT", 2},
@@ -258,7 +258,7 @@ class HK416_ROK {
 
     class DHATG : Rifleman {
         primaryWeapon = "CUP_arifle_HK416_CQB_Black";
-        primaryWeaponItems[] = {"CUP_optic_Eotech533_Black", "RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_optic_Eotech533_Black", "CUP_acc_Flashlight"};
         backpack = "CUP_B_Tow_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -280,7 +280,7 @@ class HK416_ROK {
 
     class SAMG : Rifleman {
         primaryWeapon = "CUP_arifle_HK416_CQB_Black";
-        primaryWeaponItems[] = {"CUP_optic_Eotech533_Black", "RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_optic_Eotech533_Black", "CUP_acc_Flashlight"};
         secondaryWeapon = "CUP_launch_FIM92Stinger";
     };
 
@@ -306,7 +306,7 @@ class HK416_ROK {
 
     class GMGG : Rifleman {
         primaryWeapon = "CUP_arifle_HK416_CQB_Black";
-        primaryWeaponItems[] = {"CUP_optic_Eotech533_Black", "RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_optic_Eotech533_Black", "CUP_acc_Flashlight"};
         backpack = "CUP_B_Mk19_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -328,7 +328,7 @@ class HK416_ROK {
 
     class MTRG : Rifleman {
         primaryWeapon = "CUP_arifle_HK416_CQB_Black";
-        primaryWeaponItems[] = {"CUP_optic_Eotech533_Black", "RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_optic_Eotech533_Black", "CUP_acc_Flashlight"};
         backpack = "CUP_B_M252_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -350,7 +350,7 @@ class HK416_ROK {
 
     class ENG : Rifleman {
         primaryWeapon = "CUP_arifle_HK416_CQB_Black";
-        primaryWeaponItems[] = {"CUP_optic_Eotech533_Black", "RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_optic_Eotech533_Black", "CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_PMAG_QP", 4},
             {"CUP_30Rnd_556x45_PMAG_QP_Tracer_Red", 2}

@@ -1,7 +1,7 @@
 class M16A2_IDF {
     class Rifleman {
         primaryWeapon = "CUP_arifle_M16A2";
-        primaryWeaponItems[] = {};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -48,13 +48,13 @@ class M16A2_IDF {
 
     class Leader : Rifleman {
         primaryWeapon = "CUP_arifle_M4A1_GL_carryhandle";
-        primaryWeaponItems[] = {};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         handgunWeapon = "CUP_hgun_Colt1911";
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 3},
-            {"1Rnd_HE_Grenade_shell", 4},
-            {"1Rnd_Smoke_Grenade_shell", 2},
-            {"1Rnd_SmokeRed_Grenade_shell", 2},
+            {"CUP_1Rnd_HE_M203", 4},
+            {"CUP_1Rnd_Smoke_M203", 2},
+            {"CUP_1Rnd_SmokeRed_M203", 2},
             {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2},
             {"CUP_7Rnd_45ACP_1911", 3}
         };
@@ -63,9 +63,9 @@ class M16A2_IDF {
             {"SmokeShell", 1},
             {"CUP_30Rnd_556x45_Stanag", 6},
             {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2},
-            {"UGL_FlareWhite_F", 2},
-            {"1Rnd_Smoke_Grenade_shell", 2},
-            {"1Rnd_SmokeRed_Grenade_shell", 2}
+            {"CUP_FlareWhite_M203", 2},
+            {"CUP_1Rnd_Smoke_M203", 2},
+            {"CUP_1Rnd_SmokeRed_M203", 2}
         };
         assignItems[] = {"ItemGPS"};
         binocular = "Binocular";
@@ -96,9 +96,9 @@ class M16A2_IDF {
 
     class XO : CO {
         backpackMagazines[] = {
-            {"1Rnd_Smoke_Grenade_shell", 8},
-            {"UGL_FlareWhite_F", 8},
-            {"1Rnd_SmokeRed_Grenade_shell", 8}
+            {"CUP_1Rnd_Smoke_M203", 8},
+            {"CUP_FlareWhite_M203", 8},
+            {"CUP_1Rnd_SmokeRed_M203", 8}
         };
         backpackRadios[] = {"ACRE_PRC117F"};
     };
@@ -108,7 +108,7 @@ class M16A2_IDF {
 
     class Medic : Rifleman {
         primaryWeapon = "CUP_arifle_M4A1";
-        primaryWeaponItems[] = {};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 4},
             {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2},
@@ -154,7 +154,7 @@ class M16A2_IDF {
 
     class RAT : Rifleman {
         primaryWeapon = "CUP_arifle_M4A1";
-        primaryWeaponItems[] = {};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         secondaryWeapon = "CUP_launch_M72A6";
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 6},
@@ -341,7 +341,7 @@ class M16A2_IDF {
 
     class ENG : Rifleman {
         primaryWeapon = "CUP_arifle_M4A1";
-        primaryWeaponItems[] = {};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 4},
             {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2}
@@ -413,9 +413,9 @@ class M16A2_IDF {
             {"CUP_30Rnd_556x45_Stanag", 20},
             {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 10},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 10},
-            {"1Rnd_Smoke_Grenade_shell", 5},
+            {"CUP_1Rnd_Smoke_M203", 5},
             {"ACE_HandFlare_White", 5},
-            {"UGL_FlareWhite_F", 5},
+            {"CUP_FlareWhite_M203", 5},
             {"HandGrenade", 5},
             {"SmokeShell", 5}
         };
@@ -439,12 +439,12 @@ class M16A2_IDF {
             {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 20},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
-            {"1Rnd_Smoke_Grenade_shell", 10},
+            {"CUP_1Rnd_Smoke_M203", 10},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
             {"CUP_SMAW_HEAA_M", 2},
             {"CUP_Dragon_EP1_M", 5},
-            {"UGL_FlareWhite_F", 10},
+            {"CUP_FlareWhite_M203", 10},
             {"HandGrenade", 10},
             {"SmokeShell", 10}
         };
@@ -463,9 +463,9 @@ class M16A2_IDF {
             {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 20},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
-            {"1Rnd_Smoke_Grenade_shell", 10},
+            {"CUP_1Rnd_Smoke_M203", 10},
             {"CUP_SMAW_HEAA_M", 5},
-            {"UGL_FlareWhite_F", 10},
+            {"CUP_FlareWhite_M203", 10},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
             {"HandGrenade", 10},

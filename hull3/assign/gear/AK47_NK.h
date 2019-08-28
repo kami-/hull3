@@ -1,7 +1,6 @@
 class AK47_NK {
     class Rifleman {
         primaryWeapon = "CUP_arifle_AK47_Early";
-        primaryWeaponItems[] = {"RH_SFM952V"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -49,7 +48,6 @@ class AK47_NK {
 
     class Leader : Rifleman {
         primaryWeapon = "CUP_arifle_AK47_GL_Early";
-        primaryWeaponItems[] = {"RH_SFM952V"};
         handgunWeapon = "CUP_hgun_Makarov";
         vestMagazines[] = {
             {"CUP_30Rnd_762x39_AK47_M", 4},
@@ -80,7 +78,6 @@ class AK47_NK {
 
     class Crew : Rifleman {
         primaryWeapon = "CUP_arifle_AKS";
-        primaryWeaponItems[] = {};
         uniformMagazines[] = {
             {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
@@ -108,7 +105,6 @@ class AK47_NK {
 
     class Medic : Rifleman {
         primaryWeapon = "CUP_arifle_AKS";
-        primaryWeaponItems[] = {"RH_SFM952V"};
         vestMagazines[] = {
             {"CUP_30Rnd_762x39_AK47_M", 4},
             {"CUP_30Rnd_TE1_Green_Tracer_762x39_AK47_M", 2},
@@ -134,7 +130,6 @@ class AK47_NK {
 
     class AR : Rifleman {
         primaryWeapon = "CUP_arifle_RPK74";
-        primaryWeaponItems[] = {"RH_SFM952V"};
         vestMagazines[] = {{"CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M", 4}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
@@ -169,7 +164,6 @@ class AK47_NK {
 
     class MMGG : Rifleman {
         primaryWeapon = "CUP_lmg_PKM";
-        primaryWeaponItems[] = {};
         vestMagazines[] = {{"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 1}};
         backpackMagazines[] = {
             {"HandGrenade", 1},

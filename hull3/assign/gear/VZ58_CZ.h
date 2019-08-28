@@ -1,7 +1,7 @@
 class VZ58_CZ {
     class Rifleman {
         primaryWeapon = "CUP_arifle_Sa58RIS2";
-        primaryWeaponItems[] = {"RH_cmore", "RH_SFM952V"};
+        primaryWeaponItems[] = {"RH_cmore", "CUP_acc_Flashlight"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -52,9 +52,9 @@ class VZ58_CZ {
         handgunWeapon = "CUP_hgun_Compact";
         vestMagazines[] = {
             {"CUP_30Rnd_Sa58_M", 6},
-            {"1Rnd_HE_Grenade_shell", 4},
-            {"1Rnd_Smoke_Grenade_shell", 2},
-            {"1Rnd_SmokeRed_Grenade_shell", 2},
+            {"CUP_1Rnd_HE_M203", 4},
+            {"CUP_1Rnd_Smoke_M203", 2},
+            {"CUP_1Rnd_SmokeRed_M203", 2},
             {"CUP_30Rnd_Sa58_M_TracerG", 2},
             {"CUP_10Rnd_9x19_Compact", 3}
         };
@@ -63,9 +63,9 @@ class VZ58_CZ {
             {"SmokeShell", 1},
             {"CUP_30Rnd_Sa58_M", 4},
             {"CUP_30Rnd_Sa58_M_TracerG", 2},
-            {"1Rnd_Smoke_Grenade_shell", 2},
-            {"1Rnd_SmokeRed_Grenade_shell", 2},
-            {"UGL_FlareWhite_F", 2}
+            {"CUP_1Rnd_Smoke_M203", 2},
+            {"CUP_1Rnd_SmokeRed_M203", 2},
+            {"CUP_FlareWhite_M203", 2}
         };
         assignItems[] = {"ItemGPS"};
         binocular = "Binocular";
@@ -95,8 +95,8 @@ class VZ58_CZ {
 
     class XO : CO {
         backpackMagazines[] = {
-            {"1Rnd_Smoke_Grenade_shell", 8},
-            {"1Rnd_SmokeRed_Grenade_shell", 8}
+            {"CUP_1Rnd_Smoke_M203", 8},
+            {"CUP_1Rnd_SmokeRed_M203", 8}
         };
         backpackRadios[] = {"ACRE_PRC117F"};
     };
@@ -406,8 +406,8 @@ class VZ58_CZ {
             {"CUP_30Rnd_Sa58_M", 20},
             {"CUP_30Rnd_Sa58_M_TracerG", 10},
             {"CUP_50Rnd_UK59_762x54R_Tracer", 10},
-            {"1Rnd_Smoke_Grenade_shell", 5},
-            {"UGL_FlareWhite_F", 5},
+            {"CUP_1Rnd_Smoke_M203", 5},
+            {"CUP_FlareWhite_M203", 5},
             {"CUP_PG7VM_M", 5},
             {"ACE_HandFlare_White", 5},
             {"HandGrenade", 5},
@@ -433,8 +433,8 @@ class VZ58_CZ {
             {"CUP_30Rnd_Sa58_M_TracerG", 20},
             {"CUP_50Rnd_UK59_762x54R_Tracer", 20},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
-            {"1Rnd_Smoke_Grenade_shell", 10},
-            {"UGL_FlareWhite_F", 10},
+            {"CUP_1Rnd_Smoke_M203", 10},
+            {"CUP_FlareWhite_M203", 10},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
             {"CUP_PG7VL_M", 5},
@@ -458,8 +458,8 @@ class VZ58_CZ {
             {"CUP_30Rnd_Sa58_M_TracerG", 20},
             {"CUP_50Rnd_UK59_762x54R_Tracer", 20},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
-            {"1Rnd_Smoke_Grenade_shell", 10},
-            {"UGL_FlareWhite_F", 10},
+            {"CUP_1Rnd_Smoke_M203", 10},
+            {"CUP_FlareWhite_M203", 10},
             {"CUP_PG7VL_M", 5},
             {"CUP_PG7VM_M", 5},
             {"SatchelCharge_Remote_Mag", 5},

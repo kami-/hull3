@@ -1,7 +1,7 @@
 class HK33_RACS {
     class Rifleman {
         primaryWeapon = "hlc_rifle_hk33a2RIS";
-        primaryWeaponItems[] = {"RH_SFM952V", "RH_compM2l"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight", "RH_compM2l"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -167,13 +167,13 @@ class HK33_RACS {
     };
 
     class MMGG : Rifleman {
-        primaryWeapon = "hlc_lmg_MG3";
+        primaryWeapon = "CUP_lmg_MG3";
         primaryWeaponItems[] = {};
-        vestMagazines[] = {{"hlc_250Rnd_762x51_M_MG3", 1}};
+        vestMagazines[] = {{"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 1}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_250Rnd_762x51_M_MG3", 2}
+            {"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 2}
         };
     };
 
@@ -181,7 +181,7 @@ class HK33_RACS {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_250Rnd_762x51_M_MG3", 2}
+            {"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 2}
         };
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
@@ -427,7 +427,7 @@ class HK33_RACS {
             {"hlc_30rnd_556x45_b_HK33", 40},
             {"hlc_30rnd_556x45_t_HK33", 20},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
-            {"hlc_250Rnd_762x51_M_MG3", 10},
+            {"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
             {"SatchelCharge_Remote_Mag", 5},
@@ -451,7 +451,7 @@ class HK33_RACS {
             {"hlc_30rnd_556x45_b_HK33", 40},
             {"hlc_30rnd_556x45_t_HK33", 20},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
-            {"hlc_250Rnd_762x51_M_MG3", 10},
+            {"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
             {"MRAWS_HEAT_F", 5},

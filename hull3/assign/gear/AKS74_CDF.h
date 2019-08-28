@@ -1,7 +1,7 @@
 class AKS74_CDF {
     class Rifleman {
         primaryWeapon = "CUP_arifle_AKS74";
-        primaryWeaponItems[] = {"RH_SFM952V", "CUP_optic_ekp_8_02"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight", "CUP_optic_ekp_8_02"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -49,13 +49,13 @@ class AKS74_CDF {
 
     class Leader : Rifleman {
         primaryWeapon = "CUP_arifle_AKS74_GL";
-        primaryWeaponItems[] = {"RH_SFM952V", "CUP_optic_ekp_8_02"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight", "CUP_optic_ekp_8_02"};
         handgunWeapon = "CUP_hgun_Makarov";
         vestMagazines[] = {
             {"CUP_30Rnd_545x39_AK_M", 4},
             {"CUP_1Rnd_HE_GP25_M", 4},
             {"CUP_1Rnd_SMOKE_GP25_M", 2},
-            {"CUP_1Rnd_SMOKE_GP25_M", 2},
+            {"CUP_1Rnd_SmokeRed_GP25_M", 2},
             {"CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK_M", 2},
             {"CUP_8Rnd_9x18_Makarov_M", 3}
         };
@@ -66,7 +66,7 @@ class AKS74_CDF {
             {"CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK_M", 2},
             {"CUP_FlareWhite_GP25_M", 2},
             {"CUP_1Rnd_SMOKE_GP25_M", 2},
-            {"CUP_1Rnd_SMOKE_GP25_M", 2}
+            {"CUP_1Rnd_SmokeRed_GP25_M", 2}
         };
         assignItems[] = {"ItemGPS"};
         binocular = "Binocular";
@@ -132,7 +132,7 @@ class AKS74_CDF {
 
     class AR : Rifleman {
         primaryWeapon = "CUP_arifle_RPK74_45";
-        primaryWeaponItems[] = {"RH_SFM952V", "CUP_optic_ekp_8_02"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight", "CUP_optic_ekp_8_02"};
         vestMagazines[] = {{"CUP_60Rnd_TE1_Yellow_Tracer_545x39_AK74M_M", 2}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
