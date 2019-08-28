@@ -135,7 +135,7 @@ class HK416_CTRG_BLK {
 
     class AR : Rifleman {
         primaryWeapon = "arifle_SPAR_02_blk_F";
-        primaryWeaponItems[] = {"optic_Holosight_blk_F", "CUP_acc_Flashlight", "RH_HBLM"};
+        primaryWeaponItems[] = {"optic_Holosight_blk_F", "CUP_acc_Flashlight", "bipod_02_F_blk"};
         vestMagazines[] = {{"150Rnd_556x45_Drum_Mag_F", 2}};
         backpackMagazines[] = {
             {"150Rnd_556x45_Drum_Mag_F", 2},
@@ -337,7 +337,7 @@ class HK416_CTRG_BLK {
     };
 
     class ENG : Rifleman {
-        primaryWeaponItems[] = {"RH_compM2", "CUP_acc_Flashlight"};
+        primaryWeaponItems[] = {"CUP_optic_CompM2_low", "CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2}

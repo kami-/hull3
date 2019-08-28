@@ -1,7 +1,7 @@
 class ACR_TAN_PMC {
     class Rifleman {
         primaryWeapon = "hlc_rifle_ACR68_full_tan";
-        primaryWeaponItems[] = {"RH_compm4s", "CUP_acc_Flashlight"};
+        primaryWeaponItems[] = {"CUP_optic_CompM4", "CUP_acc_Flashlight"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -100,7 +100,7 @@ class ACR_TAN_PMC {
 
     class Medic : Rifleman {
         primaryWeapon = "hlc_rifle_ACR68_Carb_tan";
-        primaryWeaponItems[] = {"RH_compM2l", "CUP_acc_Flashlight"};
+        primaryWeaponItems[] = {"CUP_optic_CompM2_low", "CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"hlc_30rnd_68x43_FMJ", 6},
             {"hlc_30rnd_68x43_Tracer", 2},
@@ -146,7 +146,7 @@ class ACR_TAN_PMC {
 
     class RAT : Rifleman {
         primaryWeapon = "hlc_rifle_ACR68_Carb_tan";
-        primaryWeaponItems[] = {"RH_compM2l", "CUP_acc_Flashlight"};
+        primaryWeaponItems[] = {"CUP_optic_CompM2_low", "CUP_acc_Flashlight"};
         secondaryWeapon = "CUP_launch_M136";
         vestMagazines[] = {
             {"hlc_30rnd_68x43_FMJ", 6},
@@ -336,7 +336,7 @@ class ACR_TAN_PMC {
 
     class ENG : Rifleman {
         primaryWeapon = "hlc_rifle_ACR68_Carb_tan";
-        primaryWeaponItems[] = {"RH_compM2l", "CUP_acc_Flashlight"};
+        primaryWeaponItems[] = {"CUP_optic_CompM2_low", "CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"hlc_30rnd_68x43_FMJ", 6},
             {"hlc_30rnd_68x43_Tracer", 2}
@@ -361,7 +361,7 @@ class ACR_TAN_PMC {
     class SN : Rifleman {
         primaryWeapon = "srifle_EBR_F";
         handgunWeapon = "hlc_pistol_P226R_357Elite";
-        primaryWeaponItems[] = {"optic_Hamr", "CUP_acc_Flashlight", "RH_HBLM"};
+        primaryWeaponItems[] = {"optic_Hamr", "CUP_acc_Flashlight", "bipod_02_F_blk"};
         vestMagazines[] = {
             {"20Rnd_762x51_Mag", 4},
             {"hlc_12Rnd_357SIG_JHP_P226", 3}
