@@ -1,7 +1,7 @@
 class HK33_RACS {
     class Rifleman {
         primaryWeapon = "hlc_rifle_hk33a2RIS";
-        primaryWeaponItems[] = {"CUP_acc_Flashlight", "RH_compM2l"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight", "CUP_optic_CompM2_low"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";

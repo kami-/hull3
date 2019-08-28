@@ -366,7 +366,7 @@ class M16A2_IDF {
     class SN : Rifleman {
         primaryWeapon = "CUP_srifle_M24_blk";
         handgunWeapon = "CUP_hgun_Colt1911";
-        primaryWeaponItems[] = {"CUP_optic_LeupoldMk4", "RH_HBLM"};
+        primaryWeaponItems[] = {"CUP_optic_LeupoldMk4", "bipod_02_F_blk"};
         vestMagazines[] = {
             {"CUP_5Rnd_762x51_M24", 4},
             {"CUP_7Rnd_45ACP_1911", 3}

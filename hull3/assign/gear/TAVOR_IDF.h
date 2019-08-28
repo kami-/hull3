@@ -373,7 +373,7 @@ class TAVOR_IDF {
     class SN : Rifleman {
         primaryWeapon = "CUP_srifle_M24_blk";
         handgunWeapon = "hlc_pistol_P226US";
-        primaryWeaponItems[] = {"CUP_optic_LeupoldMk4", "RH_HBLM"};
+        primaryWeaponItems[] = {"CUP_optic_LeupoldMk4", "bipod_02_F_blk"};
         vestMagazines[] = {
             {"CUP_5Rnd_762x51_M24", 4},
             {"hlc_15Rnd_9x19_B_P226", 3}

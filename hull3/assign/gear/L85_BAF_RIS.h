@@ -356,7 +356,7 @@ class L85_BAF_RIS {
     class SN : Rifleman {
         primaryWeapon = "CUP_srifle_L129A1_HG";
         handgunWeapon = "CUP_hgun_Glock17";
-        primaryWeaponItems[] = {"RH_ta31rco", "CUP_acc_Flashlight", "RH_HBLM"};
+        primaryWeaponItems[] = {"CUP_optic_ACOG_TA31_KF", "CUP_acc_Flashlight", "bipod_02_F_blk"};
         vestMagazines[] = {
             {"CUP_20Rnd_762x51_L129_M", 4},
             {"CUP_17Rnd_9x19_glock17", 3}

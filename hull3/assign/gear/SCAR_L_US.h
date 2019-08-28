@@ -1,7 +1,7 @@
 class SCAR_L_US {
     class Rifleman {
         primaryWeapon = "CUP_arifle_Mk16_STD";
-        primaryWeaponItems[] = {"RH_eotech553_tan", "CUP_acc_Flashlight_tan"};
+        primaryWeaponItems[] = {"CUP_optic_Eotech553_Black", "CUP_acc_Flashlight_tan"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -107,7 +107,7 @@ class SCAR_L_US {
 
     class Medic : Rifleman {
         primaryWeapon = "CUP_arifle_Mk16_CQC_FG";
-        primaryWeaponItems[] = {"RH_compM2l", "CUP_acc_Flashlight_tan"};
+        primaryWeaponItems[] = {"CUP_optic_CompM2_low", "CUP_acc_Flashlight_tan"};
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Stanag_Mk16", 6},
             {"CUP_30Rnd_556x45_Stanag_Mk16_Tracer_Red", 2},
@@ -153,7 +153,7 @@ class SCAR_L_US {
 
     class RAT : Rifleman {
         primaryWeapon = "CUP_arifle_Mk16_CQC_FG";
-        primaryWeaponItems[] = {"RH_compM2l", "CUP_acc_Flashlight_tan"};
+        primaryWeaponItems[] = {"CUP_optic_CompM2_low", "CUP_acc_Flashlight_tan"};
         secondaryWeapon = "CUP_launch_M136";
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Stanag_Mk16", 6},
@@ -343,7 +343,7 @@ class SCAR_L_US {
 
     class ENG : Rifleman {
         primaryWeapon = "CUP_arifle_Mk16_CQC_FG";
-        primaryWeaponItems[] = {"RH_compM2l", "CUP_acc_Flashlight_tan"};
+        primaryWeaponItems[] = {"CUP_optic_CompM2_low", "CUP_acc_Flashlight_tan"};
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Stanag_Mk16", 6},
             {"CUP_30Rnd_556x45_Stanag_Mk16_Tracer_Red", 2}
@@ -368,7 +368,7 @@ class SCAR_L_US {
     class SN : Rifleman {
         primaryWeapon = "srifle_EBR_F";
         handgunWeapon = "CUP_hgun_M9";
-        primaryWeaponItems[] = {"optic_Hamr", "CUP_acc_Flashlight_tan", "RH_HBLM"};
+        primaryWeaponItems[] = {"optic_Hamr", "CUP_acc_Flashlight_tan", "bipod_02_F_blk"};
         vestMagazines[] = {
             {"20Rnd_762x51_Mag", 4},
             {"CUP_15Rnd_9x19_M9", 3}

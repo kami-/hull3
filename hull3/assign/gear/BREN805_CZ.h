@@ -371,7 +371,7 @@ class BREN805_CZ {
     class SN : Rifleman {
         primaryWeapon = "CUP_srifle_CZ750";
         handgunWeapon = "CUP_hgun_SA61";
-        primaryWeaponItems[] = {"hlc_optic_LeupoldM3A", "RH_HBLM"};
+        primaryWeaponItems[] = {"CUP_optic_LeupoldMk4", "bipod_02_F_blk"};
         vestMagazines[] = {
             {"CUP_10Rnd_762x51_CZ750", 4},
             {"CUP_10Rnd_B_765x17_Ball_M", 3}
