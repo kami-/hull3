@@ -1,7 +1,7 @@
 class M4A1_USMC {
     class Rifleman {
         primaryWeapon = "CUP_arifle_M4A1_black";
-        primaryWeaponItems[] = {"RH_compm4s", "RH_SFM952V"};
+        primaryWeaponItems[] = {"RH_compm4s", "CUP_acc_Flashlight"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -49,7 +49,7 @@ class M4A1_USMC {
 
     class Leader : Rifleman {
         primaryWeapon = "CUP_arifle_M4A1_BUIS_GL";
-        primaryWeaponItems[] = {"optic_Holosight_blk_F", "RH_SFM952V"};
+        primaryWeaponItems[] = {"optic_Holosight_blk_F", "CUP_acc_Flashlight"};
         handgunWeapon = "hlc_Pistol_M11A1";
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 6},
@@ -80,7 +80,7 @@ class M4A1_USMC {
 
     class Crew : Rifleman {
         primaryWeapon = "CUP_arifle_M4A1_black";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         uniformMagazines[] = {
             {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
@@ -107,7 +107,7 @@ class M4A1_USMC {
 
     class Medic : Rifleman {
         primaryWeapon = "CUP_arifle_M4A1_black";
-        primaryWeaponItems[] = {"RH_compM2", "RH_SFM952V"};
+        primaryWeaponItems[] = {"RH_compM2", "CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 6},
             {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2},
@@ -133,7 +133,7 @@ class M4A1_USMC {
 
     class AR : Rifleman {
         primaryWeapon = "CUP_arifle_HK_M27";
-        primaryWeaponItems[] = {"RH_compM2", "RH_SFM952V", "RH_HBLM"};
+        primaryWeaponItems[] = {"RH_compM2", "CUP_acc_Flashlight", "RH_HBLM"};
         vestMagazines[] = {{"CUP_100Rnd_556x45_BetaCMag_ar15", 4}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
@@ -154,7 +154,7 @@ class M4A1_USMC {
     };
 
     class RAT : Rifleman {
-        primaryWeaponItems[] = {"RH_compM2", "RH_SFM952V"};
+        primaryWeaponItems[] = {"RH_compM2", "CUP_acc_Flashlight"};
         secondaryWeapon = "CUP_launch_M136";
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 6},
@@ -337,7 +337,7 @@ class M4A1_USMC {
     };
 
     class ENG : Rifleman {
-        primaryWeaponItems[] = {"RH_compM2", "RH_SFM952V"};
+        primaryWeaponItems[] = {"RH_compM2", "CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 6},
             {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2}

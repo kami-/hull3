@@ -1,7 +1,7 @@
 class CAR95_CSAT {
     class Rifleman {
         primaryWeapon = "arifle_CTAR_blk_F";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -81,7 +81,7 @@ class CAR95_CSAT {
 
     class Crew : Rifleman {
         primaryWeapon = "SMG_02_F";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         uniformMagazines[] = {
             {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
@@ -137,7 +137,7 @@ class CAR95_CSAT {
 
     class AR : Rifleman {
         primaryWeapon = "arifle_CTARS_blk_F";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         vestMagazines[] = {{"100Rnd_580x42_Mag_F", 4}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
@@ -159,7 +159,7 @@ class CAR95_CSAT {
 
     class RAT : Rifleman {
         primaryWeapon = "arifle_CTAR_blk_F";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         secondaryWeapon = "CUP_launch_RPG18";
         vestMagazines[] = {
             {"30Rnd_580x42_Mag_F", 6},

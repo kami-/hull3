@@ -1,7 +1,7 @@
 class AUGA3_IRE {
     class Rifleman {
         primaryWeapon = "hlc_rifle_auga3";
-        primaryWeaponItems[] = {"optic_Holosight_blk_F", "RH_SFM952V"};
+        primaryWeaponItems[] = {"optic_Holosight_blk_F", "CUP_acc_Flashlight"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -49,7 +49,7 @@ class AUGA3_IRE {
 
     class Leader : Rifleman {
         primaryWeapon = "hlc_rifle_auga3_GL";
-        primaryWeaponItems[] = {"optic_Holosight_blk_F", "RH_SFM952V"};
+        primaryWeaponItems[] = {"optic_Holosight_blk_F", "CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"hlc_30Rnd_556x45_B_AUG", 6},
             {"1Rnd_HE_Grenade_shell", 4},
@@ -351,7 +351,7 @@ class AUGA3_IRE {
     class SN : Rifleman {
         primaryWeapon = "hlc_rifle_m14sopmod";
         handgunWeapon = "hgun_Pistol_heavy_01_F";
-        primaryWeaponItems[] = {"optic_Hamr", "RH_SFM952V", "RH_HBLM"};
+        primaryWeaponItems[] = {"optic_Hamr", "CUP_acc_Flashlight", "RH_HBLM"};
         vestMagazines[] = {
             {"hlc_20Rnd_762x51_B_M14", 4},
             {"11Rnd_45ACP_Mag", 3}

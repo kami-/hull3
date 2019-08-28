@@ -1,7 +1,7 @@
 class AK74_TKA {
     class Rifleman {
         primaryWeapon = "CUP_arifle_AK74";
-        primaryWeaponItems[] = {"RH_SFM952V", "CUP_optic_Kobra"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight", "CUP_optic_Kobra"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -48,7 +48,7 @@ class AK74_TKA {
 
     class Leader : Rifleman {
         primaryWeapon = "CUP_arifle_AK74_GL";
-        primaryWeaponItems[] = {"RH_SFM952V", "CUP_optic_Kobra"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight", "CUP_optic_Kobra"};
         handgunWeapon = "CUP_hgun_Makarov";
         vestMagazines[] = {
             {"CUP_30Rnd_545x39_AK_M", 3},
@@ -110,7 +110,7 @@ class AK74_TKA {
 
     class Medic : Rifleman {
         primaryWeapon = "CUP_arifle_AKS74";
-        primaryWeaponItems[] = {"RH_SFM952V", "CUP_optic_Kobra"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight", "CUP_optic_Kobra"};
         vestMagazines[] = {
             {"CUP_30Rnd_545x39_AK_M", 4},
             {"CUP_30Rnd_TE1_Green_Tracer_545x39_AK_M", 2},
@@ -136,7 +136,7 @@ class AK74_TKA {
 
     class AR : Rifleman {
         primaryWeapon = "CUP_arifle_RPK74_45";
-        primaryWeaponItems[] = {"RH_SFM952V", "CUP_optic_Kobra"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight", "CUP_optic_Kobra"};
         vestMagazines[] = {{"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M", 2}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
@@ -156,7 +156,7 @@ class AK74_TKA {
 
     class RAT : Rifleman {
         primaryWeapon = "CUP_arifle_AKS74";
-        primaryWeaponItems[] = {"RH_SFM952V", "CUP_optic_Kobra"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight", "CUP_optic_Kobra"};
         secondaryWeapon = "CUP_launch_RPG7V";
         secondaryWeaponItems[] = {"CUP_PG7V_M"};
         vestMagazines[] = {
@@ -196,7 +196,7 @@ class AK74_TKA {
 
     class HMGG : Rifleman {
         primaryWeapon = "CUP_arifle_AKS74";
-        primaryWeaponItems[] = {"RH_SFM952V", "CUP_optic_Kobra"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight", "CUP_optic_Kobra"};
         backpack = "CUP_B_DShkM_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -214,7 +214,7 @@ class AK74_TKA {
 
     class MATG : RAT {
         primaryWeapon = "CUP_arifle_AKS74";
-        primaryWeaponItems[] = {"RH_SFM952V", "CUP_optic_Kobra"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight", "CUP_optic_Kobra"};
         secondaryWeapon = "CUP_launch_RPG7V";
         secondaryWeaponItems[] = {"CUP_PG7VL_M", "CUP_optic_PGO7V3"};
         backpackMagazines[] = {
@@ -243,7 +243,7 @@ class AK74_TKA {
 
     class HATG : MATG {
         primaryWeapon = "CUP_arifle_AKS74";
-        primaryWeaponItems[] = {"RH_SFM952V", "CUP_optic_Kobra"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight", "CUP_optic_Kobra"};
         secondaryWeapon = "CUP_launch_Metis";
         secondaryWeaponItems[] = {"CUP_AT13_M"};
         backpackMagazines[] = {{"CUP_AT13_M", 1}};
@@ -261,7 +261,7 @@ class AK74_TKA {
 
     class DHATG : Rifleman {
         primaryWeapon = "CUP_arifle_AKS74";
-        primaryWeaponItems[] = {"RH_SFM952V", "CUP_optic_Kobra"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight", "CUP_optic_Kobra"};
         backpack = "CUP_B_Metis_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -283,7 +283,7 @@ class AK74_TKA {
 
     class SAMG : Rifleman {
         primaryWeapon = "CUP_arifle_AKS74";
-        primaryWeaponItems[] = {"RH_SFM952V", "CUP_optic_Kobra"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight", "CUP_optic_Kobra"};
         secondaryWeapon = "CUP_launch_9K32Strela";
         secondaryWeaponItems[] = {"CUP_Strela_2_M"};
         backpackMagazines[] = {{"CUP_Strela_2_M", 1}};
@@ -312,7 +312,7 @@ class AK74_TKA {
 
     class GMGG : Rifleman {
         primaryWeapon = "CUP_arifle_AKS74";
-        primaryWeaponItems[] = {"RH_SFM952V", "CUP_optic_Kobra"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight", "CUP_optic_Kobra"};
         backpack = "CUP_B_AGS30_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -334,7 +334,7 @@ class AK74_TKA {
 
     class MTRG : Rifleman {
         primaryWeapon = "CUP_arifle_AKS74";
-        primaryWeaponItems[] = {"RH_SFM952V", "CUP_optic_Kobra"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight", "CUP_optic_Kobra"};
         backpack = "CUP_B_Podnos_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -356,7 +356,7 @@ class AK74_TKA {
 
     class ENG : Rifleman {
         primaryWeapon = "CUP_arifle_AKS74";
-        primaryWeaponItems[] = {"RH_SFM952V", "CUP_optic_Kobra"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight", "CUP_optic_Kobra"};
         vestMagazines[] = {
             {"CUP_30Rnd_545x39_AK_M", 4},
             {"CUP_30Rnd_TE1_Green_Tracer_545x39_AK_M", 2}

@@ -1,7 +1,7 @@
 class MX_NATO {
     class Rifleman {
         primaryWeapon = "arifle_MX_F";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -49,7 +49,7 @@ class MX_NATO {
 
     class Leader : Rifleman {
         primaryWeapon = "arifle_MX_GL_F";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         uniformMagazines[] = {
             {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
@@ -82,7 +82,7 @@ class MX_NATO {
 
     class Crew : Rifleman {
         primaryWeapon = "SMG_01_F";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         uniformMagazines[] = {
             {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
@@ -109,7 +109,7 @@ class MX_NATO {
 
     class Medic : Rifleman {
         primaryWeapon = "arifle_MXC_F";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         uniformMagazines[] = {
             {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
@@ -139,7 +139,7 @@ class MX_NATO {
 
     class AR : Rifleman {
         primaryWeapon = "arifle_MX_SW_F";
-        primaryWeaponItems[] = {"RH_SFM952V", "bipod_01_F_snd"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight", "bipod_01_F_snd"};
         vestMagazines[] = {{"100Rnd_65x39_caseless_mag", 2}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
@@ -161,7 +161,7 @@ class MX_NATO {
 
     class RAT : Rifleman {
         primaryWeapon = "arifle_MXC_F";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         secondaryWeapon = "CUP_launch_M136";
         vestMagazines[] = {
             {"30Rnd_65x39_caseless_mag", 6},
@@ -363,7 +363,7 @@ class MX_NATO {
 
     class ENG : Rifleman {
         primaryWeapon = "arifle_MXC_F";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         uniformMagazines[] = {
             {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
@@ -392,7 +392,7 @@ class MX_NATO {
     class SN : Rifleman {
         primaryWeapon = "arifle_MXM_F";
         handgunWeapon = "hgun_P07_F";
-        primaryWeaponItems[] = {"optic_MRCO", "RH_SFM952V", "bipod_01_F_snd"};
+        primaryWeaponItems[] = {"optic_MRCO", "CUP_acc_Flashlight", "bipod_01_F_snd"};
         uniformMagazines[] = {
             {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}

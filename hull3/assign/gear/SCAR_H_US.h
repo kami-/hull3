@@ -1,7 +1,7 @@
 class SCAR_H_US {
     class Rifleman {
         primaryWeapon = "CUP_arifle_Mk17_STD";
-        primaryWeaponItems[] = {"RH_eotech553_tan", "RH_SFM952V_tan"};
+        primaryWeaponItems[] = {"RH_eotech553_tan", "CUP_acc_Flashlight_tan"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -49,7 +49,7 @@ class SCAR_H_US {
 
     class Leader : Rifleman {
         primaryWeapon = "CUP_arifle_Mk17_STD_EGLM";
-        primaryWeaponItems[] = {"optic_Holosight_blk_F", "RH_SFM952V_tan"};
+        primaryWeaponItems[] = {"optic_Holosight_blk_F", "CUP_acc_Flashlight_tan"};
         handgunWeapon = "CUP_hgun_M9";
         vestMagazines[] = {
             {"CUP_20Rnd_762x51_B_SCAR", 4},
@@ -107,7 +107,7 @@ class SCAR_H_US {
 
     class Medic : Rifleman {
         primaryWeapon = "CUP_arifle_Mk17_CQC_FG";
-        primaryWeaponItems[] = {"RH_compM2l", "RH_SFM952V_tan"};
+        primaryWeaponItems[] = {"RH_compM2l", "CUP_acc_Flashlight_tan"};
         vestMagazines[] = {
             {"CUP_20Rnd_762x51_B_SCAR", 6},
             {"CUP_20Rnd_TE1_Red_Tracer_762x51_SCAR", 2},
@@ -149,7 +149,7 @@ class SCAR_H_US {
 
     class RAT : Rifleman {
         primaryWeapon = "CUP_arifle_Mk17_CQC_FG";
-        primaryWeaponItems[] = {"RH_compM2l", "RH_SFM952V_tan"};
+        primaryWeaponItems[] = {"RH_compM2l", "CUP_acc_Flashlight_tan"};
         secondaryWeapon = "CUP_launch_M136";
         vestMagazines[] = {
             {"CUP_20Rnd_762x51_B_SCAR", 6},
@@ -339,7 +339,7 @@ class SCAR_H_US {
 
     class ENG : Rifleman {
         primaryWeapon = "CUP_arifle_Mk17_CQC_FG";
-        primaryWeaponItems[] = {"RH_compM2l", "RH_SFM952V_tan"};
+        primaryWeaponItems[] = {"RH_compM2l", "CUP_acc_Flashlight_tan"};
         vestMagazines[] = {
             {"CUP_20Rnd_762x51_B_SCAR", 6},
             {"CUP_20Rnd_TE1_Red_Tracer_762x51_SCAR", 2}
@@ -364,7 +364,7 @@ class SCAR_H_US {
     class SN : Rifleman {
         primaryWeapon = "srifle_EBR_F";
         handgunWeapon = "CUP_hgun_M9";
-        primaryWeaponItems[] = {"optic_Hamr", "RH_SFM952V_tan", "RH_HBLM"};
+        primaryWeaponItems[] = {"optic_Hamr", "CUP_acc_Flashlight_tan", "RH_HBLM"};
         vestMagazines[] = {
             {"20Rnd_762x51_Mag", 4},
             {"CUP_15Rnd_9x19_M9", 3}

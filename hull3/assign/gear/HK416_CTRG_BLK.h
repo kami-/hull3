@@ -1,7 +1,7 @@
 class HK416_CTRG_BLK {
     class Rifleman {
         primaryWeapon = "arifle_SPAR_01_blk_F";
-        primaryWeaponItems[] = {"optic_Holosight_blk_F", "RH_SFM952V"};
+        primaryWeaponItems[] = {"optic_Holosight_blk_F", "CUP_acc_Flashlight"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -49,7 +49,7 @@ class HK416_CTRG_BLK {
 
     class Leader : Rifleman {
         primaryWeapon = "arifle_SPAR_01_GL_blk_F";
-        primaryWeaponItems[] = {"optic_Holosight_blk_F", "RH_SFM952V"};
+        primaryWeaponItems[] = {"optic_Holosight_blk_F", "CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"1Rnd_HE_Grenade_shell", 4},
@@ -78,7 +78,7 @@ class HK416_CTRG_BLK {
 
     class Crew : Rifleman {
         primaryWeapon = "SMG_01_F";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         uniformMagazines[] = {
             {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
@@ -109,7 +109,7 @@ class HK416_CTRG_BLK {
 
     class Medic : Rifleman {
         primaryWeapon = "arifle_SPAR_01_blk_F";
-        primaryWeaponItems[] = {"optic_Holosight_blk_F", "RH_SFM952V"};
+        primaryWeaponItems[] = {"optic_Holosight_blk_F", "CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2},
@@ -135,7 +135,7 @@ class HK416_CTRG_BLK {
 
     class AR : Rifleman {
         primaryWeapon = "arifle_SPAR_02_blk_F";
-        primaryWeaponItems[] = {"optic_Holosight_blk_F", "RH_SFM952V", "RH_HBLM"};
+        primaryWeaponItems[] = {"optic_Holosight_blk_F", "CUP_acc_Flashlight", "RH_HBLM"};
         vestMagazines[] = {{"150Rnd_556x45_Drum_Mag_F", 2}};
         backpackMagazines[] = {
             {"150Rnd_556x45_Drum_Mag_F", 2},
@@ -154,7 +154,7 @@ class HK416_CTRG_BLK {
     };
 
     class RAT : Rifleman {
-        primaryWeaponItems[] = {"optic_Holosight_blk_F", "RH_SFM952V"};
+        primaryWeaponItems[] = {"optic_Holosight_blk_F", "CUP_acc_Flashlight"};
         secondaryWeapon = "CUP_launch_M136";
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
@@ -337,7 +337,7 @@ class HK416_CTRG_BLK {
     };
 
     class ENG : Rifleman {
-        primaryWeaponItems[] = {"RH_compM2", "RH_SFM952V"};
+        primaryWeaponItems[] = {"RH_compM2", "CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2}
@@ -362,7 +362,7 @@ class HK416_CTRG_BLK {
     class SN : Rifleman {
         primaryWeapon = "arifle_SPAR_03_blk_F";
         handgunWeapon = "hgun_ACPC2_F";
-        primaryWeaponItems[] = {"optic_Hamr", "bipod_01_F_blk", "RH_SFM952V"};
+        primaryWeaponItems[] = {"optic_Hamr", "bipod_01_F_blk", "CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"20Rnd_762x51_Mag", 4},
             {"9Rnd_45ACP_Mag", 3}

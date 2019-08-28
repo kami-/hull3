@@ -1,7 +1,7 @@
 class G36_GER {
     class Rifleman {
         primaryWeapon = "CUP_arifle_G36K_RIS";
-        primaryWeaponItems[] = {"RH_compM2l", "RH_SFM952V"};
+        primaryWeaponItems[] = {"RH_compM2l", "CUP_acc_Flashlight"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -49,7 +49,7 @@ class G36_GER {
 
     class Leader : Rifleman {
         primaryWeapon = "CUP_arifle_G36K_RIS_AG36";
-        primaryWeaponItems[] = {"RH_compM2l", "RH_SFM952V"};
+        primaryWeaponItems[] = {"RH_compM2l", "CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_G36", 6},
             {"1Rnd_HE_Grenade_shell", 4},
@@ -105,7 +105,7 @@ class G36_GER {
 
     class Medic : Rifleman {
         primaryWeapon = "CUP_arifle_G36C_VFG";
-        primaryWeaponItems[] = {"RH_compM21", "RH_SFM952V"};
+        primaryWeaponItems[] = {"RH_compM21", "CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_G36", 6},
             {"CUP_30Rnd_TE1_Red_Tracer_556x45_G36", 2},

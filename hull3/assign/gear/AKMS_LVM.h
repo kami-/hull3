@@ -1,7 +1,7 @@
 class AKMS_LVM {
     class Rifleman {
         primaryWeapon = "CUP_arifle_AKMS";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -49,7 +49,7 @@ class AKMS_LVM {
 
     class Leader : Rifleman {
         primaryWeapon = "CUP_arifle_AKMS_GL";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         handgunWeapon = "CUP_hgun_Colt1911";
         vestMagazines[] = {
             {"CUP_30Rnd_762x39_AK47_M", 6},

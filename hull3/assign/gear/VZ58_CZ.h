@@ -1,7 +1,7 @@
 class VZ58_CZ {
     class Rifleman {
         primaryWeapon = "CUP_arifle_Sa58RIS2";
-        primaryWeaponItems[] = {"RH_cmore", "RH_SFM952V"};
+        primaryWeaponItems[] = {"RH_cmore", "CUP_acc_Flashlight"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";

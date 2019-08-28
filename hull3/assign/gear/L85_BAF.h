@@ -355,7 +355,7 @@ class L85_BAF {
     class SN : Rifleman {
         primaryWeapon = "CUP_srifle_L129A1_HG";
         handgunWeapon = "hlc_pistol_P226US";
-        primaryWeaponItems[] = {"RH_ta31rco", "RH_SFM952V", "RH_HBLM"};
+        primaryWeaponItems[] = {"RH_ta31rco", "CUP_acc_Flashlight", "RH_HBLM"};
         vestMagazines[] = {
             {"CUP_20Rnd_762x51_L129_M", 4},
             {"hlc_15Rnd_9x19_B_P226", 3}

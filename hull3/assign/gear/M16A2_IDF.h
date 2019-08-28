@@ -1,7 +1,7 @@
 class M16A2_IDF {
     class Rifleman {
         primaryWeapon = "CUP_arifle_M16A2";
-        primaryWeaponItems[] = {};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -48,7 +48,7 @@ class M16A2_IDF {
 
     class Leader : Rifleman {
         primaryWeapon = "CUP_arifle_M4A1_GL_carryhandle";
-        primaryWeaponItems[] = {};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         handgunWeapon = "CUP_hgun_Colt1911";
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 3},
@@ -108,7 +108,7 @@ class M16A2_IDF {
 
     class Medic : Rifleman {
         primaryWeapon = "CUP_arifle_M4A1";
-        primaryWeaponItems[] = {};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 4},
             {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2},
@@ -154,7 +154,7 @@ class M16A2_IDF {
 
     class RAT : Rifleman {
         primaryWeapon = "CUP_arifle_M4A1";
-        primaryWeaponItems[] = {};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         secondaryWeapon = "CUP_launch_M72A6";
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 6},
@@ -341,7 +341,7 @@ class M16A2_IDF {
 
     class ENG : Rifleman {
         primaryWeapon = "CUP_arifle_M4A1";
-        primaryWeaponItems[] = {};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 4},
             {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2}

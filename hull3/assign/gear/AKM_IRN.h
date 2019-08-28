@@ -1,7 +1,7 @@
 class AKM_IRN {
     class Rifleman {
         primaryWeapon = "CUP_arifle_AKM";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -49,7 +49,7 @@ class AKM_IRN {
 
     class Leader : Rifleman {
         primaryWeapon = "CUP_arifle_AKM_GL";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         handgunWeapon = "CUP_hgun_Colt1911";
         vestMagazines[] = {
             {"CUP_30Rnd_762x39_AK47_M", 3},
@@ -108,7 +108,7 @@ class AKM_IRN {
 
     class Medic : Rifleman {
         primaryWeapon = "CUP_arifle_AKMS";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"CUP_30Rnd_762x39_AK47_M", 4},
             {"CUP_30Rnd_TE1_Green_Tracer_762x39_AK47_M", 2},
@@ -134,7 +134,7 @@ class AKM_IRN {
 
     class AR : Rifleman {
         primaryWeapon = "CUP_arifle_RPK74";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         vestMagazines[] = {{"CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M", 4}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
@@ -192,7 +192,7 @@ class AKM_IRN {
 
     class HMGG : Rifleman {
         primaryWeapon = "CUP_arifle_AKMS";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         backpack = "CUP_B_DShkM_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -210,7 +210,7 @@ class AKM_IRN {
 
     class MATG : RAT {
         primaryWeapon = "CUP_arifle_AKMS";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         secondaryWeapon = "CUP_launch_RPG7V";
         secondaryWeaponItems[] = {"CUP_PG7VL_M", "CUP_optic_PGO7V3"};
         backpackMagazines[] = {
@@ -239,7 +239,7 @@ class AKM_IRN {
 
     class HATG : MATG {
         primaryWeapon = "CUP_arifle_AKMS";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         secondaryWeapon = "CUP_launch_Metis";
         secondaryWeaponItems[] = {"CUP_AT13_M"};
         backpackMagazines[] = {{"CUP_AT13_M", 1}};
@@ -263,7 +263,7 @@ class AKM_IRN {
 
     class DHATG : Rifleman {
         primaryWeapon = "CUP_arifle_AKMS";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         backpack = "CUP_B_Metis_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -285,7 +285,7 @@ class AKM_IRN {
 
     class SAMG : Rifleman {
         primaryWeapon = "CUP_arifle_AKMS";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         secondaryWeapon = "CUP_launch_9K32Strela";
         secondaryWeaponItems[] = {"CUP_Strela_2_M"};
         backpackMagazines[] = {{"CUP_Strela_2_M", 1}};
@@ -313,7 +313,7 @@ class AKM_IRN {
 
     class GMGG : Rifleman {
         primaryWeapon = "CUP_arifle_AKMS";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         backpack = "CUP_B_AGS30_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -335,7 +335,7 @@ class AKM_IRN {
 
     class MTRG : Rifleman {
         primaryWeapon = "CUP_arifle_AKMS";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         backpack = "CUP_B_Podnos_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -357,7 +357,7 @@ class AKM_IRN {
 
     class ENG : Rifleman {
         primaryWeapon = "CUP_arifle_AKMS";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"CUP_30Rnd_762x39_AK47_M", 5},
             {"CUP_30Rnd_TE1_Green_Tracer_762x39_AK47_M", 2}

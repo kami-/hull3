@@ -1,7 +1,7 @@
 class CAR15_GEND {
     class Rifleman {
         primaryWeapon = "CUP_arifle_Colt727";
-        primaryWeaponItems[] = {"CUP_optic_CompM2_low", "RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_optic_CompM2_low", "CUP_acc_Flashlight"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";

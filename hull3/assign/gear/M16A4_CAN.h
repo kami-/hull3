@@ -1,7 +1,7 @@
 class M16A4_CAN {
     class Rifleman {
         primaryWeapon = "CUP_arifle_M16A4_Base";
-        primaryWeaponItems[] = {"RH_compM2", "RH_SFM952V"};
+        primaryWeaponItems[] = {"RH_compM2", "CUP_acc_Flashlight"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -49,7 +49,7 @@ class M16A4_CAN {
 
     class Leader : Rifleman {
         primaryWeapon = "CUP_arifle_M16A4_GL";
-        primaryWeaponItems[] = {"optic_Holosight_blk_F", "RH_SFM952V"};
+        primaryWeaponItems[] = {"optic_Holosight_blk_F", "CUP_acc_Flashlight"};
         handgunWeapon = "hlc_pistol_P226US";
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
@@ -80,7 +80,7 @@ class M16A4_CAN {
 
     class Crew : Rifleman {
         primaryWeapon = "CUP_arifle_M4A1";
-        primaryWeaponItems[] = {"RH_compM2", "RH_SFM952V"};
+        primaryWeaponItems[] = {"RH_compM2", "CUP_acc_Flashlight"};
         uniformMagazines[] = {
             {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
@@ -107,7 +107,7 @@ class M16A4_CAN {
 
     class Medic : Rifleman {
         primaryWeapon = "CUP_arifle_M4A1";
-        primaryWeaponItems[] = {"RH_compm4s", "RH_SFM952V"};
+        primaryWeaponItems[] = {"RH_compm4s", "CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2},
@@ -342,7 +342,7 @@ class M16A4_CAN {
 
     class ENG : Rifleman {
         primaryWeapon = "CUP_arifle_M4A1";
-        primaryWeaponItems[] = {"RH_compM2", "RH_SFM952V"};
+        primaryWeaponItems[] = {"RH_compM2", "CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2}
@@ -367,7 +367,7 @@ class M16A4_CAN {
     class SN : Rifleman {
         primaryWeapon = "srifle_EBR_F";
         handgunWeapon = "hlc_pistol_P226US";
-        primaryWeaponItems[] = {"RH_ta648", "RH_SFM952V", "RH_HBLM"};
+        primaryWeaponItems[] = {"RH_ta648", "CUP_acc_Flashlight", "RH_HBLM"};
         vestMagazines[] = {
             {"20Rnd_762x51_Mag", 4},
             {"hlc_15Rnd_9x19_B_P226", 3}

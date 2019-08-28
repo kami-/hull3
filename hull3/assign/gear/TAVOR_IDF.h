@@ -1,7 +1,7 @@
 class TAVOR_IDF {
     class Rifleman {
         primaryWeapon = "arifle_TRG21_F";
-        primaryWeaponItems[] = {"CUP_optic_MicroT1_low", "RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_optic_MicroT1_low", "CUP_acc_Flashlight"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -48,7 +48,7 @@ class TAVOR_IDF {
 
     class Leader : Rifleman {
         primaryWeapon = "arifle_TRG21_GL_F";
-        primaryWeaponItems[] = {"CUP_optic_MicroT1_low", "RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_optic_MicroT1_low", "CUP_acc_Flashlight"};
         handgunWeapon = "hlc_pistol_P226US";
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 3},
@@ -79,7 +79,7 @@ class TAVOR_IDF {
 
     class Crew : Rifleman {
         primaryWeapon = "arifle_TRG20_F";
-        primaryWeaponItems[] = {"CUP_optic_MicroT1_low", "RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_optic_MicroT1_low", "CUP_acc_Flashlight"};
         uniformMagazines[] = {
             {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
@@ -107,7 +107,7 @@ class TAVOR_IDF {
 
     class Medic : Rifleman {
         primaryWeapon = "arifle_TRG20_F";
-        primaryWeaponItems[] = {"CUP_optic_MicroT1_low", "RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_optic_MicroT1_low", "CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 4},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2},
@@ -153,7 +153,7 @@ class TAVOR_IDF {
 
     class RAT : Rifleman {
         primaryWeapon = "arifle_TRG20_F";
-        primaryWeaponItems[] = {"CUP_optic_MicroT1_low", "RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_optic_MicroT1_low", "CUP_acc_Flashlight"};
         secondaryWeapon = "CUP_launch_M72A6";
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
@@ -191,7 +191,7 @@ class TAVOR_IDF {
 
     class HMGG : Rifleman {
         primaryWeapon = "arifle_TRG20_F";
-        primaryWeaponItems[] = {"CUP_optic_MicroT1_low", "RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_optic_MicroT1_low", "CUP_acc_Flashlight"};
         backpack = "CUP_B_M2_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -209,7 +209,7 @@ class TAVOR_IDF {
 
     class MATG : RAT {
         primaryWeapon = "arifle_TRG20_F";
-        primaryWeaponItems[] = {"CUP_optic_MicroT1_low", "RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_optic_MicroT1_low", "CUP_acc_Flashlight"};
         secondaryWeapon = "CUP_launch_Mk153Mod0";
         secondaryWeaponItems[] = {"CUP_SMAW_HEAA_M", "CUP_optic_SMAW_Scope"};
         backpackMagazines[] = {
@@ -239,7 +239,7 @@ class TAVOR_IDF {
     class HATG : MATG {
         secondaryWeapon = "CUP_launch_Javelin";
         primaryWeapon = "arifle_TRG20_F";
-        primaryWeaponItems[] = {"CUP_optic_MicroT1_low", "RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_optic_MicroT1_low", "CUP_acc_Flashlight"};
         secondaryWeaponItems[] = {"CUP_Javelin_M"};
         backpackMagazines[] = {{"CUP_Javelin_M", 1}};
     };
@@ -256,7 +256,7 @@ class TAVOR_IDF {
 
     class DHATG : Rifleman {
         primaryWeapon = "arifle_TRG20_F";
-        primaryWeaponItems[] = {"CUP_optic_MicroT1_low", "RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_optic_MicroT1_low", "CUP_acc_Flashlight"};
         backpack = "CUP_B_Tow_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -278,7 +278,7 @@ class TAVOR_IDF {
 
     class SAMG : Rifleman {
         primaryWeapon = "arifle_TRG20_F";
-        primaryWeaponItems[] = {"CUP_optic_MicroT1_low", "RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_optic_MicroT1_low", "CUP_acc_Flashlight"};
         secondaryWeapon = "CUP_launch_FIM92Stinger";
     };
 
@@ -304,7 +304,7 @@ class TAVOR_IDF {
 
     class GMGG : Rifleman {
         primaryWeapon = "arifle_TRG20_F";
-        primaryWeaponItems[] = {"CUP_optic_MicroT1_low", "RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_optic_MicroT1_low", "CUP_acc_Flashlight"};
         backpack = "CUP_B_Mk19_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -326,7 +326,7 @@ class TAVOR_IDF {
 
     class MTRG : Rifleman {
         primaryWeapon = "arifle_TRG20_F";
-        primaryWeaponItems[] = {"CUP_optic_MicroT1_low", "RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_optic_MicroT1_low", "CUP_acc_Flashlight"};
         backpack = "CUP_B_M252_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -348,7 +348,7 @@ class TAVOR_IDF {
 
     class ENG : Rifleman {
         primaryWeapon = "arifle_TRG20_F";
-        primaryWeaponItems[] = {"CUP_optic_MicroT1_low", "RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_optic_MicroT1_low", "CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 4},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2}

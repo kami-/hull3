@@ -1,7 +1,7 @@
 class M4_US {
     class Rifleman {
         primaryWeapon = "CUP_arifle_Colt727";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";

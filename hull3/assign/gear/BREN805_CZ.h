@@ -1,7 +1,7 @@
 class BREN805_CZ {
     class Rifleman {
         primaryWeapon = "CUP_arifle_CZ805_A1";
-        primaryWeaponItems[] = {"CUP_optic_ZDDot", "RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_optic_ZDDot", "CUP_acc_Flashlight"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -106,7 +106,7 @@ class BREN805_CZ {
 
     class Medic : Rifleman {
         primaryWeapon = "CUP_arifle_CZ805_A2";
-		primaryWeaponItems[] = {"CUP_optic_MRad", "RH_SFM952V"};
+		primaryWeaponItems[] = {"CUP_optic_MRad", "CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_G36", 6},
             {"CUP_30Rnd_TE1_Red_Tracer_556x45_G36", 2},
@@ -190,7 +190,7 @@ class BREN805_CZ {
 
     class HMGG : Rifleman {
         primaryWeapon = "CUP_arifle_CZ805_A2";
-		primaryWeaponItems[] = {"CUP_optic_MRad", "RH_SFM952V"};
+		primaryWeaponItems[] = {"CUP_optic_MRad", "CUP_acc_Flashlight"};
         backpack = "CUP_B_M2_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -208,7 +208,7 @@ class BREN805_CZ {
 
     class MATG : RAT {
         primaryWeapon = "CUP_arifle_CZ805_A2";
-		primaryWeaponItems[] = {"CUP_optic_MRad", "RH_SFM952V"};
+		primaryWeaponItems[] = {"CUP_optic_MRad", "CUP_acc_Flashlight"};
         secondaryWeapon = "launch_MRAWS_sand_rail_F";
         secondaryWeaponItems[] = {"MRAWS_HEAT_F"};
         backpackMagazines[] = {
@@ -235,7 +235,7 @@ class BREN805_CZ {
 
     class HATG : MATG {
         primaryWeapon = "CUP_arifle_CZ805_A2";
-		primaryWeaponItems[] = {"CUP_optic_MRad", "RH_SFM952V"};
+		primaryWeaponItems[] = {"CUP_optic_MRad", "CUP_acc_Flashlight"};
         secondaryWeapon = "CUP_launch_Javelin";
         secondaryWeaponItems[] = {"CUP_Javelin_M"};
         backpackMagazines[] = {{"CUP_Javelin_M", 1}};
@@ -256,7 +256,7 @@ class BREN805_CZ {
 
     class DHATG : Rifleman {
         primaryWeapon = "CUP_arifle_CZ805_A2";
-		primaryWeaponItems[] = {"CUP_optic_MRad", "RH_SFM952V"};
+		primaryWeaponItems[] = {"CUP_optic_MRad", "CUP_acc_Flashlight"};
         backpack = "CUP_B_Metis_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -278,7 +278,7 @@ class BREN805_CZ {
 
     class SAMG : Rifleman {
         primaryWeapon = "CUP_arifle_CZ805_A2";
-		primaryWeaponItems[] = {"CUP_optic_MRad", "RH_SFM952V"};
+		primaryWeaponItems[] = {"CUP_optic_MRad", "CUP_acc_Flashlight"};
         secondaryWeapon = "CUP_launch_Igla";
         secondaryWeaponItems[] = {};
     };
@@ -302,7 +302,7 @@ class BREN805_CZ {
 
     class GMGG : Rifleman {
         primaryWeapon = "CUP_arifle_CZ805_A2";
-		primaryWeaponItems[] = {"CUP_optic_MRad", "RH_SFM952V"};
+		primaryWeaponItems[] = {"CUP_optic_MRad", "CUP_acc_Flashlight"};
         backpack = "CUP_B_AGS30_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -324,7 +324,7 @@ class BREN805_CZ {
 
     class MTRG : Rifleman {
         primaryWeapon = "CUP_arifle_CZ805_A2";
-		primaryWeaponItems[] = {"CUP_optic_MRad", "RH_SFM952V"};
+		primaryWeaponItems[] = {"CUP_optic_MRad", "CUP_acc_Flashlight"};
         backpack = "CUP_B_Podnos_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -346,7 +346,7 @@ class BREN805_CZ {
 
     class ENG : Rifleman {
         primaryWeapon = "CUP_arifle_CZ805_A2";
-		primaryWeaponItems[] = {"CUP_optic_MRad", "RH_SFM952V"};
+		primaryWeaponItems[] = {"CUP_optic_MRad", "CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_G36", 6},
             {"CUP_30Rnd_TE1_Red_Tracer_556x45_G36", 2}

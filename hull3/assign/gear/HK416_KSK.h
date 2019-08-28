@@ -1,7 +1,7 @@
 class HK416_KSK {
     class Rifleman {
         primaryWeapon = "CUP_arifle_HK416_Black";
-        primaryWeaponItems[] = {"RH_compM2", "RH_SFM952V"};
+        primaryWeaponItems[] = {"RH_compM2", "CUP_acc_Flashlight"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -49,7 +49,7 @@ class HK416_KSK {
 
     class Leader : Rifleman {
         primaryWeapon = "CUP_arifle_HK416_AGL_Black";
-        primaryWeaponItems[] = {"RH_compm4s", "RH_SFM952V"};
+        primaryWeaponItems[] = {"RH_compm4s", "CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Emag", 6},
             {"1Rnd_HE_Grenade_shell", 4},
@@ -78,7 +78,7 @@ class HK416_KSK {
 
     class Crew : Rifleman {
         primaryWeapon = "CUP_arifle_HK416_CQB_Black";
-        primaryWeaponItems[] = {"RH_SFM952V"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         uniformMagazines[] = {
             {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
@@ -105,7 +105,7 @@ class HK416_KSK {
 
     class Medic : Rifleman {
         primaryWeapon = "CUP_arifle_HK416_CQB_Black";
-        primaryWeaponItems[] = {"RH_compm4s", "RH_SFM952V"};
+        primaryWeaponItems[] = {"RH_compm4s", "CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Emag", 6},
             {"CUP_30Rnd_556x45_Emag_Tracer_Red", 2},
@@ -336,7 +336,7 @@ class HK416_KSK {
 
     class ENG : Rifleman {
         primaryWeapon = "CUP_arifle_HK416_CQB_Black";
-        primaryWeaponItems[] = {"RH_compM2", "RH_SFM952V"};
+        primaryWeaponItems[] = {"RH_compM2", "CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Emag", 6},
             {"CUP_30Rnd_556x45_Emag_Tracer_Red", 2}

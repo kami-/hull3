@@ -1,7 +1,7 @@
 class G3KA4_NOR {
     class Rifleman {
         primaryWeapon = "hlc_rifle_g3ka4";
-        primaryWeaponItems[] = {"RH_compm4s", "RH_SFM952V"};
+        primaryWeaponItems[] = {"RH_compm4s", "CUP_acc_Flashlight"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -49,7 +49,7 @@ class G3KA4_NOR {
 
     class Leader : Rifleman {
         primaryWeapon = "HLC_Rifle_g3ka4_GL";
-        primaryWeaponItems[] = {"RH_compm4s", "RH_SFM952V"};
+        primaryWeaponItems[] = {"RH_compm4s", "CUP_acc_Flashlight"};
         handgunWeapon = "CUP_hgun_Glock17_blk";
         vestMagazines[] = {
             {"hlc_20rnd_762x51_b_G3", 6},
@@ -108,7 +108,7 @@ class G3KA4_NOR {
 
     class Medic : Rifleman {
         primaryWeapon = "hlc_rifle_g3ka4";
-        primaryWeaponItems[] = {"RH_compm4s", "RH_SFM952V"};
+        primaryWeaponItems[] = {"RH_compm4s", "CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"hlc_20rnd_762x51_b_G3", 6},
             {"hlc_20rnd_762x51_T_G3", 2},

@@ -1,7 +1,7 @@
 class M16A2_US {
     class Rifleman {
         primaryWeapon = "CUP_arifle_M16A2";
-        primaryWeaponItems[] = {};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -49,6 +49,7 @@ class M16A2_US {
 
     class Leader : Rifleman {
         primaryWeapon = "CUP_arifle_M16A2_GL";
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         handgunWeapon = "CUP_hgun_M9";
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 6},
@@ -148,7 +149,6 @@ class M16A2_US {
     };
 
     class RAT : Rifleman {
-        primaryWeaponItems[] = {};
         secondaryWeapon = "CUP_launch_M72A6";
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 6},
