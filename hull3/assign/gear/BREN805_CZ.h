@@ -407,7 +407,7 @@ class BREN805_CZ {
 
     class Vehicle {
         weapons[] = {
-            {"hlc_rifle_SG550", 2},
+            {"CUP_arifle_CZ805_A1", 2},
             {"CUP_launch_M72A6", 4}
         };
         magazines[] = {
@@ -433,7 +433,7 @@ class BREN805_CZ {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"hlc_rifle_SG550", 2},
+            {"CUP_arifle_CZ805_A1", 2},
             {"CUP_launch_M72A6", 10}
         };
         magazines[] = {
