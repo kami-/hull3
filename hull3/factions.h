@@ -3412,7 +3412,7 @@ class Faction {
         description = "Desert uniforms with Vz 58";
         languages[] = {{"west", 100}};
         side = "west";
-        camouflage[] = {"desert"};
+        camouflage[] = {};
         rolePrefix = "Czech Army";
         vehicleClassnames[] = {
             {"CO", "CUP_B_UAZ_Unarmed_ACR"},
@@ -3438,7 +3438,7 @@ class Faction {
         description = "Desert uniforms with Bren 805";
         languages[] = {{"west", 100}};
         side = "west";
-        camouflage[] = {"desert"};
+        camouflage[] = {};
         rolePrefix = "Czech Army";
         vehicleClassnames[] = {
             {"CO", "CUP_B_UAZ_Unarmed_ACR"},
@@ -3464,7 +3464,7 @@ class Faction {
         description = "Woodland uniforms with Vz 58";
         languages[] = {{"west", 100}};
         side = "west";
-        camouflage[] = {"woodland"};
+        camouflage[] = {};
         rolePrefix = "Czech Army";
         vehicleClassnames[] = {
             {"CO", "CUP_B_UAZ_Unarmed_ACR"},
@@ -3490,7 +3490,7 @@ class Faction {
         description = "Woodland uniforms with Bren 805";
         languages[] = {{"west", 100}};
         side = "west";
-        camouflage[] = {"woodland"};
+        camouflage[] = {};
         rolePrefix = "Czech Army";
         vehicleClassnames[] = {
             {"CO", "CUP_B_UAZ_Unarmed_ACR"},
