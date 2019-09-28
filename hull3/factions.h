@@ -2184,10 +2184,10 @@ class Faction {
     };
 
     class CUP_ION_PMC {
-        gear = "ACR_TAN_PMC";
+        gear = "BREN807_PMC";
         uniform = "CUP_ION_PMC";
         name = "ION PMC";
-        description = "ION PMC with tan ACR";
+        description = "ION PMC with Bren 807";
         languages[] = {{"resistance", 100}};
         side = "resistance";
         camouflage[] = {"desert", "woodland"};
@@ -2210,10 +2210,10 @@ class Faction {
     };
 
     class PMC_CBRN {
-        gear = "ACR_BLK_PMC";
+        gear = "BREN807_PMC";
         uniform = "PMC_CBRN";
         name = "ION PMC CBRN";
-        description = "ION PMC CBRN with black ACR";
+        description = "ION PMC CBRN with Bren 807";
         languages[] = {{"resistance", 100}};
         side = "resistance";
         camouflage[] = {};
@@ -2236,10 +2236,10 @@ class Faction {
     };
 
     class CUP_ION_PMC_SN {
-        gear = "ACR_BLK_PMC";
+        gear = "BREN807_PMC";
         uniform = "CUP_ION_PMC_SN";
         name = "ION PMC (Arctic)";
-        description = "Arctic ION PMC with black ACR";
+        description = "Arctic ION PMC with Bren 807";
         languages[] = {{"resistance", 100}};
         side = "resistance";
         camouflage[] = {"snow"};
