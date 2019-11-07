@@ -1950,10 +1950,10 @@ class Faction {
     };
 
     class CUP_RACS_DE {
-        gear = "HK33_RACS";
+        gear = "BREN2_RACS";
         uniform = "CUP_RACS_DE";
         name = "Royal Army Corps of Sahrani (Desert)";
-        description = "Desert Uniforms and HK33's";
+        description = "Desert Uniforms and Bren 2";
         languages[] = {{"resistance", 100}};
         side = "resistance";
         camouflage[] = {"desert"};
@@ -1976,10 +1976,10 @@ class Faction {
     };
 
     class CUP_RACS_URB {
-        gear = "HK33_RACS";
+        gear = "BREN2_RACS";
         uniform = "CUP_RACS_URB";
         name = "Royal Army Corps of Sahrani (Urban)";
-        description = "Urban (night) Uniforms and HK33's";
+        description = "Urban (night) Uniforms and Bren 2";
         languages[] = {{"resistance", 100}};
         side = "resistance";
         camouflage[] = {"desert"};
@@ -2002,10 +2002,10 @@ class Faction {
     };
 
     class CUP_RACS_MECH {
-        gear = "HK33_RACS";
+        gear = "BREN2_RACS";
         uniform = "CUP_RACS_MECH";
         name = "Royal Army Corps of Sahrani (Mechanised)";
-        description = "Tigerstripe Uniforms and HK33's";
+        description = "Tigerstripe Uniforms and Bren 2";
         languages[] = {{"resistance", 100}};
         side = "resistance";
         camouflage[] = {"woodland"};
