@@ -178,7 +178,7 @@ class Hull3 {
         #include "assign\gear\CAR95_CN.h"
         #include "assign\gear\FAL_TKA.h"
         #include "assign\gear\G3A3_IRN.h"
-        #include "assign\gear\G3KA4_NOR.h"
+        #include "assign\gear\HK416_NOR.h"
         #include "assign\gear\G36_GER.h"
         #include "assign\gear\HK416_KSK.h"
         #include "assign\gear\HK416_CTRG_BLK.h"

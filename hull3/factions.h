@@ -1898,10 +1898,10 @@ class Faction {
     };
 
     class MNP_NOR_WD {
-        gear = "G3KA4_NOR";
+        gear = "HK416_NOR";
         uniform = "NOR_WD";
         name = "Norwegian Army (Woodland)";
-        description = "Woodland Uniforms and G3KA4's";
+        description = "Woodland Uniforms and HK416";
         languages[] = {{"resistance", 100}};
         side = "resistance";
         camouflage[] = {"woodland"};
@@ -1924,10 +1924,10 @@ class Faction {
     };
 
     class MNP_NOR_DE {
-        gear = "G3KA4_NOR";
+        gear = "HK416_NOR";
         uniform = "NOR_DE";
         name = "Norwegian Army (Desert)";
-        description = "Desert Uniforms and G3KA4's";
+        description = "Desert Uniforms and HK416";
         languages[] = {{"resistance", 100}};
         side = "resistance";
         camouflage[] = {"desert"};
