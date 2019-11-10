@@ -1,6 +1,6 @@
 class M14_US {
     class Rifleman {
-        primaryWeapon = "hlc_rifle_M14";
+        primaryWeapon = "CUP_srifle_M14";
         primaryWeaponItems[] = {};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
@@ -15,14 +15,14 @@ class M14_US {
             {"SmokeShell", 1}
         };
         vestMagazines[] = {
-            {"hlc_20Rnd_762x51_B_M14", 6},
-            {"hlc_20Rnd_762x51_T_M14", 2}
+            {"20Rnd_762x51_Mag", 6},
+            {"ACE_20Rnd_762x51_Mag_Tracer", 2}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_20Rnd_762x51_B_M14", 4},
-            {"hlc_20Rnd_762x51_T_M14", 2}
+            {"20Rnd_762x51_Mag", 4},
+            {"ACE_20Rnd_762x51_Mag_Tracer", 2}
         };
         basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch"};
         assignItems[] = {};
@@ -48,18 +48,18 @@ class M14_US {
     };
 
     class Leader : Rifleman {
-        primaryWeapon = "hlc_rifle_M14";
+        primaryWeapon = "CUP_srifle_M14";
         handgunWeapon = "CUP_hgun_Colt1911";
         vestMagazines[] = {
-            {"hlc_20Rnd_762x51_B_M14", 4},
-            {"hlc_20Rnd_762x51_T_M14", 2},
+            {"20Rnd_762x51_Mag", 4},
+            {"ACE_20Rnd_762x51_Mag_Tracer", 2},
             {"CUP_7Rnd_45ACP_1911", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_20Rnd_762x51_B_M14", 6},
-            {"hlc_20Rnd_762x51_T_M14", 2}
+            {"20Rnd_762x51_Mag", 6},
+            {"ACE_20Rnd_762x51_Mag_Tracer", 2}
         };
         assignItems[] = {};
         binocular = "Binocular";
@@ -96,13 +96,13 @@ class M14_US {
 
     class Medic : Rifleman {
         vestMagazines[] = {
-            {"hlc_20Rnd_762x51_B_M14", 4},
-            {"hlc_20Rnd_762x51_T_M14", 2},
+            {"20Rnd_762x51_Mag", 4},
+            {"ACE_20Rnd_762x51_Mag_Tracer", 2},
             {"SmokeShell", 4}
         };
         backpackMagazines[] = {
             {"SmokeShellBlue", 4},
-            {"hlc_20Rnd_762x51_B_M14", 2}
+            {"20Rnd_762x51_Mag", 2}
         };
         assignItems[] = {};
         binocular = "Binocular";
@@ -126,7 +126,7 @@ class M14_US {
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 2},
             {"CUP_7Rnd_45ACP_1911", 3}
         };
-        backpackMagazines[] = {{"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 5}};
+        backpackMagazines[] = {{"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 4}};
     };
 
     class AAR : Rifleman {
@@ -326,8 +326,8 @@ class M14_US {
 
     class ENG : Rifleman {
         vestMagazines[] = {
-            {"hlc_20Rnd_762x51_B_M14", 6},
-            {"hlc_20Rnd_762x51_T_M14", 2}
+            {"20Rnd_762x51_Mag", 6},
+            {"ACE_20Rnd_762x51_Mag_Tracer", 2}
         };
         backpackMagazines[] = {
             {"Toolkit", 1},
@@ -347,17 +347,17 @@ class M14_US {
     };
 
     class SN : Rifleman {
-        primaryWeapon = "hlc_rifle_M21";
+        primaryWeapon = "CUP_srifle_M14";
         handgunWeapon = "CUP_hgun_Colt1911";
-        primaryWeaponItems[] = {"hlc_optic_artel_m14"};
+        primaryWeaponItems[] = {"CUP_optic_Leupold_VX3"};
         vestMagazines[] = {
-            {"hlc_20Rnd_762x51_B_M14", 4},
+            {"20Rnd_762x51_Mag", 4},
             {"CUP_7Rnd_45ACP_1911", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_20Rnd_762x51_B_M14", 3}
+            {"20Rnd_762x51_Mag", 3}
         };
         assignItems[] = {};
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -385,12 +385,12 @@ class M14_US {
 
     class Vehicle {
         weapons[] = {
-            {"hlc_rifle_M14", 2},
+            {"CUP_srifle_M14", 2},
             {"CUP_launch_M72A6", 4}
         };
         magazines[] = {
-            {"hlc_20Rnd_762x51_B_M14", 20},
-            {"hlc_20Rnd_762x51_T_M14", 10},
+            {"20Rnd_762x51_Mag", 20},
+            {"ACE_20Rnd_762x51_Mag_Tracer", 10},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"CUP_1Rnd_Smoke_M203", 5},
             {"CUP_1Rnd_HE_M203", 10},
@@ -408,12 +408,12 @@ class M14_US {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"hlc_rifle_M14", 2},
+            {"CUP_srifle_M14", 2},
             {"CUP_launch_M72A6", 10}
         };
         magazines[] = {
-            {"hlc_20Rnd_762x51_B_M14", 40},
-            {"hlc_20Rnd_762x51_T_M14", 20},
+            {"20Rnd_762x51_Mag", 40},
+            {"ACE_20Rnd_762x51_Mag_Tracer", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 50},
             {"CUP_1Rnd_Smoke_M203", 10},
             {"CUP_FlareWhite_M203", 10},
@@ -435,8 +435,8 @@ class M14_US {
     class Armored : Truck {
         weapons[] = {{"CUP_launch_M72A6", 10}};
         magazines[] = {
-            {"hlc_20Rnd_762x51_B_M14", 40},
-            {"hlc_20Rnd_762x51_T_M14", 20},
+            {"20Rnd_762x51_Mag", 40},
+            {"ACE_20Rnd_762x51_Mag_Tracer", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 30},
             {"CUP_1Rnd_Smoke_M203", 10},
             {"CUP_1Rnd_HE_M203", 20},
