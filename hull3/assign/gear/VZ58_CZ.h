@@ -1,7 +1,7 @@
 class VZ58_CZ {
     class Rifleman {
         primaryWeapon = "CUP_arifle_Sa58RIS2";
-        primaryWeaponItems[] = {"CUP_optic_TrijiconRx01_black", "CUP_acc_Flashlight"};
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -16,13 +16,13 @@ class VZ58_CZ {
         };
         vestMagazines[] = {
             {"CUP_30Rnd_Sa58_M", 6},
-            {"CUP_30Rnd_Sa58_M_TracerG", 2}
+            {"CUP_30Rnd_Sa58_M_TracerR", 1}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"CUP_30Rnd_Sa58_M", 4},
-            {"CUP_30Rnd_Sa58_M_TracerG", 2}
+            {"CUP_30Rnd_Sa58_M", 5},
+            {"CUP_30Rnd_Sa58_M_TracerR", 2}
         };
         basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch"};
         assignItems[] = {};
@@ -49,23 +49,23 @@ class VZ58_CZ {
 
     class Leader : Rifleman {
         primaryWeapon = "CUP_arifle_Sa58RIS2_gl";
-        handgunWeapon = "CUP_hgun_Compact";
+        handgunWeapon = "CUP_hgun_SA61";
         vestMagazines[] = {
-            {"CUP_30Rnd_Sa58_M", 6},
+            {"CUP_30Rnd_Sa58_M", 4},
             {"CUP_1Rnd_HE_M203", 4},
             {"CUP_1Rnd_Smoke_M203", 2},
             {"CUP_1Rnd_SmokeRed_M203", 2},
-            {"CUP_30Rnd_Sa58_M_TracerG", 2},
-            {"CUP_10Rnd_9x19_Compact", 3}
+            {"CUP_30Rnd_Sa58_M_TracerR", 1},
+            {"CUP_20Rnd_B_765x17_Ball_M", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"CUP_30Rnd_Sa58_M", 4},
-            {"CUP_30Rnd_Sa58_M_TracerG", 2},
+            {"CUP_30Rnd_Sa58_M", 6},
+            {"CUP_30Rnd_Sa58_M_TracerR", 3},
             {"CUP_1Rnd_Smoke_M203", 2},
-            {"CUP_1Rnd_SmokeRed_M203", 2},
-            {"CUP_FlareWhite_M203", 2}
+            {"CUP_FlareWhite_M203", 2},
+            {"CUP_1Rnd_SmokeRed_M203", 2}
         };
         assignItems[] = {"ItemGPS"};
         binocular = "Binocular";
@@ -79,13 +79,12 @@ class VZ58_CZ {
 
     class Crew : Rifleman {
         primaryWeapon = "CUP_smg_SA61";
-        primaryWeaponItems[] = {};
         uniformMagazines[] = {
             {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
-        vestMagazines[] = {{"CUP_20Rnd_B_765x17_Ball_M", 4}};
+        vestMagazines[] = {{"CUP_20Rnd_B_765x17_Ball_M", 6}};
         backpackMagazines[] = {};
         assignItems[] = {"ItemGPS", "ACE_NVG_Wide"};
     };
@@ -96,6 +95,7 @@ class VZ58_CZ {
     class XO : CO {
         backpackMagazines[] = {
             {"CUP_1Rnd_Smoke_M203", 8},
+            {"CUP_FlareWhite_M203", 8},
             {"CUP_1Rnd_SmokeRed_M203", 8}
         };
         backpackRadios[] = {"ACRE_PRC117F"};
@@ -107,8 +107,8 @@ class VZ58_CZ {
     class Medic : Rifleman {
         primaryWeapon = "CUP_arifle_Sa58RIS1";
         vestMagazines[] = {
-            {"CUP_30Rnd_Sa58_M", 6},
-            {"CUP_30Rnd_Sa58_M_TracerG", 2},
+            {"CUP_30Rnd_Sa58_M", 4},
+            {"CUP_30Rnd_Sa58_M_TracerR", 2},
             {"SmokeShell", 4}
         };
         backpackMagazines[] = {
@@ -131,16 +131,16 @@ class VZ58_CZ {
 
     class AR : Rifleman {
         primaryWeapon = "CUP_lmg_UK59";
-        primaryWeaponItems[] = {};
-        vestMagazines[] = {{"CUP_50Rnd_UK59_762x54R_Tracer", 1}};
-        backpackMagazines[] = {{"CUP_50Rnd_UK59_762x54R_Tracer", 4}};
+        vestMagazines[] = {{"CUP_50Rnd_UK59_762x54R_Tracer", 2}};
+        backpackMagazines[] = {
+            {"HandGrenade", 1},
+            {"SmokeShell", 1},
+            {"CUP_50Rnd_UK59_762x54R_Tracer", 3}
+        };
     };
 
     class AAR : Rifleman {
-        vestMagazines[] = {
-            {"CUP_30Rnd_Sa58_M", 8},
-            {"CUP_30Rnd_Sa58_M_TracerG", 4}
-        };
+        primaryWeapon = "CUP_arifle_Sa58RIS1";
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
@@ -151,27 +151,26 @@ class VZ58_CZ {
 
     class RAT : Rifleman {
         secondaryWeapon = "CUP_launch_RPG7V";
-        secondaryWeaponItems[] = {"CUP_PG7VM_M"};
+        secondaryWeaponItems[] = {"CUP_PG7VL_M"};
         vestMagazines[] = {
-            {"CUP_30Rnd_Sa58_M", 6},
-            {"CUP_30Rnd_Sa58_M_TracerG", 2}
+            {"CUP_30Rnd_Sa58_M", 5},
+            {"CUP_30Rnd_Sa58_M_TracerR", 2}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
             {"CUP_30Rnd_Sa58_M", 4},
-            {"CUP_30Rnd_Sa58_M_TracerG", 2},
-            {"CUP_PG7VM_M", 1}
+            {"CUP_PG7VL_M", 2}
         };
     };
 
     class MMGG : Rifleman {
-        primaryWeapon = "CUP_lmg_PKM";
-        vestMagazines[] = {{"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 1}};
+        primaryWeapon = "CUP_lmg_UK59";
+        vestMagazines[] = {{"CUP_50Rnd_UK59_762x54R_Tracer", 1}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 4}
+            {"CUP_50Rnd_UK59_762x54R_Tracer", 4}
         };
     };
 
@@ -179,7 +178,8 @@ class VZ58_CZ {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 4}
+            {"CUP_30Rnd_Sa58_M_TracerR", 2},
+            {"CUP_50Rnd_UK59_762x54R_Tracer", 4}
         };
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
@@ -206,9 +206,9 @@ class VZ58_CZ {
     class MATG : RAT {
         primaryWeapon = "CUP_arifle_Sa58RIS1";
         secondaryWeapon = "CUP_launch_RPG7V";
-        secondaryWeaponItems[] = {"CUP_PG7VL_M", "CUP_optic_PGO7V3"};
+        secondaryWeaponItems[] = {"MRAWS_HEAT_F", "CUP_optic_PGO7V3"};
         backpackMagazines[] = {
-            {"CUP_PG7VL_M", 3},
+            {"CUP_PG7VL_M", 2},
             {"CUP_OG7_M", 1},
             {"CUP_PG7VR_M", 1}
         };
@@ -216,7 +216,7 @@ class VZ58_CZ {
 
     class MATAG : Rifleman {
         backpackMagazines[] = {
-            {"CUP_PG7VL_M", 3},
+            {"CUP_PG7VL_M", 2},
             {"CUP_OG7_M", 1},
             {"CUP_PG7VR_M", 1}
         };
@@ -243,6 +243,9 @@ class VZ58_CZ {
             {"HandGrenade", 1},
             {"CUP_AT13_M", 1}
         };
+        binocular = "ACE_VectorDay";
+        assignItems[] = {"ItemGPS"};
+        uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
 
     class HATAC : HATAG {
@@ -274,12 +277,16 @@ class VZ58_CZ {
 
     class SAMG : Rifleman {
         primaryWeapon = "CUP_arifle_Sa58RIS1";
-        secondaryWeapon = "CUP_launch_Igla";
-        secondaryWeaponItems[] = {};
+        secondaryWeapon = "CUP_launch_9K32Strela";
+        secondaryWeaponItems[] = {"CUP_Strela_2_M"};
+        backpackMagazines[] = {{"CUP_Strela_2_M", 1}};
     };
 
     class SAMAG : Rifleman {
-        backpackMagazines[] = {{"HandGrenade", 1}};
+        backpackMagazines[] = {
+            {"HandGrenade", 1},
+            {"CUP_Strela_2_M", 1}
+        };
         uniformMagazines[] = {
             {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
@@ -340,8 +347,8 @@ class VZ58_CZ {
     class ENG : Rifleman {
         primaryWeapon = "CUP_arifle_Sa58RIS1";
         vestMagazines[] = {
-            {"CUP_30Rnd_Sa58_M", 6},
-            {"CUP_30Rnd_Sa58_M_TracerG", 2}
+            {"CUP_30Rnd_Sa58_M", 4},
+            {"CUP_30Rnd_Sa58_M_TracerR", 2}
         };
         backpackMagazines[] = {
             {"Toolkit", 1},
@@ -363,10 +370,10 @@ class VZ58_CZ {
     class SN : Rifleman {
         primaryWeapon = "CUP_srifle_SVD";
         handgunWeapon = "CUP_hgun_SA61";
-        primaryWeaponItems[] = {"CUP_optic_PSO_1_1"};
+        primaryWeaponItems[] = {"CUP_optic_PSO_1_1_open"};
         vestMagazines[] = {
             {"CUP_10Rnd_762x54_SVD_M", 4},
-            {"CUP_10Rnd_B_765x17_Ball_M", 3}
+            {"CUP_20Rnd_B_765x17_Ball_M", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
@@ -379,6 +386,10 @@ class VZ58_CZ {
 
     class SP : Rifleman {
         binocular = "ACE_VectorDay";
+        vestMagazines[] = {
+            {"CUP_30Rnd_Sa58_M", 4},
+            {"CUP_30Rnd_Sa58_M_TracerR", 2}
+        };
     };
 
     class VC : Crew {
@@ -399,18 +410,18 @@ class VZ58_CZ {
 
     class Vehicle {
         weapons[] = {
-            {"CUP_arifle_Sa58RIS2", 2},
-            {"CUP_launch_M72A6", 4}
+            {"CUP_arifle_CZ805_A1_blk", 2},
+            {"CUP_launch_RPG18", 2}
         };
         magazines[] = {
             {"CUP_30Rnd_Sa58_M", 20},
-            {"CUP_30Rnd_Sa58_M_TracerG", 10},
+            {"CUP_30Rnd_Sa58_M_TracerR", 10},
             {"CUP_50Rnd_UK59_762x54R_Tracer", 10},
             {"CUP_1Rnd_Smoke_M203", 5},
-            {"CUP_FlareWhite_M203", 5},
-            {"CUP_PG7VM_M", 5},
             {"ACE_HandFlare_White", 5},
+            {"CUP_FlareWhite_M203", 5},
             {"HandGrenade", 5},
+            {"CUP_PG7VL_M", 5},
             {"SmokeShell", 5}
         };
         items[] = {
@@ -426,20 +437,18 @@ class VZ58_CZ {
     class Truck : Vehicle {
         weapons[] = {
             {"CUP_arifle_Sa58RIS2", 2},
-            {"CUP_launch_M72A6", 10}
+            {"CUP_launch_RPG18", 4}
         };
         magazines[] = {
             {"CUP_30Rnd_Sa58_M", 40},
-            {"CUP_30Rnd_Sa58_M_TracerG", 20},
-            {"CUP_50Rnd_UK59_762x54R_Tracer", 20},
-            {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
+            {"CUP_30Rnd_Sa58_M_TracerR", 20},
+            {"CUP_50Rnd_UK59_762x54R_Tracer", 30},
             {"CUP_1Rnd_Smoke_M203", 10},
-            {"CUP_FlareWhite_M203", 10},
             {"SatchelCharge_Remote_Mag", 5},
-            {"ACE_HandFlare_White", 10},
-            {"CUP_PG7VL_M", 5},
-            {"CUP_PG7VM_M", 5},
+            {"CUP_PG7VL_M", 10},
             {"CUP_AT13_M", 5},
+            {"ACE_HandFlare_White", 10},
+            {"CUP_FlareWhite_M203", 10},
             {"HandGrenade", 10},
             {"SmokeShell", 10}
         };
@@ -452,18 +461,16 @@ class VZ58_CZ {
     };
 
     class Armored : Truck {
-        weapons[] = {{"CUP_launch_M72A6", 10}};
+        weapons[] = {{"CUP_launch_RPG18", 4}};
         magazines[] = {
             {"CUP_30Rnd_Sa58_M", 40},
-            {"CUP_30Rnd_Sa58_M_TracerG", 20},
-            {"CUP_50Rnd_UK59_762x54R_Tracer", 20},
-            {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
+            {"CUP_30Rnd_Sa58_M_TracerR", 20},
+            {"CUP_50Rnd_UK59_762x54R_Tracer", 30},
             {"CUP_1Rnd_Smoke_M203", 10},
-            {"CUP_FlareWhite_M203", 10},
-            {"CUP_PG7VL_M", 5},
-            {"CUP_PG7VM_M", 5},
+            {"CUP_PG7VL_M", 10},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
+            {"CUP_FlareWhite_M203", 10},
             {"HandGrenade", 10},
             {"SmokeShell", 10}
         };
