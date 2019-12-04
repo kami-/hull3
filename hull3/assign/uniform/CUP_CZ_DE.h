@@ -1,64 +1,64 @@
-class CUP_CZ_DE_90 {
+class CUP_CZ_DE {
     class Rifleman {
         headGear = "CUP_H_CZ_Helmet01";
         goggles = "";
         uniform = "CUP_U_B_CZ_DST_NoKneepads";
-        vest = "CUP_V_CZ_vest04_ARM";
-        backpack = "B_Kitbag_sgg";
+        vest = "CUP_V_CZ_NPP2006_nk_des_ARM";
+        backpack = "B_Kitbag_cbr";
     };
 
     class Leader : Rifleman {
-        uniform = "CUP_U_B_CZ_DST_Kneepads_Gloves";
-        vest = "CUP_V_CZ_vest06_ARM";
+        vest = "CUP_V_CZ_NPP2006_des_ARM";
     };
 
     class Officer : Leader {
         headGear = "CUP_H_CZ_Hat01";
+        uniform = "CUP_U_B_CZ_DST_Kneepads_Sleeve";
+        vest = "CUP_V_CZ_NPP2006_co_des_ARM";
     };
 
     class Crew : Rifleman {
+        headGear = "CUP_H_USMC_ACVC_DES";
         uniform = "CUP_U_B_CZ_DST_TShirt";
-        headGear = "CUP_H_CZ_Helmet05";
-        vest = "CUP_V_CZ_vest02_ARM";
-        backpack = "CUP_B_ACRScout_m95";
+        vest = "CUP_V_CZ_NPP2006_light_vz95_ARM";
+        backpack = "B_AssaultPack_cbr";
     };
 
     class CO : Officer {
     };
 
     class XO : CO {
+        backpack = "B_Carryall_cbr";
     };
 
     class SL : Officer {
     };
 
     class Medic : Rifleman {
-        vest = "CUP_V_CZ_vest14_ARM";
-        backpack = "B_Kitbag_sgg";
+        headGear = "CUP_H_CZ_Helmet02";
+        vest = "CUP_V_CZ_NPP2006_ok_des_ARM";
+        backpack = "B_Carryall_cbr";
     };
 
     class FTL : Leader {
-        vest = "CUP_V_CZ_vest08_ARM";
-        headGear = "CUP_H_CZ_Helmet02";
-        uniform = "CUP_U_B_CZ_DST_Kneepads";
+        vest = "CUP_V_CZ_NPP2006_co_des_ARM";
     };
 
     class AR : Rifleman {
-        uniform = "CUP_U_B_CZ_DST_Kneepads_Gloves";
-        vest = "CUP_V_CZ_vest12_ARM";
+        headGear = "CUP_H_CZ_Helmet02";
+        uniform = "CUP_U_B_CZ_DST_TShirt";
     };
 
     class AAR : Rifleman {
-        backpack = "B_Carryall_oli";
+        headGear = "CUP_H_CZ_Helmet02";
+        backpack = "B_Carryall_cbr";
     };
 
     class RAT : Rifleman {
-        headGear = "CUP_H_CZ_Helmet02";
-        uniform = "CUP_U_B_CZ_DST_Kneepads_Gloves";
     };
 
     class MMGG : AR {
-        backpack = "B_Carryall_oli";
+        backpack = "B_Carryall_cbr";
     };
 
     class MMGAG : AAR {
@@ -74,7 +74,7 @@ class CUP_CZ_DE_90 {
     };
 
     class MATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "B_Carryall_cbr";
     };
 
     class MATAG : AAR {
@@ -84,7 +84,7 @@ class CUP_CZ_DE_90 {
     };
 
     class HATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "B_Carryall_cbr";
     };
 
     class HATAG : AAR {
@@ -130,23 +130,22 @@ class CUP_CZ_DE_90 {
     };
 
     class ENG : Rifleman {
-        vest = "CUP_V_CZ_vest18_ARM";
-        headGear = "CUP_H_CZ_Helmet02";
-        backpack = "B_Carryall_oli";
+        backpack = "B_Carryall_cbr";
     };
 
     class ENGA : ENG {
     };
 
     class SN : Rifleman {
-        headGear = "CUP_H_CZ_Hat04";
-        uniform = "CUP_U_B_CZ_DST_Kneepads_Gloves";
-        goggles = "G_Bandanna_khk";
-        vest = "CUP_V_CZ_vest04_ARM";
-        backpack = "CUP_B_ACRScout_m95";
+        headGear = "CUP_H_CZ_Booniehat_fold_des";
+        goggles = "";
+        uniform = "CUP_U_B_CZ_DST_TShirt";
+        vest = "CUP_V_CZ_NPP2006_des_ARM";
+        backpack = "B_AssaultPack_cbr";
     };
 
     class SP : SN {
+        headGear = "CUP_H_CZ_Booniehat_vz95_des";
     };
 
     class VC : Crew {
@@ -159,13 +158,14 @@ class CUP_CZ_DE_90 {
     };
 
     class P : Crew {
-        headGear = "CUP_H_RUS_ZSH_Shield_Up";
+        headGear = "H_PilotHelmetHeli_B";
         uniform = "CUP_U_B_CZ_Pilot_WDL";
-        vest = "CUP_V_CZ_vest20_ARM";
+        vest = "CUP_V_CZ_NPP2006_light_vz95_ARM";
         backpack = "B_Parachute";
     };
 
     class PCM : P {
+        headGear = "H_CrewHelmetHeli_B";
     };
 
 };
