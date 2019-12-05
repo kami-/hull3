@@ -354,17 +354,17 @@ class AUGA3_NZ {
     };
 
     class SN : Rifleman {
-        primaryWeapon = "srifle_EBR_F";
+        primaryWeapon = "CUP_srifle_L129A1_HG";
         handgunWeapon = "CUP_hgun_Glock17_blk";
-        primaryWeaponItems[] = {"optic_Hamr", "CUP_acc_Flashlight", "bipod_02_F_blk"};
+        primaryWeaponItems[] = {"CUP_optic_Leupold_VX3", "CUP_bipod_VLTOR_Modpod_black"};
         vestMagazines[] = {
-            {"20Rnd_762x51_Mag", 4},
+            {"CUP_20Rnd_762x51_L129_M", 4},
             {"CUP_17Rnd_9x19_glock17", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"20Rnd_762x51_Mag", 3}
+            {"CUP_20Rnd_762x51_L129_M", 3}
         };
         assignItems[] = {"ItemGPS"};
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};

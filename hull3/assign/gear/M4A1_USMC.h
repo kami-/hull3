@@ -360,17 +360,17 @@ class M4A1_USMC {
     };
 
     class SN : Rifleman {
-        primaryWeapon = "hlc_rifle_m14dmr";
+        primaryWeapon = "CUP_srifle_M40A3";
         handgunWeapon = "hlc_Pistol_M11A1";
-        primaryWeaponItems[] = {"hlc_optic_artel_m14"};
+        primaryWeaponItems[] = {"CUP_optic_SB_3_12x50_PMII", "CUP_bipod_VLTOR_Modpod_black"};
         vestMagazines[] = {
-            {"hlc_20Rnd_762x51_B_M14", 4},
+            {"CUP_5Rnd_762x51_M24", 4},
             {"hlc_13Rnd_9x19_B_P228", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_20Rnd_762x51_B_M14", 3}
+            {"CUP_5Rnd_762x51_M24", 3}
         };
         assignItems[] = {"ItemGPS"};
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};

@@ -268,7 +268,7 @@ class AUGA3_IRE {
     class SAMAG : Rifleman {
         backpackMagazines[] = {
             {"HandGrenade", 1},
-            {"hlc_30Rnd_545x39_T_AK", 2},
+            {"hlc_30Rnd_556x45_B_AUG", 2},
             {"CUP_Stinger_M", 1}
         };
         uniformMagazines[] = {
@@ -349,17 +349,17 @@ class AUGA3_IRE {
     };
 
     class SN : Rifleman {
-        primaryWeapon = "hlc_rifle_m14sopmod";
+        primaryWeapon = "CUP_srifle_AWM_blk";
         handgunWeapon = "hgun_Pistol_heavy_01_F";
-        primaryWeaponItems[] = {"optic_Hamr", "CUP_acc_Flashlight", "bipod_02_F_blk"};
+        primaryWeaponItems[] = {"CUP_optic_LeupoldMk4", "CUP_bipod_VLTOR_Modpod_black"};
         vestMagazines[] = {
-            {"hlc_20Rnd_762x51_B_M14", 4},
+            {"CUP_5Rnd_86x70_L115A1", 4},
             {"11Rnd_45ACP_Mag", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_20Rnd_762x51_B_M14", 3}
+            {"CUP_5Rnd_86x70_L115A1", 3}
         };
         assignItems[] = {"ItemGPS"};
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};

@@ -347,17 +347,17 @@ class M16A1_US {
     };
 
     class SN : Rifleman {
-        primaryWeapon = "hlc_rifle_M21";
+        primaryWeapon = "CUP_srifle_M40A3";
         handgunWeapon = "CUP_hgun_Colt1911";
-        primaryWeaponItems[] = {"hlc_optic_artel_m14"};
+        primaryWeaponItems[] = {"CUP_optic_SB_3_12x50_PMII", "CUP_bipod_VLTOR_Modpod_black"};
         vestMagazines[] = {
-            {"CUP_20Rnd_556x45_Stanag", 4},
+            {"CUP_5Rnd_762x51_M24", 4},
             {"CUP_7Rnd_45ACP_1911", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"CUP_20Rnd_556x45_Stanag", 3}
+            {"CUP_5Rnd_762x51_M24", 3}
         };
         assignItems[] = {};
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
