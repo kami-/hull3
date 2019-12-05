@@ -1,6 +1,6 @@
 class MP5_GEND {
     class Rifleman {
-        primaryWeapon = "hlc_smg_mp5a3";
+        primaryWeapon = "CUP_smg_MP5A5_flashlight";
         primaryWeaponItems[] = {};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
@@ -14,15 +14,11 @@ class MP5_GEND {
             {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
-        vestMagazines[] = {
-            {"hlc_30Rnd_9x19_B_MP5", 6},
-            {"hlc_30Rnd_9x19_GD_MP5", 2}
-        };
+        vestMagazines[] = {{"CUP_30Rnd_9x19_MP5", 8}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_30Rnd_9x19_B_MP5", 4},
-            {"hlc_30Rnd_9x19_GD_MP5", 2}
+            {"CUP_30Rnd_9x19_MP5", 6}
         };
         basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch"};
         assignItems[] = {};
@@ -48,19 +44,17 @@ class MP5_GEND {
     };
 
     class Leader : Rifleman {
-        primaryWeapon = "hlc_smg_mp5a3";
+        primaryWeapon = "CUP_smg_MP5A5_flashlight";
         primaryWeaponItems[] = {};
         handgunWeapon = "CUP_hgun_Glock17_blk";
         vestMagazines[] = {
-            {"hlc_30Rnd_9x19_B_MP5", 6},
-            {"hlc_30Rnd_9x19_GD_MP5", 2},
+            {"CUP_30Rnd_9x19_MP5", 8},
             {"CUP_17Rnd_9x19_glock17", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_30Rnd_9x19_B_MP5", 4},
-            {"hlc_30Rnd_9x19_GD_MP5", 2}
+            {"CUP_30Rnd_9x19_MP5", 6}
         };
         assignItems[] = {"ItemGPS"};
         binocular = "Binocular";
@@ -73,14 +67,14 @@ class MP5_GEND {
     };
 
     class Crew : Rifleman {
-        primaryWeapon = "hlc_smg_mp5k_PDW";
+        primaryWeapon = "CUP_smg_MP5A5";
         primaryWeaponItems[] = {};
         uniformMagazines[] = {
             {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
-        vestMagazines[] = {{"hlc_30Rnd_9x19_B_MP5", 6}};
+        vestMagazines[] = {{"CUP_30Rnd_9x19_MP5", 6}};
         backpackMagazines[] = {};
         assignItems[] = {"ItemGPS", "ACE_NVG_Wide"};
     };
@@ -104,16 +98,15 @@ class MP5_GEND {
     };
 
     class Medic : Rifleman {
-        primaryWeapon = "hlc_smg_mp5a3";
+        primaryWeapon = "CUP_smg_MP5A5_flashlight";
         primaryWeaponItems[] = {};
         vestMagazines[] = {
-            {"hlc_30Rnd_9x19_B_MP5", 6},
-            {"hlc_30Rnd_9x19_GD_MP5", 2},
+            {"CUP_30Rnd_9x19_MP5", 8},
             {"SmokeShell", 4}
         };
         backpackMagazines[] = {
             {"SmokeShellBlue", 4},
-            {"hlc_30Rnd_9x19_B_MP5", 2}
+            {"CUP_30Rnd_9x19_MP5", 2}
         };
         assignItems[] = {"ItemGPS"};
         binocular = "Binocular";
@@ -149,15 +142,11 @@ class MP5_GEND {
 
     class RAT : Rifleman {
         primaryWeaponItems[] = {};
-        vestMagazines[] = {
-            {"hlc_30Rnd_9x19_B_MP5", 6},
-            {"hlc_30Rnd_9x19_GD_MP5", 2}
-        };
+        vestMagazines[] = {{"CUP_30Rnd_9x19_MP5", 8}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_30Rnd_9x19_B_MP5", 4},
-            {"hlc_30Rnd_9x19_GD_MP5", 2}
+            {"CUP_30Rnd_9x19_MP5", 6}
         };
     };
 
@@ -331,10 +320,7 @@ class MP5_GEND {
 
     class ENG : Rifleman {
         primaryWeaponItems[] = {};
-        vestMagazines[] = {
-            {"hlc_30Rnd_9x19_B_MP5", 6},
-            {"hlc_30Rnd_9x19_GD_MP5", 2}
-        };
+        vestMagazines[] = {{"CUP_30Rnd_9x19_MP5", 8}};
         backpackMagazines[] = {
             {"Toolkit", 1},
             {"DemoCharge_Remote_Mag", 3},
@@ -353,17 +339,17 @@ class MP5_GEND {
     };
 
     class SN : Rifleman {
-        primaryWeapon = "hlc_rifle_psg1A1";
+        primaryWeapon = "CUP_arifle_G3A3_modern_ris_black";
         handgunWeapon = "CUP_hgun_Glock17_blk";
-        primaryWeaponItems[] = {"hlc_optic_accupoint_g3", "bipod_01_F_blk"};
+        primaryWeaponItems[] = {"CUP_optic_SB_3_12x50_PMII", "CUP_bipod_G3SG1"};
         vestMagazines[] = {
-            {"hlc_20rnd_762x51_b_G3", 4},
+            {"CUP_20Rnd_762x51_G3", 4},
             {"CUP_17Rnd_9x19_glock17", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_20rnd_762x51_b_G3", 3}
+            {"CUP_20Rnd_762x51_G3", 3}
         };
         assignItems[] = {"ItemGPS"};
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -391,15 +377,13 @@ class MP5_GEND {
 
     class Vehicle {
         weapons[] = {
-            {"hlc_smg_mp5a3", 2},
+            {"CUP_smg_MP5A5_flashlight", 2},
             {"CUP_launch_M72A6", 3}
         };
         magazines[] = {
-            {"hlc_30Rnd_9x19_B_MP5", 20},
-            {"hlc_30Rnd_9x19_GD_MP5", 10},
-            {"hlc_50rnd_556x45_EPR", 10},
-            {"1Rnd_Smoke_Grenade_shell", 5},
-            {"UGL_FlareWhite_F", 5},
+            {"CUP_30Rnd_9x19_MP5", 30},
+            {"CUP_8Rnd_B_Beneli_74Pellets", 5},
+            {"CUP_8Rnd_B_Beneli_74Slug", 5},
             {"ACE_HandFlare_White", 5},
             {"HandGrenade", 5},
             {"SmokeShell", 5}
@@ -416,16 +400,14 @@ class MP5_GEND {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"hlc_smg_mp5a3", 2},
+            {"CUP_smg_MP5A5_flashlight", 2},
             {"CUP_launch_M72A6", 10}
         };
         magazines[] = {
-            {"hlc_30Rnd_9x19_B_MP5", 40},
-            {"hlc_30Rnd_9x19_GD_MP5", 20},
-            {"hlc_50rnd_556x45_EPR", 20},
+            {"CUP_30Rnd_9x19_MP5", 60},
+            {"CUP_8Rnd_B_Beneli_74Slug", 20},
+            {"CUP_8Rnd_B_Beneli_74Pellets", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
-            {"1Rnd_Smoke_Grenade_shell", 10},
-            {"UGL_FlareWhite_F", 10},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
             {"MRAWS_HEAT_F", 5},
@@ -444,12 +426,10 @@ class MP5_GEND {
     class Armored : Truck {
         weapons[] = {{"CUP_launch_M72A6", 10}};
         magazines[] = {
-            {"hlc_30Rnd_9x19_B_MP5", 40},
-            {"hlc_30Rnd_9x19_GD_MP5", 20},
-            {"hlc_50rnd_556x45_EPR", 20},
+            {"CUP_30Rnd_9x19_MP5", 60},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
-            {"1Rnd_Smoke_Grenade_shell", 10},
-            {"UGL_FlareWhite_F", 10},
+            {"CUP_8Rnd_B_Beneli_74Slug", 20},
+            {"CUP_8Rnd_B_Beneli_74Pellets", 20},
             {"MRAWS_HEAT_F", 5},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
