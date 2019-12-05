@@ -358,17 +358,17 @@ class M4A1_US {
     };
 
     class SN : Rifleman {
-        primaryWeapon = "srifle_EBR_F";
+        primaryWeapon = "CUP_srifle_M24_blk";
         handgunWeapon = "hlc_Pistol_M11";
-        primaryWeaponItems[] = {"CUP_optic_ACOG_TA31_KF", "bipod_02_F_blk", "CUP_acc_Flashlight"};
+        primaryWeaponItems[] = {"CUP_optic_LeupoldMk4", "CUP_bipod_VLTOR_Modpod_black"};
         vestMagazines[] = {
-            {"20Rnd_762x51_Mag", 4},
+            {"CUP_5Rnd_762x51_M24", 4},
             {"hlc_13Rnd_9x19_B_P228", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"20Rnd_762x51_Mag", 3}
+            {"CUP_5Rnd_762x51_M24", 3}
         };
         assignItems[] = {"ItemGPS"};
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};

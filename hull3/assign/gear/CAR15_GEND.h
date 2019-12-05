@@ -79,14 +79,14 @@ class CAR15_GEND {
     };
 
     class Crew : Rifleman {
-        primaryWeapon = "hlc_smg_MP5N";
+        primaryWeapon = "CUP_smg_MP5A5";
         primaryWeaponItems[] = {};
         uniformMagazines[] = {
             {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
-        vestMagazines[] = {{"hlc_30Rnd_9x19_B_MP5", 6}};
+        vestMagazines[] = {{"CUP_30Rnd_9x19_MP5", 6}};
         backpackMagazines[] = {};
         assignItems[] = {"ItemGPS", "ACE_NVG_Wide"};
     };

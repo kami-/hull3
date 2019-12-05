@@ -365,17 +365,17 @@ class M16A4_CAN {
     };
 
     class SN : Rifleman {
-        primaryWeapon = "srifle_EBR_F";
+        primaryWeapon = "CUP_srifle_AWM_blk";
         handgunWeapon = "hlc_pistol_P226US";
-        primaryWeaponItems[] = {"CUP_optic_ACOG_TA31_KF", "CUP_acc_Flashlight", "bipod_02_F_blk"};
+        primaryWeaponItems[] = {"CUP_optic_SB_3_12x50_PMII", "CUP_bipod_VLTOR_Modpod_black"};
         vestMagazines[] = {
-            {"20Rnd_762x51_Mag", 4},
+            {"CUP_5Rnd_86x70_L115A1", 4},
             {"hlc_15Rnd_9x19_B_P226", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"20Rnd_762x51_Mag", 3}
+            {"CUP_5Rnd_86x70_L115A1", 3}
         };
         assignItems[] = {"ItemGPS"};
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};

@@ -168,11 +168,11 @@ class M16A4_ROK {
     class MMGG : Rifleman {
         primaryWeapon = "CUP_lmg_M60E4";
         primaryWeaponItems[] = {};
-        vestMagazines[] = {{"hlc_100Rnd_762x51_B_M60E4", 2}};
+        vestMagazines[] = {{"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 2}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_100Rnd_762x51_B_M60E4", 4},
+            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 4},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 3}
         };
     };
@@ -182,7 +182,7 @@ class M16A4_ROK {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2},
-            {"hlc_100Rnd_762x51_B_M60E4", 3},
+            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 3},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 2}
         };
         binocular = "ACE_VectorDay";
@@ -367,17 +367,17 @@ class M16A4_ROK {
     };
 
     class SN : Rifleman {
-        primaryWeapon = "hlc_rifle_m14dmr";
+        primaryWeapon = "CUP_srifle_AWM_blk";
         handgunWeapon = "CUP_hgun_M9";
-        primaryWeaponItems[] = {"hlc_optic_artel_m14"};
+        primaryWeaponItems[] = {"CUP_optic_SB_3_12x50_PMII", "CUP_bipod_VLTOR_Modpod_black"};
         vestMagazines[] = {
-            {"hlc_20Rnd_762x51_B_M14", 4},
+            {"CUP_5Rnd_86x70_L115A1", 4},
             {"CUP_15Rnd_9x19_M9", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"hlc_20Rnd_762x51_B_M14", 3}
+            {"CUP_5Rnd_86x70_L115A1", 3}
         };
         assignItems[] = {"ItemGPS"};
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
@@ -437,7 +437,7 @@ class M16A4_ROK {
             {"30Rnd_556x45_Stanag", 40},
             {"30Rnd_556x45_Stanag_Tracer_Red", 20},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
-            {"hlc_100Rnd_762x51_B_M60E4", 10},
+            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"CUP_1Rnd_Smoke_M203", 10},
             {"CUP_FlareWhite_M203", 10},
             {"MRAWS_HEAT_F", 5},
@@ -461,7 +461,7 @@ class M16A4_ROK {
             {"30Rnd_556x45_Stanag", 40},
             {"30Rnd_556x45_Stanag_Tracer_Red", 20},
             {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 20},
-            {"hlc_100Rnd_762x51_B_M60E4", 10},
+            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"CUP_1Rnd_Smoke_M203", 10},
             {"CUP_FlareWhite_M203", 10},
             {"MRAWS_HEAT_F", 5},
