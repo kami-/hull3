@@ -182,10 +182,10 @@ class Faction {
     };
 
     class BLU_GEN_F_SWAT {
-        gear = "CAR15_GEND";
+        gear = "FAMAS_GEND";
         uniform = "GEND_SWAT";
         name = "Gendarmes (SWAT)";
-        description = "SWAT Police with CAR-15 series weapons";
+        description = "SWAT Police with FAMAS F1 rifles";
         languages[] = {{"west", 100}};
         side = "west";
         camouflage[] = {"woodland"};

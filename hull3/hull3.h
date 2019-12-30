@@ -171,7 +171,7 @@ class Hull3 {
         #include "assign\gear\AUGA3_AUS.h"
         #include "assign\gear\AUGA3_IRE.h"
         #include "assign\gear\AUGA3_NZ.h"
-        #include "assign\gear\CAR15_GEND.h"
+        #include "assign\gear\FAMAS_GEND.h"
         #include "assign\gear\CAR95_CSAT.h"
         #include "assign\gear\CAR95_CN.h"
         #include "assign\gear\FAL_TKA.h"
