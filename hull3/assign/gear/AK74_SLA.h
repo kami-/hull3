@@ -432,7 +432,10 @@ class AK74_SLA {
             {"Toolkit", 1},
             {"ItemGPS", 1}
         };
-        medicalItems[] = {{"ACE_fieldDressing", 50}};
+        medicalItems[] = {
+            {"ACE_fieldDressing", 50},
+            {"ACE_splint", 12}
+        };
     };
 
     class Car : Vehicle {
@@ -463,7 +466,10 @@ class AK74_SLA {
             {"Toolkit", 1},
             {"ItemGPS", 1}
         };
-        medicalItems[] = {{"ACE_fieldDressing", 50}};
+        medicalItems[] = {
+            {"ACE_fieldDressing", 50},
+            {"ACE_splint", 12}
+        };
     };
 
     class Armored : Truck {
@@ -487,7 +493,10 @@ class AK74_SLA {
             {"Toolkit", 1},
             {"ItemGPS", 1}
         };
-        medicalItems[] = {{"ACE_fieldDressing", 50}};
+        medicalItems[] = {
+            {"ACE_fieldDressing", 50},
+            {"ACE_splint", 12}
+        };
     };
 
 };

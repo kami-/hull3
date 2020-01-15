@@ -412,7 +412,10 @@ class M16A2_US {
             {"Toolkit", 1},
             {"ItemGPS", 1}
         };
-        medicalItems[] = {{"ACE_fieldDressing", 50}};
+        medicalItems[] = {
+            {"ACE_fieldDressing", 50},
+            {"ACE_splint", 12}
+        };
     };
 
     class Car : Vehicle {
@@ -442,7 +445,10 @@ class M16A2_US {
             {"Toolkit", 1},
             {"ItemGPS", 1}
         };
-        medicalItems[] = {{"ACE_fieldDressing", 50}};
+        medicalItems[] = {
+            {"ACE_fieldDressing", 50},
+            {"ACE_splint", 12}
+        };
     };
 
     class Armored : Truck {
@@ -465,7 +471,10 @@ class M16A2_US {
             {"Toolkit", 1},
             {"ItemGPS", 1}
         };
-        medicalItems[] = {{"ACE_fieldDressing", 50}};
+        medicalItems[] = {
+            {"ACE_fieldDressing", 50},
+            {"ACE_splint", 12}
+        };
     };
 
 };
