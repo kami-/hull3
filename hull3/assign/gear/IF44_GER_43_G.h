@@ -101,7 +101,7 @@ class IF44_GER_43_G {
             {"ACE_fieldDressing", 30},
             {"ACE_morphine", 30},
             {"ACE_epinephrine", 30},
-            {"ACE_bloodIV", 12}
+            {"ACE_bloodIV_500", 24}
         };
     };
 
