@@ -27,9 +27,12 @@ class FOW_USA_G {
         uniformRadios[] = {};
         vestRadios[] = {};
         backpackRadios[] = {};
-        uniformMedicalItems[] = {{"ACE_fieldDressing", 6}};
+        uniformMedicalItems[] = {
+            {"ACE_fieldDressing", 10},
+            {"ACE_tourniquet", 2}
+        };
         vestMedicalItems[] = {};
-        backpackMedicalItems[] = {{"ACE_fieldDressing", 4}};
+        backpackMedicalItems[] = {};
         code = "";
         headGear = "";
         uniform = "";
@@ -103,7 +106,8 @@ class FOW_USA_G {
             {"ACE_fieldDressing", 30},
             {"ACE_morphine", 30},
             {"ACE_epinephrine", 30},
-            {"ACE_bloodIV", 12}
+            {"ACE_bloodIV_500", 24},
+            {"ACE_splint", 4}
         };
     };
 

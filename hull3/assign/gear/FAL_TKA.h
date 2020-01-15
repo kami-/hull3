@@ -36,7 +36,10 @@ class FAL_TKA {
         uniformRadios[] = {"ACRE_PRC343"};
         vestRadios[] = {};
         backpackRadios[] = {};
-        uniformMedicalItems[] = {{"ACE_fieldDressing", 10}};
+        uniformMedicalItems[] = {
+            {"ACE_fieldDressing", 10},
+            {"ACE_tourniquet", 2}
+        };
         vestMedicalItems[] = {};
         backpackMedicalItems[] = {};
         code = "";
@@ -121,7 +124,8 @@ class FAL_TKA {
             {"ACE_fieldDressing", 30},
             {"ACE_morphine", 30},
             {"ACE_epinephrine", 30},
-            {"ACE_bloodIV", 12}
+            {"ACE_bloodIV_500", 24},
+            {"ACE_splint", 4}
         };
     };
 
@@ -412,7 +416,10 @@ class FAL_TKA {
             {"Toolkit", 1},
             {"ItemGPS", 1}
         };
-        medicalItems[] = {{"ACE_fieldDressing", 50}};
+        medicalItems[] = {
+            {"ACE_fieldDressing", 50},
+            {"ACE_splint", 12}
+        };
     };
 
     class Car : Vehicle {
@@ -443,7 +450,10 @@ class FAL_TKA {
             {"Toolkit", 1},
             {"ItemGPS", 1}
         };
-        medicalItems[] = {{"ACE_fieldDressing", 50}};
+        medicalItems[] = {
+            {"ACE_fieldDressing", 50},
+            {"ACE_splint", 12}
+        };
     };
 
     class Armored : Truck {
@@ -466,7 +476,10 @@ class FAL_TKA {
             {"Toolkit", 1},
             {"ItemGPS", 1}
         };
-        medicalItems[] = {{"ACE_fieldDressing", 50}};
+        medicalItems[] = {
+            {"ACE_fieldDressing", 50},
+            {"ACE_splint", 12}
+        };
     };
 
 };

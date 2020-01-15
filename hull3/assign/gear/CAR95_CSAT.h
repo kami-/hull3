@@ -36,9 +36,12 @@ class CAR95_CSAT {
         uniformRadios[] = {"ACRE_PRC343"};
         vestRadios[] = {};
         backpackRadios[] = {};
-        uniformMedicalItems[] = {{"ACE_fieldDressing", 6}};
+        uniformMedicalItems[] = {
+            {"ACE_fieldDressing", 10},
+            {"ACE_tourniquet", 2}
+        };
         vestMedicalItems[] = {};
-        backpackMedicalItems[] = {{"ACE_fieldDressing", 4}};
+        backpackMedicalItems[] = {};
         code = "";
         headGear = "";
         uniform = "";
@@ -128,7 +131,8 @@ class CAR95_CSAT {
             {"ACE_fieldDressing", 30},
             {"ACE_morphine", 30},
             {"ACE_epinephrine", 30},
-            {"ACE_bloodIV", 12}
+            {"ACE_bloodIV_500", 24},
+            {"ACE_splint", 4}
         };
     };
 
@@ -447,7 +451,10 @@ class CAR95_CSAT {
             {"ItemGPS", 1},
             {"Toolkit", 1}
         };
-        medicalItems[] = {{"ACE_fieldDressing", 50}};
+        medicalItems[] = {
+            {"ACE_fieldDressing", 50},
+            {"ACE_splint", 12}
+        };
     };
 
     class Car : Vehicle {
@@ -477,7 +484,10 @@ class CAR95_CSAT {
             {"Toolkit", 1},
             {"ItemGPS", 1}
         };
-        medicalItems[] = {{"ACE_fieldDressing", 50}};
+        medicalItems[] = {
+            {"ACE_fieldDressing", 50},
+            {"ACE_splint", 12}
+        };
     };
 
     class Armored : Truck {
@@ -500,7 +510,10 @@ class CAR95_CSAT {
             {"Toolkit", 1},
             {"ItemGPS", 1}
         };
-        medicalItems[] = {{"ACE_fieldDressing", 50}};
+        medicalItems[] = {
+            {"ACE_fieldDressing", 50},
+            {"ACE_splint", 12}
+        };
     };
 
 };
