@@ -121,7 +121,8 @@ class RK62_FIN {
             {"ACE_fieldDressing", 30},
             {"ACE_morphine", 30},
             {"ACE_epinephrine", 30},
-            {"ACE_bloodIV_500", 24}
+            {"ACE_bloodIV_500", 24},
+            {"ACE_splint", 4}
         };
     };
 
