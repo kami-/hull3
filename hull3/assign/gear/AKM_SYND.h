@@ -32,7 +32,10 @@ class AKM_SYND {
         uniformRadios[] = {"ACRE_PRC343"};
         vestRadios[] = {};
         backpackRadios[] = {};
-        uniformMedicalItems[] = {{"ACE_fieldDressing", 10}};
+        uniformMedicalItems[] = {
+            {"ACE_fieldDressing", 10},
+            {"ACE_tourniquet", 2}
+        };
         vestMedicalItems[] = {};
         backpackMedicalItems[] = {};
         code = "";

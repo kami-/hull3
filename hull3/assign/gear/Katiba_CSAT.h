@@ -36,9 +36,12 @@ class Katiba_CSAT {
         uniformRadios[] = {"ACRE_PRC343"};
         vestRadios[] = {};
         backpackRadios[] = {};
-        uniformMedicalItems[] = {{"ACE_fieldDressing", 6}};
+        uniformMedicalItems[] = {
+            {"ACE_fieldDressing", 10},
+            {"ACE_tourniquet", 2}
+        };
         vestMedicalItems[] = {};
-        backpackMedicalItems[] = {{"ACE_fieldDressing", 4}};
+        backpackMedicalItems[] = {};
         code = "";
         headGear = "";
         uniform = "";
