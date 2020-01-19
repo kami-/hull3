@@ -364,7 +364,6 @@ class AK74_UKR {
             {"CUP_30Rnd_TE1_Red_Tracer_545x39_AK_M", 2}
         };
         backpackMagazines[] = {
-            {"Toolkit", 1},
             {"DemoCharge_Remote_Mag", 3},
             {"SLAMDirectionalMine_Wire_Mag", 2}
         };
@@ -433,10 +432,7 @@ class AK74_UKR {
             {"HandGrenade", 5},
             {"SmokeShell", 5}
         };
-        items[] = {
-            {"Toolkit", 1},
-            {"ItemGPS", 1}
-        };
+        items[] = {{"ItemGPS", 1}};
         medicalItems[] = {
             {"ACE_fieldDressing", 50},
             {"ACE_splint", 12}
@@ -468,7 +464,6 @@ class AK74_UKR {
         };
         items[] = {
             {"ACE_M26_Clacker", 1},
-            {"Toolkit", 1},
             {"ItemGPS", 1}
         };
         medicalItems[] = {
@@ -495,7 +490,6 @@ class AK74_UKR {
         };
         items[] = {
             {"ACE_M26_Clacker", 1},
-            {"Toolkit", 1},
             {"ItemGPS", 1}
         };
         medicalItems[] = {

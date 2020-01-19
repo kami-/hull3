@@ -309,7 +309,6 @@ class FOW_USA_G {
         primaryWeapon = "fow_w_m1_carbine";
         vestMagazines[] = {{"fow_15Rnd_762x33", 8}};
         backpackMagazines[] = {
-            {"Toolkit", 1},
             {"DemoCharge_Remote_Mag", 5}
         };
         assignItems[] = {};
@@ -387,10 +386,7 @@ class FOW_USA_G {
             {"SmokeShell", 10},
             {"fow_e_tnt_halfpound", 25}
         };
-        items[] = {
-            {"ACE_M26_Clacker", 1},
-            {"Toolkit", 1}
-        };
+        items[] = {{"ACE_M26_Clacker", 1}};
         radios[] = {
             {"ACRE_PRC343", 1},
             {"ACRE_PRC152", 1}

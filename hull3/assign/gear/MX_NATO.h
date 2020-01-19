@@ -377,7 +377,6 @@ class MX_NATO {
             {"30Rnd_65x39_caseless_mag_Tracer", 2}
         };
         backpackMagazines[] = {
-            {"Toolkit", 1},
             {"DemoCharge_Remote_Mag", 3},
             {"SLAMDirectionalMine_Wire_Mag", 2}
         };
@@ -450,10 +449,7 @@ class MX_NATO {
             {"HandGrenade", 5},
             {"SmokeShell", 5}
         };
-        items[] = {
-            {"Toolkit", 1},
-            {"ItemGPS", 1}
-        };
+        items[] = {{"ItemGPS", 1}};
         medicalItems[] = {
             {"ACE_fieldDressing", 50},
             {"ACE_splint", 12}
@@ -484,7 +480,6 @@ class MX_NATO {
         };
         items[] = {
             {"ACE_M26_Clacker", 1},
-            {"Toolkit", 1},
             {"ItemGPS", 1}
         };
         medicalItems[] = {
@@ -510,7 +505,6 @@ class MX_NATO {
         };
         items[] = {
             {"ACE_M26_Clacker", 1},
-            {"Toolkit", 1},
             {"ItemGPS", 1}
         };
         medicalItems[] = {

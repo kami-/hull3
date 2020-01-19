@@ -356,7 +356,6 @@ class BREN807_PMC {
             {"CUP_30Rnd_TE1_Yellow_Tracer_762x39_CZ807", 2}
         };
         backpackMagazines[] = {
-            {"Toolkit", 1},
             {"DemoCharge_Remote_Mag", 3},
             {"SLAMDirectionalMine_Wire_Mag", 2}
         };
@@ -424,10 +423,7 @@ class BREN807_PMC {
             {"HandGrenade", 5},
             {"SmokeShell", 5}
         };
-        items[] = {
-            {"Toolkit", 1},
-            {"ItemGPS", 1}
-        };
+        items[] = {{"ItemGPS", 1}};
         medicalItems[] = {
             {"ACE_fieldDressing", 50},
             {"ACE_splint", 12}
@@ -458,7 +454,6 @@ class BREN807_PMC {
         };
         items[] = {
             {"ACE_M26_Clacker", 1},
-            {"Toolkit", 1},
             {"ItemGPS", 1}
         };
         medicalItems[] = {
@@ -484,7 +479,6 @@ class BREN807_PMC {
         };
         items[] = {
             {"ACE_M26_Clacker", 1},
-            {"Toolkit", 1},
             {"ItemGPS", 1}
         };
         medicalItems[] = {

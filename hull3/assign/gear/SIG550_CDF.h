@@ -345,7 +345,6 @@ class SIG550_CDF {
             {"hlc_30Rnd_556x45_T_sg550", 2}
         };
         backpackMagazines[] = {
-            {"Toolkit", 1},
             {"DemoCharge_Remote_Mag", 3},
             {"SLAMDirectionalMine_Wire_Mag", 2}
         };
@@ -413,10 +412,7 @@ class SIG550_CDF {
             {"HandGrenade", 5},
             {"SmokeShell", 5}
         };
-        items[] = {
-            {"Toolkit", 1},
-            {"ItemGPS", 1}
-        };
+        items[] = {{"ItemGPS", 1}};
         medicalItems[] = {
             {"ACE_fieldDressing", 50},
             {"ACE_splint", 12}
@@ -447,7 +443,6 @@ class SIG550_CDF {
         };
         items[] = {
             {"ACE_M26_Clacker", 1},
-            {"Toolkit", 1},
             {"ItemGPS", 1}
         };
         medicalItems[] = {
@@ -473,7 +468,6 @@ class SIG550_CDF {
         };
         items[] = {
             {"ACE_M26_Clacker", 1},
-            {"Toolkit", 1},
             {"ItemGPS", 1}
         };
         medicalItems[] = {

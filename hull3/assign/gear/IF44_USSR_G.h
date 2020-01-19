@@ -256,7 +256,6 @@ class IF44_USSR_G {
         primaryWeapon = "LIB_PPSh41_m";
         vestMagazines[] = {{"LIB_71Rnd_762x25", 8}};
         backpackMagazines[] = {
-            {"Toolkit", 1},
             {"DemoCharge_Remote_Mag", 5}
         };
         assignItems[] = {};
@@ -330,10 +329,7 @@ class IF44_USSR_G {
             {"LIB_1Rnd_82mm_Mo_Smoke", 15},
             {"LIB_1Rnd_82mm_Mo_Illum", 15}
         };
-        items[] = {
-            {"ACE_M26_Clacker", 1},
-            {"Toolkit", 1}
-        };
+        items[] = {{"ACE_M26_Clacker", 1}};
         radios[] = {
             {"ACRE_PRC343", 1},
             {"ACRE_PRC152", 1}

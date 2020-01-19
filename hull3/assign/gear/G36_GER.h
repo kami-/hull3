@@ -346,7 +346,6 @@ class G36_GER {
             {"CUP_30Rnd_TE1_Red_Tracer_556x45_G36", 2}
         };
         backpackMagazines[] = {
-            {"Toolkit", 1},
             {"DemoCharge_Remote_Mag", 3},
             {"SLAMDirectionalMine_Wire_Mag", 2}
         };
@@ -415,10 +414,7 @@ class G36_GER {
             {"HandGrenade", 5},
             {"SmokeShell", 5}
         };
-        items[] = {
-            {"Toolkit", 1},
-            {"ItemGPS", 1}
-        };
+        items[] = {{"ItemGPS", 1}};
         medicalItems[] = {
             {"ACE_fieldDressing", 50},
             {"ACE_splint", 12}
@@ -448,7 +444,6 @@ class G36_GER {
         };
         items[] = {
             {"ACE_M26_Clacker", 1},
-            {"Toolkit", 1},
             {"ItemGPS", 1}
         };
         medicalItems[] = {
@@ -473,7 +468,6 @@ class G36_GER {
         };
         items[] = {
             {"ACE_M26_Clacker", 1},
-            {"Toolkit", 1},
             {"ItemGPS", 1}
         };
         medicalItems[] = {
