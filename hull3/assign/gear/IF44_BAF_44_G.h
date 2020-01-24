@@ -259,7 +259,6 @@ class IF44_BAF_44_G {
         primaryWeapon = "LIB_Sten_Mk5";
         vestMagazines[] = {{"LIB_32Rnd_9x19_Sten", 8}};
         backpackMagazines[] = {
-            {"Toolkit", 1},
             {"DemoCharge_Remote_Mag", 5}
         };
         assignItems[] = {};
@@ -324,10 +323,7 @@ class IF44_BAF_44_G {
             {"SmokeShell", 10},
             {"LIB_No82", 25}
         };
-        items[] = {
-            {"ACE_M26_Clacker", 1},
-            {"Toolkit", 1}
-        };
+        items[] = {{"ACE_M26_Clacker", 1}};
         radios[] = {
             {"ACRE_PRC343", 1},
             {"ACRE_PRC152", 1}

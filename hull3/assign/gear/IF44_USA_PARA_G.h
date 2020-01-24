@@ -292,7 +292,6 @@ class IF44_USA_PARA_G {
         primaryWeapon = "LIB_M1A1_Thompson";
         vestMagazines[] = {{"LIB_30Rnd_45ACP", 8}};
         backpackMagazines[] = {
-            {"Toolkit", 1},
             {"DemoCharge_Remote_Mag", 5}
         };
         assignItems[] = {};
@@ -366,10 +365,7 @@ class IF44_USA_PARA_G {
             {"LIB_1Rnd_60mm_Mo_Smoke", 15},
             {"LIB_1Rnd_60mm_Mo_Illum", 15}
         };
-        items[] = {
-            {"ACE_M26_Clacker", 1},
-            {"Toolkit", 1}
-        };
+        items[] = {{"ACE_M26_Clacker", 1}};
         radios[] = {
             {"ACRE_PRC343", 1},
             {"ACRE_PRC152", 1}
