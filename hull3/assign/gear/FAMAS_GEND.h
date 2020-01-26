@@ -127,6 +127,8 @@ class FAMAS_GEND {
     };
 
     class AR : Rifleman {
+        primaryWeapon = "CUP_arifle_MG36";
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         vestMagazines[] = {{"CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag_ar15", 1}};
         backpackMagazines[] = {{"CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag_ar15", 3}};
     };
