@@ -212,32 +212,19 @@ hull3_mission_fnc_clientSafetyTimerLoop = {
     if (!isNil {hull3_mission_safetyTimerEnd} && {hull3_mission_safetyTimerEnd > 0}) then {
         [] call hull3_mission_fnc_addHostSafetyTimerStopAction;
         [player] call hull3_unit_fnc_addFiredEHs;
-        [player] call hull3_unit_fnc_addAceThrowableThrownEH;
-        private _playerWeapons = [];
-
-        { 
-            if (!(_x isEqualTo "")) then { 
-                _playerWeapons pushback _x;
-            }; 
-        } forEach [primaryWeapon player,handgunWeapon player]; 
 
         DEBUG("hull3.mission.safetytimer","Starting safety timer loop.");
         [{
             params ["_args", "_id"];
-            _args params ["_playerWeapons"];
-            {
-                if (!(_x in (player getVariable ["ace_safemode_safedWeapons", []]))) then {
-                    [player, _x, _x] call ace_safemode_fnc_lockSafety;
-                };
-            } foreach _playerWeapons;
+            {[ACE_player, _x, true] call ace_safemode_fnc_setWeaponSafety} forEach (weapons player);
 
             if ([] call hull3_mission_fnc_hasSafetyTimerEnded) then {
                 [_this #1] call CBA_fnc_removePerFrameHandler;
-                player removeEventHandler ["Fired", player getVariable "hull3_eh_fired"];
-                ["ace_throwableThrown", player getVariable "hull3_eh_ace_throwableThrown"] call CBA_fnc_removeEventHandler;
+                ["ace_firedPlayer", (player getVariable "hull3_eh_fired")] call CBA_fnc_removeEventHandler;
+                {[ACE_player, _x, false] call ace_safemode_fnc_setWeaponSafety} forEach (weapons player);
                 DEBUG("hull3.mission.safetytimer","Safety timer has ended. Removed fired EH.");
             };
-        }, 0, [_playerWeapons]] call CBA_fnc_addPerFrameHandler;
+        } ] call CBA_fnc_addPerFrameHandler;
     };
 };
 

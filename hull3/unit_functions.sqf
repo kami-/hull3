@@ -71,11 +71,14 @@ hull3_unit_fnc_addEHs = {
 hull3_unit_fnc_addFiredEHs = {
     params ["_unit"];
 
-    private "_ehId";
-    _ehId = player addEventHandler ["Fired", {
-        [_this select 6] call ace_frag_fnc_addBlackList;
-        deleteVehicle (_this select 6);
-    }];
+    private _ehId = ["ace_firedPlayer", {
+        private _obj = param [6, objNull];
+        if (!isNil "ace_frag_fnc_addBlackList") then {
+            [_obj] call ace_frag_fnc_addBlackList;
+        };
+        deleteVehicle _obj;
+    }] call CBA_fnc_addEventHandler;
+
     _unit setVariable ["hull3_eh_fired", _ehId];
 };
 
@@ -88,17 +91,6 @@ hull3_unit_fnc_friendlyFireEH = {
     };
 
     _damage;
-};
-
-hull3_unit_fnc_addAceThrowableThrownEH = {
-    params ["_unit"];
-
-    private "_ehId";
-    _ehId = ["ace_throwableThrown", {
-        [_this select 1] call ace_frag_fnc_addBlackList;
-        deleteVehicle (_this select 1);
-    }] call CBA_fnc_addEventHandler;
-    _unit setVariable ["hull3_eh_ace_throwableThrown", _ehId];
 };
 
 hull3_unit_fnc_killedEH = {
