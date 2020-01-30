@@ -144,6 +144,7 @@ class Hull3 {
         #include "assign\uniform\IDF_90.h"
         #include "assign\uniform\IDF_10.h"
         #include "assign\uniform\ROK_SEAL.h"
+        #include "assign\uniform\LDF.h"
 
         unitBaseClass = "Rifleman";
     };
@@ -224,6 +225,7 @@ class Hull3 {
         #include "assign\gear\M16A2_IDF.h"
         #include "assign\gear\TAVOR_IDF.h"
         #include "assign\gear\HK416_ROK.h"
+        #include "assign\gear\PROMET_LDF.h"
 
         unitBaseClass = "Rifleman";
         vehicleBaseClass = "Vehicle";

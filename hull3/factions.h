@@ -1663,6 +1663,32 @@ class Faction {
         };
     };
 
+    class LDF {
+        gear = "PROMET_LDF";
+        uniform = "LDF";
+        name = "Livonia Defence Forces";
+        description = "Woodland uniforms with carry handle Promets";
+        languages[] = {{"resistance", 100}};
+        side = "resistance";
+        camouflage[] = {"woodland"};
+        rolePrefix = "LDF";
+        vehicleClassnames[] = {
+            {"CO", "I_E_Offroad_01_coms_F"},
+            {"SL", "CUP_I_T810_Unarmed_LDF"},
+            {"FT", "I_E_Offroad_01_F"},
+            {"ATTCH", "I_E_Offroad_01_covered_F"},
+            {"ENG", "CUP_I_T810_Reammo_LDF"},
+            {"APC", "I_E_APC_tracked_03_cannon_F"},
+            {"IFV", "I_E_APC_tracked_03_cannon_F"},
+            {"SPAAG", "I_E_APC_tracked_03_cannon_F"},
+            {"TNK", "I_E_APC_tracked_03_cannon_F"},
+            {"TH", "I_E_Heli_light_03_unarmed_F"},
+            {"AH", "I_E_Heli_light_03_dynamicLoadout_F"},
+            {"CAS", "I_Plane_Fighter_03_CAS_F"},
+            {"Technical", "I_G_Offroad_01_armed_F"}
+        };
+    };
+
     class IND_C_F_BANDIT {
         gear = "AKM_SYND";
         uniform = "SYND_BANDIT";
