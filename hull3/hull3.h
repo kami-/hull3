@@ -146,6 +146,7 @@ class Hull3 {
         #include "assign\uniform\ROK_SEAL.h"
         #include "assign\uniform\LDF.h"
         #include "assign\uniform\SPETSNAZ.h"
+		#include "assign\uniform\CUP_RU_MOD_WD.h"
 
         unitBaseClass = "Rifleman";
     };
