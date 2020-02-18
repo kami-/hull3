@@ -1725,7 +1725,59 @@ class Faction {
         camouflage[] = {"woodland"};
         rolePrefix = "LDF";
         vehicleClassnames[] = {
-            {"CO", "I_E_Offroad_01_coms_F"},
+            {"CO", "I_E_Offroad_01_comms_F"},
+            {"SL", "CUP_I_T810_Unarmed_LDF"},
+            {"FT", "I_E_Offroad_01_F"},
+            {"ATTCH", "I_E_Offroad_01_covered_F"},
+            {"ENG", "CUP_I_T810_Reammo_LDF"},
+            {"APC", "I_E_APC_tracked_03_cannon_F"},
+            {"IFV", "I_E_APC_tracked_03_cannon_F"},
+            {"SPAAG", "I_E_APC_tracked_03_cannon_F"},
+            {"TNK", "I_E_APC_tracked_03_cannon_F"},
+            {"TH", "I_E_Heli_light_03_unarmed_F"},
+            {"AH", "I_E_Heli_light_03_dynamicLoadout_F"},
+            {"CAS", "I_Plane_Fighter_03_CAS_F"},
+            {"Technical", "I_G_Offroad_01_armed_F"}
+        };
+    };
+
+    class LDF_90_WD {
+        gear = "FAL_LDF";
+        uniform = "LDF_90_WD";
+        name = "Livonia Defence Forces Woodland (1990s)";
+        description = "Retro woodland uniforms with FAL";
+        languages[] = {{"resistance", 100}};
+        side = "resistance";
+        camouflage[] = {"woodland"};
+        rolePrefix = "LDF";
+        vehicleClassnames[] = {
+            {"CO", "I_E_Offroad_01_comms_F"},
+            {"SL", "CUP_I_T810_Unarmed_LDF"},
+            {"FT", "I_E_Offroad_01_F"},
+            {"ATTCH", "I_E_Offroad_01_covered_F"},
+            {"ENG", "CUP_I_T810_Reammo_LDF"},
+            {"APC", "I_E_APC_tracked_03_cannon_F"},
+            {"IFV", "I_E_APC_tracked_03_cannon_F"},
+            {"SPAAG", "I_E_APC_tracked_03_cannon_F"},
+            {"TNK", "I_E_APC_tracked_03_cannon_F"},
+            {"TH", "I_E_Heli_light_03_unarmed_F"},
+            {"AH", "I_E_Heli_light_03_dynamicLoadout_F"},
+            {"CAS", "I_Plane_Fighter_03_CAS_F"},
+            {"Technical", "I_G_Offroad_01_armed_F"}
+        };
+    };
+
+    class LDF_90_SN {
+        gear = "FAL_LDF";
+        uniform = "LDF_90_SN";
+        name = "Livonia Defence Forces Winter (1990s)";
+        description = "Retro winter uniforms with FAL";
+        languages[] = {{"resistance", 100}};
+        side = "resistance";
+        camouflage[] = {"snow"};
+        rolePrefix = "LDF";
+        vehicleClassnames[] = {
+            {"CO", "I_E_Offroad_01_comms_F"},
             {"SL", "CUP_I_T810_Unarmed_LDF"},
             {"FT", "I_E_Offroad_01_F"},
             {"ATTCH", "I_E_Offroad_01_covered_F"},
