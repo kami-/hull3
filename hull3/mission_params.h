@@ -27,18 +27,18 @@ class MissionParams {
     // Overcast, Rain, Rainbow, Lightnings, Wind Strength, Wind Gusts, Waves
     weather[] = {
         {-1},                                                      // Random
-        
-        {0,       0,    0,    0,       0,       0,       0},       // Clear (Calm)
-        {0,       0,    0,    0,       0.25,    0.25,    0.25},    // Clear (Light Winds)
-        {0,       0,    0,    0,       0.50,    0.50,    0.50},    // Clear (Stong Winds)
-        
-        {0.48,    0,    0,    0,       0,       0,       0},       // Overcast (Calm)
-        {0.48,    0,    0,    0,       0.25,    0.25,    0.25},    // Overcast (Light Winds)
-        {0.48,    0,    0,    0,       0.50,    0.50,    0.50},    // Overcast (Strong Winds)
-        
-        {1,       1,    0,    0.25,    0.25,    0.25,    0.25},    // Rain (Light Winds)
-        {1,       1,    0,    0.50,    0.50,    0.50,    0.50},    // Rain (Strong Winds)
-        
-        {1,       1,    0,    1,       0.75,    1,       1}        // Storm
+
+        {0,       0,    0,    0,       1,     0,       0},       // Clear (Calm)
+        {0,       0,    0,    0,       5,     0,    0.25},    // Clear (Light Winds)
+        {0,       0,    0,    0,       10,    0,    0.50},    // Clear (Stong Winds)
+
+        {0.48,    0,    0,    0,       1,     0,       0},       // Overcast (Calm)
+        {0.48,    0,    0,    0,       5,     0,    0.25},    // Overcast (Light Winds)
+        {0.48,    0,    0,    0,       10,    0,    0.50},    // Overcast (Strong Winds)
+
+        {1,       1,    0,    0.25,    5,     0,    0.25},    // Rain (Light Winds)
+        {1,       1,    0,    0.50,    10,    0,    0.50},    // Rain (Strong Winds)
+
+        {1,       1,    0,    1,       20,    0,       1}        // Storm
     };
 };
