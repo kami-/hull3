@@ -82,6 +82,7 @@ class CfgVehicles {
 };
 
 class CfgRespawnTemplates {
+    respawnTemplatesNone[] = {"Hull3_RespawnHandler"};
     class Hull3_RespawnHandler {
         onPlayerRespawn = "hull3_unit_fnc_onPlayerRespawn";
     };

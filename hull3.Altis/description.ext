@@ -15,7 +15,7 @@ class Header
     maxPlayers = 970;
 };
 
-respawn = 1;
+respawn = 0;
 respawndelay = 3;
 respawnTemplates[] = {"Hull3_RespawnHandler"};
 
