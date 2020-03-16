@@ -156,7 +156,7 @@ class M16A4_ROK {
     class RAT : Rifleman {
         primaryWeapon = "CUP_arifle_M4A1_black";
         primaryWeaponItems[] = {"CUP_optic_CompM2_low", "CUP_acc_Flashlight"};
-        secondaryWeapon = "CUP_launch_M72A6";
+        secondaryWeapon = "CUP_launch_APILAS";
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2}
@@ -176,8 +176,7 @@ class M16A4_ROK {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 4},
-            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 3}
+            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 4}
         };
     };
 
@@ -186,8 +185,7 @@ class M16A4_ROK {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2},
-            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 3},
-            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 2}
+            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 3}
         };
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
@@ -409,7 +407,7 @@ class M16A4_ROK {
     class Vehicle {
         weapons[] = {
             {"CUP_arifle_M16A4_Base", 2},
-            {"CUP_launch_M72A6", 4}
+            {"CUP_launch_APILAS", 4}
         };
         magazines[] = {
             {"30Rnd_556x45_Stanag", 20},
@@ -434,7 +432,7 @@ class M16A4_ROK {
     class Truck : Vehicle {
         weapons[] = {
             {"CUP_arifle_M16A4_Base", 2},
-            {"CUP_launch_M72A6", 10}
+            {"CUP_launch_APILAS", 10}
         };
         magazines[] = {
             {"30Rnd_556x45_Stanag", 40},
@@ -461,7 +459,7 @@ class M16A4_ROK {
     };
 
     class Armored : Truck {
-        weapons[] = {{"CUP_launch_M72A6", 10}};
+        weapons[] = {{"CUP_launch_APILAS", 10}};
         magazines[] = {
             {"30Rnd_556x45_Stanag", 40},
             {"30Rnd_556x45_Stanag_Tracer_Red", 20},

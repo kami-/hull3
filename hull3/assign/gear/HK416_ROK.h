@@ -158,7 +158,7 @@ class HK416_ROK {
     class RAT : Rifleman {
         primaryWeapon = "CUP_arifle_HK416_CQB_Black";
         primaryWeaponItems[] = {"CUP_optic_Eotech553_Black", "CUP_acc_Flashlight"};
-        secondaryWeapon = "CUP_launch_M72A6";
+        secondaryWeapon = "CUP_launch_APILAS";
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_PMAG_QP", 6},
             {"CUP_30Rnd_556x45_PMAG_QP_Tracer_Red", 2}
@@ -419,7 +419,7 @@ class HK416_ROK {
     class Vehicle {
         weapons[] = {
             {"CUP_arifle_HK416_Black", 2},
-            {"CUP_launch_M72A6", 4}
+            {"CUP_launch_APILAS", 4}
         };
         magazines[] = {
             {"CUP_30Rnd_556x45_PMAG_QP", 20},
@@ -444,7 +444,7 @@ class HK416_ROK {
     class Truck : Vehicle {
         weapons[] = {
             {"CUP_arifle_HK416_Black", 2},
-            {"CUP_launch_M72A6", 10}
+            {"CUP_launch_APILAS", 10}
         };
         magazines[] = {
             {"CUP_30Rnd_556x45_PMAG_QP", 40},
@@ -471,7 +471,7 @@ class HK416_ROK {
     };
 
     class Armored : Truck {
-        weapons[] = {{"CUP_launch_M72A6", 10}};
+        weapons[] = {{"CUP_launch_APILAS", 10}};
         magazines[] = {
             {"CUP_30Rnd_556x45_PMAG_QP", 40},
             {"CUP_30Rnd_556x45_PMAG_QP_Tracer_Red", 20},
