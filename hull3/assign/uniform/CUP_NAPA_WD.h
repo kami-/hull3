@@ -4,7 +4,7 @@ class CUP_NAPA_WD {
         goggles = "G_Bandanna_blk";
         uniform = "CUP_U_I_GUE_Flecktarn2";
         vest = "CUP_V_B_GER_Carrier_Rig_2_ARM";
-        backpack = "B_Kitbag_rgr";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
@@ -24,7 +24,7 @@ class CUP_NAPA_WD {
         uniform = "CUP_U_I_GUE_Woodland1";
         goggles = "G_Bandanna_oli";
         vest = "CUP_V_O_TK_CrewBelt_ARM";
-        backpack = "B_AssaultPack_rgr";
+        backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
@@ -41,7 +41,7 @@ class CUP_NAPA_WD {
     };
 
     class Medic : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
         goggles = "";
         headGear = "H_Bandanna_khk_hs";
     };
@@ -54,7 +54,7 @@ class CUP_NAPA_WD {
     };
 
     class AAR : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
         headGear = "";
         uniform = "CUP_U_I_GUE_Flecktarn3";
         goggles = "G_Bandanna_blk";
@@ -64,7 +64,7 @@ class CUP_NAPA_WD {
     };
 
     class MMGG : AR {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
@@ -80,7 +80,7 @@ class CUP_NAPA_WD {
     };
 
     class MATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : AAR {
@@ -90,7 +90,7 @@ class CUP_NAPA_WD {
     };
 
     class HATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : AAR {
@@ -144,6 +144,7 @@ class CUP_NAPA_WD {
     class SN : Rifleman {
         headGear = "CUP_H_PMC_Cap_PRR_Tan";
         uniform = "CUP_U_I_GUE_Flecktarn";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {
