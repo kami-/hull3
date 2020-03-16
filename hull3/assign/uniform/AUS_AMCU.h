@@ -4,7 +4,7 @@ class AUS_AMCU {
         goggles = "";
         uniform = "MNP_CombatUniform_AMCU_T";
         vest = "MNP_Vest_AMCU_2_ARM";
-        backpack = "B_Kitbag_rgr";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
@@ -19,8 +19,8 @@ class AUS_AMCU {
     class Crew : Rifleman {
         headGear = "H_HelmetCrew_I";
         uniform = "MNP_CombatUniform_AMCU_ST";
-        vest = "V_BandollierB_rgr_ARM";
-        backpack = "B_AssaultPack_rgr";
+        vest = "MNP_Vest_AMCU_ARM";
+        backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
@@ -33,9 +33,8 @@ class AUS_AMCU {
     };
 
     class Medic : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
         uniform = "MNP_CombatUniform_AMCU_ST";
-        goggles = "";
     };
 
     class FTL : Leader {
@@ -46,14 +45,14 @@ class AUS_AMCU {
     };
 
     class AAR : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class RAT : Rifleman {
     };
 
     class MMGG : AR {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
@@ -69,7 +68,7 @@ class AUS_AMCU {
     };
 
     class MATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : AAR {
@@ -79,7 +78,7 @@ class AUS_AMCU {
     };
 
     class HATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : AAR {
@@ -126,7 +125,7 @@ class AUS_AMCU {
 
     class ENG : Rifleman {
         uniform = "MNP_CombatUniform_AMCU_ST";
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
@@ -136,8 +135,8 @@ class AUS_AMCU {
         headGear = "MNP_Boonie_AMCU";
         goggles = "G_Bandanna_khk";
         uniform = "MNP_CombatUniform_AMCU_ST";
-        vest = "CUP_V_B_RRV_Scout3_ARM";
-        backpack = "B_AssaultPack_rgr";
+        vest = "MNP_Vest_AMCU_ARM";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {
