@@ -4,7 +4,7 @@ class FIN_SN {
         goggles = "";
         uniform = "MNP_CombatUniform_Finarctic_A";
         vest = "MNP_Vest_FIN_2_ARM";
-        backpack = "MNP_B_WB_KB";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
@@ -18,8 +18,8 @@ class FIN_SN {
     class Crew : Rifleman {
         headGear = "H_HelmetCrew_I";
         uniform = "MNP_CombatUniform_Finarctic_B";
-        vest = "V_BandollierB_oli_ARM";
-        backpack = "MNP_B_WB_AP";
+        vest = "MNP_Vest_FIN_2_ARM";
+        backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
@@ -32,7 +32,7 @@ class FIN_SN {
     };
 
     class Medic : Rifleman {
-        backpack = "MNP_B_RUW_CA";
+        backpack = "ark_backpack_large";
     };
 
     class FTL : Leader {
@@ -43,14 +43,14 @@ class FIN_SN {
     };
 
     class AAR : Rifleman {
-        backpack = "MNP_B_RUW_CA";
+        backpack = "ark_backpack_large";
     };
 
     class RAT : Rifleman {
     };
 
     class MMGG : AR {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
@@ -66,7 +66,7 @@ class FIN_SN {
     };
 
     class MATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : AAR {
@@ -76,7 +76,7 @@ class FIN_SN {
     };
 
     class HATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : AAR {
@@ -122,7 +122,7 @@ class FIN_SN {
     };
 
     class ENG : Rifleman {
-        backpack = "MNP_B_RUW_CA";
+        backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
@@ -132,8 +132,8 @@ class FIN_SN {
         headGear = "MNP_Boonie_AFIN";
         goggles = "G_Bandanna_blk";
         uniform = "MNP_CombatUniform_Finarctic_B";
-        vest = "V_BandollierB_blk_ARM";
-        backpack = "MNP_B_WB_AP";
+        vest = "MNP_Vest_FIN_2_ARM";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {
