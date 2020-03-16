@@ -4,7 +4,7 @@ class IRE_DE {
         goggles = "";
         uniform = "MNP_CombatUniform_Ireland_D";
         vest = "MNP_Vest_Ireland_ARM";
-        backpack = "B_Kitbag_cbr";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
@@ -13,13 +13,14 @@ class IRE_DE {
     };
 
     class Officer : Leader {
+        headGear = "MNP_Boonie_Ireland_D";
     };
 
     class Crew : Rifleman {
         headGear = "H_HelmetCrew_I";
         uniform = "MNP_CombatUniform_Ireland_DS";
-        vest = "V_BandollierB_oli_ARM";
-        backpack = "B_AssaultPack_cbr";
+        vest = "MNP_Vest_Ireland_B_ARM";
+        backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
@@ -32,7 +33,7 @@ class IRE_DE {
     };
 
     class Medic : Rifleman {
-        backpack = "B_Carryall_khk";
+        backpack = "ark_backpack_large";
     };
 
     class FTL : Leader {
@@ -43,14 +44,14 @@ class IRE_DE {
     };
 
     class AAR : Rifleman {
-        backpack = "B_Carryall_khk";
+        backpack = "ark_backpack_large";
     };
 
     class RAT : Rifleman {
     };
 
     class MMGG : AR {
-        backpack = "B_Carryall_khk";
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
@@ -66,7 +67,7 @@ class IRE_DE {
     };
 
     class MATG : RAT {
-        backpack = "B_Carryall_khk";
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : AAR {
@@ -76,7 +77,7 @@ class IRE_DE {
     };
 
     class HATG : RAT {
-        backpack = "B_Carryall_khk";
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : AAR {
@@ -84,7 +85,7 @@ class IRE_DE {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -122,7 +123,7 @@ class IRE_DE {
     };
 
     class ENG : Rifleman {
-        backpack = "B_Carryall_khk";
+        backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
@@ -132,8 +133,8 @@ class IRE_DE {
         headGear = "MNP_Boonie_Ireland_D";
         goggles = "G_Bandanna_khk";
         uniform = "MNP_CombatUniform_Ireland_DS";
-        vest = "V_BandollierB_khk_ARM";
-        backpack = "B_AssaultPack_cbr";
+        vest = "MNP_Vest_Ireland_B_ARM";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {
@@ -157,4 +158,5 @@ class IRE_DE {
 
     class PCM : P {
     };
+
 };

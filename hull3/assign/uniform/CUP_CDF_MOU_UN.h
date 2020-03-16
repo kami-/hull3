@@ -4,7 +4,7 @@ class CUP_CDF_MOU_UN {
         goggles = "";
         uniform = "CUP_U_B_CDF_MNT_1";
         vest = "CUP_V_CDF_6B3_1_MNT_ARM";
-        backpack = "CUP_B_AlicePack_Khaki";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
@@ -19,7 +19,7 @@ class CUP_CDF_MOU_UN {
     class Crew : Rifleman {
         headGear = "CUP_H_RUS_TSH_4_Brown";
         vest = "CUP_V_CDF_6B3_2_MNT_ARM";
-        backpack = "CUP_B_SLA_Medicbag";
+        backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
@@ -32,7 +32,7 @@ class CUP_CDF_MOU_UN {
     };
 
     class Medic : Rifleman {
-        backpack = "CUP_B_AlicePack_Khaki";
+        backpack = "ark_backpack_large";
     };
 
     class FTL : Leader {
@@ -44,7 +44,7 @@ class CUP_CDF_MOU_UN {
     };
 
     class AAR : Rifleman {
-        backpack = "CUP_B_AlicePack_Khaki";
+        backpack = "ark_backpack_large";
     };
 
     class RAT : Rifleman {
@@ -52,7 +52,7 @@ class CUP_CDF_MOU_UN {
 
     class MMGG : AR {
         vest = "CUP_V_CDF_6B3_3_MNT_ARM";
-        backpack = "CUP_B_AlicePack_Khaki";
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
@@ -68,7 +68,7 @@ class CUP_CDF_MOU_UN {
     };
 
     class MATG : RAT {
-        backpack = "CUP_B_AlicePack_Khaki";
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : AAR {
@@ -78,7 +78,7 @@ class CUP_CDF_MOU_UN {
     };
 
     class HATG : RAT {
-        backpack = "CUP_B_AlicePack_Khaki";
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : AAR {
@@ -124,18 +124,18 @@ class CUP_CDF_MOU_UN {
     };
 
     class ENG : Rifleman {
-        backpack = "CUP_B_AlicePack_Khaki";
+        backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
     };
 
     class SN : Rifleman {
-        headGear = "H_Bandanna_khk";
+        headGear = "CUP_H_CDF_OfficerCap_UN";
         uniform = "CUP_U_B_CDF_MNT_2";
         goggles = "G_Bandanna_khk";
         vest = "CUP_V_CDF_6B3_2_MNT_ARM";
-        backpack = "CUP_B_SLA_Medicbag";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {

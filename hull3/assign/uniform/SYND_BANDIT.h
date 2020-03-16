@@ -4,7 +4,7 @@ class SYND_BANDIT {
         goggles = "G_Bandanna_beast";
         uniform = "U_I_C_Soldier_Bandit_5_F";
         vest = "CUP_V_O_Ins_Carrier_Rig_Light_ARM";
-        backpack = "B_Kitbag_rgr";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
@@ -26,7 +26,7 @@ class SYND_BANDIT {
         goggles = "";
         uniform = "U_I_C_Soldier_Bandit_4_F";
         vest = "CUP_V_O_TK_CrewBelt_ARM";
-        backpack = "CUP_B_SLA_Medicbag";
+        backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
@@ -43,7 +43,7 @@ class SYND_BANDIT {
         goggles = "";
         uniform = "U_I_C_Soldier_Bandit_1_F";
         vest = "CUP_V_OI_TKI_Jacket2_01_ARM";
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class FTL : Leader {
@@ -57,7 +57,7 @@ class SYND_BANDIT {
     };
 
     class AAR : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
         headGear = "CUP_H_PMC_Cap_Back_Tan";
         goggles = "G_Bandanna_oli";
         uniform = "U_I_C_Soldier_Bandit_4_F";
@@ -68,7 +68,7 @@ class SYND_BANDIT {
     };
 
     class MMGG : AR {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
@@ -84,7 +84,7 @@ class SYND_BANDIT {
     };
 
     class MATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : AAR {
@@ -94,7 +94,7 @@ class SYND_BANDIT {
     };
 
     class HATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : AAR {
@@ -102,7 +102,7 @@ class SYND_BANDIT {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -140,7 +140,7 @@ class SYND_BANDIT {
     };
 
     class ENG : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
@@ -151,6 +151,7 @@ class SYND_BANDIT {
         goggles = "G_Balaclava_oli";
         uniform = "U_I_C_Soldier_Bandit_2_F";
         vest = "CUP_V_RUS_Smersh_1_ARM";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {
@@ -175,4 +176,5 @@ class SYND_BANDIT {
 
     class PCM : P {
     };
+
 };

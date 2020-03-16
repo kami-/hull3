@@ -4,7 +4,7 @@ class NOR_WD {
         goggles = "";
         uniform = "MNP_CombatUniform_NOR_A";
         vest = "MNP_Vest_NOR_2_ARM";
-        backpack = "B_Kitbag_rgr";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
@@ -13,13 +13,14 @@ class NOR_WD {
     };
 
     class Officer : Leader {
+        headGear = "MNP_Boonie_NOR";
     };
 
     class Crew : Rifleman {
         headGear = "H_HelmetCrew_I";
         uniform = "MNP_CombatUniform_NOR_B";
-        vest = "V_BandollierB_oli_ARM";
-        backpack = "B_AssaultPack_rgr";
+        vest = "MNP_Vest_NOR_1_ARM";
+        backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
@@ -32,7 +33,7 @@ class NOR_WD {
     };
 
     class Medic : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class FTL : Leader {
@@ -43,14 +44,14 @@ class NOR_WD {
     };
 
     class AAR : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class RAT : Rifleman {
     };
 
     class MMGG : AR {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
@@ -66,7 +67,7 @@ class NOR_WD {
     };
 
     class MATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : AAR {
@@ -76,7 +77,7 @@ class NOR_WD {
     };
 
     class HATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : AAR {
@@ -84,7 +85,7 @@ class NOR_WD {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -123,7 +124,7 @@ class NOR_WD {
 
     class ENG : Rifleman {
         uniform = "MNP_CombatUniform_NOR_B";
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
@@ -133,8 +134,8 @@ class NOR_WD {
         headGear = "MNP_Boonie_NOR";
         goggles = "G_Bandanna_oli";
         uniform = "MNP_CombatUniform_NOR_B";
-        vest = "V_BandollierB_rgr_ARM";
-        backpack = "B_AssaultPack_rgr";
+        vest = "MNP_Vest_NOR_1_ARM";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {
@@ -158,4 +159,5 @@ class NOR_WD {
 
     class PCM : P {
     };
+
 };

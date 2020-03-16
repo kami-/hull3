@@ -3,13 +3,13 @@ class LVM_WD {
         headGear = "H_Bandanna_khk";
         goggles = "";
         uniform = "MNP_CombatUniform_Militia_E";
-        vest = "MNP_Vest_OD_A_ARM";
-        backpack = "B_Kitbag_rgr";
+        vest = "MNP_Vest_OD_B_ARM";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
         uniform = "MNP_CombatUniform_Militia_B";
-        vest = "MNP_Vest_OD_B_ARM";
+        vest = "MNP_Vest_OD_A_ARM";
         headGear = "H_Cap_oli_hs";
     };
 
@@ -20,8 +20,8 @@ class LVM_WD {
 
     class Crew : Rifleman {
         headGear = "CUP_H_SLA_TankerHelmet";
-        vest = "V_BandollierB_rgr_ARM";
-        backpack = "B_AssaultPack_rgr";
+        vest = "MNP_Vest_OD_B_ARM";
+        backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
@@ -34,7 +34,7 @@ class LVM_WD {
     };
 
     class Medic : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
         uniform = "MNP_CombatUniform_Militia_F";
         headGear = "H_Booniehat_oli";
     };
@@ -48,7 +48,7 @@ class LVM_WD {
     };
 
     class AAR : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
         headGear = "H_Booniehat_khk";
     };
 
@@ -56,7 +56,7 @@ class LVM_WD {
     };
 
     class MMGG : AR {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
@@ -72,7 +72,7 @@ class LVM_WD {
     };
 
     class MATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : AAR {
@@ -82,7 +82,7 @@ class LVM_WD {
     };
 
     class HATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : AAR {
@@ -129,7 +129,7 @@ class LVM_WD {
 
     class ENG : Rifleman {
         uniform = "MNP_CombatUniform_Militia_C";
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
         headGear = "MNP_MC_OD";
     };
 
@@ -140,8 +140,8 @@ class LVM_WD {
         headGear = "H_Bandanna_khk_hs";
         goggles = "G_Bandanna_oli";
         uniform = "MNP_CombatUniform_Militia_B";
-        vest = "V_BandollierB_rgr_ARM";
-        backpack = "B_AssaultPack_rgr";
+        vest = "MNP_Vest_OD_B_ARM";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {

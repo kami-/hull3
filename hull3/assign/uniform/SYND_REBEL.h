@@ -4,7 +4,7 @@ class SYND_REBEL {
         goggles = "";
         uniform = "U_I_C_Soldier_Para_1_F";
         vest = "CUP_V_RUS_Smersh_1_ARM";
-        backpack = "B_Kitbag_rgr";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
@@ -24,7 +24,7 @@ class SYND_REBEL {
         goggles = "";
         uniform = "U_I_C_Soldier_Para_5_F";
         vest = "CUP_V_O_TK_CrewBelt_ARM";
-        backpack = "CUP_B_SLA_Medicbag";
+        backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
@@ -38,7 +38,7 @@ class SYND_REBEL {
 
     class Medic : Rifleman {
         headGear = "H_Bandanna_sgg";
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class FTL : Leader {
@@ -50,14 +50,14 @@ class SYND_REBEL {
     };
 
     class AAR : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class RAT : Rifleman {
     };
 
     class MMGG : AR {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
@@ -73,7 +73,7 @@ class SYND_REBEL {
     };
 
     class MATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : AAR {
@@ -83,7 +83,7 @@ class SYND_REBEL {
     };
 
     class HATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : AAR {
@@ -91,7 +91,7 @@ class SYND_REBEL {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -129,7 +129,7 @@ class SYND_REBEL {
     };
 
     class ENG : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
@@ -139,6 +139,7 @@ class SYND_REBEL {
         headGear = "";
         goggles = "G_Balaclava_oli";
         uniform = "U_I_C_Soldier_Bandit_2_F";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {
@@ -163,4 +164,5 @@ class SYND_REBEL {
 
     class PCM : P {
     };
+
 };

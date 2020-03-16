@@ -4,7 +4,7 @@ class CUP_RACS_URB {
         goggles = "";
         uniform = "CUP_U_I_RACS_Urban_1";
         vest = "CUP_V_B_Interceptor_Rifleman_Grey_ARM";
-        backpack = "B_AssaultPack_cbr";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
@@ -20,21 +20,21 @@ class CUP_RACS_URB {
         headGear = "H_HelmetCrew_I";
         uniform = "CUP_U_I_RACS_Urban_2";
         vest = "CUP_V_B_Interceptor_Base_Grey_ARM";
-        backpack = "B_AssaultPack_cbr";
+        backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
     };
 
     class XO : CO {
-        backpack = "B_Carryall_khk";
+        backpack = "ark_backpack_large";
     };
 
     class SL : Officer {
     };
 
     class Medic : Rifleman {
-        backpack = "B_Carryall_khk";
+        backpack = "ark_backpack_large";
     };
 
     class FTL : Leader {
@@ -42,18 +42,17 @@ class CUP_RACS_URB {
     };
 
     class AR : Rifleman {
-        backpack = "B_Carryall_khk";
     };
 
     class AAR : Rifleman {
-        backpack = "B_Carryall_khk";
+        backpack = "ark_backpack_large";
     };
 
     class RAT : Rifleman {
     };
 
     class MMGG : AR {
-        backpack = "B_Carryall_khk";
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
@@ -71,7 +70,7 @@ class CUP_RACS_URB {
     };
 
     class MATG : RAT {
-        backpack = "B_Carryall_khk";
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : AAR {
@@ -82,7 +81,7 @@ class CUP_RACS_URB {
     };
 
     class HATG : RAT {
-        backpack = "B_Carryall_khk";
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : AAR {
@@ -103,7 +102,7 @@ class CUP_RACS_URB {
     };
 
     class SAMG : AR {
-        backpack = "B_Carryall_khk";
+        backpack = "ark_backpack_large";
     };
 
     class SAMAG : AAR {
@@ -134,18 +133,17 @@ class CUP_RACS_URB {
 
     class ENG : Rifleman {
         headGear = "CUP_H_RACS_Helmet_Headset_TPAT";
-        backpack = "B_Carryall_khk";
+        backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
     };
 
     class SN : Rifleman {
-        headGear = "CUP_H_RACS_Helmet_Headset_TPAT";
-        goggles = "G_Bandanna_tan";
+        headGear = "CUP_H_US_patrol_cap_Tpattern";
         uniform = "CUP_U_I_RACS_Urban_2";
         vest = "CUP_V_B_Interceptor_Rifleman_Grey_ARM";
-        backpack = "B_AssaultPack_cbr";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {
