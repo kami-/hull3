@@ -4,7 +4,7 @@ class PMC_CBRN {
         goggles = "skn_m04_gas_mask_blk";
         uniform = "skn_u_nbc_indep_blk";
         vest = "CUP_V_PMC_CIRAS_Black_Patrol_ARM";
-        backpack = "B_FieldPack_blk";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
@@ -22,7 +22,7 @@ class PMC_CBRN {
         goggles = "skn_m04_gas_mask_bare_dry";
         uniform = "skn_u_nbc_indep_blk";
         vest = "CUP_V_PMC_CIRAS_Black_Veh_ARM";
-        backpack = "B_LegStrapBag_black_F";
+        backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
@@ -35,25 +35,25 @@ class PMC_CBRN {
     };
 
     class Medic : Rifleman {
-        backpack = "CUP_B_USPack_Black";
+        backpack = "ark_backpack_large";
     };
 
     class FTL : Leader {
     };
 
     class AR : Rifleman {
-        backpack = "CUP_B_USPack_Black";
+        backpack = "ark_backpack_large";
     };
 
     class AAR : Rifleman {
-        backpack = "CUP_B_USPack_Black";
+        backpack = "ark_backpack_large";
     };
 
     class RAT : Rifleman {
     };
 
     class MMGG : AR {
-        backpack = "CUP_B_USPack_Black";
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
@@ -69,7 +69,7 @@ class PMC_CBRN {
     };
 
     class MATG : RAT {
-        backpack = "CUP_B_USPack_Black";
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : AAR {
@@ -79,7 +79,7 @@ class PMC_CBRN {
     };
 
     class HATG : RAT {
-        backpack = "CUP_B_USPack_Black";
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : AAR {
@@ -98,7 +98,7 @@ class PMC_CBRN {
     };
 
     class SAMG : AR {
-        backpack = "CUP_B_USPack_Black";
+        backpack = "ark_backpack_large";
     };
 
     class SAMAG : AAR {
@@ -126,14 +126,14 @@ class PMC_CBRN {
     };
 
     class ENG : Rifleman {
-        backpack = "CUP_B_USPack_Black";
+        backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
     };
 
     class SN : Rifleman {
-        backpack = "B_AssaultPack_blk";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {
@@ -150,7 +150,7 @@ class PMC_CBRN {
 
     class P : Crew {
         headGear = "H_PilotHelmetHeli_B";
-        backpack = "B_LegStrapBag_black_F";
+        backpack = "B_Parachute";
     };
 
     class PCM : P {

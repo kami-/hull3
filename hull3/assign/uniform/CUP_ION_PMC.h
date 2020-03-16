@@ -4,7 +4,7 @@ class CUP_ION_PMC {
         goggles = "CUP_FR_NeckScarf2";
         uniform = "CUP_I_B_PMC_Unit_6";
         vest = "CUP_V_PMC_CIRAS_Coyote_Patrol_ARM";
-        backpack = "B_Kitbag_cbr";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
@@ -21,7 +21,7 @@ class CUP_ION_PMC {
         headGear = "H_HelmetCrew_I";
         uniform = "CUP_I_B_PMC_Unit_23";
         vest = "CUP_V_PMC_CIRAS_Coyote_Veh_ARM";
-        backpack = "B_AssaultPack_cbr";
+        backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
@@ -34,7 +34,7 @@ class CUP_ION_PMC {
     };
 
     class Medic : Rifleman {
-        backpack = "B_Carryall_khk";
+        backpack = "ark_backpack_large";
         uniform = "CUP_I_B_PMC_Unit_19";
         headGear = "CUP_H_USArmy_Helmet_ECH1_Sand";
     };
@@ -50,7 +50,7 @@ class CUP_ION_PMC {
 
     class AAR : Rifleman {
         uniform = "CUP_I_B_PMC_Unit_16";
-        backpack = "B_Carryall_khk";
+        backpack = "ark_backpack_large";
         goggles = "CUP_TK_NeckScarf";
     };
 
@@ -62,7 +62,7 @@ class CUP_ION_PMC {
 
     class MMGG : AR {
         headGear = "CUP_H_PMC_Cap_Back_EP_Tan";
-        backpack = "B_Carryall_khk";
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
@@ -83,7 +83,7 @@ class CUP_ION_PMC {
 
     class MATG : RAT {
         headGear = "CUP_H_PMC_Cap_Back_EP_Tan";
-        backpack = "B_Carryall_khk";
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : AAR {
@@ -96,7 +96,7 @@ class CUP_ION_PMC {
 
     class HATG : RAT {
         headGear = "CUP_H_PMC_Cap_Back_EP_Tan";
-        backpack = "B_Carryall_khk";
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : AAR {
@@ -158,7 +158,7 @@ class CUP_ION_PMC {
     class ENG : Rifleman {
         uniform = "CUP_I_B_PMC_Unit_10";
         headGear = "CUP_H_PMC_Cap_PRR_Tan";
-        backpack = "B_Carryall_khk";
+        backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
@@ -168,7 +168,7 @@ class CUP_ION_PMC {
         headGear = "CUP_H_PMC_Cap_Back_EP_Tan";
         uniform = "CUP_I_B_PMC_Unit_9";
         vest = "CUP_V_PMC_CIRAS_Coyote_Patrol_ARM";
-        backpack = "B_AssaultPack_cbr";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {

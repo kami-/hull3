@@ -4,7 +4,7 @@ class CUP_ION_PMC_SN {
         goggles = "G_Lowprofile";
         uniform = "CUP_I_B_PMC_Unit_27";
         vest = "CUP_V_PMC_CIRAS_Winter_Patrol_ARM";
-        backpack = "MNP_B_WB_KB";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
@@ -21,7 +21,7 @@ class CUP_ION_PMC_SN {
         headGear = "H_HelmetCrew_I";
         uniform = "CUP_I_B_PMC_Unit_28";
         vest = "CUP_V_PMC_CIRAS_Winter_Veh_ARM";
-        backpack = "MNP_B_WB_AP";
+        backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
@@ -34,7 +34,7 @@ class CUP_ION_PMC_SN {
     };
 
     class Medic : Rifleman {
-        backpack = "MNP_B_RUW_CA";
+        backpack = "ark_backpack_large";
         headGear = "CUP_H_USArmy_Helmet_ECH1_Black";
     };
 
@@ -46,7 +46,7 @@ class CUP_ION_PMC_SN {
     };
 
     class AAR : Rifleman {
-        backpack = "MNP_B_RUW_CA";
+        backpack = "ark_backpack_large";
         goggles = "G_Balaclava_lowprofile";
     };
 
@@ -54,7 +54,7 @@ class CUP_ION_PMC_SN {
     };
 
     class MMGG : AR {
-        backpack = "MNP_B_RUW_CA";
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
@@ -70,7 +70,7 @@ class CUP_ION_PMC_SN {
     };
 
     class MATG : RAT {
-        backpack = "MNP_B_RUW_CA";
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : AAR {
@@ -80,7 +80,7 @@ class CUP_ION_PMC_SN {
     };
 
     class HATG : RAT {
-        backpack = "MNP_B_RUW_CA";
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : AAR {
@@ -128,7 +128,7 @@ class CUP_ION_PMC_SN {
     class ENG : Rifleman {
         uniform = "CUP_I_B_PMC_Unit_26";
         headGear = "CUP_H_FR_BeanieGreen";
-        backpack = "MNP_B_RUW_CA";
+        backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
@@ -138,7 +138,7 @@ class CUP_ION_PMC_SN {
         headGear = "CUP_H_FR_BeanieGreen";
         uniform = "CUP_I_B_PMC_Unit_26";
         vest = "CUP_V_PMC_CIRAS_Winter_Patrol_ARM";
-        backpack = "MNP_B_WB_AP";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {
