@@ -55,7 +55,7 @@ class AKMS_LVM {
         primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         handgunWeapon = "CUP_hgun_Colt1911";
         vestMagazines[] = {
-            {"CUP_30Rnd_762x39_AK47_M", 6},
+            {"CUP_30Rnd_762x39_AK47_M", 4},
             {"CUP_1Rnd_HE_GP25_M", 4},
             {"CUP_1Rnd_SMOKE_GP25_M", 2},
             {"CUP_1Rnd_SmokeRed_GP25_M", 2},
