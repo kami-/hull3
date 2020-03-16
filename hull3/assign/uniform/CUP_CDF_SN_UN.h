@@ -2,13 +2,12 @@ class CUP_CDF_SN_UN {
     class Rifleman {
         headGear = "CUP_H_CDF_H_PASGT_UN";
         goggles = "";
-        uniform = "CUP_U_B_CDF_SNW_1";
+        uniform = "CUP_U_B_CDF_SNW_2";
         vest = "CUP_V_CDF_6B3_1_SNW_ARM";
-        backpack = "CUP_B_AlicePack_Khaki";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
-        uniform = "CUP_U_B_CDF_SNW_2";
         vest = "CUP_V_CDF_6B3_5_SNW_ARM";
     };
 
@@ -18,8 +17,9 @@ class CUP_CDF_SN_UN {
 
     class Crew : Rifleman {
         headGear = "CUP_H_RUS_TSH_4_Brown";
+        uniform = "CUP_U_B_CDF_SNW_1";
         vest = "CUP_V_CDF_6B3_2_SNW_ARM";
-        backpack = "CUP_B_SLA_Medicbag";
+        backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
@@ -32,7 +32,7 @@ class CUP_CDF_SN_UN {
     };
 
     class Medic : Rifleman {
-        backpack = "CUP_B_AlicePack_Khaki";
+        backpack = "ark_backpack_large";
     };
 
     class FTL : Leader {
@@ -44,7 +44,7 @@ class CUP_CDF_SN_UN {
     };
 
     class AAR : Rifleman {
-        backpack = "CUP_B_AlicePack_Khaki";
+        backpack = "ark_backpack_large";
     };
 
     class RAT : Rifleman {
@@ -52,7 +52,7 @@ class CUP_CDF_SN_UN {
 
     class MMGG : AR {
         vest = "CUP_V_CDF_6B3_3_SNW_ARM";
-        backpack = "CUP_B_AlicePack_Khaki";
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
@@ -68,7 +68,7 @@ class CUP_CDF_SN_UN {
     };
 
     class MATG : RAT {
-        backpack = "CUP_B_AlicePack_Khaki";
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : AAR {
@@ -78,7 +78,7 @@ class CUP_CDF_SN_UN {
     };
 
     class HATG : RAT {
-        backpack = "CUP_B_AlicePack_Khaki";
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : AAR {
@@ -124,7 +124,7 @@ class CUP_CDF_SN_UN {
     };
 
     class ENG : Rifleman {
-        backpack = "CUP_B_AlicePack_Khaki";
+        backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
@@ -132,10 +132,9 @@ class CUP_CDF_SN_UN {
 
     class SN : Rifleman {
         headGear = "CUP_H_CDF_OfficerCap_UN";
-        uniform = "CUP_U_B_CDF_SNW_2";
         goggles = "CUP_TK_NeckScarf";
         vest = "CUP_V_CDF_6B3_2_SNW_ARM";
-        backpack = "CUP_B_SLA_Medicbag";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {
