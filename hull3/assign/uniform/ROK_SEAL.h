@@ -4,7 +4,7 @@ class ROK_SEAL {
         goggles = "";
         uniform = "MNP_CombatUniform_ROKMC";
         vest = "MNP_Vest_ROKMC_2_ARM";
-        backpack = "B_Kitbag_rgr";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
@@ -17,7 +17,7 @@ class ROK_SEAL {
     class Crew : Rifleman {
         headGear = "usm_helmet_cvc";
         vest = "MNP_Vest_ROKMC_2_ARM";
-        backpack = "B_AssaultPack_rgr";
+        backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
@@ -30,7 +30,7 @@ class ROK_SEAL {
     };
 
     class Medic : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class FTL : Leader {
@@ -40,14 +40,14 @@ class ROK_SEAL {
     };
 
     class AAR : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class RAT : Rifleman {
     };
 
     class MMGG : AR {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
@@ -63,7 +63,7 @@ class ROK_SEAL {
     };
 
     class MATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : AAR {
@@ -73,7 +73,7 @@ class ROK_SEAL {
     };
 
     class HATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : AAR {
@@ -119,7 +119,7 @@ class ROK_SEAL {
     };
 
     class ENG : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
@@ -129,7 +129,7 @@ class ROK_SEAL {
         headGear = "CUP_H_PMC_Cap_Back_EP_Grey";
         goggles = "G_Bandanna_blk";
         vest = "MNP_Vest_ROKMC_2_ARM";
-        backpack = "B_AssaultPack_blk";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {
