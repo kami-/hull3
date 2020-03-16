@@ -4,7 +4,7 @@ class NZ {
         goggles = "";
         uniform = "MNP_CombatUniform_NZ_A";
         vest = "MNP_Vest_NZ_2_ARM";
-        backpack = "B_Kitbag_rgr";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
@@ -19,8 +19,8 @@ class NZ {
     class Crew : Rifleman {
         headGear = "H_HelmetCrew_I";
         uniform = "MNP_CombatUniform_NZ_B";
-        vest = "V_BandollierB_oli_ARM";
-        backpack = "B_AssaultPack_rgr";
+        vest = "MNP_Vest_NZ_1_ARM";
+        backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
@@ -33,7 +33,7 @@ class NZ {
     };
 
     class Medic : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class FTL : Leader {
@@ -44,14 +44,14 @@ class NZ {
     };
 
     class AAR : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class RAT : Rifleman {
     };
 
     class MMGG : AR {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
@@ -67,7 +67,7 @@ class NZ {
     };
 
     class MATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : AAR {
@@ -77,7 +77,7 @@ class NZ {
     };
 
     class HATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : AAR {
@@ -124,7 +124,7 @@ class NZ {
 
     class ENG : Rifleman {
         uniform = "MNP_CombatUniform_NZ_B";
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
@@ -134,8 +134,8 @@ class NZ {
         headGear = "MNP_Boonie_NZ";
         goggles = "G_Bandanna_oli";
         uniform = "MNP_CombatUniform_NZ_B";
-        vest = "V_BandollierB_rgr_ARM";
-        backpack = "B_AssaultPack_rgr";
+        vest = "MNP_Vest_NZ_1_ARM";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {
