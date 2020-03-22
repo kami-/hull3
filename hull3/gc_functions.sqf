@@ -79,6 +79,8 @@ hull3_gc_fnc_adjustConfig = {
 
 hull3_gc_fnc_sortDead = {
     params ["_killed"];
+
+    if (isNull _killed) exitWith {};
     if (isPlayer _killed || { _killed getVariable ["hull3_gc_doNotRemove", false] } ) exitWith {};
     if (_killed isKindOf "Logic" || { _killed isKindOf "Static" } || {  _killed isKindOf "Thing" } ) exitWith {};
 
