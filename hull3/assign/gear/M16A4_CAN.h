@@ -52,7 +52,7 @@ class M16A4_CAN {
 
     class Leader : Rifleman {
         primaryWeapon = "CUP_arifle_M16A4_GL";
-        primaryWeaponItems[] = {"optic_Holosight_blk_F", "CUP_acc_Flashlight"};
+        primaryWeaponItems[] = {"CUP_optic_Eotech553_Black", "CUP_acc_Flashlight"};
         handgunWeapon = "hlc_pistol_P226US";
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
