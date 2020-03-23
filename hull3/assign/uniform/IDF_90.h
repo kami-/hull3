@@ -4,7 +4,7 @@ class IDF_90 {
         goggles = "";
         uniform = "MNP_CombatUniform_ISR";
         vest = "CUP_V_B_PASGT_OD_ARM";
-        backpack = "CUP_B_AlicePack_OD";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
@@ -18,20 +18,21 @@ class IDF_90 {
     class Crew : Rifleman {
         headGear = "usm_helmet_cvc";
         vest = "CUP_V_B_PASGT_no_bags_OD_ARM";
-        backpack = "CUP_B_AlicePack_OD";
+        backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
     };
 
     class XO : CO {
+        backpack = "ark_backpack_large";
     };
 
     class SL : Officer {
     };
 
     class Medic : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class FTL : Leader {
@@ -41,14 +42,14 @@ class IDF_90 {
     };
 
     class AAR : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class RAT : Rifleman {
     };
 
     class MMGG : AR {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
@@ -64,7 +65,7 @@ class IDF_90 {
     };
 
     class MATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : AAR {
@@ -74,7 +75,7 @@ class IDF_90 {
     };
 
     class HATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : AAR {
@@ -120,7 +121,7 @@ class IDF_90 {
     };
 
     class ENG : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
@@ -131,7 +132,7 @@ class IDF_90 {
         goggles = "G_Bandanna_khk";
         uniform = "MNP_CombatUniform_ISR";
         vest = "CUP_V_B_ALICE_ARM";
-        backpack = "CUP_B_AlicePack_OD";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {
