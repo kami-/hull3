@@ -4,7 +4,7 @@ class CUP_GER_DE {
         goggles = "";
         uniform = "CUP_U_B_GER_Tropentarn_5";
         vest = "CUP_V_B_GER_PVest_Trop_RFL_ARM";
-        backpack = "CUP_B_GER_Pack_Tropentarn";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
@@ -20,13 +20,14 @@ class CUP_GER_DE {
         headGear = "CUP_H_USMC_ACVC_DES";
         uniform = "CUP_U_B_GER_Overalls_Tank";
         vest = "CUP_V_B_GER_Tactical_Trop_ARM";
-        backpack = "CUP_B_GER_Medic_Tropentarn";
+        backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
     };
 
     class XO : CO {
+        backpack = "ark_backpack_large";
     };
 
     class SL : Officer {
@@ -35,6 +36,7 @@ class CUP_GER_DE {
     class Medic : Rifleman {
         vest = "CUP_V_B_GER_PVest_Trop_Med_ARM";
         headGear = "CUP_H_Ger_M92_Cover_Trop_GG";
+        backpack = "ark_backpack_large";
     };
 
     class FTL : Leader {
@@ -49,6 +51,7 @@ class CUP_GER_DE {
 
     class AAR : Rifleman {
         uniform = "CUP_U_B_GER_Tropentarn_7";
+        backpack = "ark_backpack_large";
     };
 
     class RAT : Rifleman {
@@ -57,6 +60,7 @@ class CUP_GER_DE {
     };
 
     class MMGG : AR {
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
@@ -72,6 +76,7 @@ class CUP_GER_DE {
     };
 
     class MATG : RAT {
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : AAR {
@@ -81,6 +86,7 @@ class CUP_GER_DE {
     };
 
     class HATG : RAT {
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : AAR {
@@ -129,6 +135,7 @@ class CUP_GER_DE {
         uniform = "CUP_U_B_GER_Tropentarn_1";
         vest = "CUP_V_B_GER_PVest_Fleck_TL_ARM";
         headGear = "CUP_H_Ger_M92_Cover_Trop_GG";
+        backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
@@ -138,8 +145,7 @@ class CUP_GER_DE {
     class SN : Rifleman {
         headGear = "CUP_H_Ger_Boonie2_desert";
         uniform = "CUP_U_B_GER_Tropentarn_1";
-        vest = "CUP_V_B_GER_PVest_Fleck_RFL_LT_ARM";
-        backpack = "CUP_B_GER_Medic_Tropentarn";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {

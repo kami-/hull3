@@ -4,7 +4,7 @@ class CUP_GER_WD {
         goggles = "";
         uniform = "CUP_U_B_GER_Flecktarn_5";
         vest = "CUP_V_B_GER_PVest_Fleck_RFL_ARM";
-        backpack = "CUP_B_GER_Pack_Flecktarn";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
@@ -20,13 +20,14 @@ class CUP_GER_WD {
         headGear = "CUP_H_USMC_ACVC_WDL";
         uniform = "CUP_U_B_GER_Fleck_Overalls_Tank";
         vest = "CUP_V_B_GER_Tactical_Fleck";
-        backpack = "CUP_B_GER_Medic_FLecktarn";
+        backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
     };
 
     class XO : CO {
+        backpack = "ark_backpack_large";
     };
 
     class SL : Officer {
@@ -35,6 +36,7 @@ class CUP_GER_WD {
     class Medic : Rifleman {
         vest = "CUP_V_B_GER_PVest_Fleck_Med_ARM";
         headGear = "CUP_H_Ger_M92_Cover_GG";
+        backpack = "ark_backpack_large";
     };
 
     class FTL : Leader {
@@ -49,6 +51,7 @@ class CUP_GER_WD {
 
     class AAR : Rifleman {
         uniform = "CUP_U_B_GER_Flecktarn_7";
+        backpack = "ark_backpack_large";
     };
 
     class RAT : Rifleman {
@@ -57,6 +60,7 @@ class CUP_GER_WD {
     };
 
     class MMGG : AR {
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
@@ -72,6 +76,7 @@ class CUP_GER_WD {
     };
 
     class MATG : RAT {
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : AAR {
@@ -81,6 +86,7 @@ class CUP_GER_WD {
     };
 
     class HATG : RAT {
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : AAR {
@@ -129,6 +135,7 @@ class CUP_GER_WD {
         uniform = "CUP_U_B_GER_Flecktarn_1";
         vest = "CUP_V_B_GER_PVest_Fleck_TL_ARM";
         headGear = "CUP_H_Ger_M92_Cover_GG";
+        backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
@@ -139,7 +146,7 @@ class CUP_GER_WD {
         headGear = "CUP_H_Ger_Boonie2_Flecktarn";
         uniform = "CUP_U_B_GER_Flecktarn_1";
         vest = "CUP_V_B_GER_PVest_Fleck_RFL_LT_ARM";
-        backpack = "CUP_B_GER_Medic_FLecktarn";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {
