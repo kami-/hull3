@@ -4,7 +4,7 @@ class CUP_CZ_DE {
         goggles = "";
         uniform = "CUP_U_B_CZ_DST_NoKneepads";
         vest = "CUP_V_CZ_NPP2006_nk_des_ARM";
-        backpack = "B_Kitbag_cbr";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
@@ -21,14 +21,14 @@ class CUP_CZ_DE {
         headGear = "CUP_H_USMC_ACVC_DES";
         uniform = "CUP_U_B_CZ_DST_TShirt";
         vest = "CUP_V_CZ_NPP2006_light_vz95_ARM";
-        backpack = "B_AssaultPack_cbr";
+        backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
     };
 
     class XO : CO {
-        backpack = "B_Carryall_cbr";
+        backpack = "ark_backpack_large";
     };
 
     class SL : Officer {
@@ -37,7 +37,7 @@ class CUP_CZ_DE {
     class Medic : Rifleman {
         headGear = "CUP_H_CZ_Helmet02";
         vest = "CUP_V_CZ_NPP2006_ok_des_ARM";
-        backpack = "B_Carryall_cbr";
+        backpack = "ark_backpack_large";
     };
 
     class FTL : Leader {
@@ -51,14 +51,14 @@ class CUP_CZ_DE {
 
     class AAR : Rifleman {
         headGear = "CUP_H_CZ_Helmet02";
-        backpack = "B_Carryall_cbr";
+        backpack = "ark_backpack_large";
     };
 
     class RAT : Rifleman {
     };
 
     class MMGG : AR {
-        backpack = "B_Carryall_cbr";
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
@@ -74,7 +74,7 @@ class CUP_CZ_DE {
     };
 
     class MATG : RAT {
-        backpack = "B_Carryall_cbr";
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : AAR {
@@ -84,7 +84,7 @@ class CUP_CZ_DE {
     };
 
     class HATG : RAT {
-        backpack = "B_Carryall_cbr";
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : AAR {
@@ -130,7 +130,7 @@ class CUP_CZ_DE {
     };
 
     class ENG : Rifleman {
-        backpack = "B_Carryall_cbr";
+        backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
@@ -141,7 +141,7 @@ class CUP_CZ_DE {
         goggles = "";
         uniform = "CUP_U_B_CZ_DST_TShirt";
         vest = "CUP_V_CZ_NPP2006_des_ARM";
-        backpack = "B_AssaultPack_cbr";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {

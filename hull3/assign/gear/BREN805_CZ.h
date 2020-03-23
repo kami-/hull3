@@ -183,7 +183,7 @@ class BREN805_CZ {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
             {"CUP_30Rnd_TE1_Red_Tracer_556x45_CZ805", 2},
-            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 45}
+            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 4}
         };
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
