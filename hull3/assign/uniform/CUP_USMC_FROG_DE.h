@@ -4,7 +4,7 @@ class CUP_USMC_FROG_DE {
         goggles = "";
         uniform = "CUP_U_B_USMC_FROG1_DMARPAT";
         vest = "CUP_V_B_Eagle_SPC_Patrol_ARM";
-        backpack = "B_Kitbag_cbr";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
@@ -24,7 +24,7 @@ class CUP_USMC_FROG_DE {
         uniform = "CUP_U_B_USMC_FROG3_DMARPAT";
         goggles = "CUP_FR_NeckScarf2";
         vest = "CUP_V_B_Eagle_SPC_Crew_ARM";
-        backpack = "B_AssaultPack_cbr";
+        backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
@@ -35,7 +35,7 @@ class CUP_USMC_FROG_DE {
     class XO : CO {
         vest = "CUP_V_B_Eagle_SPC_RTO_ARM";
         headGear = "CUP_H_USMC_LWH_NVGMOUNT_ESS_LR_DES";
-        backpack = "CUP_B_USPack_Coyote";
+        backpack = "ark_backpack_large";
     };
 
     class SL : Officer {
@@ -43,7 +43,7 @@ class CUP_USMC_FROG_DE {
     };
 
     class Medic : Rifleman {
-        backpack = "B_Kitbag_cbr";
+        backpack = "ark_backpack_large";
         uniform = "CUP_U_B_USMC_FROG4_DMARPAT";
     };
 
@@ -59,7 +59,7 @@ class CUP_USMC_FROG_DE {
     };
 
     class AAR : Rifleman {
-        backpack = "B_Kitbag_cbr";
+        backpack = "ark_backpack_large";
     };
 
     class RAT : Rifleman {
@@ -69,7 +69,7 @@ class CUP_USMC_FROG_DE {
     };
 
     class MMGG : AR {
-        backpack = "B_Kitbag_cbr";
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
@@ -87,7 +87,7 @@ class CUP_USMC_FROG_DE {
     };
 
     class MATG : RAT {
-        backpack = "B_Kitbag_cbr";
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : AAR {
@@ -100,7 +100,7 @@ class CUP_USMC_FROG_DE {
     };
 
     class HATG : RAT {
-        backpack = "B_Kitbag_cbr";
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : AAR {
@@ -153,7 +153,7 @@ class CUP_USMC_FROG_DE {
     class ENG : Rifleman {
         uniform = "CUP_U_B_USMC_FROG1_DMARPAT";
         vest = "CUP_V_B_Eagle_SPC_Scout_ARM";
-        backpack = "CUP_B_USPack_Coyote";
+        backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
@@ -164,7 +164,7 @@ class CUP_USMC_FROG_DE {
         goggles = "G_Bandanna_khk";
         uniform = "CUP_U_B_USMC_FROG4_DMARPAT";
         vest = "CUP_V_B_Eagle_SPC_DMR_ARM";
-        backpack = "B_AssaultPack_cbr";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {

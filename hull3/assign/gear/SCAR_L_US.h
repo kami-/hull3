@@ -52,7 +52,7 @@ class SCAR_L_US {
 
     class Leader : Rifleman {
         primaryWeapon = "CUP_arifle_Mk16_STD_EGLM";
-        primaryWeaponItems[] = {"optic_Holosight_blk_F", "CUP_acc_Flashlight_tan"};
+        primaryWeaponItems[] = {"CUP_optic_Eotech553_Black", "CUP_acc_Flashlight_tan"};
         handgunWeapon = "CUP_hgun_M9";
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Stanag_Mk16", 6},

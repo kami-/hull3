@@ -1,17 +1,16 @@
 class USA_RAN_SCO {
     class Rifleman {
         headGear = "H_HelmetB_light";
-        goggles = "G_Bandanna_tan";
+        goggles = "";
         uniform = "MNP_CombatUniform_Ranger_A";
         vest = "MNP_Vest_Scorpion_1_ARM";
-        backpack = "B_Kitbag_rgr";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
         uniform = "MNP_CombatUniform_Ranger_B";
         headGear = "H_HelmetB_light_black";
         vest = "MNP_Vest_Scorpion_2_ARM";
-        goggles = "CUP_TK_NeckScarf";
     };
 
     class Officer : Leader {
@@ -20,25 +19,24 @@ class USA_RAN_SCO {
     };
 
     class Crew : Rifleman {
-        headGear = "H_HelmetCrew_B";
+        headGear = "CUP_H_USMC_Crew_Helmet";
         uniform = "MNP_CombatUniform_Ranger_B";
-        vest = "V_BandollierB_rgr_ARM";
-        backpack = "B_AssaultPack_rgr";
+        backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
     };
 
     class XO : CO {
+        backpack = "ark_backpack_large";
     };
 
     class SL : Officer {
     };
 
     class Medic : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
         uniform = "MNP_CombatUniform_Ranger_B";
-        goggles = "";
     };
 
     class FTL : Leader {
@@ -49,14 +47,14 @@ class USA_RAN_SCO {
     };
 
     class AAR : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class RAT : Rifleman {
     };
 
     class MMGG : AR {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
@@ -72,7 +70,7 @@ class USA_RAN_SCO {
     };
 
     class MATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : AAR {
@@ -82,7 +80,7 @@ class USA_RAN_SCO {
     };
 
     class HATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : AAR {
@@ -90,7 +88,7 @@ class USA_RAN_SCO {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -129,7 +127,7 @@ class USA_RAN_SCO {
 
     class ENG : Rifleman {
         uniform = "MNP_CombatUniform_Ranger_B";
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
@@ -139,8 +137,7 @@ class USA_RAN_SCO {
         headGear = "H_Cap_headphones";
         goggles = "G_Bandanna_blk";
         uniform = "MNP_CombatUniform_Ranger_B";
-        vest = "V_BandollierB_rgr_ARM";
-        backpack = "B_AssaultPack_rgr";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {
@@ -164,4 +161,5 @@ class USA_RAN_SCO {
 
     class PCM : P {
     };
+
 };
