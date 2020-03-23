@@ -4,7 +4,7 @@ class USM_USMC_80_WD {
         goggles = "";
         uniform = "usm_bdu_w_m";
         vest = "usm_vest_pasgt_lbe_rm_m_ARM";
-        backpack = "CUP_B_AlicePack_Khaki";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
@@ -20,21 +20,21 @@ class USM_USMC_80_WD {
         headGear = "usm_helmet_cvc";
         uniform = "usm_bdu_w_m";
         vest = "usm_vest_pasgt_ARM";
-        backpack = "CUP_B_AlicePack_Khaki";
+        backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
     };
 
     class XO : CO {
-        backpack = "usm_pack_alice_prc119";
+        backpack = "ark_backpack_large";
     };
 
     class SL : Officer {
     };
 
     class Medic : Rifleman {
-        backpack = "usm_pack_m5_medic";
+        backpack = "ark_backpack_large";
         vest = "usm_vest_pasgt_lbe_rm_m_ARM";
     };
 
@@ -46,20 +46,17 @@ class USM_USMC_80_WD {
     class AR : Rifleman {
         uniform = "usm_bdu_w_m";
         vest = "usm_vest_pasgt_lbe_mg_m_ARM";
-        backpack = "usm_pack_200rnd_556_bandoliers";
     };
 
     class AAR : Rifleman {
-        backpack = "CUP_B_AlicePack_Khaki";
+        backpack = "ark_backpack_large";
     };
 
     class RAT : Rifleman {
-        backpack = "CUP_B_AlicePack_Khaki";
         headGear = "usm_helmet_pasgt_g_w_m";
     };
 
     class MMGG : AR {
-        backpack = "usm_pack_762x51_ammobelts";
     };
 
     class MMGAG : AAR {
@@ -75,22 +72,22 @@ class USM_USMC_80_WD {
     };
 
     class MATG : RAT {
-        backpack = "usm_pack_alice";
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : RAT {
-        backpack = "usm_pack_alice";
+        backpack = "ark_backpack_large";
     };
 
     class MATAC : MATAG {
     };
 
     class HATG : RAT {
-        backpack = "usm_pack_alice";
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : RAT {
-        backpack = "usm_pack_alice";
+        backpack = "ark_backpack_large";
     };
 
     class HATAC : HATAG {
@@ -135,7 +132,7 @@ class USM_USMC_80_WD {
     class ENG : Rifleman {
         uniform = "usm_bdu_w_m";
         headGear = "usm_helmet_pasgt_g_w_m";
-        backpack = "usm_pack_alice";
+        backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
@@ -145,7 +142,7 @@ class USM_USMC_80_WD {
         headGear = "usm_bdu_boonie_wdl";
         uniform = "usm_bdu_w_m";
         vest = "usm_vest_pasgt_lbe_rmp_m_ARM";
-        backpack = "CUP_B_AlicePack_Khaki";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {

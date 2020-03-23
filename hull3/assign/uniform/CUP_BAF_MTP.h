@@ -4,7 +4,7 @@ class CUP_BAF_MTP {
         goggles = "";
         uniform = "CUP_U_B_BAF_MTP_S4_UnRolled";
         vest = "CUP_V_B_BAF_MTP_Osprey_Mk4_Rifleman_ARM";
-        backpack = "CUP_B_Motherlode_MTP";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
@@ -16,14 +16,13 @@ class CUP_BAF_MTP {
     class Officer : Leader {
         headGear = "CUP_H_BAF_Officer_Beret_PRR_O";
         vest = "CUP_V_B_BAF_MTP_Osprey_Mk4_Officer_ARM";
-        backpack = "CUP_B_Motherlode_Radio_MTP";
     };
 
     class Crew : Rifleman {
         headGear = "CUP_H_BAF_MTP_Mk6_CREW_PRR";
         uniform = "CUP_U_B_BAF_MTP_S1_RolledUp";
         vest = "CUP_V_B_BAF_MTP_Osprey_Mk4_Crewman_ARM";
-        backpack = "B_AssaultPack_cbr";
+        backpack = "ark_backpack_small";
         goggles = "CUP_FR_NeckScarf2";
     };
 
@@ -31,7 +30,7 @@ class CUP_BAF_MTP {
     };
 
     class XO : CO {
-        backpack = "CUP_B_Predator_Radio_MTP";
+        backpack = "ark_backpack_large";
     };
 
     class SL : Officer {
@@ -41,7 +40,7 @@ class CUP_BAF_MTP {
         headGear = "CUP_H_BAF_MTP_Mk7_PRR_SCRIM_A";
         uniform = "CUP_U_B_BAF_MTP_S4_UnRolled";
         vest = "CUP_V_B_BAF_MTP_Osprey_Mk4_Medic_ARM";
-        backpack = "CUP_B_Predator_MTP";
+        backpack = "ark_backpack_large";
     };
 
     class FTL : Leader {
@@ -50,11 +49,10 @@ class CUP_BAF_MTP {
     class AR : Rifleman {
         uniform = "CUP_U_B_BAF_MTP_S5_UnRolled";
         vest = "CUP_V_B_BAF_MTP_Osprey_Mk4_AutomaticRifleman_ARM";
-        backpack = "CUP_B_Predator_MTP";
     };
 
     class AAR : Rifleman {
-        backpack = "CUP_B_Predator_MTP";
+        backpack = "ark_backpack_large";
     };
 
     class RAT : Rifleman {
@@ -63,7 +61,7 @@ class CUP_BAF_MTP {
     };
 
     class MMGG : AR {
-        backpack = "CUP_B_Bergen_BAF";
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
@@ -79,7 +77,7 @@ class CUP_BAF_MTP {
     };
 
     class MATG : RAT {
-        backpack = "CUP_B_Bergen_BAF";
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : AAR {
@@ -89,7 +87,7 @@ class CUP_BAF_MTP {
     };
 
     class HATG : RAT {
-        backpack = "CUP_B_Bergen_BAF";
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : AAR {
@@ -137,7 +135,7 @@ class CUP_BAF_MTP {
     class ENG : Rifleman {
         uniform = "CUP_U_B_BAF_MTP_S1_RolledUp";
         vest = "CUP_V_B_BAF_MTP_Osprey_Mk4_Engineer_ARM";
-        backpack = "CUP_B_Bergen_BAF";
+        backpack = "ark_backpack_large";
         headGear = "CUP_H_BAF_Helmet_4_MTP";
     };
 
@@ -148,7 +146,7 @@ class CUP_BAF_MTP {
         headGear = "CUP_H_BAF_MTP_Mk7_PRR_SCRIM_B";
         goggles = "CUP_FR_NeckScarf2";
         uniform = "CUP_U_B_BAF_MTP_S3_RolledUp";
-        backpack = "B_AssaultPack_cbr";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {

@@ -52,7 +52,7 @@ class M4A1_USMC {
 
     class Leader : Rifleman {
         primaryWeapon = "CUP_arifle_M4A1_BUIS_GL";
-        primaryWeaponItems[] = {"optic_Holosight_blk_F", "CUP_acc_Flashlight"};
+        primaryWeaponItems[] = {"CUP_optic_Eotech553_Black", "CUP_acc_Flashlight"};
         handgunWeapon = "hlc_Pistol_M11A1";
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 6},
@@ -138,12 +138,12 @@ class M4A1_USMC {
     class AR : Rifleman {
         primaryWeapon = "CUP_arifle_HK_M27";
         primaryWeaponItems[] = {"CUP_optic_CompM2_low", "CUP_acc_Flashlight", "bipod_02_F_blk"};
-        vestMagazines[] = {{"CUP_100Rnd_556x45_BetaCMag_ar15", 4}};
+        vestMagazines[] = {{"CUP_100Rnd_556x45_BetaCMag_ar15", 3}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
             {"CUP_100Rnd_556x45_BetaCMag_ar15", 3},
-            {"CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag_ar15", 3}
+            {"CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag_ar15", 2}
         };
     };
 
@@ -152,7 +152,7 @@ class M4A1_USMC {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
             {"CUP_100Rnd_556x45_BetaCMag_ar15", 4},
-            {"CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag_ar15", 3}
+            {"CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag_ar15", 2}
         };
         binocular = "Binocular";
     };

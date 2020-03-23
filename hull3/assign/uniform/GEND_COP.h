@@ -4,7 +4,7 @@ class GEND_COP {
         goggles = "G_Aviator";
         uniform = "U_B_GEN_Commander_F";
         vest = "V_TacVest_gen_F_ARM";
-        backpack = "B_Kitbag_rgr";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
@@ -15,19 +15,21 @@ class GEND_COP {
     };
 
     class Crew : Rifleman {
+        backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
     };
 
     class XO : CO {
+        backpack = "ark_backpack_large";
     };
 
     class SL : Officer {
     };
 
     class Medic : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class FTL : Leader {
@@ -37,14 +39,14 @@ class GEND_COP {
     };
 
     class AAR : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class RAT : Rifleman {
     };
 
     class MMGG : AR {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
@@ -60,7 +62,7 @@ class GEND_COP {
     };
 
     class MATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : AAR {
@@ -70,7 +72,7 @@ class GEND_COP {
     };
 
     class HATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : AAR {
@@ -78,7 +80,7 @@ class GEND_COP {
 
     class HATAC : HATAG {
     };
-    
+
     class DHATG : AR {
     };
 
@@ -116,7 +118,7 @@ class GEND_COP {
     };
 
     class ENG : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
@@ -125,7 +127,7 @@ class GEND_COP {
     class SN : Rifleman {
         headGear = "H_Watchcap_blk";
         goggles = "G_Bandanna_aviator";
-        backpack = "B_AssaultPack_rgr";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {
@@ -148,4 +150,5 @@ class GEND_COP {
 
     class PCM : P {
     };
+
 };

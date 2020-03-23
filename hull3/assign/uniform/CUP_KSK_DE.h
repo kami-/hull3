@@ -4,7 +4,7 @@ class CUP_KSK_DE {
         goggles = "";
         uniform = "CUP_U_B_GER_Crye";
         vest = "CUP_V_B_GER_Carrier_Vest_2_ARM";
-        backpack = "CUP_B_GER_Pack_Tropentarn";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
@@ -20,19 +20,21 @@ class CUP_KSK_DE {
         headGear = "CUP_H_USMC_ACVC_DES";
         uniform = "CUP_U_B_GER_Overalls_Tank";
         vest = "CUP_V_B_GER_Tactical_Trop";
-        backpack = "CUP_B_GER_Medic_Tropentarn";
+        backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
     };
 
     class XO : CO {
+        backpack = "ark_backpack_large";
     };
 
     class SL : Officer {
     };
 
     class Medic : Rifleman {
+        backpack = "ark_backpack_large";
     };
 
     class FTL : Leader {
@@ -44,16 +46,18 @@ class CUP_KSK_DE {
 
     class AAR : Rifleman {
         uniform = "CUP_U_B_GER_Crye2";
+        backpack = "ark_backpack_large";
     };
 
     class RAT : Rifleman {
     };
 
     class MMGG : AR {
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
-        goggles = "CUP_G_PMC_RadioHeadset";
+        headGear = "CUP_H_OpsCore_Covered_Tropen";
     };
 
     class HMGG : AR {
@@ -67,6 +71,7 @@ class CUP_KSK_DE {
     };
 
     class MATG : RAT {
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : AAR {
@@ -81,6 +86,7 @@ class CUP_KSK_DE {
 
     class HATAG : AAR {
         headGear = "CUP_H_OpsCore_Covered_Tropen";
+        backpack = "ark_backpack_large";
     };
 
     class HATAC : HATAG {
@@ -129,6 +135,7 @@ class CUP_KSK_DE {
     class ENG : Rifleman {
         headGear = "CUP_H_OpsCore_Covered_Tropen";
         uniform = "CUP_U_B_GER_Crye2";
+        backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
@@ -138,7 +145,7 @@ class CUP_KSK_DE {
     class SN : Rifleman {
         headGear = "CUP_H_Ger_Boonie_desert";
         uniform = "CUP_U_B_GER_Crye2";
-        backpack = "CUP_B_GER_Medic_Tropentarn";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {

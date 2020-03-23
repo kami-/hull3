@@ -143,7 +143,7 @@ class M16A2_IDF {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 4}
+            {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 3}
         };
     };
 

@@ -129,15 +129,15 @@ class FAMAS_GEND {
     class AR : Rifleman {
         primaryWeapon = "CUP_arifle_MG36";
         primaryWeaponItems[] = {"CUP_acc_Flashlight"};
-        vestMagazines[] = {{"CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag_ar15", 1}};
-        backpackMagazines[] = {{"CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag_ar15", 3}};
+        vestMagazines[] = {{"CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag", 1}};
+        backpackMagazines[] = {{"CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag", 3}};
     };
 
     class AAR : Rifleman {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag_ar15", 2}
+            {"CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag", 2}
         };
         binocular = "Binocular";
     };
@@ -391,7 +391,7 @@ class FAMAS_GEND {
         magazines[] = {
             {"CUP_25Rnd_556x45_Famas", 20},
             {"CUP_25Rnd_556x45_Famas_Tracer_Red", 10},
-            {"CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag_ar15", 10},
+            {"CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag", 10},
             {"CUP_1Rnd_Smoke_M203", 5},
             {"CUP_FlareWhite_M203", 5},
             {"ACE_HandFlare_White", 5},
@@ -416,7 +416,7 @@ class FAMAS_GEND {
         magazines[] = {
             {"CUP_25Rnd_556x45_Famas", 40},
             {"CUP_25Rnd_556x45_Famas_Tracer_Red", 20},
-            {"CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag_ar15", 20},
+            {"CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"CUP_1Rnd_Smoke_M203", 10},
             {"CUP_FlareWhite_M203", 10},
@@ -442,7 +442,7 @@ class FAMAS_GEND {
         magazines[] = {
             {"CUP_25Rnd_556x45_Famas", 40},
             {"CUP_25Rnd_556x45_Famas_Tracer_Red", 20},
-            {"CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag_ar15", 20},
+            {"CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"CUP_1Rnd_Smoke_M203", 10},
             {"CUP_FlareWhite_M203", 10},

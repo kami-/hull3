@@ -52,7 +52,7 @@ class M4A1_US {
 
     class Leader : Rifleman {
         primaryWeapon = "CUP_arifle_M4A1_BUIS_GL";
-        primaryWeaponItems[] = {"optic_Holosight_blk_F", "CUP_acc_Flashlight"};
+        primaryWeaponItems[] = {"CUP_optic_Eotech553_Black", "CUP_acc_Flashlight"};
         handgunWeapon = "hlc_Pistol_M11";
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 6},
