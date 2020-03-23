@@ -4,7 +4,7 @@ class UKR_TTSKO {
         goggles = "";
         uniform = "MNP_CombatUniform_Ukrainian";
         vest = "MNP_Vest_UKR_A_ARM";
-        backpack = "B_Kitbag_rgr";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
@@ -18,21 +18,22 @@ class UKR_TTSKO {
     class Crew : Rifleman {
         headGear = "CUP_H_SLA_TankerHelmet";
         uniform = "MNP_CombatUniform_Ukrainian";
-        vest = "CUP_V_O_TK_CrewBelt_ARM";
-        backpack = "B_AssaultPack_rgr";
+        vest = "MNP_Vest_UKR_B_ARM";
+        backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
     };
 
     class XO : CO {
+        backpack = "ark_backpack_large";
     };
 
     class SL : Officer {
     };
 
     class Medic : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
         uniform = "MNP_CombatUniform_Ukrainian";
         goggles = "";
     };
@@ -45,14 +46,14 @@ class UKR_TTSKO {
     };
 
     class AAR : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class RAT : Rifleman {
     };
 
     class MMGG : AR {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
@@ -68,7 +69,7 @@ class UKR_TTSKO {
     };
 
     class MATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : AAR {
@@ -78,7 +79,7 @@ class UKR_TTSKO {
     };
 
     class HATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : AAR {
@@ -124,7 +125,7 @@ class UKR_TTSKO {
     };
 
     class ENG : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
@@ -132,8 +133,8 @@ class UKR_TTSKO {
 
     class SN : Rifleman {
         headGear = "MNP_MC_UKR";
-        vest = "CUP_V_B_GER_Carrier_Rig_ARM";
-        backpack = "B_AssaultPack_rgr";
+        vest = "MNP_Vest_UKR_B_ARM";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {
@@ -150,7 +151,7 @@ class UKR_TTSKO {
 
     class P : Crew {
         headGear = "CUP_H_SLA_Pilot_Helmet";
-        vest = "CUP_V_B_PilotVest_ARM";
+        vest = "MNP_Vest_UKR_B_ARM";
         goggles = "G_Aviator";
         backpack = "B_Parachute";
     };
