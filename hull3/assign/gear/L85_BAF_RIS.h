@@ -1,7 +1,7 @@
 class L85_BAF_RIS {
     class Rifleman {
         primaryWeapon = "CUP_arifle_L85A2_G";
-        primaryWeaponItems[] = {"optic_Holosight_blk_F", "CUP_acc_Flashlight"};
+        primaryWeaponItems[] = {"CUP_optic_Eotech553_Black", "CUP_acc_Flashlight"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -51,7 +51,7 @@ class L85_BAF_RIS {
 
     class Leader : Rifleman {
         primaryWeapon = "CUP_arifle_L85A2_GL";
-        primaryWeaponItems[] = {"optic_Holosight_blk_F", "CUP_acc_Flashlight"};
+        primaryWeaponItems[] = {"CUP_optic_Eotech553_Black", "CUP_acc_Flashlight"};
         handgunWeapon = "CUP_hgun_Glock17_blk";
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Stanag_L85", 6},
@@ -143,7 +143,7 @@ class L85_BAF_RIS {
 
     class AAR : Rifleman {
         primaryWeapon = "CUP_arifle_L86A2";
-        primaryWeaponItems[] = {"optic_Holosight_blk_F", "CUP_acc_Flashlight"};
+        primaryWeaponItems[] = {"CUP_optic_Eotech553_Black", "CUP_acc_Flashlight"};
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
@@ -209,14 +209,14 @@ class L85_BAF_RIS {
         secondaryWeapon = "launch_MRAWS_green_rail_F";
         secondaryWeaponItems[] = {"MRAWS_HEAT_F"};
         backpackMagazines[] = {
-            {"MRAWS_HEAT_F", 4},
+            {"MRAWS_HEAT_F", 3},
             {"MRAWS_HE_F", 2}
         };
     };
 
     class MATAG : Rifleman {
         backpackMagazines[] = {
-            {"MRAWS_HEAT_F", 4},
+            {"MRAWS_HEAT_F", 3},
             {"MRAWS_HE_F", 2}
         };
         binocular = "ACE_VectorDay";

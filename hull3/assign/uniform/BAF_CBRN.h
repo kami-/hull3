@@ -4,7 +4,7 @@ class BAF_CBRN {
         goggles = "skn_m50_gas_mask_hood";
         uniform = "skn_u_nbc_bluf_mtp";
         vest = "CUP_V_B_BAF_MTP_Osprey_Mk4_Rifleman_ARM";
-        backpack = "CUP_B_Motherlode_MTP";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
@@ -14,13 +14,12 @@ class BAF_CBRN {
 
     class Officer : Leader {
         vest = "CUP_V_B_BAF_MTP_Osprey_Mk4_Officer_ARM";
-        backpack = "CUP_B_Motherlode_Radio_MTP";
     };
 
     class Crew : Rifleman {
         headGear = "CUP_H_BAF_Crew_Helmet_MTP";
         vest = "CUP_V_B_BAF_MTP_Osprey_Mk4_Crewman_ARM";
-        backpack = "CUP_B_Motherlode_MTP";
+        backpack = "ark_backpack_small";
         goggles = "skn_m50_gas_mask";
     };
 
@@ -37,7 +36,7 @@ class BAF_CBRN {
     class Medic : Rifleman {
         headGear = "CUP_H_BAF_MTP_Mk6_GOGGLES_PRR";
         vest = "CUP_V_B_BAF_MTP_Osprey_Mk4_Medic_ARM";
-        backpack = "CUP_B_Predator_MTP";
+        backpack = "ark_backpack_large";
     };
 
     class FTL : Leader {
@@ -55,7 +54,7 @@ class BAF_CBRN {
     };
 
     class MMGG : AR {
-        backpack = "CUP_B_Predator_MTP";
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
@@ -71,7 +70,7 @@ class BAF_CBRN {
     };
 
     class MATG : RAT {
-        backpack = "CUP_B_Predator_MTP";
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : AAR {
@@ -81,7 +80,7 @@ class BAF_CBRN {
     };
 
     class HATG : RAT {
-        backpack = "CUP_B_Predator_MTP";
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : AAR {
@@ -128,7 +127,7 @@ class BAF_CBRN {
 
     class ENG : Rifleman {
         vest = "CUP_V_B_BAF_MTP_Osprey_Mk4_Engineer_ARM";
-        backpack = "CUP_B_Predator_MTP";
+        backpack = "ark_backpack_large";
         headGear = "CUP_H_BAF_Helmet_4_MTP";
     };
 
@@ -139,7 +138,7 @@ class BAF_CBRN {
         headGear = "CUP_H_BAF_Helmet_4_MTP";
         goggles = "skn_m50_gas_mask_hood";
         vest = "CUP_V_B_BAF_MTP_Osprey_Mk4_Scout_ARM";
-        backpack = "CUP_B_Motherlode_MTP";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {
