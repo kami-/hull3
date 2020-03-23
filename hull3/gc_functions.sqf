@@ -81,7 +81,12 @@ hull3_gc_fnc_sortDead = {
     params ["_killed"];
 
     if (isNull _killed) exitWith {};
-    if (!(_killed isKindOf "CAManBase") || { !(_killed isKindOf "Car") } || { !(_killed isKindOf "Tank") } || { !(_killed isKindOf "Air") } || { !(_killed isKindOf "Ship") } ) exitWith {};
+    if (!(_killed isKindOf "CAManBase")
+        && { !(_killed isKindOf "Car") }
+        && { !(_killed isKindOf "Tank") }
+        && { !(_killed isKindOf "Air") }
+        && { !(_killed isKindOf "Ship") }) exitWith {};
+
     if (isPlayer _killed || { _killed getVariable ["hull3_gc_doNotRemove", false] } ) exitWith {};
 
     if (_killed isKindOf "CAManBase") then {
