@@ -4,7 +4,7 @@ class DPR_AUT {
         goggles = "G_Bandanna_oli";
         uniform = "MNP_CombatUniform_DPR_A";
         vest = "MNP_Vest_OD_A_ARM";
-        backpack = "B_Kitbag_rgr";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
@@ -21,20 +21,21 @@ class DPR_AUT {
         headGear = "CUP_H_SLA_TankerHelmet";
         uniform = "MNP_CombatUniform_DPR_A";
         vest = "CUP_V_O_TK_CrewBelt_ARM";
-        backpack = "B_AssaultPack_rgr";
+        backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
     };
 
     class XO : CO {
+        backpack = "ark_backpack_large";
     };
 
     class SL : Officer {
     };
 
     class Medic : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
         uniform = "MNP_CombatUniform_DPR_A";
     };
 
@@ -46,14 +47,14 @@ class DPR_AUT {
     };
 
     class AAR : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class RAT : Rifleman {
     };
 
     class MMGG : AR {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
@@ -69,7 +70,7 @@ class DPR_AUT {
     };
 
     class MATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : AAR {
@@ -79,7 +80,7 @@ class DPR_AUT {
     };
 
     class HATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : AAR {
@@ -125,7 +126,7 @@ class DPR_AUT {
     };
 
     class ENG : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
@@ -134,8 +135,8 @@ class DPR_AUT {
     class SN : Rifleman {
         headGear = "H_Cap_headphones";
         goggles = "G_Bandanna_oli";
-        vest = "CUP_V_B_RRV_TL_ARM";
-        backpack = "B_AssaultPack_rgr";
+        vest = "MNP_Vest_OD_B_ARM";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {
