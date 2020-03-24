@@ -4,7 +4,7 @@ class CN_DE {
         goggles = "";
         uniform = "MNP_CombatUniform_China_D";
         vest = "MNP_Vest_ChinaH_D2_ARM";
-        backpack = "B_Kitbag_cbr";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
@@ -17,21 +17,21 @@ class CN_DE {
 
     class Crew : Rifleman {
         headGear = "CUP_H_TK_TankerHelmet";
-        vest = "V_BandollierB_blk_ARM";
-        backpack = "B_AssaultPack_cbr";
+        backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
     };
 
     class XO : CO {
+        backpack = "ark_backpack_large";
     };
 
     class SL : Officer {
     };
 
     class Medic : Rifleman {
-        backpack = "B_Carryall_khk";
+        backpack = "ark_backpack_large";
     };
 
     class FTL : Leader {
@@ -41,14 +41,14 @@ class CN_DE {
     };
 
     class AAR : Rifleman {
-        backpack = "B_Carryall_khk";
+        backpack = "ark_backpack_large";
     };
 
     class RAT : Rifleman {
     };
 
     class MMGG : AR {
-        backpack = "B_Carryall_khk";
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
@@ -64,7 +64,7 @@ class CN_DE {
     };
 
     class MATG : RAT {
-        backpack = "B_Carryall_khk";
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : AAR {
@@ -74,7 +74,7 @@ class CN_DE {
     };
 
     class HATG : RAT {
-        backpack = "B_Carryall_khk";
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : AAR {
@@ -120,7 +120,7 @@ class CN_DE {
     };
 
     class ENG : Rifleman {
-        backpack = "B_Carryall_khk";
+        backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
@@ -129,8 +129,7 @@ class CN_DE {
     class SN : Rifleman {
         headGear = "MNP_Boonie_CN_D";
         goggles = "G_Bandanna_tan";
-        vest = "V_BandollierB_khk_ARM";
-        backpack = "B_AssaultPack_cbr";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {
