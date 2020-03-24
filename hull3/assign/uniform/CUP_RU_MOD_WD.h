@@ -4,7 +4,7 @@ class CUP_RU_MOD_WD {
         goggles = "";
         uniform = "CUP_U_O_RUS_EMR_1";
         vest = "CUP_V_RUS_6B45_1_ARM";
-        backpack = "B_FieldPack_oli";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
@@ -18,7 +18,7 @@ class CUP_RU_MOD_WD {
         headGear = "H_Tank_eaf_F";
         uniform = "CUP_U_O_RUS_EMR_2";
         vest = "CUP_V_RUS_6B45_2_ARM";
-        backpack = "CUP_B_SLA_Medicbag";
+        backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
@@ -26,7 +26,7 @@ class CUP_RU_MOD_WD {
 
     class XO : CO {
         uniform = "CUP_U_O_RUS_EMR_rolled_up_gloves_pads";
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class SL : Officer {
@@ -34,7 +34,7 @@ class CUP_RU_MOD_WD {
 
     class Medic : Rifleman {
         vest = "CUP_V_RUS_6B45_3_ARM";
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class FTL : Leader {
@@ -48,7 +48,7 @@ class CUP_RU_MOD_WD {
 
     class AAR : Rifleman {
         headGear = "CUP_H_RUS_6B46";
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class RAT : Rifleman {
@@ -56,7 +56,7 @@ class CUP_RU_MOD_WD {
     };
 
     class MMGG : AR {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
@@ -74,7 +74,7 @@ class CUP_RU_MOD_WD {
     };
 
     class MATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : AAR {
@@ -85,7 +85,7 @@ class CUP_RU_MOD_WD {
     };
 
     class HATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : AAR {
@@ -137,7 +137,7 @@ class CUP_RU_MOD_WD {
 
     class ENG : Rifleman {
         headGear = "CUP_H_RUS_6B27_cover_headset_goggles";
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
@@ -149,6 +149,7 @@ class CUP_RU_MOD_WD {
         uniform = "CUP_U_O_RUS_EMR_rolled_up_gloves_pads";
         goggles = "G_Balaclava_oli";
         vest = "CUP_V_RUS_6B45_2_ARM";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {
