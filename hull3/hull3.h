@@ -79,7 +79,6 @@ class Hull3 {
         #include "assign\uniform\NZ.h"
         #include "assign\uniform\ROK_WD.h"
         #include "assign\uniform\RU_AB.h"
-        #include "assign\uniform\RU_DE.h"
         #include "assign\uniform\RU_SPETSNAZ.h"
         #include "assign\uniform\SYND_BANDIT.h"
         #include "assign\uniform\RU_CBRN.h"
@@ -146,7 +145,8 @@ class Hull3 {
         #include "assign\uniform\ROK_SEAL.h"
         #include "assign\uniform\LDF.h"
         #include "assign\uniform\SPETSNAZ.h"
-		#include "assign\uniform\CUP_RU_MOD_WD.h"
+        #include "assign\uniform\CUP_RU_MOD_WD.h"
+        #include "assign\uniform\CUP_RU_MOD_DE.h"
         #include "assign\uniform\LDF_90_WD.h"
         #include "assign\uniform\LDF_90_SN.h"
 
