@@ -4,7 +4,7 @@ class CUP_TK_INS {
         goggles = "";
         uniform = "CUP_O_TKI_Khet_Partug_01";
         vest = "CUP_V_OI_TKI_Jacket4_02_ARM";
-        backpack = "CUP_B_AlicePack_Khaki";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
@@ -22,6 +22,7 @@ class CUP_TK_INS {
     class Crew : Rifleman {
         headGear = "CUP_H_TK_TankerHelmet";
         vest = "CUP_V_OI_TKI_Jacket3_02_ARM";
+        backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
@@ -35,13 +36,14 @@ class CUP_TK_INS {
         headGear = "CUP_H_TKI_Lungee_Open_05";
         uniform = "CUP_O_TKI_Khet_Partug_06";
         vest = "CUP_V_OI_TKI_Jacket2_03_ARM";
+        backpack = "ark_backpack_large";
     };
 
     class SL : Officer {
     };
 
     class Medic : Rifleman {
-        backpack = "CUP_B_AlicePack_Khaki";
+        backpack = "ark_backpack_large";
         uniform = "CUP_O_TKI_Khet_Partug_05";
         headGear = "CUP_H_TKI_SkullCap_06";
         vest = "CUP_V_OI_TKI_Jacket3_03_ARM";
@@ -57,7 +59,7 @@ class CUP_TK_INS {
     };
 
     class AAR : Rifleman {
-        backpack = "CUP_B_AlicePack_Khaki";
+        backpack = "ark_backpack_large";
         uniform = "CUP_O_TKI_Khet_Partug_08";
         vest = "CUP_V_OI_TKI_Jacket4_03_ARM";
         headGear = "CUP_H_TKI_Pakol_2_04";
@@ -70,7 +72,7 @@ class CUP_TK_INS {
     };
 
     class MMGG : AR {
-        backpack = "CUP_B_AlicePack_Khaki";
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
@@ -86,7 +88,7 @@ class CUP_TK_INS {
     };
 
     class MATG : RAT {
-        backpack = "CUP_B_AlicePack_Khaki";
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : AAR {
@@ -96,7 +98,7 @@ class CUP_TK_INS {
     };
 
     class HATG : RAT {
-        backpack = "CUP_B_AlicePack_Khaki";
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : AAR {
@@ -143,7 +145,7 @@ class CUP_TK_INS {
 
     class ENG : Rifleman {
         uniform = "CUP_O_TKI_Khet_Partug_06";
-        backpack = "CUP_B_AlicePack_Khaki";
+        backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
@@ -153,6 +155,7 @@ class CUP_TK_INS {
         headGear = "CUP_H_TKI_Lungee_01";
         uniform = "CUP_O_TKI_Khet_Partug_04";
         vest = "CUP_V_OI_TKI_Jacket4_01_ARM";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {
