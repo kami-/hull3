@@ -4,7 +4,7 @@ class CUP_SLA_DE {
         goggles = "";
         uniform = "CUP_U_O_SLA_Desert";
         vest = "CUP_V_O_SLA_6B3_1_DES_ARM";
-        backpack = "CUP_B_CivPack_WDL";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
@@ -20,20 +20,21 @@ class CUP_SLA_DE {
         headGear = "CUP_H_SLA_TankerHelmet";
         uniform = "CUP_U_O_SLA_Overalls_Tank";
         vest = "CUP_V_O_TK_CrewBelt_ARM";
-        backpack = "CUP_B_SLA_Medicbag";
+        backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
     };
 
     class XO : CO {
+        backpack = "ark_backpack_large";
     };
 
     class SL : Officer {
     };
 
     class Medic : Rifleman {
-        backpack = "CUP_B_HikingPack_Civ";
+        backpack = "ark_backpack_large";
     };
 
     class FTL : Leader {
@@ -45,7 +46,7 @@ class CUP_SLA_DE {
     };
 
     class AAR : Rifleman {
-        backpack = "CUP_B_HikingPack_Civ";
+        backpack = "ark_backpack_large";
     };
 
     class RAT : Rifleman {
@@ -53,7 +54,7 @@ class CUP_SLA_DE {
     };
 
     class MMGG : AR {
-        backpack = "CUP_B_HikingPack_Civ";
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
@@ -69,7 +70,7 @@ class CUP_SLA_DE {
     };
 
     class MATG : RAT {
-        backpack = "CUP_B_HikingPack_Civ";
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : AAR {
@@ -79,7 +80,7 @@ class CUP_SLA_DE {
     };
 
     class HATG : RAT {
-        backpack = "CUP_B_HikingPack_Civ";
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : AAR {
@@ -125,7 +126,7 @@ class CUP_SLA_DE {
     };
 
     class ENG : Rifleman {
-        backpack = "CUP_B_HikingPack_Civ";
+        backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
@@ -135,7 +136,7 @@ class CUP_SLA_DE {
         headGear = "CUP_H_SLA_Boonie_DES";
         goggles = "G_Bandanna_oli";
         vest = "CUP_V_O_SLA_6B3_2_DES_ARM";
-        backpack = "CUP_B_CivPack_WDL";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {

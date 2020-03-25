@@ -1,33 +1,31 @@
-class CUP_RU_WD {
+class CUP_RU_MOD_DE {
     class Rifleman {
-        headGear = "CUP_H_RUS_6B27";
+        headGear = "CUP_H_RUS_6B27_cover_BeigeDigital";
         goggles = "";
-        uniform = "CUP_U_O_RUS_Flora_1";
-        vest = "CUP_V_RUS_6B3_2_ARM";
+        uniform = "CUP_U_O_RUS_BeigeDigital_MSV";
+        vest = "CUP_V_RUS_6B45_1_BeigeDigital_ARM";
         backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
-        uniform = "CUP_U_O_RUS_Flora_2";
-        vest = "CUP_V_RUS_6B3_1_ARM";
+        headGear = "CUP_H_RUS_6B27_cover_BeigeDigital_headset";
     };
 
     class Officer : Leader {
-        headGear = "CUP_H_ChDKZ_Cap";
     };
 
     class Crew : Rifleman {
-        headGear = "CUP_H_RUS_TSH_4_Brown";
-        uniform = "CUP_U_O_RUS_Flora_2";
-        vest = "CUP_V_O_TK_CrewBelt_ARM";
+        headGear = "H_Tank_eaf_F";
+        uniform = "CUP_U_O_RUS_BeigeDigital_MSV_rolled_up";
+        vest = "CUP_V_RUS_6B45_2_BeigeDigital_ARM";
         backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
-        uniform = "CUP_U_O_RUS_Commander";
     };
 
     class XO : CO {
+        uniform = "CUP_U_O_RUS_BeigeDigital_MSV_rolled_up_gloves_pads";
         backpack = "ark_backpack_large";
     };
 
@@ -35,21 +33,26 @@ class CUP_RU_WD {
     };
 
     class Medic : Rifleman {
+        vest = "CUP_V_RUS_6B45_3_BeigeDigital_ARM";
         backpack = "ark_backpack_large";
     };
 
     class FTL : Leader {
+        headGear = "CUP_H_RUS_6B27_cover_BeigeDigital_headset_goggles";
     };
 
     class AR : Rifleman {
-        vest = "CUP_V_RUS_6B3_3_ARM";
+        uniform = "CUP_U_O_RUS_BeigeDigital_MSV_gloves_pads";
+        vest = "CUP_V_RUS_6B45_3_BeigeDigital_ARM";
     };
 
     class AAR : Rifleman {
+        headGear = "CUP_H_RUS_6B27_cover_BeigeDigital_headset";
         backpack = "ark_backpack_large";
     };
 
     class RAT : Rifleman {
+        uniform = "CUP_U_O_RUS_BeigeDigital_MSV_rolled_up_gloves_pads";
     };
 
     class MMGG : AR {
@@ -57,12 +60,14 @@ class CUP_RU_WD {
     };
 
     class MMGAG : AAR {
+        headGear = "CUP_H_RUS_6B27_cover_BeigeDigital_headset_goggles";
     };
 
     class HMGG : AR {
     };
 
     class HMGAG : AAR {
+        headGear = "CUP_H_RUS_6B27_cover_BeigeDigital_headset_goggles";
     };
 
     class HMGAC : AAR {
@@ -73,6 +78,7 @@ class CUP_RU_WD {
     };
 
     class MATAG : AAR {
+        headGear = "CUP_H_RUS_6B27_cover_BeigeDigital_headset_goggles";
     };
 
     class MATAC : MATAG {
@@ -83,6 +89,7 @@ class CUP_RU_WD {
     };
 
     class HATAG : AAR {
+        headGear = "CUP_H_RUS_6B27_cover_BeigeDigital_headset_goggles";
     };
 
     class HATAC : HATAG {
@@ -92,6 +99,7 @@ class CUP_RU_WD {
     };
 
     class DHATAG : AAR {
+        headGear = "CUP_H_RUS_6B27_cover_BeigeDigital_headset_goggles";
     };
 
     class DHATAC : AAR {
@@ -101,6 +109,7 @@ class CUP_RU_WD {
     };
 
     class SAMAG : AAR {
+        headGear = "CUP_H_RUS_6B27_cover_BeigeDigital_headset_goggles";
     };
 
     class SAMAC : AAR {
@@ -110,6 +119,7 @@ class CUP_RU_WD {
     };
 
     class GMGAG : AAR {
+        headGear = "CUP_H_RUS_6B27_cover_BeigeDigital_headset_goggles";
     };
 
     class GMGAC : AAR {
@@ -119,27 +129,30 @@ class CUP_RU_WD {
     };
 
     class MTRAG : AAR {
+        headGear = "CUP_H_RUS_6B27_cover_BeigeDigital_headset_goggles";
     };
 
     class MTRAC : AAR {
     };
 
     class ENG : Rifleman {
+        headGear = "CUP_H_RUS_6B27_cover_BeigeDigital_headset_goggles";
         backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
+        headGear = "CUP_H_RUS_6B27_cover_BeigeDigital_headset";
     };
 
     class SN : Rifleman {
-        headGear = "CUP_H_RUS_ZSH_1_Goggles";
-        uniform = "CUP_U_O_RUS_Flora_2";
-        goggles = "G_Balaclava_oli";
-        vest = "CUP_V_O_TK_Vest_1_ARM";
+        headGear = "CUP_H_RUS_6B27_cover_BeigeDigital_headset_goggles";
+        uniform = "CUP_U_O_RUS_BeigeDigital_MSV_rolled_up_gloves_pads";
+        vest = "CUP_V_RUS_6B45_2_BeigeDigital_ARM";
         backpack = "ark_backpack_small";
     };
 
     class SP : SN {
+        headGear = "CUP_H_RUS_6B27_cover_BeigeDigital_headset";
     };
 
     class VC : Crew {
@@ -153,8 +166,8 @@ class CUP_RU_WD {
 
     class P : Crew {
         headGear = "CUP_H_RUS_ZSH_Shield_Up";
-        uniform = "CUP_U_O_RUS_Flora_2_VDV";
-        vest = "CUP_V_O_TK_CrewBelt_ARM";
+        uniform = "CUP_U_O_RUS_BeigeDigital_MSV";
+        vest = "CUP_V_RUS_6B45_2_BeigeDigital_ARM";
         backpack = "B_Parachute";
     };
 

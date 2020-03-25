@@ -4,7 +4,7 @@ class RU_SPETSNAZ {
         goggles = "";
         uniform = "CUP_U_O_RUS_Flora_1_VDV";
         vest = "CUP_V_PMC_IOTV_Coyote_Patrol_ARM";
-        backpack = "B_Kitbag_cbr";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
@@ -21,20 +21,21 @@ class RU_SPETSNAZ {
         headGear = "CUP_H_TK_TankerHelmet";
         uniform = "CUP_U_O_RUS_Flora_2_VDV";
         vest = "V_BandollierB_khk_ARM";
-        backpack = "B_AssaultPack_cbr";
+        backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
     };
 
     class XO : CO {
+        backpack = "ark_backpack_large";
     };
 
     class SL : Officer {
     };
 
     class Medic : Rifleman {
-        backpack = "B_Carryall_khk";
+        backpack = "ark_backpack_large";
     };
 
     class FTL : Leader {
@@ -46,14 +47,14 @@ class RU_SPETSNAZ {
     };
 
     class AAR : Rifleman {
-        backpack = "B_Carryall_khk";
+        backpack = "ark_backpack_large";
     };
 
     class RAT : Rifleman {
     };
 
     class MMGG : AR {
-        backpack = "B_Carryall_khk";
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
@@ -69,7 +70,7 @@ class RU_SPETSNAZ {
     };
 
     class MATG : RAT {
-        backpack = "B_Carryall_khk";
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : AAR {
@@ -79,7 +80,7 @@ class RU_SPETSNAZ {
     };
 
     class HATG : RAT {
-        backpack = "B_Carryall_khk";
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : AAR {
@@ -127,7 +128,7 @@ class RU_SPETSNAZ {
     class ENG : Rifleman {
         uniform = "CUP_U_O_RUS_Flora_1_VDV";
         vest = "CUP_V_PMC_IOTV_Coyote_Gren_ARM";
-        backpack = "B_Carryall_khk";
+        backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
@@ -138,7 +139,7 @@ class RU_SPETSNAZ {
         goggles = "G_Bandanna_tan";
         uniform = "CUP_U_O_RUS_Flora_1_VDV";
         vest = "CUP_V_PMC_IOTV_Coyote_Patrol_ARM";
-        backpack = "B_AssaultPack_rgr";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {

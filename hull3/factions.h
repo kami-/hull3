@@ -1091,15 +1091,15 @@ class Faction {
         };
     };
 
-    class MNP_RU_VDV_DE {
+    class CUP_RU_MOD_DE {
         gear = "AK74MZ_RU";
-        uniform = "RU_DE";
-        name = "Russian VDV Desert";
+        uniform = "CUP_RU_MOD_DE";
+        name = "Russian Modern Desert";
         description = "Digital Desert Uniforms and Zenitco AK-74M's";
         languages[] = {{"east", 100}};
         side = "east";
         camouflage[] = {"desert"};
-        rolePrefix = "Russian VDV";
+        rolePrefix = "Russian Army";
         vehicleClassnames[] = {
             {"CO", "CUP_O_UAZ_Unarmed_RU"},
             {"SL", "CUP_O_Kamaz_RU"},

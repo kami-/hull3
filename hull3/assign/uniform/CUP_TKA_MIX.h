@@ -4,7 +4,7 @@ class CUP_TKA_MIX {
         goggles = "CUP_TK_NeckScarf";
         uniform = "CUP_U_O_TK_MixedCamo";
         vest = "CUP_V_O_TK_Vest_1_ARM";
-        backpack = "B_Kitbag_rgr";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
@@ -18,7 +18,7 @@ class CUP_TKA_MIX {
     class Crew : Rifleman {
         headGear = "CUP_H_TK_TankerHelmet";
         vest = "CUP_V_O_TK_CrewBelt_ARM";
-        backpack = "CUP_B_SLA_Medicbag";
+        backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
@@ -27,13 +27,14 @@ class CUP_TKA_MIX {
     };
 
     class XO : CO {
+        backpack = "ark_backpack_large";
     };
 
     class SL : Officer {
     };
 
     class Medic : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
         vest = "CUP_V_O_TK_Vest_2_ARM";
     };
 
@@ -44,14 +45,14 @@ class CUP_TKA_MIX {
     };
 
     class AAR : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class RAT : Rifleman {
     };
 
     class MMGG : AR {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
@@ -67,7 +68,7 @@ class CUP_TKA_MIX {
     };
 
     class MATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : AAR {
@@ -77,7 +78,7 @@ class CUP_TKA_MIX {
     };
 
     class HATG : RAT {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : AAR {
@@ -123,7 +124,7 @@ class CUP_TKA_MIX {
     };
 
     class ENG : Rifleman {
-        backpack = "B_Carryall_oli";
+        backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
@@ -131,6 +132,7 @@ class CUP_TKA_MIX {
 
     class SN : Rifleman {
         headGear = "CUP_H_TK_Lungee";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {

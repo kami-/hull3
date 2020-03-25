@@ -4,11 +4,11 @@ class RU_CBRN {
         goggles = "skn_s10_balaclava_blue_dry";
         uniform = "skn_u_nbc_opf_blue";
         vest = "skn_o_elbv_worn_no_bp_ARM";
-        backpack = "B_FieldPack_blk";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
-	vest = "skn_o_elbv_worn_ARM";
+        vest = "skn_o_elbv_worn_ARM";
     };
 
     class Officer : Leader {
@@ -16,20 +16,21 @@ class RU_CBRN {
 
     class Crew : Rifleman {
         headGear = "CUP_H_SLA_TankerHelmet";
-        backpack = "B_AssaultPack_blk";
+        backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
     };
 
     class XO : CO {
+        backpack = "ark_backpack_large";
     };
 
     class SL : Officer {
     };
 
     class Medic : Rifleman {
-        backpack = "CUP_B_USPack_Black";
+        backpack = "ark_backpack_large";
     };
 
     class FTL : Leader {
@@ -40,14 +41,14 @@ class RU_CBRN {
     };
 
     class AAR : Rifleman {
-        backpack = "CUP_B_USPack_Black";
+        backpack = "ark_backpack_large";
     };
 
     class RAT : Rifleman {
     };
 
     class MMGG : AR {
-        backpack = "CUP_B_USPack_Black";
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
@@ -63,7 +64,7 @@ class RU_CBRN {
     };
 
     class MATG : RAT {
-        backpack = "CUP_B_USPack_Black";
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : MATG {
@@ -73,7 +74,7 @@ class RU_CBRN {
     };
 
     class HATG : RAT {
-        backpack = "CUP_B_USPack_Black";
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : AAR {
@@ -119,13 +120,14 @@ class RU_CBRN {
     };
 
     class ENG : Rifleman {
-        backpack = "CUP_B_USPack_Black";
+        backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
     };
 
     class SN : Rifleman {
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {
@@ -142,7 +144,7 @@ class RU_CBRN {
 
     class P : Crew {
         headGear = "CUP_H_RUS_ZSH_Shield_Up";
-        backpack = "B_LegStrapBag_black_F";
+        backpack = "B_Parachute";
     };
 
     class PCM : P {

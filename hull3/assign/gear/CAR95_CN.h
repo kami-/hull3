@@ -263,6 +263,9 @@ class CAR95_CN {
         };
     };
 
+    class HATAC : HATAG {
+    };
+
     class DHATG : Rifleman {
         primaryWeapon = "arifle_CTAR_blk_F";
         backpack = "CUP_B_Metis_Gun_Bag";
