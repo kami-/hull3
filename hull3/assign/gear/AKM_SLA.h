@@ -52,14 +52,14 @@ class AKM_SLA {
     class Leader : Rifleman {
         primaryWeapon = "CUP_arifle_AKM_GL";
         primaryWeaponItems[] = {"CUP_acc_Flashlight"};
-        handgunWeapon = "CUP_hgun_Makarov";
+        handgunWeapon = "CUP_hgun_TT";
         vestMagazines[] = {
             {"CUP_30Rnd_762x39_AK47_M", 3},
             {"CUP_1Rnd_HE_GP25_M", 4},
             {"CUP_1Rnd_SMOKE_GP25_M", 2},
             {"CUP_1Rnd_SmokeRed_GP25_M", 2},
             {"CUP_30Rnd_TE1_Green_Tracer_762x39_AK47_M", 2},
-            {"CUP_8Rnd_9x18_Makarov_M", 3}
+            {"CUP_8Rnd_762x25_TT", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
@@ -383,11 +383,11 @@ class AKM_SLA {
 
     class SN : Rifleman {
         primaryWeapon = "CUP_srifle_SVD";
-        handgunWeapon = "CUP_hgun_Makarov";
+        handgunWeapon = "CUP_hgun_TT";
         primaryWeaponItems[] = {"CUP_optic_PSO_1"};
         vestMagazines[] = {
             {"CUP_10Rnd_762x54_SVD_M", 4},
-            {"CUP_8Rnd_9x18_Makarov_M", 3}
+            {"CUP_8Rnd_762x25_TT", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
