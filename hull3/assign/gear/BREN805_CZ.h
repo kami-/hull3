@@ -52,14 +52,14 @@ class BREN805_CZ {
 
     class Leader : Rifleman {
         primaryWeapon = "CUP_arifle_CZ805_GL_blk";
-        handgunWeapon = "CUP_hgun_Compact";
+        handgunWeapon = "CUP_hgun_CZ75";
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_CZ805", 4},
             {"CUP_1Rnd_HE_M203", 4},
             {"CUP_1Rnd_Smoke_M203", 2},
             {"CUP_1Rnd_SmokeRed_M203", 2},
             {"CUP_30Rnd_TE1_Red_Tracer_556x45_CZ805", 1},
-            {"CUP_10Rnd_9x19_Compact", 3}
+            {"CUP_16Rnd_9x19_cz75", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
@@ -370,11 +370,11 @@ class BREN805_CZ {
 
     class SN : Rifleman {
         primaryWeapon = "CUP_srifle_CZ750";
-        handgunWeapon = "CUP_hgun_Compact";
+        handgunWeapon = "CUP_hgun_CZ75";
         primaryWeaponItems[] = {"CUP_optic_LeupoldMk4", "CUP_bipod_VLTOR_Modpod_black"};
         vestMagazines[] = {
             {"CUP_10Rnd_762x51_CZ750", 4},
-            {"CUP_10Rnd_9x19_Compact", 3}
+            {"CUP_16Rnd_9x19_cz75", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
