@@ -52,11 +52,11 @@ class FAL_LDF {
 
     class Leader : Rifleman {
         primaryWeapon = "CUP_arifle_FNFAL5061";
-        handgunWeapon = "CUP_hgun_Colt1911";
+        handgunWeapon = "CUP_hgun_Browning_HP";
         vestMagazines[] = {
             {"CUP_20Rnd_762x51_FNFAL_M", 4},
             {"CUP_20Rnd_TE1_Green_Tracer_762x51_FNFAL_M", 2},
-            {"CUP_7Rnd_45ACP_1911", 3}
+            {"CUP_13Rnd_9x19_Browning_HP", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
@@ -145,8 +145,7 @@ class FAL_LDF {
 
     class RAT : Rifleman {
         primaryWeapon = "CUP_arifle_FNFAL5062";
-        secondaryWeapon = "CUP_launch_RPG7V";
-        secondaryWeaponItems[] = {"CUP_PG7VL_M"};
+        secondaryWeapon = "CUP_launch_APILAS";
         vestMagazines[] = {
             {"CUP_20Rnd_762x51_FNFAL_M", 6},
             {"CUP_20Rnd_TE1_Green_Tracer_762x51_FNFAL_M", 2}
@@ -154,8 +153,7 @@ class FAL_LDF {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"CUP_20Rnd_762x51_FNFAL_M", 4},
-            {"CUP_PG7VL_M", 2}
+            {"CUP_20Rnd_762x51_FNFAL_M", 4}
         };
     };
 
@@ -359,11 +357,11 @@ class FAL_LDF {
 
     class SN : Rifleman {
         primaryWeapon = "CUP_arifle_FNFAL5060_railed";
-        handgunWeapon = "CUP_hgun_Colt1911";
+        handgunWeapon = "CUP_hgun_Browning_HP";
         primaryWeaponItems[] = {"CUP_optic_LeupoldMk4"};
         vestMagazines[] = {
             {"CUP_20Rnd_762x51_FNFAL_M", 4},
-            {"CUP_7Rnd_45ACP_1911", 3}
+            {"CUP_13Rnd_9x19_Browning_HP", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
@@ -397,14 +395,13 @@ class FAL_LDF {
     class Vehicle {
         weapons[] = {
             {"CUP_arifle_FNFAL5061", 2},
-            {"CUP_launch_RPG18", 2}
+            {"CUP_launch_APILAS", 2}
         };
         magazines[] = {
             {"CUP_20Rnd_762x51_FNFAL_M", 20},
             {"CUP_20Rnd_TE1_Green_Tracer_762x51_FNFAL_M", 10},
             {"CUP_30Rnd_TE1_Green_Tracer_762x51_FNFAL_M", 10},
             {"ACE_HandFlare_White", 15},
-            {"CUP_PG7VL_M", 2},
             {"HandGrenade", 5},
             {"SmokeShell", 5}
         };
@@ -421,7 +418,7 @@ class FAL_LDF {
     class Truck : Vehicle {
         weapons[] = {
             {"CUP_arifle_FNFAL5061", 2},
-            {"CUP_launch_RPG18", 4}
+            {"CUP_launch_APILAS", 4}
         };
         magazines[] = {
             {"CUP_20Rnd_762x51_FNFAL_M", 40},
@@ -429,7 +426,6 @@ class FAL_LDF {
             {"CUP_30Rnd_TE1_Green_Tracer_762x51_FNFAL_M", 20},
             {"CUP_100Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M", 10},
             {"CUP_SMAW_HEAA_M", 5},
-            {"CUP_PG7VL_M", 2},
             {"CUP_AT13_M", 5},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 25},
@@ -447,14 +443,13 @@ class FAL_LDF {
     };
 
     class Armored : Truck {
-        weapons[] = {{"CUP_launch_RPG18", 4}};
+        weapons[] = {{"CUP_launch_APILAS", 4}};
         magazines[] = {
             {"CUP_20Rnd_762x51_FNFAL_M", 40},
             {"CUP_20Rnd_TE1_Green_Tracer_762x51_FNFAL_M", 20},
             {"CUP_30Rnd_TE1_Green_Tracer_762x51_FNFAL_M", 20},
             {"CUP_100Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M", 10},
             {"CUP_SMAW_HEAA_M", 5},
-            {"CUP_PG7VL_M", 2},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 25},
             {"HandGrenade", 10},

@@ -53,14 +53,14 @@ class M16A4_CAN {
     class Leader : Rifleman {
         primaryWeapon = "CUP_arifle_M16A4_GL";
         primaryWeaponItems[] = {"CUP_optic_Eotech553_Black", "CUP_acc_Flashlight"};
-        handgunWeapon = "hlc_pistol_P226US";
+        handgunWeapon = "CUP_hgun_Browning_HP";
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"CUP_1Rnd_HE_M203", 4},
             {"CUP_1Rnd_Smoke_M203", 2},
             {"CUP_1Rnd_SmokeRed_M203", 2},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2},
-            {"hlc_15Rnd_9x19_B_P226", 3}
+            {"CUP_13Rnd_9x19_Browning_HP", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
@@ -369,11 +369,11 @@ class M16A4_CAN {
 
     class SN : Rifleman {
         primaryWeapon = "CUP_srifle_AWM_blk";
-        handgunWeapon = "hlc_pistol_P226US";
+        handgunWeapon = "CUP_hgun_Browning_HP";
         primaryWeaponItems[] = {"CUP_optic_SB_3_12x50_PMII", "CUP_bipod_VLTOR_Modpod_black"};
         vestMagazines[] = {
             {"CUP_5Rnd_86x70_L115A1", 4},
-            {"hlc_15Rnd_9x19_B_P226", 3}
+            {"CUP_13Rnd_9x19_Browning_HP", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},

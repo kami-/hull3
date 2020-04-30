@@ -521,7 +521,7 @@ class Faction {
 
     class CUP_KSK_DE {
         gear = "HK416_KSK";
-        uniform = "GER_DE";
+        uniform = "CUP_KSK_DE";
         name = "German KSK Desert";
         description = "Tropentarn SF with HK416's";
         languages[] = {{"west", 100}};

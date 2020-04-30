@@ -51,7 +51,7 @@ class L85_BAF {
 
     class Leader : Rifleman {
         primaryWeapon = "CUP_arifle_L85A2_GL";
-        handgunWeapon = "hlc_pistol_P226US";
+        handgunWeapon = "CUP_hgun_Browning_HP";
         primaryWeaponItems[] = {};
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Stanag_L85", 6},
@@ -59,7 +59,7 @@ class L85_BAF {
             {"CUP_1Rnd_Smoke_M203", 2},
             {"CUP_1Rnd_SmokeRed_M203", 2},
             {"CUP_30Rnd_556x45_Stanag_L85_Tracer_Red", 2},
-            {"hlc_15Rnd_9x19_B_P226", 3}
+            {"CUP_13Rnd_9x19_Browning_HP", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
@@ -357,11 +357,11 @@ class L85_BAF {
 
     class SN : Rifleman {
         primaryWeapon = "CUP_srifle_L129A1_HG";
-        handgunWeapon = "hlc_pistol_P226US";
+        handgunWeapon = "CUP_hgun_Browning_HP";
         primaryWeaponItems[] = {"CUP_optic_ACOG_TA31_KF", "CUP_acc_Flashlight", "bipod_02_F_blk"};
         vestMagazines[] = {
             {"CUP_20Rnd_762x51_L129_M", 4},
-            {"hlc_15Rnd_9x19_B_P226", 3}
+            {"CUP_13Rnd_9x19_Browning_HP", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},

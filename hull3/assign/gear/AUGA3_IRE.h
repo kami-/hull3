@@ -52,13 +52,15 @@ class AUGA3_IRE {
 
     class Leader : Rifleman {
         primaryWeapon = "hlc_rifle_auga3_GL";
+        handgunWeapon = "CUP_hgun_Browning_HP";
         primaryWeaponItems[] = {"CUP_optic_Eotech553_Black", "CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"hlc_30Rnd_556x45_B_AUG", 6},
             {"1Rnd_HE_Grenade_shell", 4},
             {"1Rnd_Smoke_Grenade_shell", 2},
             {"1Rnd_SmokeRed_Grenade_shell", 2},
-            {"hlc_30Rnd_556x45_T_AUG", 2}
+            {"hlc_30Rnd_556x45_T_AUG", 2},
+            {"CUP_13Rnd_9x19_Browning_HP", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
@@ -353,11 +355,11 @@ class AUGA3_IRE {
 
     class SN : Rifleman {
         primaryWeapon = "CUP_srifle_AWM_blk";
-        handgunWeapon = "hgun_Pistol_heavy_01_F";
+        handgunWeapon = "CUP_hgun_Browning_HP";
         primaryWeaponItems[] = {"CUP_optic_LeupoldMk4", "CUP_bipod_VLTOR_Modpod_black"};
         vestMagazines[] = {
             {"CUP_5Rnd_86x70_L115A1", 4},
-            {"11Rnd_45ACP_Mag", 3}
+            {"CUP_13Rnd_9x19_Browning_HP", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
