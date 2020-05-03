@@ -1,14 +1,14 @@
 class RU_CBRN {
     class Rifleman {
         headGear = "MNP_Helmet_PAGST_BK";
-        goggles = "skn_s10_balaclava_blue_dry";
-        uniform = "skn_u_nbc_opf_blue";
-        vest = "skn_o_elbv_worn_no_bp_ARM";
+        goggles = "G_AirPurifyingRespirator_02_black_F";
+        uniform = "U_C_CBRN_Suit_01_Blue_F";
+        vest = "CUP_V_RUS_6B45_1_ARM";
         backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
-        vest = "skn_o_elbv_worn_ARM";
+        vest = "CUP_V_RUS_6B45_3_ARM";
     };
 
     class Officer : Leader {
@@ -37,7 +37,7 @@ class RU_CBRN {
     };
 
     class AR : Rifleman {
-        vest = "skn_o_elbv_worn_ARM";
+        vest = "CUP_V_RUS_6B45_2_ARM";
     };
 
     class AAR : Rifleman {
