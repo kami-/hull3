@@ -171,13 +171,13 @@ class TRG_FIA {
     };
 
     class MMGG : Rifleman {
-        primaryWeapon = "CUP_lmg_M240";
+        primaryWeapon = "CUP_lmg_FNMAG_RIS";
         primaryWeaponItems[] = {};
-        vestMagazines[] = {{"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M", 1}};
+        vestMagazines[] = {{"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 1}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M", 4}
+            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 4}
         };
     };
 
@@ -186,7 +186,7 @@ class TRG_FIA {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
             {"30Rnd_556x45_Stanag_Tracer_Yellow", 2},
-            {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M", 4}
+            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 4}
         };
         uniformMagazines[] = {
             {"ACE_Chemlight_HiRed", 2},
@@ -450,7 +450,7 @@ class TRG_FIA {
             {"30Rnd_556x45_Stanag", 40},
             {"30Rnd_556x45_Stanag_Tracer_Red", 20},
             {"200Rnd_65x39_cased_Box", 20},
-            {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M", 10},
+            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
             {"SatchelCharge_Remote_Mag", 5},
@@ -476,7 +476,7 @@ class TRG_FIA {
             {"30Rnd_556x45_Stanag", 40},
             {"30Rnd_556x45_Stanag_Tracer_Red", 20},
             {"200Rnd_65x39_cased_Box", 20},
-            {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M", 10},
+            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
             {"MRAWS_HEAT_F", 5},

@@ -171,7 +171,7 @@ class TAVOR_IDF {
     };
 
     class MMGG : Rifleman {
-        primaryWeapon = "CUP_lmg_FNMAG";
+        primaryWeapon = "CUP_lmg_FNMAG_RIS";
         primaryWeaponItems[] = {};
         vestMagazines[] = {{"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 1}};
         backpackMagazines[] = {
