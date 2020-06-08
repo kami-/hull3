@@ -3427,7 +3427,7 @@ class Faction {
             {"TH", "CUP_B_CH47F_USA"},
             {"AH", "CUP_B_UH1D_gunship_GER_KSK_Des"},
             {"CAS", "CUP_B_A10_DYN_USA"},
-            {"Technical", "CUP_B_HMMWV_M2_USMC"}
+            {"Technical", "CUP_I_M151_M2_SYND"}
         };
     };
 
