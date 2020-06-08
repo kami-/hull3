@@ -3415,10 +3415,10 @@ class Faction {
         camouflage[] = {};
         rolePrefix = "US Army";
         vehicleClassnames[] = {
-            {"CO", "CUP_B_HMMWV_Unarmed_USMC"},
-            {"SL", "CUP_B_HMMWV_Unarmed_USMC"},
-            {"FT", "CUP_B_HMMWV_Unarmed_USMC"},
-            {"ATTCH", "CUP_B_HMMWV_Unarmed_USMC"},
+            {"CO", "CUP_I_M151_SYND"},
+            {"SL", "CUP_I_M151_SYND"},
+            {"FT", "CUP_I_M151_SYND"},
+            {"ATTCH", "CUP_I_M151_SYND"},
             {"ENG", "CUP_B_MTVR_Repair_USMC"},
             {"APC", "CUP_B_M113_USA"},
             {"IFV", "CUP_B_M2Bradley_USA_W"},
