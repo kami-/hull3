@@ -233,15 +233,19 @@ class HK416_KSK {
     };
 
     class HATG : MATG {
-        secondaryWeapon = "CUP_launch_Javelin";
-        secondaryWeaponItems[] = {"CUP_Javelin_M"};
-        backpackMagazines[] = {{"CUP_Javelin_M", 1}};
+        secondaryWeapon = "launch_I_Titan_short_F";
+        secondaryWeaponItems[] = {"Titan_AT"};
+        backpackMagazines[] = {
+            {"Titan_AT", 2},
+            {"Titan_AP", 1}
+        };
     };
 
     class HATAG : MATAG {
         backpackMagazines[] = {
             {"HandGrenade", 1},
-            {"CUP_Javelin_M", 1}
+            {"Titan_AT", 2},
+            {"Titan_AP", 1}
         };
     };
 

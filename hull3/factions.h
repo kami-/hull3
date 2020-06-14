@@ -806,10 +806,10 @@ class Faction {
     };
 
     class CUP_CDF_DES {
-        gear = "SIG550_CDF";
+        gear = "DSA58_CDF";
         uniform = "CUP_CDF_DES";
         name = "CDF (Desert)";
-        description = "Desert CDF with SIG 550";
+        description = "Desert CDF with DSA-58";
         languages[] = {{"west", 100}};
         side = "west";
         camouflage[] = {"desert"};
@@ -832,10 +832,10 @@ class Faction {
     };
 
     class CUP_CDF_FOR {
-        gear = "SIG550_CDF";
+        gear = "DSA58_CDF";
         uniform = "CUP_CDF_FOR";
         name = "CDF (Forest)";
-        description = "Forest CDF with SIG 550";
+        description = "Forest CDF with DSA-58";
         languages[] = {{"west", 100}};
         side = "west";
         camouflage[] = {"woodland"};
@@ -858,10 +858,10 @@ class Faction {
     };
 
     class CUP_CDF_MOU {
-        gear = "SIG550_CDF";
+        gear = "DSA58_CDF";
         uniform = "CUP_CDF_MOU";
         name = "CDF (Mountain)";
-        description = "Mountain CDF with SIG 550";
+        description = "Mountain CDF with DSA-58";
         languages[] = {{"west", 100}};
         side = "west";
         camouflage[] = {"woodland"};
@@ -884,10 +884,10 @@ class Faction {
     };
 
     class CUP_CDF_SN {
-        gear = "SIG550_CDF";
+        gear = "DSA58_CDF";
         uniform = "CUP_CDF_SN";
         name = "CDF (Winter)";
-        description = "Winter CDF with SIG 550";
+        description = "Winter CDF with DSA-58";
         languages[] = {{"west", 100}};
         side = "west";
         camouflage[] = {"snow"};
