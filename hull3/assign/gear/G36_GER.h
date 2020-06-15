@@ -231,15 +231,19 @@ class G36_GER {
 
     class HATG : MATG {
         primaryWeapon = "CUP_arifle_G36K_RIS";
-        secondaryWeapon = "CUP_launch_Javelin";
-        secondaryWeaponItems[] = {"CUP_Javelin_M"};
-        backpackMagazines[] = {{"CUP_Javelin_M", 1}};
+        secondaryWeapon = "launch_I_Titan_short_F";
+        secondaryWeaponItems[] = {"Titan_AT"};
+        backpackMagazines[] = {
+            {"Titan_AT", 2},
+            {"Titan_AP", 1}
+        };
     };
 
     class HATAG : MATAG {
         backpackMagazines[] = {
             {"HandGrenade", 1},
-            {"CUP_Javelin_M", 1}
+            {"Titan_AT", 2},
+            {"Titan_AP", 1}
         };
     };
 
@@ -438,7 +442,7 @@ class G36_GER {
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
             {"MRAWS_HEAT_F", 5},
-            {"CUP_Javelin_M", 5},
+            {"Titan_AT", 5},
             {"HandGrenade", 10},
             {"SmokeShell", 10}
         };

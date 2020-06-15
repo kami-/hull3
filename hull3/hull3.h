@@ -221,7 +221,7 @@ class Hull3 {
         #include "assign\gear\IF44_USA_PARA_G.h"
         #include "assign\gear\IF44_USA_G.h"
         #include "assign\gear\M14_US.h"
-        #include "assign\gear\SIG550_CDF.h"
+        #include "assign\gear\DSA58_CDF.h"
         #include "assign\gear\BREN2_RACS.h"
         #include "assign\gear\M16A1_US.h"
         #include "assign\gear\VZ58_CZ.h"
