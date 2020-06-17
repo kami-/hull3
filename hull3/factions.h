@@ -337,11 +337,11 @@ class Faction {
         };
     };
 
-    class MNP_US_RAN {
+    class CUP_USA_RAN {
         gear = "SCAR_L_US";
-        uniform = "USA_RAN";
-        name = "US Rangers (ACU)";
-        description = "ACU uniforms with SCAR-L";
+        uniform = "CUP_USA_RAN_UCP";
+        name = "US Rangers (UCP)";
+        description = "UCP ACU uniforms with SCAR-L";
         languages[] = {{"west", 100}};
         side = "west";
         camouflage[] = {"desert"};
@@ -363,11 +363,11 @@ class Faction {
         };
     };
 
-    class MNP_US_ACU {
+    class CUP_USA_UCP {
         gear = "M4_US";
-        uniform = "USA_ACU";
-        name = "US Army ACU";
-        description = "ACU uniforms with M4's";
+        uniform = "CUP_USA_UCP";
+        name = "US Army UCP";
+        description = "UCP ACU uniforms with M4's";
         languages[] = {{"west", 100}};
         side = "west";
         camouflage[] = {"desert"};
@@ -389,11 +389,11 @@ class Faction {
         };
     };
 
-    class MNP_US_RAN_SCO {
+    class CUP_USA_RAN {
         gear = "SCAR_H_US";
-        uniform = "USA_RAN_SCO";
-        name = "US Rangers (Scorpion)";
-        description = "Scorpion uniforms with SCAR-H";
+        uniform = "CUP_USA_RAN";
+        name = "US Rangers Multicam";
+        description = "Multicam uniforms with SCAR-H";
         languages[] = {{"west", 100}};
         side = "west";
         camouflage[] = {"woodland", "desert"};
@@ -415,11 +415,11 @@ class Faction {
         };
     };
 
-    class MNP_US_SCO {
+    class CUP_USA_OCP {
         gear = "M4A1_US";
-        uniform = "USA_SCO";
-        name = "US Army Scorpion";
-        description = "Scorpion Multicam uniforms with M4A1's";
+        uniform = "CUP_USA_OCP";
+        name = "US Army Multicam";
+        description = "Multicam uniforms with M4A1's";
         languages[] = {{"west", 100}};
         side = "west";
         camouflage[] = {"woodland", "desert"};
