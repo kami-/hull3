@@ -337,7 +337,7 @@ class Faction {
         };
     };
 
-    class CUP_USA_RAN {
+    class CUP_USA_RAN_UCP {
         gear = "SCAR_L_US";
         uniform = "CUP_USA_RAN_UCP";
         name = "US Rangers (UCP)";
