@@ -1,8 +1,8 @@
 class BAF_CBRN {
     class Rifleman {
         headGear = "CUP_H_BAF_MTP_Mk7";
-        goggles = "skn_m50_gas_mask_hood";
-        uniform = "skn_u_nbc_bluf_mtp";
+        goggles = "G_AirPurifyingRespirator_02_olive_F";
+        uniform = "U_B_CBRN_Suit_01_Wdl_F";
         vest = "CUP_V_B_BAF_MTP_Osprey_Mk4_Rifleman_ARM";
         backpack = "ark_backpack_med";
     };
@@ -20,7 +20,7 @@ class BAF_CBRN {
         headGear = "CUP_H_BAF_Crew_Helmet_MTP";
         vest = "CUP_V_B_BAF_MTP_Osprey_Mk4_Crewman_ARM";
         backpack = "ark_backpack_small";
-        goggles = "skn_m50_gas_mask";
+        goggles = "G_AirPurifyingRespirator_02_olive_F";
     };
 
     class CO : Officer {
@@ -136,7 +136,7 @@ class BAF_CBRN {
 
     class SN : Rifleman {
         headGear = "CUP_H_BAF_Helmet_4_MTP";
-        goggles = "skn_m50_gas_mask_hood";
+        goggles = "G_AirPurifyingRespirator_02_olive_F";
         vest = "CUP_V_B_BAF_MTP_Osprey_Mk4_Scout_ARM";
         backpack = "ark_backpack_small";
     };
