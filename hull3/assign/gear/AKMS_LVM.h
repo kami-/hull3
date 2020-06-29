@@ -155,7 +155,7 @@ class AKMS_LVM {
 
     class RAT : Rifleman {
         secondaryWeapon = "CUP_launch_RPG7V";
-        secondaryWeaponItems[] = {"CUP_PG7V_M"};
+        secondaryWeaponItems[] = {"CUP_PG7VL_M"};
         vestMagazines[] = {
             {"CUP_30Rnd_762x39_AK47_M", 6},
             {"CUP_30Rnd_TE1_Yellow_Tracer_762x39_AK47_M", 2}
@@ -164,7 +164,7 @@ class AKMS_LVM {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
             {"CUP_30Rnd_762x39_AK47_M", 4},
-            {"CUP_PG7V_M", 2}
+            {"CUP_PG7VL_M", 2}
         };
     };
 
@@ -410,6 +410,7 @@ class AKMS_LVM {
             {"CUP_30Rnd_762x39_AK47_M", 20},
             {"CUP_30Rnd_TE1_Yellow_Tracer_762x39_AK47_M", 10},
             {"CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M", 20},
+            {"CUP_PG7VL_M", 2},
             {"CUP_1Rnd_SMOKE_GP25_M", 5},
             {"CUP_FlareWhite_GP25_M", 5},
             {"ACE_HandFlare_White", 5},
@@ -438,8 +439,7 @@ class AKMS_LVM {
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
             {"CUP_1Rnd_SMOKE_GP25_M", 10},
             {"CUP_FlareWhite_GP25_M", 10},
-            {"CUP_PG7V_M", 5},
-            {"CUP_PG7VL_M", 5},
+            {"CUP_PG7VL_M", 12},
             {"CUP_Dragon_EP1_M", 5},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
@@ -465,8 +465,7 @@ class AKMS_LVM {
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
             {"CUP_1Rnd_SMOKE_GP25_M", 10},
             {"CUP_FlareWhite_GP25_M", 10},
-            {"CUP_PG7V_M", 5},
-            {"CUP_PG7VL_M", 5},
+            {"CUP_PG7VL_M", 12},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
             {"HandGrenade", 10},

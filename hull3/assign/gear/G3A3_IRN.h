@@ -143,7 +143,7 @@ class G3A3_IRN {
 
     class RAT : Rifleman {
         secondaryWeapon = "CUP_launch_RPG7V";
-        secondaryWeaponItems[] = {"CUP_PG7V_M"};
+        secondaryWeaponItems[] = {"CUP_PG7VL_M"};
         vestMagazines[] = {
             {"CUP_20Rnd_762x51_G3", 6},
             {"CUP_20Rnd_TE1_Green_Tracer_762x51_G3", 2}
@@ -152,7 +152,7 @@ class G3A3_IRN {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
             {"CUP_20Rnd_762x51_G3", 4},
-            {"CUP_PG7V_M", 2}
+            {"CUP_PG7VL_M", 2}
         };
     };
 
@@ -397,7 +397,7 @@ class G3A3_IRN {
             {"CUP_20Rnd_TE1_Green_Tracer_762x51_G3", 10},
             {"CUP_20Rnd_762x51_G3", 20},
             {"CUP_120Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M", 10},
-            {"CUP_PG7V_M", 2},
+            {"CUP_PG7VL_M", 2},
             {"ACE_HandFlare_White", 15},
             {"HandGrenade", 5},
             {"SmokeShell", 5}
@@ -421,8 +421,7 @@ class G3A3_IRN {
             {"CUP_20Rnd_TE1_Green_Tracer_762x51_G3", 20},
             {"CUP_20Rnd_762x51_G3", 40},
             {"CUP_120Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M", 30},
-            {"CUP_PG7V_M", 5},
-            {"CUP_PG7VL_M", 5},
+            {"CUP_PG7VL_M", 12},
             {"CUP_AT13_M", 5},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 15},
@@ -445,7 +444,7 @@ class G3A3_IRN {
             {"CUP_20Rnd_TE1_Green_Tracer_762x51_G3", 20},
             {"CUP_20Rnd_762x51_G3", 40},
             {"CUP_120Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M", 30},
-            {"CUP_PG7VL_M", 5},
+            {"CUP_PG7VL_M", 12},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 15},
             {"HandGrenade", 10},
