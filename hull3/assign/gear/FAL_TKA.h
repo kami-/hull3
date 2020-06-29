@@ -150,7 +150,7 @@ class FAL_TKA {
 
     class RAT : Rifleman {
         secondaryWeapon = "CUP_launch_RPG7V";
-        secondaryWeaponItems[] = {"CUP_PG7V_M"};
+        secondaryWeaponItems[] = {"CUP_PG7VL_M"};
         vestMagazines[] = {
             {"hlc_20Rnd_762x51_B_fal", 6},
             {"hlc_20Rnd_762x51_T_fal", 2}
@@ -159,7 +159,7 @@ class FAL_TKA {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
             {"hlc_20Rnd_762x51_B_fal", 4},
-            {"CUP_PG7V_M", 2}
+            {"CUP_PG7VL_M", 2}
         };
     };
 
@@ -406,7 +406,7 @@ class FAL_TKA {
             {"hlc_75Rnd_762x39_m_rpk", 20},
             {"1Rnd_Smoke_Grenade_shell", 5},
             {"UGL_FlareWhite_F", 5},
-            {"CUP_PG7V_M", 2},
+            {"CUP_PG7VL_M", 2},
             {"ACE_HandFlare_White", 5},
             {"HandGrenade", 5},
             {"SmokeShell", 5}
@@ -433,8 +433,7 @@ class FAL_TKA {
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
-            {"CUP_PG7VL_M", 5},
-            {"CUP_PG7V_M", 5},
+            {"CUP_PG7VL_M", 12},
             {"CUP_AT13_M", 5},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
@@ -460,7 +459,7 @@ class FAL_TKA {
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
-            {"CUP_PG7VL_M", 5},
+            {"CUP_PG7VL_M", 12},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
             {"HandGrenade", 10},

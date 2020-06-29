@@ -158,7 +158,7 @@ class AKM_IRN {
 
     class RAT : Rifleman {
         secondaryWeapon = "CUP_launch_RPG7V";
-        secondaryWeaponItems[] = {"CUP_PG7V_M"};
+        secondaryWeaponItems[] = {"CUP_PG7VL_M"};
         vestMagazines[] = {
             {"CUP_30Rnd_762x39_AK47_M", 5},
             {"CUP_30Rnd_TE1_Green_Tracer_762x39_AK47_M", 2}
@@ -167,7 +167,7 @@ class AKM_IRN {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
             {"CUP_30Rnd_762x39_AK47_M", 4},
-            {"CUP_PG7V_M", 2}
+            {"CUP_PG7VL_M", 2}
         };
     };
 
@@ -434,7 +434,7 @@ class AKM_IRN {
             {"CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M", 20},
             {"CUP_1Rnd_SMOKE_GP25_M", 5},
             {"ACE_HandFlare_White", 5},
-            {"CUP_PG7V_M", 2},
+            {"CUP_PG7VL_M", 2},
             {"CUP_FlareWhite_GP25_M", 5},
             {"HandGrenade", 5},
             {"SmokeShell", 5}
@@ -462,8 +462,7 @@ class AKM_IRN {
             {"CUP_1Rnd_SMOKE_GP25_M", 10},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
-            {"CUP_PG7V_M", 5},
-            {"CUP_PG7VL_M", 5},
+            {"CUP_PG7VL_M", 12},
             {"CUP_AT13_M", 5},
             {"CUP_FlareWhite_GP25_M", 10},
             {"HandGrenade", 10},
@@ -487,8 +486,7 @@ class AKM_IRN {
             {"CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M", 40},
             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
             {"CUP_1Rnd_SMOKE_GP25_M", 10},
-            {"CUP_PG7VL_M", 5},
-            {"CUP_PG7V_M", 5},
+            {"CUP_PG7VL_M", 12},
             {"CUP_FlareWhite_GP25_M", 10},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},

@@ -422,7 +422,7 @@ class BREN805_CZ {
             {"ACE_HandFlare_White", 5},
             {"CUP_FlareWhite_M203", 5},
             {"HandGrenade", 5},
-            {"CUP_PG7VL_M", 5},
+            {"CUP_PG7VL_M", 2},
             {"SmokeShell", 5}
         };
         items[] = {{"ItemGPS", 1}};
@@ -447,7 +447,7 @@ class BREN805_CZ {
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"CUP_1Rnd_Smoke_M203", 10},
             {"SatchelCharge_Remote_Mag", 5},
-            {"CUP_PG7VL_M", 5},
+            {"CUP_PG7VL_M", 6},
             {"MRAWS_HEAT_F", 5},
             {"CUP_Javelin_M", 5},
             {"ACE_HandFlare_White", 10},
@@ -473,7 +473,7 @@ class BREN805_CZ {
             {"CUP_200Rnd_TE1_Red_Tracer_556x45_M249", 20},
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"CUP_1Rnd_Smoke_M203", 10},
-            {"CUP_PG7VL_M", 5},
+            {"CUP_PG7VL_M", 6},
             {"MRAWS_HEAT_F", 5},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},

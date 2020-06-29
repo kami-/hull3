@@ -935,32 +935,6 @@ class Faction {
         };
     };
 
-    class OPF_T_F {
-        gear = "CAR95_CSAT";
-        uniform = "CSAT_TRP";
-        name = "CSAT";
-        description = "CSAT Tropical Uniforms and CAR-95 series weapons";
-        languages[] = {{"east", 100}};
-        side = "east";
-        camouflage[] = {};
-        rolePrefix = "CSAT";
-        vehicleClassnames[] = {
-            {"CO", "O_T_LSV_02_unarmed_F"},
-            {"SL", "O_T_LSV_02_unarmed_F"},
-            {"FT", "O_T_LSV_02_unarmed_F"},
-            {"ATTCH", "O_T_LSV_02_unarmed_F"},
-            {"ENG", "O_T_Truck_03_repair_ghex_F"},
-            {"APC", "O_T_APC_Wheeled_02_rcws_ghex_F"},
-            {"IFV", "O_T_APC_Tracked_02_cannon_ghex_F"},
-            {"SPAAG", "O_T_APC_Tracked_02_AA_ghex_F"},
-            {"TNK", "O_T_MBT_02_cannon_ghex_F"},
-            {"TH", "O_Heli_Transport_04_covered_F"},
-            {"AH", "O_T_VTOL_02_infantry_F"},
-            {"CAS", "O_Plane_CAS_02_F"},
-            {"Technical", "CUP_O_UAZ_MG_CSAT"}
-        };
-    };
-
     class MNP_OPF_F_SN {
         gear = "Katiba_CSAT";
         uniform = "CSAT_SN";

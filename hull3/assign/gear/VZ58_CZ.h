@@ -210,7 +210,7 @@ class VZ58_CZ {
     class MATG : RAT {
         primaryWeapon = "CUP_arifle_Sa58RIS1";
         secondaryWeapon = "CUP_launch_RPG7V";
-        secondaryWeaponItems[] = {"MRAWS_HEAT_F", "CUP_optic_PGO7V3"};
+        secondaryWeaponItems[] = {"CUP_PG7VL_M", "CUP_optic_PGO7V3"};
         backpackMagazines[] = {
             {"CUP_PG7VL_M", 2},
             {"CUP_OG7_M", 1},
@@ -424,7 +424,7 @@ class VZ58_CZ {
             {"ACE_HandFlare_White", 5},
             {"CUP_FlareWhite_M203", 5},
             {"HandGrenade", 5},
-            {"CUP_PG7VL_M", 5},
+            {"CUP_PG7VL_M", 2},
             {"SmokeShell", 5}
         };
         items[] = {{"ItemGPS", 1}};
@@ -448,7 +448,7 @@ class VZ58_CZ {
             {"CUP_50Rnd_UK59_762x54R_Tracer", 30},
             {"CUP_1Rnd_Smoke_M203", 10},
             {"SatchelCharge_Remote_Mag", 5},
-            {"CUP_PG7VL_M", 10},
+            {"CUP_PG7VL_M", 12},
             {"CUP_AT13_M", 5},
             {"ACE_HandFlare_White", 10},
             {"CUP_FlareWhite_M203", 10},
@@ -472,7 +472,7 @@ class VZ58_CZ {
             {"CUP_30Rnd_Sa58_M_TracerR", 20},
             {"CUP_50Rnd_UK59_762x54R_Tracer", 30},
             {"CUP_1Rnd_Smoke_M203", 10},
-            {"CUP_PG7VL_M", 10},
+            {"CUP_PG7VL_M", 12},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
             {"CUP_FlareWhite_M203", 10},

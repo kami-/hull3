@@ -164,7 +164,7 @@ class CAR95_CN {
         primaryWeapon = "arifle_CTAR_blk_F";
         primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         secondaryWeapon = "CUP_launch_RPG7V";
-        secondaryWeaponItems[] = {"CUP_PG7V_M"};
+        secondaryWeaponItems[] = {"CUP_PG7VL_M"};
         vestMagazines[] = {
             {"30Rnd_580x42_Mag_F", 6},
             {"30Rnd_580x42_Mag_Tracer_F", 2}
@@ -174,7 +174,7 @@ class CAR95_CN {
             {"SmokeShell", 1},
             {"30Rnd_580x42_Mag_F", 4},
             {"30Rnd_580x42_Mag_Tracer_F", 2},
-            {"CUP_PG7V_M", 2}
+            {"CUP_PG7VL_M", 2}
         };
     };
 
@@ -434,6 +434,7 @@ class CAR95_CN {
             {"30Rnd_580x42_Mag_F", 20},
             {"100Rnd_580x42_Mag_F", 10},
             {"1Rnd_Smoke_Grenade_shell", 5},
+            {"CUP_PG7VL_M", 2},
             {"UGL_FlareWhite_F", 5},
             {"ACE_HandFlare_White", 5},
             {"HandGrenade", 5},
@@ -464,7 +465,7 @@ class CAR95_CN {
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
             {"RPG32_F", 5},
-            {"CUP_PG7V_M", 5},
+            {"CUP_PG7VL_M", 6},
             {"CUP_AT13_M", 5},
             {"HandGrenade", 10},
             {"SmokeShell", 10}
@@ -489,6 +490,7 @@ class CAR95_CN {
             {"1Rnd_Smoke_Grenade_shell", 10},
             {"UGL_FlareWhite_F", 10},
             {"RPG32_F", 5},
+            {"CUP_PG7VL_M", 6},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
             {"HandGrenade", 10},
