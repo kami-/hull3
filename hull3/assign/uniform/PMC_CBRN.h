@@ -1,14 +1,14 @@
 class PMC_CBRN {
     class Rifleman {
         headGear = "MNP_Helmet_BLK";
-        goggles = "skn_m04_gas_mask_blk";
-        uniform = "skn_u_nbc_indep_blk";
+        goggles = "G_RegulatorMask_F";
+        uniform = "U_C_CBRN_Suit_01_Black_F";
         vest = "CUP_V_PMC_CIRAS_Black_Patrol_ARM";
         backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
-        uniform = "skn_u_nbc_indep_blk";
+        uniform = "U_C_CBRN_Suit_01_Black_F";
         vest = "CUP_V_PMC_CIRAS_Black_TL_ARM";
     };
 
@@ -19,8 +19,7 @@ class PMC_CBRN {
 
     class Crew : Rifleman {
         headGear = "H_Cap_blk_ION";
-        goggles = "skn_m04_gas_mask_bare_dry";
-        uniform = "skn_u_nbc_indep_blk";
+        uniform = "U_C_CBRN_Suit_01_Black_F";
         vest = "CUP_V_PMC_CIRAS_Black_Veh_ARM";
         backpack = "ark_backpack_small";
     };
