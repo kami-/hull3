@@ -22,6 +22,8 @@ hull3_marker_fnc_postInit = {
             DEBUG("hull3.marker.group",FMT_2("Setting Group ID on server for group '%1' to '%2'.",group _unit,_markerText));
             (group _unit) setGroupId [_markerText];
         } foreach hull3_marker_rawGroupMarkers;
+    } else {
+        call hull3_marker_fnc_cacheColours;
     };
 };
 
@@ -166,6 +168,7 @@ hull3_marker_fnc_updateFireTeamMarkers = {
         if (alive _unit) then {
             _markerName setMarkerPosLocal getPosASL _unit;
             _markerName setMarkerDirLocal getDir _unit;
+            _markerName setMarkerColorLocal (hull3_marker_colours getVariable [assignedTeam _unit, "ColorWhite"]);
         }
     } foreach _fireTeam;
 };
@@ -282,4 +285,14 @@ hull3_marker_fnc_createMarker = {
     };
 
     _name;
+};
+
+hull3_marker_fnc_cacheColours = {
+    hull3_marker_colours = call CBA_fnc_createNamespace;
+
+    hull3_marker_colours setVariable ["MAIN", "ColorWhite"];
+    hull3_marker_colours setVariable ["RED", "ColorRed"];
+    hull3_marker_colours setVariable ["GREEN", "ColorGreen"];
+    hull3_marker_colours setVariable ["BLUE", "ColorBlue"];
+    hull3_marker_colours setVariable ["YELLOW", "ColorYellow"];
 };
