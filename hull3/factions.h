@@ -1091,6 +1091,84 @@ class Faction {
         };
     };
 
+    class CUP_RU_RATNIK_DE {
+        gear = "AK74MZ_RU";
+        uniform = "CUP_RU_RATNIK_DE";
+        name = "Russian Ratnik Desert";
+        description = "Ratnik Desert Uniforms and Zenitco AK-74M's";
+        languages[] = {{"east", 100}};
+        side = "east";
+        camouflage[] = {"desert"};
+        rolePrefix = "Russian Army";
+        vehicleClassnames[] = {
+            {"CO", "CUP_O_UAZ_Unarmed_RU"},
+            {"SL", "CUP_O_Kamaz_RU"},
+            {"FT", "CUP_O_UAZ_Unarmed_RU"},
+            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
+            {"ENG", "CUP_O_Kamaz_Reammo_RU"},
+            {"APC", "CUP_O_BRDM2_RU"},
+            {"IFV", "CUP_O_BMP2_RU"},
+            {"SPAAG", "CUP_O_2S6_RU"},
+            {"TNK", "CUP_O_T90_RU"},
+            {"TH", "CUP_O_Mi8_RU"},
+            {"AH", "CUP_O_Mi24_V_Dynamic_RU"},
+            {"CAS", "CUP_O_Su25_Dyn_RU"},
+            {"Technical", "CUP_O_UAZ_MG_RU"}
+        };
+    };
+
+    class CUP_RU_RATNIK_WD {
+        gear = "AK74MZ_RU";
+        uniform = "CUP_RU_RATNIK_WD";
+        name = "Russian Ratnik Woodland";
+        description = "Ratnik Woodland Uniforms and Zenitco AK-74M's";
+        languages[] = {{"east", 100}};
+        side = "east";
+        camouflage[] = {"woodland"};
+        rolePrefix = "Russian Army";
+        vehicleClassnames[] = {
+            {"CO", "CUP_O_UAZ_Unarmed_RU"},
+            {"SL", "CUP_O_Kamaz_RU"},
+            {"FT", "CUP_O_UAZ_Unarmed_RU"},
+            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
+            {"ENG", "CUP_O_Kamaz_Reammo_RU"},
+            {"APC", "CUP_O_BRDM2_RU"},
+            {"IFV", "CUP_O_BMP2_RU"},
+            {"SPAAG", "CUP_O_2S6_RU"},
+            {"TNK", "CUP_O_T90_RU"},
+            {"TH", "CUP_O_Mi8_RU"},
+            {"AH", "CUP_O_Mi24_V_Dynamic_RU"},
+            {"CAS", "CUP_O_Su25_Dyn_RU"},
+            {"Technical", "CUP_O_UAZ_MG_RU"}
+        };
+    };
+
+    class CUP_RU_RATNIK_SN {
+        gear = "AK74MZ_RU";
+        uniform = "CUP_RU_RATNIK_SN";
+        name = "Russian Ratnik Snow";
+        description = "Ratnik Snow Uniforms and Zenitco AK-74M's";
+        languages[] = {{"east", 100}};
+        side = "east";
+        camouflage[] = {"snow"};
+        rolePrefix = "Russian Army";
+        vehicleClassnames[] = {
+            {"CO", "CUP_O_UAZ_Unarmed_RU"},
+            {"SL", "CUP_O_Kamaz_RU"},
+            {"FT", "CUP_O_UAZ_Unarmed_RU"},
+            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
+            {"ENG", "CUP_O_Kamaz_Reammo_RU"},
+            {"APC", "CUP_O_BRDM2_RU"},
+            {"IFV", "CUP_O_BMP2_RU"},
+            {"SPAAG", "CUP_O_2S6_RU"},
+            {"TNK", "CUP_O_T90_RU"},
+            {"TH", "CUP_O_Mi8_RU"},
+            {"AH", "CUP_O_Mi24_V_Dynamic_RU"},
+            {"CAS", "CUP_O_Su25_Dyn_RU"},
+            {"Technical", "CUP_O_UAZ_MG_RU"}
+        };
+    };
+
     class MNP_RU_AIR {
         gear = "AKS74_RU";
         uniform = "RU_AB";
