@@ -337,6 +337,84 @@ class Faction {
         };
     };
 
+    class CUP_HIL_CCE {
+        gear = "FAMAS_HIL";
+        uniform = "CUP_HIL_CCE";
+        name = "Horizon Island Legion";
+        description = "Tanoa defence force CCE uniforms with FAMAS";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland", "desert"};
+        rolePrefix = "HIL";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_M151_HIL"},
+            {"SL", "CUP_B_M151_HIL"},
+            {"FT", "CUP_B_M151_HIL"},
+            {"ATTCH", "CUP_B_M151_HIL"},
+            {"ENG", "CUP_B_MTVR_HIL"},
+            {"APC", "ARK_M113_USA_OD"},
+            {"IFV", "CUP_B_LAV25M240_green"},
+            {"SPAAG", "CUP_B_HMMWV_Avenger_NATO_T"},
+            {"TNK", "CUP_B_M60A3_TTS_USMC"},
+            {"TH", "CUP_B_CH47F_HIL"},
+            {"AH", "CUP_B_AW159_HIL"},
+            {"CAS", "CUP_B_AV8B_DYN_USMC"},
+            {"Technical", "CUP_B_M151_M2_HIL"}
+        };
+    };
+
+    class CUP_HIL_TTS {
+        gear = "SCAR_L_HIL";
+        uniform = "CUP_HIL_TTS";
+        name = "Horizon Island Legion SF";
+        description = "Tanoa defence force SF with SCAR-L";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland"};
+        rolePrefix = "HIL";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_M151_HIL"},
+            {"SL", "CUP_B_M151_HIL"},
+            {"FT", "CUP_B_M151_HIL"},
+            {"ATTCH", "CUP_B_M151_HIL"},
+            {"ENG", "CUP_B_MTVR_HIL"},
+            {"APC", "ARK_M113_USA_OD"},
+            {"IFV", "CUP_B_LAV25M240_green"},
+            {"SPAAG", "CUP_B_HMMWV_Avenger_NATO_T"},
+            {"TNK", "CUP_B_M60A3_TTS_USMC"},
+            {"TH", "CUP_B_CH47F_HIL"},
+            {"AH", "CUP_B_AW159_HIL"},
+            {"CAS", "CUP_B_AV8B_DYN_USMC"},
+            {"Technical", "CUP_B_M151_M2_HIL"}
+        };
+    };
+
+    class CUP_HIL_RES {
+        gear = "FAMAS_HIL_RES";
+        uniform = "CUP_HIL_RES";
+        name = "Horizon Island Legion Reserve";
+        description = "Tanoa defence force reservists OD uniforms with FAMAS";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland"};
+        rolePrefix = "HIL";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_M151_HIL"},
+            {"SL", "CUP_B_M151_HIL"},
+            {"FT", "CUP_B_M151_HIL"},
+            {"ATTCH", "CUP_B_M151_HIL"},
+            {"ENG", "CUP_B_MTVR_HIL"},
+            {"APC", "ARK_M113_USA_OD"},
+            {"IFV", "CUP_B_LAV25M240_green"},
+            {"SPAAG", "CUP_B_HMMWV_Avenger_NATO_T"},
+            {"TNK", "CUP_B_M60A3_TTS_USMC"},
+            {"TH", "CUP_B_CH47F_HIL"},
+            {"AH", "CUP_B_AW159_HIL"},
+            {"CAS", "CUP_B_AV8B_DYN_USMC"},
+            {"Technical", "CUP_B_M151_M2_HIL"}
+        };
+    };
+
     class CUP_USA_RAN_UCP {
         gear = "SCAR_L_US";
         uniform = "CUP_USA_RAN_UCP";

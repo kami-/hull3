@@ -151,6 +151,9 @@ class Hull3 {
         #include "assign\uniform\CUP_RU_MOD_DE.h"
         #include "assign\uniform\LDF_90_WD.h"
         #include "assign\uniform\LDF_90_SN.h"
+        #include "assign\uniform\CUP_HIL_CCE.h"
+        #include "assign\uniform\CUP_HIL_TTS.h"
+        #include "assign\uniform\CUP_HIL_RES.h"
 
         unitBaseClass = "Rifleman";
     };
@@ -233,6 +236,9 @@ class Hull3 {
         #include "assign\gear\PROMET_LDF.h"
         #include "assign\gear\AK12_RU.h"
         #include "assign\gear\FAL_LDF.h"
+        #include "assign\gear\FAMAS_HIL.h"
+        #include "assign\gear\SCAR_L_HIL.h"
+        #include "assign\gear\FAMAS_HIL_RES.h"
 
         unitBaseClass = "Rifleman";
         vehicleBaseClass = "Vehicle";
