@@ -400,7 +400,7 @@ class AK74M_RU {
     class Vehicle {
         weapons[] = {
             {"CUP_arifle_AK74M", 2},
-            {"CUP_launch_RPG18", 2}
+            {"CUP_launch_RPG26_loaded", 2}
         };
         magazines[] = {
             {"CUP_30Rnd_545x39_AK74M_M", 20},
@@ -426,7 +426,7 @@ class AK74M_RU {
     class Truck : Vehicle {
         weapons[] = {
             {"CUP_arifle_AK74M", 2},
-            {"CUP_launch_RPG18", 4}
+            {"CUP_launch_RPG26_loaded", 4}
         };
         magazines[] = {
             {"CUP_30Rnd_545x39_AK74M_M", 40},
@@ -453,7 +453,7 @@ class AK74M_RU {
     };
 
     class Armored : Truck {
-        weapons[] = {{"CUP_launch_RPG18", 4}};
+        weapons[] = {{"CUP_launch_RPG26_loaded", 4}};
         magazines[] = {
             {"CUP_30Rnd_545x39_AK74M_M", 40},
             {"CUP_30Rnd_TE1_Green_Tracer_545x39_AK74M_M", 20},
