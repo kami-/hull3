@@ -1,7 +1,7 @@
 class CUP_RU_RATNIK_SN {
     class Rifleman {
         headGear = "CUP_H_RUS_6B47_v2_Winter";
-        goggles = "CUP_RUS_Balaclava_Ratnik_winter";
+        goggles = "CUP_G_RUS_Balaclava_Ratnik_winter";
         uniform = "CUP_U_O_RUS_Ratnik_Winter";
         vest = "CUP_Vest_RUS_6B45_Sh117_ARM";
         backpack = "ark_backpack_med";
@@ -34,13 +34,13 @@ class CUP_RU_RATNIK_SN {
     };
 
     class Medic : Rifleman {
-        goggles = "CUP_RUS_Balaclava_Ratnik_winter_v2";
+        goggles = "CUP_G_RUS_Balaclava_Ratnik_winter_v2";
         backpack = "ark_backpack_large";
     };
 
     class FTL : Leader {
         headGear = "CUP_H_RUS_6B47_v2_GogglesClosed_Winter";
-        goggles = "CUP_RUS_Balaclava_Ratnik_winter_v2";
+        goggles = "CUP_G_RUS_Balaclava_Ratnik_winter_v2";
     };
 
     class AR : Rifleman {
@@ -138,7 +138,7 @@ class CUP_RU_RATNIK_SN {
 
     class SN : Rifleman {
         headGear = "CUP_H_RUS_6B47_v2_GogglesClosed_Winter";
-        goggles = "CUP_RUS_Balaclava_Ratnik_winter_v2";
+        goggles = "CUP_G_RUS_Balaclava_Ratnik_winter_v2";
         backpack = "ark_backpack_small";
     };
 
