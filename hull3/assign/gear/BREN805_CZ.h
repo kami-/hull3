@@ -412,7 +412,7 @@ class BREN805_CZ {
     class Vehicle {
         weapons[] = {
             {"CUP_arifle_CZ805_A1_blk", 2},
-            {"CUP_launch_RPG18", 2}
+            {"CUP_launch_RPG26_loaded", 2}
         };
         magazines[] = {
             {"CUP_30Rnd_556x45_CZ805", 20},
@@ -438,7 +438,7 @@ class BREN805_CZ {
     class Truck : Vehicle {
         weapons[] = {
             {"CUP_arifle_CZ805_A1_blk", 2},
-            {"CUP_launch_RPG18", 4}
+            {"CUP_launch_RPG26_loaded", 4}
         };
         magazines[] = {
             {"CUP_30Rnd_556x45_CZ805", 40},
@@ -466,7 +466,7 @@ class BREN805_CZ {
     };
 
     class Armored : Truck {
-        weapons[] = {{"CUP_launch_RPG18", 4}};
+        weapons[] = {{"CUP_launch_RPG26_loaded", 4}};
         magazines[] = {
             {"CUP_30Rnd_556x45_CZ805", 40},
             {"CUP_30Rnd_TE1_Red_Tracer_556x45_CZ805", 20},

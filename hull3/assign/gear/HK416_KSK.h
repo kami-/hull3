@@ -155,7 +155,7 @@ class HK416_KSK {
 
     class RAT : Rifleman {
         primaryWeapon = "CUP_arifle_HK416_Black";
-        secondaryWeapon = "CUP_launch_M72A6";
+        secondaryWeapon = "CUP_launch_HCPF3_loaded";
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Emag", 6},
             {"CUP_30Rnd_556x45_Emag_Tracer_Red", 2}
@@ -208,18 +208,32 @@ class HK416_KSK {
     };
 
     class MATG : RAT {
-        secondaryWeapon = "launch_MRAWS_green_rail_F";
-        secondaryWeaponItems[] = {"MRAWS_HEAT_F"};
-        backpackMagazines[] = {
-            {"MRAWS_HEAT_F", 4},
-            {"MRAWS_HE_F", 2}
+        secondaryWeapon = "CUP_launch_PzF3_loaded";
+        vestMagazines[] = {
+            {"CUP_30Rnd_556x45_Emag", 10},
+            {"CUP_30Rnd_556x45_Emag_Tracer_Red", 4},
+            {"HandGrenade", 1},
+            {"SmokeShell", 1}
+        };
+        backpackMagazines[] = {};
+        backpackItems[] = {
+            {"CUP_launch_PzF3_loaded", 1},
+            {"CUP_launch_BF3_loaded", 1}
         };
     };
 
     class MATAG : Rifleman {
-        backpackMagazines[] = {
-            {"MRAWS_HEAT_F", 4},
-            {"MRAWS_HE_F", 2}
+        secondaryWeapon = "CUP_launch_PzF3_loaded";
+        vestMagazines[] = {
+            {"CUP_30Rnd_556x45_Emag", 10},
+            {"CUP_30Rnd_556x45_Emag_Tracer_Red", 4},
+            {"HandGrenade", 1},
+            {"SmokeShell", 1}
+        };
+        backpackMagazines[] = {};
+        backpackItems[] = {
+            {"CUP_launch_PzF3_loaded", 1},
+            {"CUP_launch_BF3_loaded", 1}
         };
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
@@ -227,6 +241,18 @@ class HK416_KSK {
     };
 
     class MATAC : MATAG {
+        secondaryWeapon = "CUP_launch_PzF3_loaded";
+        vestMagazines[] = {
+            {"CUP_30Rnd_556x45_Emag", 10},
+            {"CUP_30Rnd_556x45_Emag_Tracer_Red", 4},
+            {"HandGrenade", 1},
+            {"SmokeShell", 1}
+        };
+        backpackMagazines[] = {};
+        backpackItems[] = {
+            {"CUP_launch_PzF3_loaded", 1},
+            {"CUP_launch_BF3_loaded", 1}
+        };
         assignItems[] = {};
         binocular = "Binocular";
         uniformRadios[] = {"ACRE_PRC343"};
@@ -235,6 +261,7 @@ class HK416_KSK {
     class HATG : MATG {
         secondaryWeapon = "launch_I_Titan_short_F";
         secondaryWeaponItems[] = {"Titan_AT"};
+        backpackItems[] = {};
         backpackMagazines[] = {
             {"Titan_AT", 2},
             {"Titan_AP", 1}
@@ -242,6 +269,7 @@ class HK416_KSK {
     };
 
     class HATAG : MATAG {
+        backpackItems[] = {};
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"Titan_AT", 2},
@@ -250,6 +278,7 @@ class HK416_KSK {
     };
 
     class HATAC : HATAG {
+        backpackItems[] = {};
         assignItems[] = {};
         binocular = "Binocular";
         uniformRadios[] = {"ACRE_PRC343"};
@@ -405,7 +434,7 @@ class HK416_KSK {
     class Vehicle {
         weapons[] = {
             {"CUP_arifle_HK416_Black", 2},
-            {"CUP_launch_M72A6", 4}
+            {"CUP_launch_HCPF3_loaded", 4}
         };
         magazines[] = {
             {"CUP_30Rnd_556x45_Emag", 15},
@@ -430,7 +459,8 @@ class HK416_KSK {
     class Truck : Vehicle {
         weapons[] = {
             {"CUP_arifle_HK416_Black", 2},
-            {"CUP_launch_M72A6", 10}
+            {"CUP_launch_HCPF3_loaded", 10},
+            {"CUP_launch_PzF3_loaded", 5}
         };
         magazines[] = {
             {"CUP_30Rnd_556x45_Emag", 40},
@@ -438,7 +468,6 @@ class HK416_KSK {
             {"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 30},
             {"CUP_1Rnd_Smoke_M203", 10},
             {"CUP_FlareWhite_M203", 10},
-            {"MRAWS_HEAT_F", 5},
             {"CUP_Javelin_M", 5},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
@@ -456,14 +485,16 @@ class HK416_KSK {
     };
 
     class Armored : Truck {
-        weapons[] = {{"CUP_launch_M72A6", 10}};
+        weapons[] = {
+            {"CUP_launch_HCPF3_loaded", 10},
+            {"CUP_launch_PzF3_loaded", 5}
+        };
         magazines[] = {
             {"CUP_30Rnd_556x45_Emag", 40},
             {"CUP_30Rnd_556x45_Emag_Tracer_Red", 20},
             {"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 30},
             {"CUP_1Rnd_Smoke_M203", 10},
             {"CUP_FlareWhite_M203", 10},
-            {"MRAWS_HEAT_F", 5},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
             {"HandGrenade", 10},

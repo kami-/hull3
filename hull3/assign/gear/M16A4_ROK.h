@@ -210,18 +210,32 @@ class M16A4_ROK {
     };
 
     class MATG : RAT {
-        secondaryWeapon = "launch_MRAWS_green_rail_F";
-        secondaryWeaponItems[] = {"MRAWS_HEAT_F"};
-        backpackMagazines[] = {
-            {"MRAWS_HEAT_F", 4},
-            {"MRAWS_HE_F", 2}
+        secondaryWeapon = "CUP_launch_PzF3_loaded";
+        vestMagazines[] = {
+            {"30Rnd_556x45_Stanag", 10},
+            {"30Rnd_556x45_Stanag_Tracer_Red", 4},
+            {"HandGrenade", 1},
+            {"SmokeShell", 1}
+        };
+        backpackMagazines[] = {};
+        backpackItems[] = {
+            {"CUP_launch_PzF3_loaded", 1},
+            {"CUP_launch_BF3_loaded", 1}
         };
     };
 
     class MATAG : Rifleman {
-        backpackMagazines[] = {
-            {"MRAWS_HEAT_F", 4},
-            {"MRAWS_HE_F", 2}
+        secondaryWeapon = "CUP_launch_PzF3_loaded";
+        vestMagazines[] = {
+            {"30Rnd_556x45_Stanag", 10},
+            {"30Rnd_556x45_Stanag_Tracer_Red", 4},
+            {"HandGrenade", 1},
+            {"SmokeShell", 1}
+        };
+        backpackMagazines[] = {};
+        backpackItems[] = {
+            {"CUP_launch_PzF3_loaded", 1},
+            {"CUP_launch_BF3_loaded", 1}
         };
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
@@ -229,6 +243,18 @@ class M16A4_ROK {
     };
 
     class MATAC : MATAG {
+        secondaryWeapon = "CUP_launch_PzF3_loaded";
+        vestMagazines[] = {
+            {"30Rnd_556x45_Stanag", 10},
+            {"30Rnd_556x45_Stanag_Tracer_Red", 4},
+            {"HandGrenade", 1},
+            {"SmokeShell", 1}
+        };
+        backpackMagazines[] = {};
+        backpackItems[] = {
+            {"CUP_launch_PzF3_loaded", 1},
+            {"CUP_launch_BF3_loaded", 1}
+        };
         assignItems[] = {};
         binocular = "Binocular";
         uniformRadios[] = {"ACRE_PRC343"};
@@ -237,10 +263,12 @@ class M16A4_ROK {
     class HATG : MATG {
         secondaryWeapon = "CUP_launch_Javelin";
         secondaryWeaponItems[] = {"CUP_Javelin_M"};
+        backpackItems[] = {};
         backpackMagazines[] = {{"CUP_Javelin_M", 1}};
     };
 
     class HATAG : MATAG {
+        backpackItems[] = {};
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"CUP_Javelin_M", 1}
@@ -432,7 +460,8 @@ class M16A4_ROK {
     class Truck : Vehicle {
         weapons[] = {
             {"CUP_arifle_M16A4_Base", 2},
-            {"CUP_launch_APILAS", 10}
+            {"CUP_launch_APILAS", 10},
+            {"CUP_launch_PzF3_loaded", 5}
         };
         magazines[] = {
             {"30Rnd_556x45_Stanag", 40},
@@ -441,7 +470,6 @@ class M16A4_ROK {
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"CUP_1Rnd_Smoke_M203", 10},
             {"CUP_FlareWhite_M203", 10},
-            {"MRAWS_HEAT_F", 5},
             {"CUP_Javelin_M", 5},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
@@ -459,7 +487,10 @@ class M16A4_ROK {
     };
 
     class Armored : Truck {
-        weapons[] = {{"CUP_launch_APILAS", 10}};
+        weapons[] = {
+            {"CUP_launch_APILAS", 10},
+            {"CUP_launch_PzF3_loaded", 5}
+        };
         magazines[] = {
             {"30Rnd_556x45_Stanag", 40},
             {"30Rnd_556x45_Stanag_Tracer_Red", 20},
@@ -467,7 +498,6 @@ class M16A4_ROK {
             {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"CUP_1Rnd_Smoke_M203", 10},
             {"CUP_FlareWhite_M203", 10},
-            {"MRAWS_HEAT_F", 5},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
             {"HandGrenade", 10},

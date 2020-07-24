@@ -151,7 +151,7 @@ class G36_GER {
 
     class RAT : Rifleman {
         primaryWeapon = "CUP_arifle_G36K_RIS";
-        secondaryWeapon = "CUP_launch_M72A6";
+        secondaryWeapon = "CUP_launch_HCPF3_loaded";
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_G36", 6},
             {"CUP_30Rnd_TE1_Red_Tracer_556x45_G36", 2}
@@ -205,18 +205,33 @@ class G36_GER {
 
     class MATG : RAT {
         primaryWeapon = "CUP_arifle_G36K_RIS";
-        secondaryWeapon = "launch_MRAWS_green_rail_F";
-        secondaryWeaponItems[] = {"MRAWS_HEAT_F"};
-        backpackMagazines[] = {
-            {"MRAWS_HEAT_F", 4},
-            {"MRAWS_HE_F", 2}
+        secondaryWeapon = "CUP_launch_PzF3_loaded";
+        vestMagazines[] = {
+            {"CUP_30Rnd_556x45_G36", 10},
+            {"CUP_30Rnd_TE1_Red_Tracer_556x45_G36", 4},
+            {"HandGrenade", 1},
+            {"SmokeShell", 1}
+        };
+        backpackMagazines[] = {};
+        backpackItems[] = {
+            {"CUP_launch_PzF3_loaded", 1},
+            {"CUP_launch_BF3_loaded", 1}
         };
     };
 
     class MATAG : Rifleman {
-        backpackMagazines[] = {
-            {"MRAWS_HEAT_F", 4},
-            {"MRAWS_HE_F", 2}
+        primaryWeapon = "CUP_arifle_G36K_RIS";
+        secondaryWeapon = "CUP_launch_PzF3_loaded";
+        vestMagazines[] = {
+            {"CUP_30Rnd_556x45_G36", 10},
+            {"CUP_30Rnd_TE1_Red_Tracer_556x45_G36", 4},
+            {"HandGrenade", 1},
+            {"SmokeShell", 1}
+        };
+        backpackMagazines[] = {};
+        backpackItems[] = {
+            {"CUP_launch_PzF3_loaded", 1},
+            {"CUP_launch_BF3_loaded", 1}
         };
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
@@ -224,6 +239,19 @@ class G36_GER {
     };
 
     class MATAC : MATAG {
+        primaryWeapon = "CUP_arifle_G36K_RIS";
+        secondaryWeapon = "CUP_launch_PzF3_loaded";
+        vestMagazines[] = {
+            {"CUP_30Rnd_556x45_G36", 10},
+            {"CUP_30Rnd_TE1_Red_Tracer_556x45_G36", 4},
+            {"HandGrenade", 1},
+            {"SmokeShell", 1}
+        };
+        backpackMagazines[] = {};
+        backpackItems[] = {
+            {"CUP_launch_PzF3_loaded", 1},
+            {"CUP_launch_BF3_loaded", 1}
+        };
         assignItems[] = {};
         binocular = "Binocular";
         uniformRadios[] = {"ACRE_PRC343"};
@@ -233,6 +261,7 @@ class G36_GER {
         primaryWeapon = "CUP_arifle_G36K_RIS";
         secondaryWeapon = "launch_I_Titan_short_F";
         secondaryWeaponItems[] = {"Titan_AT"};
+        backpackItems[] = {};
         backpackMagazines[] = {
             {"Titan_AT", 2},
             {"Titan_AP", 1}
@@ -240,6 +269,7 @@ class G36_GER {
     };
 
     class HATAG : MATAG {
+        backpackItems[] = {};
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"Titan_AT", 2},
@@ -248,6 +278,7 @@ class G36_GER {
     };
 
     class HATAC : HATAG {
+        backpackItems[] = {};
         assignItems[] = {};
         binocular = "Binocular";
         uniformRadios[] = {"ACRE_PRC343"};
@@ -406,7 +437,7 @@ class G36_GER {
     class Vehicle {
         weapons[] = {
             {"CUP_arifle_G36K_RIS", 2},
-            {"CUP_launch_M72A6", 4}
+            {"CUP_launch_HCPF3_loaded", 4}
         };
         magazines[] = {
             {"CUP_30Rnd_556x45_G36", 20},
@@ -431,7 +462,8 @@ class G36_GER {
     class Truck : Vehicle {
         weapons[] = {
             {"CUP_arifle_G36K_RIS", 2},
-            {"CUP_launch_M72A6", 10}
+            {"CUP_launch_HCPF3_loaded", 10},
+            {"CUP_launch_PzF3_loaded", 5}
         };
         magazines[] = {
             {"CUP_30Rnd_556x45_G36", 40},
@@ -441,7 +473,6 @@ class G36_GER {
             {"CUP_FlareWhite_M203", 10},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
-            {"MRAWS_HEAT_F", 5},
             {"Titan_AT", 5},
             {"HandGrenade", 10},
             {"SmokeShell", 10}
@@ -457,14 +488,16 @@ class G36_GER {
     };
 
     class Armored : Truck {
-        weapons[] = {{"CUP_launch_M72A6", 10}};
+        weapons[] = {
+            {"CUP_launch_HCPF3_loaded", 10},
+            {"CUP_launch_PzF3_loaded", 5}
+        };
         magazines[] = {
             {"CUP_30Rnd_556x45_G36", 40},
             {"CUP_30Rnd_TE1_Red_Tracer_556x45_G36", 20},
             {"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 30},
             {"CUP_1Rnd_Smoke_M203", 10},
             {"CUP_FlareWhite_M203", 10},
-            {"MRAWS_HEAT_F", 5},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 10},
             {"HandGrenade", 10},

@@ -427,7 +427,7 @@ class CAR95_CN {
     class Vehicle {
         weapons[] = {
             {"arifle_CTAR_blk_F", 2},
-            {"CUP_launch_RPG18", 4}
+            {"CUP_launch_RPG26_loaded", 4}
         };
         magazines[] = {
             {"30Rnd_580x42_Mag_Tracer_F", 10},
@@ -453,7 +453,7 @@ class CAR95_CN {
     class Truck : Vehicle {
         weapons[] = {
             {"arifle_CTAR_blk_F", 2},
-            {"CUP_launch_RPG18", 4}
+            {"CUP_launch_RPG26_loaded", 4}
         };
         magazines[] = {
             {"30Rnd_580x42_Mag_Tracer_F", 20},
@@ -481,7 +481,7 @@ class CAR95_CN {
     };
 
     class Armored : Truck {
-        weapons[] = {{"CUP_launch_RPG18", 4}};
+        weapons[] = {{"CUP_launch_RPG26_loaded", 4}};
         magazines[] = {
             {"30Rnd_580x42_Mag_Tracer_F", 20},
             {"30Rnd_580x42_Mag_F", 40},
