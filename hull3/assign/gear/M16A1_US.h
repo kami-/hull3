@@ -75,14 +75,13 @@ class M16A1_US {
     };
 
     class Crew : Rifleman {
-        primaryWeapon = "";
-        handgunWeapon = "CUP_hgun_Colt1911";
+        primaryWeapon = "CUP_smg_M3A1_blk";
         uniformMagazines[] = {
             {"ACE_HandFlare_Red", 2},
             {"SmokeShell", 1}
         };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
-        vestMagazines[] = {{"CUP_7Rnd_45ACP_1911", 4}};
+        vestMagazines[] = {{"CUP_30Rnd_45ACP_M3A1_BLK_M", 4}};
         backpackMagazines[] = {};
         assignItems[] = {};
     };
