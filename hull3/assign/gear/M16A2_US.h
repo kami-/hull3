@@ -82,13 +82,14 @@ class M16A2_US {
     };
 
     class Crew : Rifleman {
+        primaryWeapon = "CUP_smg_M3A1_blk";
         primaryWeaponItems[] = {};
         uniformMagazines[] = {
             {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
-        vestMagazines[] = {{"CUP_30Rnd_556x45_Stanag", 4}};
+        vestMagazines[] = {{"CUP_30Rnd_45ACP_M3A1_BLK_M", 4}};
         backpackMagazines[] = {};
         assignItems[] = {"ItemGPS", "ACE_NVG_Wide"};
     };
