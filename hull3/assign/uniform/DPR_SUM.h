@@ -1,9 +1,9 @@
 class DPR_SUM {
     class Rifleman {
-        headGear = "MNP_Helmet_PAGST_OD";
+        headGear = "CUP_H_RUS_SSH68_olive";
         goggles = "G_Bandanna_oli";
         uniform = "MNP_CombatUniform_DPR_B";
-        vest = "MNP_Vest_OD_A_ARM";
+        vest = "CUP_V_RUS_Smersh_1_ARM";
         backpack = "ark_backpack_med";
     };
 
@@ -12,8 +12,8 @@ class DPR_SUM {
     };
 
     class Officer : Leader {
-        vest = "MNP_Vest_OD_B_ARM";
-        headGear = "MNP_MC_OD";
+        vest = "CUP_V_RUS_Smersh_2_ARM";
+        headGear = "CUP_H_SLA_BeanieGreen";
         goggles = "G_Aviator";
     };
 
@@ -28,6 +28,7 @@ class DPR_SUM {
     };
 
     class XO : CO {
+        headGear = "CUP_H_FR_BeanieGreen";
         backpack = "ark_backpack_large";
     };
 
@@ -54,6 +55,7 @@ class DPR_SUM {
     };
 
     class MMGG : AR {
+        vest = "CUP_V_O_Ins_Carrier_Rig_MG_ARM";
         backpack = "ark_backpack_large";
     };
 
@@ -133,9 +135,8 @@ class DPR_SUM {
     };
 
     class SN : Rifleman {
-        headGear = "H_Cap_headphones";
+        headGear = "CUP_H_FR_BeanieGreen";
         goggles = "G_Bandanna_oli";
-        vest = "MNP_Vest_OD_B_ARM";
         backpack = "ark_backpack_small";
     };
 
