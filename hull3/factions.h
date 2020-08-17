@@ -1273,6 +1273,188 @@ class Faction {
         };
     };
 
+    class GM_GDR_BG {
+        gear = "MPIKM_GDR";
+        uniform = "GM_GDR_BG";
+        name = "East German Border Guard";
+        description = "East German Border Guards armed with MPi-KM & MPi-KMS-72";
+        languages[] = {{"east", 100}};
+        side = "east";
+        camouflage[] = {"woodland"};
+        rolePrefix = "GDR Border Guard";
+        vehicleClassnames[] = {
+            {"CO", "gm_gc_bgs_p601"},
+            {"SL", "gm_gc_bgs_ural4320_cargo"},
+            {"FT", "CUP_O_UAZ_Unarmed_RU"},
+            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
+            {"ENG", "gm_gc_bgs_ural4320_reammo"},
+            {"APC", "gm_gc_army_btr60pb"},
+            {"IFV", "gm_gc_army_bmp1sp2"},
+            {"SPAAG", "gm_gc_army_zsu264v1"},
+            {"TNK", "gm_gc_army_t55"},
+            {"TH", "gm_gc_bgs_mi2p"},
+            {"AH", "gm_gc_bgs_mi2us"},
+            {"CAS", "CUP_O_Su25_Dyn_RU"},
+            {"Technical", "CUP_O_UAZ_MG_RU"}
+        };
+    };
+
+    class GM_GDR_80_WD {
+        gear = "MPIAK74_GDR";
+        uniform = "GM_GDR_80_WD";
+        name = "East German NVA";
+        description = "East German Nationale Volksarmee armed with MPi-AK-74N";
+        languages[] = {{"east", 100}};
+        side = "east";
+        camouflage[] = {"woodland"};
+        rolePrefix = "GDR NVA";
+        vehicleClassnames[] = {
+            {"CO", "gm_gc_army_p601"},
+            {"SL", "gm_gc_army_ural4320_cargo"},
+            {"FT", "CUP_O_UAZ_Unarmed_RU"},
+            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
+            {"ENG", "gm_gc_army_ural4320_reammo"},
+            {"APC", "gm_gc_army_btr60pb"},
+            {"IFV", "gm_gc_army_bmp1sp2"},
+            {"SPAAG", "gm_gc_army_zsu264v1"},
+            {"TNK", "gm_gc_army_t55am2b"},
+            {"TH", "gm_gc_airforce_mi2t"},
+            {"AH", "gm_gc_airforce_mi2urn"},
+            {"CAS", "CUP_O_Su25_Dyn_RU"},
+            {"Technical", "CUP_O_UAZ_MG_RU"}
+        };
+    };
+
+    class GM_GDR_80_SN {
+        gear = "MPIAK74_GDR";
+        uniform = "GM_GDR_80_SN";
+        name = "East German NVA (Winter)";
+        description = "East German Nationale Volksarmee (winter uniforms) armed with MPi-AK-74N";
+        languages[] = {{"east", 100}};
+        side = "east";
+        camouflage[] = {"snow"};
+        rolePrefix = "GDR NVA";
+        vehicleClassnames[] = {
+            {"CO", "gm_gc_army_p601"},
+            {"SL", "gm_gc_army_ural4320_cargo"},
+            {"FT", "CUP_O_UAZ_Unarmed_RU"},
+            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
+            {"ENG", "gm_gc_army_ural4320_reammo"},
+            {"APC", "gm_gc_army_btr60pb"},
+            {"IFV", "gm_gc_army_bmp1sp2"},
+            {"SPAAG", "gm_gc_army_zsu264v1"},
+            {"TNK", "gm_gc_army_t55am2b"},
+            {"TH", "gm_gc_airforce_mi2t"},
+            {"AH", "gm_gc_airforce_mi2urn"},
+            {"CAS", "CUP_O_Su25_Dyn_RU"},
+            {"Technical", "CUP_O_UAZ_MG_RU"}
+        };
+    };
+
+    class GM_GDR_80_AIR {
+        gear = "MPIAK74_GDR_AIR";
+        uniform = "GM_GDR_80_AIR";
+        name = "East German FJB";
+        description = "East German Nationale Volksarmee Fallschirmjäger armed with MPi-AKS-74N";
+        languages[] = {{"east", 100}};
+        side = "east";
+        camouflage[] = {"woodland"};
+        rolePrefix = "GDR NVA FJB";
+        vehicleClassnames[] = {
+            {"CO", "gm_gc_army_p601"},
+            {"SL", "gm_gc_army_ural4320_cargo"},
+            {"FT", "CUP_O_UAZ_Unarmed_RU"},
+            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
+            {"ENG", "gm_gc_army_ural4320_reammo"},
+            {"APC", "gm_gc_army_btr60pb"},
+            {"IFV", "gm_gc_army_bmp1sp2"},
+            {"SPAAG", "gm_gc_army_zsu264v1"},
+            {"TNK", "gm_gc_army_t55am2b"},
+            {"TH", "gm_gc_airforce_mi2t"},
+            {"AH", "gm_gc_airforce_mi2urn"},
+            {"CAS", "CUP_O_Su25_Dyn_RU"},
+            {"Technical", "CUP_O_UAZ_MG_RU"}
+        };
+    };
+
+    class GM_PRL_80_WD {
+        gear = "AKM_PRL";
+        uniform = "GM_PRL_80_WD";
+        name = "Polish Peoples Army";
+        description = "Polish Peoples Army armed with AKM";
+        languages[] = {{"east", 100}};
+        side = "east";
+        camouflage[] = {"woodland"};
+        rolePrefix = "PRL LWP";
+        vehicleClassnames[] = {
+            {"CO", "CUP_O_UAZ_Unarmed_RU"},
+            {"SL", "gm_pl_army_ural4320_cargo"},
+            {"FT", "CUP_O_UAZ_Unarmed_RU"},
+            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
+            {"ENG", "gm_pl_army_ural4320_reammo"},
+            {"APC", "gm_pl_army_ot64a"},
+            {"IFV", "gm_pl_army_bmp1sp2"},
+            {"SPAAG", "gm_pl_army_zsu234v1"},
+            {"TNK", "gm_pl_army_t55ak"},
+            {"TH", "gm_pl_airforce_mi2t"},
+            {"AH", "gm_pl_airforce_mi2urpg"},
+            {"CAS", "CUP_O_Su25_Dyn_RU"},
+            {"Technical", "CUP_O_UAZ_MG_RU"}
+        };
+    };
+
+    class GM_PRL_80_SN {
+        gear = "AKM_PRL";
+        uniform = "GM_PRL_80_SN";
+        name = "Polish Peoples Army (winter)";
+        description = "Polish Peoples Army (winter uniforms) armed with AKM";
+        languages[] = {{"east", 100}};
+        side = "east";
+        camouflage[] = {"snow"};
+        rolePrefix = "PRL LWP";
+        vehicleClassnames[] = {
+            {"CO", "CUP_O_UAZ_Unarmed_RU"},
+            {"SL", "gm_pl_army_ural4320_cargo"},
+            {"FT", "CUP_O_UAZ_Unarmed_RU"},
+            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
+            {"ENG", "gm_pl_army_ural4320_reammo"},
+            {"APC", "gm_pl_army_ot64a"},
+            {"IFV", "gm_pl_army_bmp1sp2"},
+            {"SPAAG", "gm_pl_army_zsu234v1"},
+            {"TNK", "gm_pl_army_t55ak"},
+            {"TH", "gm_pl_airforce_mi2t"},
+            {"AH", "gm_pl_airforce_mi2urpg"},
+            {"CAS", "CUP_O_Su25_Dyn_RU"},
+            {"Technical", "CUP_O_UAZ_MG_RU"}
+        };
+    };
+
+    class GM_PRL_80_AIR {
+        gear = "AKM_PRL_AIR";
+        uniform = "GM_PRL_80_AIR";
+        name = "Polish Peoples Army Airborne";
+        description = "Polish Peoples Army Airborne armed with AKM & PM-63 RAK";
+        languages[] = {{"east", 100}};
+        side = "east";
+        camouflage[] = {"woodland"};
+        rolePrefix = "PRL LWP Airborne";
+        vehicleClassnames[] = {
+            {"CO", "CUP_O_UAZ_Unarmed_RU"},
+            {"SL", "gm_pl_army_ural4320_cargo"},
+            {"FT", "CUP_O_UAZ_Unarmed_RU"},
+            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
+            {"ENG", "gm_pl_army_ural4320_reammo"},
+            {"APC", "gm_pl_army_ot64a"},
+            {"IFV", "gm_pl_army_bmp1sp2"},
+            {"SPAAG", "gm_pl_army_zsu234v1"},
+            {"TNK", "gm_pl_army_t55ak"},
+            {"TH", "gm_pl_airforce_mi2t"},
+            {"AH", "gm_pl_airforce_mi2urpg"},
+            {"CAS", "CUP_O_Su25_Dyn_RU"},
+            {"Technical", "CUP_O_UAZ_MG_RU"}
+        };
+    };
+
     class MNP_KOR_OD {
         gear = "AK47_NK";
         uniform = "NK_CON";
