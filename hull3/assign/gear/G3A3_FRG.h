@@ -23,7 +23,7 @@ class G3A3_FRG {
             {"gm_20Rnd_762x51mm_B_DM41_g3_blk", 5},
             {"gm_20Rnd_762x51mm_B_T_DM21_g3_blk", 2}
         };
-        basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch"};
+        basicAssignItems[] = {"ItemMap", "gm_ge_army_conat2", "gm_watch_kosei_80"};
         assignItems[] = {};
         binocular = "";
         uniformItems[] = {
@@ -63,13 +63,13 @@ class G3A3_FRG {
             {"gm_20Rnd_762x51mm_B_DM41_g3_blk", 6},
             {"gm_20Rnd_762x51mm_B_T_DM21_g3_blk", 3}
         };
-        assignItems[] = {"ItemGPS"};
-        binocular = "Binocular";
+        assignItems[] = {};
+        binocular = "gm_ferod16_oli";
     };
 
     class Officer : Leader {
-        assignItems[] = {"ItemGPS"};
-        binocular = "ACE_VectorDay";
+        assignItems[] = {};
+        binocular = "gm_ferod16_oli";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
 
@@ -82,7 +82,7 @@ class G3A3_FRG {
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         vestMagazines[] = {{"gm_32Rnd_9x19mm_B_DM51_mp2_blk", 4}};
         backpackMagazines[] = {};
-        assignItems[] = {"ItemGPS", "ACE_NVG_Wide"};
+        assignItems[] = {};
     };
 
     class CO : Officer {
@@ -107,8 +107,8 @@ class G3A3_FRG {
             {"SmokeShellBlue", 4},
             {"gm_20Rnd_762x51mm_B_DM41_g3_blk", 2}
         };
-        assignItems[] = {"ItemGPS"};
-        binocular = "Binocular";
+        assignItems[] = {};
+        binocular = "gm_ferod16_oli";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         backpackMedicalItems[] = {
             {"ACE_fieldDressing", 30},
@@ -138,7 +138,7 @@ class G3A3_FRG {
             {"SmokeShell", 1},
             {"gm_120Rnd_762x51mm_B_T_DM21_mg3_grn", 4}
         };
-        binocular = "Binocular";
+        binocular = "gm_ferod16_oli";
     };
 
     class RAT : Rifleman {
@@ -174,8 +174,8 @@ class G3A3_FRG {
             {"gm_20Rnd_762x51mm_B_T_DM21_g3_blk", 2},
             {"gm_120Rnd_762x51mm_B_T_DM21_mg3_grn", 3}
         };
-        binocular = "ACE_VectorDay";
-        assignItems[] = {"ItemGPS"};
+        binocular = "gm_ferod16_oli";
+        assignItems[] = {};
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
 
@@ -189,8 +189,8 @@ class G3A3_FRG {
     class HMGAG : HMGG {
         backpack = "CUP_B_M2_MiniTripod_Bag";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
-        binocular = "ACE_VectorDay";
-        assignItems[] = {"ItemGPS"};
+        binocular = "gm_ferod16_oli";
+        assignItems[] = {};
     };
 
     class HMGAC : Rifleman {
@@ -212,15 +212,15 @@ class G3A3_FRG {
             {"gm_1Rnd_84x245mm_heat_t_DM22_carlgustaf", 2},
             {"gm_1Rnd_84x245mm_heat_t_DM32_carlgustaf", 1}
         };
-        binocular = "ACE_VectorDay";
-        assignItems[] = {"ItemGPS"};
+        binocular = "gm_ferod16_oli";
+        assignItems[] = {};
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
 
     class MATAC : MATAG {
         primaryWeapon = "gm_g3a4_oli";
         assignItems[] = {};
-        binocular = "Binocular";
+        binocular = "gm_ferod16_oli";
         uniformRadios[] = {"ACRE_PRC343"};
     };
 
@@ -265,8 +265,8 @@ class G3A3_FRG {
             {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
-        binocular = "ACE_VectorDay";
-        assignItems[] = {"ItemGPS"};
+        binocular = "gm_ferod16_oli";
+        assignItems[] = {};
     };
 
     class DHATAC : Rifleman {
@@ -290,14 +290,14 @@ class G3A3_FRG {
             {"SmokeShell", 1}
         };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
-        binocular = "ACE_VectorDay";
-        assignItems[] = {"ItemGPS"};
+        binocular = "gm_ferod16_oli";
+        assignItems[] = {};
     };
 
     class SAMAC : SAMAG {
         primaryWeapon = "gm_g3a4_oli";
         uniformRadios[] = {"ACRE_PRC343"};
-        binocular = "Binocular";
+        binocular = "gm_ferod16_oli";
         assignItems[] = {};
     };
 
@@ -315,8 +315,8 @@ class G3A3_FRG {
             {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
-        binocular = "ACE_VectorDay";
-        assignItems[] = {"ItemGPS"};
+        binocular = "gm_ferod16_oli";
+        assignItems[] = {};
     };
 
     class GMGAC : Rifleman {
@@ -337,8 +337,8 @@ class G3A3_FRG {
             {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
         };
-        binocular = "ACE_VectorDay";
-        assignItems[] = {"ItemGPS"};
+        binocular = "gm_ferod16_oli";
+        assignItems[] = {};
     };
 
     class MTRAC : Rifleman {
@@ -355,7 +355,7 @@ class G3A3_FRG {
             {"DemoCharge_Remote_Mag", 3},
             {"SLAMDirectionalMine_Wire_Mag", 2}
         };
-        assignItems[] = {"ItemGPS"};
+        assignItems[] = {};
         vestItems[] = {
             {"ACE_DefusalKit", 1},
             {"ACE_M26_Clacker", 1}
@@ -380,12 +380,12 @@ class G3A3_FRG {
             {"SmokeShell", 1},
             {"gm_20Rnd_762x51mm_B_DM111_g3_blk", 3}
         };
-        assignItems[] = {"ItemGPS"};
+        assignItems[] = {};
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
 
     class SP : Rifleman {
-        binocular = "ACE_VectorDay";
+        binocular = "gm_ferod16_oli";
         vestMagazines[] = {
             {"gm_20Rnd_762x51mm_B_DM41_g3_blk", 4},
             {"gm_20Rnd_762x51mm_B_T_DM21_g3_blk", 2}
@@ -393,7 +393,7 @@ class G3A3_FRG {
     };
 
     class VC : Crew {
-        binocular = "ACE_VectorDay";
+        binocular = "gm_ferod16_oli";
     };
 
     class VG : Crew {
@@ -418,7 +418,7 @@ class G3A3_FRG {
             {"gm_1Rnd_44x537mm_heat_dm32_pzf44_2", 2},
             {"SmokeShell", 5}
         };
-        items[] = {{"ItemGPS", 1}};
+        items[] = {};
         medicalItems[] = {
             {"ACE_fieldDressing", 50},
             {"ACE_splint", 12}
@@ -441,8 +441,7 @@ class G3A3_FRG {
             {"SmokeShell", 10}
         };
         items[] = {
-            {"ACE_M26_Clacker", 1},
-            {"ItemGPS", 1}
+            {"ACE_M26_Clacker", 1}
         };
         medicalItems[] = {
             {"ACE_fieldDressing", 50},
@@ -463,8 +462,7 @@ class G3A3_FRG {
             {"SmokeShell", 10}
         };
         items[] = {
-            {"ACE_M26_Clacker", 1},
-            {"ItemGPS", 1}
+            {"ACE_M26_Clacker", 1}
         };
         medicalItems[] = {
             {"ACE_fieldDressing", 50},
