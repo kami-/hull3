@@ -3,7 +3,7 @@ class GM_DNK_90_SN {
         headGear = "gm_dk_headgear_m96_cover_wht";
         goggles = "";
         uniform = "gm_dk_army_uniform_soldier_84_win";
-        vest = "gm_dk_army_vest_m00_win_rifleman";
+        vest = "gm_dk_army_vest_m00_win_rifleman_ARM";
         backpack = "ark_backpack_med";
     };
 
@@ -38,7 +38,7 @@ class GM_DNK_90_SN {
     };
 
     class AR : Rifleman {
-        vest = "gm_dk_army_vest_m00_win_machinegunner";
+        vest = "gm_dk_army_vest_m00_win_machinegunner_ARM";
     };
 
     class AAR : Rifleman {
@@ -53,7 +53,7 @@ class GM_DNK_90_SN {
     };
 
     class MMGAG : AAR {
-        vest = "gm_dk_army_vest_m00_win_machinegunner";
+        vest = "gm_dk_army_vest_m00_win_machinegunner_ARM";
     };
 
     class HMGG : AR {
@@ -146,7 +146,7 @@ class GM_DNK_90_SN {
 
     class P : Crew {
         headGear = "gm_ge_headgear_sph4_oli";
-        vest = "gm_ge_army_vest_pilot_oli";
+        vest = "gm_ge_army_vest_pilot_oli_ARM";
         backpack = "B_Parachute";
     };
 

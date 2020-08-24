@@ -3,12 +3,12 @@ class GM_FRG_80_SN {
         headGear = "gm_ge_headgear_m62_cover_win";
         goggles = "";
         uniform = "gm_ge_army_uniform_soldier_parka_80_win";
-        vest = "gm_ge_army_vest_80_rifleman";
+        vest = "gm_ge_army_vest_80_rifleman_ARM";
         backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
-        vest = "gm_ge_army_vest_80_leader";
+        vest = "gm_ge_army_vest_80_leader_ARM";
     };
 
     class Officer : Leader {
@@ -18,7 +18,7 @@ class GM_FRG_80_SN {
     class Crew : Rifleman {
         headGear = "gm_ge_headgear_crewhat_80_blk";
         uniform = "gm_ge_army_uniform_crew_80_oli";
-        vest = "gm_ge_army_vest_80_crew";
+        vest = "gm_ge_army_vest_80_crew_ARM";
         backpack = "ark_backpack_small";
     };
 
@@ -33,7 +33,7 @@ class GM_FRG_80_SN {
     };
 
     class Medic : Rifleman {
-        vest = "gm_ge_army_vest_80_medic";
+        vest = "gm_ge_army_vest_80_medic_ARM";
         backpack = "ark_backpack_large";
     };
 
@@ -42,7 +42,7 @@ class GM_FRG_80_SN {
 
     class AR : Rifleman {
         headGear = "gm_ge_headgear_m62_win_pap_01";
-        vest = "gm_ge_army_vest_80_machinegunner";
+        vest = "gm_ge_army_vest_80_machinegunner_ARM";
     };
 
     class AAR : Rifleman {
@@ -53,7 +53,7 @@ class GM_FRG_80_SN {
     };
 
     class MMGG : AR {
-        vest = "gm_ge_army_vest_80_machinegunner";
+        vest = "gm_ge_army_vest_80_machinegunner_ARM";
         backpack = "ark_backpack_large";
     };
 
@@ -126,7 +126,7 @@ class GM_FRG_80_SN {
     };
 
     class ENG : Rifleman {
-        vest = "gm_ge_army_vest_80_demolition";
+        vest = "gm_ge_army_vest_80_demolition_ARM";
         backpack = "ark_backpack_large";
     };
 
@@ -152,7 +152,7 @@ class GM_FRG_80_SN {
     class P : Crew {
         headGear = "gm_ge_headgear_sph4_oli";
         uniform = "gm_ge_army_uniform_pilot_oli";
-        vest = "gm_ge_army_vest_pilot_oli";
+        vest = "gm_ge_army_vest_pilot_oli_ARM";
         backpack = "B_Parachute";
     };
 
