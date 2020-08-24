@@ -1455,6 +1455,214 @@ class Faction {
         };
     };
 
+    class GM_FRG_80_WD {
+        gear = "G3A3_FRG";
+        uniform = "GM_FRG_80_WD";
+        name = "West German Bundeswehr";
+        description = "West German Army armed with G3A3";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland"};
+        rolePrefix = "Heer";
+        vehicleClassnames[] = {
+            {"CO", "gm_ge_army_iltis_cargo"},
+            {"SL", "gm_ge_army_u1300l_cargo"},
+            {"FT", "gm_ge_army_iltis_cargo"},
+            {"ATTCH", "gm_ge_army_iltis_cargo"},
+            {"ENG", "gm_ge_army_fuchsa0_engineer"},
+            {"APC", "gm_ge_army_m113a1g_apc"},
+            {"IFV", "gm_ge_army_luchsa2"},
+            {"SPAAG", "gm_ge_army_gepard1a1"},
+            {"TNK", "gm_ge_army_Leopard1a5"},
+            {"TH", "gm_ge_army_ch53g"},
+            {"AH", "gm_ge_army_bo105p_pah1a1"},
+            {"CAS", "CUP_B_A10_DYN_USA"},
+            {"Technical", "gm_ge_army_iltis_mg3"}
+        };
+    };
+
+    class GM_FRG_80_SN {
+        gear = "G3A3_FRG";
+        uniform = "GM_FRG_80_SN";
+        name = "West German Bundeswehr (winter)";
+        description = "West German Army (winter uniforms) armed with G3A3";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"snow"};
+        rolePrefix = "Heer";
+        vehicleClassnames[] = {
+            {"CO", "gm_ge_army_iltis_cargo_win"},
+            {"SL", "gm_ge_army_u1300l_cargo_win"},
+            {"FT", "gm_ge_army_iltis_cargo_win"},
+            {"ATTCH", "gm_ge_army_iltis_cargo_win"},
+            {"ENG", "gm_ge_army_fuchsa0_engineer_win"},
+            {"APC", "gm_ge_army_m113a1g_apc_win"},
+            {"IFV", "gm_ge_army_luchsa2_win"},
+            {"SPAAG", "gm_ge_army_gepard1a1_win"},
+            {"TNK", "gm_ge_army_Leopard1a5_win"},
+            {"TH", "gm_ge_army_ch53g"},
+            {"AH", "gm_ge_army_bo105p_pah1a1"},
+            {"CAS", "CUP_B_A10_DYN_USA"},
+            {"Technical", "gm_ge_army_iltis_mg3_win"}
+        };
+    };
+
+    class GM_FRG_80_AIR {
+        gear = "G3A4_FRG";
+        uniform = "GM_FRG_80_AIR";
+        name = "West German Fallschirmjäger";
+        description = "West German Airborne armed with G3A4 & Uzi";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland"};
+        rolePrefix = "Fallschirmjäger";
+        vehicleClassnames[] = {
+            {"CO", "gm_ge_army_iltis_cargo"},
+            {"SL", "gm_ge_army_u1300l_cargo"},
+            {"FT", "gm_ge_army_iltis_cargo"},
+            {"ATTCH", "gm_ge_army_iltis_cargo"},
+            {"ENG", "gm_ge_army_fuchsa0_engineer"},
+            {"APC", "gm_ge_army_m113a1g_apc"},
+            {"IFV", "gm_ge_army_luchsa2"},
+            {"SPAAG", "gm_ge_army_gepard1a1"},
+            {"TNK", "gm_ge_army_Leopard1a5"},
+            {"TH", "gm_ge_army_ch53g"},
+            {"AH", "gm_ge_army_bo105p_pah1a1"},
+            {"CAS", "CUP_B_A10_DYN_USA"},
+            {"Technical", "gm_ge_army_iltis_mg3"}
+        };
+    };
+
+    class GM_FRG_BG {
+        gear = "G3A3_FRG";
+        uniform = "GM_FRG_BG";
+        name = "West German Bundesgrenzschutz";
+        description = "West German Airborne armed with G1";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland"};
+        rolePrefix = "BGS";
+        vehicleClassnames[] = {
+            {"CO", "gm_ge_army_iltis_cargo"},
+            {"SL", "gm_ge_army_u1300l_cargo"},
+            {"FT", "gm_ge_army_iltis_cargo"},
+            {"ATTCH", "gm_ge_army_iltis_cargo"},
+            {"ENG", "gm_ge_army_fuchsa0_engineer"},
+            {"APC", "gm_ge_army_m113a1g_apc"},
+            {"IFV", "gm_ge_army_luchsa2"},
+            {"SPAAG", "gm_ge_army_gepard1a1"},
+            {"TNK", "gm_ge_army_Leopard1a5"},
+            {"TH", "gm_ge_army_ch53g"},
+            {"AH", "gm_ge_army_bo105p_pah1a1"},
+            {"CAS", "CUP_B_A10_DYN_USA"},
+            {"Technical", "gm_ge_army_iltis_mg3"}
+        };
+    };
+
+    class GM_DNK_80_WD {
+        gear = "M75_DNK";
+        uniform = "GM_DNK_80_WD";
+        name = "Danish Army";
+        description = "Danish Army armed with M75 (G3A3)";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland"};
+        rolePrefix = "Danish Army";
+        vehicleClassnames[] = {
+            {"CO", "gm_dk_army_typ1200_cargo"},
+            {"SL", "gm_dk_army_u1300l_container"},
+            {"FT", "gm_dk_army_typ1200_cargo"},
+            {"ATTCH", "gm_dk_army_typ1200_cargo"},
+            {"ENG", "gm_dk_army_u1300l_container"},
+            {"APC", "gm_dk_army_m113a1dk_apc"},
+            {"IFV", "gm_ge_army_luchsa2"},
+            {"SPAAG", "gm_ge_army_gepard1a1"},
+            {"TNK", "gm_dk_army_Leopard1a3"},
+            {"TH", "CUP_B_MH6J_USA"},
+            {"AH", "CUP_B_AH6J_USA"},
+            {"CAS", "CUP_B_A10_DYN_USA"},
+            {"Technical", "gm_dk_army_u1300l_container"}
+        };
+    };
+
+    class GM_DNK_80_SN {
+        gear = "M75_DNK";
+        uniform = "GM_DNK_80_SN";
+        name = "Danish Army (winter)";
+        description = "Danish Army (winter uniforms) armed with M75 (G3A3)";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"snow"};
+        rolePrefix = "Danish Army";
+        vehicleClassnames[] = {
+            {"CO", "gm_dk_army_typ1200_cargo_win"},
+            {"SL", "gm_dk_army_u1300l_container_win"},
+            {"FT", "gm_dk_army_typ1200_cargo_win"},
+            {"ATTCH", "gm_dk_army_typ1200_cargo_win"},
+            {"ENG", "gm_dk_army_u1300l_container_win"},
+            {"APC", "gm_dk_army_m113a1dk_apc_win"},
+            {"IFV", "gm_ge_army_luchsa2_win"},
+            {"SPAAG", "gm_ge_army_gepard1a1_win"},
+            {"TNK", "gm_dk_army_Leopard1a3_win"},
+            {"TH", "CUP_B_MH6J_USA"},
+            {"AH", "CUP_B_AH6J_USA"},
+            {"CAS", "CUP_B_A10_DYN_USA"},
+            {"Technical", "gm_dk_army_u1300l_container_win"}
+        };
+    };
+
+    class GM_DNK_90_WD {
+        gear = "C7_DNK";
+        uniform = "GM_DNK_90_WD";
+        name = "Danish Army";
+        description = "Danish Army armed with C7";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland"};
+        rolePrefix = "Danish Army";
+        vehicleClassnames[] = {
+            {"CO", "gm_dk_army_typ1200_cargo"},
+            {"SL", "gm_dk_army_u1300l_container"},
+            {"FT", "gm_dk_army_typ1200_cargo"},
+            {"ATTCH", "gm_dk_army_typ1200_cargo"},
+            {"ENG", "gm_dk_army_u1300l_container"},
+            {"APC", "gm_dk_army_m113a1dk_apc"},
+            {"IFV", "gm_ge_army_luchsa2"},
+            {"SPAAG", "gm_ge_army_gepard1a1"},
+            {"TNK", "gm_dk_army_Leopard1a3"},
+            {"TH", "CUP_B_MH6J_USA"},
+            {"AH", "CUP_B_AH6J_USA"},
+            {"CAS", "CUP_B_A10_DYN_USA"},
+            {"Technical", "gm_dk_army_u1300l_container"}
+        };
+    };
+
+    class GM_DNK_90_SN {
+        gear = "C7_DNK";
+        uniform = "GM_DNK_90_SN";
+        name = "Danish Army (winter)";
+        description = "Danish Army (winter uniforms) armed with C7";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"snow"};
+        rolePrefix = "Danish Army";
+        vehicleClassnames[] = {
+            {"CO", "gm_dk_army_typ1200_cargo_win"},
+            {"SL", "gm_dk_army_u1300l_container_win"},
+            {"FT", "gm_dk_army_typ1200_cargo_win"},
+            {"ATTCH", "gm_dk_army_typ1200_cargo_win"},
+            {"ENG", "gm_dk_army_u1300l_container_win"},
+            {"APC", "gm_dk_army_m113a1dk_apc_win"},
+            {"IFV", "gm_ge_army_luchsa2_win"},
+            {"SPAAG", "gm_ge_army_gepard1a1_win"},
+            {"TNK", "gm_dk_army_Leopard1a3_win"},
+            {"TH", "CUP_B_MH6J_USA"},
+            {"AH", "CUP_B_AH6J_USA"},
+            {"CAS", "CUP_B_A10_DYN_USA"},
+            {"Technical", "gm_dk_army_u1300l_container_win"}
+        };
+    };
+
     class MNP_KOR_OD {
         gear = "AK47_NK";
         uniform = "NK_CON";
