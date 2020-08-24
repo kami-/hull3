@@ -1,24 +1,23 @@
-class GM_PRL_80_SN {
+class GM_FRG_BG {
     class Rifleman {
-        headGear = "gm_pl_headgear_wz67_cover_win";
+        headGear = "gm_ge_bgs_headgear_m35_53_blk";
         goggles = "";
-        uniform = "gm_pl_army_uniform_soldier_80_win";
-        vest = "gm_pl_army_vest_80_rifleman_gry_ARM";
+        uniform = "gm_ge_bgs_uniform_soldier_80_smp";
+        vest = "gm_ge_bgs_vest_80_rifleman";
         backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
-        vest = "gm_pl_army_vest_80_leader_gry_ARM";
     };
 
     class Officer : Leader {
-        headGear = "gm_pl_army_headgear_cap_80_moro";
+        headGear = "gm_ge_pol_headgear_cap_80_grn";
     };
 
     class Crew : Rifleman {
-        headGear = "gm_gc_army_headgear_crewhat_80_blk";
-        uniform = "gm_gc_civ_uniform_pilot_80_blk";
-        vest = "gm_pl_army_vest_80_crew_gry_ARM";
+        headGear = "gm_ge_headgear_crewhat_80_blk";
+        uniform = "gm_ge_army_uniform_crew_80_oli";
+        vest = "gm_ge_army_vest_80_crew";
         backpack = "ark_backpack_small";
     };
 
@@ -40,15 +39,14 @@ class GM_PRL_80_SN {
     };
 
     class AR : Rifleman {
-        vest = "gm_pl_army_vest_80_mg_gry_ARM";
+        headGear = "gm_ge_bgs_headgear_m35_53_net_blk";
     };
 
     class AAR : Rifleman {
-        backpack = "ark_backpack_large";
     };
 
     class RAT : Rifleman {
-        vest = "gm_pl_army_vest_80_at_gry_ARM";
+        headGear = "gm_ge_bgs_headgear_m35_53_net_blk";
     };
 
     class MMGG : AR {
@@ -56,14 +54,12 @@ class GM_PRL_80_SN {
     };
 
     class MMGAG : AAR {
-        vest = "gm_pl_army_vest_80_leader_gry_ARM";
     };
 
     class HMGG : AR {
     };
 
     class HMGAG : AAR {
-        vest = "gm_pl_army_vest_80_leader_gry_ARM";
     };
 
     class HMGAC : AAR {
@@ -74,7 +70,6 @@ class GM_PRL_80_SN {
     };
 
     class MATAG : AAR {
-        vest = "gm_pl_army_vest_80_leader_gry_ARM";
     };
 
     class MATAC : MATAG {
@@ -85,7 +80,6 @@ class GM_PRL_80_SN {
     };
 
     class HATAG : AAR {
-        vest = "gm_pl_army_vest_80_leader_gry_ARM";
     };
 
     class HATAC : HATAG {
@@ -95,7 +89,6 @@ class GM_PRL_80_SN {
     };
 
     class DHATAG : AAR {
-        vest = "gm_pl_army_vest_80_leader_gry_ARM";
     };
 
     class DHATAC : AAR {
@@ -105,7 +98,6 @@ class GM_PRL_80_SN {
     };
 
     class SAMAG : AAR {
-        vest = "gm_pl_army_vest_80_leader_gry_ARM";
     };
 
     class SAMAC : AAR {
@@ -115,7 +107,6 @@ class GM_PRL_80_SN {
     };
 
     class GMGAG : AAR {
-        vest = "gm_pl_army_vest_80_leader_gry_ARM";
     };
 
     class GMGAC : AAR {
@@ -125,7 +116,6 @@ class GM_PRL_80_SN {
     };
 
     class MTRAG : AAR {
-        vest = "gm_pl_army_vest_80_leader_gry_ARM";
     };
 
     class MTRAC : AAR {
@@ -139,7 +129,6 @@ class GM_PRL_80_SN {
     };
 
     class SN : Rifleman {
-        vest = "gm_pl_army_vest_80_marksman_gry_ARM";
         backpack = "ark_backpack_small";
     };
 
@@ -156,8 +145,9 @@ class GM_PRL_80_SN {
     };
 
     class P : Crew {
-        headGear = "gm_gc_headgear_zsh3_wht";
-        uniform = "gm_pl_airforce_uniform_pilot_80_gry";
+        headGear = "gm_ge_headgear_sph4_oli";
+        uniform = "gm_ge_army_uniform_pilot_rolled_oli";
+        vest = "gm_ge_army_vest_80_belt";
         backpack = "B_Parachute";
     };
 

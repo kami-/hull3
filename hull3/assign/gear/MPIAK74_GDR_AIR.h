@@ -239,8 +239,7 @@ class MPIAK74_GDR_AIR {
     class HATAG : MATAG {
         backpackMagazines[] = {
             {"HandGrenade", 1},
-            {"CUP_30Rnd_TE1_Green_Tracer_545x39_AK_M", 2},
-            {"Titan_AT", 2}
+            {"CUP_30Rnd_TE1_Green_Tracer_545x39_AK_M", 2}
         };
         uniformMagazines[] = {
             {"ACE_HandFlare_Red", 2},

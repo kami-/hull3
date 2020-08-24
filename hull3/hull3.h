@@ -161,6 +161,14 @@ class Hull3 {
         #include "assign\uniform\GM_PRL_80_WD.h"
         #include "assign\uniform\GM_PRL_80_SN.h"
         #include "assign\uniform\GM_PRL_80_AIR.h"
+        #include "assign\uniform\GM_FRG_80_WD.h"
+        #include "assign\uniform\GM_FRG_80_SN.h"
+        #include "assign\uniform\GM_FRG_80_AIR.h"
+        #include "assign\uniform\GM_FRG_BG.h"
+        #include "assign\uniform\GM_DNK_80_WD.h"
+        #include "assign\uniform\GM_DNK_80_SN.h"
+        #include "assign\uniform\GM_DNK_90_WD.h"
+        #include "assign\uniform\GM_DNK_90_SN.h"
 
         unitBaseClass = "Rifleman";
     };
@@ -251,6 +259,11 @@ class Hull3 {
         #include "assign\gear\MPIAK74_GDR_AIR.h"
         #include "assign\gear\AKM_PRL.h"
         #include "assign\gear\AKM_PRL_AIR.h"
+        #include "assign\gear\G3A3_FRG.h"
+        #include "assign\gear\G3A4_FRG.h"
+        #include "assign\gear\G1_FRG.h"
+        #include "assign\gear\M75_DNK.h"
+        #include "assign\gear\C7_DNK.h"
 
         unitBaseClass = "Rifleman";
         vehicleBaseClass = "Vehicle";
