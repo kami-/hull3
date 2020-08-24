@@ -3,12 +3,12 @@ class GM_GDR_80_SN {
         headGear = "gm_gc_army_headgear_m56_cover_win";
         goggles = "";
         uniform = "gm_gc_army_uniform_soldier_80_win";
-        vest = "gm_gc_army_vest_80_rifleman_str";
+        vest = "gm_gc_army_vest_80_rifleman_str_ARM";
         backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
-        vest = "gm_gc_army_vest_80_leader_str";
+        vest = "gm_gc_army_vest_80_leader_str_ARM";
     };
 
     class Officer : Leader {
@@ -18,7 +18,7 @@ class GM_GDR_80_SN {
     class Crew : Rifleman {
         headGear = "gm_gc_army_headgear_crewhat_80_blk";
         uniform = "gm_gc_civ_uniform_pilot_80_blk";
-        vest = "gm_gc_army_vest_80_belt_str";
+        vest = "gm_gc_army_vest_80_belt_str_ARM";
         backpack = "ark_backpack_small";
     };
 
@@ -41,7 +41,7 @@ class GM_GDR_80_SN {
     };
 
     class AR : Rifleman {
-        vest = "gm_gc_army_vest_80_lmg_str";
+        vest = "gm_gc_army_vest_80_lmg_str_ARM";
     };
 
     class AAR : Rifleman {
@@ -49,7 +49,7 @@ class GM_GDR_80_SN {
     };
 
     class RAT : Rifleman {
-        vest = "gm_gc_army_vest_80_at_str";
+        vest = "gm_gc_army_vest_80_at_str_ARM";
     };
 
     class MMGG : AR {
@@ -57,14 +57,14 @@ class GM_GDR_80_SN {
     };
 
     class MMGAG : AAR {
-        vest = "gm_gc_army_vest_80_leader_str";
+        vest = "gm_gc_army_vest_80_leader_str_ARM";
     };
 
     class HMGG : AR {
     };
 
     class HMGAG : AAR {
-        vest = "gm_gc_army_vest_80_leader_str";
+        vest = "gm_gc_army_vest_80_leader_str_ARM";
     };
 
     class HMGAC : AAR {
@@ -75,7 +75,7 @@ class GM_GDR_80_SN {
     };
 
     class MATAG : AAR {
-        vest = "gm_gc_army_vest_80_leader_str";
+        vest = "gm_gc_army_vest_80_leader_str_ARM";
     };
 
     class MATAC : MATAG {
@@ -86,7 +86,7 @@ class GM_GDR_80_SN {
     };
 
     class HATAG : AAR {
-        vest = "gm_gc_army_vest_80_leader_str";
+        vest = "gm_gc_army_vest_80_leader_str_ARM";
     };
 
     class HATAC : HATAG {
@@ -96,7 +96,7 @@ class GM_GDR_80_SN {
     };
 
     class DHATAG : AAR {
-        vest = "gm_gc_army_vest_80_leader_str";
+        vest = "gm_gc_army_vest_80_leader_str_ARM";
     };
 
     class DHATAC : AAR {
@@ -106,7 +106,7 @@ class GM_GDR_80_SN {
     };
 
     class SAMAG : AAR {
-        vest = "gm_gc_army_vest_80_leader_str";
+        vest = "gm_gc_army_vest_80_leader_str_ARM";
     };
 
     class SAMAC : AAR {
@@ -116,7 +116,7 @@ class GM_GDR_80_SN {
     };
 
     class GMGAG : AAR {
-        vest = "gm_gc_army_vest_80_leader_str";
+        vest = "gm_gc_army_vest_80_leader_str_ARM";
     };
 
     class GMGAC : AAR {
@@ -126,7 +126,7 @@ class GM_GDR_80_SN {
     };
 
     class MTRAG : AAR {
-        vest = "gm_gc_army_vest_80_leader_str";
+        vest = "gm_gc_army_vest_80_leader_str_ARM";
     };
 
     class MTRAC : AAR {
