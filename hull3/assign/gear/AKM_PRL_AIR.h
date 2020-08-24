@@ -245,8 +245,7 @@ class AKM_PRL_AIR {
     class HATAG : MATAG {
         backpackMagazines[] = {
             {"HandGrenade", 1},
-            {"gm_30Rnd_762x39mm_B_T_57N231P_ak47_blk", 2},
-            {"Titan_AT", 2}
+            {"gm_30Rnd_762x39mm_B_T_57N231P_ak47_blk", 2}
         };
         uniformMagazines[] = {
             {"ACE_HandFlare_Red", 2},
