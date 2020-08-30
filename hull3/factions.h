@@ -233,11 +233,11 @@ class Faction {
         };
     };
 
-    class CUP_USMC_WD {
+    class CUP_USMC_MTV_WD {
         gear = "M16A4_USMC";
-        uniform = "CUP_USMC_WD";
+        uniform = "CUP_USMC_MTV_WD";
         name = "USMC Woodland (CUP)";
-        description = "Woodland MARPAT with M16A4's (Circa 2000's)";
+        description = "Woodland MARPAT MTV vests with M16A4's (Circa 2000's)";
         languages[] = {{"west", 100}};
         side = "west";
         camouflage[] = {"woodland"};
@@ -259,11 +259,37 @@ class Faction {
         };
     };
 
-    class CUP_USMC_FROG_WD {
+    class CUP_USMC_MTV_DE {
+        gear = "M16A4_USMC";
+        uniform = "CUP_USMC_MTV_DE";
+        name = "USMC Desert (CUP)";
+        description = "Desert MARPAT MTV vests with M16A4's (Circa 2000's)";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"desert"};
+        rolePrefix = "USMC";
+        vehicleClassnames[] = {
+            {"CO", "CUP_B_HMMWV_Unarmed_USA"},
+            {"SL", "CUP_B_HMMWV_Unarmed_USA"},
+            {"FT", "CUP_B_HMMWV_Unarmed_USA"},
+            {"ATTCH", "CUP_B_HMMWV_Transport_USA"},
+            {"ENG", "CUP_B_MTVR_Repair_USA"},
+            {"APC", "CUP_B_AAV_USMC"},
+            {"IFV", "CUP_B_LAV25M240_desert_USMC"},
+            {"SPAAG", "CUP_B_HMMWV_Avenger_USA"},
+            {"TNK", "CUP_B_M1A1_DES_USMC"},
+            {"TH", "CUP_B_CH53E_USMC"},
+            {"AH", "CUP_B_AH1Z_Dynamic_USMC"},
+            {"CAS", "CUP_B_AV8B_DYN_USMC"},
+            {"Technical", "CUP_B_HMMWV_M2_USA"}
+        };
+    };
+
+    class CUP_USMC_WD {
         gear = "M4A1_USMC";
-        uniform = "CUP_USMC_FROG_WD";
-        name = "USMC Woodland FROG (CUP)";
-        description = "Woodland MARPAT with M4A1's (Late 2000's)";
+        uniform = "CUP_USMC_WD";
+        name = "USMC Woodland MARPAT";
+        description = "Woodland MARPAT SPC vests with M4A1's (Late 2000's)";
         languages[] = {{"west", 100}};
         side = "west";
         camouflage[] = {"woodland"};
@@ -287,9 +313,9 @@ class Faction {
 
     class CUP_USMC_FROG_DE {
         gear = "M4A1_USMC";
-        uniform = "CUP_USMC_FROG_DE";
-        name = "USMC Desert FROG (CUP)";
-        description = "Desert MARPAT with M4A1's (Late 2000's)";
+        uniform = "CUP_USMC_DE";
+        name = "USMC Desert";
+        description = "Desert MARPAT SPC vests with M4A1's (Late 2000's)";
         languages[] = {{"west", 100}};
         side = "west";
         camouflage[] = {"desert"};

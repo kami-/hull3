@@ -1,61 +1,57 @@
-class CUP_USMC_FROG_WD {
+class CUP_USMC_MTV_WD {
     class Rifleman {
-        headGear = "CUP_H_USMC_LWH_NVGMOUNT_WDL";
+        headGear = "CUP_H_LWHv2_MARPAT";
         goggles = "";
-        uniform = "CUP_U_B_USMC_FROG1_WMARPAT";
-        vest = "CUP_V_B_Eagle_SPC_Patrol_ARM";
+        uniform = "CUP_U_B_USMC_MCCUU";
+        vest = "CUP_V_B_MTV_Patrol_ARM";
         backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
-        uniform = "CUP_U_B_USMC_FROG2_WMARPAT";
-        vest = "CUP_V_B_Eagle_SPC_Officer_ARM";
-        headGear = "CUP_H_USMC_Goggles_HelmetWDL";
+        headGear = "CUP_H_LWHv2_MARPAT_comms";
+        uniform = "CUP_U_B_USMC_MCCUU_roll_2";
+        vest = "CUP_V_B_MTV_TL_ARM";
     };
 
     class Officer : Leader {
-        headGear = "CUP_H_USMC_LWH_NVGMOUNT_ESS_HS_WDL";
-        uniform = "CUP_U_B_USMC_FROG2_WMARPAT";
-        vest = "CUP_V_B_MTV_PistolBlack_ARM";
+        headGear = "CUP_H_LWHv2_MARPAT_NVG_gog_cov2";
+        uniform = "CUP_U_B_USMC_MCCUU_roll_2_gloves";
+        vest = "CUP_V_B_MTV_noCB_ARM";
     };
 
     class Crew : Rifleman {
         headGear = "CUP_H_USMC_Crew_Helmet";
-        uniform = "CUP_U_B_USMC_FROG3_WMARPAT";
-        goggles = "CUP_FR_NeckScarf2";
-        vest = "CUP_V_B_Eagle_SPC_Crew_ARM";
+        uniform = "CUP_U_B_USMC_MCCUU_roll";
+        vest = "CUP_V_B_MTV_ARM";
         backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
-        headGear = "CUP_H_USMC_CAP_PRR_WDL";
-        uniform = "CUP_U_B_USMC_FROG2_WMARPAT";
+        headGear = "CUP_H_USMC_CAP_WDL";
     };
 
     class XO : CO {
-        vest = "CUP_V_B_Eagle_SPC_RTO_ARM";
-        headGear = "CUP_H_USMC_LWH_NVGMOUNT_ESS_LR_WDL";
         backpack = "ark_backpack_large";
     };
 
     class SL : Officer {
-        vest = "CUP_V_B_Eagle_SPC_SL_ARM";
     };
 
     class Medic : Rifleman {
+        uniform = "CUP_U_B_USMC_MCCUU_gloves";
+        vest = "CUP_V_B_MTV_Pouches_ARM";
         backpack = "ark_backpack_large";
-        uniform = "CUP_U_B_USMC_FROG4_WMARPAT";
     };
 
     class FTL : Leader {
-        vest = "CUP_V_B_Eagle_SPC_GL_ARM";
-        headgear = "CUP_H_USMC_LWH_NVGMOUNT_ESS_HS_WDL";
+        headGear = "CUP_H_LWHv2_MARPAT_NVG_gog_cov2";
+        uniform = "CUP_U_B_USMC_MCCUU_roll_pads_gloves";
     };
 
     class AR : Rifleman {
-        uniform = "CUP_U_B_USMC_FROG4_WMARPAT";
-        vest = "CUP_V_B_Eagle_SPC_MG_ARM";
-        headGear = "CUP_H_USMC_LWH_NVGMOUNT_ESS_WDL";
+        headGear = "CUP_H_LWHv2_MARPAT_cov_fr";
+        uniform = "CUP_U_B_USMC_MCCUU_pads_gloves";
+        vest = "CUP_V_B_MTV_MG_ARM";
     };
 
     class AAR : Rifleman {
@@ -63,9 +59,9 @@ class CUP_USMC_FROG_WD {
     };
 
     class RAT : Rifleman {
-        uniform = "CUP_U_B_USMC_FROG2_WMARPAT";
-        vest = "CUP_V_B_Eagle_SPC_AT_ARM";
-        headGear = "CUP_H_USMC_LWH_NVGMOUNT_WDL";
+        headGear = "CUP_H_LWHv2_MARPAT_cov_fr";
+        uniform = "CUP_U_B_USMC_MCCUU_pads";
+        vest = "CUP_V_B_MTV_LegPouch_ARM";
     };
 
     class MMGG : AR {
@@ -73,14 +69,14 @@ class CUP_USMC_FROG_WD {
     };
 
     class MMGAG : AAR {
-        vest = "CUP_V_B_Eagle_SPC_TL_ARM";
+        headGear = "CUP_H_LWHv2_MARPAT_comms_cov_fr";
     };
 
     class HMGG : AR {
     };
 
     class HMGAG : AAR {
-        vest = "CUP_V_B_Eagle_SPC_TL_ARM";
+        headGear = "CUP_H_LWHv2_MARPAT_comms_cov_fr";
     };
 
     class HMGAC : AAR {
@@ -91,12 +87,10 @@ class CUP_USMC_FROG_WD {
     };
 
     class MATAG : AAR {
-        vest = "CUP_V_B_Eagle_SPC_TL_ARM";
-        backpack = "ark_backpack_large";
+        headGear = "CUP_H_LWHv2_MARPAT_comms_cov_fr";
     };
 
     class MATAC : MATAG {
-        vest = "CUP_V_B_Eagle_SPC_Patrol_ARM";
     };
 
     class HATG : RAT {
@@ -104,7 +98,7 @@ class CUP_USMC_FROG_WD {
     };
 
     class HATAG : AAR {
-        vest = "CUP_V_B_Eagle_SPC_TL_ARM";
+        headGear = "CUP_H_LWHv2_MARPAT_comms_cov_fr";
     };
 
     class HATAC : HATAG {
@@ -114,7 +108,7 @@ class CUP_USMC_FROG_WD {
     };
 
     class DHATAG : AAR {
-        vest = "CUP_V_B_Eagle_SPC_TL_ARM";
+        headGear = "CUP_H_LWHv2_MARPAT_comms_cov_fr";
     };
 
     class DHATAC : AAR {
@@ -124,7 +118,7 @@ class CUP_USMC_FROG_WD {
     };
 
     class SAMAG : AAR {
-        vest = "CUP_V_B_Eagle_SPC_TL_ARM";
+        headGear = "CUP_H_LWHv2_MARPAT_comms_cov_fr";
     };
 
     class SAMAC : AAR {
@@ -134,7 +128,7 @@ class CUP_USMC_FROG_WD {
     };
 
     class GMGAG : AAR {
-        vest = "CUP_V_B_Eagle_SPC_TL_ARM";
+        headGear = "CUP_H_LWHv2_MARPAT_comms_cov_fr";
     };
 
     class GMGAC : AAR {
@@ -144,30 +138,34 @@ class CUP_USMC_FROG_WD {
     };
 
     class MTRAG : AAR {
-        vest = "CUP_V_B_Eagle_SPC_TL_ARM";
+        headGear = "CUP_H_LWHv2_MARPAT_comms_cov_fr";
     };
 
     class MTRAC : AAR {
     };
 
     class ENG : Rifleman {
-        uniform = "CUP_U_B_USMC_FROG1_WMARPAT";
-        vest = "CUP_V_B_Eagle_SPC_Scout_ARM";
+        headGear = "CUP_H_LWHv2_MARPAT_comms_cov_fr";
+        uniform = "CUP_U_B_USMC_MCCUU_roll_2_pads_gloves";
         backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
+        headGear = "CUP_H_LWHv2_MARPAT_cov_fr";
+        uniform = "CUP_U_B_USMC_MCCUU_roll_pads_gloves";
+        vest = "CUP_V_B_MTV_Mine_ARM";
     };
 
     class SN : Rifleman {
-        headGear = "CUP_H_USMC_BOONIE_PRR_WDL";
+        headGear = "CUP_H_USMC_BOONIE_WDL";
         goggles = "G_Bandanna_khk";
-        uniform = "CUP_U_B_USMC_FROG4_WMARPAT";
-        vest = "CUP_V_B_Eagle_SPC_DMR_ARM";
+        uniform = "CUP_U_B_USMC_MCCUU_roll_pads_gloves";
+        vest = "CUP_V_B_MTV_Marksman_ARM";
         backpack = "ark_backpack_small";
     };
 
     class SP : SN {
+        headGear = "CUP_H_USMC_BOONIE_PRR_WDL";
     };
 
     class VC : Crew {
@@ -180,14 +178,14 @@ class CUP_USMC_FROG_WD {
     };
 
     class P : Crew {
-        headGear = "CUP_H_USMC_Helmet_Pilot";
+        headGear = "H_PilotHelmetHeli_B";
         uniform = "CUP_U_B_USMC_PilotOverall";
         vest = "CUP_V_B_PilotVest_ARM";
         backpack = "B_Parachute";
-        goggles = "G_Aviator";
     };
 
     class PCM : P {
+        headGear = "H_CrewHelmetHeli_B";
     };
 
 };
