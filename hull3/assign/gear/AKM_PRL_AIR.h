@@ -475,7 +475,7 @@ class AKM_PRL_AIR {
             {"gm_30Rnd_762x39mm_B_T_57N231P_ak47_blk", 20},
             {"gm_75Rnd_762x39mm_B_M43_ak47_blk", 20},
             {"gm_100Rnd_762x54mm_B_T_t46_pk_grn", 10},
-            {"gm_25Rnd_9x18mm_B_pst_pm63_blk", 50},
+            {"gm_25Rnd_9x18mm_B_pst_pm63_blk", 40},
             {"CUP_PG7VL_M", 12},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 15},
