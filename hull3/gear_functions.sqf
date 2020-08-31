@@ -215,7 +215,7 @@ hull3_gear_fnc_assignVehicleCrates = {
 
     if (_cargoSpace > 1) then {
         private _crate = "ACE_medicalSupplyCrate" createVehicle [0,0,0];
-        [_crate, _vehicle] call ace_cargo_fnc_loadItem;
+        [_crate, _vehicle, true] call ace_cargo_fnc_loadItem;
         DEBUG("hull3.gear.assign",FMT_2("Crate '%1' added to ACE cargo of '%2'!",_crate,_vehicle));
     };
 };
