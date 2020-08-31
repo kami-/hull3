@@ -385,6 +385,10 @@ class Hull3 {
         enableEnvironment = 0;                          // Disables ambient animals but keeps sounds
     };
 
+    class Logistics {
+        enableMedicalCrates = 1;
+    };
+
     class GarbageCollector {
         isEnabled = 1;
         canRemoveCorpses = 1;
