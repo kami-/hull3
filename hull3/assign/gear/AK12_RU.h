@@ -411,7 +411,7 @@ class AK12_RU {
     class Vehicle {
         weapons[] = {
             {"arifle_AK12_F", 2},
-            {"CUP_launch_RPG26_loaded", 2}
+            {"CUP_launch_RPG26", 2}
         };
         magazines[] = {
             {"30Rnd_762x39_AK12_Mag_F", 20},
@@ -437,7 +437,7 @@ class AK12_RU {
     class Truck : Vehicle {
         weapons[] = {
             {"arifle_AK12_F", 2},
-            {"CUP_launch_RPG26_loaded", 4}
+            {"CUP_launch_RPG26", 4}
         };
         magazines[] = {
             {"30Rnd_762x39_AK12_Mag_F", 40},
@@ -465,7 +465,7 @@ class AK12_RU {
     };
 
     class Armored : Truck {
-        weapons[] = {{"CUP_launch_RPG26_loaded", 4}};
+        weapons[] = {{"CUP_launch_RPG26", 4}};
         magazines[] = {
             {"30Rnd_762x39_AK12_Mag_F", 40},
             {"30Rnd_762x39_AK12_Mag_Tracer_F", 20},

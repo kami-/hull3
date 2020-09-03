@@ -406,7 +406,7 @@ class MPIAK74_GDR_AIR {
     };
 
     class Vehicle {
-        weapons[] = {{"CUP_launch_RPG26_loaded", 2}};
+        weapons[] = {{"CUP_launch_RPG26", 2}};
         magazines[] = {
             {"CUP_30Rnd_545x39_AK_M", 20},
             {"CUP_30Rnd_TE1_Green_Tracer_545x39_AK_M", 10},
@@ -427,7 +427,7 @@ class MPIAK74_GDR_AIR {
     };
 
     class Truck : Vehicle {
-        weapons[] = {{"CUP_launch_RPG26_loaded", 10}};
+        weapons[] = {{"CUP_launch_RPG26", 10}};
         magazines[] = {
             {"CUP_30Rnd_545x39_AK_M", 40},
             {"CUP_30Rnd_TE1_Green_Tracer_545x39_AK_M", 20},
@@ -449,7 +449,7 @@ class MPIAK74_GDR_AIR {
     };
 
     class Armored : Truck {
-        weapons[] = {{"CUP_launch_RPG26_loaded", 10}};
+        weapons[] = {{"CUP_launch_RPG26", 10}};
         magazines[] = {
             {"CUP_30Rnd_545x39_AK_M", 40},
             {"CUP_30Rnd_TE1_Green_Tracer_545x39_AK_M", 20},

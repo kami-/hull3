@@ -391,7 +391,7 @@ class G3A3_IRN {
     class Vehicle {
         weapons[] = {
             {"CUP_arifle_G3A3_ris", 2},
-            {"CUP_launch_RPG26_loaded", 2}
+            {"CUP_launch_RPG26", 2}
         };
         magazines[] = {
             {"CUP_20Rnd_TE1_Green_Tracer_762x51_G3", 10},
@@ -415,7 +415,7 @@ class G3A3_IRN {
     class Truck : Vehicle {
         weapons[] = {
             {"CUP_arifle_G3A3_ris", 2},
-            {"CUP_launch_RPG26_loaded", 4}
+            {"CUP_launch_RPG26", 4}
         };
         magazines[] = {
             {"CUP_20Rnd_TE1_Green_Tracer_762x51_G3", 20},
@@ -439,7 +439,7 @@ class G3A3_IRN {
     };
 
     class Armored : Truck {
-        weapons[] = {{"CUP_launch_RPG26_loaded", 4}};
+        weapons[] = {{"CUP_launch_RPG26", 4}};
         magazines[] = {
             {"CUP_20Rnd_TE1_Green_Tracer_762x51_G3", 20},
             {"CUP_20Rnd_762x51_G3", 40},

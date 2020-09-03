@@ -424,7 +424,7 @@ class AKM_PRL_AIR {
     };
 
     class Vehicle {
-        weapons[] = {{"CUP_launch_RPG26_loaded", 2}};
+        weapons[] = {{"CUP_launch_RPG26", 2}};
         magazines[] = {
             {"gm_30Rnd_762x39mm_B_M43_ak47_blk", 20},
             {"gm_30Rnd_762x39mm_B_T_57N231P_ak47_blk", 10},
@@ -446,7 +446,7 @@ class AKM_PRL_AIR {
     };
 
     class Truck : Vehicle {
-        weapons[] = {{"CUP_launch_RPG26_loaded", 10}};
+        weapons[] = {{"CUP_launch_RPG26", 10}};
         magazines[] = {
             {"gm_30Rnd_762x39mm_B_M43_ak47_blk", 40},
             {"gm_30Rnd_762x39mm_B_T_57N231P_ak47_blk", 20},
@@ -469,7 +469,7 @@ class AKM_PRL_AIR {
     };
 
     class Armored : Truck {
-        weapons[] = {{"CUP_launch_RPG26_loaded", 10}};
+        weapons[] = {{"CUP_launch_RPG26", 10}};
         magazines[] = {
             {"gm_30Rnd_762x39mm_B_M43_ak47_blk", 40},
             {"gm_30Rnd_762x39mm_B_T_57N231P_ak47_blk", 20},

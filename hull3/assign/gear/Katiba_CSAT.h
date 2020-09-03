@@ -166,7 +166,7 @@ class Katiba_CSAT {
     class RAT : Rifleman {
         primaryWeapon = "arifle_Katiba_C_F";
         primaryWeaponItems[] = {"CUP_acc_Flashlight"};
-        secondaryWeapon = "CUP_launch_RPG26_loaded";
+        secondaryWeapon = "CUP_launch_RPG26";
         vestMagazines[] = {
             {"30Rnd_65x39_caseless_green", 6},
             {"30Rnd_65x39_caseless_green_mag_Tracer", 2}
@@ -436,7 +436,7 @@ class Katiba_CSAT {
     class Vehicle {
         weapons[] = {
             {"arifle_Katiba_F", 2},
-            {"CUP_launch_RPG26_loaded", 4}
+            {"CUP_launch_RPG26", 4}
         };
         magazines[] = {
             {"30Rnd_65x39_caseless_green", 20},
@@ -461,7 +461,7 @@ class Katiba_CSAT {
     class Truck : Vehicle {
         weapons[] = {
             {"arifle_Katiba_F", 2},
-            {"CUP_launch_RPG26_loaded", 10}
+            {"CUP_launch_RPG26", 10}
         };
         magazines[] = {
             {"30Rnd_65x39_caseless_green", 40},
@@ -488,7 +488,7 @@ class Katiba_CSAT {
     };
 
     class Armored : Truck {
-        weapons[] = {{"CUP_launch_RPG26_loaded", 10}};
+        weapons[] = {{"CUP_launch_RPG26", 10}};
         magazines[] = {
             {"30Rnd_65x39_caseless_green", 40},
             {"30Rnd_65x39_caseless_green_mag_Tracer", 20},

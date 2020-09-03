@@ -425,7 +425,7 @@ class AKM_TKI {
     class Vehicle {
         weapons[] = {
             {"CUP_arifle_AKM", 2},
-            {"CUP_launch_RPG26_loaded", 2}
+            {"CUP_launch_RPG26", 2}
         };
         magazines[] = {
             {"CUP_30Rnd_762x39_AK47_M", 20},
@@ -451,7 +451,7 @@ class AKM_TKI {
     class Truck : Vehicle {
         weapons[] = {
             {"CUP_arifle_AKM", 2},
-            {"CUP_launch_RPG26_loaded", 4}
+            {"CUP_launch_RPG26", 4}
         };
         magazines[] = {
             {"CUP_30Rnd_762x39_AK47_M", 40},
@@ -479,7 +479,7 @@ class AKM_TKI {
     };
 
     class Armored : Truck {
-        weapons[] = {{"CUP_launch_RPG26_loaded", 4}};
+        weapons[] = {{"CUP_launch_RPG26", 4}};
         magazines[] = {
             {"CUP_30Rnd_762x39_AK47_M", 40},
             {"CUP_30Rnd_TE1_Green_Tracer_762x39_AK47_M", 20},
