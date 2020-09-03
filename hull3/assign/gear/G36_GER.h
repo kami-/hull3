@@ -151,7 +151,7 @@ class G36_GER {
 
     class RAT : Rifleman {
         primaryWeapon = "CUP_arifle_G36K_RIS";
-        secondaryWeapon = "CUP_launch_HCF3";
+        secondaryWeapon = "CUP_launch_HCPF3";
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_G36", 6},
             {"CUP_30Rnd_TE1_Red_Tracer_556x45_G36", 2}
@@ -508,7 +508,7 @@ class G36_GER {
     class Vehicle {
         weapons[] = {
             {"CUP_arifle_G36K_RIS", 2},
-            {"CUP_launch_HCF3", 4}
+            {"CUP_launch_HCPF3", 4}
         };
         magazines[] = {
             {"CUP_30Rnd_556x45_G36", 20},
@@ -535,7 +535,7 @@ class G36_GER {
     class Truck : Vehicle {
         weapons[] = {
             {"CUP_arifle_G36K_RIS", 2},
-            {"CUP_launch_HCF3", 10},
+            {"CUP_launch_HCPF3", 10},
             {"CUP_launch_PzF3", 5}
         };
         magazines[] = {
@@ -564,7 +564,7 @@ class G36_GER {
 
     class Armored : Truck {
         weapons[] = {
-            {"CUP_launch_HCF3", 10},
+            {"CUP_launch_HCPF3", 10},
             {"CUP_launch_PzF3", 5}
         };
         magazines[] = {
