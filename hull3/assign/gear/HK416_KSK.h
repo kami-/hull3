@@ -155,7 +155,7 @@ class HK416_KSK {
 
     class RAT : Rifleman {
         primaryWeapon = "CUP_arifle_HK416_Black";
-        secondaryWeapon = "CUP_launch_HCF3";
+        secondaryWeapon = "CUP_launch_HCPF3";
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_Emag", 6},
             {"CUP_30Rnd_556x45_Emag_Tracer_Red", 2}
@@ -510,7 +510,7 @@ class HK416_KSK {
     class Vehicle {
         weapons[] = {
             {"CUP_arifle_HK416_Black", 2},
-            {"CUP_launch_HCF3", 4}
+            {"CUP_launch_HCPF3", 4}
         };
         magazines[] = {
             {"CUP_30Rnd_556x45_Emag", 20},
@@ -537,7 +537,7 @@ class HK416_KSK {
     class Truck : Vehicle {
         weapons[] = {
             {"CUP_arifle_HK416_Black", 2},
-            {"CUP_launch_HCF3", 10},
+            {"CUP_launch_HCPF3", 10},
             {"CUP_launch_PzF3", 5}
         };
         magazines[] = {
@@ -566,7 +566,7 @@ class HK416_KSK {
 
     class Armored : Truck {
         weapons[] = {
-            {"CUP_launch_HCF3", 10},
+            {"CUP_launch_HCPF3", 10},
             {"CUP_launch_PzF3", 5}
         };
         magazines[] = {
