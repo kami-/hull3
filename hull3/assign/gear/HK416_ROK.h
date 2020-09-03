@@ -214,7 +214,7 @@ class HK416_ROK {
     class MATG : RAT {
         primaryWeapon = "CUP_arifle_HK416_CQB_Black";
         primaryWeaponItems[] = {"CUP_optic_Eotech553_Black", "CUP_acc_Flashlight"};
-        secondaryWeapon = "CUP_launch_PzF3_loaded";
+        secondaryWeapon = "CUP_launch_PzF3";
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_PMAG_QP", 10},
             {"CUP_30Rnd_556x45_PMAG_QP_Tracer_Red", 4},
@@ -223,13 +223,13 @@ class HK416_ROK {
         };
         backpackMagazines[] = {};
         backpackItems[] = {
-            {"CUP_launch_PzF3_loaded", 1},
-            {"CUP_launch_BF3_loaded", 1}
+            {"CUP_launch_PzF3", 1},
+            {"CUP_launch_BF3", 1}
         };
     };
 
     class MATAG : Rifleman {
-        secondaryWeapon = "CUP_launch_PzF3_loaded";
+        secondaryWeapon = "CUP_launch_PzF3";
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_PMAG_QP", 10},
             {"CUP_30Rnd_556x45_PMAG_QP_Tracer_Red", 4},
@@ -238,8 +238,8 @@ class HK416_ROK {
         };
         backpackMagazines[] = {};
         backpackItems[] = {
-            {"CUP_launch_PzF3_loaded", 1},
-            {"CUP_launch_BF3_loaded", 1}
+            {"CUP_launch_PzF3", 1},
+            {"CUP_launch_BF3", 1}
         };
         binocular = "ACE_VectorDay";
         assignItems[] = {"ItemGPS"};
@@ -247,7 +247,7 @@ class HK416_ROK {
     };
 
     class MATAC : MATAG {
-        secondaryWeapon = "CUP_launch_PzF3_loaded";
+        secondaryWeapon = "CUP_launch_PzF3";
         vestMagazines[] = {
             {"CUP_30Rnd_556x45_PMAG_QP", 10},
             {"CUP_30Rnd_556x45_PMAG_QP_Tracer_Red", 4},
@@ -256,8 +256,8 @@ class HK416_ROK {
         };
         backpackMagazines[] = {};
         backpackItems[] = {
-            {"CUP_launch_PzF3_loaded", 1},
-            {"CUP_launch_BF3_loaded", 1}
+            {"CUP_launch_PzF3", 1},
+            {"CUP_launch_BF3", 1}
         };
         assignItems[] = {};
         binocular = "Binocular";
@@ -473,7 +473,7 @@ class HK416_ROK {
         weapons[] = {
             {"CUP_arifle_HK416_Black", 2},
             {"CUP_launch_APILAS", 10},
-            {"CUP_launch_PzF3_loaded", 5}
+            {"CUP_launch_PzF3", 5}
         };
         magazines[] = {
             {"CUP_30Rnd_556x45_PMAG_QP", 40},
@@ -501,7 +501,7 @@ class HK416_ROK {
     class Armored : Truck {
         weapons[] = {
             {"CUP_launch_APILAS", 10},
-            {"CUP_launch_PzF3_loaded", 5}
+            {"CUP_launch_PzF3", 5}
         };
         magazines[] = {
             {"CUP_30Rnd_556x45_PMAG_QP", 40},
