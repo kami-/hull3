@@ -256,6 +256,7 @@ class Hull3 {
         #include "assign\gear\G1_FRG.h"
         #include "assign\gear\M75_DNK.h"
         #include "assign\gear\C7_DNK.h"
+        #include "assign\gear\Katiba_CSAT.h"
 
         unitBaseClass = "Rifleman";
         vehicleBaseClass = "Vehicle";
