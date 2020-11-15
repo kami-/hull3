@@ -379,7 +379,6 @@ class FAMAS_HIL {
 
     class Vehicle {
         weapons[] = {
-            {"CUP_Famas_F1_Rail", 2},
             {"CUP_launch_APILAS", 4}
         };
         magazines[] = {
@@ -402,7 +401,6 @@ class FAMAS_HIL {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"CUP_Famas_F1_Rail", 2},
             {"CUP_launch_APILAS", 10}
         };
         magazines[] = {

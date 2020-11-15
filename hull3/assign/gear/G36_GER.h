@@ -507,7 +507,6 @@ class G36_GER {
 
     class Vehicle {
         weapons[] = {
-            {"CUP_arifle_G36K_RIS", 2},
             {"CUP_launch_HCPF3", 4}
         };
         magazines[] = {
@@ -534,7 +533,6 @@ class G36_GER {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"CUP_arifle_G36K_RIS", 2},
             {"CUP_launch_HCPF3", 10},
             {"CUP_launch_PzF3", 5}
         };

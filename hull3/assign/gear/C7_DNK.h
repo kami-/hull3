@@ -125,17 +125,17 @@ class C7_DNK {
     };
 
     class AR : Rifleman {
-        primaryWeapon = "gm_lmgm62_blk";
+        primaryWeapon = "CUP_lmg_MG3";
         primaryWeaponItems[] = {};
-        vestMagazines[] = {{"gm_120Rnd_762x51mm_B_T_DM21_mg3_grn", 1}};
-        backpackMagazines[] = {{"gm_120Rnd_762x51mm_B_T_DM21_mg3_grn", 4}};
+        vestMagazines[] = {{"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 1}};
+        backpackMagazines[] = {{"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 4}};
     };
 
     class AAR : Rifleman {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"gm_120Rnd_762x51mm_B_T_DM21_mg3_grn", 4}
+            {"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 4}
         };
         binocular = "gm_ferod16_oli";
     };
@@ -155,13 +155,13 @@ class C7_DNK {
     };
 
     class MMGG : Rifleman {
-        primaryWeapon = "gm_lmgm62_blk";
+        primaryWeapon = "CUP_lmg_MG3";
         primaryWeaponItems[] = {};
-        vestMagazines[] = {{"gm_120Rnd_762x51mm_B_T_DM21_mg3_grn", 1}};
+        vestMagazines[] = {{"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 1}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"gm_120Rnd_762x51mm_B_T_DM21_mg3_grn", 4}
+            {"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 4}
         };
     };
 
@@ -169,7 +169,7 @@ class C7_DNK {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"gm_120Rnd_762x51mm_B_T_DM21_mg3_grn", 4}
+            {"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 4}
         };
         binocular = "gm_ferod16_oli";
         assignItems[] = {};
@@ -383,7 +383,7 @@ class C7_DNK {
         magazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 20},
             {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 10},
-            {"gm_120Rnd_762x51mm_B_T_DM21_mg3_grn", 10},
+            {"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
             {"ACE_HandFlare_White", 15},
             {"HandGrenade", 5},
             {"SmokeShell", 5}
@@ -403,7 +403,7 @@ class C7_DNK {
         magazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 40},
             {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 20},
-            {"gm_120Rnd_762x51mm_B_T_DM21_mg3_grn", 30},
+            {"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 30},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 15},
             {"gm_1Rnd_84x245mm_heat_t_DM22_carlgustaf", 5},
@@ -424,7 +424,7 @@ class C7_DNK {
         magazines[] = {
             {"CUP_30Rnd_556x45_Stanag", 40},
             {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 20},
-            {"gm_120Rnd_762x51mm_B_T_DM21_mg3_grn", 30},
+            {"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 30},
             {"gm_1Rnd_84x245mm_heat_t_DM22_carlgustaf", 5},
             {"SatchelCharge_Remote_Mag", 5},
             {"ACE_HandFlare_White", 15},

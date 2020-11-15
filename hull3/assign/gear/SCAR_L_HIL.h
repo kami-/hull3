@@ -402,7 +402,6 @@ class SCAR_L_HIL {
 
     class Vehicle {
         weapons[] = {
-            {"CUP_arifle_Mk16_CQC_woodland", 2},
             {"CUP_launch_APILAS", 4}
         };
         magazines[] = {
@@ -427,7 +426,6 @@ class SCAR_L_HIL {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"CUP_arifle_Mk16_CQC_woodland", 2},
             {"CUP_launch_APILAS", 10}
         };
         magazines[] = {

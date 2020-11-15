@@ -397,7 +397,6 @@ class PROMET_LDF {
 
     class Vehicle {
         weapons[] = {
-            {"arifle_MSBS65_black_F", 2},
             {"CUP_launch_M136", 3}
         };
         magazines[] = {
@@ -422,7 +421,6 @@ class PROMET_LDF {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"arifle_MSBS65_black_F", 2},
             {"CUP_launch_M136", 10}
         };
         magazines[] = {

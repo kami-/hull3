@@ -407,7 +407,6 @@ class M16A4_USMC {
 
     class Vehicle {
         weapons[] = {
-            {"CUP_arifle_M16A4_Base", 2},
             {"CUP_launch_M136", 4}
         };
         magazines[] = {
@@ -432,7 +431,6 @@ class M16A4_USMC {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"CUP_arifle_M16A4_Base", 2},
             {"CUP_launch_M136", 10}
         };
         magazines[] = {

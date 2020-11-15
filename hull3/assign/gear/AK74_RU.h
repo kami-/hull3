@@ -411,7 +411,6 @@ class AK74_RU {
 
     class Vehicle {
         weapons[] = {
-            {"CUP_arifle_AK74", 2},
             {"CUP_launch_RPG26", 2}
         };
         magazines[] = {
@@ -437,7 +436,6 @@ class AK74_RU {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"CUP_arifle_AK74", 2},
             {"CUP_launch_RPG26", 4}
         };
         magazines[] = {

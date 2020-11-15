@@ -411,7 +411,6 @@ class BREN805_CZ {
 
     class Vehicle {
         weapons[] = {
-            {"CUP_arifle_CZ805_A1_blk", 2},
             {"CUP_launch_RPG26", 2}
         };
         magazines[] = {
@@ -437,7 +436,6 @@ class BREN805_CZ {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"CUP_arifle_CZ805_A1_blk", 2},
             {"CUP_launch_RPG26", 4}
         };
         magazines[] = {

@@ -509,7 +509,6 @@ class HK416_KSK {
 
     class Vehicle {
         weapons[] = {
-            {"CUP_arifle_HK416_Black", 2},
             {"CUP_launch_HCPF3", 4}
         };
         magazines[] = {
@@ -536,7 +535,6 @@ class HK416_KSK {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"CUP_arifle_HK416_Black", 2},
             {"CUP_launch_HCPF3", 10},
             {"CUP_launch_PzF3", 5}
         };

@@ -417,10 +417,7 @@ class TRG_FIA {
     };
 
     class Vehicle {
-        weapons[] = {
-            {"arifle_TRG21_F", 2},
-            {"CUP_launch_M136", 4}
-        };
+        weapons[] = {{"CUP_launch_M136", 4}};
         magazines[] = {
             {"30Rnd_556x45_Stanag", 20},
             {"30Rnd_556x45_Stanag_Tracer_Red", 10},
@@ -442,10 +439,7 @@ class TRG_FIA {
     };
 
     class Truck : Vehicle {
-        weapons[] = {
-            {"arifle_TRG21_F", 2},
-            {"CUP_launch_M136", 10}
-        };
+        weapons[] = {{"CUP_launch_M136", 10}};
         magazines[] = {
             {"30Rnd_556x45_Stanag", 40},
             {"30Rnd_556x45_Stanag_Tracer_Red", 20},

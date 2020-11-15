@@ -488,7 +488,6 @@ class HK416_NOR {
 
     class Vehicle {
         weapons[] = {
-            {"CUP_arifle_HK416_Black", 2},
             {"CUP_launch_M72A6", 4}
         };
         magazines[] = {
@@ -515,7 +514,6 @@ class HK416_NOR {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"CUP_arifle_HK416_Black", 2},
             {"CUP_launch_M72A6", 10}
         };
         magazines[] = {

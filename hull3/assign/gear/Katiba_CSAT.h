@@ -435,7 +435,6 @@ class Katiba_CSAT {
 
     class Vehicle {
         weapons[] = {
-            {"arifle_Katiba_F", 2},
             {"CUP_launch_RPG26", 4}
         };
         magazines[] = {
@@ -460,7 +459,6 @@ class Katiba_CSAT {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"arifle_Katiba_F", 2},
             {"CUP_launch_RPG26", 10}
         };
         magazines[] = {

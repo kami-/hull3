@@ -393,7 +393,6 @@ class M4_US {
 
     class Vehicle {
         weapons[] = {
-            {"CUP_arifle_Colt727", 2},
             {"CUP_launch_M72A6", 4}
         };
         magazines[] = {
@@ -418,7 +417,6 @@ class M4_US {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"CUP_arifle_Colt727", 2},
             {"CUP_launch_M72A6", 10}
         };
         magazines[] = {

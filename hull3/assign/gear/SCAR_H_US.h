@@ -413,7 +413,6 @@ class SCAR_H_US {
 
     class Vehicle {
         weapons[] = {
-            {"CUP_arifle_Mk17_STD", 2},
             {"CUP_launch_M136", 4}
         };
         magazines[] = {
@@ -438,7 +437,6 @@ class SCAR_H_US {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"CUP_arifle_Mk17_STD", 2},
             {"CUP_launch_M136", 10}
         };
         magazines[] = {

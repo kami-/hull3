@@ -424,7 +424,6 @@ class AKM_SLA {
 
     class Vehicle {
         weapons[] = {
-            {"CUP_arifle_AKM", 2},
             {"CUP_launch_RPG18", 2}
         };
         magazines[] = {
@@ -450,7 +449,6 @@ class AKM_SLA {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"CUP_arifle_AKM", 2},
             {"CUP_launch_RPG18", 4}
         };
         magazines[] = {

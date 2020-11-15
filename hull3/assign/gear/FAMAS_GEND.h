@@ -385,7 +385,6 @@ class FAMAS_GEND {
 
     class Vehicle {
         weapons[] = {
-            {"CUP_Famas_F1", 2},
             {"CUP_launch_M72A6", 4}
         };
         magazines[] = {
@@ -410,7 +409,6 @@ class FAMAS_GEND {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"CUP_Famas_F1", 2},
             {"CUP_launch_M72A6", 10}
         };
         magazines[] = {
