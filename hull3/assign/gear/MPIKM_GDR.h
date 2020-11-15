@@ -23,7 +23,7 @@ class MPIKM_GDR {
             {"gm_30Rnd_762x39mm_B_M43_ak47_blk", 4},
             {"gm_30Rnd_762x39mm_B_T_57N231P_ak47_blk", 2}
         };
-        basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch"};
+        basicAssignItems[] = {"ItemMap", "gm_gc_compass_f73", "gm_watch_kosei_80"};
         assignItems[] = {};
         binocular = "";
         uniformItems[] = {
@@ -63,13 +63,11 @@ class MPIKM_GDR {
             {"gm_30Rnd_762x39mm_B_M43_ak47_blk", 4},
             {"gm_30Rnd_762x39mm_B_T_57N231P_ak47_blk", 2}
         };
-        assignItems[] = {"ItemGPS"};
-        binocular = "Binocular";
+        binocular = "gm_df7x40_blk";
     };
 
     class Officer : Leader {
-        assignItems[] = {"ItemGPS"};
-        binocular = "ACE_VectorDay";
+        binocular = "gm_df7x40_blk";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
 
@@ -82,7 +80,6 @@ class MPIKM_GDR {
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         vestMagazines[] = {{"gm_30Rnd_762x39mm_B_M43_ak47_blk", 4}};
         backpackMagazines[] = {};
-        assignItems[] = {"ItemGPS", "ACE_NVG_Wide"};
     };
 
     class CO : Officer {
@@ -106,8 +103,7 @@ class MPIKM_GDR {
             {"SmokeShellBlue", 4},
             {"gm_30Rnd_762x39mm_B_M43_ak47_blk", 2}
         };
-        assignItems[] = {"ItemGPS"};
-        binocular = "Binocular";
+        binocular = "gm_df7x40_blk";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         backpackMedicalItems[] = {
             {"ACE_fieldDressing", 30},
@@ -137,7 +133,7 @@ class MPIKM_GDR {
             {"SmokeShell", 1},
             {"gm_75Rnd_762x39mm_B_M43_ak47_blk", 4}
         };
-        binocular = "Binocular";
+        binocular = "gm_df7x40_blk";
     };
 
     class RAT : Rifleman {
@@ -177,8 +173,7 @@ class MPIKM_GDR {
             {"ACE_HandFlare_Red", 2},
             {"SmokeShell", 1}
         };
-        binocular = "ACE_VectorDay";
-        assignItems[] = {"ItemGPS"};
+        binocular = "gm_df7x40_blk";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
 
@@ -195,8 +190,7 @@ class MPIKM_GDR {
             {"ACE_HandFlare_Red", 2},
             {"SmokeShell", 1}
         };
-        binocular = "ACE_VectorDay";
-        assignItems[] = {"ItemGPS"};
+        binocular = "gm_df7x40_blk";
     };
 
     class HMGAC : Rifleman {
@@ -216,14 +210,13 @@ class MPIKM_GDR {
             {"CUP_PG7VL_M", 2},
             {"CUP_PG7VR_M", 1}
         };
-        binocular = "ACE_VectorDay";
-        assignItems[] = {"ItemGPS"};
+        binocular = "gm_df7x40_blk";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
 
     class MATAC : MATAG {
         assignItems[] = {};
-        binocular = "Binocular";
+        binocular = "gm_df7x40_blk";
         uniformRadios[] = {"ACRE_PRC343"};
     };
 
@@ -264,8 +257,7 @@ class MPIKM_GDR {
             {"ACE_HandFlare_Red", 2},
             {"SmokeShell", 1}
         };
-        binocular = "ACE_VectorDay";
-        assignItems[] = {"ItemGPS"};
+        binocular = "gm_df7x40_blk";
     };
 
     class DHATAC : Rifleman {
@@ -288,8 +280,7 @@ class MPIKM_GDR {
             {"SmokeShell", 1}
         };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
-        binocular = "ACE_VectorDay";
-        assignItems[] = {"ItemGPS"};
+        binocular = "gm_df7x40_blk";
     };
 
     class SAMAC : SAMAG {
@@ -310,8 +301,7 @@ class MPIKM_GDR {
             {"ACE_HandFlare_Red", 2},
             {"SmokeShell", 1}
         };
-        binocular = "ACE_VectorDay";
-        assignItems[] = {"ItemGPS"};
+        binocular = "gm_df7x40_blk";
     };
 
     class GMGAC : Rifleman {
@@ -330,8 +320,7 @@ class MPIKM_GDR {
             {"ACE_HandFlare_Red", 2},
             {"SmokeShell", 1}
         };
-        binocular = "ACE_VectorDay";
-        assignItems[] = {"ItemGPS"};
+        binocular = "gm_df7x40_blk";
     };
 
     class MTRAC : Rifleman {
@@ -347,7 +336,6 @@ class MPIKM_GDR {
             {"DemoCharge_Remote_Mag", 3},
             {"SLAMDirectionalMine_Wire_Mag", 2}
         };
-        assignItems[] = {"ItemGPS"};
         vestItems[] = {
             {"ACE_DefusalKit", 1},
             {"ACE_M26_Clacker", 1}
@@ -376,16 +364,15 @@ class MPIKM_GDR {
             {"SmokeShell", 1},
             {"gm_10Rnd_762x54mmR_AP_7N1_svd_blk", 3}
         };
-        assignItems[] = {"ItemGPS"};
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
 
     class SP : Rifleman {
-        binocular = "ACE_VectorDay";
+        binocular = "gm_df7x40_blk";
     };
 
     class VC : Crew {
-        binocular = "ACE_VectorDay";
+        binocular = "gm_df7x40_blk";
     };
 
     class VG : Crew {
@@ -412,7 +399,6 @@ class MPIKM_GDR {
             {"HandGrenade", 5},
             {"SmokeShell", 5}
         };
-        items[] = {{"ItemGPS", 1}};
         medicalItems[] = {
             {"ACE_fieldDressing", 50},
             {"ACE_splint", 12}
@@ -435,10 +421,7 @@ class MPIKM_GDR {
             {"HandGrenade", 10},
             {"SmokeShell", 10}
         };
-        items[] = {
-            {"ACE_M26_Clacker", 1},
-            {"ItemGPS", 1}
-        };
+        items[] = {{"ACE_M26_Clacker", 1}};
         medicalItems[] = {
             {"ACE_fieldDressing", 50},
             {"ACE_splint", 12}
@@ -458,10 +441,7 @@ class MPIKM_GDR {
             {"HandGrenade", 10},
             {"SmokeShell", 10}
         };
-        items[] = {
-            {"ACE_M26_Clacker", 1},
-            {"ItemGPS", 1}
-        };
+        items[] = {{"ACE_M26_Clacker", 1}};
         medicalItems[] = {
             {"ACE_fieldDressing", 50},
             {"ACE_splint", 12}
