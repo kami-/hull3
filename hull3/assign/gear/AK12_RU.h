@@ -410,7 +410,6 @@ class AK12_RU {
 
     class Vehicle {
         weapons[] = {
-            {"arifle_AK12_F", 2},
             {"CUP_launch_RPG26", 2}
         };
         magazines[] = {
@@ -436,7 +435,6 @@ class AK12_RU {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"arifle_AK12_F", 2},
             {"CUP_launch_RPG26", 4}
         };
         magazines[] = {

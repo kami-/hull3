@@ -412,7 +412,6 @@ class RK62_FIN {
 
     class Vehicle {
         weapons[] = {
-            {"hlc_rifle_RK62", 2},
             {"CUP_launch_NLAW", 4}
         };
         magazines[] = {
@@ -435,7 +434,6 @@ class RK62_FIN {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"hlc_rifle_RK62", 2},
             {"CUP_launch_NLAW", 10}
         };
         magazines[] = {

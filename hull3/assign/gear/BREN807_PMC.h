@@ -410,7 +410,6 @@ class BREN807_PMC {
 
     class Vehicle {
         weapons[] = {
-            {"CUP_CZ_BREN2_762_14", 2},
             {"CUP_launch_M136", 4}
         };
         magazines[] = {
@@ -435,7 +434,6 @@ class BREN807_PMC {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"CUP_CZ_BREN2_762_14", 2},
             {"CUP_launch_M136", 10}
         };
         magazines[] = {

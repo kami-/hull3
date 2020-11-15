@@ -380,7 +380,6 @@ class MP5_GEND {
 
     class Vehicle {
         weapons[] = {
-            {"CUP_smg_MP5A5_flashlight", 2},
             {"CUP_launch_M72A6", 3}
         };
         magazines[] = {
@@ -403,7 +402,6 @@ class MP5_GEND {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"CUP_smg_MP5A5_flashlight", 2},
             {"CUP_launch_M72A6", 10}
         };
         magazines[] = {

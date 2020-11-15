@@ -394,7 +394,6 @@ class FAL_LDF {
 
     class Vehicle {
         weapons[] = {
-            {"CUP_arifle_FNFAL5061", 2},
             {"CUP_launch_APILAS", 2}
         };
         magazines[] = {
@@ -417,7 +416,6 @@ class FAL_LDF {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"CUP_arifle_FNFAL5061", 2},
             {"CUP_launch_APILAS", 4}
         };
         magazines[] = {

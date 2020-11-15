@@ -402,7 +402,6 @@ class DSA58_CDF {
 
     class Vehicle {
         weapons[] = {
-            {"CUP_arifle_DSA_SA58_OSW", 2},
             {"CUP_launch_APILAS", 4}
         };
         magazines[] = {
@@ -427,7 +426,6 @@ class DSA58_CDF {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"CUP_arifle_DSA_SA58_OSW", 2},
             {"CUP_launch_APILAS", 10}
         };
         magazines[] = {

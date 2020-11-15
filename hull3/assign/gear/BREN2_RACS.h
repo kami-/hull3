@@ -396,7 +396,6 @@ class BREN2_RACS {
 
     class Vehicle {
         weapons[] = {
-            {"CUP_CZ_BREN2_556_11", 2},
             {"CUP_launch_M136", 3}
         };
         magazines[] = {
@@ -421,7 +420,6 @@ class BREN2_RACS {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"CUP_CZ_BREN2_556_11", 2},
             {"CUP_launch_M136", 10}
         };
         magazines[] = {

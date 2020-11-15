@@ -403,8 +403,7 @@ class AKMS_LVM {
 
     class Vehicle {
         weapons[] = {
-            {"CUP_launch_RPG18", 4},
-            {"CUP_arifle_AKMS", 2}
+            {"CUP_launch_RPG18", 4}
         };
         magazines[] = {
             {"CUP_30Rnd_762x39_AK47_M", 20},
@@ -429,8 +428,7 @@ class AKMS_LVM {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"CUP_launch_RPG18", 4},
-            {"CUP_arifle_AKMS", 2}
+            {"CUP_launch_RPG18", 4}
         };
         magazines[] = {
             {"CUP_30Rnd_762x39_AK47_M", 40},

@@ -395,7 +395,6 @@ class AUGA3_NZ {
 
     class Vehicle {
         weapons[] = {
-            {"hlc_rifle_auga3", 2},
             {"CUP_launch_M72A6", 4}
         };
         magazines[] = {
@@ -420,7 +419,6 @@ class AUGA3_NZ {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"hlc_rifle_auga3", 2},
             {"CUP_launch_M72A6", 10}
         };
         magazines[] = {

@@ -425,7 +425,6 @@ class AKM_IRN {
 
     class Vehicle {
         weapons[] = {
-            {"CUP_arifle_AKM", 2},
             {"CUP_launch_RPG26", 2}
         };
         magazines[] = {
@@ -451,7 +450,6 @@ class AKM_IRN {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"CUP_arifle_AKM", 2},
             {"CUP_launch_RPG26", 4}
         };
         magazines[] = {

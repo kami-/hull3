@@ -395,7 +395,6 @@ class L85_BAF_RIS {
 
     class Vehicle {
         weapons[] = {
-            {"CUP_arifle_L85A2_NG", 2},
             {"CUP_launch_NLAW", 4}
         };
         magazines[] = {
@@ -420,7 +419,6 @@ class L85_BAF_RIS {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"CUP_arifle_L85A2_NG", 2},
             {"CUP_launch_NLAW", 10}
         };
         magazines[] = {

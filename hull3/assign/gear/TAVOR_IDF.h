@@ -416,7 +416,6 @@ class TAVOR_IDF {
 
     class Vehicle {
         weapons[] = {
-            {"arifle_TRG21_F", 2},
             {"CUP_launch_M72A6", 4}
         };
         magazines[] = {
@@ -441,7 +440,6 @@ class TAVOR_IDF {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"arifle_TRG21_F", 2},
             {"CUP_launch_M72A6", 10}
         };
         magazines[] = {

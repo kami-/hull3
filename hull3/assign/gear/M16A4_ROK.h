@@ -434,7 +434,6 @@ class M16A4_ROK {
 
     class Vehicle {
         weapons[] = {
-            {"CUP_arifle_M16A4_Base", 2},
             {"CUP_launch_APILAS", 4}
         };
         magazines[] = {
@@ -459,7 +458,6 @@ class M16A4_ROK {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"CUP_arifle_M16A4_Base", 2},
             {"CUP_launch_APILAS", 10},
             {"CUP_launch_PzF3", 5}
         };

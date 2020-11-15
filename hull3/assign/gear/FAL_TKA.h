@@ -397,7 +397,6 @@ class FAL_TKA {
 
     class Vehicle {
         weapons[] = {
-            {"hlc_rifle_FAL5061", 2},
             {"CUP_launch_RPG26", 2}
         };
         magazines[] = {
@@ -423,7 +422,6 @@ class FAL_TKA {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"hlc_rifle_FAL5061", 2},
             {"CUP_launch_RPG26", 4}
         };
         magazines[] = {

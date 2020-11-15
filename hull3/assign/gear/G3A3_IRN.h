@@ -390,7 +390,6 @@ class G3A3_IRN {
 
     class Vehicle {
         weapons[] = {
-            {"CUP_arifle_G3A3_ris", 2},
             {"CUP_launch_RPG26", 2}
         };
         magazines[] = {
@@ -414,7 +413,6 @@ class G3A3_IRN {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"CUP_arifle_G3A3_ris", 2},
             {"CUP_launch_RPG26", 4}
         };
         magazines[] = {

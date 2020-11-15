@@ -419,7 +419,6 @@ class AKM_SYND {
 
     class Vehicle {
         weapons[] = {
-            {"CUP_arifle_AKM", 2},
             {"CUP_launch_RPG26", 4}
         };
         magazines[] = {
@@ -445,7 +444,6 @@ class AKM_SYND {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"CUP_arifle_AKM", 2},
             {"CUP_launch_RPG26", 4}
         };
         magazines[] = {

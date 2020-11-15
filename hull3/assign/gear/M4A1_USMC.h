@@ -401,7 +401,6 @@ class M4A1_USMC {
 
     class Vehicle {
         weapons[] = {
-            {"CUP_arifle_M4A1_black", 2},
             {"CUP_launch_M136", 4}
         };
         magazines[] = {
@@ -426,7 +425,6 @@ class M4A1_USMC {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"CUP_arifle_M4A1_black", 2},
             {"CUP_launch_M136", 10}
         };
         magazines[] = {

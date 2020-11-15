@@ -426,7 +426,6 @@ class CAR95_CN {
 
     class Vehicle {
         weapons[] = {
-            {"arifle_CTAR_blk_F", 2},
             {"CUP_launch_RPG26", 4}
         };
         magazines[] = {
@@ -452,7 +451,6 @@ class CAR95_CN {
 
     class Truck : Vehicle {
         weapons[] = {
-            {"arifle_CTAR_blk_F", 2},
             {"CUP_launch_RPG26", 4}
         };
         magazines[] = {
