@@ -409,8 +409,7 @@ class M75_DNK {
         };
         items[] = {};
         medicalItems[] = {
-            {"ACE_fieldDressing", 50},
-            {"ACE_splint", 12}
+            {"ACE_fieldDressing", 50}
         };
     };
 
@@ -433,8 +432,7 @@ class M75_DNK {
             {"ACE_M26_Clacker", 1}
         };
         medicalItems[] = {
-            {"ACE_fieldDressing", 50},
-            {"ACE_splint", 12}
+            {"ACE_fieldDressing", 50}
         };
     };
 
@@ -454,8 +452,7 @@ class M75_DNK {
             {"ACE_M26_Clacker", 1}
         };
         medicalItems[] = {
-            {"ACE_fieldDressing", 50},
-            {"ACE_splint", 12}
+            {"ACE_fieldDressing", 50}
         };
     };
 
