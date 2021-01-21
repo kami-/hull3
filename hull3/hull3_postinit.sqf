@@ -11,7 +11,7 @@ if (hull3_isEnabled) then {
     [] call hull3_marker_fnc_postInit;
 
     if (!isDedicated) then {
-        [] call hull3_unit_fnc_playerInit;
+        [] spawn hull3_unit_fnc_playerInit;
         if (isServer) then {
             [] call hull3_mission_fnc_serverInit;
             [] call hull3_unit_fnc_foreachNonPlayerUnits;
