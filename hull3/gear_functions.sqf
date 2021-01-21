@@ -79,7 +79,6 @@ hull3_gear_fnc_assignUnitInit = {
     _unit setVariable ["hull3_faction", _faction, true];
     _unit setVariable ["hull3_gear_class", _class, true];
     _unit setVariable ["hull3_gear_template", _template, true];
-    _unit setUnitLoadout (configFile >> 'EmptyLoadout');
     DEBUG("hull3.gear.assign",FMT_1("Initialized unit '%1' gear.",_unit));
 };
 
