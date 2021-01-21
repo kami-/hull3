@@ -39,15 +39,14 @@ hull3_gear_fnc_addEventHandlers = {
 };
 
 hull3_gear_fnc_assign = {
-    FUN_ARGS_4(_unit,_factionEntry,_gearEntry,_uniformEntry);
+    params ["_unit", "_factionEntry", "_gearEntry", "_uniformEntry"];
 
-    private ["_faction", "_gearTemplate", "_gearClass"];
     [_unit, _factionEntry] call hull3_gear_fnc_validateFaction;
-    _faction = [_unit, _factionEntry] call hull3_gear_fnc_getFaction;
-    _gearTemplate = [_unit, _factionEntry, _gearEntry] call hull3_gear_fnc_getTemplate;
-    _gearClass = [_unit, _gearEntry, _gearTemplate] call hull3_gear_fnc_getClass;
+    private _faction = [_unit, _factionEntry] call hull3_gear_fnc_getFaction;
+    private _gearTemplate = [_unit, _factionEntry, _gearEntry] call hull3_gear_fnc_getTemplate;
+    private _gearClass = [_unit, _gearEntry, _gearTemplate] call hull3_gear_fnc_getClass;
     if (_unit isKindOf "CAManBase") then {
-        DECLARE(_uniformTemplate) = [_unit, _factionEntry, _uniformEntry] call hull3_uniform_fnc_getTemplate;
+        private _uniformTemplate = [_unit, _factionEntry, _uniformEntry] call hull3_uniform_fnc_getTemplate;
         [_unit, _faction, _gearTemplate, _uniformTemplate, _gearClass] call hull3_gear_fnc_assignUnit;
     } else {
         [_unit, _gearTemplate, _gearClass] call hull3_gear_fnc_assignVehicle;
@@ -57,7 +56,7 @@ hull3_gear_fnc_assign = {
 };
 
 hull3_gear_fnc_assignUnit = {
-    FUN_ARGS_5(_unit,_faction,_gearTemplate,_uniformTemplate,_gearClass);
+    params ["_unit", "_faction", "_gearTemplate", "_uniformTemplate", "_gearClass"];
 
     DEBUG("hull3.gear.assign",FMT_4("Set faction to '%1', gear template to '%2', uniform template to '%3' and gear class to '%4'.",_faction,_gearTemplate,_uniformTemplate,_gearClass));
     [_unit, _uniformTemplate] call hull3_uniform_fnc_assignUniformInit;
@@ -68,28 +67,24 @@ hull3_gear_fnc_assignUnit = {
 };
 
 hull3_gear_fnc_assignVehicle = {
-    FUN_ARGS_3(_unit,_gearTemplate,_gearClass);
+    params ["_unit", "_gearTemplate", "_gearClass"];
 
     [_unit, _gearTemplate, _gearClass] call hull3_gear_fnc_assignVehicleInit;
     [_unit, _gearTemplate, _gearClass] call hull3_gear_fnc_assignVehicleTemplate;
 };
 
 hull3_gear_fnc_assignUnitInit = {
-    FUN_ARGS_4(_unit,_faction,_template,_class);
+    params ["_unit", "_faction", "_template", "_class"];
 
     _unit setVariable ["hull3_faction", _faction, true];
     _unit setVariable ["hull3_gear_class", _class, true];
     _unit setVariable ["hull3_gear_template", _template, true];
-    removeAllAssignedItems _unit;
-    removeAllPrimaryWeaponItems _unit;
-    removeAllHandgunItems _unit;
-    removeAllWeapons _unit;
-    removeAllItems _unit;
+    _unit setUnitLoadout (configFile >> 'EmptyLoadout');
     DEBUG("hull3.gear.assign",FMT_1("Initialized unit '%1' gear.",_unit));
 };
 
 hull3_gear_fnc_assignVehicleInit = {
-    FUN_ARGS_1(_vehicle);
+    params ["_vehicle"];
 
     clearMagazineCargoGlobal _vehicle;
     clearWeaponCargoGlobal _vehicle;
@@ -99,7 +94,7 @@ hull3_gear_fnc_assignVehicleInit = {
 };
 
 hull3_gear_fnc_validateFaction = {
-    FUN_ARGS_2(_unit,_factionEntry);
+    params ["_unit", "_factionEntry"];
 
     if (count _factionEntry > 0 && {!isClass ([FACTION_CONFIG, _factionEntry select 0] call hull3_config_fnc_getConfig)}) then {
         WARN("hull3.gear.assign",FMT_2("No faction found with name '%1' for unit '%2'!",_factionEntry select 0,_unit));
@@ -107,7 +102,7 @@ hull3_gear_fnc_validateFaction = {
 };
 
 hull3_gear_fnc_getFaction = {
-    FUN_ARGS_2(_unit,_factionEntry);
+    params ["_unit", "_factionEntry"];
 
     private _faction = DEFAULT_FACTION_NAME;
     if (count _factionEntry > 0 && {isClass ([FACTION_CONFIG, _factionEntry select 0] call hull3_config_fnc_getConfig)}) then {
@@ -118,9 +113,9 @@ hull3_gear_fnc_getFaction = {
 };
 
 hull3_gear_fnc_getClass = {
-    FUN_ARGS_3(_unit,_gearEntry,_gearTemplate);
+    params ["_unit", "_gearEntry", "_gearTemplate"];
 
-    DECLARE(_gearClass) = hull3_gear_unitBaseClass;
+    private _gearClass = hull3_gear_unitBaseClass;
     if (count _gearEntry > 0) then {
         if (isClass ([TYPE_CLASS_GEAR, _gearTemplate, _gearEntry select 0] call hull3_config_fnc_getConfig)) then {
             _gearClass = _gearEntry select 0;
@@ -133,9 +128,9 @@ hull3_gear_fnc_getClass = {
 };
 
 hull3_gear_fnc_getTemplate = {
-    FUN_ARGS_3(_unit,_factionEntry,_gearEntry);
+    params ["_unit", "_factionEntry", "_gearEntry"];
 
-    DECLARE(_gearTemplate) = DEFAULT_TEMPLATE_NAME;
+    private _gearTemplate = DEFAULT_TEMPLATE_NAME;
     if (count _gearEntry > 1) then {
         if (isClass ([TYPE_CLASS_GEAR, _gearEntry select 1] call hull3_config_fnc_getConfig)) then {
             _gearTemplate = _gearEntry select 1;
@@ -151,9 +146,9 @@ hull3_gear_fnc_getTemplate = {
 };
 
 hull3_gear_fnc_assignUnitTemplate = {
-    FUN_ARGS_3(_unit,_template,_class);
+    params ["_unit", "_template", "_class"];
 
-    DECLARE(_assignables) = [
+    private _assignables = [
         ["primaryWeapon",           CONFIG_TYPE_TEXT,       "primary weapon",           ASSIGN_PRIMARY_WEAPON_FUNC,         CAN_ASSIGN_PRIMARY_WEAPON_FUNC,         hull3_gear_fnc_assignSingleItem],
         ["primaryWeaponItems",      CONFIG_TYPE_ARRAY,      "primary weapon items",     ASSIGN_PRIMARY_WEAPON_ITEM_FUNC,    CAN_ASSIGN_PRIMARY_WEAPON_ITEM_FUNC,    hull3_gear_fnc_assignSingleItemArray],
         ["secondaryWeapon",         CONFIG_TYPE_TEXT,       "secondary weapon",         ASSIGN_SECONDARY_WEAPON_FUNC,       CAN_ASSIGN_SECONDARY_WEAPON_FUNC,       hull3_gear_fnc_assignSingleItem],
@@ -177,7 +172,7 @@ hull3_gear_fnc_assignUnitTemplate = {
         ["backpackMedicalItems",    CONFIG_TYPE_ARRAY,      "backpack",                 ASSIGN_BACKPACK_ITEM_FUNC,          CAN_ASSIGN_BACKPACK_ITEM_FUNC,          hull3_gear_fnc_assignMultiItemArray]
     ];
     {
-        DECLARE(_configValue) = [TYPE_CLASS_GEAR, _template, _class, _x select 0] call (CONFIG_TYPE_FUNCTIONS select (_x select 1));
+        private _configValue = [TYPE_CLASS_GEAR, _template, _class, _x select 0] call (CONFIG_TYPE_FUNCTIONS select (_x select 1));
         [_x select 0, _unit, _configValue, _x select 2, _x select 3, _x select 4, _template, _class] call (_x select 5);
     } foreach _assignables;
     [_unit, _class, _template] call compile ([TYPE_CLASS_GEAR, _template, _class, "code"] call hull3_config_fnc_getText);
@@ -186,9 +181,9 @@ hull3_gear_fnc_assignUnitTemplate = {
 };
 
 hull3_gear_fnc_assignVehicleTemplate = {
-    FUN_ARGS_3(_vehicle,_template,_class);
+    params ["_vehicle", "_template", "_class"];
 
-    DECLARE(_assignables) = [
+    private _assignables = [
         ["magazines",       CONFIG_TYPE_ARRAY,      hull3_gear_fnc_assignVehicleMagazines],
         ["weapons",         CONFIG_TYPE_ARRAY,      hull3_gear_fnc_assignVehicleWeapons],
         ["items",           CONFIG_TYPE_ARRAY,      hull3_gear_fnc_assignVehicleItems],
@@ -204,13 +199,13 @@ hull3_gear_fnc_assignVehicleTemplate = {
 };
 
 hull3_gear_fnc_assignSingleItem = {
-    FUN_ARGS_8(_fieldName,_unit,_item,_container,_addFunc,_canAddFunc,_template,_class);
+    params ["_fieldName", "_unit", "_item", "_container", "_addFunc", "_canAddFunc", "_template", "_class"];
 
     [_unit, _item, 1, _container, _addFunc, _canAddFunc, _fieldName, _template, _class] call hull3_gear_fnc_assignItems;
 };
 
 hull3_gear_fnc_assignSingleItemArray = {
-    FUN_ARGS_8(_fieldName,_unit,_items,_container,_addFunc,_canAddFunc,_template,_class);
+    params ["_fieldName", "_unit", "_items", "_container", "_addFunc", "_canAddFunc", "_template", "_class"];
 
     {
         [_unit, _x, 1, _container, _addFunc, _canAddFunc, _fieldName, _template, _class] call hull3_gear_fnc_assignItems;
@@ -218,7 +213,7 @@ hull3_gear_fnc_assignSingleItemArray = {
 };
 
 hull3_gear_fnc_assignMultiItemArray = {
-    FUN_ARGS_8(_fieldName,_unit,_items,_container,_addFunc,_canAddFunc,_template,_class);
+    params ["_fieldName", "_unit", "_items", "_container", "_addFunc", "_canAddFunc", "_template", "_class"];
 
     {
         [_unit, _x select 0, _x select 1, _container, _addFunc, _canAddFunc, _fieldName, _template, _class] call hull3_gear_fnc_assignItems;
@@ -226,12 +221,11 @@ hull3_gear_fnc_assignMultiItemArray = {
 };
 
 hull3_gear_fnc_assignItems = {
-    FUN_ARGS_9(_unit,_item,_amount,_container,_addFunc,_canAddFunc,_fieldName,_template,_class);
+    params ["_unit", "_item", "_amount", "_container", "_addFunc", "_canAddFunc", "_fieldName", "_template", "_class"];
 
-    private ["_i", "_assignedAmount", "_canAddItem"];
-    _i = 1;
-    _assignedAmount = 0;
-    _canAddItem = [_unit, _item] call _canAddFunc;
+    private _i = 1;
+    private _assignedAmount = 0;
+    private _canAddItem = [_unit, _item] call _canAddFunc;
     while {_canAddItem && {_i <= _amount}} do {
         [_unit, _item] call _addFunc;
         INC(_assignedAmount);
@@ -246,7 +240,7 @@ hull3_gear_fnc_assignItems = {
 };
 
 hull3_gear_fnc_assignVehicleMagazines = {
-    FUN_ARGS_2(_vehicle,_magazines);
+    params ["_vehicle", "_magazines"];
 
     {
         _vehicle addMagazineCargoGlobal _x;
@@ -255,7 +249,7 @@ hull3_gear_fnc_assignVehicleMagazines = {
 };
 
 hull3_gear_fnc_assignVehicleWeapons = {
-    FUN_ARGS_2(_vehicle,_weapons);
+    params ["_vehicle", "_weapons"];
 
     {
         _vehicle addWeaponCargoGlobal _x;
@@ -264,7 +258,7 @@ hull3_gear_fnc_assignVehicleWeapons = {
 };
 
 hull3_gear_fnc_assignVehicleItems = {
-    FUN_ARGS_2(_vehicle,_items);
+    params ["_vehicle", "_items"];
 
     {
         _vehicle addItemCargoGlobal _x;
