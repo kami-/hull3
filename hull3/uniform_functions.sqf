@@ -11,18 +11,17 @@ hull3_uniform_fnc_preInit = {
 };
 
 hull3_uniform_fnc_assignUniformInit = {
-    FUN_ARGS_2(_unit,_template);
+    params ["_unit", "_template"];
 
+    _unit setUnitLoadout (configFile >> 'EmptyLoadout');
     _unit setVariable ["hull3_uniform_template", _template, true];
-    removeHeadgear _unit;
-    removeGoggles _unit;
     DEBUG("hull3.uniform.assign",FMT_1("Initialized unit '%1' uniform.",_unit));
 };
 
 hull3_uniform_fnc_getTemplate = {
-    FUN_ARGS_3(_unit,_factionEntry,_uniformEntry);
+    params ["_unit", "_factionEntry", "_uniformEntry"];
 
-    DECLARE(_uniformTemplate) = DEFAULT_TEMPLATE_NAME;
+    private _uniformTemplate = DEFAULT_TEMPLATE_NAME;
     if (count _uniformEntry > 0) then {
         if (isClass ([TYPE_CLASS_UNIFORM, _uniformEntry select 0] call hull3_config_fnc_getConfig)) then {
             _uniformTemplate = _uniformEntry select 0;
@@ -30,7 +29,7 @@ hull3_uniform_fnc_getTemplate = {
             WARN("hull3.uniform.assign",FMT_2("No uniform template found with name '%1' for unit '%2'!",_uniformEntry select 1,_unit));
         };
     } else {
-        DECLARE(_faction) = if (count _factionEntry > 0) then { _factionEntry select 0 } else { faction _unit };
+        private _faction = if (count _factionEntry > 0) then { _factionEntry select 0 } else { faction _unit };
         _uniformTemplate = [FACTION_CONFIG, _faction, TYPE_FIELD_UNIFORM] call hull3_config_fnc_getText;
     };
 
@@ -38,9 +37,9 @@ hull3_uniform_fnc_getTemplate = {
 };
 
 hull3_uniform_fnc_assignUniformTemplate = {
-    FUN_ARGS_4(_unit,_gearTemplate,_uniformTemplate,_gearClass);
+    params ["_unit", "_gearTemplate", "_uniformTemplate", "_gearClass"];
 
-    DECLARE(_assignables) = [
+    private _assignables = [
         ["headGear",                CONFIG_TYPE_TEXT,   hull3_uniform_fnc_assignHeadGear],
         ["goggles",                 CONFIG_TYPE_TEXT,   hull3_uniform_fnc_assignGoggles],
         ["uniform",                 CONFIG_TYPE_TEXT,   hull3_uniform_fnc_assignUniform],
@@ -52,7 +51,7 @@ hull3_uniform_fnc_assignUniformTemplate = {
 };
 
 hull3_uniform_fnc_assignObjectTemplate = {
-    FUN_ARGS_5(_object,_gearTemplate,_uniformTemplate,_gearClass,_assignables);
+    params ["_object", "_gearTemplate", "_uniformTemplate", "_gearClass", "_assignables"];
 
     {
         _x params ["_field", "_configType", "_assignFunc"];
@@ -74,7 +73,7 @@ hull3_uniform_fnc_getConfigValue = {
 };
 
 hull3_uniform_fnc_assignHeadGear = {
-    FUN_ARGS_2(_unit,_headGear);
+    params ["_unit", "_headGear"];
 
     if (_headGear != "") then {
         _unit addHeadgear _headGear;
@@ -83,7 +82,7 @@ hull3_uniform_fnc_assignHeadGear = {
 };
 
 hull3_uniform_fnc_assignGoggles = {
-    FUN_ARGS_2(_unit,_goggles);
+    params ["_unit", "_goggles"];
 
     if (_goggles != "") then {
         _unit addGoggles _goggles;
@@ -104,13 +103,8 @@ hull3_uniform_fnc_assignGogglesOnJip = {
 };
 
 hull3_uniform_fnc_assignUniform = {
-    FUN_ARGS_2(_unit,_uniform);
+    params ["_unit", "_uniform"];
 
-    if (uniform _unit == _uniform) exitWith {
-        { _unit removeItemFromUniform _x; } foreach uniformItems _unit;
-        TRACE("hull3.uniform.assign",FMT_2("Unit '%1' already has uniform '%2'. Skipping assignment.",_unit,_uniform));
-    };
-    removeUniform _unit;
     if (_uniform != "") then {
         _unit forceAddUniform _uniform;
         TRACE("hull3.uniform.assign",FMT_2("Assigned uniform '%1' to unit '%2'.",_uniform,_unit));
@@ -118,13 +112,8 @@ hull3_uniform_fnc_assignUniform = {
 };
 
 hull3_uniform_fnc_assignVest = {
-    FUN_ARGS_2(_unit,_vest);
+    params ["_unit", "_vest"];
 
-    if (vest _unit == _vest) exitWith {
-        { _unit removeItemFromVest _x; } foreach vestItems _unit;
-        TRACE("hull3.uniform.assign",FMT_2("Unit '%1' already has vest '%2'. Skipping assignment.",_unit,_vest));
-    };
-    removeVest _unit;
     if (_vest != "") then {
         _unit addVest _vest;
         TRACE("hull3.uniform.assign",FMT_2("Assigned vest '%1' to unit '%2'.",_vest,_unit));
@@ -132,13 +121,8 @@ hull3_uniform_fnc_assignVest = {
 };
 
 hull3_uniform_fnc_assignBackpack = {
-    FUN_ARGS_2(_unit,_backpack);
+    params ["_unit", "_backpack"];
 
-    if (backpack _unit == _backpack) exitWith {
-        { _unit removeItemFromBackpack _x; } foreach backpackItems _unit;
-        TRACE("hull3.uniform.assign",FMT_2("Unit '%1' already has backpack '%2'. Skipping assignment.",_unit,_backpack));
-    };
-    removeBackpack _unit;
     if (_backpack != "") then {
         _unit addBackpack _backpack;
         TRACE("hull3.uniform.assign",FMT_2("Assigned backpack '%1' to unit '%2'.",_backpack,_unit));
