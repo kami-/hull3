@@ -1,26 +1,23 @@
-class RU_SPETSNAZ {
+class CUP_RU_90_DE {
     class Rifleman {
-        headGear = "CUP_H_RUS_6B27_NVG";
+        headGear = "CUP_H_RUS_SSH68_olive";
         goggles = "";
-        uniform = "CUP_U_O_RUS_Flora_1_VDV";
-        vest = "CUP_V_PMC_IOTV_Coyote_Patrol_ARM";
+        uniform = "CUP_U_O_RUS_M88_VDV";
+        vest = "CUP_V_RUS_Smersh_1_ARM";
         backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
-        uniform = "CUP_U_O_RUS_Flora_2_VDV";
-        vest = "CUP_V_PMC_IOTV_Coyote_Gren_ARM";
-        headGear = "CUP_H_RUS_6B27_NVG";
+        uniform = "CUP_U_O_RUS_M88_VDV_rolled_up";
+        vest = "CUP_V_RUS_Smersh_2_ARM";
     };
 
     class Officer : Leader {
-        headGear = "CUP_H_RUS_Beret_Spetsnaz";
+        headGear = "CUP_H_RUS_Beret_VDV";
     };
 
     class Crew : Rifleman {
-        headGear = "CUP_H_TK_TankerHelmet";
-        uniform = "CUP_U_O_RUS_Flora_2_VDV";
-        vest = "V_BandollierB_khk_ARM";
+        headGear = "CUP_H_RUS_TSH_4_Brown";
         backpack = "ark_backpack_small";
     };
 
@@ -42,8 +39,6 @@ class RU_SPETSNAZ {
     };
 
     class AR : Rifleman {
-        uniform = "CUP_U_O_RUS_Flora_2_VDV";
-        vest = "CUP_V_PMC_IOTV_Coyote_AR_ARM";
     };
 
     class AAR : Rifleman {
@@ -126,19 +121,15 @@ class RU_SPETSNAZ {
     };
 
     class ENG : Rifleman {
-        uniform = "CUP_U_O_RUS_Flora_1_VDV";
-        vest = "CUP_V_PMC_IOTV_Coyote_Gren_ARM";
+        vest = "CUP_V_RUS_Smersh_2_ARM";
         backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
+        vest = "CUP_V_RUS_Smersh_1_ARM";
     };
 
     class SN : Rifleman {
-        headGear = "H_Bandanna_khk_hs";
-        goggles = "G_Bandanna_tan";
-        uniform = "CUP_U_O_RUS_Flora_1_VDV";
-        vest = "CUP_V_PMC_IOTV_Coyote_Patrol_ARM";
         backpack = "ark_backpack_small";
     };
 
@@ -155,9 +146,7 @@ class RU_SPETSNAZ {
     };
 
     class P : Crew {
-        headGear = "CUP_H_SLA_Pilot_Helmet";
-        uniform = "CUP_U_O_RUS_Flora_1_VDV";
-        vest = "V_TacVest_oli_ARM";
+        headGear = "CUP_H_RUS_ZSH_Shield_Up";
         backpack = "B_Parachute";
     };
 

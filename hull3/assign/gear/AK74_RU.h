@@ -196,7 +196,7 @@ class AK74_RU {
     };
 
     class HMGG : Rifleman {
-        primaryWeapon = "CUP_arifle_AKS74Uu";
+        primaryWeapon = "CUP_arifle_AKS74U";
         primaryWeaponItems[] = {};
         backpack = "CUP_B_Kord_Gun_Bag";
         backpackMagazines[] = {};

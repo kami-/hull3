@@ -1,60 +1,60 @@
-class SPETSNAZ {
+class CUP_RU_90_WD {
     class Rifleman {
-        headGear = "H_HelmetAggressor_cover_taiga_F";
-        goggles = "G_Balaclava_oli";
-        uniform = "U_O_R_Gorka_01_camo_F";
-        vest = "V_SmershVest_01_F_ARM";
-        backpack = "B_FieldPack_taiga_F";
+        headGear = "CUP_H_RUS_SSH68_cover_vsr98";
+        goggles = "";
+        uniform = "CUP_U_O_RUS_VSR98_worn_MSV";
+        vest = "CUP_V_RUS_6B3_Flora_2_ARM";
+        backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
-        vest = "V_SmershVest_01_radio_F_ARM";
-        goggles = "";
+        uniform = "CUP_U_O_RUS_VSR98_worn_MSV_rolled_up";
+        vest = "CUP_V_RUS_6B3_Flora_1_ARM";
     };
 
     class Officer : Leader {
-        headGear = "CUP_H_RUS_Beret_Spetsnaz";
+        headGear = "CUP_H_RUS_Beret_VDV";
     };
 
     class Crew : Rifleman {
         headGear = "CUP_H_RUS_TSH_4_Brown";
-        goggles = "";
-        vest = "CUP_V_CDF_OfficerBelt_ARM";
-        backpack = "CUP_B_SLA_Medicbag";
+        uniform = "CUP_U_O_RUS_VSR98_worn_gloves_MSV";
+        vest = "CUP_V_RUS_6B3_Flora_4_ARM";
+        backpack = "ark_backpack_small";
     };
 
     class CO : Officer {
     };
 
     class XO : CO {
+        backpack = "ark_backpack_large";
     };
 
     class SL : Officer {
-        headGear = "H_MilCap_taiga";
     };
 
     class Medic : Rifleman {
-        goggles = "";
-        backpack = "B_Carryall_taiga_F";
+        backpack = "ark_backpack_large";
     };
 
     class FTL : Leader {
     };
 
     class AR : Rifleman {
-        vest = "CUP_V_RUS_6B3_3_ARM";
+        uniform = "CUP_U_O_RUS_VSR98_worn_gloves_MSV";
+        vest = "CUP_V_RUS_6B3_Flora_3_ARM";
     };
 
     class AAR : Rifleman {
-        backpack = "B_Carryall_taiga_F";
+        backpack = "ark_backpack_large";
     };
 
     class RAT : Rifleman {
-        backpack = "B_Carryall_taiga_F";
+        uniform = "CUP_U_O_RUS_VSR98_worn_gloves_MSV";
     };
 
     class MMGG : AR {
-        backpack = "B_Carryall_taiga_F";
+        backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
@@ -70,7 +70,7 @@ class SPETSNAZ {
     };
 
     class MATG : RAT {
-        backpack = "B_Carryall_taiga_F";
+        backpack = "ark_backpack_large";
     };
 
     class MATAG : AAR {
@@ -80,7 +80,7 @@ class SPETSNAZ {
     };
 
     class HATG : RAT {
-        backpack = "B_Carryall_taiga_F";
+        backpack = "ark_backpack_large";
     };
 
     class HATAG : AAR {
@@ -126,22 +126,22 @@ class SPETSNAZ {
     };
 
     class ENG : Rifleman {
-        goggles = "";
-        backpack = "B_Carryall_taiga_F";
+        uniform = "CUP_U_O_RUS_VSR98_worn_gloves_MSV";
+        vest = "CUP_V_RUS_6B3_Flora_3_ARM";
+        backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
     };
 
     class SN : Rifleman {
-        headGear = "H_Booniehat_taiga";
+        backpack = "ark_backpack_small";
     };
 
     class SP : SN {
     };
 
     class VC : Crew {
-        vest = "CUP_V_CDF_OfficerBelt2_ARM";
     };
 
     class VG : Crew {
@@ -152,7 +152,6 @@ class SPETSNAZ {
 
     class P : Crew {
         headGear = "CUP_H_RUS_ZSH_Shield_Up";
-        vest = "CUP_V_O_TK_CrewBelt_ARM";
         backpack = "B_Parachute";
     };
 

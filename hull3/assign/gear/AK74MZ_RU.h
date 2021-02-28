@@ -1,7 +1,7 @@
 class AK74MZ_RU {
     class Rifleman {
         primaryWeapon = "CUP_arifle_AK74M_railed";
-        primaryWeaponItems[] = {"CUP_optic_TrijiconRx01_black", "CUP_acc_Flashlight"};
+        primaryWeaponItems[] = {"CUP_optic_1P87_RIS", "CUP_acc_Flashlight"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -52,7 +52,6 @@ class AK74MZ_RU {
 
     class Leader : Rifleman {
         primaryWeapon = "CUP_arifle_AK74M_GL_railed";
-        primaryWeaponItems[] = {"CUP_optic_Eotech553_Black", "CUP_acc_Flashlight"};
         handgunWeapon = "hgun_Rook40_F";
         vestMagazines[] = {
             {"CUP_30Rnd_545x39_AK74M_M", 6},
@@ -111,7 +110,6 @@ class AK74MZ_RU {
 
     class Medic : Rifleman {
         primaryWeapon = "CUP_arifle_AKS74U_railed";
-        primaryWeaponItems[] = {"CUP_optic_TrijiconRx01_black", "CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"CUP_30Rnd_545x39_AK74M_M", 6},
             {"CUP_30Rnd_TE1_Green_Tracer_545x39_AK74M_M", 2},
@@ -138,7 +136,6 @@ class AK74MZ_RU {
 
     class AR : Rifleman {
         primaryWeapon = "CUP_arifle_RPK74M_railed";
-        primaryWeaponItems[] = {"CUP_optic_Eotech553_Black", "CUP_acc_Flashlight"};
         vestMagazines[] = {{"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK74M_M", 2}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
@@ -172,8 +169,7 @@ class AK74MZ_RU {
     };
 
     class MMGG : Rifleman {
-        primaryWeapon = "CUP_lmg_Pecheneg";
-        primaryWeaponItems[] = {"CUP_optic_PechenegScope"};
+        primaryWeapon = "CUP_lmg_Pecheneg_top_rail_B50_vfg";
         vestMagazines[] = {{"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 1}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
@@ -196,7 +192,6 @@ class AK74MZ_RU {
 
     class HMGG : Rifleman {
         primaryWeapon = "CUP_arifle_AKS74U_railed";
-        primaryWeaponItems[] = {"CUP_optic_TrijiconRx01_black", "CUP_acc_Flashlight"};
         backpack = "CUP_B_Kord_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -214,7 +209,6 @@ class AK74MZ_RU {
 
     class MATG : RAT {
         primaryWeapon = "CUP_arifle_AKS74U_railed";
-        primaryWeaponItems[] = {"CUP_optic_TrijiconRx01_black", "CUP_acc_Flashlight"};
         secondaryWeapon = "CUP_launch_RPG7V";
         secondaryWeaponItems[] = {"CUP_PG7VL_M", "CUP_optic_PGO7V3"};
         backpackMagazines[] = {
@@ -243,7 +237,6 @@ class AK74MZ_RU {
 
     class HATG : MATG {
         primaryWeapon = "CUP_arifle_AKS74U_railed";
-        primaryWeaponItems[] = {"CUP_optic_TrijiconRx01_black", "CUP_acc_Flashlight"};
         secondaryWeapon = "CUP_launch_Metis";
         secondaryWeaponItems[] = {"CUP_AT13_M"};
         backpackMagazines[] = {{"CUP_AT13_M", 1}};
@@ -264,7 +257,6 @@ class AK74MZ_RU {
 
     class DHATG : Rifleman {
         primaryWeapon = "CUP_arifle_AKS74U_railed";
-        primaryWeaponItems[] = {"CUP_optic_TrijiconRx01_black", "CUP_acc_Flashlight"};
         backpack = "CUP_B_Metis_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -286,7 +278,6 @@ class AK74MZ_RU {
 
     class SAMG : Rifleman {
         primaryWeapon = "CUP_arifle_AKS74U_railed";
-        primaryWeaponItems[] = {"CUP_optic_TrijiconRx01_black", "CUP_acc_Flashlight"};
         secondaryWeapon = "CUP_launch_Igla";
         secondaryWeaponItems[] = {"CUP_Igla_M"};
         backpackMagazines[] = {{"CUP_Igla_M", 1}};
@@ -315,7 +306,6 @@ class AK74MZ_RU {
 
     class GMGG : Rifleman {
         primaryWeapon = "CUP_arifle_AKS74U_railed";
-        primaryWeaponItems[] = {"CUP_optic_TrijiconRx01_black", "CUP_acc_Flashlight"};
         backpack = "CUP_B_AGS30_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -337,7 +327,6 @@ class AK74MZ_RU {
 
     class MTRG : Rifleman {
         primaryWeapon = "CUP_arifle_AKS74U_railed";
-        primaryWeaponItems[] = {"CUP_optic_TrijiconRx01_black", "CUP_acc_Flashlight"};
         backpack = "CUP_B_Podnos_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -359,7 +348,6 @@ class AK74MZ_RU {
 
     class ENG : Rifleman {
         primaryWeapon = "CUP_arifle_AKS74U_railed";
-        primaryWeaponItems[] = {"CUP_optic_TrijiconRx01_black", "CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"CUP_30Rnd_545x39_AK74M_M", 6},
             {"CUP_30Rnd_TE1_Green_Tracer_545x39_AK74M_M", 2}
