@@ -1038,12 +1038,12 @@ class Faction {
             {"Technical", "CUP_O_UAZ_MG_RU"}
         };
     };
-
-    class CUP_RU_RATNIK_DE {
+	
+	    class CUP_RU_MOD_PK {
         gear = "AK74MZ_RU";
-        uniform = "CUP_RU_RATNIK_DE";
-        name = "Russian Ratnik Desert";
-        description = "Ratnik Desert Uniforms and Zenitco AK-74M's";
+        uniform = "CUP_RU_MOD_PK";
+        name = "Russian Modern Pink Desert";
+        description = "Pink Desert Uniforms and Zenitco AK-74M's";
         languages[] = {{"east", 100}};
         side = "east";
         camouflage[] = {"desert"};
@@ -1064,12 +1064,12 @@ class Faction {
             {"Technical", "CUP_O_UAZ_MG_RU"}
         };
     };
-
-    class CUP_RU_RATNIK_WD {
+	
+	    class CUP_RU_MOD_WD {
         gear = "AK74MZ_RU";
-        uniform = "CUP_RU_RATNIK_WD";
-        name = "Russian Ratnik Woodland";
-        description = "Ratnik Woodland Uniforms and Zenitco AK-74M's";
+        uniform = "CUP_RU_MOD_WD";
+        name = "Russian Modern Woodland";
+        description = "Digital Woodland Uniforms and Zenitco AK-74M's";
         languages[] = {{"east", 100}};
         side = "east";
         camouflage[] = {"woodland"};
@@ -1090,12 +1090,12 @@ class Faction {
             {"Technical", "CUP_O_UAZ_MG_RU"}
         };
     };
-
-    class CUP_RU_RATNIK_SN {
+	
+	    class CUP_RU_MOD_SN {
         gear = "AK74MZ_RU";
-        uniform = "CUP_RU_RATNIK_SN";
-        name = "Russian Ratnik Snow";
-        description = "Ratnik Snow Uniforms and Zenitco AK-74M's";
+        uniform = "CUP_RU_MOD_SN";
+        name = "Russian Modern Snow";
+        description = "Snow Uniforms and Zenitco AK-74M's";
         languages[] = {{"east", 100}};
         side = "east";
         camouflage[] = {"snow"};
@@ -1949,111 +1949,7 @@ class Faction {
         };
     };
 
-    class RU_SPETSNAZ {
-        gear = "AK74MZ_RU";
-        uniform = "RU_SPETSNAZ";
-        name = "Russian Spetsnaz";
-        description = "Modern Russian Spetsnaz and Zenitco AK-74M's";
-        languages[] = {{"east", 100}};
-        side = "east";
-        camouflage[] = {"desert"};
-        rolePrefix = "Spetsnaz";
-        vehicleClassnames[] = {
-            {"CO", "CUP_O_UAZ_Unarmed_RU"},
-            {"SL", "CUP_O_Kamaz_RU"},
-            {"FT", "CUP_O_UAZ_Unarmed_RU"},
-            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
-            {"ENG", "CUP_O_Kamaz_Reammo_RU"},
-            {"APC", "CUP_O_MTLB_pk_WDL_RU"},
-            {"IFV", "CUP_O_BMP2_RU"},
-            {"SPAAG", "CUP_O_2S6_RU"},
-            {"TNK", "CUP_O_T90_RU"},
-            {"TH", "CUP_O_Mi8_RU"},
-            {"AH", "CUP_O_Mi24_V_Dynamic_RU"},
-            {"CAS", "CUP_O_Su25_Dyn_RU"},
-            {"Technical", "CUP_O_UAZ_MG_RU"}
-        };
-    };
-
-    class CUP_RU_MOD_WD {
-        gear = "AK74MZ_RU";
-        uniform = "CUP_RU_MOD_WD";
-        name = "Russia Modern Woodland";
-        description = "Modern Russian Zenitco AK-74M's";
-        languages[] = {{"east", 100}};
-        side = "east";
-        camouflage[] = {"woodland"};
-        rolePrefix = "Russian Army";
-        vehicleClassnames[] = {
-            {"CO", "CUP_O_UAZ_Unarmed_RU"},
-            {"SL", "CUP_O_Kamaz_RU"},
-            {"FT", "CUP_O_UAZ_Unarmed_RU"},
-            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
-            {"ENG", "CUP_O_Kamaz_Reammo_RU"},
-            {"APC", "CUP_O_MTLB_pk_WDL_RU"},
-            {"IFV", "CUP_O_BMP2_RU"},
-            {"SPAAG", "CUP_O_2S6_RU"},
-            {"TNK", "CUP_O_T90_RU"},
-            {"TH", "CUP_O_Mi8_RU"},
-            {"AH", "CUP_O_Mi24_V_Dynamic_RU"},
-            {"CAS", "CUP_O_Su25_Dyn_RU"},
-            {"Technical", "CUP_O_UAZ_MG_RU"}
-        };
-    };
-
-    class SPETSNAZ {
-        gear = "AK12_RU";
-        uniform = "SPETSNAZ";
-        name = "Russian Spetsnaz";
-        description = "Modern Russian Spetsnaz and AK-12s";
-        languages[] = {{"east", 100}};
-        side = "east";
-        camouflage[] = {"woodland"};
-        rolePrefix = "Spetsnaz";
-        vehicleClassnames[] = {
-            {"CO", "CUP_O_UAZ_Unarmed_RU"},
-            {"SL", "CUP_O_Kamaz_RU"},
-            {"FT", "CUP_O_UAZ_Unarmed_RU"},
-            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
-            {"ENG", "CUP_O_Kamaz_Reammo_RU"},
-            {"APC", "CUP_O_MTLB_pk_WDL_RU"},
-            {"IFV", "CUP_O_BMP2_RU"},
-            {"SPAAG", "CUP_O_2S6_RU"},
-            {"TNK", "CUP_O_T90_RU"},
-            {"TH", "CUP_O_Mi8_RU"},
-            {"AH", "CUP_O_Mi24_V_Dynamic_RU"},
-            {"CAS", "CUP_O_Su25_Dyn_RU"},
-            {"Technical", "CUP_O_UAZ_MG_RU"}
-        };
-    };
-
-    class CUP_RU_EMR {
-        gear = "AK74M_RU";
-        uniform = "CUP_RU_EMR";
-        name = "Russian Army (EMR Woodland)";
-        description = "Woodland EMR Russian Army and AK-74M's. Never seen in Ukraine, nope never!";
-        languages[] = {{"east", 100}};
-        side = "east";
-        camouflage[] = {"woodland"};
-        rolePrefix = "Russian Army";
-        vehicleClassnames[] = {
-            {"CO", "CUP_O_UAZ_Unarmed_RU"},
-            {"SL", "CUP_O_Kamaz_RU"},
-            {"FT", "CUP_O_UAZ_Unarmed_RU"},
-            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
-            {"ENG", "CUP_O_Kamaz_Reammo_RU"},
-            {"APC", "CUP_O_MTLB_pk_WDL_RU"},
-            {"IFV", "CUP_O_BMP2_RU"},
-            {"SPAAG", "CUP_O_2S6_RU"},
-            {"TNK", "CUP_O_T90_RU"},
-            {"TH", "CUP_O_Mi8_RU"},
-            {"AH", "CUP_O_Mi24_V_Dynamic_RU"},
-            {"CAS", "CUP_O_Su25_Dyn_RU"},
-            {"Technical", "CUP_O_UAZ_MG_RU"}
-        };
-    };
-
-    class CUP_CHKDZ {
+   class CUP_CHKDZ {
         gear = "AKM_CHKDZ";
         uniform = "CHKDZ";
         name = "Chedaki";
