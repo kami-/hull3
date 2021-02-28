@@ -1143,6 +1143,58 @@ class Faction {
         };
     };
 
+    class CUP_RU_90_WD {
+        gear = "AK74_RU";
+        uniform = "CUP_RU_90_WD";
+        name = "Russian Army 1990s Woodland";
+        description = "1990s Russians with AK-74's";
+        languages[] = {{"east", 100}};
+        side = "east";
+        camouflage[] = {"woodland"};
+        rolePrefix = "Russian Army";
+        vehicleClassnames[] = {
+            {"CO", "CUP_O_UAZ_Unarmed_RU"},
+            {"SL", "CUP_O_UAZ_Unarmed_RU"},
+            {"FT", "CUP_O_UAZ_Unarmed_RU"},
+            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
+            {"ENG", "CUP_O_Ural_Repair_RU"},
+            {"APC", "CUP_O_BRDM2_RU"},
+            {"IFV", "CUP_O_BMP2_RU"},
+            {"SPAAG", "CUP_O_Ural_ZU23_RU"},
+            {"TNK", "CUP_O_T72_RU"},
+            {"TH", "CUP_O_Mi8_RU"},
+            {"AH", "CUP_O_Mi24_V_Dynamic_RU"},
+            {"CAS", "CUP_O_Su25_Dyn_RU"},
+            {"Technical", "CUP_O_UAZ_MG_RU"}
+        };
+    };
+
+    class CUP_RU_90_DE {
+        gear = "AK74_RU";
+        uniform = "CUP_RU_90_DE";
+        name = "Russian Army 1990s Desert";
+        description = "1990s Russians with AK-74's";
+        languages[] = {{"east", 100}};
+        side = "east";
+        camouflage[] = {"desert"};
+        rolePrefix = "Russian Army";
+        vehicleClassnames[] = {
+            {"CO", "CUP_O_UAZ_Unarmed_RU"},
+            {"SL", "CUP_O_UAZ_Unarmed_RU"},
+            {"FT", "CUP_O_UAZ_Unarmed_RU"},
+            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
+            {"ENG", "CUP_O_Ural_Repair_RU"},
+            {"APC", "CUP_O_BRDM2_RU"},
+            {"IFV", "CUP_O_BMP2_RU"},
+            {"SPAAG", "CUP_O_Ural_ZU23_RU"},
+            {"TNK", "CUP_O_T72_RU"},
+            {"TH", "CUP_O_Mi8_RU"},
+            {"AH", "CUP_O_Mi24_V_Dynamic_RU"},
+            {"CAS", "CUP_O_Su25_Dyn_RU"},
+            {"Technical", "CUP_O_UAZ_MG_RU"}
+        };
+    };
+
     class GM_GDR_BG {
         gear = "MPIKM_GDR";
         uniform = "GM_GDR_BG";
