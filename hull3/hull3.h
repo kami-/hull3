@@ -38,6 +38,7 @@ class Hull3 {
         #include "assign\uniform\CUP_RACS_URB.h"
         #include "assign\uniform\CUP_RACS_MECH.h"
         #include "assign\uniform\CUP_RU_WD.h"
+        #include "assign\uniform\CUP_RU_DE.h"
         #include "assign\uniform\CUP_SLA_DE.h"
         #include "assign\uniform\CUP_SLA_WD.h"
         #include "assign\uniform\CUP_SLA_URB.h"

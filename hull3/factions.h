@@ -1038,8 +1038,8 @@ class Faction {
             {"Technical", "CUP_O_UAZ_MG_RU"}
         };
     };
-	
-	    class CUP_RU_MOD_PK {
+
+    class CUP_RU_MOD_PK {
         gear = "AK74MZ_RU";
         uniform = "CUP_RU_MOD_PK";
         name = "Russian Modern Pink Desert";
@@ -1064,8 +1064,8 @@ class Faction {
             {"Technical", "CUP_O_UAZ_MG_RU"}
         };
     };
-	
-	    class CUP_RU_MOD_WD {
+
+    class CUP_RU_MOD_WD {
         gear = "AK74MZ_RU";
         uniform = "CUP_RU_MOD_WD";
         name = "Russian Modern Woodland";
@@ -1090,8 +1090,8 @@ class Faction {
             {"Technical", "CUP_O_UAZ_MG_RU"}
         };
     };
-	
-	    class CUP_RU_MOD_SN {
+
+    class CUP_RU_MOD_SN {
         gear = "AK74MZ_RU";
         uniform = "CUP_RU_MOD_SN";
         name = "Russian Modern Snow";
@@ -1900,11 +1900,37 @@ class Faction {
     class CUP_RU_WD {
         gear = "AK74M_RU";
         uniform = "CUP_RU_WD";
-        name = "Russian Army (Flora)";
+        name = "Russian Army Woodland";
         description = "Woodland Russian Army and AK-74M's";
         languages[] = {{"east", 100}};
         side = "east";
         camouflage[] = {"woodland"};
+        rolePrefix = "Russian Army";
+        vehicleClassnames[] = {
+            {"CO", "CUP_O_UAZ_Unarmed_RU"},
+            {"SL", "CUP_O_Kamaz_RU"},
+            {"FT", "CUP_O_UAZ_Unarmed_RU"},
+            {"ATTCH", "CUP_O_UAZ_Unarmed_RU"},
+            {"ENG", "CUP_O_Kamaz_Reammo_RU"},
+            {"APC", "CUP_O_MTLB_pk_WDL_RU"},
+            {"IFV", "CUP_O_BMP2_RU"},
+            {"SPAAG", "CUP_O_2S6_RU"},
+            {"TNK", "CUP_O_T72_RU"},
+            {"TH", "CUP_O_Mi8_RU"},
+            {"AH", "CUP_O_Mi24_V_Dynamic_RU"},
+            {"CAS", "CUP_O_Su25_Dyn_RU"},
+            {"Technical", "CUP_O_UAZ_MG_RU"}
+        };
+    };
+
+    class CUP_RU_DE {
+        gear = "AK74M_RU";
+        uniform = "CUP_RU_DE";
+        name = "Russian Army Desert";
+        description = "Desert Russian Army and AK-74M's";
+        languages[] = {{"east", 100}};
+        side = "east";
+        camouflage[] = {"desert"};
         rolePrefix = "Russian Army";
         vehicleClassnames[] = {
             {"CO", "CUP_O_UAZ_Unarmed_RU"},
@@ -1949,7 +1975,7 @@ class Faction {
         };
     };
 
-   class CUP_CHKDZ {
+    class CUP_CHKDZ {
         gear = "AKM_CHKDZ";
         uniform = "CHKDZ";
         name = "Chedaki";
