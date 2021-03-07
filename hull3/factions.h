@@ -624,7 +624,7 @@ class Faction {
     };
 
     class MNP_ROK {
-        gear = "M16A4_ROK";
+        gear = "HK416_ROK";
         uniform = "ROK_WD";
         name = "Republic of Korea";
         description = "Digital Woodland uniforms with M16A4's";

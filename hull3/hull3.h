@@ -202,7 +202,6 @@ class Hull3 {
         #include "assign\gear\MP5_GEND.h"
         #include "assign\gear\M16A2_US.h"
         #include "assign\gear\C7_CAN.h"
-        #include "assign\gear\M16A4_ROK.h"
         #include "assign\gear\M16A4_USMC.h"
         #include "assign\gear\M4A1_US.h"
         #include "assign\gear\M4A1_USMC.h"
