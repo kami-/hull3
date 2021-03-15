@@ -426,8 +426,7 @@ class AK74_RU {
         };
         items[] = {{"ItemGPS", 1}};
         medicalItems[] = {
-            {"ACE_fieldDressing", 50},
-            {"ACE_splint", 12}
+            {"ACE_fieldDressing", 50}
         };
     };
 
@@ -456,8 +455,7 @@ class AK74_RU {
             {"ItemGPS", 1}
         };
         medicalItems[] = {
-            {"ACE_fieldDressing", 50},
-            {"ACE_splint", 12}
+            {"ACE_fieldDressing", 50}
         };
     };
 
@@ -482,8 +480,7 @@ class AK74_RU {
             {"ItemGPS", 1}
         };
         medicalItems[] = {
-            {"ACE_fieldDressing", 50},
-            {"ACE_splint", 12}
+            {"ACE_fieldDressing", 50}
         };
     };
 

@@ -437,8 +437,7 @@ class AKM_CHKDZ {
         };
         items[] = {{"ItemGPS", 1}};
         medicalItems[] = {
-            {"ACE_fieldDressing", 50},
-            {"ACE_splint", 12}
+            {"ACE_fieldDressing", 50}
         };
     };
 
@@ -468,8 +467,7 @@ class AKM_CHKDZ {
             {"ItemGPS", 1}
         };
         medicalItems[] = {
-            {"ACE_fieldDressing", 50},
-            {"ACE_splint", 12}
+            {"ACE_fieldDressing", 50}
         };
     };
 
@@ -493,8 +491,7 @@ class AKM_CHKDZ {
             {"ItemGPS", 1}
         };
         medicalItems[] = {
-            {"ACE_fieldDressing", 50},
-            {"ACE_splint", 12}
+            {"ACE_fieldDressing", 50}
         };
     };
 

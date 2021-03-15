@@ -409,8 +409,7 @@ class L85_BAF_RIS {
         };
         items[] = {{"ItemGPS", 1}};
         medicalItems[] = {
-            {"ACE_fieldDressing", 50},
-            {"ACE_splint", 12}
+            {"ACE_fieldDressing", 50}
         };
     };
 
@@ -440,8 +439,7 @@ class L85_BAF_RIS {
             {"ItemGPS", 1}
         };
         medicalItems[] = {
-            {"ACE_fieldDressing", 50},
-            {"ACE_splint", 12}
+            {"ACE_fieldDressing", 50}
         };
     };
 
@@ -465,8 +463,7 @@ class L85_BAF_RIS {
             {"ItemGPS", 1}
         };
         medicalItems[] = {
-            {"ACE_fieldDressing", 50},
-            {"ACE_splint", 12}
+            {"ACE_fieldDressing", 50}
         };
     };
 

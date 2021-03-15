@@ -525,8 +525,7 @@ class HK416_KSK {
         };
         items[] = {{"ItemGPS", 1}};
         medicalItems[] = {
-            {"ACE_fieldDressing", 50},
-            {"ACE_splint", 12}
+            {"ACE_fieldDressing", 50}
         };
     };
 
@@ -557,8 +556,7 @@ class HK416_KSK {
             {"ItemGPS", 1}
         };
         medicalItems[] = {
-            {"ACE_fieldDressing", 50},
-            {"ACE_splint", 12}
+            {"ACE_fieldDressing", 50}
         };
     };
 
@@ -585,8 +583,7 @@ class HK416_KSK {
             {"ItemGPS", 1}
         };
         medicalItems[] = {
-            {"ACE_fieldDressing", 50},
-            {"ACE_splint", 12}
+            {"ACE_fieldDressing", 50}
         };
     };
 
