@@ -520,10 +520,10 @@ class Faction {
     };
 
     class MNP_CA_WD {
-        gear = "M16A4_CAN";
+        gear = "C7_CAN";
         uniform = "CAN_WD";
         name = "Canadian Army Woodland";
-        description = "Woodland CADPAT uniforms with M16A4's";
+        description = "Woodland CADPAT uniforms with C7";
         languages[] = {{"west", 100}};
         side = "west";
         camouflage[] = {"woodland"};
@@ -546,10 +546,10 @@ class Faction {
     };
 
     class MNP_CA_DE {
-        gear = "M16A4_CAN";
+        gear = "C7_CAN";
         uniform = "CAN_DE";
         name = "Canadian Army Desert";
-        description = "Desert CADPAT uniforms with M16A4's";
+        description = "Desert CADPAT uniforms with C7";
         languages[] = {{"west", 100}};
         side = "west";
         camouflage[] = {"desert"};
@@ -624,7 +624,7 @@ class Faction {
     };
 
     class MNP_ROK {
-        gear = "M16A4_ROK";
+        gear = "HK416_ROK";
         uniform = "ROK_WD";
         name = "Republic of Korea";
         description = "Digital Woodland uniforms with M16A4's";

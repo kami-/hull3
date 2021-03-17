@@ -1,7 +1,7 @@
-class M16A4_CAN {
+class C7_CAN {
     class Rifleman {
-        primaryWeapon = "CUP_arifle_M16A4_Base";
-        primaryWeaponItems[] = {"CUP_optic_CompM2_low", "CUP_acc_Flashlight"};
+        primaryWeapon = "gm_c7a1_oli";
+        primaryWeaponItems[] = {"gm_c79a1_oli"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -51,14 +51,9 @@ class M16A4_CAN {
     };
 
     class Leader : Rifleman {
-        primaryWeapon = "CUP_arifle_M16A4_GL";
-        primaryWeaponItems[] = {"CUP_optic_Eotech553_Black", "CUP_acc_Flashlight"};
         handgunWeapon = "CUP_hgun_Browning_HP";
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
-            {"CUP_1Rnd_HE_M203", 4},
-            {"CUP_1Rnd_Smoke_M203", 2},
-            {"CUP_1Rnd_SmokeRed_M203", 2},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2},
             {"CUP_13Rnd_9x19_Browning_HP", 3}
         };
@@ -66,10 +61,7 @@ class M16A4_CAN {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
             {"30Rnd_556x45_Stanag", 4},
-            {"30Rnd_556x45_Stanag_Tracer_Red", 2},
-            {"CUP_1Rnd_Smoke_M203", 2},
-            {"CUP_1Rnd_SmokeRed_M203", 2},
-            {"CUP_FlareWhite_M203", 2}
+            {"30Rnd_556x45_Stanag_Tracer_Red", 2}
         };
         assignItems[] = {"ItemGPS"};
         binocular = "Binocular";
@@ -82,8 +74,6 @@ class M16A4_CAN {
     };
 
     class Crew : Rifleman {
-        primaryWeapon = "CUP_arifle_M4A1";
-        primaryWeaponItems[] = {"CUP_optic_CompM2_low", "CUP_acc_Flashlight"};
         uniformMagazines[] = {
             {"ACE_Chemlight_HiRed", 2},
             {"SmokeShell", 1}
@@ -98,10 +88,6 @@ class M16A4_CAN {
     };
 
     class XO : CO {
-        backpackMagazines[] = {
-            {"CUP_1Rnd_Smoke_M203", 8},
-            {"CUP_1Rnd_SmokeRed_M203", 8}
-        };
         backpackRadios[] = {"ACRE_PRC117F"};
     };
 
@@ -109,8 +95,6 @@ class M16A4_CAN {
     };
 
     class Medic : Rifleman {
-        primaryWeapon = "CUP_arifle_M4A1";
-        primaryWeaponItems[] = {"CUP_optic_CompM4", "CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2},
@@ -139,24 +123,19 @@ class M16A4_CAN {
         primaryWeapon = "CUP_lmg_minimipara";
         primaryWeaponItems[] = {};
         vestMagazines[] = {{"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 1}};
-        backpackMagazines[] = {
-            {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 2},
-            {"CUP_200Rnd_TE1_Red_Tracer_556x45_M249", 2}
-        };
+        backpackMagazines[] = {{"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 4}};
     };
 
     class AAR : Rifleman {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 2},
-            {"CUP_200Rnd_TE1_Red_Tracer_556x45_M249", 2}
+            {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 4}
         };
         binocular = "Binocular";
     };
 
     class RAT : Rifleman {
-        primaryWeapon = "CUP_arifle_M4A1";
         secondaryWeapon = "CUP_launch_M72A6";
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
@@ -193,7 +172,6 @@ class M16A4_CAN {
     };
 
     class HMGG : Rifleman {
-        primaryWeapon = "CUP_arifle_M4A1";
         backpack = "CUP_B_M2_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -254,7 +232,6 @@ class M16A4_CAN {
     };
 
     class DHATG : Rifleman {
-        primaryWeapon = "CUP_arifle_M4A1";
         backpack = "CUP_B_Tow_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -275,14 +252,12 @@ class M16A4_CAN {
     };
 
     class SAMG : Rifleman {
-        primaryWeapon = "CUP_arifle_M4A1";
         secondaryWeapon = "CUP_launch_FIM92Stinger";
         secondaryWeaponItems[] = {"CUP_Stinger_M"};
         backpackMagazines[] = {{"CUP_Stinger_M", 1}};
     };
 
     class SAMAG : Rifleman {
-        primaryWeapon = "CUP_arifle_M4A1";
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"CUP_Stinger_M", 1}
@@ -303,7 +278,6 @@ class M16A4_CAN {
     };
 
     class GMGG : Rifleman {
-        primaryWeapon = "CUP_arifle_M4A1";
         backpack = "CUP_B_Mk19_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -324,7 +298,6 @@ class M16A4_CAN {
     };
 
     class MTRG : Rifleman {
-        primaryWeapon = "CUP_arifle_M4A1";
         backpack = "CUP_B_M252_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -345,8 +318,6 @@ class M16A4_CAN {
     };
 
     class ENG : Rifleman {
-        primaryWeapon = "CUP_arifle_M4A1";
-        primaryWeaponItems[] = {"CUP_optic_CompM2_low", "CUP_acc_Flashlight"};
         vestMagazines[] = {
             {"30Rnd_556x45_Stanag", 6},
             {"30Rnd_556x45_Stanag_Tracer_Red", 2}
@@ -405,9 +376,7 @@ class M16A4_CAN {
     };
 
     class Vehicle {
-        weapons[] = {
-            {"CUP_launch_M72A6", 4}
-        };
+        weapons[] = {{"CUP_launch_M72A6", 4}};
         magazines[] = {
             {"30Rnd_556x45_Stanag", 20},
             {"30Rnd_556x45_Stanag_Tracer_Red", 10},
@@ -429,9 +398,7 @@ class M16A4_CAN {
     };
 
     class Truck : Vehicle {
-        weapons[] = {
-            {"CUP_launch_M72A6", 10}
-        };
+        weapons[] = {{"CUP_launch_M72A6", 10}};
         magazines[] = {
             {"30Rnd_556x45_Stanag", 40},
             {"30Rnd_556x45_Stanag_Tracer_Red", 20},

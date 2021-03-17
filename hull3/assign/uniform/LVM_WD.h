@@ -3,24 +3,25 @@ class LVM_WD {
         headGear = "H_Bandanna_khk";
         goggles = "";
         uniform = "MNP_CombatUniform_Militia_E";
-        vest = "MNP_Vest_OD_B_ARM";
+        vest = "CUP_V_O_SLA_M23_1_OD_ARM";
         backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
         uniform = "MNP_CombatUniform_Militia_B";
-        vest = "MNP_Vest_OD_A_ARM";
+        vest = "CUP_V_OI_TKI_Jacket6_01_ARM";
         headGear = "H_Cap_oli_hs";
     };
 
     class Officer : Leader {
         headGear = "H_Cap_headphones";
         uniform = "MNP_CombatUniform_Militia_A";
+        vest = "CUP_V_OI_TKI_Jacket3_01_ARM";
     };
 
     class Crew : Rifleman {
         headGear = "CUP_H_SLA_TankerHelmet";
-        vest = "MNP_Vest_OD_B_ARM";
+        vest = "CUP_V_O_SLA_M23_1_OD_ARM";
         backpack = "ark_backpack_small";
     };
 
@@ -140,7 +141,6 @@ class LVM_WD {
         headGear = "H_Bandanna_khk_hs";
         goggles = "G_Bandanna_oli";
         uniform = "MNP_CombatUniform_Militia_B";
-        vest = "MNP_Vest_OD_B_ARM";
         backpack = "ark_backpack_small";
     };
 
