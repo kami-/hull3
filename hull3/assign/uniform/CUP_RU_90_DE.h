@@ -1,15 +1,15 @@
-class CUP_RU_RATNIK_WD {
+class CUP_RU_90_DE {
     class Rifleman {
-        headGear = "CUP_H_RUS_6B47_v2_Summer";
-        goggles = "CUP_RUS_Balaclava_Ratnik";
-        uniform = "CUP_U_O_RUS_Ratnik_Summer";
-        vest = "CUP_Vest_RUS_6B45_Sh117_ARM";
+        headGear = "CUP_H_RUS_SSH68_olive";
+        goggles = "";
+        uniform = "CUP_U_O_RUS_M88_VDV";
+        vest = "CUP_V_RUS_Smersh_1_ARM";
         backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
-        goggles = "";
-        vest = "CUP_Vest_RUS_6B45_Sh117_VOG_ARM";
+        uniform = "CUP_U_O_RUS_M88_VDV_rolled_up";
+        vest = "CUP_V_RUS_Smersh_2_ARM";
     };
 
     class Officer : Leader {
@@ -17,9 +17,7 @@ class CUP_RU_RATNIK_WD {
     };
 
     class Crew : Rifleman {
-        headGear = "H_Tank_eaf_F";
-        goggles = "";
-        vest = "CUP_V_O_TK_CrewBelt_ARM";
+        headGear = "CUP_H_RUS_TSH_4_Brown";
         backpack = "ark_backpack_small";
     };
 
@@ -34,18 +32,13 @@ class CUP_RU_RATNIK_WD {
     };
 
     class Medic : Rifleman {
-        goggles = "CUP_RUS_Balaclava_Ratnik_v2";
         backpack = "ark_backpack_large";
     };
 
     class FTL : Leader {
-        headGear = "CUP_H_RUS_6B47_v2_GogglesClosed_Summer";
-        goggles = "CUP_RUS_Balaclava_Ratnik_v2";
     };
 
     class AR : Rifleman {
-        headGear = "CUP_H_RUS_6B47_v2_GogglesUp_Summer";
-        vest = "CUP_Vest_RUS_6B45_Sh117_PKP_ARM";
     };
 
     class AAR : Rifleman {
@@ -53,7 +46,6 @@ class CUP_RU_RATNIK_WD {
     };
 
     class RAT : Rifleman {
-        headGear = "CUP_H_RUS_6B47_v2_GogglesDown_Summer";
     };
 
     class MMGG : AR {
@@ -129,16 +121,15 @@ class CUP_RU_RATNIK_WD {
     };
 
     class ENG : Rifleman {
-        headGear = "CUP_H_RUS_6B47_v2_GogglesUp_Summer";
+        vest = "CUP_V_RUS_Smersh_2_ARM";
         backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
+        vest = "CUP_V_RUS_Smersh_1_ARM";
     };
 
     class SN : Rifleman {
-        headGear = "CUP_H_RUS_6B47_v2_GogglesClosed_Summer";
-        goggles = "CUP_RUS_Balaclava_grn";
         backpack = "ark_backpack_small";
     };
 
@@ -156,7 +147,6 @@ class CUP_RU_RATNIK_WD {
 
     class P : Crew {
         headGear = "CUP_H_RUS_ZSH_Shield_Up";
-        vest = "CUP_V_O_TK_CrewBelt_ARM";
         backpack = "B_Parachute";
     };
 
