@@ -23,29 +23,27 @@ hull3_unit_fnc_init = {
     };
 };
 
-hull3_unit_fnc_waitForPlayer = {
-    waitUntil {
-        !isNull player;
-    };
-    ["player.initialized", [player]] call hull3_event_fnc_emitEvent;
-    DEBUG("hull3.unit.player","Player is initialized.");
-};
-
 hull3_unit_fnc_onPlayerRespawn = {
     DEBUG("hull3.player.respawned",FMT_1("Player has respawned with '%1'",_this));
     ["player.respawned", _this] call hull3_event_fnc_emitEvent;
 };
 
 hull3_unit_fnc_playerInit = {
-    call hull3_unit_fnc_waitForPlayer;
+    [
+        {getClientStateNumber >= 9},
+        {
+            ["player.initialized", [player]] call hull3_event_fnc_emitEvent;
+            DEBUG("hull3.unit.player","Player is initialized.");
 
-    call hull3_marker_fnc_addMarkers;
-    call hull3_marker_fnc_updateAllMarkers;
-    call hull3_marker_fnc_updateCustomMarkers;
-    call hull3_mission_fnc_addPlayerEHs;
-    [] spawn hull3_mission_fnc_clientSafetyTimerLoop;
-    call hull3_unit_fnc_setFireTeamColors;
-    player call hull3_uniform_fnc_assignGogglesOnJip;
+            call hull3_marker_fnc_addMarkers;
+            call hull3_marker_fnc_updateAllMarkers;
+            call hull3_marker_fnc_updateCustomMarkers;
+            call hull3_unit_fnc_setFireTeamColors;
+            call hull3_mission_fnc_addPlayerEHs;
+            call hull3_mission_fnc_clientSafetyTimerLoop;
+            player call hull3_uniform_fnc_assignGogglesOnJip;
+        }
+    ] call CBA_fnc_waitUntilAndExecute;
 };
 
 hull3_unit_fnc_foreachNonPlayerUnits = {
