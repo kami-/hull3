@@ -29,18 +29,16 @@ hull3_unit_fnc_onPlayerRespawn = {
 };
 
 hull3_unit_fnc_playerInit = {
-
-    call hull3_marker_fnc_addMarkers;
-    call hull3_marker_fnc_updateAllMarkers;
-    call hull3_marker_fnc_updateCustomMarkers;
-    call hull3_unit_fnc_setFireTeamColors;
-
     [
-        {getClientStateNumber >= 10},
+        {getClientStateNumber >= 9},
         {
             ["player.initialized", [player]] call hull3_event_fnc_emitEvent;
             DEBUG("hull3.unit.player","Player is initialized.");
 
+            call hull3_marker_fnc_addMarkers;
+            call hull3_marker_fnc_updateAllMarkers;
+            call hull3_marker_fnc_updateCustomMarkers;
+            call hull3_unit_fnc_setFireTeamColors;
             call hull3_mission_fnc_addPlayerEHs;
             call hull3_mission_fnc_clientSafetyTimerLoop;
             player call hull3_uniform_fnc_assignGogglesOnJip;
