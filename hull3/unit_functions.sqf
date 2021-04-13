@@ -50,6 +50,7 @@ hull3_unit_fnc_foreachNonPlayerUnits = {
     {
         if (!isPlayer _x) then {
             doStop _x;
+            _x disableAI "RADIOPROTOCOL";
         };
     } foreach (playableUnits + switchableUnits);
 };

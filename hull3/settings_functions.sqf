@@ -34,8 +34,10 @@ hull3_settings_fnc_setNonStandardGeneralSettings = {
 };
 
 hull3_settings_fnc_setPlayerSettings = {
-    player setVariable ["BIS_noCoreConversations", ["General", "BIS_noCoreConversations"] call hull3_config_fnc_getBool];
-    DEBUG("hull3.settings",FMT_1("Player variable 'BIS_noCoreConversations' is set to '%1'.",AS_ARRAY_2("General", "BIS_noCoreConversations") call hull3_config_fnc_getBool));
+    if (!(["General", "radioProtocol"] call hull3_config_fnc_getBool)) then {
+        player disableAI "RADIOPROTOCOL";
+        DEBUG("hull3.settings","RADIOPROTOCOL is disabled");
+    };
 };
 
 hull3_settings_fnc_setModuleVariables = {

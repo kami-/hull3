@@ -369,7 +369,7 @@ class Hull3 {
     };
 
     class General {
-        BIS_noCoreConversations = 1;                    // Disables BIS unit conversations
+        radioProtocol = 0;                              // Use disableAI to stop units talking
         enableSaving = 0;                               // Enables game saving
         disableRemoteSensors = 1;                       // Disables RemoteSensors
         enableEnvironment = 0;                          // Disables ambient animals but keeps sounds
