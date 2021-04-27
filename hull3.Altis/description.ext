@@ -1,5 +1,6 @@
 #include "hull3\hull3.h"
 
+allowProfileGlasses = 0;
 enableDebugConsole = 1;
 disableChannels[]={{2,true,true},{4,true,true},{6,true,true}};
 
