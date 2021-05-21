@@ -1,6 +1,6 @@
 class RK62_FIN {
     class Rifleman {
-        primaryWeapon = "hlc_rifle_RK62";
+        primaryWeapon = "tob_rifle_RK62";
         primaryWeaponItems[] = {};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
@@ -51,7 +51,7 @@ class RK62_FIN {
     };
 
     class Leader : Rifleman {
-        primaryWeapon = "hlc_rifle_RK62";
+        primaryWeapon = "tob_rifle_RK62";
         handgunWeapon = "CUP_hgun_Glock17_blk";
         primaryWeaponItems[] = {};
         vestMagazines[] = {
@@ -76,7 +76,7 @@ class RK62_FIN {
     };
 
     class Crew : Rifleman {
-        primaryWeapon = "hlc_rifle_RK62";
+        primaryWeapon = "tob_rifle_RK62";
         primaryWeaponItems[] = {};
         uniformMagazines[] = {
             {"ACE_Chemlight_HiRed", 2},
@@ -103,7 +103,7 @@ class RK62_FIN {
     };
 
     class Medic : Rifleman {
-        primaryWeapon = "hlc_rifle_RK62";
+        primaryWeapon = "tob_rifle_RK62";
         primaryWeaponItems[] = {};
         vestMagazines[] = {
             {"30Rnd_762x39_Mag_F", 6},
@@ -150,7 +150,7 @@ class RK62_FIN {
     };
 
     class RAT : Rifleman {
-        primaryWeapon = "hlc_rifle_RK62";
+        primaryWeapon = "tob_rifle_RK62";
         primaryWeaponItems[] = {};
         secondaryWeapon = "CUP_launch_NLAW";
         vestMagazines[] = {
@@ -192,7 +192,7 @@ class RK62_FIN {
     };
 
     class HMGG : Rifleman {
-        primaryWeapon = "hlc_rifle_RK62";
+        primaryWeapon = "tob_rifle_RK62";
         backpack = "CUP_B_Kord_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -260,7 +260,7 @@ class RK62_FIN {
     };
 
     class DHATG : Rifleman {
-        primaryWeapon = "hlc_rifle_RK62";
+        primaryWeapon = "tob_rifle_RK62";
         backpack = "CUP_B_Tow_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -306,7 +306,7 @@ class RK62_FIN {
     };
 
     class GMGG : Rifleman {
-        primaryWeapon = "hlc_rifle_RK62";
+        primaryWeapon = "tob_rifle_RK62";
         backpack = "CUP_B_Mk19_Gun_Bag";
         backpackMagazines[] = {};
         backpackMedicalItems[] = {};
@@ -347,7 +347,7 @@ class RK62_FIN {
     };
 
     class ENG : Rifleman {
-        primaryWeapon = "hlc_rifle_RK62";
+        primaryWeapon = "tob_rifle_RK62";
         primaryWeaponItems[] = {};
         vestMagazines[] = {
             {"30Rnd_762x39_Mag_F", 6},
