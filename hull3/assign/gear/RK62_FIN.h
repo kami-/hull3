@@ -15,14 +15,14 @@ class RK62_FIN {
             {"SmokeShell", 1}
         };
         vestMagazines[] = {
-            {"30Rnd_762x39_Mag_F", 6},
-            {"30Rnd_762x39_Mag_Tracer_F", 2}
+            {"CUP_30Rnd_762x39_AK47_M", 6},
+            {"CUP_30Rnd_TE1_Yellow_Tracer_762x39_AK47_M", 2}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"30Rnd_762x39_Mag_F", 4},
-            {"30Rnd_762x39_Mag_Tracer_F", 2}
+            {"CUP_30Rnd_762x39_AK47_M", 4},
+            {"CUP_30Rnd_TE1_Yellow_Tracer_762x39_AK47_M", 2}
         };
         basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch"};
         assignItems[] = {};
@@ -55,15 +55,15 @@ class RK62_FIN {
         handgunWeapon = "CUP_hgun_Glock17_blk";
         primaryWeaponItems[] = {};
         vestMagazines[] = {
-            {"30Rnd_762x39_Mag_F", 4},
-            {"30Rnd_762x39_Mag_Tracer_F", 2},
+            {"CUP_30Rnd_762x39_AK47_M", 4},
+            {"CUP_30Rnd_TE1_Yellow_Tracer_762x39_AK47_M", 2},
             {"CUP_17Rnd_9x19_glock17", 3}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"30Rnd_762x39_Mag_F", 6},
-            {"30Rnd_762x39_Mag_Tracer_F", 2}
+            {"CUP_30Rnd_762x39_AK47_M", 6},
+            {"CUP_30Rnd_TE1_Yellow_Tracer_762x39_AK47_M", 2}
         };
         assignItems[] = {"ItemGPS"};
         binocular = "Binocular";
@@ -83,7 +83,7 @@ class RK62_FIN {
             {"SmokeShell", 1}
         };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
-        vestMagazines[] = {{"30Rnd_762x39_Mag_F", 4}};
+        vestMagazines[] = {{"CUP_30Rnd_762x39_AK47_M", 4}};
         backpackMagazines[] = {};
         assignItems[] = {"ItemGPS", "ACE_NVG_Wide"};
     };
@@ -106,13 +106,13 @@ class RK62_FIN {
         primaryWeapon = "tob_rifle_RK62";
         primaryWeaponItems[] = {};
         vestMagazines[] = {
-            {"30Rnd_762x39_Mag_F", 6},
-            {"30Rnd_762x39_Mag_Tracer_F", 2},
+            {"CUP_30Rnd_762x39_AK47_M", 6},
+            {"CUP_30Rnd_TE1_Yellow_Tracer_762x39_AK47_M", 2},
             {"SmokeShell", 4}
         };
         backpackMagazines[] = {
             {"SmokeShellBlue", 4},
-            {"30Rnd_762x39_Mag_F", 2}
+            {"CUP_30Rnd_762x39_AK47_M", 2}
         };
         assignItems[] = {"ItemGPS"};
         binocular = "Binocular";
@@ -132,11 +132,11 @@ class RK62_FIN {
     class AR : Rifleman {
         primaryWeapon = "CUP_lmg_PKM";
         primaryWeaponItems[] = {};
-        vestMagazines[] = {{"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 2}};
+        vestMagazines[] = {{"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M", 2}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 3}
+            {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M", 3}
         };
     };
 
@@ -144,7 +144,7 @@ class RK62_FIN {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 4}
+            {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M", 4}
         };
         binocular = "Binocular";
     };
@@ -154,25 +154,25 @@ class RK62_FIN {
         primaryWeaponItems[] = {};
         secondaryWeapon = "CUP_launch_NLAW";
         vestMagazines[] = {
-            {"30Rnd_762x39_Mag_F", 6},
-            {"30Rnd_762x39_Mag_Tracer_F", 2}
+            {"CUP_30Rnd_762x39_AK47_M", 6},
+            {"CUP_30Rnd_TE1_Yellow_Tracer_762x39_AK47_M", 2}
         };
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"30Rnd_762x39_Mag_F", 4},
-            {"30Rnd_762x39_Mag_Tracer_F", 2}
+            {"CUP_30Rnd_762x39_AK47_M", 4},
+            {"CUP_30Rnd_TE1_Yellow_Tracer_762x39_AK47_M", 2}
         };
     };
 
     class MMGG : Rifleman {
         primaryWeapon = "CUP_lmg_PKM";
         primaryWeaponItems[] = {};
-        vestMagazines[] = {{"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 1}};
+        vestMagazines[] = {{"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M", 1}};
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 4}
+            {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M", 4}
         };
     };
 
@@ -180,7 +180,7 @@ class RK62_FIN {
         backpackMagazines[] = {
             {"HandGrenade", 1},
             {"SmokeShell", 1},
-            {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 4}
+            {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M", 4}
         };
         uniformMagazines[] = {
             {"ACE_Chemlight_HiRed", 2},
@@ -350,8 +350,8 @@ class RK62_FIN {
         primaryWeapon = "tob_rifle_RK62";
         primaryWeaponItems[] = {};
         vestMagazines[] = {
-            {"30Rnd_762x39_Mag_F", 6},
-            {"30Rnd_762x39_Mag_Tracer_F", 2}
+            {"CUP_30Rnd_762x39_AK47_M", 6},
+            {"CUP_30Rnd_TE1_Yellow_Tracer_762x39_AK47_M", 2}
         };
         backpackMagazines[] = {
             {"DemoCharge_Remote_Mag", 3},
@@ -389,8 +389,8 @@ class RK62_FIN {
     class SP : Rifleman {
         binocular = "ACE_VectorDay";
         vestMagazines[] = {
-            {"30Rnd_762x39_Mag_F", 4},
-            {"30Rnd_762x39_Mag_Tracer_F", 2}
+            {"CUP_30Rnd_762x39_AK47_M", 4},
+            {"CUP_30Rnd_TE1_Yellow_Tracer_762x39_AK47_M", 2}
         };
     };
 
@@ -415,9 +415,9 @@ class RK62_FIN {
             {"CUP_launch_NLAW", 4}
         };
         magazines[] = {
-            {"30Rnd_762x39_Mag_F", 20},
-            {"30Rnd_762x39_Mag_Tracer_F", 10},
-            {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 20},
+            {"CUP_30Rnd_762x39_AK47_M", 20},
+            {"CUP_30Rnd_TE1_Yellow_Tracer_762x39_AK47_M", 10},
+            {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M", 20},
             {"ACE_HandFlare_White", 5},
             {"HandGrenade", 5},
             {"SmokeShell", 5}
@@ -437,10 +437,10 @@ class RK62_FIN {
             {"CUP_launch_NLAW", 10}
         };
         magazines[] = {
-            {"30Rnd_762x39_Mag_F", 40},
-            {"30Rnd_762x39_Mag_Tracer_F", 20},
-            {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 40},
-            {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
+            {"CUP_30Rnd_762x39_AK47_M", 40},
+            {"CUP_30Rnd_TE1_Yellow_Tracer_762x39_AK47_M", 20},
+            {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M", 40},
+            {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M", 10},
             {"MRAWS_HEAT_F", 5},
             {"CUP_Javelin_M", 5},
             {"SatchelCharge_Remote_Mag", 5},
@@ -461,10 +461,10 @@ class RK62_FIN {
     class Armored : Truck {
         weapons[] = {{"CUP_launch_NLAW", 10}};
         magazines[] = {
-            {"30Rnd_762x39_Mag_F", 40},
-            {"30Rnd_762x39_Mag_Tracer_F", 20},
-            {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 40},
-            {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", 10},
+            {"CUP_30Rnd_762x39_AK47_M", 40},
+            {"CUP_30Rnd_TE1_Yellow_Tracer_762x39_AK47_M", 20},
+            {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M", 40},
+            {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M", 10},
             {"SatchelCharge_Remote_Mag", 5},
             {"MRAWS_HEAT_F", 5},
             {"ACE_HandFlare_White", 10},
