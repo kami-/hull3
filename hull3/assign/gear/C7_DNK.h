@@ -89,10 +89,6 @@ class C7_DNK {
     };
 
     class XO : CO {
-        backpackMagazines[] = {
-            {"CUP_1Rnd_Smoke_M203", 8},
-            {"CUP_1Rnd_SmokeRed_M203", 8}
-        };
         backpackRadios[] = {"ACRE_PRC117F"};
     };
 
