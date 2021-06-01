@@ -28,7 +28,6 @@ if (hull3_isEnabled) then {
     ["hull3.initialized", []] call hull3_event_fnc_emitEvent;
     INFO("hull3",FMT_1("Hull version '%1' has been successfully initialized.",HULL3_VERSION));
 
-    [] call hull3_settings_fnc_preInit;
     [] call hull3_mission_fnc_preInit;
     [] call hull3_marker_fnc_preInit;
     [] call hull3_gear_fnc_preInit;
