@@ -3,7 +3,7 @@ class DPR_AUT {
         headGear = "CUP_H_RUS_SSH68_olive";
         goggles = "G_Bandanna_oli";
         uniform = "MNP_CombatUniform_DPR_A";
-        vest = "CUP_V_RUS_Smersh_1_ARM";
+        vest = "CUP_V_RUS_Smersh_New_Buttpack_ARM";
         backpack = "ark_backpack_med";
     };
 
@@ -12,7 +12,7 @@ class DPR_AUT {
     };
 
     class Officer : Leader {
-        vest = "CUP_V_RUS_Smersh_2_ARM";
+        vest = "CUP_V_RUS_Smersh_New_Full_ARM";
         headGear = "CUP_H_SLA_BeanieGreen";
         goggles = "G_Aviator";
     };
@@ -20,7 +20,7 @@ class DPR_AUT {
     class Crew : Rifleman {
         headGear = "CUP_H_SLA_TankerHelmet";
         uniform = "MNP_CombatUniform_DPR_B";
-        vest = "CUP_V_O_TK_CrewBelt_ARM";
+        vest = "CUP_V_RUS_Smersh_New_Light_ARM";
         backpack = "ark_backpack_small";
     };
 
@@ -55,7 +55,6 @@ class DPR_AUT {
     };
 
     class MMGG : AR {
-        vest = "CUP_V_O_Ins_Carrier_Rig_MG_ARM";
         backpack = "ark_backpack_large";
     };
 
