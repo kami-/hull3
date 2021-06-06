@@ -369,8 +369,9 @@ class Hull3 {
     };
 
     class General {
-        BIS_noCoreConversations = 1;                    // Disables BIS unit conversations
+        enableRadio = 0;                                // Enables AI radio callouts being seen
         enableSaving = 0;                               // Enables game saving
+        enableSentences = 0;                            // Enables AI radio callouts being heard
         disableRemoteSensors = 1;                       // Disables RemoteSensors
         enableEnvironment = 0;                          // Disables ambient animals but keeps sounds
     };

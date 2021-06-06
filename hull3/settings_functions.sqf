@@ -4,24 +4,24 @@
 #include "logbook.h"
 
 
-hull3_settings_fnc_preInit = {
-    [] call hull3_settings_fnc_addEventHandlers;
-    DEBUG("hull3.settings","Settings functions preInit finished.");
-};
-
 hull3_settings_fnc_init = {
     [] call hull3_settings_fnc_setNonStandardGeneralSettings;
     [] call hull3_settings_fnc_setModuleVariables;
 };
 
-hull3_settings_fnc_addEventHandlers = {
-    ["player.initialized", hull3_settings_fnc_setPlayerSettings] call hull3_event_fnc_addEventHandler;
-};
-
 hull3_settings_fnc_setNonStandardGeneralSettings = {
+    if (!(["General", "enableRadio"] call hull3_config_fnc_getBool)) then {
+        enableRadio false;
+        0 fadeRadio 0;
+        DEBUG("hull3.settings","enableRadio is disabled.");
+    };
     if (!(["General", "enableSaving"] call hull3_config_fnc_getBool)) then {
         enableSaving [false, false];
         DEBUG("hull3.settings","Saving is disabled.");
+    };
+    if (!(["General", "enableSentences"] call hull3_config_fnc_getBool)) then {
+        enableSentences false;
+        DEBUG("hull3.settings","enableSentences is disabled.");
     };
     if (["General", "disableRemoteSensors"] call hull3_config_fnc_getBool) then {
         disableRemoteSensors true;
@@ -31,11 +31,6 @@ hull3_settings_fnc_setNonStandardGeneralSettings = {
         [{time > 0}, {enableEnvironment [false, true];}] call CBA_fnc_waitUntilAndExecute;
         DEBUG("hull3.settings","Ambient animals are disabled.");
     };
-};
-
-hull3_settings_fnc_setPlayerSettings = {
-    player setVariable ["BIS_noCoreConversations", ["General", "BIS_noCoreConversations"] call hull3_config_fnc_getBool];
-    DEBUG("hull3.settings",FMT_1("Player variable 'BIS_noCoreConversations' is set to '%1'.",AS_ARRAY_2("General", "BIS_noCoreConversations") call hull3_config_fnc_getBool));
 };
 
 hull3_settings_fnc_setModuleVariables = {
