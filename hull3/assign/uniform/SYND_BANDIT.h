@@ -3,7 +3,7 @@ class SYND_BANDIT {
         headGear = "H_Cap_red";
         goggles = "G_Bandanna_beast";
         uniform = "U_I_C_Soldier_Bandit_5_F";
-        vest = "CUP_V_O_Ins_Carrier_Rig_Light_ARM";
+        vest = "CUP_V_RUS_Smersh_New_Buttpack_ARM";
         backpack = "ark_backpack_med";
     };
 
@@ -18,14 +18,14 @@ class SYND_BANDIT {
         headGear = "MNP_MC_Rev";
         goggles = "G_Aviator";
         uniform = "U_I_C_Soldier_Bandit_3_F";
-        vest = "CUP_V_RUS_Smersh_2_ARM";
+        vest = "CUP_V_RUS_Smersh_New_Full_ARM";
     };
 
     class Crew : Rifleman {
         headGear = "CUP_H_RUS_TSH_4_Brown";
         goggles = "";
         uniform = "U_I_C_Soldier_Bandit_4_F";
-        vest = "CUP_V_O_TK_CrewBelt_ARM";
+        vest = "CUP_V_RUS_Smersh_New_Light_ARM";
         backpack = "ark_backpack_small";
     };
 
@@ -150,7 +150,7 @@ class SYND_BANDIT {
         headGear = "";
         goggles = "G_Balaclava_oli";
         uniform = "U_I_C_Soldier_Bandit_2_F";
-        vest = "CUP_V_RUS_Smersh_1_ARM";
+        vest = "CUP_V_RUS_Smersh_New_Radio_ARM";
         backpack = "ark_backpack_small";
     };
 

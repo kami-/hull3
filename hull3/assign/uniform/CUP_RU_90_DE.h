@@ -3,13 +3,13 @@ class CUP_RU_90_DE {
         headGear = "CUP_H_RUS_SSH68_olive";
         goggles = "";
         uniform = "CUP_U_O_RUS_M88_VDV";
-        vest = "CUP_V_RUS_Smersh_1_ARM";
+        vest = "CUP_V_RUS_Smersh_New_Buttpack_ARM";
         backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
         uniform = "CUP_U_O_RUS_M88_VDV_rolled_up";
-        vest = "CUP_V_RUS_Smersh_2_ARM";
+        vest = "CUP_V_RUS_Smersh_New_Full_ARM";
     };
 
     class Officer : Leader {
@@ -121,12 +121,12 @@ class CUP_RU_90_DE {
     };
 
     class ENG : Rifleman {
-        vest = "CUP_V_RUS_Smersh_2_ARM";
+        vest = "CUP_V_RUS_Smersh_New_Full_ARM";
         backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
-        vest = "CUP_V_RUS_Smersh_1_ARM";
+        vest = "CUP_V_RUS_Smersh_New_Buttpack_ARM";
     };
 
     class SN : Rifleman {

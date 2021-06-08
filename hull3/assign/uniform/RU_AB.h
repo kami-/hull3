@@ -3,13 +3,13 @@ class RU_AB {
         headGear = "CUP_H_RUS_SSH68_olive";
         goggles = "";
         uniform = "MNP_CombatUniform_RO3_Rg";
-        vest = "CUP_V_RUS_Smersh_1_ARM";
+        vest = "CUP_V_RUS_Smersh_New_Buttpack_ARM";
         backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
         uniform = "MNP_CombatUniform_RO3_Sh";
-        vest = "CUP_V_RUS_Smersh_2_ARM";
+        vest = "CUP_V_RUS_Smersh_New_Full_ARM";
     };
 
     class Officer : Leader {
@@ -18,7 +18,7 @@ class RU_AB {
 
     class Crew : Rifleman {
         headGear = "CUP_H_SLA_TankerHelmet";
-        vest = "CUP_V_O_TK_CrewBelt_ARM";
+        vest = "CUP_V_RUS_Smersh_New_Light_ARM";
         backpack = "ark_backpack_small";
     };
 
@@ -50,7 +50,6 @@ class RU_AB {
     };
 
     class MMGG : AR {
-        vest = "CUP_V_O_Ins_Carrier_Rig_MG_ARM";
         backpack = "ark_backpack_large";
     };
 
