@@ -264,7 +264,7 @@ hull3_acre_fnc_adminAssignRadio = {
 
     if (player canAddItemToUniform _radio) then {
         player addItemToUniform _radio;
-        player globalChat format ["Requested radio '%1' has been added to uniform.", _radio];
+        systemChat format ["[Hull3] Requested radio '%1' has been added to uniform.", _radio];
         [[player, name player, _radio], {
             params ["_unit", "_name", "_radio"];
 
@@ -272,6 +272,6 @@ hull3_acre_fnc_adminAssignRadio = {
             diag_log LOGGING_FORMAT("hull3.acre.admin","WARN",_message);
         }] remoteExec ["bis_fnc_call", 2];
     } else {
-        player globalChat format ["Requested radio '%1' cannot be added to uniform. Make sure you have enough space!", _radio];
+        systemChat format ["[Hull3] Requested radio '%1' cannot be added to uniform. Make sure you have enough space!", _radio];
     };
 };
