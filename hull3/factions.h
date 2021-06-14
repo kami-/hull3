@@ -1403,11 +1403,89 @@ class Faction {
         };
     };
 
+    class GM_FRG_90_WD {
+        gear = "G36A_GER";
+        uniform = "GM_FRG_90_WD";
+        name = "West German Bundeswehr";
+        description = "West German Army armed with G36";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland"};
+        rolePrefix = "Heer";
+        vehicleClassnames[] = {
+            {"CO", "gm_ge_army_iltis_cargo"},
+            {"SL", "gm_ge_army_u1300l_cargo"},
+            {"FT", "gm_ge_army_iltis_cargo"},
+            {"ATTCH", "gm_ge_army_iltis_cargo"},
+            {"ENG", "gm_ge_army_fuchsa0_engineer"},
+            {"APC", "gm_ge_army_m113a1g_apc"},
+            {"IFV", "gm_ge_army_marder1a2"},
+            {"SPAAG", "gm_ge_army_gepard1a1"},
+            {"TNK", "gm_ge_army_Leopard1a5"},
+            {"TH", "gm_ge_army_ch53g"},
+            {"AH", "gm_ge_army_bo105p_pah1a1"},
+            {"CAS", "CUP_B_A10_DYN_USA"},
+            {"Technical", "gm_ge_army_iltis_mg3"}
+        };
+    };
+
+    class GM_FRG_90_DE {
+        gear = "G36A_GER";
+        uniform = "GM_FRG_90_SN";
+        name = "West German Bundeswehr (Desert)";
+        description = "West German Army (desert uniforms) armed with G36";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"snow"};
+        rolePrefix = "Heer";
+        vehicleClassnames[] = {
+            {"CO", "gm_ge_army_iltis_cargo_des"},
+            {"SL", "gm_ge_army_u1300l_cargo_des"},
+            {"FT", "gm_ge_army_iltis_cargo_des"},
+            {"ATTCH", "gm_ge_army_iltis_cargo_des"},
+            {"ENG", "gm_ge_army_fuchsa0_engineer_des"},
+            {"APC", "gm_ge_army_m113a1g_apc_des"},
+            {"IFV", "gm_ge_army_marder1a2_des"},
+            {"SPAAG", "gm_ge_army_gepard1a1_des"},
+            {"TNK", "gm_ge_army_Leopard1a5_des"},
+            {"TH", "gm_ge_army_ch53g"},
+            {"AH", "gm_ge_army_bo105p_pah1a1"},
+            {"CAS", "CUP_B_A10_DYN_USA"},
+            {"Technical", "gm_ge_army_iltis_mg3_des"}
+        };
+    };
+
     class GM_FRG_80_SN {
         gear = "G3A3_FRG";
         uniform = "GM_FRG_80_SN";
-        name = "West German Bundeswehr (winter)";
+        name = "West German Bundeswehr (Winter)";
         description = "West German Army (winter uniforms) armed with G3A3";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"snow"};
+        rolePrefix = "Heer";
+        vehicleClassnames[] = {
+            {"CO", "gm_ge_army_iltis_cargo_win"},
+            {"SL", "gm_ge_army_u1300l_cargo_win"},
+            {"FT", "gm_ge_army_iltis_cargo_win"},
+            {"ATTCH", "gm_ge_army_iltis_cargo_win"},
+            {"ENG", "gm_ge_army_fuchsa0_engineer_win"},
+            {"APC", "gm_ge_army_m113a1g_apc_win"},
+            {"IFV", "gm_ge_army_marder1a2_win"},
+            {"SPAAG", "gm_ge_army_gepard1a1_win"},
+            {"TNK", "gm_ge_army_Leopard1a5_win"},
+            {"TH", "gm_ge_army_ch53g"},
+            {"AH", "gm_ge_army_bo105p_pah1a1"},
+            {"CAS", "CUP_B_A10_DYN_USA"},
+            {"Technical", "gm_ge_army_iltis_mg3_win"}
+        };
+    };
+
+    class GM_FRG_90_SN {
+        gear = "G36A_GER";
+        uniform = "GM_FRG_90_SN";
+        name = "West German Bundeswehr (winter)";
+        description = "West German Army (winter uniforms) armed with G36";
         languages[] = {{"west", 100}};
         side = "west";
         camouflage[] = {"snow"};
