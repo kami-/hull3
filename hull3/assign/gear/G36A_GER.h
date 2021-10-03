@@ -90,7 +90,6 @@ class G36A_GER {
     };
 
     class Medic : Rifleman {
-        vestMagazines[] = {};
         backpackMagazines[] = {
             {"gm_smokeshell_grn_dm21", 4},
             {"gm_smokeshell_wht_dm25", 4}
