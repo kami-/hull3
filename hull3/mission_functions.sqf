@@ -246,7 +246,7 @@ hull3_mission_fnc_handleSafetyTimeChange = {
         };
     };
     if (_message != "") then {
-        player globalChat format [_message, _timeValue];
+        systemChat format ["[Hull3] " + _message, _timeValue];
     };
 };
 

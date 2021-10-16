@@ -41,7 +41,6 @@ hull3_unit_fnc_playerInit = {
             call hull3_unit_fnc_setFireTeamColors;
             call hull3_mission_fnc_addPlayerEHs;
             call hull3_mission_fnc_clientSafetyTimerLoop;
-            player call hull3_uniform_fnc_assignGogglesOnJip;
         }
     ] call CBA_fnc_waitUntilAndExecute;
 };

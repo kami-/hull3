@@ -121,7 +121,7 @@ class Faction {
             {"APC", "CUP_B_AAV_USMC"},
             {"IFV", "CUP_B_LAV25M240_USMC"},
             {"SPAAG", "CUP_B_HMMWV_Avenger_USMC"},
-            {"TNK", "CUP_B_M1A1_Woodland_USMC"},
+            {"TNK", "CUP_B_M1A1FEP_Tusk_Woodland_USMC"},
             {"TH", "CUP_B_CH53E_USMC"},
             {"AH", "CUP_B_AH1Z_Dynamic_USMC"},
             {"CAS", "CUP_B_AV8B_DYN_USMC"},
@@ -147,7 +147,7 @@ class Faction {
             {"APC", "CUP_B_AAV_USMC"},
             {"IFV", "CUP_B_LAV25M240_desert_USMC"},
             {"SPAAG", "CUP_B_HMMWV_Avenger_USA"},
-            {"TNK", "CUP_B_M1A1_DES_USMC"},
+            {"TNK", "CUP_B_M1A1FEP_TUSK_Desert_USMC"},
             {"TH", "CUP_B_CH53E_USMC"},
             {"AH", "CUP_B_AH1Z_Dynamic_USMC"},
             {"CAS", "CUP_B_AV8B_DYN_USMC"},
@@ -173,7 +173,7 @@ class Faction {
             {"APC", "CUP_B_AAV_USMC"},
             {"IFV", "CUP_B_LAV25M240_USMC"},
             {"SPAAG", "CUP_B_HMMWV_Avenger_USMC"},
-            {"TNK", "CUP_B_M1A1_USMC"},
+            {"TNK", "CUP_B_M1A1FEP_Tusk_Woodland_USMC"},
             {"TH", "CUP_B_CH53E_USMC"},
             {"AH", "CUP_B_AH1Z_Dynamic_USMC"},
             {"CAS", "CUP_B_AV8B_DYN_USMC"},
@@ -199,7 +199,7 @@ class Faction {
             {"APC", "CUP_B_AAV_USMC"},
             {"IFV", "CUP_B_LAV25M240_desert_USMC"},
             {"SPAAG", "CUP_B_HMMWV_Avenger_USA"},
-            {"TNK", "CUP_B_M1A1_DES_USMC"},
+            {"TNK", "CUP_B_M1A1FEP_TUSK_Desert_USMC"},
             {"TH", "CUP_B_CH53E_USMC"},
             {"AH", "CUP_B_AH1Z_Dynamic_USMC"},
             {"CAS", "CUP_B_AV8B_DYN_USMC"},
@@ -225,7 +225,7 @@ class Faction {
             {"APC", "CUP_B_AAV_USMC"},
             {"IFV", "CUP_B_LAV25M240_USMC"},
             {"SPAAG", "CUP_B_HMMWV_Avenger_NATO_T"},
-            {"TNK", "CUP_B_M1A1_NATO_T"},
+            {"TNK", "CUP_B_M1A1FEP_Tusk_Woodland_USMC"},
             {"TH", "CUP_B_CH47F_USA"},
             {"AH", "CUP_B_AH1Z_Dynamic_USMC"},
             {"CAS", "CUP_B_AV8B_DYN_USMC"},
@@ -329,7 +329,7 @@ class Faction {
             {"APC", "CUP_B_M1126_ICV_M2_Desert_Slat"},
             {"IFV", "CUP_B_M2A3Bradley_USA_D"},
             {"SPAAG", "CUP_B_M6LineBacker_USA_D"},
-            {"TNK", "CUP_B_M1A2_TUSK_MG_DES_US_Army"},
+            {"TNK", "CUP_B_M1A2SEP_TUSK_Desert_US_Army"},
             {"TH", "CUP_B_UH60M_US"},
             {"AH", "CUP_B_AH64D_DL_USA"},
             {"CAS", "CUP_B_A10_DYN_USA"},
@@ -355,7 +355,7 @@ class Faction {
             {"APC", "CUP_B_M1126_ICV_M2_Desert_Slat"},
             {"IFV", "CUP_B_M2A3Bradley_USA_D"},
             {"SPAAG", "CUP_B_M6LineBacker_USA_D"},
-            {"TNK", "CUP_B_M1A2_TUSK_MG_DES_US_Army"},
+            {"TNK", "CUP_B_M1A2SEP_TUSK_Desert_US_Army"},
             {"TH", "CUP_B_UH60M_US"},
             {"AH", "CUP_B_AH64D_DL_USA"},
             {"CAS", "CUP_B_A10_DYN_USA"},
@@ -381,7 +381,7 @@ class Faction {
             {"APC", "CUP_B_M1126_ICV_M2_Desert_Slat"},
             {"IFV", "CUP_B_M2A3Bradley_USA_D"},
             {"SPAAG", "CUP_B_HMMWV_Avenger_USA"},
-            {"TNK", "CUP_B_M1A2_TUSK_MG_DES_US_Army"},
+            {"TNK", "CUP_B_M1A2SEP_TUSK_Desert_US_Army"},
             {"TH", "CUP_B_UH60M_US"},
             {"AH", "CUP_B_AH64D_DL_USA"},
             {"CAS", "CUP_B_A10_DYN_USA"},
@@ -407,7 +407,7 @@ class Faction {
             {"APC", "CUP_B_M1126_ICV_M2_Desert_Slat"},
             {"IFV", "CUP_B_M2A3Bradley_USA_D"},
             {"SPAAG", "CUP_B_M6LineBacker_USA_D"},
-            {"TNK", "CUP_B_M1A2_TUSK_MG_DES_US_Army"},
+            {"TNK", "CUP_B_M1A2SEP_TUSK_Desert_US_Army"},
             {"TH", "CUP_B_UH60M_US"},
             {"AH", "CUP_B_AH64D_DL_USA"},
             {"CAS", "CUP_B_A10_DYN_USA"},
@@ -1403,11 +1403,89 @@ class Faction {
         };
     };
 
+    class GM_FRG_90_WD {
+        gear = "G36A_GER";
+        uniform = "GM_FRG_90_WD";
+        name = "West German Bundeswehr";
+        description = "West German Army armed with G36";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland"};
+        rolePrefix = "Heer";
+        vehicleClassnames[] = {
+            {"CO", "gm_ge_army_iltis_cargo"},
+            {"SL", "gm_ge_army_u1300l_cargo"},
+            {"FT", "gm_ge_army_iltis_cargo"},
+            {"ATTCH", "gm_ge_army_iltis_cargo"},
+            {"ENG", "gm_ge_army_fuchsa0_engineer"},
+            {"APC", "gm_ge_army_m113a1g_apc"},
+            {"IFV", "gm_ge_army_marder1a2"},
+            {"SPAAG", "gm_ge_army_gepard1a1"},
+            {"TNK", "gm_ge_army_Leopard1a5"},
+            {"TH", "gm_ge_army_ch53g"},
+            {"AH", "gm_ge_army_bo105p_pah1a1"},
+            {"CAS", "CUP_B_A10_DYN_USA"},
+            {"Technical", "gm_ge_army_iltis_mg3"}
+        };
+    };
+
+    class GM_FRG_90_DE {
+        gear = "G36A_GER";
+        uniform = "GM_FRG_90_SN";
+        name = "West German Bundeswehr (Desert)";
+        description = "West German Army (desert uniforms) armed with G36";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"snow"};
+        rolePrefix = "Heer";
+        vehicleClassnames[] = {
+            {"CO", "gm_ge_army_iltis_cargo_des"},
+            {"SL", "gm_ge_army_u1300l_cargo_des"},
+            {"FT", "gm_ge_army_iltis_cargo_des"},
+            {"ATTCH", "gm_ge_army_iltis_cargo_des"},
+            {"ENG", "gm_ge_army_fuchsa0_engineer_des"},
+            {"APC", "gm_ge_army_m113a1g_apc_des"},
+            {"IFV", "gm_ge_army_marder1a2_des"},
+            {"SPAAG", "gm_ge_army_gepard1a1_des"},
+            {"TNK", "gm_ge_army_Leopard1a5_des"},
+            {"TH", "gm_ge_army_ch53g"},
+            {"AH", "gm_ge_army_bo105p_pah1a1"},
+            {"CAS", "CUP_B_A10_DYN_USA"},
+            {"Technical", "gm_ge_army_iltis_mg3_des"}
+        };
+    };
+
     class GM_FRG_80_SN {
         gear = "G3A3_FRG";
         uniform = "GM_FRG_80_SN";
-        name = "West German Bundeswehr (winter)";
+        name = "West German Bundeswehr (Winter)";
         description = "West German Army (winter uniforms) armed with G3A3";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"snow"};
+        rolePrefix = "Heer";
+        vehicleClassnames[] = {
+            {"CO", "gm_ge_army_iltis_cargo_win"},
+            {"SL", "gm_ge_army_u1300l_cargo_win"},
+            {"FT", "gm_ge_army_iltis_cargo_win"},
+            {"ATTCH", "gm_ge_army_iltis_cargo_win"},
+            {"ENG", "gm_ge_army_fuchsa0_engineer_win"},
+            {"APC", "gm_ge_army_m113a1g_apc_win"},
+            {"IFV", "gm_ge_army_marder1a2_win"},
+            {"SPAAG", "gm_ge_army_gepard1a1_win"},
+            {"TNK", "gm_ge_army_Leopard1a5_win"},
+            {"TH", "gm_ge_army_ch53g"},
+            {"AH", "gm_ge_army_bo105p_pah1a1"},
+            {"CAS", "CUP_B_A10_DYN_USA"},
+            {"Technical", "gm_ge_army_iltis_mg3_win"}
+        };
+    };
+
+    class GM_FRG_90_SN {
+        gear = "G36A_GER";
+        uniform = "GM_FRG_90_SN";
+        name = "West German Bundeswehr (winter)";
+        description = "West German Army (winter uniforms) armed with G36";
         languages[] = {{"west", 100}};
         side = "west";
         camouflage[] = {"snow"};
@@ -2695,7 +2773,7 @@ class Faction {
             {"APC", "CUP_B_M1126_ICV_M2_Woodland_Slat"},
             {"IFV", "CUP_B_M2Bradley_NATO_T"},
             {"SPAAG", "CUP_B_M6LineBacker_NATO_T"},
-            {"TNK", "CUP_B_M1A1_NATO_T"},
+            {"TNK", "CUP_B_M1A2SEP_NATO"},
             {"TH", "CUP_I_Ka60_GL_Blk_ION"},
             {"AH", "CUP_I_Mi24_Mk4_AT_ION"},
             {"CAS", "CUP_B_F35B_CAS_USMC"},
@@ -2721,7 +2799,7 @@ class Faction {
             {"APC", "CUP_B_M1126_ICV_M2_Woodland_Slat"},
             {"IFV", "CUP_B_M2Bradley_NATO_T"},
             {"SPAAG", "CUP_B_M6LineBacker_NATO_T"},
-            {"TNK", "CUP_B_M1A1_NATO_T"},
+            {"TNK", "CUP_B_M1A2SEP_NATO"},
             {"TH", "CUP_I_Ka60_GL_Blk_ION"},
             {"AH", "CUP_I_Mi24_Mk4_AT_ION"},
             {"CAS", "CUP_B_F35B_CAS_USMC"},
@@ -2747,7 +2825,7 @@ class Faction {
             {"APC", "CUP_B_M1126_ICV_M2_Woodland_Slat"},
             {"IFV", "CUP_B_M2Bradley_NATO_T"},
             {"SPAAG", "CUP_B_M6LineBacker_NATO_T"},
-            {"TNK", "CUP_B_M1A1_NATO_T"},
+            {"TNK", "CUP_B_M1A2SEP_NATO"},
             {"TH", "CUP_I_Ka60_GL_Blk_ION"},
             {"AH", "CUP_I_Mi24_Mk4_AT_ION"},
             {"CAS", "CUP_B_F35B_CAS_USMC"},
@@ -3709,7 +3787,7 @@ class Faction {
             {"APC", "CUP_B_M113_USA"},
             {"IFV", "CUP_B_M2Bradley_USA_W"},
             {"SPAAG", "CUP_B_M6LineBacker_USA_W"},
-            {"TNK", "CUP_B_M60A3_TTS_USMC"},
+            {"TNK", "CUP_B_M1A1SA_Woodland_US_Army"},
             {"TH", "CUP_B_UH60M_US"},
             {"AH", "CUP_B_AH64D_DL_USA"},
             {"CAS", "CUP_B_A10_DYN_USA"},
@@ -3735,7 +3813,7 @@ class Faction {
             {"APC", "CUP_B_AAV_USMC"},
             {"IFV", "CUP_B_LAV25M240_USMC"},
             {"SPAAG", "CUP_B_HMMWV_Avenger_USMC"},
-            {"TNK", "CUP_B_M1A1_Woodland_USMC"},
+            {"TNK", "CUP_B_M1A1FEP_Woodland_USMC"},
             {"TH", "CUP_B_UH60S_USN"},
             {"AH", "CUP_B_MH60L_DAP_4x_USN"},
             {"CAS", "CUP_B_A10_DYN_USA"},
@@ -3761,7 +3839,7 @@ class Faction {
             {"APC", "CUP_B_M113_USA"},
             {"IFV", "CUP_B_M2Bradley_USA_W"},
             {"SPAAG", "CUP_B_M6LineBacker_USA_W"},
-            {"TNK", "CUP_B_M60A3_TTS_USMC"},
+            {"TNK", "CUP_B_M1A1SA_Woodland_US_Army"},
             {"TH", "CUP_B_UH60M_US"},
             {"AH", "CUP_B_AH64D_DL_USA"},
             {"CAS", "CUP_B_A10_DYN_USA"},
@@ -3839,7 +3917,7 @@ class Faction {
             {"APC", "CUP_B_M113_desert_USA"},
             {"IFV", "CUP_B_LAV25M240_desert_USMC"},
             {"SPAAG", "CUP_B_HMMWV_Avenger_USA"},
-            {"TNK", "CUP_B_M1A1_DES_US_Army"},
+            {"TNK", "CUP_B_M1A1FEP_Desert_USMC"},
             {"TH", "CUP_B_UH60S_USN"},
             {"AH", "CUP_B_MH60L_DAP_4x_USN"},
             {"CAS", "CUP_B_AV8B_DYN_USMC"},
@@ -3865,7 +3943,7 @@ class Faction {
             {"APC", "CUP_B_M113_desert_USA"},
             {"IFV", "CUP_B_M2Bradley_USA_D"},
             {"SPAAG", "CUP_B_M6LineBacker_USA_D"},
-            {"TNK", "CUP_B_M1A1_DES_US_Army"},
+            {"TNK", "CUP_B_M1A1SA_Desert_US_Army"},
             {"TH", "CUP_B_UH60M_US"},
             {"AH", "CUP_B_AH64D_DL_USA"},
             {"CAS", "CUP_B_A10_DYN_USA"},
@@ -3891,7 +3969,7 @@ class Faction {
             {"APC", "CUP_B_M113_desert_USA"},
             {"IFV", "CUP_B_LAV25M240_desert_USMC"},
             {"SPAAG", "CUP_B_HMMWV_Avenger_USA"},
-            {"TNK", "CUP_B_M1A1_DES_US_Army"},
+            {"TNK", "CUP_B_M1A1FEP_Desert_USMC"},
             {"TH", "CUP_B_UH60S_USN"},
             {"AH", "CUP_B_MH60L_DAP_4x_USN"},
             {"CAS", "CUP_B_AV8B_DYN_USMC"},

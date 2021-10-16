@@ -1,23 +1,24 @@
-class CUP_RU_90_DE {
+class GM_FRG_90_SN {
     class Rifleman {
-        headGear = "CUP_H_RUS_SSH68_olive";
+        headGear = "gm_ge_headgear_m92_cover_win";
         goggles = "";
-        uniform = "CUP_U_O_RUS_M88_VDV";
-        vest = "CUP_V_RUS_Smersh_New_Buttpack_ARM";
+        uniform = "gm_ge_army_uniform_soldier_parka_80_win";
+        vest = "gm_ge_vest_90_rifleman_flk_ARM";
         backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
-        uniform = "CUP_U_O_RUS_M88_VDV_rolled_up";
-        vest = "CUP_V_RUS_Smersh_New_Full_ARM";
+        vest = "gm_ge_vest_90_leader_flk_ARM";
     };
 
     class Officer : Leader {
-        headGear = "CUP_H_RUS_Beret_VDV";
+        headGear = "gm_ge_headgear_beret_grn_infantry";
     };
 
     class Crew : Rifleman {
-        headGear = "CUP_H_RUS_TSH_4_Brown";
+        headGear = "gm_ge_headgear_crewhat_80_blk";
+        uniform = "gm_ge_army_uniform_crew_90_flk";
+        vest = "gm_ge_vest_90_crew_flk_ARM";
         backpack = "ark_backpack_small";
     };
 
@@ -29,9 +30,11 @@ class CUP_RU_90_DE {
     };
 
     class SL : Officer {
+        headGear = "gm_ge_headgear_hat_beanie_blk";
     };
 
     class Medic : Rifleman {
+        vest = "gm_ge_vest_90_medic_flk_ARM";
         backpack = "ark_backpack_large";
     };
 
@@ -39,23 +42,26 @@ class CUP_RU_90_DE {
     };
 
     class AR : Rifleman {
+        headGear = "gm_ge_headgear_m92_cover_glasses_win";
+        vest = "gm_ge_vest_90_machinegunner_flk_ARM";
     };
 
     class AAR : Rifleman {
-        backpack = "ark_backpack_large";
     };
 
     class RAT : Rifleman {
+        headGear = "gm_ge_headgear_m92_cover_glasses_win";
     };
 
     class MMGG : AR {
+        vest = "gm_ge_vest_90_machinegunner_flk_ARM";
         backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
     };
 
-    class HMGG : AR {
+    class HMGG : Rifleman {
     };
 
     class HMGAG : AAR {
@@ -69,22 +75,26 @@ class CUP_RU_90_DE {
     };
 
     class MATAG : AAR {
-    };
-
-    class MATAC : MATAG {
-    };
-
-    class HATG : RAT {
         backpack = "ark_backpack_large";
     };
 
+    class MATAC : MATAG {
+        backpack = "ark_backpack_large";
+    };
+
+    class HATG : RAT {
+        backpack = "gm_milan_launcher_weaponBag";
+    };
+
     class HATAG : AAR {
+        backpack = "gm_milan_launcher_weaponBag";
     };
 
     class HATAC : HATAG {
+        backpack = "gm_milan_launcher_weaponBag";
     };
 
-    class DHATG : AR {
+    class DHATG : Rifleman {
     };
 
     class DHATAG : AAR {
@@ -93,7 +103,7 @@ class CUP_RU_90_DE {
     class DHATAC : AAR {
     };
 
-    class SAMG : AR {
+    class SAMG : Rifleman {
     };
 
     class SAMAG : AAR {
@@ -102,7 +112,7 @@ class CUP_RU_90_DE {
     class SAMAC : AAR {
     };
 
-    class GMGG : AR {
+    class GMGG : Rifleman {
     };
 
     class GMGAG : AAR {
@@ -111,7 +121,7 @@ class CUP_RU_90_DE {
     class GMGAC : AAR {
     };
 
-    class MTRG : AR {
+    class MTRG : Rifleman {
     };
 
     class MTRAG : AAR {
@@ -121,15 +131,18 @@ class CUP_RU_90_DE {
     };
 
     class ENG : Rifleman {
-        vest = "CUP_V_RUS_Smersh_New_Full_ARM";
+        headGear = "gm_ge_headgear_m92_cover_glasses_win";
+        vest = "gm_ge_vest_90_demolition_flk_ARM";
         backpack = "ark_backpack_large";
     };
 
     class ENGA : ENG {
-        vest = "CUP_V_RUS_Smersh_New_Buttpack_ARM";
+        headGear = "gm_ge_headgear_m92_cover_win";
+        goggles = "gm_ge_facewear_dustglasses";
     };
 
     class SN : Rifleman {
+        headGear = "gm_ge_headgear_hat_beanie_blk";
         backpack = "ark_backpack_small";
     };
 
@@ -137,6 +150,7 @@ class CUP_RU_90_DE {
     };
 
     class VC : Crew {
+        headGear = "gm_ge_headgear_beret_crew_blk_armor";
     };
 
     class VG : Crew {
@@ -146,11 +160,14 @@ class CUP_RU_90_DE {
     };
 
     class P : Crew {
-        headGear = "CUP_H_RUS_ZSH_Shield_Up";
+        headGear = "gm_ge_headgear_sph4_oli";
+        uniform = "gm_ge_army_uniform_pilot_oli";
+        vest = "gm_ge_army_vest_pilot_oli_ARM";
         backpack = "B_Parachute";
     };
 
     class PCM : P {
+        vest = "gm_ge_army_vest_pilot_pads_oli_ARM";
     };
 
 };

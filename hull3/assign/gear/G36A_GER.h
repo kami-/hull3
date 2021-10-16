@@ -1,7 +1,7 @@
-class C7_DNK {
+class G36A_GER {
     class Rifleman {
-        primaryWeapon = "gm_c7a1_oli";
-        primaryWeaponItems[] = {"gm_c79a1_oli"};
+        primaryWeapon = "CUP_arifle_G36A";
+        primaryWeaponItems[] = {"CUP_acc_Flashlight"};
         secondaryWeapon = "";
         secondaryWeaponItems[] = {};
         handgunWeapon = "";
@@ -10,18 +10,19 @@ class C7_DNK {
         vestWeapons[] = {};
         backpackWeapons[] = {};
         uniformMagazines[] = {
+            {"gm_handgrenade_frag_dm51a1", 1},
             {"ACE_Chemlight_HiRed", 2},
-            {"SmokeShell", 1}
+            {"gm_smokeshell_wht_dm25", 1}
         };
         vestMagazines[] = {
-            {"CUP_30Rnd_556x45_Stanag", 6},
-            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2}
+            {"CUP_30Rnd_556x45_G36", 6},
+            {"CUP_30Rnd_TE1_Red_Tracer_556x45_G36", 2}
         };
         backpackMagazines[] = {
-            {"HandGrenade", 2},
-            {"SmokeShell", 1},
-            {"CUP_30Rnd_556x45_Stanag", 4},
-            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2}
+            {"gm_handgrenade_frag_dm51a1", 1},
+            {"gm_smokeshell_wht_dm25", 1},
+            {"CUP_30Rnd_556x45_G36", 4},
+            {"CUP_30Rnd_TE1_Red_Tracer_556x45_G36", 2}
         };
         basicAssignItems[] = {"ItemMap", "ItemCompass", "ItemWatch"};
         assignItems[] = {};
@@ -50,37 +51,30 @@ class C7_DNK {
     };
 
     class Leader : Rifleman {
-        handgunWeapon = "CUP_hgun_Browning_HP";
+        handgunWeapon = "gm_p1_blk";
         vestMagazines[] = {
-            {"CUP_30Rnd_556x45_Stanag", 6},
-            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2},
-            {"CUP_13Rnd_9x19_Browning_HP", 3}
+            {"CUP_30Rnd_556x45_G36", 6},
+            {"gm_smokeshell_red_dm23", 4},
+            {"gm_smokeshell_wht_dm25", 4},
+            {"CUP_30Rnd_TE1_Red_Tracer_556x45_G36", 2},
+            {"gm_8Rnd_9x19mm_B_DM11_p1_blk", 3}
         };
         backpackMagazines[] = {
-            {"HandGrenade", 1},
-            {"SmokeShell", 1},
-            {"CUP_30Rnd_556x45_Stanag", 4},
-            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2}
+            {"gm_handgrenade_frag_dm51a1", 1},
+            {"gm_smokeshell_wht_dm25", 1},
+            {"CUP_30Rnd_556x45_G36", 4},
+            {"CUP_30Rnd_TE1_Red_Tracer_556x45_G36", 2}
         };
-        assignItems[] = {};
-        binocular = "gm_ferod16_oli";
+        binocular = "Binocular";
     };
 
     class Officer : Leader {
-        assignItems[] = {};
-        binocular = "gm_ferod16_oli";
+        binocular = "ACE_VectorDay";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
 
     class Crew : Rifleman {
-        primaryWeapon = "gm_mp5a3_blk";
-        primaryWeaponItems[] = {};
-        uniformMagazines[] = {
-            {"ACE_Chemlight_HiRed", 2},
-            {"SmokeShell", 1}
-        };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
-        vestMagazines[] = {{"gm_30Rnd_9x19mm_B_DM51_mp5a3_blk", 4}};
         backpackMagazines[] = {};
         assignItems[] = {};
     };
@@ -96,17 +90,11 @@ class C7_DNK {
     };
 
     class Medic : Rifleman {
-        vestMagazines[] = {
-            {"CUP_30Rnd_556x45_Stanag", 6},
-            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2},
-            {"SmokeShell", 4}
-        };
         backpackMagazines[] = {
-            {"SmokeShellBlue", 4},
-            {"CUP_30Rnd_556x45_Stanag", 2}
+            {"gm_smokeshell_grn_dm21", 4},
+            {"gm_smokeshell_wht_dm25", 4}
         };
-        assignItems[] = {};
-        binocular = "gm_ferod16_oli";
+        binocular = "Binocular";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
         backpackMedicalItems[] = {
             {"ACE_fieldDressing", 30},
@@ -123,30 +111,31 @@ class C7_DNK {
     class AR : Rifleman {
         primaryWeapon = "CUP_lmg_MG3";
         primaryWeaponItems[] = {};
-        vestMagazines[] = {{"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 1}};
+        vestMagazines[] = {{"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 2}};
         backpackMagazines[] = {{"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 4}};
     };
 
     class AAR : Rifleman {
+        primaryWeaponItems[] = {"CUP_acc_Flashlight", "CUP_Bipod_G36"};
         backpackMagazines[] = {
-            {"HandGrenade", 1},
-            {"SmokeShell", 1},
+            {"gm_handgrenade_frag_dm51a1", 1},
+            {"gm_smokeshell_wht_dm25", 1},
             {"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 4}
         };
-        binocular = "gm_ferod16_oli";
+        binocular = "Binocular";
     };
 
     class RAT : Rifleman {
-        secondaryWeapon = "CUP_launch_M136";
+        secondaryWeapon = "CUP_launch_HCPF3";
         vestMagazines[] = {
-            {"CUP_30Rnd_556x45_Stanag", 6},
-            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2}
+            {"CUP_30Rnd_556x45_G36", 6},
+            {"CUP_30Rnd_TE1_Red_Tracer_556x45_G36", 2}
         };
         backpackMagazines[] = {
-            {"HandGrenade", 1},
-            {"SmokeShell", 1},
-            {"CUP_30Rnd_556x45_Stanag", 4},
-            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2}
+            {"gm_handgrenade_frag_dm51a1", 1},
+            {"gm_smokeshell_wht_dm25", 1},
+            {"CUP_30Rnd_556x45_G36", 4},
+            {"CUP_30Rnd_TE1_Red_Tracer_556x45_G36", 2}
         };
     };
 
@@ -155,78 +144,86 @@ class C7_DNK {
         primaryWeaponItems[] = {};
         vestMagazines[] = {{"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 1}};
         backpackMagazines[] = {
-            {"HandGrenade", 1},
-            {"SmokeShell", 1},
-            {"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 4}
+            {"gm_handgrenade_frag_dm51a1", 1},
+            {"gm_smokeshell_wht_dm25", 1},
+            {"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 2}
         };
     };
 
     class MMGAG : Rifleman {
         backpackMagazines[] = {
-            {"HandGrenade", 1},
-            {"SmokeShell", 1},
-            {"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 4}
+            {"gm_handgrenade_frag_dm51a1", 1},
+            {"gm_smokeshell_wht_dm25", 1},
+            {"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 2}
         };
-        binocular = "gm_ferod16_oli";
-        assignItems[] = {};
+        binocular = "ACE_VectorDay";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
 
     class HMGG : Rifleman {
         backpack = "CUP_B_M2_Gun_Bag";
         backpackMagazines[] = {};
-        backpackMedicalItems[] = {};
     };
 
-    class HMGAG : HMGG {
+    class HMGAG : MMGAG {
         backpack = "CUP_B_M2_MiniTripod_Bag";
+        backpackMagazines[] = {};
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
-        binocular = "gm_ferod16_oli";
-        assignItems[] = {};
+        binocular = "ACE_VectorDay";
     };
 
     class HMGAC : Rifleman {
     };
 
     class MATG : RAT {
-        secondaryWeapon = "gm_pzf84_oli";
-        secondaryWeaponItems[] = {"gm_feroz2x17_pzf84_blk", "gm_1Rnd_84x245mm_heat_t_DM22_carlgustaf"};
-        backpackMagazines[] = {
-            {"gm_1Rnd_84x245mm_heat_t_DM22_carlgustaf", 2},
-            {"gm_1Rnd_84x245mm_heat_t_DM32_carlgustaf", 1}
+        secondaryWeapon = "CUP_launch_PzF3";
+        backpackMagazines[] = {};
+        backpackItems[] = {
+            {"CUP_launch_PzF3", 1},
+            {"CUP_launch_BF3", 1}
         };
     };
 
     class MATAG : Rifleman {
-        backpackMagazines[] = {
-            {"gm_1Rnd_84x245mm_heat_t_DM22_carlgustaf", 2},
-            {"gm_1Rnd_84x245mm_heat_t_DM32_carlgustaf", 1}
+        secondaryWeapon = "CUP_launch_PzF3";
+        backpackMagazines[] = {};
+        backpackItems[] = {
+            {"CUP_launch_PzF3", 1},
+            {"CUP_launch_BF3", 1}
         };
-        binocular = "gm_ferod16_oli";
-        assignItems[] = {};
+        binocular = "ACE_VectorDay";
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
 
     class MATAC : MATAG {
+        secondaryWeapon = "CUP_launch_PzF3";
+        backpackMagazines[] = {};
+        backpackItems[] = {
+            {"CUP_launch_PzF3", 1},
+            {"CUP_launch_BF3", 1}
+        };
         assignItems[] = {};
-        binocular = "gm_ferod16_oli";
+        binocular = "Binocular";
         uniformRadios[] = {"ACRE_PRC343"};
     };
 
     class HATG : MATG {
         secondaryWeapon = "";
-        secondaryWeaponItems[] = {};
+        backpackItems[] = {};
         backpackMagazines[] = {};
-        backpack = "gm_milan_launcher_weaponBag";
     };
 
     class HATAG : MATAG {
-        backpackMagazines[] = {{"HandGrenade", 1}};
+        secondaryWeapon = "";
+        backpackItems[] = {};
+        backpackMagazines[] = {};
     };
 
     class HATAC : HATAG {
+        secondaryWeapon = "";
+        backpackItems[] = {};
         assignItems[] = {};
-        binocular = "gm_ferod16_oli";
+        binocular = "Binocular";
         uniformRadios[] = {"ACRE_PRC343"};
     };
 
@@ -236,43 +233,34 @@ class C7_DNK {
         backpackMedicalItems[] = {};
     };
 
-    class DHATAG : HMGG {
+    class DHATAG : MMGAG {
         backpack = "CUP_B_TOW_Tripod_Bag";
+        backpackMagazines[] = {};
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
-        uniformMagazines[] = {
-            {"ACE_Chemlight_HiRed", 2},
-            {"SmokeShell", 1}
-        };
-        binocular = "gm_ferod16_oli";
-        assignItems[] = {};
+        binocular = "ACE_VectorDay";
     };
 
     class DHATAC : Rifleman {
     };
 
     class SAMG : Rifleman {
-        secondaryWeapon = "gm_fim43_oli";
-        secondaryWeaponItems[] = {"gm_1Rnd_70mm_he_m585_fim43"};
-        backpackMagazines[] = {{"gm_1Rnd_70mm_he_m585_fim43", 1}};
+        secondaryWeapon = "CUP_launch_FIM92Stinger";
+        secondaryWeaponItems[] = {"CUP_Stinger_M"};
+        backpackMagazines[] = {{"CUP_Stinger_M", 1}};
     };
 
     class SAMAG : Rifleman {
         backpackMagazines[] = {
-            {"HandGrenade", 1},
-            {"gm_1Rnd_70mm_he_m585_fim43", 1}
-        };
-        uniformMagazines[] = {
-            {"ACE_Chemlight_HiRed", 2},
-            {"SmokeShell", 1}
+            {"gm_handgrenade_frag_dm51a1", 1},
+            {"CUP_Stinger_M", 1}
         };
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
-        binocular = "gm_ferod16_oli";
-        assignItems[] = {};
+        binocular = "ACE_VectorDay";
     };
 
     class SAMAC : SAMAG {
         uniformRadios[] = {"ACRE_PRC343"};
-        binocular = "gm_ferod16_oli";
+        binocular = "Binocular";
         assignItems[] = {};
     };
 
@@ -282,15 +270,11 @@ class C7_DNK {
         backpackMedicalItems[] = {};
     };
 
-    class GMGAG : HMGG {
+    class GMGAG : MMGAG {
         backpack = "CUP_B_Mk19_Tripod_Bag";
+        backpackMagazines[] = {};
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
-        uniformMagazines[] = {
-            {"ACE_Chemlight_HiRed", 2},
-            {"SmokeShell", 1}
-        };
-        binocular = "gm_ferod16_oli";
-        assignItems[] = {};
+        binocular = "ACE_VectorDay";
     };
 
     class GMGAC : Rifleman {
@@ -302,30 +286,21 @@ class C7_DNK {
         backpackMedicalItems[] = {};
     };
 
-    class MTRAG : MTRG {
+    class MTRAG : MMGAG {
         backpack = "CUP_B_M252_Bipod_Bag";
+        backpackMagazines[] = {};
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
-        uniformMagazines[] = {
-            {"ACE_Chemlight_HiRed", 2},
-            {"SmokeShell", 1}
-        };
-        binocular = "gm_ferod16_oli";
-        assignItems[] = {};
+        binocular = "ACE_VectorDay";
     };
 
     class MTRAC : Rifleman {
     };
 
     class ENG : Rifleman {
-        vestMagazines[] = {
-            {"CUP_30Rnd_556x45_Stanag", 6},
-            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 2}
-        };
         backpackMagazines[] = {
             {"DemoCharge_Remote_Mag", 3},
             {"SLAMDirectionalMine_Wire_Mag", 2}
         };
-        assignItems[] = {};
         vestItems[] = {
             {"ACE_DefusalKit", 1},
             {"ACE_M26_Clacker", 1}
@@ -338,28 +313,27 @@ class C7_DNK {
     };
 
     class SN : Rifleman {
-        primaryWeapon = "gm_g3a3_oli";
-        handgunWeapon = "CUP_hgun_Browning_HP";
-        primaryWeaponItems[] = {"gm_feroz24_blk"};
+        primaryWeapon = "CUP_arifle_G3A3_modern_ris_black";
+        handgunWeapon = "gm_p1_blk";
+        primaryWeaponItems[] = {"CUP_optic_LeupoldMk4", "CUP_bipod_G3SG1", "CUP_acc_Flashlight"};
         vestMagazines[] = {
-            {"gm_20Rnd_762x51mm_B_DM111_g3_blk", 4},
-            {"CUP_13Rnd_9x19_Browning_HP", 3}
+            {"CUP_20Rnd_762x51_G3", 4},
+            {"gm_8Rnd_9x19mm_B_DM11_p1_blk", 3}
         };
         backpackMagazines[] = {
-            {"HandGrenade", 1},
-            {"SmokeShell", 1},
-            {"gm_20Rnd_762x51mm_B_DM111_g3_blk", 3}
+            {"gm_handgrenade_frag_dm51a1", 1},
+            {"gm_smokeshell_wht_dm25", 1},
+            {"CUP_20Rnd_762x51_G3", 3}
         };
-        assignItems[] = {};
         uniformRadios[] = {"ACRE_PRC343", "ACRE_PRC152"};
     };
 
     class SP : Rifleman {
-        binocular = "gm_ferod16_oli";
+        binocular = "ACE_VectorDay";
     };
 
     class VC : Crew {
-        binocular = "gm_ferod16_oli";
+        binocular = "ACE_VectorDay";
     };
 
     class VG : Crew {
@@ -369,20 +343,25 @@ class C7_DNK {
     };
 
     class P : Crew {
+        primaryWeapon = "gm_mp2a1_blk";
+        primaryWeaponItems[] = {};
+        vestMagazines[] = {{"gm_32Rnd_9x19mm_B_DM51_mp2_blk", 4}};
+        backpackMagazines[] = {};
     };
 
     class PCM : P {
     };
 
     class Vehicle {
-        weapons[] = {{"CUP_launch_M136", 4}};
+        weapons[] = {{"CUP_launch_HCPF3", 4}};
         magazines[] = {
-            {"CUP_30Rnd_556x45_Stanag", 20},
-            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 10},
+            {"CUP_30Rnd_556x45_G36", 20},
+            {"CUP_30Rnd_TE1_Red_Tracer_556x45_G36", 10},
             {"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 10},
-            {"ACE_HandFlare_White", 15},
-            {"HandGrenade", 5},
-            {"SmokeShell", 5}
+            {"ACE_HandFlare_White", 5},
+            {"gm_handgrenade_frag_dm51a1", 5},
+            {"gm_smokeshell_wht_dm25", 5},
+            {"gm_smokeshell_red_dm23", 5}
         };
         items[] = {};
         medicalItems[] = {
@@ -395,20 +374,21 @@ class C7_DNK {
     };
 
     class Truck : Vehicle {
-        weapons[] = {{"CUP_launch_M136", 10}};
+        weapons[] = {
+            {"CUP_launch_HCPF3", 10},
+            {"CUP_launch_PzF3", 5}
+        };
         magazines[] = {
-            {"CUP_30Rnd_556x45_Stanag", 40},
-            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 20},
+            {"CUP_30Rnd_556x45_G36", 40},
+            {"CUP_30Rnd_TE1_Red_Tracer_556x45_G36", 20},
             {"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 30},
             {"SatchelCharge_Remote_Mag", 5},
-            {"ACE_HandFlare_White", 15},
-            {"gm_1Rnd_84x245mm_heat_t_DM22_carlgustaf", 5},
-            {"HandGrenade", 10},
-            {"SmokeShell", 10}
+            {"ACE_HandFlare_White", 10},
+            {"gm_handgrenade_frag_dm51a1", 10},
+            {"gm_smokeshell_wht_dm25", 10},
+            {"gm_smokeshell_red_dm23", 10}
         };
-        items[] = {
-            {"ACE_M26_Clacker", 1}
-        };
+        items[] = {{"ACE_M26_Clacker", 1}};
         medicalItems[] = {
             {"ACE_fieldDressing", 50},
             {"ACE_splint", 12}
@@ -416,20 +396,21 @@ class C7_DNK {
     };
 
     class Armored : Truck {
-        weapons[] = {{"CUP_launch_M136", 10}};
+        weapons[] = {
+            {"CUP_launch_HCPF3", 10},
+            {"CUP_launch_PzF3", 5}
+        };
         magazines[] = {
-            {"CUP_30Rnd_556x45_Stanag", 40},
-            {"CUP_30Rnd_556x45_Stanag_Tracer_Red", 20},
+            {"CUP_30Rnd_556x45_G36", 40},
+            {"CUP_30Rnd_TE1_Red_Tracer_556x45_G36", 20},
             {"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 30},
-            {"gm_1Rnd_84x245mm_heat_t_DM22_carlgustaf", 5},
             {"SatchelCharge_Remote_Mag", 5},
-            {"ACE_HandFlare_White", 15},
-            {"HandGrenade", 10},
-            {"SmokeShell", 10}
+            {"ACE_HandFlare_White", 10},
+            {"gm_handgrenade_frag_dm51a1", 10},
+            {"gm_smokeshell_wht_dm25", 10},
+            {"gm_smokeshell_red_dm23", 10}
         };
-        items[] = {
-            {"ACE_M26_Clacker", 1}
-        };
+        items[] = {{"ACE_M26_Clacker", 1}};
         medicalItems[] = {
             {"ACE_fieldDressing", 50},
             {"ACE_splint", 12}

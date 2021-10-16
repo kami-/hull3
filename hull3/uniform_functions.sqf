@@ -90,18 +90,6 @@ hull3_uniform_fnc_assignGoggles = {
     };
 };
 
-hull3_uniform_fnc_assignGogglesOnJip = {
-    params ["_unit"];
-
-    private _gearTemplate = _unit getVariable ["hull3_gear_template", ""];
-    private _uniformTemplate = _unit getVariable ["hull3_uniform_template", ""];
-    private _gearClass = _unit getVariable ["hull3_gear_class", ""];
-    if (!isMultiplayer || { !didJIP } || { _gearTemplate == "" } || { _uniformTemplate == "" } || { _gearClass == "" }) exitWith {};
-    removeGoggles _unit;
-    private _goggles = [_gearTemplate, _uniformTemplate, _gearClass, "goggles", CONFIG_TYPE_TEXT] call hull3_uniform_fnc_getConfigValue;
-    [_unit, _goggles] call hull3_uniform_fnc_assignGoggles;
-};
-
 hull3_uniform_fnc_assignUniform = {
     params ["_unit", "_uniform"];
 

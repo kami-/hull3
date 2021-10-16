@@ -3,14 +3,14 @@ class SYND_REBEL {
         headGear = "H_Booniehat_oli";
         goggles = "";
         uniform = "U_I_C_Soldier_Para_1_F";
-        vest = "CUP_V_RUS_Smersh_1_ARM";
+        vest = "CUP_V_RUS_Smersh_New_Buttpack_ARM";
         backpack = "ark_backpack_med";
     };
 
     class Leader : Rifleman {
         headGear = "H_Cap_oli_hs";
         uniform = "U_I_C_Soldier_Para_3_F";
-        vest = "CUP_V_RUS_Smersh_2_ARM";
+        vest = "CUP_V_RUS_Smersh_New_Full_ARM";
     };
 
     class Officer : Leader {
@@ -23,7 +23,7 @@ class SYND_REBEL {
         headGear = "CUP_H_RUS_TSH_4_Brown";
         goggles = "";
         uniform = "U_I_C_Soldier_Para_5_F";
-        vest = "CUP_V_O_TK_CrewBelt_ARM";
+        vest = "CUP_V_RUS_Smersh_New_Light_ARM";
         backpack = "ark_backpack_small";
     };
 
