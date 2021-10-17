@@ -13,19 +13,19 @@ class CfgPatches {
 
 class Extended_PreInit_EventHandlers {
     class Hull3 {
-        init = "[] call compile preProcessFileLineNumbers 'x\ark\addons\hull3\hull3_preinit.sqf';";
+        init = "call compileScript ['x\ark\addons\hull3\hull3_preinit.sqf'];";
     };
 };
 
 class Extended_PostInit_EventHandlers {
     class Hull3 {
-        init = "[] call compile preProcessFileLineNumbers 'x\ark\addons\hull3\hull3_postinit.sqf';";
+        init = "call compileScript ['x\ark\addons\hull3\hull3_postinit.sqf'];";
     };
 };
 
 class Extended_PreStart_EventHandlers {
     class Hull3 {
-        init = "[] call compile preProcessFileLineNumbers 'x\ark\addons\hull3\eden_functions.sqf';";
+        init = "call compileScript ['x\ark\addons\hull3\eden_functions.sqf'];";
     };
 };
 

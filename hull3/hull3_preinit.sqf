@@ -6,23 +6,23 @@
 
 hull3_isInitialized = false;
 
-[] call compile preProcessFileLineNumbers ADDON_PATH(config_functions.sqf);
+[] call compileScript [ADDON_PATH(config_functions.sqf)];
 hull3_isEnabled = ["isEnabled"] call hull3_config_fnc_getBool;
 hull3_isEnabled = hull3_isEnabled && {!isClass (missionConfigFile >> "Hull_Script_Version")};
 
 if (hull3_isEnabled) then {
-    [] call compile preProcessFileLineNumbers ADDON_PATH(event_functions.sqf);
+    [] call compileScript [ADDON_PATH(event_functions.sqf)];
     [] call hull3_event_fnc_init;
-    [] call compile preProcessFileLineNumbers ADDON_PATH(settings_functions.sqf);
-    [] call compile preProcessFileLineNumbers ADDON_PATH(common_functions.sqf);
-    [] call compile preProcessFileLineNumbers ADDON_PATH(unit_functions.sqf);
-    [] call compile preProcessFileLineNumbers ADDON_PATH(acre_functions.sqf);
-    [] call compile preProcessFileLineNumbers ADDON_PATH(gear_functions.sqf);
-    [] call compile preProcessFileLineNumbers ADDON_PATH(uniform_functions.sqf);
-    [] call compile preProcessFileLineNumbers ADDON_PATH(marker_functions.sqf);
-    [] call compile preProcessFileLineNumbers ADDON_PATH(briefing_functions.sqf);
-    [] call compile preProcessFileLineNumbers ADDON_PATH(mission_functions.sqf);
-    [] call compile preProcessFileLineNumbers ADDON_PATH(gc_functions.sqf);
+    [] call compileScript [ADDON_PATH(settings_functions.sqf)];
+    [] call compileScript [ADDON_PATH(common_functions.sqf)];
+    [] call compileScript [ADDON_PATH(unit_functions.sqf)];
+    [] call compileScript [ADDON_PATH(acre_functions.sqf)];
+    [] call compileScript [ADDON_PATH(gear_functions.sqf)];
+    [] call compileScript [ADDON_PATH(uniform_functions.sqf)];
+    [] call compileScript [ADDON_PATH(marker_functions.sqf)];
+    [] call compileScript [ADDON_PATH(briefing_functions.sqf)];
+    [] call compileScript [ADDON_PATH(mission_functions.sqf)];
+    [] call compileScript [ADDON_PATH(gc_functions.sqf)];
 
     hull3_isInitialized = true;
     ["hull3.initialized", []] call hull3_event_fnc_emitEvent;

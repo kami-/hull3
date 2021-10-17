@@ -59,7 +59,7 @@ hull3_common_fnc_getEventFileResult = {
     _file = ["Events", _fileName] call hull3_config_fnc_getText;
     _result = [];
     if (_file != "") then {
-        _result = _arguments call compile preprocessFileLineNumbers _file;
+        _result = _arguments call compileScript [_file];
     };
 
     _result;
@@ -70,7 +70,7 @@ hull3_common_fnc_callEventFile = {
 
     DECLARE(_file) = ["Events", _fileName] call hull3_config_fnc_getText;
     if (_file != "") then {
-        _arguments call compile preprocessFileLineNumbers _file;
+        _arguments call compileScript [_file];
     };
 };
 
