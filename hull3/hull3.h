@@ -378,6 +378,7 @@ class Hull3 {
         enableSentences = 0;                            // Enables AI radio callouts being heard
         disableRemoteSensors = 1;                       // Disables RemoteSensors
         enableEnvironment = 0;                          // Disables ambient animals but keeps sounds
+        fadeEnvironment = 1;                            // Reduce sound of environmental sounds (rain/thunder/insects)
     };
 
     class GarbageCollector {
