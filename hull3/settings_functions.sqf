@@ -30,6 +30,10 @@ hull3_settings_fnc_setNonStandardGeneralSettings = {
         [{time > 0}, {enableEnvironment [false, true];}] call CBA_fnc_waitUntilAndExecute;
         DEBUG("hull3.settings","Ambient animals are disabled.");
     };
+    if (["General", "fadeEnvironment"] call hull3_config_fnc_getBool) then {
+        5 fadeEnvironment 0.35;
+        DEBUG("hull3.settings","Reduced environmental sounds.");
+    };
 };
 
 hull3_settings_fnc_setModuleVariables = {
