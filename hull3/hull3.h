@@ -381,6 +381,10 @@ class Hull3 {
         fadeEnvironment = 1;                            // Reduce sound of environmental sounds (rain/thunder/insects)
     };
 
+    class Logistics {
+        enableMedicalCrates = 1;
+    };
+
     class GarbageCollector {
         isEnabled = 1;
         canRemoveCorpses = 1;

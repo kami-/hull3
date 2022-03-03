@@ -71,6 +71,11 @@ hull3_gear_fnc_assignVehicle = {
 
     [_unit, _gearTemplate, _gearClass] call hull3_gear_fnc_assignVehicleInit;
     [_unit, _gearTemplate, _gearClass] call hull3_gear_fnc_assignVehicleTemplate;
+
+    if (["Logistics", "enableMedicalCrates"] call hull3_config_fnc_getBool) then {
+        [_unit] call hull3_gear_fnc_assignVehicleCrates;
+        DEBUG("hull3.gear.assign",FMT_1("Trying to add medical crate to '%1'.",_unit));
+    };
 };
 
 hull3_gear_fnc_assignUnitInit = {
@@ -90,6 +95,18 @@ hull3_gear_fnc_assignVehicleInit = {
     clearItemCargoGlobal _vehicle;
     clearBackpackCargoGlobal _vehicle;
     DEBUG("hull3.gear.assign",FMT_1("Initialized vehicle '%1' gear.",_vehicle));
+};
+
+hull3_gear_fnc_assignVehicleCrates = {
+    params ["_vehicle"];
+
+    private _cargoSpace = [_vehicle] call ace_cargo_fnc_getCargoSpaceLeft;
+
+    if (_cargoSpace > 1) then {
+        private _crate = "ARK_medicalSupplyCrate" createVehicle [0,0,0];
+        [_crate, _vehicle, true] call ace_cargo_fnc_loadItem;
+        DEBUG("hull3.gear.assign",FMT_2("Crate '%1' added to ACE cargo of '%2'!",_crate,_vehicle));
+    };
 };
 
 hull3_gear_fnc_validateFaction = {
