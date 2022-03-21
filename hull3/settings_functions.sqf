@@ -12,6 +12,7 @@ hull3_settings_fnc_init = {
 hull3_settings_fnc_setNonStandardGeneralSettings = {
     if (!(["General", "enableRadio"] call hull3_config_fnc_getBool)) then {
         enableRadio false;
+        0 fadeRadio 0;
         DEBUG("hull3.settings","enableRadio is disabled.");
     };
     if (!(["General", "enableSaving"] call hull3_config_fnc_getBool)) then {
