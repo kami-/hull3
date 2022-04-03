@@ -168,7 +168,7 @@ hull3_marker_fnc_updateFireTeamMarkers = {
         if (alive _unit) then {
             _markerName setMarkerPosLocal getPosASL _unit;
             _markerName setMarkerDirLocal getDir _unit;
-            _markerName setMarkerColorLocal (hull3_marker_colours getVariable [assignedTeam _unit, "ColorWhite"]);
+            _markerName setMarkerColorLocal (hull3_marker_colours getOrDefault [assignedTeam _unit, "ColorWhite"]);
         }
     } foreach _fireTeam;
 };
@@ -288,11 +288,10 @@ hull3_marker_fnc_createMarker = {
 };
 
 hull3_marker_fnc_cacheColours = {
-    hull3_marker_colours = call CBA_fnc_createNamespace;
+    hull3_marker_colours = createHashMap;
 
-    hull3_marker_colours setVariable ["MAIN", "ColorWhite"];
-    hull3_marker_colours setVariable ["RED", "ColorRed"];
-    hull3_marker_colours setVariable ["GREEN", "ColorGreen"];
-    hull3_marker_colours setVariable ["BLUE", "ColorBlue"];
-    hull3_marker_colours setVariable ["YELLOW", "ColorYellow"];
+    hull3_marker_colours set ["RED", "ColorRed"];
+    hull3_marker_colours set ["GREEN", "ColorGreen"];
+    hull3_marker_colours set ["BLUE", "ColorBlue"];
+    hull3_marker_colours set ["YELLOW", "ColorYellow"];
 };
