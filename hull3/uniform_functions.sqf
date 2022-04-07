@@ -122,8 +122,8 @@ hull3_uniform_fnc_assignInsignia = {
     params ["_unit", "_insignia"];
 
     if (_insignia != "") then {
-        // BI says this works globally but thats a lie (April 22)
-        [_unit, _insignia] remoteExec ["BIS_fnc_setUnitInsignia", 0];
+        // Wait 1 frame as cmd uses setObjectTextureGlobal which needs to be in postInit to work
+        [{[_this #0, _this #1] call BIS_fnc_setUnitInsignia}, [_unit, _insignia]] call CBA_fnc_execNextFrame;
         TRACE("hull3.uniform.assign",FMT_2("Assigned insignia '%1' to unit '%2'.",_insignia,_unit));
     };
 };
