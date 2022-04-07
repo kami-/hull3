@@ -5,6 +5,7 @@ class IF44_USSR_SN_U {
         uniform = "U_LIB_SOV_Strelok_w";
         vest = "V_LIB_SOV_RA_MosinBelt_ARM";
         backpack = "B_LIB_SOV_RA_Shinel";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -42,6 +43,7 @@ class IF44_USSR_SN_U {
         uniform = "U_LIB_SOV_Strelok_w";
         vest = "V_LIB_SOV_RA_SVTBelt_ARM";
         headGear = "H_LIB_SOV_RA_Helmet_w";
+        insignia = "";
     };
 
     class FTL : Leader {

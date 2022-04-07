@@ -5,6 +5,7 @@ class FOW_USMC_U {
         uniform = "fow_u_usmc_p42_01_camo01_1_private";
         vest = "fow_v_usmc_garand_ARM";
         backpack = "fow_b_usmc_m1928";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -39,6 +40,7 @@ class FOW_USMC_U {
         vest = "fow_v_usmc_carbine_ARM";
         backpack = "fow_b_usmc_m1928_02";
         uniform = "fow_u_usmc_p42_01_camo01_3_private";
+        insignia = "";
     };
 
     class FTL : Leader {

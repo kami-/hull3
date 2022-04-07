@@ -5,6 +5,7 @@ class IDF_90 {
         uniform = "MNP_CombatUniform_ISR";
         vest = "CUP_V_B_PASGT_OD_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -33,6 +34,7 @@ class IDF_90 {
 
     class Medic : Rifleman {
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

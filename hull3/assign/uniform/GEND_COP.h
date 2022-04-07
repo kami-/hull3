@@ -5,6 +5,7 @@ class GEND_COP {
         uniform = "U_B_GEN_Commander_F";
         vest = "V_TacVest_gen_F_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -30,6 +31,7 @@ class GEND_COP {
 
     class Medic : Rifleman {
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

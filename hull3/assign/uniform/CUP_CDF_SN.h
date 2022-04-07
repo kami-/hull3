@@ -5,6 +5,7 @@ class CUP_CDF_SN {
         uniform = "CUP_U_B_CDF_SNW_2";
         vest = "CUP_V_CDF_6B3_1_SNW_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -34,6 +35,7 @@ class CUP_CDF_SN {
 
     class Medic : Rifleman {
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

@@ -5,6 +5,7 @@ class NK_CON {
         uniform = "MNP_CombatUniform_NKR_Rg";
         vest = "CUP_V_O_SLA_Flak_Vest03_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -33,6 +34,7 @@ class NK_CON {
 
     class Medic : Rifleman {
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

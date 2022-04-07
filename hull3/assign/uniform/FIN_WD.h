@@ -5,6 +5,7 @@ class FIN_WD {
         uniform = "MNP_CombatUniform_Fin_A";
         vest = "MNP_Vest_FIN_2_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -33,6 +34,7 @@ class FIN_WD {
 
     class Medic : Rifleman {
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

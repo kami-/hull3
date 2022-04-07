@@ -5,6 +5,7 @@ class SYND_BANDIT {
         uniform = "U_I_C_Soldier_Bandit_5_F";
         vest = "CUP_V_RUS_Smersh_New_Buttpack_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -44,6 +45,7 @@ class SYND_BANDIT {
         uniform = "U_I_C_Soldier_Bandit_1_F";
         vest = "CUP_V_OI_TKI_Jacket2_01_ARM";
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

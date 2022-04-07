@@ -5,6 +5,7 @@ class IF44_BAF_PARA_SN_U {
         uniform = "U_LIB_UK_DenisonSmock_w";
         vest = "V_LIB_UK_P37_Rifleman_Blanco_ARM";
         backpack = "B_LIB_UK_HSack_Blanco";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -35,6 +36,7 @@ class IF44_BAF_PARA_SN_U {
     class Medic : Rifleman {
         backpack = "B_LIB_UK_HSack_Blanco_Cape";
         headGear = "H_LIB_UK_Para_Helmet_Mk2_Net_w";
+        insignia = "";
     };
 
     class FTL : Leader {

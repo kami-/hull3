@@ -5,6 +5,7 @@ class RU_CBRN {
         uniform = "U_C_CBRN_Suit_01_Blue_F";
         vest = "CUP_V_RUS_6B45_1_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -31,6 +32,7 @@ class RU_CBRN {
 
     class Medic : Rifleman {
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

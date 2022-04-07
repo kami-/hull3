@@ -5,6 +5,7 @@ class CHKDZ {
         uniform = "CUP_U_O_CHDKZ_Kam_01";
         vest = "CUP_V_RUS_Smersh_New_Buttpack_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -43,6 +44,7 @@ class CHKDZ {
         goggles = "";
         headGear = "CUP_H_ChDKZ_Beanie";
         uniform = "CUP_U_O_CHDKZ_Kam_03";
+        insignia = "";
     };
 
     class FTL : Leader {

@@ -5,6 +5,7 @@ class CUP_HIL_RES {
         uniform = "CUP_U_B_BDUv2_OD";
         vest = "CUP_V_B_PASGT_CCE_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -40,6 +41,7 @@ class CUP_HIL_RES {
         headGear = "CUP_H_Ger_M92_RGR_GG_CB";
         uniform = "CUP_U_B_BDUv2_roll_gloves_OD";
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

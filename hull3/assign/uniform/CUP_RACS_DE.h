@@ -5,6 +5,7 @@ class CUP_RACS_DE {
         uniform = "CUP_U_I_RACS_Desert_1";
         vest = "CUP_V_B_Interceptor_Rifleman_Coyote_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -35,6 +36,7 @@ class CUP_RACS_DE {
 
     class Medic : Rifleman {
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

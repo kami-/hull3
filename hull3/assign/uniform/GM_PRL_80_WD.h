@@ -5,6 +5,7 @@ class GM_PRL_80_WD {
         uniform = "gm_pl_army_uniform_soldier_80_moro";
         vest = "gm_pl_army_vest_80_rifleman_gry_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -37,6 +38,7 @@ class GM_PRL_80_WD {
         headGear = "gm_pl_army_headgear_wz67_net_oli";
         uniform = "gm_pl_army_uniform_soldier_rolled_80_moro";
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

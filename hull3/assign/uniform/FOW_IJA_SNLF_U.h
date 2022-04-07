@@ -5,6 +5,7 @@ class FOW_IJA_SNLF_U {
         uniform = "fow_u_ija_type98_snlf";
         vest = "fow_v_ija_rifle_ARM";
         backpack = "fow_b_ija_backpack";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -41,6 +42,7 @@ class FOW_IJA_SNLF_U {
         uniform = "fow_u_ija_type98_snlf";
         vest = "fow_v_ija_medic_ARM";
         headGear = "fow_h_ija_type90_snlf";
+        insignia = "";
     };
 
     class FTL : Leader {

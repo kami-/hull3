@@ -5,6 +5,7 @@ class IRN_ARMY {
         uniform = "MNP_CombatUniform_IR_IRGC_A";
         vest = "CUP_V_O_SLA_M23_1_BRN_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -34,6 +35,7 @@ class IRN_ARMY {
 
     class Medic : Rifleman {
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

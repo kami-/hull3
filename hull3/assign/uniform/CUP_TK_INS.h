@@ -5,6 +5,7 @@ class CUP_TK_INS {
         uniform = "CUP_O_TKI_Khet_Partug_01";
         vest = "CUP_V_OI_TKI_Jacket4_02_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -47,6 +48,7 @@ class CUP_TK_INS {
         uniform = "CUP_O_TKI_Khet_Partug_05";
         headGear = "CUP_H_TKI_SkullCap_06";
         vest = "CUP_V_OI_TKI_Jacket3_03_ARM";
+        insignia = "";
     };
 
     class FTL : Leader {

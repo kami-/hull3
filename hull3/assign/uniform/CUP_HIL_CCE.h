@@ -5,6 +5,7 @@ class CUP_HIL_CCE {
         uniform = "CUP_U_B_HIL_ACU_CCE";
         vest = "CUP_V_PMC_CIRAS_OD_Patrol_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -41,6 +42,7 @@ class CUP_HIL_CCE {
         headGear = "CUP_H_HIL_HelmetACH_GCovered_CCE";
         uniform = "CUP_U_B_HIL_ACU_Kneepad_Rolled_CCE";
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

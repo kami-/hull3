@@ -5,6 +5,7 @@ class IRE_WD {
         uniform = "MNP_CombatUniform_Ireland";
         vest = "MNP_Vest_Ireland_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -34,6 +35,7 @@ class IRE_WD {
 
     class Medic : Rifleman {
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

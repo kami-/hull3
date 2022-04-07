@@ -5,6 +5,7 @@ class CUP_RU_90_WD {
         uniform = "CUP_U_O_RUS_VSR98_worn_MSV";
         vest = "CUP_V_RUS_6B3_Flora_2_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -35,6 +36,7 @@ class CUP_RU_90_WD {
 
     class Medic : Rifleman {
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

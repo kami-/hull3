@@ -5,6 +5,7 @@ class LDF_90_WD {
         uniform = "CUP_U_B_BDUv2_ERDL_highland";
         vest = "CUP_V_B_PASGT_OD_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -36,6 +37,7 @@ class LDF_90_WD {
     class Medic : Rifleman {
         uniform = "CUP_U_B_BDUv2_roll2_gloves_ERDL_highland";
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

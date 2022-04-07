@@ -5,6 +5,7 @@ class USM_USMC_90_WD {
         uniform = "usm_bdu_w_m";
         vest = "usm_vest_pasgt_lbv_rm_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -36,6 +37,7 @@ class USM_USMC_90_WD {
     class Medic : Rifleman {
         backpack = "ark_backpack_large";
         vest = "usm_vest_pasgt_lbv_rm_ARM";
+        insignia = "";
     };
 
     class FTL : Leader {

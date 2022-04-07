@@ -5,6 +5,7 @@ class CSAT_SN {
         uniform = "MNP_CombatUniform_Russia_arctic";
         vest = "V_PlateCarrier1_blk_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -31,6 +32,7 @@ class CSAT_SN {
 
     class Medic : Rifleman {
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

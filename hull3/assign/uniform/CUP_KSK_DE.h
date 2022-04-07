@@ -5,6 +5,7 @@ class CUP_KSK_DE {
         uniform = "CUP_U_B_GER_Crye";
         vest = "CUP_V_B_GER_Carrier_Vest_2_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -37,6 +38,7 @@ class CUP_KSK_DE {
     class Medic : Rifleman {
         vest = "CUP_V_B_GER_Armatus_Trop_ARM";
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

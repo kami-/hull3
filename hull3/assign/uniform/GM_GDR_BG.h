@@ -5,6 +5,7 @@ class GM_GDR_BG {
         uniform = "gm_gc_army_uniform_soldier_80_str";
         vest = "gm_gc_army_vest_80_rifleman_str_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -36,6 +37,7 @@ class GM_GDR_BG {
     class Medic : Rifleman {
         headGear = "gm_gc_army_headgear_m56_cover_str";
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

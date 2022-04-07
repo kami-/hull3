@@ -5,6 +5,7 @@ class CUP_RU_MOD_PK {
         uniform = "CUP_U_O_RUS_Soldier_VKPO_VDV_Pink_gloves_pads";
         vest = "CUP_Vest_RUS_6B45_Sh117_Desert_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -37,6 +38,7 @@ class CUP_RU_MOD_PK {
     class Medic : Rifleman {
         headGear = "CUP_H_RUS_6B47_v2_GogglesClosed_Desert";
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

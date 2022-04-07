@@ -5,6 +5,7 @@ class AUS_AMCU {
         uniform = "MNP_CombatUniform_AMCU_T";
         vest = "MNP_Vest_AMCU_2_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -35,6 +36,7 @@ class AUS_AMCU {
     class Medic : Rifleman {
         backpack = "ark_backpack_large";
         uniform = "MNP_CombatUniform_AMCU_ST";
+        insignia = "";
     };
 
     class FTL : Leader {

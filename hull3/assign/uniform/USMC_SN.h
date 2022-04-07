@@ -5,6 +5,7 @@ class USMC_SN {
         uniform = "MNP_CombatUniform_USMC_arctic";
         vest = "V_PlateCarrier1_blk_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -36,6 +37,7 @@ class USMC_SN {
 
     class Medic : Rifleman {
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

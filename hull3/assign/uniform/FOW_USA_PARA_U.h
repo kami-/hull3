@@ -5,6 +5,7 @@ class FOW_USA_PARA_U {
         uniform = "fow_u_us_m42_ab_01_101_private";
         vest = "fow_v_us_ab_garand_ARM";
         backpack = "fow_b_us_m1944";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -41,6 +42,7 @@ class FOW_USA_PARA_U {
         vest = "fow_v_us_ab_carbine_ARM";
         backpack = "fow_b_us_m1944";
         uniform = "fow_u_us_m42_ab_01_101_private";
+        insignia = "";
     };
 
     class FTL : Leader {

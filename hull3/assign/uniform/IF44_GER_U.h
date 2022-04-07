@@ -5,6 +5,7 @@ class IF44_GER_U {
         uniform = "U_LIB_GER_Schutze";
         vest = "V_LIB_GER_VestKar98_ARM";
         backpack = "B_LIB_GER_Tonister34_cowhide";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -42,6 +43,7 @@ class IF44_GER_U {
         uniform = "U_LIB_GER_Pionier";
         vest = "V_LIB_GER_VestG43_ARM";
         headGear = "H_LIB_GER_Helmet_net";
+        insignia = "";
     };
 
     class FTL : Leader {

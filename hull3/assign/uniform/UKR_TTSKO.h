@@ -5,6 +5,7 @@ class UKR_TTSKO {
         uniform = "MNP_CombatUniform_Ukrainian";
         vest = "MNP_Vest_UKR_A_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -36,6 +37,7 @@ class UKR_TTSKO {
         backpack = "ark_backpack_large";
         uniform = "MNP_CombatUniform_Ukrainian";
         goggles = "";
+        insignia = "";
     };
 
     class FTL : Leader {

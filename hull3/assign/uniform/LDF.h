@@ -5,6 +5,7 @@ class LDF {
         uniform = "U_I_E_Uniform_01_F";
         vest = "V_CarrierRigKBT_01_light_EAF_F_ARM";
         backpack = "B_AssaultPack_eaf_F";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -38,6 +39,7 @@ class LDF {
     class Medic : Rifleman {
         backpack = "B_Carryall_eaf_F";
         uniform = "U_I_E_Uniform_01_shortsleeve_F";
+        insignia = "";
     };
 
     class FTL : Leader {

@@ -5,6 +5,7 @@ class FIA {
         uniform = "U_BG_Guerilla1_1";
         vest = "V_PlateCarrier1_blk_ARM";
         backpack = "B_Kitbag_rgr";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -39,6 +40,7 @@ class FIA {
         backpack = "B_Carryall_oli";
         uniform = "U_BG_Guerilla2_3";
         goggles = "";
+        insignia = "";
     };
 
     class FTL : Leader {
