@@ -122,7 +122,8 @@ hull3_uniform_fnc_assignInsignia = {
     params ["_unit", "_insignia"];
 
     if (_insignia != "") then {
-        [_unit, _insignia] call BIS_fnc_setUnitInsignia;
+        // BI says this works globally but thats a lie (April 22)
+        [_unit, _insignia] remoteExec ["BIS_fnc_setUnitInsignia", -2];
         TRACE("hull3.uniform.assign",FMT_2("Assigned insignia '%1' to unit '%2'.",_insignia,_unit));
     };
 };
