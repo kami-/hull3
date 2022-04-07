@@ -44,7 +44,8 @@ hull3_uniform_fnc_assignUniformTemplate = {
         ["goggles",                 CONFIG_TYPE_TEXT,   hull3_uniform_fnc_assignGoggles],
         ["uniform",                 CONFIG_TYPE_TEXT,   hull3_uniform_fnc_assignUniform],
         ["vest",                    CONFIG_TYPE_TEXT,   hull3_uniform_fnc_assignVest],
-        ["backpack",                CONFIG_TYPE_TEXT,   hull3_uniform_fnc_assignBackpack]
+        ["backpack",                CONFIG_TYPE_TEXT,   hull3_uniform_fnc_assignBackpack],
+        ["insignia",                CONFIG_TYPE_TEXT,   hull3_uniform_fnc_assignInsignia]
     ];
     [_unit, _gearTemplate, _uniformTemplate, _gearClass, _assignables] call hull3_uniform_fnc_assignObjectTemplate;
     DEBUG("hull3.uniform.assign",FMT_3("Assigned uniform class '%1' from template '%2' to unit '%3'.",_gearClass,_uniformTemplate,_unit));
@@ -114,5 +115,14 @@ hull3_uniform_fnc_assignBackpack = {
     if (_backpack != "") then {
         _unit addBackpack _backpack;
         TRACE("hull3.uniform.assign",FMT_2("Assigned backpack '%1' to unit '%2'.",_backpack,_unit));
+    };
+};
+
+hull3_uniform_fnc_assignInsignia = {
+    params ["_unit", "_insignia"];
+
+    if (_insignia != "") then {
+        [_unit, _insignia] call BIS_fnc_setUnitInsignia;
+        TRACE("hull3.uniform.assign",FMT_2("Assigned insignia '%1' to unit '%2'.",_insignia,_unit));
     };
 };
