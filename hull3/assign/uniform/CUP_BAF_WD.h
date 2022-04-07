@@ -5,7 +5,6 @@ class CUP_BAF_WD {
         uniform = "CUP_U_B_BAF_DPM_S2_UnRolled";
         vest = "CUP_V_B_BAF_DPM_Osprey_Mk3_Rifleman_ARM";
         backpack = "ark_backpack_med";
-    insignia = "";
         insignia = "";
     };
 

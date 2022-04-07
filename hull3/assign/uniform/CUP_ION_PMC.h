@@ -5,7 +5,6 @@ class CUP_ION_PMC {
         uniform = "CUP_I_B_PMC_Unit_6";
         vest = "CUP_V_PMC_CIRAS_Coyote_Patrol_ARM";
         backpack = "ark_backpack_med";
-    insignia = "";
         insignia = "";
     };
 

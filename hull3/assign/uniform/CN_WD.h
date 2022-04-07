@@ -5,7 +5,6 @@ class CN_WD {
         uniform = "MNP_CombatUniform_China";
         vest = "MNP_Vest_ChinaH_T2_ARM";
         backpack = "ark_backpack_med";
-    insignia = "";
         insignia = "";
     };
 

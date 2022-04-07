@@ -5,7 +5,6 @@ class CUP_CDF_FOR {
         uniform = "CUP_U_B_CDF_FST_1";
         vest = "CUP_V_CDF_6B3_1_FST_ARM";
         backpack = "ark_backpack_med";
-    insignia = "";
         insignia = "";
     };
 

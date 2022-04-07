@@ -5,7 +5,6 @@ class CUP_KSK_WD {
         uniform = "CUP_U_B_GER_Fleck_Crye";
         vest = "CUP_V_B_GER_Carrier_Vest_ARM";
         backpack = "ark_backpack_med";
-    insignia = "";
         insignia = "";
     };
 

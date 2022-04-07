@@ -5,7 +5,6 @@ class CUP_GER_WD {
         uniform = "CUP_U_B_GER_Flecktarn_5";
         vest = "CUP_V_B_GER_PVest_Fleck_RFL_ARM";
         backpack = "ark_backpack_med";
-    insignia = "";
         insignia = "";
     };
 

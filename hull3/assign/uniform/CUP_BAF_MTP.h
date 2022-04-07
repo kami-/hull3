@@ -5,7 +5,6 @@ class CUP_BAF_MTP {
         uniform = "CUP_U_B_BAF_MTP_S4_UnRolled";
         vest = "CUP_V_B_BAF_MTP_Osprey_Mk4_Rifleman_ARM";
         backpack = "ark_backpack_med";
-    insignia = "";
         insignia = "";
     };
 
