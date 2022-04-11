@@ -72,9 +72,12 @@ hull3_gear_fnc_assignVehicle = {
     [_unit, _gearTemplate, _gearClass] call hull3_gear_fnc_assignVehicleInit;
     [_unit, _gearTemplate, _gearClass] call hull3_gear_fnc_assignVehicleTemplate;
 
+    // Wait 1 frame as cargo needs to loaded in postInit
     if (["Logistics", "enableMedicalCrates"] call hull3_config_fnc_getBool) then {
-        [_unit] call hull3_gear_fnc_assignVehicleCrates;
-        DEBUG("hull3.gear.assign",FMT_1("Trying to add medical crate to '%1'.",_unit));
+        [{
+            [_this] call hull3_gear_fnc_assignVehicleCrates;
+            DEBUG("hull3.gear.assign",FMT_1("Trying to add medical crate to '%1'.",_this));
+        }, _unit] call CBA_fnc_execNextFrame;
     };
 };
 
@@ -104,8 +107,12 @@ hull3_gear_fnc_assignVehicleCrates = {
 
     if (_cargoSpace > 1) then {
         private _crate = "ARK_medicalSupplyCrate" createVehicle [0,0,0];
-        [_crate, _vehicle, true] call ace_cargo_fnc_loadItem;
-        DEBUG("hull3.gear.assign",FMT_2("Crate '%1' added to ACE cargo of '%2'!",_crate,_vehicle));
+        private _loaded = [_crate, _vehicle, true] call ace_cargo_fnc_loadItem;
+        if (_loaded) then {
+            DEBUG("hull3.gear.assign",FMT_2("Successfully added crate '%1' added to ACE cargo of '%2'!",_crate,_vehicle));
+        } else {
+            DEBUG("hull3.gear.assign",FMT_2("Failed to add crate '%1' added to ACE cargo of '%2'!",_crate,_vehicle));
+        };
     };
 };
 
