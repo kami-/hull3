@@ -5,6 +5,7 @@ class CUP_HIL_TTS {
         uniform = "CUP_U_B_HIL_ACU_TTS";
         vest = "CUP_V_CPC_Fastbelt_rngr_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -42,6 +43,7 @@ class CUP_HIL_TTS {
         uniform = "CUP_U_B_HIL_ACU_Kneepad_Rolled_TTS";
         vest = "CUP_V_CPC_medicalbelt_rngr_ARM";
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

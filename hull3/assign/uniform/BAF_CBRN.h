@@ -5,6 +5,7 @@ class BAF_CBRN {
         uniform = "U_B_CBRN_Suit_01_Wdl_F";
         vest = "CUP_V_B_BAF_MTP_Osprey_Mk4_Rifleman_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -37,6 +38,7 @@ class BAF_CBRN {
         headGear = "CUP_H_BAF_MTP_Mk6_GOGGLES_PRR";
         vest = "CUP_V_B_BAF_MTP_Osprey_Mk4_Medic_ARM";
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

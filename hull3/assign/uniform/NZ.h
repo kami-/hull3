@@ -5,6 +5,7 @@ class NZ {
         uniform = "MNP_CombatUniform_NZ_A";
         vest = "MNP_Vest_NZ_2_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -34,6 +35,7 @@ class NZ {
 
     class Medic : Rifleman {
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

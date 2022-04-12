@@ -5,6 +5,7 @@ class CN_WD2 {
         uniform = "MNP_CombatUniform_China_J";
         vest = "MNP_Vest_ChinaH_J2_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -31,6 +32,7 @@ class CN_WD2 {
 
     class Medic : Rifleman {
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

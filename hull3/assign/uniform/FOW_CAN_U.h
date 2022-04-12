@@ -5,6 +5,7 @@ class FOW_CAN {
         uniform = "fow_u_uk_bd40_can_01_private";
         vest = "fow_v_uk_base";
         backpack = "fow_b_uk_p37";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -40,6 +41,7 @@ class FOW_CAN {
         backpack = "fow_b_uk_bergenpack";
         uniform = "fow_u_uk_bd40_can_01_corporal";
         headGear = "fow_h_uk_mk3_net_camo";
+        insignia = "";
     };
 
     class FTL : Leader {

@@ -5,6 +5,7 @@ class NOR_DE {
         uniform = "MNP_CombatUniform_NOR_D_A";
         vest = "MNP_Vest_NOR_D_2_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -34,6 +35,7 @@ class NOR_DE {
 
     class Medic : Rifleman {
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

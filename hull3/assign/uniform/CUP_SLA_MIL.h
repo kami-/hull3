@@ -5,6 +5,7 @@ class CUP_SLA_MIL {
         uniform = "CUP_U_O_SLA_Green";
         vest = "CUP_V_O_SLA_Carrier_Belt_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -35,6 +36,7 @@ class CUP_SLA_MIL {
 
     class Medic : Rifleman {
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

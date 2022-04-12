@@ -5,6 +5,7 @@ class CUP_CZ_DE {
         uniform = "CUP_U_B_CZ_DST_NoKneepads";
         vest = "CUP_V_CZ_NPP2006_nk_des_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -38,6 +39,7 @@ class CUP_CZ_DE {
         headGear = "CUP_H_CZ_Helmet02";
         vest = "CUP_V_CZ_NPP2006_ok_des_ARM";
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

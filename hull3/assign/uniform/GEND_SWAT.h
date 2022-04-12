@@ -5,6 +5,7 @@ class GEND_SWAT {
         uniform = "U_B_GEN_Soldier_F";
         vest = "V_PlateCarrier1_blk_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -30,6 +31,7 @@ class GEND_SWAT {
 
     class Medic : Rifleman {
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

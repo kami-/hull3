@@ -5,6 +5,7 @@ class CUP_ION_PMC_SN {
         uniform = "CUP_I_B_PMC_Unit_27";
         vest = "CUP_V_PMC_CIRAS_Winter_Patrol_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -36,6 +37,7 @@ class CUP_ION_PMC_SN {
     class Medic : Rifleman {
         backpack = "ark_backpack_large";
         headGear = "CUP_H_USArmy_Helmet_ECH1_Black";
+        insignia = "";
     };
 
     class FTL : Leader {

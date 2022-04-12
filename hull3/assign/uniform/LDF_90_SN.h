@@ -5,6 +5,7 @@ class LDF_90_SN {
         uniform = "CUP_U_B_BDUv2_Winter";
         vest = "CUP_V_B_PASGT_winter_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -36,6 +37,7 @@ class LDF_90_SN {
     class Medic : Rifleman {
         uniform = "CUP_U_B_BDUv2_gloves_Winter";
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

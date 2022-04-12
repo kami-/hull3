@@ -5,6 +5,7 @@ class FOW_GER_SS_U {
         uniform = "fow_u_ger_m43_peadot_01_private";
         vest = "fow_v_heer_k98_ARM";
         backpack = "fow_b_heer_aframe";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -41,6 +42,7 @@ class FOW_GER_SS_U {
         vest = "fow_v_heer_g43_ARM";
         uniform = "fow_u_ger_m43_ss_01_private";
         headGear = "fow_h_ger_m40_ss_02";
+        insignia = "";
     };
 
     class FTL : Leader {

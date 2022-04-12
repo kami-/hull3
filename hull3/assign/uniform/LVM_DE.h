@@ -5,6 +5,7 @@ class LVM_DE {
         uniform = "MNP_CombatUniform_Militia_DF";
         vest = "CUP_V_O_SLA_M23_1_BRN_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -37,6 +38,7 @@ class LVM_DE {
         backpack = "ark_backpack_large";
         uniform = "MNP_CombatUniform_Militia_DE";
         headGear = "H_Booniehat_tan";
+        insignia = "";
     };
 
     class FTL : Leader {

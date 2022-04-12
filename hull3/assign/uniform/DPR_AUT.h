@@ -5,6 +5,7 @@ class DPR_AUT {
         uniform = "MNP_CombatUniform_DPR_A";
         vest = "CUP_V_RUS_Smersh_New_Buttpack_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -38,6 +39,7 @@ class DPR_AUT {
     class Medic : Rifleman {
         backpack = "ark_backpack_large";
         uniform = "MNP_CombatUniform_DPR_B";
+        insignia = "";
     };
 
     class FTL : Leader {

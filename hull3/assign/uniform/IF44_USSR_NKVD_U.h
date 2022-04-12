@@ -5,6 +5,7 @@ class IF44_USSR_NKVD_U {
         uniform = "U_LIB_NKVD_Efreitor";
         vest = "V_LIB_SOV_RA_MosinBelt_ARM";
         backpack = "B_LIB_SOV_RA_Shinel";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -42,6 +43,7 @@ class IF44_USSR_NKVD_U {
         uniform = "U_LIB_NKVD_Efreitor";
         vest = "V_LIB_SOV_RA_SVTBelt_ARM";
         headGear = "H_LIB_SOV_RA_Helmet";
+        insignia = "";
     };
 
     class FTL : Leader {

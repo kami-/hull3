@@ -5,6 +5,7 @@ class SYND_REBEL {
         uniform = "U_I_C_Soldier_Para_1_F";
         vest = "CUP_V_RUS_Smersh_New_Buttpack_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -39,6 +40,7 @@ class SYND_REBEL {
     class Medic : Rifleman {
         headGear = "H_Bandanna_sgg";
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

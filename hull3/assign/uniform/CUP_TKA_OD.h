@@ -5,6 +5,7 @@ class CUP_TKA_OD {
         uniform = "CUP_U_O_TK_Green";
         vest = "CUP_V_O_TK_Vest_1_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -36,6 +37,7 @@ class CUP_TKA_OD {
     class Medic : Rifleman {
         backpack = "ark_backpack_large";
         vest = "CUP_V_O_TK_Vest_2_ARM";
+        insignia = "";
     };
 
     class FTL : Leader {

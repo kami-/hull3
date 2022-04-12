@@ -5,6 +5,7 @@ class CUP_USMC_DE {
         uniform = "CUP_U_B_USMC_MCCUU_des";
         vest = "CUP_V_B_Eagle_SPC_Patrol_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -42,6 +43,7 @@ class CUP_USMC_DE {
         uniform = "CUP_U_B_USMC_MCCUU_des_gloves";
         vest = "CUP_V_B_Eagle_SPC_Corpsman_ARM";
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

@@ -5,6 +5,7 @@ class GM_DNK_80_WD {
         uniform = "gm_dk_army_uniform_soldier_84_oli";
         vest = "gm_dk_army_vest_54_rifleman_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -33,6 +34,7 @@ class GM_DNK_80_WD {
     class Medic : Rifleman {
         headGear = "gm_dk_headgear_m52_net_oli";
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

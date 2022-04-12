@@ -5,6 +5,7 @@ class CUP_USA_UCP {
         uniform = "CUP_U_B_USArmy_ACU_UCP";
         vest = "CUP_V_B_IOTV_UCP_Rifleman_USArmy_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -39,6 +40,7 @@ class CUP_USA_UCP {
         uniform = "CUP_U_B_USArmy_ACU_Kneepad_UCP";
         vest = "CUP_V_B_IOTV_UCP_Medic_USArmy_ARM";
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

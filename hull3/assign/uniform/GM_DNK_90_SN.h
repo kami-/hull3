@@ -5,6 +5,7 @@ class GM_DNK_90_SN {
         uniform = "gm_dk_army_uniform_soldier_84_win";
         vest = "gm_dk_army_vest_m00_win_rifleman_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -32,6 +33,7 @@ class GM_DNK_90_SN {
 
     class Medic : Rifleman {
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

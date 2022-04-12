@@ -5,6 +5,7 @@ class CUP_GER_DE {
         uniform = "CUP_U_B_GER_Tropentarn_5";
         vest = "CUP_V_B_GER_PVest_Trop_RFL_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -39,6 +40,7 @@ class CUP_GER_DE {
         uniform = "CUP_U_B_GER_Tropentarn_3";
         vest = "CUP_V_B_GER_PVest_Trop_Med_ARM";
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

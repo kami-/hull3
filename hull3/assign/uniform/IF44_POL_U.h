@@ -5,6 +5,7 @@ class IF44_POL_U {
         uniform = "U_LIB_WP_Soldier_camo_1";
         vest = "fow_v_heer_k98_ARM";
         backpack = "fow_b_heer_aframe";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -40,6 +41,7 @@ class IF44_POL_U {
         backpack = "fow_b_tornister_medic";
         uniform = "U_LIB_WP_Soldier_camo_3";
         headGear = "H_LIB_WP_Helmet_med";
+        insignia = "";
     };
 
     class FTL : Leader {

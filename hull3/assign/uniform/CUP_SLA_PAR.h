@@ -5,6 +5,7 @@ class CUP_SLA_PAR {
         uniform = "CUP_U_O_Partisan_VSR_Mixed1";
         vest = "CUP_V_CDF_6B3_1_Green_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -38,6 +39,7 @@ class CUP_SLA_PAR {
 
     class Medic : Rifleman {
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

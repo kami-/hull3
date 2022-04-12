@@ -5,6 +5,7 @@ class AAF_WD {
         uniform = "U_I_CombatUniform";
         vest = "V_PlateCarrierIA2_dgtl_ARM";
         backpack = "B_Kitbag_rgr";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -36,6 +37,7 @@ class AAF_WD {
     class Medic : Rifleman {
         backpack = "B_Carryall_oli";
         uniform = "U_I_CombatUniform_shortsleeve";
+        insignia = "";
     };
 
     class FTL : Leader {

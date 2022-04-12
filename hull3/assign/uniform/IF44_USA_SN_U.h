@@ -5,6 +5,7 @@ class IF44_USA_SN_U {
         uniform = "U_LIB_US_Private_w";
         vest = "V_LIB_US_Vest_Garand_ARM";
         backpack = "B_LIB_US_Backpack";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -39,6 +40,7 @@ class IF44_USA_SN_U {
         vest = "V_LIB_US_Vest_Medic2_ARM";
         headgear = "H_LIB_US_Helmet_Med_w";
         backpack = "B_LIB_US_Backpack";
+        insignia = "";
     };
 
     class FTL : Leader {

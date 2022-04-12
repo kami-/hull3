@@ -5,6 +5,7 @@ class CUP_NAPA_WD {
         uniform = "CUP_U_I_GUE_Flecktarn2";
         vest = "CUP_V_B_GER_Carrier_Rig_2_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -44,6 +45,7 @@ class CUP_NAPA_WD {
         backpack = "ark_backpack_large";
         goggles = "";
         headGear = "H_Bandanna_khk_hs";
+        insignia = "";
     };
 
     class FTL : Leader {

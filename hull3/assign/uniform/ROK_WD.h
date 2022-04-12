@@ -5,6 +5,7 @@ class ROK_WD {
         uniform = "MNP_CombatUniform_ROK_A";
         vest = "MNP_Vest_ROK_2_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -33,6 +34,7 @@ class ROK_WD {
 
     class Medic : Rifleman {
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {

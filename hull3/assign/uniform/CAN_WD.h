@@ -5,6 +5,7 @@ class CAN_WD {
         uniform = "MNP_CombatUniform_Canada";
         vest = "MNP_Vest_Canada_T2_ARM";
         backpack = "ark_backpack_med";
+        insignia = "";
     };
 
     class Leader : Rifleman {
@@ -35,6 +36,7 @@ class CAN_WD {
 
     class Medic : Rifleman {
         backpack = "ark_backpack_large";
+        insignia = "";
     };
 
     class FTL : Leader {
