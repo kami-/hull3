@@ -30,6 +30,9 @@ hull3_settings_fnc_setNonStandardGeneralSettings = {
     if (!(["General", "enableEnvironment"] call hull3_config_fnc_getBool)) then {
         [{time > 0}, {enableEnvironment [false, true];}] call CBA_fnc_waitUntilAndExecute;
         DEBUG("hull3.settings","Ambient animals are disabled.");
+    } else {
+        [{time > 0}, {enableEnvironment [true, true];}] call CBA_fnc_waitUntilAndExecute;
+        DEBUG("hull3.settings","Ambient animals are enabled.");
     };
     if (["General", "fadeEnvironment"] call hull3_config_fnc_getBool) then {
         5 fadeEnvironment 0.35;
