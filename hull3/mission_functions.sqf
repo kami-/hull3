@@ -89,15 +89,6 @@ hull3_mission_fnc_getTimeOfDay = {
     (["MissionParams", "time"] call hull3_config_fnc_getArray) select (paramsArray select _paramIdx);
 };
 
-hull3_mission_fnc_isNightTime = {
-    private _nightTimeStart = 17 * 60 + 50;
-    private _nightTimeEnd = 4 * 60;
-    private _timeOfDay = [] call hull3_mission_fnc_getTimeOfDay;
-    private _currentTime = (_timeOfDay #0) * 60 + (_timeOfDay #1);
-
-    _currentTime >= _nightTimeStart || {_currentTime <= _nightTimeEnd};
-};
-
 hull3_mission_fnc_getFog = {
     if (isNil {hull3_mission_fog}) then {
         hull3_mission_fog = [0, 0, 0];
