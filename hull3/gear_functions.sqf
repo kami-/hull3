@@ -333,7 +333,7 @@ hull3_gear_fnc_tryRemoveNightGear = {
 
     private _light = getLighting #1;
     if (_light < 300) exitWith {};
-    DEBUG("hull3.gear.assign.night",FMT_1("Light level below threshold '%1'. Removing night gear from unit '%2'.",_light,_unit));
+    DEBUG("hull3.gear.assign.night",FMT_2("Light level below threshold '%1'. Removing night gear from unit '%2'.",_light,_unit));
 
     private _chemClasses = ["ACE_Chemlight_HiOrange","ACE_Chemlight_HiRed","ACE_Chemlight_HiYellow","ACE_Chemlight_HiWhite","ACE_Chemlight_Orange","ACE_Chemlight_White","ACE_Chemlight_IR"];
 
