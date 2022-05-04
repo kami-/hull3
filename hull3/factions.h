@@ -1871,6 +1871,32 @@ class Faction {
         };
     };
 
+    class GMX_TKA {
+        gear = "G3A3_TKA";
+        uniform = "GMX_TKA_OD";
+        name = "GMX Takistani Army";
+        description = "OD Green Camo and G3A3";
+        languages[] = {{"east", 100}};
+        side = "east";
+        camouflage[] = {"desert"};
+        rolePrefix = "TK Army";
+        vehicleClassnames[] = {
+            {"CO", "gmx_tak_army_uaz469_cargo_des"},
+            {"SL", "gmx_tak_army_uaz469_cargo_des"},
+            {"FT", "gmx_tak_army_uaz469_cargo_des"},
+            {"ATTCH", "gmx_tak_army_uaz469_cargo_des"},
+            {"ENG", "gmx_tak_army_ural4320_reammo_des"},
+            {"APC", "gmx_tak_army_m113a1g_apc_des"},
+            {"IFV", "gmx_tak_army_bmp1sp2_des"},
+            {"SPAAG", "gmx_tak_army_zsu234v1_des"},
+            {"TNK", "gmx_tak_army_t55am2b_des"},
+            {"TH", "gmx_tak_army_mi2t_des"},
+            {"AH", "gmx_tak_army_mi2urpg_des"},
+            {"CAS", "CUP_O_Su25_Dyn_TKA"},
+            {"Technical", "gmx_tak_army_uaz469_dshdm_des"}
+        };
+    };
+
     class CUP_TK_INS {
         gear = "AKM_TKI";
         uniform = "CUP_TK_INS";
