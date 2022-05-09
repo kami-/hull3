@@ -63,7 +63,9 @@ hull3_gear_fnc_assignUnit = {
     [_unit, _gearTemplate, _uniformTemplate, _gearClass] call hull3_uniform_fnc_assignUniformTemplate;
     [_unit, _faction, _gearTemplate, _gearClass] call hull3_gear_fnc_assignUnitInit;
     [_unit, _gearTemplate, _gearClass] call hull3_gear_fnc_assignUnitTemplate;
-    [_unit] call hull3_gear_fnc_tryRemoveNightGear;
+
+    // Wait to make sure client has time syncd back from server for light value
+    [{time > 10}, {_this call hull3_gear_fnc_tryRemoveNightGear}, [_unit]] call CBA_fnc_waitUntilAndExecute;
 };
 
 hull3_gear_fnc_assignVehicle = {
@@ -329,10 +331,28 @@ hull3_gear_fnc_removeRadios = {
 hull3_gear_fnc_tryRemoveNightGear = {
     params ["_unit"];
 
-    if ([] call hull3_mission_fnc_isNightTime) exitWith {};
-    DEBUG("hull3.gear.assign.night",FMT_1("Removing night gear from unit '%1'.",_unit));
+    private _light = getLighting #1;
+    private _threshold = ["General", "nightLightLevel"] call hull3_config_fnc_getNumber;
+    if (_light < _threshold) exitWith {};
+    DEBUG("hull3.gear.assign.night",FMT_2("Light level '%1' above threshold '%2'. Removing night gear from unit '%3'.",_light,_threshold,_unit));
+
+    private _chemClasses = [
+        "ACE_Chemlight_HiOrange",
+        "ACE_Chemlight_HiRed",
+        "ACE_Chemlight_HiYellow",
+        "ACE_Chemlight_HiWhite",
+        "ACE_Chemlight_Orange",
+        "ACE_Chemlight_White",
+        "ACE_Chemlight_IR"
+    ];
+
     {
-        _unit removeMagazineGlobal _x;
-    } foreach ((magazines _unit) select { _x == "ACE_Chemlight_HiRed" });
-    _unit removeItems "ACE_Flashlight_KSF1";
+        if (_x in _chemClasses) then {
+            _unit removeMagazineGlobal _x;
+        };
+    } forEach magazines _unit;
+
+    {
+        _unit removeItems _x;
+    } forEach ["ACE_Flashlight_MX991","ACE_Flashlight_KSF1","ACE_Flashlight_XL50"];
 };
