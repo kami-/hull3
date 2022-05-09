@@ -169,6 +169,7 @@ class Hull3 {
         #include "assign\uniform\GMX_TKA_OD.h"
         #include "assign\uniform\GMX_CDF_TTSKO.h"
         #include "assign\uniform\GMX_CDF_DIGITAL.h"
+        #include "assign\uniform\GMX_CDF_OREL.h"
 
         unitBaseClass = "Rifleman";
     };
@@ -265,6 +266,7 @@ class Hull3 {
         #include "assign\gear\G3A3_TKA.h"
         #include "assign\gear\AK74_CDF.h"
         #include "assign\gear\AK105_CDF.h"
+        #include "assign\gear\AKM_CDF.h"
 
         unitBaseClass = "Rifleman";
         vehicleBaseClass = "Vehicle";
