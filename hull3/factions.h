@@ -961,6 +961,32 @@ class Faction {
         };
     };
 
+    class GMX_CDF_NG {
+        gear = "AK74_CDF_NG";
+        uniform = "GMX_CDF_NG";
+        name = "GMX CDF National Guard";
+        description = "CDF National Guard with Cobra optic AK74";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland"};
+        rolePrefix = "CDF National Guard";
+        vehicleClassnames[] = {
+            {"CO", "gmx_cdf_uaz469_cargo_wdl"},
+            {"SL", "gmx_cdf_uaz469_cargo_wdl"},
+            {"FT", "gmx_cdf_uaz469_cargo_wdl"},
+            {"ATTCH", "gmx_cdf_ural4320_cargo_wdl"},
+            {"ENG", "gmx_cdf_ural4320_reammo_wdl"},
+            {"APC", "gmx_cdf_btr60pb_wdl"},
+            {"IFV", "gmx_cdf_bmp1sp2_wdl"},
+            {"SPAAG", "gmx_cdf_zsu234v1_wdl"},
+            {"TNK", "gmx_cdf_t55am2b_wdl"},
+            {"TH", "gmx_cdf_mi2t_wdl"},
+            {"AH", "gmx_cdf_mi2urpg_wdl"},
+            {"CAS", "CUP_B_Su25_Dyn_CDF"},
+            {"Technical", "gmx_cdf_uaz469_dshkm_wdl"}
+        };
+    };
+
     class MNP_OPF_F_SN {
         gear = "Katiba_CSAT";
         uniform = "CSAT_SN";
