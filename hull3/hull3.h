@@ -167,6 +167,7 @@ class Hull3 {
         #include "assign\uniform\GM_DNK_90_WD.h"
         #include "assign\uniform\GM_DNK_90_SN.h"
         #include "assign\uniform\GMX_TKA_OD.h"
+        #include "assign\uniform\GMX_CDF_TTSKO.h"
 
         unitBaseClass = "Rifleman";
     };
@@ -261,6 +262,7 @@ class Hull3 {
         #include "assign\gear\C7_DNK.h"
         #include "assign\gear\Katiba_CSAT.h"
         #include "assign\gear\G3A3_TKA.h"
+        #include "assign\gear\AK74_CDF.h"
 
         unitBaseClass = "Rifleman";
         vehicleBaseClass = "Vehicle";
