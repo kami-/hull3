@@ -89,7 +89,7 @@ class Hull3 {
         #include "assign\uniform\CUP_ION_PMC_SN.h"
         #include "assign\uniform\CUP_ION_PMC.h"
         #include "assign\uniform\PMC_CBRN.h"
-		#include "assign\uniform\FOW_USMC_U.h"
+        #include "assign\uniform\FOW_USMC_U.h"
         #include "assign\uniform\FOW_USA_U.h"
         #include "assign\uniform\FOW_USA_PAC_U.h"
         #include "assign\uniform\FOW_USA_PARA_U.h"
@@ -283,7 +283,6 @@ class Hull3 {
     class Marker {
         isGroupEnabled = 1;
         isFireTeamEnabled = 1;
-
         defaultDelay = 3;
 
         class MedicMarker {
@@ -379,6 +378,7 @@ class Hull3 {
         disableRemoteSensors = 1;                       // Disables RemoteSensors
         enableEnvironment = 0;                          // Disables ambient animals but keeps sounds
         fadeEnvironment = 1;                            // Reduce sound of environmental sounds (rain/thunder/insects)
+        nightLightLevel = 300;                          // getLighting value must be below this to be considered dark and keep night gear
     };
 
     class Logistics {
