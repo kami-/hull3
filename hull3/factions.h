@@ -2287,6 +2287,32 @@ class Faction {
         };
     };
 
+    class GMX_CHKDZ {
+        gear = "AKM_CHKDZ";
+        uniform = "GMX_CHKDZ";
+        name = "Chedaki";
+        description = "Mixed camo and AKM's";
+        languages[] = {{"east", 100}};
+        side = "east";
+        camouflage[] = {"woodland"};
+        rolePrefix = "Chedaki";
+        vehicleClassnames[] = {
+            {"CO", "gmx_chdkz_uaz469_cargo_wdr"},
+            {"SL", "gmx_chdkz_uaz469_cargo_wdr"},
+            {"FT", "gmx_chdkz_uaz469_cargo_wdr"},
+            {"ATTCH", "gmx_chdkz_uaz469_cargo_wdr"},
+            {"ENG", "gmx_chdkz_ural4320_reammo_wdr"},
+            {"APC", "gmx_chdkz_btr60pb_wdr"},
+            {"IFV", "gmx_chdkz_bmp1sp2_wdr"},
+            {"SPAAG", "gmx_chdkz_zsu234v1_wdr"},
+            {"TNK", "gmx_chdkz_t55am2b_wdr"},
+            {"TH", "gmx_chdkz_mi2t_wdl"},
+            {"AH", "gmx_chdkz_mi2urpg_wdl"},
+            {"CAS", "CUP_O_Su25_Dyn_RU"},
+            {"Technical", "gmx_chdkz_uaz469_dshkm_wdr"}
+        };
+    };
+
     class IND_F {
         gear = "Mk20_AAF_WD";
         uniform = "AAF_WD";

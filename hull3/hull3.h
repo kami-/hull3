@@ -172,6 +172,7 @@ class Hull3 {
         #include "assign\uniform\GMX_CDF_OREL.h"
         #include "assign\uniform\GMX_CDF_NG.h"
         #include "assign\uniform\GMX_CDF_MC.h"
+        #include "assign\uniform\GMX_CHDKZ.h"
 
         unitBaseClass = "Rifleman";
     };
