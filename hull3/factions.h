@@ -883,6 +883,136 @@ class Faction {
         };
     };
 
+    class GMX_CDF_TTSKO {
+        gear = "AK74_CDF";
+        uniform = "GMX_CDF_TTSKO";
+        name = "GMX CDF (TTSKO)";
+        description = "CDF with assorted AK74 and AKS74";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland"};
+        rolePrefix = "CDF";
+        vehicleClassnames[] = {
+            {"CO", "gmx_cdf_uaz469_cargo_wdl"},
+            {"SL", "gmx_cdf_uaz469_cargo_wdl"},
+            {"FT", "gmx_cdf_uaz469_cargo_wdl"},
+            {"ATTCH", "gmx_cdf_ural4320_cargo_wdl"},
+            {"ENG", "gmx_cdf_ural4320_reammo_wdl"},
+            {"APC", "gmx_cdf_btr60pb_wdl"},
+            {"IFV", "gmx_cdf_bmp1sp2_wdl"},
+            {"SPAAG", "gmx_cdf_zsu234v1_wdl"},
+            {"TNK", "gmx_cdf_t55am2b_wdl"},
+            {"TH", "gmx_cdf_mi2t_wdl"},
+            {"AH", "gmx_cdf_mi2urpg_wdl"},
+            {"CAS", "CUP_B_Su25_Dyn_CDF"},
+            {"Technical", "gmx_cdf_uaz469_dshkm_wdl"}
+        };
+    };
+
+    class GMX_CDF_DIGITAL {
+        gear = "AK105_CDF";
+        uniform = "GMX_CDF_DIGITAL";
+        name = "GMX CDF (Digital TTSKO)";
+        description = "CDF with assorted AK105";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland"};
+        rolePrefix = "CDF";
+        vehicleClassnames[] = {
+            {"CO", "gmx_cdf_uaz469_cargo_wdl"},
+            {"SL", "gmx_cdf_uaz469_cargo_wdl"},
+            {"FT", "gmx_cdf_uaz469_cargo_wdl"},
+            {"ATTCH", "gmx_cdf_ural4320_cargo_wdl"},
+            {"ENG", "gmx_cdf_ural4320_reammo_wdl"},
+            {"APC", "gmx_cdf_btr60pb_wdl"},
+            {"IFV", "gmx_cdf2022_marder1a2_wdl"},
+            {"SPAAG", "gmx_cdf2022_gepard1a1_wdl"},
+            {"TNK", "gmx_cdf2022_kpz1a5_wdl"},
+            {"TH", "gmx_cdf_mi2t_wdl"},
+            {"AH", "gmx_cdf_mi2urpg_wdl"},
+            {"CAS", "CUP_B_Su25_Dyn_CDF"},
+            {"Technical", "gmx_cdf_uaz469_dshkm_wdl"}
+        };
+    };
+
+    class GMX_CDF_OREL {
+        gear = "AKM_CDF";
+        uniform = "GMX_CDF_OREL";
+        name = "GMX CDF Police";
+        description = "Chernarus OREL Police with assorted AKM";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland"};
+        rolePrefix = "CDF OREL";
+        vehicleClassnames[] = {
+            {"CO", "gmx_cdf_uaz469_cargo_wdl"},
+            {"SL", "gmx_cdf_uaz469_cargo_wdl"},
+            {"FT", "gmx_cdf_uaz469_cargo_wdl"},
+            {"ATTCH", "gmx_cdf_ural4320_cargo_wdl"},
+            {"ENG", "gmx_cdf_ural4320_reammo_wdl"},
+            {"APC", "gmx_cdf_btr60pb_wdl"},
+            {"IFV", "gmx_cdf_bmp1sp2_wdl"},
+            {"SPAAG", "gmx_cdf_zsu234v1_wdl"},
+            {"TNK", "gmx_cdf_t55am2b_wdl"},
+            {"TH", "gmx_cdf_mi2t_wdl"},
+            {"AH", "gmx_cdf_mi2urpg_wdl"},
+            {"CAS", "CUP_B_Su25_Dyn_CDF"},
+            {"Technical", "gmx_cdf_uaz469_dshkm_wdl"}
+        };
+    };
+
+    class GMX_CDF_NG {
+        gear = "AK74_CDF_NG";
+        uniform = "GMX_CDF_NG";
+        name = "GMX CDF National Guard";
+        description = "CDF National Guard with Cobra optic AK74";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland"};
+        rolePrefix = "CDF National Guard";
+        vehicleClassnames[] = {
+            {"CO", "gmx_cdf_uaz469_cargo_wdl"},
+            {"SL", "gmx_cdf_uaz469_cargo_wdl"},
+            {"FT", "gmx_cdf_uaz469_cargo_wdl"},
+            {"ATTCH", "gmx_cdf_ural4320_cargo_wdl"},
+            {"ENG", "gmx_cdf_ural4320_reammo_wdl"},
+            {"APC", "gmx_cdf_btr60pb_wdl"},
+            {"IFV", "gmx_cdf_bmp1sp2_wdl"},
+            {"SPAAG", "gmx_cdf_zsu234v1_wdl"},
+            {"TNK", "gmx_cdf_t55am2b_wdl"},
+            {"TH", "gmx_cdf_mi2t_wdl"},
+            {"AH", "gmx_cdf_mi2urpg_wdl"},
+            {"CAS", "CUP_B_Su25_Dyn_CDF"},
+            {"Technical", "gmx_cdf_uaz469_dshkm_wdl"}
+        };
+    };
+
+    class GMX_CDF_MC {
+        gear = "BREN807_CDF";
+        uniform = "GMX_CDF_MC";
+        name = "GMX CDF (Multicam)";
+        description = "CDF with Bren 807";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {"woodland", "desert"};
+        rolePrefix = "CDF";
+        vehicleClassnames[] = {
+            {"CO", "gmx_cdf_uaz469_cargo_wdl"},
+            {"SL", "gmx_cdf_uaz469_cargo_wdl"},
+            {"FT", "gmx_cdf_uaz469_cargo_wdl"},
+            {"ATTCH", "gmx_cdf_ural4320_cargo_wdl"},
+            {"ENG", "gmx_cdf_ural4320_reammo_wdl"},
+            {"APC", "gmx_cdf_btr60pb_wdl"},
+            {"IFV", "gmx_cdf2022_marder1a2_wdl"},
+            {"SPAAG", "gmx_cdf2022_gepard1a1_wdl"},
+            {"TNK", "gmx_cdf2022_kpz1a5_wdl"},
+            {"TH", "gmx_cdf_mi2t_wdl"},
+            {"AH", "gmx_cdf_mi2urpg_wdl"},
+            {"CAS", "CUP_B_Su25_Dyn_CDF"},
+            {"Technical", "gmx_cdf_uaz469_dshkm_wdl"}
+        };
+    };
+
     class MNP_OPF_F_SN {
         gear = "Katiba_CSAT";
         uniform = "CSAT_SN";
@@ -1871,6 +2001,32 @@ class Faction {
         };
     };
 
+    class GMX_TKA {
+        gear = "G3A3_TKA";
+        uniform = "GMX_TKA_OD";
+        name = "GMX Takistani Army";
+        description = "OD Green Camo and G3A3";
+        languages[] = {{"east", 100}};
+        side = "east";
+        camouflage[] = {"desert"};
+        rolePrefix = "TK Army";
+        vehicleClassnames[] = {
+            {"CO", "gmx_tak_army_uaz469_cargo_des"},
+            {"SL", "gmx_tak_army_uaz469_cargo_des"},
+            {"FT", "gmx_tak_army_uaz469_cargo_des"},
+            {"ATTCH", "gmx_tak_army_uaz469_cargo_des"},
+            {"ENG", "gmx_tak_army_ural4320_reammo_des"},
+            {"APC", "gmx_tak_army_m113a1g_apc_des"},
+            {"IFV", "gmx_tak_army_bmp1sp2_des"},
+            {"SPAAG", "gmx_tak_army_zsu234v1_des"},
+            {"TNK", "gmx_tak_army_t55am2b_des"},
+            {"TH", "gmx_tak_army_mi2t_des"},
+            {"AH", "gmx_tak_army_mi2urpg_des"},
+            {"CAS", "CUP_O_Su25_Dyn_TKA"},
+            {"Technical", "gmx_tak_army_uaz469_dshdm_des"}
+        };
+    };
+
     class CUP_TK_INS {
         gear = "AKM_TKI";
         uniform = "CUP_TK_INS";
@@ -2128,6 +2284,32 @@ class Faction {
             {"AH", "CUP_O_Mi24_V_Dynamic_RU"},
             {"CAS", "CUP_O_Su25_Dyn_RU"},
             {"Technical", "CUP_O_UAZ_MG_CHDKZ"}
+        };
+    };
+
+    class GMX_CHKDZ {
+        gear = "AKM_CHKDZ";
+        uniform = "GMX_CHKDZ";
+        name = "Chedaki";
+        description = "Mixed camo and AKM's";
+        languages[] = {{"east", 100}};
+        side = "east";
+        camouflage[] = {"woodland"};
+        rolePrefix = "Chedaki";
+        vehicleClassnames[] = {
+            {"CO", "gmx_chdkz_uaz469_cargo_wdr"},
+            {"SL", "gmx_chdkz_uaz469_cargo_wdr"},
+            {"FT", "gmx_chdkz_uaz469_cargo_wdr"},
+            {"ATTCH", "gmx_chdkz_uaz469_cargo_wdr"},
+            {"ENG", "gmx_chdkz_ural4320_reammo_wdr"},
+            {"APC", "gmx_chdkz_btr60pb_wdr"},
+            {"IFV", "gmx_chdkz_bmp1sp2_wdr"},
+            {"SPAAG", "gmx_chdkz_zsu234v1_wdr"},
+            {"TNK", "gmx_chdkz_t55am2b_wdr"},
+            {"TH", "gmx_chdkz_mi2t_wdl"},
+            {"AH", "gmx_chdkz_mi2urpg_wdl"},
+            {"CAS", "CUP_O_Su25_Dyn_RU"},
+            {"Technical", "gmx_chdkz_uaz469_dshkm_wdr"}
         };
     };
 
