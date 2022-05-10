@@ -3,14 +3,14 @@ class GMX_CDF_TTSKO {
         headGear = "gmx_cdf_army_headgear_m96_ttsko";
         goggles = "";
         uniform = "gmx_cdf_army_uniform_soldier_ttsko";
-        vest = "gmx_cdf_army_vest_rifleman_ttsko";
+        vest = "gmx_cdf_army_vest_rifleman_ttsko_ARM";
         backpack = "ark_backpack_med";
         insignia = "";
     };
 
     class Leader : Rifleman {
         uniform = "gmx_cdf_army_uniform_soldier_rolled_ttsko";
-        vest = "gmx_cdf_army_vest_leader_ttsko";
+        vest = "gmx_cdf_army_vest_leader_ttsko_ARM";
     };
 
     class Officer : Leader {
@@ -20,7 +20,7 @@ class GMX_CDF_TTSKO {
     class Crew : Rifleman {
         headGear = "gm_gc_army_headgear_crewhat_80_blk";
         uniform = "gmx_cdf_army_uniform_crew_ttsko";
-        vest = "gmx_cdf_army_vest_belt_ttsko";
+        vest = "gmx_cdf_army_vest_belt_ttsko_ARM";
         backpack = "ark_backpack_small";
     };
 
@@ -43,7 +43,7 @@ class GMX_CDF_TTSKO {
     };
 
     class AR : Rifleman {
-        vest = "gmx_cdf_army_vest_lmg_ttsko";
+        vest = "gmx_cdf_army_vest_lmg_ttsko_ARM";
     };
 
     class AAR : Rifleman {
@@ -51,23 +51,23 @@ class GMX_CDF_TTSKO {
     };
 
     class RAT : Rifleman {
-        vest = "gmx_cdf_army_vest_at_ttsko";
+        vest = "gmx_cdf_army_vest_at_ttsko_ARM";
     };
 
     class MMGG : AR {
-        vest = "gmx_cdf_army_vest_lmg_ttsko";
+        vest = "gmx_cdf_army_vest_lmg_ttsko_ARM";
         backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
-        vest = "gmx_cdf_army_vest_leader_ttsko";
+        vest = "gmx_cdf_army_vest_leader_ttsko_ARM";
     };
 
     class HMGG : AR {
     };
 
     class HMGAG : AAR {
-        vest = "gmx_cdf_army_vest_leader_ttsko";
+        vest = "gmx_cdf_army_vest_leader_ttsko_ARM";
     };
 
     class HMGAC : AAR {
@@ -78,7 +78,7 @@ class GMX_CDF_TTSKO {
     };
 
     class MATAG : AAR {
-        vest = "gmx_cdf_army_vest_leader_ttsko";
+        vest = "gmx_cdf_army_vest_leader_ttsko_ARM";
     };
 
     class MATAC : MATAG {
@@ -89,7 +89,7 @@ class GMX_CDF_TTSKO {
     };
 
     class HATAG : AAR {
-        vest = "gmx_cdf_army_vest_leader_ttsko";
+        vest = "gmx_cdf_army_vest_leader_ttsko_ARM";
     };
 
     class HATAC : HATAG {
@@ -99,7 +99,7 @@ class GMX_CDF_TTSKO {
     };
 
     class DHATAG : AAR {
-        vest = "gmx_cdf_army_vest_leader_ttsko";
+        vest = "gmx_cdf_army_vest_leader_ttsko_ARM";
     };
 
     class DHATAC : AAR {
@@ -109,7 +109,7 @@ class GMX_CDF_TTSKO {
     };
 
     class SAMAG : AAR {
-        vest = "gmx_cdf_army_vest_leader_ttsko";
+        vest = "gmx_cdf_army_vest_leader_ttsko_ARM";
     };
 
     class SAMAC : AAR {
@@ -119,7 +119,7 @@ class GMX_CDF_TTSKO {
     };
 
     class GMGAG : AAR {
-        vest = "gmx_cdf_army_vest_leader_ttsko";
+        vest = "gmx_cdf_army_vest_leader_ttsko_ARM";
     };
 
     class GMGAC : AAR {
@@ -129,7 +129,7 @@ class GMX_CDF_TTSKO {
     };
 
     class MTRAG : AAR {
-        vest = "gmx_cdf_army_vest_leader_ttsko";
+        vest = "gmx_cdf_army_vest_leader_ttsko_ARM";
     };
 
     class MTRAC : AAR {
@@ -144,7 +144,7 @@ class GMX_CDF_TTSKO {
 
     class SN : Rifleman {
         headGear = "gmx_cdf_army_headgear_cap_ttsko";
-        vest = "gmx_cdf_army_vest_marksman_ttsko";
+        vest = "gmx_cdf_army_vest_marksman_ttsko_ARM";
         backpack = "ark_backpack_small";
     };
 
@@ -162,7 +162,7 @@ class GMX_CDF_TTSKO {
 
     class P : Crew {
         headGear = "gm_gc_headgear_zsh3_wht";
-        vest = "gm_ge_army_vest_pilot_oli";
+        vest = "gm_ge_army_vest_pilot_oli_ARM";
         backpack = "B_Parachute";
     };
 

@@ -3,14 +3,14 @@ class GMX_CDF_DIGITAL {
         headGear = "gmx_cdf2022_army_headgear_m92_digittsko";
         goggles = "";
         uniform = "gmx_cdf2022_army_uniform_soldier_digittsko";
-        vest = "gmx_cdf2022_army_vest_armor_90_rifleman_digittsko";
+        vest = "gmx_cdf2022_army_vest_armor_90_rifleman_digittsko_ARM";
         backpack = "ark_backpack_med";
         insignia = "";
     };
 
     class Leader : Rifleman {
         uniform = "gmx_cdf2022_army_uniform_soldier_rolled_digittsko";
-        vest = "gmx_cdf2022_army_vest_armor_90_leader_digittsko";
+        vest = "gmx_cdf2022_army_vest_armor_90_leader_digittsko_ARM";
     };
 
     class Officer : Leader {
@@ -20,7 +20,7 @@ class GMX_CDF_DIGITAL {
     class Crew : Rifleman {
         headGear = "gm_gc_army_headgear_crewhat_80_blk";
         uniform = "gmx_cdf2022_army_uniform_crew_digittsko";
-        vest = "gmx_cdf2022_army_vest_armor_90_crew_digittsko";
+        vest = "gmx_cdf2022_army_vest_armor_90_crew_digittsko_ARM";
         backpack = "ark_backpack_small";
     };
 
@@ -35,7 +35,7 @@ class GMX_CDF_DIGITAL {
     };
 
     class Medic : Rifleman {
-        vest = "gmx_cdf2022_army_vest_armor_90_medic_digittsko";
+        vest = "gmx_cdf2022_army_vest_armor_90_medic_digittsko_ARM";
         backpack = "ark_backpack_large";
         insignia = "";
     };
@@ -45,7 +45,7 @@ class GMX_CDF_DIGITAL {
     };
 
     class AR : Rifleman {
-        vest = "gmx_cdf2022_army_vest_armor_90_machinegunner_digittsko";
+        vest = "gmx_cdf2022_army_vest_armor_90_machinegunner_digittsko_ARM";
     };
 
     class AAR : Rifleman {
@@ -57,19 +57,19 @@ class GMX_CDF_DIGITAL {
     };
 
     class MMGG : AR {
-        vest = "gmx_cdf2022_army_vest_armor_90_machinegunner_digittsko";
+        vest = "gmx_cdf2022_army_vest_armor_90_machinegunner_digittsko_ARM";
         backpack = "ark_backpack_large";
     };
 
     class MMGAG : AAR {
-        vest = "gmx_cdf2022_army_vest_armor_90_leader_digittsko";
+        vest = "gmx_cdf2022_army_vest_armor_90_leader_digittsko_ARM";
     };
 
     class HMGG : AR {
     };
 
     class HMGAG : AAR {
-        vest = "gmx_cdf2022_army_vest_armor_90_leader_digittsko";
+        vest = "gmx_cdf2022_army_vest_armor_90_leader_digittsko_ARM";
     };
 
     class HMGAC : AAR {
@@ -81,7 +81,7 @@ class GMX_CDF_DIGITAL {
     };
 
     class MATAG : AAR {
-        vest = "gmx_cdf2022_army_vest_armor_90_leader_digittsko";
+        vest = "gmx_cdf2022_army_vest_armor_90_leader_digittsko_ARM";
     };
 
     class MATAC : MATAG {
@@ -93,7 +93,7 @@ class GMX_CDF_DIGITAL {
     };
 
     class HATAG : AAR {
-        vest = "gmx_cdf2022_army_vest_armor_90_leader_digittsko";
+        vest = "gmx_cdf2022_army_vest_armor_90_leader_digittsko_ARM";
     };
 
     class HATAC : HATAG {
@@ -104,7 +104,7 @@ class GMX_CDF_DIGITAL {
     };
 
     class DHATAG : AAR {
-        vest = "gmx_cdf2022_army_vest_armor_90_leader_digittsko";
+        vest = "gmx_cdf2022_army_vest_armor_90_leader_digittsko_ARM";
     };
 
     class DHATAC : AAR {
@@ -115,7 +115,7 @@ class GMX_CDF_DIGITAL {
     };
 
     class SAMAG : AAR {
-        vest = "gmx_cdf2022_army_vest_armor_90_leader_digittsko";
+        vest = "gmx_cdf2022_army_vest_armor_90_leader_digittsko_ARM";
     };
 
     class SAMAC : AAR {
@@ -126,7 +126,7 @@ class GMX_CDF_DIGITAL {
     };
 
     class GMGAG : AAR {
-        vest = "gmx_cdf2022_army_vest_armor_90_leader_digittsko";
+        vest = "gmx_cdf2022_army_vest_armor_90_leader_digittsko_ARM";
     };
 
     class GMGAC : AAR {
@@ -137,7 +137,7 @@ class GMX_CDF_DIGITAL {
     };
 
     class MTRAG : AAR {
-        vest = "gmx_cdf2022_army_vest_armor_90_leader_digittsko";
+        vest = "gmx_cdf2022_army_vest_armor_90_leader_digittsko_ARM";
     };
 
     class MTRAC : AAR {
@@ -145,7 +145,7 @@ class GMX_CDF_DIGITAL {
 
     class ENG : Rifleman {
         headGear = "gmx_cdf2022_army_headgear_m92_glasses_digittsko";
-        vest = "gmx_cdf2022_army_vest_armor_90_demolition_digittsko";
+        vest = "gmx_cdf2022_army_vest_armor_90_demolition_digittsko_ARM";
         backpack = "ark_backpack_large";
     };
 
@@ -171,7 +171,7 @@ class GMX_CDF_DIGITAL {
 
     class P : Crew {
         headGear = "gm_gc_headgear_zsh3_wht";
-        vest = "gm_ge_army_vest_pilot_oli";
+        vest = "gm_ge_army_vest_pilot_oli_ARM";
         backpack = "B_Parachute";
     };
 
