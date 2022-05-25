@@ -2289,8 +2289,8 @@ class Faction {
 
     class GMX_CHKDZ {
         gear = "AKM_CHKDZ";
-        uniform = "GMX_CHKDZ";
-        name = "Chedaki";
+        uniform = "GMX_CHDKZ";
+        name = "GMX ChDKZ";
         description = "Mixed camo and AKM's";
         languages[] = {{"east", 100}};
         side = "east";
