@@ -74,6 +74,12 @@ hull3_acre_fnc_setSpokenLanguages = {
             PUSH(_spokenLanguages,_x select 0);
         };
     } foreach _languages;
+
+    if (_spokenLanguages isEqualTo []) then {
+        {_spokenLanguages pushBack (_x select 0)} forEach (["ACRE", "Babel", "languages"] call hull3_config_fnc_getArray);
+        WARN("hull3.acre.babel",FMT_1("Undefined langauges in unit template! Assigning all available languages for '%1'.",_unit));
+    };
+
     _spokenLanguages call acre_api_fnc_babelSetSpokenLanguages;
     DEBUG("hull3.acre.babel",FMT_2("Set spoken languages of unit '%1' to '%2'.",_unit,_spokenLanguages));
 };
