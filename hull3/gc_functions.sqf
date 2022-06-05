@@ -91,6 +91,10 @@ hull3_gc_fnc_sortDead = {
 
     if (_killed isKindOf "CAManBase") then {
          hull3_gc_deadUnits pushBack _killed;
+        // Handles killed AI with dynmaicSim in a frozen standing animation post death
+        if !(simulationEnabled _killed) then {
+            _killed enableSimulationGlobal true;
+        };
     } else {
         hull3_gc_deadVehicles pushBack _killed;
     };
