@@ -130,14 +130,11 @@ hull3_mission_fnc_setWeather = {
     private _snow = _weather #7;
 
     if (!isNil "_snow" && {_snow isEqualTo 1}) then {
-        if(!isNil "BIS_fnc_setRain") then {
-            // Available in v2.10 and handles MP sync properly
-            (["MissionParams", "snow"] call hull3_config_fnc_getArray) call BIS_fnc_setRain;
-        } else {
-            // Fallback to non-MP sync'd command for testing
-            setRain (["MissionParams", "snow"] call hull3_config_fnc_getArray);
-        };
-        DEBUG("hull3.mission.weather",FMT_1("Snow weather set to '%1'.",_snow));
+        private _snowData = ["MissionParams", "snow"] call hull3_config_fnc_getArray;
+        _snowData set [15, (_snowData #15) isEqualTo "true"];
+        _snowData set [16, (_snowData #16) isEqualTo "true"];
+        _snowData call BIS_fnc_setRain;
+        DEBUG("hull3.mission.weather",FMT_2("Snow weather set to '%1' with snowData set to '%2'.",_snow,_snowData));
     };
 };
 
