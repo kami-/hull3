@@ -45,6 +45,7 @@ class MissionParams {
         {1,       1,       0,    1,       20,    0,       1,    1}     // Snow Storm
     };
 
+    // See https://community.bistudio.com/wiki/setRain for details
     snow[] = {
         "a3\data_f\rainnormal_ca.paa",  // rainDropTexture
         1,      // texDropCount
