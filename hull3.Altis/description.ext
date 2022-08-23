@@ -47,8 +47,8 @@ class Params {
 
     class Hull3_Weather {
         title = "Weather";
-        values[] = {0,1,2,3,4,5,6,7,8,9};
-        texts[] = {"Random", "Clear (Calm)", "Clear (Light Winds)", "Clear (Strong Winds)", "Overcast (Calm)", "Overcast (Light Winds)", "Overcast (Strong Winds)", "Rain (Light Winds)", "Rain (Strong Winds)", "Storm"};
+        values[] = {0,1,2,3,4,5,6,7,8,9,10,11,12};
+        texts[] = {"Random", "Clear (Calm)", "Clear (Light Winds)", "Clear (Strong Winds)", "Overcast (Calm)", "Overcast (Light Winds)", "Overcast (Strong Winds)", "Rain (Light Winds)", "Rain (Strong Winds)", "Rain (Storm)", "Snow (Light Winds)", "Snow (Strong Winds)", "Snow (Storm)"};
         default = 0;
         code = "hull3_mission_weather = %1";
     };

@@ -100,7 +100,7 @@ hull3_mission_fnc_getFog = {
 
 hull3_mission_fnc_getWeather = {
     if (isNil {hull3_mission_weather}) then {
-        hull3_mission_weather = [0, 0, 0, 0, 0, 0, 0];
+        hull3_mission_weather = [0, 0, 0, 0, 0, 0, 0, 0];
         TRACE("hull3.mission.weather",FMT_1("Mission param 'hull3_mission_weather' was not set, using default '%1'.",hull3_mission_weather));
     };
     if (hull3_mission_weather #0 == -1 && {isServer}) then {
@@ -109,7 +109,7 @@ hull3_mission_fnc_getWeather = {
         TRACE("hull3.mission.weather",FMT_1("Random weather was selected. Generated random weather '%1' for server.",hull3_mission_weather));
     } else {
         if (!isDedicated && !isServer) then {
-            hull3_mission_weather = [0, 0, 0, 0, 0, 0, 0];
+            hull3_mission_weather = [0, 0, 0, 0, 0, 0, 0, 0];
             TRACE("hull3.mission.weather",FMT_1("Random weather was selected. Using default weather '%1' for client.",hull3_mission_weather));
         };
     };
@@ -127,6 +127,15 @@ hull3_mission_fnc_setWeather = {
     setWind [(_weather #4), (_weather #4), true];
     _time setWindForce (_weather #5);
     _time setWaves (_weather #6);
+    private _snow = _weather #7;
+
+    if (!isNil "_snow" && {_snow isEqualTo 1}) then {
+        private _snowData = ["MissionParams", "snow"] call hull3_config_fnc_getArray;
+        _snowData set [15, (_snowData #15) isEqualTo "true"];
+        _snowData set [16, (_snowData #16) isEqualTo "true"];
+        _snowData call BIS_fnc_setRain;
+        DEBUG("hull3.mission.weather",FMT_2("Snow weather set to '%1' with snowData set to '%2'.",_snow,_snowData));
+    };
 };
 
 hull3_mission_fnc_setEnviroment = {
