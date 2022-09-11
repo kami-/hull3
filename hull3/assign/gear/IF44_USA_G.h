@@ -20,7 +20,8 @@ class IF44_USA_G {
         binocular = "";
         uniformItems[] = {
             {"ACE_Flashlight_KSF1", 1},
-            {"ACE_wirecutter", 1}
+            {"ACE_wirecutter", 1},
+            {"ACE_EntrenchingTool", 1}
         };
         vestItems[] = {};
         backpackItems[] = {};
