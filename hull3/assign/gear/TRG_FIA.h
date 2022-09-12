@@ -28,7 +28,8 @@ class TRG_FIA {
         binocular = "";
         uniformItems[] = {
             {"ACE_Flashlight_KSF1", 1},
-            {"ACE_wirecutter", 1}
+            {"ACE_wirecutter", 1},
+            {"ACE_EntrenchingTool", 1}
         };
         vestItems[] = {};
         backpackItems[] = {};
