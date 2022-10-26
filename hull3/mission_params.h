@@ -57,7 +57,12 @@ class MissionParams {
         0.5, // rndDir
         0.07, // dropWidth
         0.07, // dropHeight
-        [1, 1, 1, 0.5], // dropColor
+        {
+            1,  // R
+            1,  // G
+            1,  // B
+            0.5 // A
+        },
         0.0, // lumSunFront
         0.2, // lumSunBack
         0.5, // refractCoef
