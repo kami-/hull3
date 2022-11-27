@@ -4289,4 +4289,498 @@ class Faction {
         };
     };
 
+    class VN_AUS {
+        gear = "VN_AUS_G";
+        uniform = "VN_AUS_U";
+        name = "Royal Australia Regiment";
+        description = "Australia";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {""};
+        rolePrefix = "RAR";
+        vehicleClassnames[] = {
+            {"CO", ""},
+            {"SL", ""},
+            {"FT", ""},
+            {"ATTCH", ""},
+            {"ENG", ""},
+            {"APC", ""},
+            {"IFV", ""},
+            {"SPAAG", ""},
+            {"TNK", ""},
+            {"TH", ""},
+            {"AH", ""},
+            {"CAS", ""},
+            {"Technical", ""}
+        };
+    };
+
+    class VN_SAS {
+        gear = "VN_SAS_G";
+        uniform = "VN_SAS_U";
+        name = "Australia & New Zealand SAS";
+        description = "Vietnam SAS";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {""};
+        rolePrefix = "SAS";
+        vehicleClassnames[] = {
+            {"CO", ""},
+            {"SL", ""},
+            {"FT", ""},
+            {"ATTCH", ""},
+            {"ENG", ""},
+            {"APC", ""},
+            {"IFV", ""},
+            {"SPAAG", ""},
+            {"TNK", ""},
+            {"TH", ""},
+            {"AH", ""},
+            {"CAS", ""},
+            {"Technical", ""}
+        };
+    };
+
+    class VN_US_SEAL {
+        gear = "VN_US_SEAL_G";
+        uniform = "VN_US_SEAL_U";
+        name = "US Navy Seals";
+        description = "US Navy Seals Blue Jeans";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {""};
+        rolePrefix = "US Navy SEAL";
+        vehicleClassnames[] = {
+            {"CO", ""},
+            {"SL", ""},
+            {"FT", ""},
+            {"ATTCH", ""},
+            {"ENG", ""},
+            {"APC", ""},
+            {"IFV", ""},
+            {"SPAAG", ""},
+            {"TNK", ""},
+            {"TH", ""},
+            {"AH", ""},
+            {"CAS", ""},
+            {"Technical", ""}
+        };
+    };
+
+    class VN_US_CIDG {
+        gear = "VN_US_CIDG_G";
+        uniform = "VN_US_CIDG_U";
+        name = "Civilian Irregular Defence Group";
+        description = "US Backed Irregulars";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {""};
+        rolePrefix = "CIDG";
+        vehicleClassnames[] = {
+            {"CO", ""},
+            {"SL", ""},
+            {"FT", ""},
+            {"ATTCH", ""},
+            {"ENG", ""},
+            {"APC", ""},
+            {"IFV", ""},
+            {"SPAAG", ""},
+            {"TNK", ""},
+            {"TH", ""},
+            {"AH", ""},
+            {"CAS", ""},
+            {"Technical", ""}
+        };
+    };
+
+    class VN_US_LRRP {
+        gear = "VN_US_LRRP_G";
+        uniform = "VN_US_LRRP_U";
+        name = "US Army LRRP";
+        description = "US Army Long Range Recon Patrol";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {""};
+        rolePrefix = "US Army LRRP";
+        vehicleClassnames[] = {
+            {"CO", ""},
+            {"SL", ""},
+            {"FT", ""},
+            {"ATTCH", ""},
+            {"ENG", ""},
+            {"APC", ""},
+            {"IFV", ""},
+            {"SPAAG", ""},
+            {"TNK", ""},
+            {"TH", ""},
+            {"AH", ""},
+            {"CAS", ""},
+            {"Technical", ""}
+        };
+    };
+
+    class VN_US_SOG {
+        gear = "VN_US_SOG_G";
+        uniform = "VN_US_SOG_G_U";
+        name = "US Army SOG";
+        description = "US Army Special Operations";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {""};
+        rolePrefix = "US SOG";
+        vehicleClassnames[] = {
+            {"CO", ""},
+            {"SL", ""},
+            {"FT", ""},
+            {"ATTCH", ""},
+            {"ENG", ""},
+            {"APC", ""},
+            {"IFV", ""},
+            {"SPAAG", ""},
+            {"TNK", ""},
+            {"TH", ""},
+            {"AH", ""},
+            {"CAS", ""},
+            {"Technical", ""}
+        };
+    };
+
+    class VN_US_ARMY {
+        gear = "VN_US_M16_G";
+        uniform = "VN_US_U";
+        name = "US Army";
+        description = "US Army";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {""};
+        rolePrefix = "US Army";
+        vehicleClassnames[] = {
+            {"CO", ""},
+            {"SL", ""},
+            {"FT", ""},
+            {"ATTCH", ""},
+            {"ENG", ""},
+            {"APC", ""},
+            {"IFV", ""},
+            {"SPAAG", ""},
+            {"TNK", ""},
+            {"TH", ""},
+            {"AH", ""},
+            {"CAS", ""},
+            {"Technical", ""}
+        };
+    };
+
+    class VN_US_MARINES {
+        gear = "VN_US_M14_G";
+        uniform = "VN_US_U";
+        name = "US Marines";
+        description = "US Marines";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {""};
+        rolePrefix = "USMC";
+        vehicleClassnames[] = {
+            {"CO", ""},
+            {"SL", ""},
+            {"FT", ""},
+            {"ATTCH", ""},
+            {"ENG", ""},
+            {"APC", ""},
+            {"IFV", ""},
+            {"SPAAG", ""},
+            {"TNK", ""},
+            {"TH", ""},
+            {"AH", ""},
+            {"CAS", ""},
+            {"Technical", ""}
+        };
+    };
+
+    class VN_NZ {
+        gear = "VN_NZ_G";
+        uniform = "VN_NZ_U";
+        name = "Royal New Zealand Infantry Regiment";
+        description = "New Zealand";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {""};
+        rolePrefix = "RNZIR";
+        vehicleClassnames[] = {
+            {"CO", ""},
+            {"SL", ""},
+            {"FT", ""},
+            {"ATTCH", ""},
+            {"ENG", ""},
+            {"APC", ""},
+            {"IFV", ""},
+            {"SPAAG", ""},
+            {"TNK", ""},
+            {"TH", ""},
+            {"AH", ""},
+            {"CAS", ""},
+            {"Technical", ""}
+        };
+    };
+
+    class VN_ROK {
+        gear = "VN_ROK_G";
+        uniform = "VN_ROK_U";
+        name = "South Korea";
+        description = "South Korea";
+        languages[] = {{"west", 100}};
+        side = "west";
+        camouflage[] = {""};
+        rolePrefix = "ROK";
+        vehicleClassnames[] = {
+            {"CO", ""},
+            {"SL", ""},
+            {"FT", ""},
+            {"ATTCH", ""},
+            {"ENG", ""},
+            {"APC", ""},
+            {"IFV", ""},
+            {"SPAAG", ""},
+            {"TNK", ""},
+            {"TH", ""},
+            {"AH", ""},
+            {"CAS", ""},
+            {"Technical", ""}
+        };
+    };
+
+    class VN_RLA {
+        gear = "VN_RLA_G";
+        uniform = "VN_RLA_U";
+        name = "Royal Laos Army";
+        description = "Royal Laos Army";
+        languages[] = {{"resistance", 100}};
+        side = "resistance";
+        camouflage[] = {""};
+        rolePrefix = "RLA";
+        vehicleClassnames[] = {
+            {"CO", ""},
+            {"SL", ""},
+            {"FT", ""},
+            {"ATTCH", ""},
+            {"ENG", ""},
+            {"APC", ""},
+            {"IFV", ""},
+            {"SPAAG", ""},
+            {"TNK", ""},
+            {"TH", ""},
+            {"AH", ""},
+            {"CAS", ""},
+            {"Technical", ""}
+        };
+    };
+
+    class VN_SV_ARVN {
+        gear = "VN_SV_ARVN_G";
+        uniform = "VN_SV_ARVN_U";
+        name = "South Vietnam ARVN";
+        description = "South Vietnam Army";
+        languages[] = {{"resistance", 100}};
+        side = "resistance";
+        camouflage[] = {""};
+        rolePrefix = "ARVN";
+        vehicleClassnames[] = {
+            {"CO", ""},
+            {"SL", ""},
+            {"FT", ""},
+            {"ATTCH", ""},
+            {"ENG", ""},
+            {"APC", ""},
+            {"IFV", ""},
+            {"SPAAG", ""},
+            {"TNK", ""},
+            {"TH", ""},
+            {"AH", ""},
+            {"CAS", ""},
+            {"Technical", ""}
+        };
+    };
+
+    class VN_SV_RANGER {
+        gear = "VN_SV_RANGER_G";
+        uniform = "VN_SV_RANGER_U";
+        name = "South Vietnam Rangers";
+        description = "South Vietnam Army Rangers";
+        languages[] = {{"resistance", 100}};
+        side = "resistance";
+        camouflage[] = {""};
+        rolePrefix = "ARVN Rangers";
+        vehicleClassnames[] = {
+            {"CO", ""},
+            {"SL", ""},
+            {"FT", ""},
+            {"ATTCH", ""},
+            {"ENG", ""},
+            {"APC", ""},
+            {"IFV", ""},
+            {"SPAAG", ""},
+            {"TNK", ""},
+            {"TH", ""},
+            {"AH", ""},
+            {"CAS", ""},
+            {"Technical", ""}
+        };
+    };
+
+    class VN_SV_TQLC {
+        gear = "VN_SV_TQLC_G";
+        uniform = "VN_SV_TQLC_U";
+        name = "South Vietnam TQLC";
+        description = "South Vietnam Marines";
+        languages[] = {{"resistance", 100}};
+        side = "resistance";
+        camouflage[] = {""};
+        rolePrefix = "TQLC";
+        vehicleClassnames[] = {
+            {"CO", ""},
+            {"SL", ""},
+            {"FT", ""},
+            {"ATTCH", ""},
+            {"ENG", ""},
+            {"APC", ""},
+            {"IFV", ""},
+            {"SPAAG", ""},
+            {"TNK", ""},
+            {"TH", ""},
+            {"AH", ""},
+            {"CAS", ""},
+            {"Technical", ""}
+        };
+    };
+
+    class VN_PLA {
+        gear = "VN_PLA_G";
+        uniform = "VN_PLA_U";
+        name = "People Laos Army";
+        description = "Peoples Laos Army";
+        languages[] = {{"east", 100}};
+        side = "east";
+        camouflage[] = {""};
+        rolePrefix = "ARVN";
+        vehicleClassnames[] = {
+            {"CO", ""},
+            {"SL", ""},
+            {"FT", ""},
+            {"ATTCH", ""},
+            {"ENG", ""},
+            {"APC", ""},
+            {"IFV", ""},
+            {"SPAAG", ""},
+            {"TNK", ""},
+            {"TH", ""},
+            {"AH", ""},
+            {"CAS", ""},
+            {"Technical", ""}
+        };
+    };
+
+    class VN_NV_NAV_E {
+        gear = "VN_NV_NVA_E_G";
+        uniform = "VN_NV_NVA_E_U";
+        name = "North Vietnam NVA Early";
+        description = "North Vietnam NVA Early";
+        languages[] = {{"east", 100}};
+        side = "east";
+        camouflage[] = {""};
+        rolePrefix = "NVA";
+        vehicleClassnames[] = {
+            {"CO", ""},
+            {"SL", ""},
+            {"FT", ""},
+            {"ATTCH", ""},
+            {"ENG", ""},
+            {"APC", ""},
+            {"IFV", ""},
+            {"SPAAG", ""},
+            {"TNK", ""},
+            {"TH", ""},
+            {"AH", ""},
+            {"CAS", ""},
+            {"Technical", ""}
+        };
+    };
+
+    class VN_NV_NAV_L {
+        gear = "VN_NV_NVA_L_G";
+        uniform = "VN_NV_NVA_L_U";
+        name = "North Vietnam NVA Late";
+        description = "North Vietnam NVA Late";
+        languages[] = {{"east", 100}};
+        side = "east";
+        camouflage[] = {""};
+        rolePrefix = "NVA";
+        vehicleClassnames[] = {
+            {"CO", ""},
+            {"SL", ""},
+            {"FT", ""},
+            {"ATTCH", ""},
+            {"ENG", ""},
+            {"APC", ""},
+            {"IFV", ""},
+            {"SPAAG", ""},
+            {"TNK", ""},
+            {"TH", ""},
+            {"AH", ""},
+            {"CAS", ""},
+            {"Technical", ""}
+        };
+    };
+
+    class VN_NV_VPNM {
+        gear = "VN_NV_NVA_E_G";
+        uniform = "VN_NV_VPNM_U";
+        name = "North Vietnam Marines";
+        description = "North Vietnam Marines";
+        languages[] = {{"east", 100}};
+        side = "east";
+        camouflage[] = {""};
+        rolePrefix = "VPNM";
+        vehicleClassnames[] = {
+            {"CO", ""},
+            {"SL", ""},
+            {"FT", ""},
+            {"ATTCH", ""},
+            {"ENG", ""},
+            {"APC", ""},
+            {"IFV", ""},
+            {"SPAAG", ""},
+            {"TNK", ""},
+            {"TH", ""},
+            {"AH", ""},
+            {"CAS", ""},
+            {"Technical", ""}
+        };
+    };
+
+    class VN_NV_VC {
+        gear = "VN_NV_VC_G";
+        uniform = "VN_NV_VC_U";
+        name = "North Vietnam Viet Cong";
+        description = "North Vietnam Viet Cong";
+        languages[] = {{"east", 100}};
+        side = "east";
+        camouflage[] = {""};
+        rolePrefix = "VC";
+        vehicleClassnames[] = {
+            {"CO", ""},
+            {"SL", ""},
+            {"FT", ""},
+            {"ATTCH", ""},
+            {"ENG", ""},
+            {"APC", ""},
+            {"IFV", ""},
+            {"SPAAG", ""},
+            {"TNK", ""},
+            {"TH", ""},
+            {"AH", ""},
+            {"CAS", ""},
+            {"Technical", ""}
+        };
+    };
+
 };
