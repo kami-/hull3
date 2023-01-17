@@ -3,7 +3,7 @@ class VN_NV_NVA_L_U {
         headGear = "vn_o_helmet_nva_01";
         goggles = "";
         uniform = "vn_o_uniform_nva_army_11_03";
-        vest = "vn_o_vest_02";
+        vest = "vn_o_vest_02_ARM";
         backpack = "vn_o_pack_01";
         insignia = "";
     };
@@ -11,21 +11,21 @@ class VN_NV_NVA_L_U {
     class Leader : Rifleman {
         headGear = "vn_o_helmet_nva_02";
         uniform = "vn_o_uniform_nva_army_01_03";
-        vest = "vn_o_vest_01";
+        vest = "vn_o_vest_01_ARM";
         backpack = "vn_o_pack_02";
     };
 
     class Officer : Leader {
         headGear = "vn_o_cap_01";
         uniform = "vn_o_uniform_nva_army_02_03";
-        vest = "vn_o_vest_07";
+        vest = "vn_o_vest_07_ARM";
     };
 
     class Crew : Rifleman {
         headGear = "vn_o_helmet_tsh3_02";
         goggles = "vn_o_acc_goggles_01";
         uniform = "vn_o_uniform_nva_army_05_03";
-        vest = "vn_o_vest_05";
+        vest = "vn_o_vest_05_ARM";
         backpack = "ark_backpack_small";
     };
 
@@ -44,7 +44,7 @@ class VN_NV_NVA_L_U {
         headGear = "vn_o_helmet_nva_07";
         goggles = "vn_g_spectacles_01";
         uniform = "vn_o_uniform_nva_army_06_03";
-        vest = "vn_o_vest_06";
+        vest = "vn_o_vest_06_ARM";
         backpack = "ark_backpack_large";
         insignia = "";
     };
@@ -55,7 +55,7 @@ class VN_NV_NVA_L_U {
     class AR : Rifleman {
         headGear = "vn_o_helmet_nva_03";
         uniform = "vn_o_uniform_nva_army_12_03";
-        vest = "vn_o_vest_03";
+        vest = "vn_o_vest_03_ARM";
     };
 
     class AAR : Rifleman {
@@ -74,7 +74,7 @@ class VN_NV_NVA_L_U {
 
     class ENG : Rifleman {
         headGear = "vn_o_helmet_nva_04";
-        vest = "vn_o_vest_08";
+        vest = "vn_o_vest_08_ARM";
         backpack = "vn_o_pack_05";
     };
 
@@ -84,7 +84,7 @@ class VN_NV_NVA_L_U {
     class SN : Rifleman {
         headGear = "vn_o_boonie_nva_02_01";
         goggles = "vn_o_poncho_01_01";
-        vest = "vn_o_vest_01";
+        vest = "vn_o_vest_01_ARM";
         backpack = "vn_o_pack_06";
     };
 
