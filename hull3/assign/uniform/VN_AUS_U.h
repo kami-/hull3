@@ -3,7 +3,7 @@ class VN_AUS_U {
         headGear = "vn_b_boonie_08_01";
         goggles = "";
         uniform = "vn_b_uniform_aus_01_01";
-        vest = "vn_b_vest_anzac_01";
+        vest = "vn_b_vest_anzac_01_ARM";
         backpack = "vn_b_pack_pfield_01";
         insignia = "";
     };
@@ -11,20 +11,20 @@ class VN_AUS_U {
     class Leader : Rifleman {
         goggles = "vn_b_acc_rag_01";
         uniform = "vn_b_uniform_aus_03_01";
-        vest = "vn_b_vest_anzac_04";
+        vest = "vn_b_vest_anzac_04_ARM";
     };
 
     class Officer : Leader {
         headGear = "vn_b_boonie_08_02";
         goggles = "vn_b_acc_rag_02";
         uniform = "vn_b_uniform_aus_04_01";
-        vest = "vn_b_vest_anzac_07";
+        vest = "vn_b_vest_anzac_07_ARM";
     };
 
     class Crew : Rifleman {
         headGear = "vn_b_beret_01_07";
         uniform = "vn_b_uniform_aus_10_01";
-        vest = "vn_b_vest_anzac_09";
+        vest = "vn_b_vest_anzac_09_ARM";
         backpack = "ark_backpack_small";
     };
 
@@ -40,7 +40,7 @@ class VN_AUS_U {
     class Medic : Rifleman {
         headGear = "vn_b_boonie_07_01";
         uniform = "vn_b_uniform_aus_10_01";
-        vest = "vn_b_vest_anzac_06";
+        vest = "vn_b_vest_anzac_06_ARM";
         backpack = "vn_b_pack_pfield_02";
         insignia = "";
     };
@@ -54,7 +54,7 @@ class VN_AUS_U {
 
     class AAR : Rifleman {
         backpack = "vn_b_pack_pfield_02";
-        vest = "vn_b_vest_anzac_02";
+        vest = "vn_b_vest_anzac_02_ARM";
     };
 
     class RAT : Rifleman {
@@ -78,7 +78,7 @@ class VN_AUS_U {
 
     class SN : Rifleman {
         uniform = "vn_b_uniform_aus_02_01";
-        vest = "vn_b_vest_anzac_03";
+        vest = "vn_b_vest_anzac_03_ARM";
         backpack = "ark_backpack_small";
     };
 
@@ -99,7 +99,7 @@ class VN_AUS_U {
     class P : Crew {
         headGear = "vn_b_helmet_svh4_01_04";
         uniform = "vn_b_uniform_k2b_03_01";
-        vest = "vn_b_vest_anzac_08";
+        vest = "vn_b_vest_anzac_08_ARM";
         backpack = "ark_backpack_small";
     };
 
