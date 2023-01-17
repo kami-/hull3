@@ -3,7 +3,7 @@ class GM_DNK_90_WD {
         headGear = "gm_dk_headgear_m96_cover_m84";
         goggles = "";
         uniform = "gm_dk_army_uniform_soldier_84_m84";
-        vest = "gm_dk_army_vest_m00_m84_ARM_rifleman_ARM";
+        vest = "gm_dk_army_vest_m00_m84_rifleman_ARM";
         backpack = "ark_backpack_med";
         insignia = "";
     };
@@ -40,7 +40,7 @@ class GM_DNK_90_WD {
     };
 
     class AR : Rifleman {
-        vest = "gm_dk_army_vest_m00_m84_ARM_machinegunner_ARM";
+        vest = "gm_dk_army_vest_m00_m84_machinegunner_ARM";
     };
 
     class AAR : Rifleman {
@@ -55,7 +55,7 @@ class GM_DNK_90_WD {
     };
 
     class MMGAG : AAR {
-        vest = "gm_dk_army_vest_m00_m84_ARM_machinegunner_ARM";
+        vest = "gm_dk_army_vest_m00_m84_machinegunner_ARM";
     };
 
     class HMGG : AR {
