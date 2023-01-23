@@ -135,8 +135,8 @@ class VN_NV_NVA_E_G {
     class AAR : Rifleman {
         primaryWeapon = "vn_pps43";
         vestMagazines[] = {
-            {"vn_ppsh41_35_mag", 6},
-            {"vn_ppsh41_35_t_mag", 2}
+            {"vn_pps_mag", 6},
+            {"vn_pps_t_mag", 2}
         };
         backpackMagazines[] = {
             {"vn_t67_grenade_mag", 1},
